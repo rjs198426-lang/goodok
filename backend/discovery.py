@@ -43,6 +43,9 @@ def init_discovery(db):
  CREATE TABLE IF NOT EXISTS plan_facts(plan_id TEXT PRIMARY KEY,service_key TEXT,payload TEXT,last_verified TEXT);
  CREATE TABLE IF NOT EXISTS plan_history(plan_id TEXT,payload TEXT,observed_at TEXT);
  ''')
+ columns={row[1] for row in db.execute('PRAGMA table_info(candidates)')}
+ if 'catalog_status' not in columns:db.execute("ALTER TABLE candidates ADD COLUMN catalog_status TEXT DEFAULT 'pending'")
+ if 'catalog_checked_at' not in columns:db.execute('ALTER TABLE candidates ADD COLUMN catalog_checked_at TEXT')
 
 def rotating(items,cursor,budget):
  if not items:return []
@@ -61,7 +64,7 @@ def run_discovery(db,seeds,fetch,stamp,budget=3):
    if not link:continue
    service=next((s['key'] for s in seeds if any(alias.casefold() in (title+' '+link).casefold() for alias in [s['name'],*s.get('aliases',[])])),None)
    row={'url':link,'title':title[:180],'provider':provider,'discoveryUrl':url,'service':service};found.append(row)
-   db.execute('''INSERT INTO candidates VALUES(?,?,?,?,?,'pending',?,?,NULL) ON CONFLICT(url) DO UPDATE SET last_seen=excluded.last_seen,title=excluded.title''',(link,title[:180],provider,url,service,stamp,stamp))
+   db.execute('''INSERT INTO candidates(url,title,provider,discovery_url,service_key,status,first_seen,last_seen,reason) VALUES(?,?,?,?,?,'pending',?,?,NULL) ON CONFLICT(url) DO UPDATE SET last_seen=excluded.last_seen,title=excluded.title''',(link,title[:180],provider,url,service,stamp,stamp))
  for query in queries:
   for provider,url in [('Google','https://www.google.com/search?q='+urllib.parse.quote(query)),('Naver','https://search.naver.com/search.naver?where=web&query='+urllib.parse.quote(query)),('Bing','https://www.bing.com/search?q='+urllib.parse.quote(query))]:
    try:

@@ -25,6 +25,13 @@ def core_capabilities(text,purpose):
    if re.search(pattern,text,re.I):capabilities[key]=True
  return capabilities
 
+def capability_evidence(text):
+ result=[]
+ for key,pattern in [('music',r'음악|music'),('adfree',r'광고 없[^.]{0,30}|ad.free'),('offline',r'오프라인[^.]{0,30}|offline'),('lossless',r'무손실[^.]{0,30}|lossless'),('spatial',r'공간.?음향[^.]{0,30}|spatial audio')]:
+  match=re.search(pattern,text,re.I)
+  if match:result.append({'field':'capability.'+key,'quote':match[0][:100]})
+ return result
+
 def normal_plan(source,page,observed,timestamp):
  if not observed:return []
  purpose=purpose_for(source.get('category') or {'spotify':'음악','apple-music':'음악','disney-plus':'OTT','claude':'AI'}.get(source['id'],'기타'))
@@ -36,7 +43,7 @@ def normal_plan(source,page,observed,timestamp):
  else:match=re.search(r'\$\d+\s*if billed monthly',page.text,re.I)
  if not match:return []
  quote=match[0]
- return [{'id':source['id']+'-regular-monthly','service':source['id'],'name':observed['plan'],'amount':amount,'currency':observed['currency'],'interval':'monthly','region':'KR' if observed['currency']=='KRW' else 'US','taxBasis':'official_display','commitmentMonths':1,'introductory':False,'eligibility':'general','purpose':purpose,'capabilities':core_capabilities(page.text,purpose),'source':source['url'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':quote[:220]}]}]
+ return [{'id':source['id']+'-regular-monthly','service':source['id'],'name':observed['plan'],'amount':amount,'currency':observed['currency'],'interval':'monthly','region':'KR' if observed['currency']=='KRW' else 'US','taxBasis':'official_display','commitmentMonths':1,'introductory':False,'eligibility':'general','purpose':purpose,'capabilities':core_capabilities(page.text,purpose),'source':source['url'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':quote[:220]}]+capability_evidence(page.text)}]
 
 def structured_plans(page,service,timestamp):
  result=[]
@@ -61,7 +68,7 @@ def structured_plans(page,service,timestamp):
    if ends and str(ends)[:10]<timestamp[:10]:continue
    plan_id=hashlib.sha256((service['key']+name+interval+currency).encode()).hexdigest()[:24]
    raw=json.dumps(offer,ensure_ascii=False,separators=(',',':'))[:230]
-   result.append({'id':plan_id,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':interval,'region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'included' if spec.get('valueAddedTaxIncluded') is True else 'unknown','commitmentMonths':1 if interval=='monthly' else 12,'introductory':False,'eligibility':'general','purpose':purpose_for(service['category']),'capabilities':{},'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'structured_offer','quote':raw}]})
+   result.append({'id':plan_id,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':interval,'region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'included' if spec.get('valueAddedTaxIncluded') is True else 'unknown','commitmentMonths':(1 if re.search(r'cancel anytime|언제든.{0,15}해지|무약정',page.text,re.I) else None) if interval=='monthly' else 12,'introductory':False,'eligibility':'new_only' if re.search(r'new customers only|신규.{0,10}한정',str(offer.get('description','')),re.I) else 'general','purpose':service.get('purpose') or purpose_for(service['category']),'capabilities':{},'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'structured_offer','quote':raw}]})
  return result
 
 def text_plans(page,service,timestamp):
@@ -82,7 +89,7 @@ def text_plans(page,service,timestamp):
   if symbol=='$' and (re.search(r'USD|US\$',page.text) or host(service['officialUrl']).removeprefix('www.') in {'chatgpt.com','claude.com','cursor.com','github.com','notion.com','lovable.dev','krea.ai','suno.com','perplexity.ai'}):currency='USD'
   if not currency:continue
   identifier=hashlib.sha256((service['key']+'|'+name+'|'+currency+'|monthly').encode()).hexdigest()[:24]
-  result.append({'id':identifier,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':'monthly','region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'official_display','commitmentMonths':1,'introductory':False,'eligibility':'general','purpose':purpose_for(service['category']),'capabilities':core_capabilities(text,purpose_for(service['category'])),'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':(name+' '+match[0])[:220]}]})
+  result.append({'id':identifier,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':'monthly','region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'official_display','commitmentMonths':1 if re.search(r'cancel anytime|언제든.{0,15}해지|무약정',text,re.I) else None,'introductory':False,'eligibility':'general','purpose':service.get('purpose') or purpose_for(service['category']),'capabilities':core_capabilities(text,service.get('purpose') or purpose_for(service['category'])),'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':(name+' '+match[0])[:220]}]+capability_evidence(text)})
  return result
 
 def identify_new(page,url,seeds,reference):
@@ -94,12 +101,12 @@ def identify_new(page,url,seeds,reference):
  name=str(organization.get('name') or products[0].get('name') or '').strip()
  if not name or len(name)>80:return None
  for seed in seeds:
-  if name.casefold() in [alias.casefold() for alias in [seed['name'],*seed.get('aliases',[])]] and not same_site(seed['officialUrl'],url):return None
+  if any(alias.casefold() in name.casefold() for alias in [seed['name'],*seed.get('aliases',[])] if len(alias)>=4) and not same_site(seed['officialUrl'],url):return None
  description=str(products[0].get('description') or '')[:240]
- return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
+ return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else purpose_for(category_for(name+' '+description))), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
 
 def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10):
- for seed in seeds:db.execute('INSERT OR IGNORE INTO service_catalog VALUES(?,?,?,?)',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
+ for seed in seeds:db.execute('INSERT INTO service_catalog VALUES(?,?,?,?) ON CONFLICT(service_key) DO UPDATE SET payload=excluded.payload',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
  known={key:json.loads(payload) for key,payload in db.execute('SELECT service_key,payload FROM service_catalog')}
  cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);selected=rotating(list(known.values()),cursor,budget)
  results=[];new_count=0
@@ -114,9 +121,12 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10)
  known_hosts={item['officialHost'].removeprefix('www.') for item in known.values()}
  market_hosts={'appsumo.com','marketplace.sumo.com','stacksocial.com','www.stacksocial.com','slickdeals.net','dealmirror.com','dealify.com','www.ppomppu.co.kr','quasarzone.com'}
  # Pending discovery pages are revisited in later runs; a growing queue is not a fixed source list.
- pending=list(db.execute("SELECT url,title,discovery_url FROM candidates WHERE status='pending' ORDER BY last_seen LIMIT 6"))
+ cutoff=(dt.datetime.fromisoformat(timestamp.replace('Z','+00:00'))-dt.timedelta(days=1)).isoformat(timespec='seconds').replace('+00:00','Z')
+ pending=list(db.execute("SELECT url,title,discovery_url FROM candidates WHERE catalog_status NOT IN ('known','verified') AND (catalog_checked_at IS NULL OR catalog_checked_at<?) ORDER BY catalog_checked_at NULLS FIRST,last_seen LIMIT 6",(cutoff,)))
  for url,title,reference in pending:
-  if host(url).removeprefix('www.') in known_hosts:continue
+  if host(url).removeprefix('www.') in known_hosts:
+   db.execute("UPDATE candidates SET catalog_status='known',catalog_checked_at=? WHERE url=?",(timestamp,url));continue
+  db.execute('UPDATE candidates SET catalog_checked_at=? WHERE url=?',(timestamp,url))
   try:
    page=fetch(url)
    # Deal listing -> vendor website: the reseller itself is not registered as the subscription provider.
@@ -125,20 +135,20 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10)
     for href,label in page.links:
      target=safe_url(urllib.parse.urljoin(url,href))
      if target and host(target) not in market_hosts and re.search(r'website|visit site|official|developer|홈페이지|공식',label,re.I):external.append((target,label))
-    for target,label in external[:2]:db.execute("INSERT OR IGNORE INTO candidates VALUES(?,?,?, ?,NULL,'pending',?,?,NULL)",(target,label,'vendor_link',url,timestamp,timestamp))
-    db.execute("UPDATE candidates SET status='discovered_links' WHERE url=?",(url,));continue
+    for target,label in external[:2]:db.execute("INSERT OR IGNORE INTO candidates(url,title,provider,discovery_url,service_key,status,first_seen,last_seen,reason) VALUES(?,?,?, ?,NULL,'pending',?,?,NULL)",(target,label,'vendor_link',url,timestamp,timestamp))
+    db.execute("UPDATE candidates SET catalog_status='discovered_links' WHERE url=?",(url,));continue
    service=identify_new(page,url,seeds,reference)
-   if not service:db.execute("UPDATE candidates SET status='needs_identity',reason='공식 사업자·구독 상품 증거 미확인' WHERE url=?",(url,));continue
+   if not service:db.execute("UPDATE candidates SET catalog_status='needs_identity',reason='공식 사업자·구독 상품 증거 미확인' WHERE url=?",(url,));continue
    plans=structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)
    if not plans:
     pricing=[safe_url(urllib.parse.urljoin(url,href)) for href,label in page.links if re.search(r'pricing|plans|요금|가격',label,re.I)]
     for target in [p for p in pricing if p and same_site(p,url)][:2]:
      pricing_page=fetch(target);service['officialUrl']=target;plans.extend(structured_plans(pricing_page,service,timestamp)+text_plans(pricing_page,service,timestamp))
-   if not plans:db.execute("UPDATE candidates SET status='needs_price',reason='정기 결제 요금 증거 미확인' WHERE url=?",(url,));continue
+   if not plans:db.execute("UPDATE candidates SET catalog_status='needs_price',reason='정기 결제 요금 증거 미확인' WHERE url=?",(url,));continue
    service.update(status='verified',verifiedAt=timestamp);known[service['key']]=service;new_count+=1
    db.execute('INSERT OR REPLACE INTO service_catalog VALUES(?,?,?,?)',(service['key'],json.dumps(service,ensure_ascii=False),timestamp,timestamp))
    for plan in plans:db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],service['key'],json.dumps(plan,ensure_ascii=False),timestamp))
-   db.execute("UPDATE candidates SET status='catalog_verified',reason=NULL WHERE url=?",(url,))
+   db.execute("UPDATE candidates SET catalog_status='verified',status='catalog_verified',reason=NULL WHERE url=?",(url,))
   except Exception:db.execute("UPDATE candidates SET reason='현재 페이지 접근 불가' WHERE url=?",(url,))
  db.execute("INSERT OR REPLACE INTO research_state VALUES('catalog_cursor',?)",(str(cursor+budget),));db.commit()
  return {'checked':results,'newServices':new_count,'catalogSize':len(known)}
