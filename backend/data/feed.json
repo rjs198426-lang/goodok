@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T11:54:53Z",
-  "lastSuccessAt": "2026-10-25T11:54:53Z",
+  "generatedAt": "2026-10-25T11:59:47Z",
+  "lastSuccessAt": "2026-10-25T11:59:47Z",
   "offers": [
     {
       "id": "dff625c040866fdd04888146",
@@ -14,11 +14,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T11:54:53Z",
+      "verifiedAt": "2026-10-25T11:59:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T11:54:53Z",
+        "checkedAt": "2026-10-25T11:59:47Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T11:54:53Z",
+      "verifiedAt": "2026-10-25T11:59:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T11:54:53Z",
+        "checkedAt": "2026-10-25T11:59:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T11:54:53Z",
+      "verifiedAt": "2026-10-25T11:59:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T11:54:53Z",
+        "checkedAt": "2026-10-25T11:59:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     }
@@ -1661,6 +1661,56 @@
       ]
     },
     {
+      "id": "6445626bf486b0ce4a14000d",
+      "service": "apple-music",
+      "name": "개인",
+      "amount": 8900.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music",
+      "capabilities": {
+        "music": true,
+        "adfree": true,
+        "offline": true,
+        "lossless": true,
+        "spatial": true
+      },
+      "source": "https://www.apple.com/kr/apple-music/",
+      "verifiedAt": "2026-10-25T11:59:26Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "개인 ₩8,900/월"
+        },
+        {
+          "field": "capability.music",
+          "quote": "음악"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없이 즐기고 기기에 내려받아 오프라인에서도 감상 가능 공"
+        },
+        {
+          "field": "capability.offline",
+          "quote": "오프라인에서도 감상 가능 공간 음향 및 무손실 오디오 품질 독"
+        },
+        {
+          "field": "capability.lossless",
+          "quote": "무손실 오디오 품질 독점 아티스트 콘텐츠 및 엄선된 플레이리"
+        },
+        {
+          "field": "capability.spatial",
+          "quote": "공간 음향 및 무손실 오디오 품질 독점 아티스트 콘텐츠 및 엄선"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -1680,12 +1730,28 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-25T11:54:39Z",
+      "verifiedAt": "2026-10-25T11:59:35Z",
       "status": "verified",
       "evidence": [
         {
           "field": "amount",
           "quote": "이후에는 ₩11,990 (부가세 포함)/월이 부과됩니다. 언제든 해지 가능합니다. ₩0의 요금으로 1개월 이용해"
+        },
+        {
+          "field": "capability.music",
+          "quote": "음악"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없는 음악 감상 순서에 상관없이 재생 친구와 함께 실시간"
+        },
+        {
+          "field": "capability.offline",
+          "quote": "오프라인에서 감상(베이직 제외) 무손실 오디오 품질 언제든 해"
+        },
+        {
+          "field": "capability.lossless",
+          "quote": "무손실 오디오 품질 언제든 해지 가능 Premium 개인 정"
         }
       ]
     },
@@ -1710,12 +1776,32 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-25T11:54:39Z",
+      "verifiedAt": "2026-10-25T11:59:34Z",
       "status": "verified",
       "evidence": [
         {
           "field": "amount",
           "quote": "개인 ₩8,900/월, 신규 구독자는 첫 1개월 무료. 1억 곡 이상의 음악을 광고 없이 즐기고 기기에 내려받아 오프라인에서도 "
+        },
+        {
+          "field": "capability.music",
+          "quote": "Music"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없이 즐기고 기기에 내려받아 오프라인에서도 감상 가능 공"
+        },
+        {
+          "field": "capability.offline",
+          "quote": "오프라인에서도 감상 가능 공간 음향 및 무손실 오디오 품질 독"
+        },
+        {
+          "field": "capability.lossless",
+          "quote": "무손실 오디오 는 아티스트가 의도한 그대로 오리지널 레코딩의"
+        },
+        {
+          "field": "capability.spatial",
+          "quote": "공간 음향 2 까지 경험할 수 있습니다"
         }
       ]
     },
@@ -1734,12 +1820,16 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-25T11:54:40Z",
+      "verifiedAt": "2026-10-25T11:59:36Z",
       "status": "verified",
       "evidence": [
         {
           "field": "amount",
           "quote": "디즈니+ 스탠다드 월 ₩13,900 월 ₩9,900 디즈니+ 프리미엄 디즈니+ 스탠다드 월 ₩13,900"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없는 스트리밍*** 광고 없는 스트리밍*** 콘텐츠 저장"
         }
       ]
     }
@@ -1759,22 +1849,22 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 15
+        "attempts": 19
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 2
+        "attempts": 3
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 16
+        "attempts": 20
       },
       {
         "name": "Google News",
@@ -1784,12 +1874,12 @@
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 7
+        "attempts": 9
       },
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 16
+        "attempts": 20
       },
       {
         "name": "Slickdeals",
@@ -1809,16 +1899,16 @@
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 3
       },
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       }
     ],
-    "candidateCount": 133,
-    "factChecks": 21,
+    "candidateCount": 160,
+    "factChecks": 24,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
   }
