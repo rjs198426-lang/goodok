@@ -1,0 +1,103 @@
+[
+  {
+    "id": "surfshark",
+    "service": "surfshark",
+    "name": "Surfshark",
+    "url": "https://surfshark.com/pricing",
+    "parser": "surfshark"
+  },
+  {
+    "id": "adobe",
+    "service": "adobe",
+    "name": "Adobe 한국",
+    "url": "https://www.adobe.com/kr/offer-terms/cc-full-special-offer-intro.html",
+    "parser": "adobe"
+  },
+  {
+    "id": "nordvpn",
+    "service": "nordvpn",
+    "name": "NordVPN",
+    "url": "https://nordvpn.com/pricing/",
+    "parser": "nordvpn"
+  },
+  {
+    "id": "protonvpn",
+    "service": "protonvpn",
+    "name": "Proton VPN",
+    "url": "https://protonvpn.com/vpn-deals",
+    "parser": "event"
+  },
+  {
+    "id": "spotify",
+    "service": "spotify",
+    "name": "Spotify 한국",
+    "url": "https://www.spotify.com/kr/premium/",
+    "parser": "spotify"
+  },
+  {
+    "id": "apple-music",
+    "service": "apple-music",
+    "name": "Apple Music 한국",
+    "url": "https://www.apple.com/kr/apple-music/",
+    "parser": "apple-music"
+  },
+  {
+    "id": "naver-plus",
+    "service": "naver-plus",
+    "name": "네이버플러스",
+    "url": "https://nid.naver.com/membership/join",
+    "parser": "event"
+  },
+  {
+    "id": "yodok",
+    "service": "yodok",
+    "name": "LG U+ 유독",
+    "url": "https://www.lguplus.com/pogg/evet",
+    "parser": "event",
+    "discover": true
+  },
+  {
+    "id": "tving",
+    "service": "tving",
+    "name": "티빙",
+    "url": "https://www.tving.com/event",
+    "parser": "event",
+    "discover": true
+  },
+  {
+    "id": "wavve",
+    "service": "wavve",
+    "name": "웨이브",
+    "url": "https://www.wavve.com/customer/event",
+    "parser": "event",
+    "discover": true
+  },
+  {
+    "id": "canva",
+    "service": "canva",
+    "name": "Canva",
+    "url": "https://www.canva.com/pricing/",
+    "parser": "event"
+  },
+  {
+    "id": "notion",
+    "service": "notion",
+    "name": "Notion",
+    "url": "https://www.notion.com/pricing",
+    "parser": "event"
+  },
+  {
+    "id": "disney-plus",
+    "service": "disney-plus",
+    "name": "디즈니+ 한국",
+    "url": "https://www.disneyplus.com/ko-kr",
+    "parser": "event"
+  },
+  {
+    "id": "claude",
+    "service": "claude",
+    "name": "Claude",
+    "url": "https://claude.com/pricing",
+    "parser": "event"
+  }
+]

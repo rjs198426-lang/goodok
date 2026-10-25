@@ -1,0 +1,41 @@
+name: Collect subscription benefits hourly
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['backend/**', '.github/workflows/collect-benefits.yml']
+permissions:
+  contents: write
+concurrency:
+  group: benefits-database
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run tests
+        run: python -m unittest discover -s backend/tests -v
+      - name: Research official sources and update SQLite
+        id: collect
+        continue-on-error: true
+        run: python backend/collector.py
+      - name: Commit public feed and database
+        if: always()
+        run: |
+          git config user.name 'goodok-benefits-bot'
+          git config user.email 'goodok-benefits-bot@users.noreply.github.com'
+          git add backend/data/feed.json backend/data/benefits.sqlite
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh verified subscription benefits [skip ci]'
+            git push
+          fi
+      - name: Report research failure
+        if: steps.collect.outcome == 'failure'
+        run: exit 1
