@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T12:04:47Z",
-  "lastSuccessAt": "2026-10-25T12:04:47Z",
+  "generatedAt": "2026-10-25T12:11:25Z",
+  "lastSuccessAt": "2026-10-25T12:11:25Z",
   "offers": [
     {
       "id": "dff625c040866fdd04888146",
@@ -14,11 +14,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T12:04:47Z",
+      "verifiedAt": "2026-10-25T12:11:25Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T12:04:47Z",
+        "checkedAt": "2026-10-25T12:11:25Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T12:04:47Z",
+      "verifiedAt": "2026-10-25T12:11:25Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T12:04:47Z",
+        "checkedAt": "2026-10-25T12:11:25Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T12:04:47Z",
+      "verifiedAt": "2026-10-25T12:11:25Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T12:04:47Z",
+        "checkedAt": "2026-10-25T12:11:25Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     }
@@ -865,7 +865,8 @@
       "officialUrl": "https://chatgpt.com/pricing",
       "officialHost": "chatgpt.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "assistant"
     },
     {
       "key": "grok",
@@ -881,7 +882,8 @@
       "officialUrl": "https://grok.com/",
       "officialHost": "grok.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "assistant"
     },
     {
       "key": "lovable",
@@ -897,7 +899,8 @@
       "officialUrl": "https://lovable.dev/pricing",
       "officialHost": "lovable.dev",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "appbuilder"
     },
     {
       "key": "krea",
@@ -913,7 +916,8 @@
       "officialUrl": "https://www.krea.ai/pricing",
       "officialHost": "www.krea.ai",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "image"
     },
     {
       "key": "claude",
@@ -927,7 +931,8 @@
       "officialUrl": "https://claude.com/pricing",
       "officialHost": "claude.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "assistant"
     },
     {
       "key": "gemini",
@@ -946,7 +951,8 @@
       "officialUrl": "https://gemini.google/subscriptions/",
       "officialHost": "gemini.google",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "assistant"
     },
     {
       "key": "perplexity",
@@ -961,7 +967,8 @@
       "officialUrl": "https://www.perplexity.ai/pro",
       "officialHost": "www.perplexity.ai",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "assistant"
     },
     {
       "key": "copilot",
@@ -977,7 +984,8 @@
       "officialUrl": "https://www.microsoft.com/microsoft-copilot",
       "officialHost": "www.microsoft.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "assistant"
     },
     {
       "key": "github-copilot",
@@ -992,7 +1000,8 @@
       "officialUrl": "https://github.com/features/copilot/plans",
       "officialHost": "github.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "coding"
     },
     {
       "key": "midjourney",
@@ -1006,7 +1015,8 @@
       "officialUrl": "https://www.midjourney.com/",
       "officialHost": "www.midjourney.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "image"
     },
     {
       "key": "cursor",
@@ -1020,7 +1030,8 @@
       "officialUrl": "https://cursor.com/pricing",
       "officialHost": "cursor.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "coding"
     },
     {
       "key": "suno",
@@ -1034,7 +1045,8 @@
       "officialUrl": "https://suno.com/pricing",
       "officialHost": "suno.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "music_creation"
     },
     {
       "key": "netflix",
@@ -1047,7 +1059,8 @@
       "officialUrl": "https://help.netflix.com/ko/node/24926",
       "officialHost": "help.netflix.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "youtube",
@@ -1063,7 +1076,8 @@
       "officialUrl": "https://www.youtube.com/premium",
       "officialHost": "www.youtube.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "disney-plus",
@@ -1079,7 +1093,8 @@
       "officialUrl": "https://www.disneyplus.com/ko-kr",
       "officialHost": "www.disneyplus.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "tving",
@@ -1092,7 +1107,8 @@
       "officialUrl": "https://www.tving.com/",
       "officialHost": "www.tving.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "wavve",
@@ -1105,7 +1121,8 @@
       "officialUrl": "https://www.wavve.com/",
       "officialHost": "www.wavve.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "watcha",
@@ -1118,7 +1135,8 @@
       "officialUrl": "https://watcha.com/",
       "officialHost": "watcha.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "coupang-play",
@@ -1131,7 +1149,8 @@
       "officialUrl": "https://www.coupangplay.com/",
       "officialHost": "www.coupangplay.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "apple-tv",
@@ -1146,7 +1165,8 @@
       "officialUrl": "https://www.apple.com/kr/apple-tv/",
       "officialHost": "www.apple.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "prime-video",
@@ -1162,7 +1182,8 @@
       "officialUrl": "https://www.primevideo.com/",
       "officialHost": "www.primevideo.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "video"
     },
     {
       "key": "naver-plus",
@@ -1179,7 +1200,8 @@
       "officialUrl": "https://nid.naver.com/membership/join",
       "officialHost": "nid.naver.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "coupang",
@@ -1195,7 +1217,8 @@
       "officialUrl": "https://www.coupang.com/",
       "officialHost": "www.coupang.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "amazon-prime",
@@ -1209,7 +1232,8 @@
       "officialUrl": "https://www.amazon.com/amazonprime",
       "officialHost": "www.amazon.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "yodok",
@@ -1225,7 +1249,8 @@
       "officialUrl": "https://www.lguplus.com/pogg/",
       "officialHost": "www.lguplus.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "surfshark",
@@ -1240,7 +1265,8 @@
       "officialUrl": "https://surfshark.com/pricing",
       "officialHost": "surfshark.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "vpn"
     },
     {
       "key": "nordvpn",
@@ -1255,7 +1281,8 @@
       "officialUrl": "https://nordvpn.com/pricing/",
       "officialHost": "nordvpn.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "vpn"
     },
     {
       "key": "expressvpn",
@@ -1270,7 +1297,8 @@
       "officialUrl": "https://www.expressvpn.com/order",
       "officialHost": "www.expressvpn.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "vpn"
     },
     {
       "key": "protonvpn",
@@ -1285,7 +1313,8 @@
       "officialUrl": "https://protonvpn.com/pricing",
       "officialHost": "protonvpn.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "vpn"
     },
     {
       "key": "microsoft365",
@@ -1304,7 +1333,8 @@
       "officialUrl": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
       "officialHost": "www.microsoft.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "office"
     },
     {
       "key": "notion",
@@ -1318,7 +1348,8 @@
       "officialUrl": "https://www.notion.com/pricing",
       "officialHost": "www.notion.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "notes"
     },
     {
       "key": "icloud",
@@ -1332,7 +1363,8 @@
       "officialUrl": "https://www.apple.com/kr/icloud/",
       "officialHost": "www.apple.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "storage"
     },
     {
       "key": "google-one",
@@ -1346,7 +1378,8 @@
       "officialUrl": "https://one.google.com/about/plans",
       "officialHost": "one.google.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "storage"
     },
     {
       "key": "google-workspace",
@@ -1362,7 +1395,8 @@
       "officialUrl": "https://workspace.google.com/pricing.html",
       "officialHost": "workspace.google.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "office"
     },
     {
       "key": "dropbox",
@@ -1377,7 +1411,8 @@
       "officialUrl": "https://www.dropbox.com/plans",
       "officialHost": "www.dropbox.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "storage"
     },
     {
       "key": "adobe",
@@ -1393,7 +1428,8 @@
       "officialUrl": "https://www.adobe.com/kr/creativecloud/plans.html",
       "officialHost": "www.adobe.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "canva",
@@ -1407,7 +1443,8 @@
       "officialUrl": "https://www.canva.com/pricing/",
       "officialHost": "www.canva.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "figma",
@@ -1421,7 +1458,8 @@
       "officialUrl": "https://www.figma.com/pricing/",
       "officialHost": "www.figma.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "zoom",
@@ -1435,7 +1473,8 @@
       "officialUrl": "https://www.zoom.com/en/products/virtual-meetings/",
       "officialHost": "www.zoom.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "slack",
@@ -1449,7 +1488,8 @@
       "officialUrl": "https://slack.com/pricing",
       "officialHost": "slack.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "onedrive",
@@ -1463,7 +1503,8 @@
       "officialUrl": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
       "officialHost": "www.microsoft.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "storage"
     },
     {
       "key": "evernote",
@@ -1477,7 +1518,8 @@
       "officialUrl": "https://evernote.com/compare-plans",
       "officialHost": "evernote.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "notes"
     },
     {
       "key": "kakao-emoticon",
@@ -1492,7 +1534,8 @@
       "officialUrl": "https://emoticon.kakao.com/",
       "officialHost": "emoticon.kakao.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "kakao-drawer",
@@ -1508,7 +1551,8 @@
       "officialUrl": "https://drive.kakao.com/",
       "officialHost": "drive.kakao.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "kakao-page",
@@ -1521,7 +1565,8 @@
       "officialUrl": "https://page.kakao.com/",
       "officialHost": "page.kakao.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "kakao-webtoon",
@@ -1534,7 +1579,8 @@
       "officialUrl": "https://webtoon.kakao.com/",
       "officialHost": "webtoon.kakao.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "kakao",
@@ -1548,7 +1594,8 @@
       "officialUrl": "https://www.kakaocorp.com/",
       "officialHost": "www.kakaocorp.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     },
     {
       "key": "spotify",
@@ -1562,7 +1609,8 @@
       "officialUrl": "https://www.spotify.com/kr-ko/premium/",
       "officialHost": "www.spotify.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "music"
     },
     {
       "key": "youtube-music",
@@ -1576,7 +1624,8 @@
       "officialUrl": "https://music.youtube.com/music_premium",
       "officialHost": "music.youtube.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "music"
     },
     {
       "key": "apple-music",
@@ -1590,7 +1639,8 @@
       "officialUrl": "https://www.apple.com/kr/apple-music/",
       "officialHost": "www.apple.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "music"
     },
     {
       "key": "tidal",
@@ -1604,7 +1654,8 @@
       "officialUrl": "https://tidal.com/",
       "officialHost": "tidal.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "music"
     },
     {
       "key": "deezer",
@@ -1618,7 +1669,8 @@
       "officialUrl": "https://www.deezer.com/",
       "officialHost": "www.deezer.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "music"
     },
     {
       "key": "duolingo",
@@ -1632,7 +1684,8 @@
       "officialUrl": "https://www.duolingo.com/super",
       "officialHost": "www.duolingo.com",
       "origin": "seed",
-      "status": "verified_identity"
+      "status": "verified_identity",
+      "purpose": "other"
     }
   ],
   "plans": [
@@ -1648,7 +1701,7 @@
       "commitmentMonths": 1,
       "introductory": false,
       "eligibility": "general",
-      "purpose": "productivity",
+      "purpose": "storage",
       "capabilities": {},
       "source": "https://www.dropbox.com/plans",
       "verifiedAt": "2026-10-25T11:54:28Z",
@@ -1682,7 +1735,7 @@
       },
       "source": "https://www.apple.com/kr/apple-music/",
       "verifiedAt": "2026-10-25T11:59:26Z",
-      "status": "verified",
+      "status": "candidate",
       "evidence": [
         {
           "field": "amount",
@@ -1722,11 +1775,11 @@
       "commitmentMonths": null,
       "introductory": false,
       "eligibility": "general",
-      "purpose": "assistant",
+      "purpose": "image",
       "capabilities": {},
       "source": "https://www.krea.ai/pricing",
       "verifiedAt": "2026-10-25T12:04:26Z",
-      "status": "verified",
+      "status": "candidate",
       "evidence": [
         {
           "field": "amount",
@@ -1746,11 +1799,11 @@
       "commitmentMonths": null,
       "introductory": false,
       "eligibility": "general",
-      "purpose": "assistant",
+      "purpose": "image",
       "capabilities": {},
       "source": "https://www.krea.ai/pricing",
       "verifiedAt": "2026-10-25T12:04:26Z",
-      "status": "verified",
+      "status": "candidate",
       "evidence": [
         {
           "field": "amount",
@@ -1770,15 +1823,91 @@
       "commitmentMonths": null,
       "introductory": false,
       "eligibility": "general",
-      "purpose": "assistant",
+      "purpose": "image",
       "capabilities": {},
       "source": "https://www.krea.ai/pricing",
       "verifiedAt": "2026-10-25T12:04:26Z",
-      "status": "verified",
+      "status": "candidate",
       "evidence": [
         {
           "field": "amount",
           "quote": "Max $63 /month"
+        }
+      ]
+    },
+    {
+      "id": "a2a72f1c3ddff35b9d73ed09",
+      "service": "cursor",
+      "name": "Plus",
+      "amount": 8.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-25T12:10:55Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Plus $8 /월"
+        }
+      ]
+    },
+    {
+      "id": "83d70292cceb594608a2dba4",
+      "service": "cursor",
+      "name": "Premium",
+      "amount": 30.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-25T12:10:55Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Premium $30 /월"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
+        }
+      ]
+    },
+    {
+      "id": "1c0f421607e3300c305b5b8a",
+      "service": "cursor",
+      "name": "Ultra",
+      "amount": 200.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-25T12:10:55Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Ultra $200 /월"
         }
       ]
     },
@@ -1802,7 +1931,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-25T12:04:34Z",
+      "verifiedAt": "2026-10-25T12:11:12Z",
       "status": "verified",
       "evidence": [
         {
@@ -1848,7 +1977,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-25T12:04:33Z",
+      "verifiedAt": "2026-10-25T12:11:12Z",
       "status": "verified",
       "evidence": [
         {
@@ -1892,7 +2021,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-25T12:04:36Z",
+      "verifiedAt": "2026-10-25T12:11:14Z",
       "status": "verified",
       "evidence": [
         {
@@ -1921,22 +2050,22 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 21
+        "attempts": 25
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 3
+        "attempts": 4
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 2
+        "attempts": 3
       },
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 24
+        "attempts": 28
       },
       {
         "name": "Google News",
@@ -1946,7 +2075,12 @@
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 11
+        "attempts": 13
+      },
+      {
+        "name": "Naver",
+        "status": "ok",
+        "attempts": 4
       },
       {
         "name": "Naver",
@@ -1956,12 +2090,12 @@
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 3
+        "attempts": 4
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 3
+        "attempts": 4
       },
       {
         "name": "Sumo 구독 할인",
@@ -1979,8 +2113,8 @@
         "attempts": 3
       }
     ],
-    "candidateCount": 176,
-    "factChecks": 27,
+    "candidateCount": 222,
+    "factChecks": 30,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
   }
