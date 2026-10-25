@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T12:57:14Z",
-  "lastSuccessAt": "2026-10-25T12:57:14Z",
+  "generatedAt": "2026-10-25T13:46:17Z",
+  "lastSuccessAt": "2026-10-25T13:46:17Z",
   "offers": [
     {
       "id": "dff625c040866fdd04888146",
@@ -14,11 +14,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T12:57:14Z",
+      "verifiedAt": "2026-10-25T13:46:17Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T12:57:14Z",
+        "checkedAt": "2026-10-25T13:46:17Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T12:57:14Z",
+      "verifiedAt": "2026-10-25T13:46:17Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T12:57:14Z",
+        "checkedAt": "2026-10-25T13:46:17Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,12 +52,31 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T12:57:14Z",
+      "verifiedAt": "2026-10-25T13:46:17Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T12:57:14Z",
+        "checkedAt": "2026-10-25T13:46:17Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
+    {
+      "id": "f02e69429695e06ad46fb2e8",
+      "service": "spotify",
+      "title": "Spotify 한국 개인 요금제 체험",
+      "benefit": "Premium 개인 1개월 ₩0",
+      "detail": "Spotify 한국 개인 요금제 체험",
+      "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
+      "ends": null,
+      "checked": "2026-10-25",
+      "verifiedAt": "2026-10-25T13:46:17Z",
+      "firstSeen": "2026-10-25T13:46:17Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-25T13:46:17Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     }
   ],
@@ -847,6 +866,12 @@
       "name": "Claude",
       "status": "ok",
       "verifiedOffers": 0
+    },
+    {
+      "id": "discovered-spotify",
+      "name": "Spotify 공식",
+      "status": "ok",
+      "verifiedOffers": 1
     }
   ],
   "catalog": [
@@ -1740,78 +1765,6 @@
       ]
     },
     {
-      "id": "2bffc38e09724b178e2a50b3",
-      "service": "krea",
-      "name": "Basic",
-      "amount": 5.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-25T12:04:26Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Basic $5 /month"
-        }
-      ]
-    },
-    {
-      "id": "e8cbd069fa838878acdba0eb",
-      "service": "krea",
-      "name": "Pro",
-      "amount": 21.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-25T12:04:26Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Pro $21 /month"
-        }
-      ]
-    },
-    {
-      "id": "c68765557ea1dd0587844b2a",
-      "service": "krea",
-      "name": "Max",
-      "amount": 63.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-25T12:04:26Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Max $63 /month"
-        }
-      ]
-    },
-    {
       "id": "a2a72f1c3ddff35b9d73ed09",
       "service": "cursor",
       "name": "Plus",
@@ -2008,6 +1961,78 @@
       ]
     },
     {
+      "id": "2bffc38e09724b178e2a50b3",
+      "service": "krea",
+      "name": "Basic",
+      "amount": 5.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-25T13:45:54Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Basic $5 /month"
+        }
+      ]
+    },
+    {
+      "id": "e8cbd069fa838878acdba0eb",
+      "service": "krea",
+      "name": "Pro",
+      "amount": 21.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-25T13:45:54Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Pro $21 /month"
+        }
+      ]
+    },
+    {
+      "id": "c68765557ea1dd0587844b2a",
+      "service": "krea",
+      "name": "Max",
+      "amount": 63.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-25T13:45:54Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Max $63 /month"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2027,7 +2052,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-25T12:57:00Z",
+      "verifiedAt": "2026-10-25T13:46:03Z",
       "status": "verified",
       "evidence": [
         {
@@ -2073,7 +2098,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-25T12:57:00Z",
+      "verifiedAt": "2026-10-25T13:46:04Z",
       "status": "verified",
       "evidence": [
         {
@@ -2117,7 +2142,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-25T12:57:01Z",
+      "verifiedAt": "2026-10-25T13:46:05Z",
       "status": "verified",
       "evidence": [
         {
@@ -2136,7 +2161,7 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 5
+        "attempts": 6
       },
       {
         "name": "Bing",
@@ -2146,7 +2171,7 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 37
+        "attempts": 41
       },
       {
         "name": "DealMirror",
@@ -2161,17 +2186,17 @@
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 40
+        "attempts": 44
       },
       {
         "name": "Google News",
         "status": "no_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 19
+        "attempts": 20
       },
       {
         "name": "Naver",
@@ -2181,7 +2206,7 @@
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 36
+        "attempts": 40
       },
       {
         "name": "Slickdeals",
@@ -2196,21 +2221,21 @@
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 5
+        "attempts": 6
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 5
+        "attempts": 6
       },
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 4
+        "attempts": 5
       }
     ],
-    "candidateCount": 274,
-    "factChecks": 34,
+    "candidateCount": 289,
+    "factChecks": 36,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
   }
