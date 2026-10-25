@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T09:41:23Z",
-  "lastSuccessAt": "2026-10-25T09:41:23Z",
+  "generatedAt": "2026-10-25T10:09:20Z",
+  "lastSuccessAt": "2026-10-25T10:09:20Z",
   "offers": [
     {
       "id": "dff625c040866fdd04888146",
@@ -14,8 +14,13 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T09:41:23Z",
-      "firstSeen": "2026-10-25T09:41:23Z"
+      "verifiedAt": "2026-10-25T10:09:20Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-25T10:09:20Z",
+        "officialSource": "https://surfshark.com/pricing"
+      }
     },
     {
       "id": "668904af76c1b2937b22f025",
@@ -28,8 +33,13 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T09:41:23Z",
-      "firstSeen": "2026-10-25T09:41:23Z"
+      "verifiedAt": "2026-10-25T10:09:20Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-25T10:09:20Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
+      }
     },
     {
       "id": "03662b6cb2524fe23655be83",
@@ -42,8 +52,13 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T09:41:23Z",
-      "firstSeen": "2026-10-25T09:41:23Z"
+      "verifiedAt": "2026-10-25T10:09:20Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-25T10:09:20Z",
+        "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
     }
   ],
   "comparisons": {
@@ -833,5 +848,924 @@
       "status": "ok",
       "verifiedOffers": 0
     }
-  ]
+  ],
+  "catalog": [
+    {
+      "key": "chatgpt",
+      "name": "ChatGPT",
+      "category": "AI",
+      "aliases": [
+        "ChatGPT",
+        "챗지피티",
+        "챗gpt",
+        "챗GPT",
+        "chatgpt",
+        "openai"
+      ],
+      "officialUrl": "https://chatgpt.com/pricing",
+      "officialHost": "chatgpt.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "grok",
+      "name": "Grok",
+      "category": "AI",
+      "aliases": [
+        "Grok",
+        "그록",
+        "SuperGrok",
+        "슈퍼그록",
+        "xAI"
+      ],
+      "officialUrl": "https://grok.com/",
+      "officialHost": "grok.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "lovable",
+      "name": "Lovable",
+      "category": "AI",
+      "aliases": [
+        "Lovable",
+        "러버블",
+        "로버블",
+        "러버블 AI",
+        "lovableai"
+      ],
+      "officialUrl": "https://lovable.dev/pricing",
+      "officialHost": "lovable.dev",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "krea",
+      "name": "Krea AI",
+      "category": "AI",
+      "aliases": [
+        "Krea AI",
+        "Krea",
+        "크레아",
+        "크리아",
+        "크레아 AI"
+      ],
+      "officialUrl": "https://www.krea.ai/pricing",
+      "officialHost": "www.krea.ai",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "claude",
+      "name": "Claude",
+      "category": "AI",
+      "aliases": [
+        "Claude",
+        "클로드",
+        "claude"
+      ],
+      "officialUrl": "https://claude.com/pricing",
+      "officialHost": "claude.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "gemini",
+      "name": "Google Gemini",
+      "category": "AI",
+      "aliases": [
+        "Google Gemini",
+        "제미나이",
+        "제미니",
+        "gemini",
+        "구글ai프로",
+        "googleaipro",
+        "구글ai울트라",
+        "googleaiultra"
+      ],
+      "officialUrl": "https://gemini.google/subscriptions/",
+      "officialHost": "gemini.google",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "perplexity",
+      "name": "Perplexity",
+      "category": "AI",
+      "aliases": [
+        "Perplexity",
+        "퍼플렉시티",
+        "퍼플렉시티프로",
+        "perplexity"
+      ],
+      "officialUrl": "https://www.perplexity.ai/pro",
+      "officialHost": "www.perplexity.ai",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "copilot",
+      "name": "Microsoft Copilot",
+      "category": "AI",
+      "aliases": [
+        "Microsoft Copilot",
+        "마이크로소프트코파일럿",
+        "microsoftcopilot",
+        "코파일럿",
+        "copilot"
+      ],
+      "officialUrl": "https://www.microsoft.com/microsoft-copilot",
+      "officialHost": "www.microsoft.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "github-copilot",
+      "name": "GitHub Copilot",
+      "category": "AI",
+      "aliases": [
+        "GitHub Copilot",
+        "githubcopilot",
+        "깃허브코파일럿",
+        "깃헙코파일럿"
+      ],
+      "officialUrl": "https://github.com/features/copilot/plans",
+      "officialHost": "github.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "midjourney",
+      "name": "Midjourney",
+      "category": "AI",
+      "aliases": [
+        "Midjourney",
+        "미드저니",
+        "midjourney"
+      ],
+      "officialUrl": "https://www.midjourney.com/",
+      "officialHost": "www.midjourney.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "cursor",
+      "name": "Cursor",
+      "category": "AI",
+      "aliases": [
+        "Cursor",
+        "커서",
+        "cursor"
+      ],
+      "officialUrl": "https://cursor.com/pricing",
+      "officialHost": "cursor.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "suno",
+      "name": "Suno",
+      "category": "AI",
+      "aliases": [
+        "Suno",
+        "수노",
+        "suno"
+      ],
+      "officialUrl": "https://suno.com/pricing",
+      "officialHost": "suno.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "netflix",
+      "name": "넷플릭스",
+      "category": "OTT",
+      "aliases": [
+        "넷플릭스",
+        "netflix"
+      ],
+      "officialUrl": "https://help.netflix.com/ko/node/24926",
+      "officialHost": "help.netflix.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "youtube",
+      "name": "YouTube Premium",
+      "category": "OTT",
+      "aliases": [
+        "YouTube Premium",
+        "유튜브프리미엄",
+        "유튜브",
+        "youtubepremium",
+        "youtube"
+      ],
+      "officialUrl": "https://www.youtube.com/premium",
+      "officialHost": "www.youtube.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "disney-plus",
+      "name": "디즈니+",
+      "category": "OTT",
+      "aliases": [
+        "디즈니+",
+        "디즈니플러스",
+        "disneyplus",
+        "disney+",
+        "디즈니"
+      ],
+      "officialUrl": "https://www.disneyplus.com/ko-kr",
+      "officialHost": "www.disneyplus.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "tving",
+      "name": "티빙",
+      "category": "OTT",
+      "aliases": [
+        "티빙",
+        "tving"
+      ],
+      "officialUrl": "https://www.tving.com/",
+      "officialHost": "www.tving.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "wavve",
+      "name": "웨이브",
+      "category": "OTT",
+      "aliases": [
+        "웨이브",
+        "wavve"
+      ],
+      "officialUrl": "https://www.wavve.com/",
+      "officialHost": "www.wavve.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "watcha",
+      "name": "왓챠",
+      "category": "OTT",
+      "aliases": [
+        "왓챠",
+        "watcha"
+      ],
+      "officialUrl": "https://watcha.com/",
+      "officialHost": "watcha.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "coupang-play",
+      "name": "쿠팡플레이",
+      "category": "OTT",
+      "aliases": [
+        "쿠팡플레이",
+        "coupangplay"
+      ],
+      "officialUrl": "https://www.coupangplay.com/",
+      "officialHost": "www.coupangplay.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "apple-tv",
+      "name": "Apple TV+",
+      "category": "OTT",
+      "aliases": [
+        "Apple TV+",
+        "애플tv",
+        "애플티비",
+        "appletv"
+      ],
+      "officialUrl": "https://www.apple.com/kr/apple-tv/",
+      "officialHost": "www.apple.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "prime-video",
+      "name": "Prime Video",
+      "category": "OTT",
+      "aliases": [
+        "Prime Video",
+        "프라임비디오",
+        "아마존프라임비디오",
+        "primevideo",
+        "amazonprimevideo"
+      ],
+      "officialUrl": "https://www.primevideo.com/",
+      "officialHost": "www.primevideo.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "naver-plus",
+      "name": "네이버플러스 멤버십",
+      "category": "쇼핑",
+      "aliases": [
+        "네이버플러스 멤버십",
+        "네이버플러스",
+        "네이버멤버십",
+        "naverplus",
+        "naver",
+        "네이버"
+      ],
+      "officialUrl": "https://nid.naver.com/membership/join",
+      "officialHost": "nid.naver.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "coupang",
+      "name": "쿠팡 와우",
+      "category": "쇼핑",
+      "aliases": [
+        "쿠팡 와우",
+        "쿠팡와우",
+        "쿠팡",
+        "coupangwow",
+        "coupang"
+      ],
+      "officialUrl": "https://www.coupang.com/",
+      "officialHost": "www.coupang.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "amazon-prime",
+      "name": "Amazon Prime",
+      "category": "쇼핑",
+      "aliases": [
+        "Amazon Prime",
+        "아마존프라임",
+        "amazonprime"
+      ],
+      "officialUrl": "https://www.amazon.com/amazonprime",
+      "officialHost": "www.amazon.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "yodok",
+      "name": "유독",
+      "category": "통신·결합",
+      "aliases": [
+        "유독",
+        "유독픽",
+        "yodok",
+        "udok",
+        "u+독"
+      ],
+      "officialUrl": "https://www.lguplus.com/pogg/",
+      "officialHost": "www.lguplus.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "surfshark",
+      "name": "Surfshark VPN",
+      "category": "VPN",
+      "aliases": [
+        "Surfshark VPN",
+        "서퍼샤크",
+        "서프샤크",
+        "surfshark"
+      ],
+      "officialUrl": "https://surfshark.com/pricing",
+      "officialHost": "surfshark.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "nordvpn",
+      "name": "NordVPN",
+      "category": "VPN",
+      "aliases": [
+        "NordVPN",
+        "노드vpn",
+        "노드브이피엔",
+        "nordvpn"
+      ],
+      "officialUrl": "https://nordvpn.com/pricing/",
+      "officialHost": "nordvpn.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "expressvpn",
+      "name": "ExpressVPN",
+      "category": "VPN",
+      "aliases": [
+        "ExpressVPN",
+        "익스프레스vpn",
+        "익스프레스브이피엔",
+        "expressvpn"
+      ],
+      "officialUrl": "https://www.expressvpn.com/order",
+      "officialHost": "www.expressvpn.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "protonvpn",
+      "name": "Proton VPN",
+      "category": "VPN",
+      "aliases": [
+        "Proton VPN",
+        "프로톤vpn",
+        "프로톤브이피엔",
+        "protonvpn"
+      ],
+      "officialUrl": "https://protonvpn.com/pricing",
+      "officialHost": "protonvpn.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "microsoft365",
+      "name": "Microsoft 365",
+      "category": "생산성",
+      "aliases": [
+        "Microsoft 365",
+        "m365",
+        "ms365",
+        "microsoft365",
+        "마이크로소프트365",
+        "오피스365",
+        "office365",
+        "마소365"
+      ],
+      "officialUrl": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
+      "officialHost": "www.microsoft.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "notion",
+      "name": "Notion",
+      "category": "생산성",
+      "aliases": [
+        "Notion",
+        "노션",
+        "notion"
+      ],
+      "officialUrl": "https://www.notion.com/pricing",
+      "officialHost": "www.notion.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "icloud",
+      "name": "iCloud+",
+      "category": "생산성",
+      "aliases": [
+        "iCloud+",
+        "아이클라우드",
+        "icloud"
+      ],
+      "officialUrl": "https://www.apple.com/kr/icloud/",
+      "officialHost": "www.apple.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "google-one",
+      "name": "Google One",
+      "category": "생산성",
+      "aliases": [
+        "Google One",
+        "구글원",
+        "googleone"
+      ],
+      "officialUrl": "https://one.google.com/about/plans",
+      "officialHost": "one.google.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "google-workspace",
+      "name": "Google Workspace",
+      "category": "생산성",
+      "aliases": [
+        "Google Workspace",
+        "구글워크스페이스",
+        "googleworkspace",
+        "gsuite",
+        "지스위트"
+      ],
+      "officialUrl": "https://workspace.google.com/pricing.html",
+      "officialHost": "workspace.google.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "dropbox",
+      "name": "Dropbox",
+      "category": "생산성",
+      "aliases": [
+        "Dropbox",
+        "드롭박스",
+        "드랍박스",
+        "dropbox"
+      ],
+      "officialUrl": "https://www.dropbox.com/plans",
+      "officialHost": "www.dropbox.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "adobe",
+      "name": "Adobe Creative Cloud",
+      "category": "생산성",
+      "aliases": [
+        "Adobe Creative Cloud",
+        "어도비",
+        "adobe",
+        "크리에이티브클라우드",
+        "creativecloud"
+      ],
+      "officialUrl": "https://www.adobe.com/kr/creativecloud/plans.html",
+      "officialHost": "www.adobe.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "canva",
+      "name": "Canva",
+      "category": "생산성",
+      "aliases": [
+        "Canva",
+        "캔바",
+        "canva"
+      ],
+      "officialUrl": "https://www.canva.com/pricing/",
+      "officialHost": "www.canva.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "figma",
+      "name": "Figma",
+      "category": "생산성",
+      "aliases": [
+        "Figma",
+        "피그마",
+        "figma"
+      ],
+      "officialUrl": "https://www.figma.com/pricing/",
+      "officialHost": "www.figma.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "zoom",
+      "name": "Zoom",
+      "category": "생산성",
+      "aliases": [
+        "Zoom",
+        "줌",
+        "zoom"
+      ],
+      "officialUrl": "https://www.zoom.com/en/products/virtual-meetings/",
+      "officialHost": "www.zoom.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "slack",
+      "name": "Slack",
+      "category": "생산성",
+      "aliases": [
+        "Slack",
+        "슬랙",
+        "slack"
+      ],
+      "officialUrl": "https://slack.com/pricing",
+      "officialHost": "slack.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "onedrive",
+      "name": "OneDrive",
+      "category": "생산성",
+      "aliases": [
+        "OneDrive",
+        "원드라이브",
+        "onedrive"
+      ],
+      "officialUrl": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "officialHost": "www.microsoft.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "evernote",
+      "name": "Evernote",
+      "category": "생산성",
+      "aliases": [
+        "Evernote",
+        "에버노트",
+        "evernote"
+      ],
+      "officialUrl": "https://evernote.com/compare-plans",
+      "officialHost": "evernote.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "kakao-emoticon",
+      "name": "카카오 이모티콘 플러스",
+      "category": "카카오",
+      "aliases": [
+        "카카오 이모티콘 플러스",
+        "이모티콘플러스",
+        "emoticonplus",
+        "카카오이모티콘"
+      ],
+      "officialUrl": "https://emoticon.kakao.com/",
+      "officialHost": "emoticon.kakao.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "kakao-drawer",
+      "name": "카카오 톡서랍 플러스",
+      "category": "카카오",
+      "aliases": [
+        "카카오 톡서랍 플러스",
+        "톡서랍",
+        "talkdrawer",
+        "카카오톡",
+        "kakaotalk"
+      ],
+      "officialUrl": "https://drive.kakao.com/",
+      "officialHost": "drive.kakao.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "kakao-page",
+      "name": "카카오페이지",
+      "category": "카카오",
+      "aliases": [
+        "카카오페이지",
+        "kakaopage"
+      ],
+      "officialUrl": "https://page.kakao.com/",
+      "officialHost": "page.kakao.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "kakao-webtoon",
+      "name": "카카오웹툰",
+      "category": "카카오",
+      "aliases": [
+        "카카오웹툰",
+        "kakaowebtoon"
+      ],
+      "officialUrl": "https://webtoon.kakao.com/",
+      "officialHost": "webtoon.kakao.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "kakao",
+      "name": "카카오 구독",
+      "category": "카카오",
+      "aliases": [
+        "카카오 구독",
+        "카카오",
+        "kakao"
+      ],
+      "officialUrl": "https://www.kakaocorp.com/",
+      "officialHost": "www.kakaocorp.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "spotify",
+      "name": "Spotify",
+      "category": "음악",
+      "aliases": [
+        "Spotify",
+        "스포티파이",
+        "spotify"
+      ],
+      "officialUrl": "https://www.spotify.com/kr-ko/premium/",
+      "officialHost": "www.spotify.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "youtube-music",
+      "name": "YouTube Music",
+      "category": "음악",
+      "aliases": [
+        "YouTube Music",
+        "유튜브뮤직",
+        "youtubemusic"
+      ],
+      "officialUrl": "https://music.youtube.com/music_premium",
+      "officialHost": "music.youtube.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "apple-music",
+      "name": "Apple Music",
+      "category": "음악",
+      "aliases": [
+        "Apple Music",
+        "애플뮤직",
+        "applemusic"
+      ],
+      "officialUrl": "https://www.apple.com/kr/apple-music/",
+      "officialHost": "www.apple.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "tidal",
+      "name": "Tidal",
+      "category": "음악",
+      "aliases": [
+        "Tidal",
+        "타이달",
+        "tidal"
+      ],
+      "officialUrl": "https://tidal.com/",
+      "officialHost": "tidal.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "deezer",
+      "name": "Deezer",
+      "category": "음악",
+      "aliases": [
+        "Deezer",
+        "디저",
+        "deezer"
+      ],
+      "officialUrl": "https://www.deezer.com/",
+      "officialHost": "www.deezer.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    },
+    {
+      "key": "duolingo",
+      "name": "Duolingo",
+      "category": "학습",
+      "aliases": [
+        "Duolingo",
+        "듀오링고",
+        "duolingo"
+      ],
+      "officialUrl": "https://www.duolingo.com/super",
+      "officialHost": "www.duolingo.com",
+      "origin": "seed",
+      "status": "verified_identity"
+    }
+  ],
+  "plans": [
+    {
+      "id": "spotify-regular-monthly",
+      "service": "spotify",
+      "name": "Premium 개인 · 월간",
+      "amount": 11990.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music",
+      "capabilities": {
+        "music": true,
+        "adfree": true,
+        "offline": true,
+        "lossless": true
+      },
+      "source": "https://www.spotify.com/kr/premium/",
+      "verifiedAt": "2026-10-25T10:09:13Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "이후에는 ₩11,990 (부가세 포함)/월이 부과됩니다. 언제든 해지 가능합니다. ₩0의 요금으로 1개월 이용해"
+        }
+      ]
+    },
+    {
+      "id": "apple-music-regular-monthly",
+      "service": "apple-music",
+      "name": "개인 · 월간",
+      "amount": 8900.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music",
+      "capabilities": {
+        "music": true,
+        "adfree": true,
+        "offline": true,
+        "lossless": true,
+        "spatial": true
+      },
+      "source": "https://www.apple.com/kr/apple-music/",
+      "verifiedAt": "2026-10-25T10:09:14Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "개인 ₩8,900/월, 신규 구독자는 첫 1개월 무료. 1억 곡 이상의 음악을 광고 없이 즐기고 기기에 내려받아 오프라인에서도 "
+        }
+      ]
+    },
+    {
+      "id": "disney-plus-regular-monthly",
+      "service": "disney-plus",
+      "name": "스탠다드 · 월간",
+      "amount": 9900.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "video",
+      "capabilities": {},
+      "source": "https://www.disneyplus.com/ko-kr",
+      "verifiedAt": "2026-10-25T10:09:15Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "디즈니+ 스탠다드 월 ₩13,900 월 ₩9,900 디즈니+ 프리미엄 디즈니+ 스탠다드 월 ₩13,900"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "providers": [
+      {
+        "name": "AppSumo",
+        "status": "ok",
+        "attempts": 1
+      },
+      {
+        "name": "Bing",
+        "status": "ok",
+        "attempts": 4
+      },
+      {
+        "name": "Google",
+        "status": "ok",
+        "attempts": 4
+      },
+      {
+        "name": "Google News",
+        "status": "publisher_candidates",
+        "attempts": 2
+      },
+      {
+        "name": "Naver",
+        "status": "unavailable",
+        "attempts": 4
+      },
+      {
+        "name": "Slickdeals",
+        "status": "ok",
+        "attempts": 1
+      },
+      {
+        "name": "StackSocial",
+        "status": "ok",
+        "attempts": 1
+      },
+      {
+        "name": "Sumo 구독 할인",
+        "status": "ok",
+        "attempts": 1
+      }
+    ],
+    "candidateCount": 57,
+    "factChecks": 8,
+    "verifiedCatalogCount": 0,
+    "catalogCount": 53
+  }
 }
