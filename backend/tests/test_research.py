@@ -21,3 +21,12 @@ class ResearchTests(unittest.TestCase):
   page=c.Page();page.feed('<p>₩0에 1개월 개인 요금제. 이후에는 ₩11,990 (부가세 포함)/월. 광고 없는 음악 오프라인 감상 무손실.</p>')
   source={'id':'spotify','url':'https://www.spotify.com/kr/premium/'};price=c.observed_price(source,page.text);plan=normal_plan(source,page,price,'2026-10-25T12:00:00Z')[0];self.assertEqual(plan['amount'],11990);self.assertFalse(plan['introductory']);self.assertTrue(plan['capabilities']['offline'])
 if __name__=='__main__':unittest.main()
+
+class TextPlanTests(unittest.TestCase):
+ def test_heading_scoped_normal_monthly_prices(self):
+  from catalog_engine import text_plans
+  page=c.Page();page.feed('<h2>Pro</h2><p>₩12,000/월</p><h2>Premium</h2><p>₩20,000/월</p>')
+  plans=text_plans(page,{'key':'new','category':'AI','officialUrl':'https://new.example/pricing'},'2026-10-25T12:00:00Z');self.assertEqual([p['amount'] for p in plans],[12000,20000])
+ def test_annual_monthly_equivalent_does_not_become_uncommitted_monthly_price(self):
+  from catalog_engine import text_plans
+  page=c.Page();page.feed('<h2>Pro</h2><p>₩12,000/월 연간 결제</p>');self.assertEqual(text_plans(page,{'key':'new','category':'AI','officialUrl':'https://new.example/'},'2026-10-25T12:00:00Z'),[])

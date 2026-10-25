@@ -11,11 +11,12 @@ UTC=dt.timezone.utc
 
 def stamp(value=None):return (value or dt.datetime.now(UTC)).isoformat(timespec='seconds').replace('+00:00','Z')
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None
+ def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None;self.sections=[];self.section=None
  def handle_starttag(self,tag,attrs):
   if tag in ('script','style','noscript'):self.skip+=1
   if tag=='script' and dict(attrs).get('type','').lower()=='application/ld+json':self.ld_buffer=[]
   if tag=='title':self.in_title=True
+  if re.fullmatch(r'h[1-4]',tag):self.section={'title':'','text':''};self.sections.append(self.section);self.heading=True
   if tag=='a':self.href=dict(attrs).get('href');self.label=[]
   if not self.skip:self.parts.append(' ')
  def handle_endtag(self,tag):
@@ -25,12 +26,16 @@ class Page(HTMLParser):
    self.ld_buffer=None
   if tag in ('script','style','noscript'):self.skip=max(0,self.skip-1)
   if tag=='title':self.in_title=False
+  if re.fullmatch(r'h[1-4]',tag):self.heading=False
   if tag=='a' and self.href:self.links.append((self.href,''.join(self.label)));self.href=None
   if not self.skip:self.parts.append(' ')
  def handle_data(self,data):
   if self.ld_buffer is not None:self.ld_buffer.append(data)
   if not self.skip:
    self.parts.append(data)
+   if self.section is not None:
+    self.section['text']+=' '+data
+    if getattr(self,'heading',False):self.section['title']+=data
    if self.href:self.label.append(data)
    if self.in_title:self.title.append(data)
  @property
