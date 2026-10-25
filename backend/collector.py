@@ -163,6 +163,13 @@ def store_and_export(db,results,now,out,profiles):
  feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'verifiedOffers':len(r['offers'])} for r in results]}
  catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
  plans=[json.loads(row[0]) for row in db.execute('SELECT payload FROM plan_facts WHERE last_verified>=?',(stamp(now-dt.timedelta(days=7)),))]
+ # Preserve old price evidence timestamps while correcting incomplete plan status and purpose metadata.
+ purpose_index={item['key']:item.get('purpose') for item in catalog}
+ for plan in plans:
+  if plan.get('commitmentMonths') is None:plan['status']='candidate'
+  if purpose_index.get(plan['service']):plan['purpose']=purpose_index[plan['service']]
+  db.execute('UPDATE plan_facts SET payload=? WHERE plan_id=?',(json.dumps(plan,ensure_ascii=False),plan['id']))
+ db.commit()
  query_rows=list(db.execute('SELECT provider,status,COUNT(*) FROM discovery_queries WHERE checked_at>=? GROUP BY provider,status',(stamp(now-dt.timedelta(days=1)),)))
  feed.update(catalog=catalog,plans=plans,research={'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'candidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog)})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
@@ -170,6 +177,7 @@ def store_and_export(db,results,now,out,profiles):
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--database',default=str(ROOT/'data/benefits.sqlite'));parser.add_argument('--output',default=str(ROOT/'data/feed.json'));args=parser.parse_args()
  sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
+ for source in sources:source['purpose']=next((seed.get('purpose') for seed in seeds if seed['key']==source['id']),None)
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
  attempts,candidates=run_discovery(db,seeds,fetch,timestamp)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))

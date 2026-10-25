@@ -15,7 +15,7 @@ def category_for(text):
  for category,pattern in [('VPN',r'\bVPN\b'),('음악',r'music|음악|음원'),('OTT',r'streaming video|영화|시리즈|OTT'),('AI',r'\bAI\b|인공지능|generative'),('생산성',r'productivity|workspace|협업|문서')]:
   if re.search(pattern,text,re.I):return category
  return '기타'
-def purpose_for(category):return {'음악':'music','OTT':'video','VPN':'vpn','AI':'assistant','생산성':'productivity'}.get(category,'other')
+def purpose_for(category):return {'음악':'music','OTT':'video','VPN':'vpn','AI':'ai_unspecified','생산성':'productivity'}.get(category,'other')
 
 def core_capabilities(text,purpose):
  capabilities={}
@@ -34,7 +34,7 @@ def capability_evidence(text):
 
 def normal_plan(source,page,observed,timestamp):
  if not observed:return []
- purpose=purpose_for(source.get('category') or {'spotify':'음악','apple-music':'음악','disney-plus':'OTT','claude':'AI'}.get(source['id'],'기타'))
+ purpose=source.get('purpose') or purpose_for(source.get('category') or {'spotify':'음악','apple-music':'음악','disney-plus':'OTT','claude':'AI'}.get(source['id'],'기타'))
  if source['id'] not in ('spotify','apple-music','disney-plus','claude'):return []
  amount=observed['monthly'];quote=''
  if source['id']=='spotify':match=re.search(r'이후에는\s*₩[\d,]+.{0,50}',page.text)
@@ -91,6 +91,8 @@ def text_plans(page,service,timestamp):
   if not currency:continue
   identifier=hashlib.sha256((service['key']+'|'+name+'|'+currency+'|monthly').encode()).hexdigest()[:24]
   result.append({'id':identifier,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':'monthly','region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'official_display','commitmentMonths':1 if re.search(r'cancel anytime|언제든.{0,15}해지|무약정',text,re.I) else None,'introductory':False,'eligibility':'general','purpose':service.get('purpose') or purpose_for(service['category']),'capabilities':core_capabilities(text,service.get('purpose') or purpose_for(service['category'])),'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':(name+' '+match[0])[:220]}]+capability_evidence(text)})
+ for plan in result:
+  if plan['commitmentMonths'] is None:plan['status']='candidate'
  return result
 
 def identify_new(page,url,seeds,reference):
@@ -108,7 +110,7 @@ def identify_new(page,url,seeds,reference):
  for seed in seeds:
   if any(alias.casefold() in name.casefold() for alias in [seed['name'],*seed.get('aliases',[])] if len(alias)>=4) and not same_site(seed['officialUrl'],url):return None
  description=str((products[0].get('description') if products else None) or page.meta.get('description') or page.meta.get('og:description') or '')[:240]
- return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else purpose_for(category_for(name+' '+description))), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
+ return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else 'coding' if re.search(r'coding|code editor|코딩',description,re.I) else 'assistant' if re.search(r'chatbot|AI assistant|대화형|챗봇',description,re.I) else purpose_for(category_for(name+' '+description))), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
 
 def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10):
  for seed in seeds:db.execute('INSERT INTO service_catalog VALUES(?,?,?,?) ON CONFLICT(service_key) DO UPDATE SET payload=excluded.payload',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
@@ -117,7 +119,7 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10)
  results=[];new_count=0
  for service in selected:
   try:
-   page=fetch(service['officialUrl']);source={'id':service['key'],'category':service['category'],'url':service['officialUrl']};price=observed_price(source,page.text)
+   page=fetch(service['officialUrl']);source={'id':service['key'],'category':service['category'],'purpose':service.get('purpose'),'url':service['officialUrl']};price=observed_price(source,page.text)
    plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)
    for plan in plans:
     payload=json.dumps(plan,ensure_ascii=False);db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],service['key'],payload,timestamp));db.execute('INSERT INTO plan_history VALUES(?,?,?)',(plan['id'],payload,timestamp))
