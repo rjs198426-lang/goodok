@@ -1,5 +1,7 @@
 import importlib.util,unittest,tempfile,datetime as dt,json
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).parents[1]))
 spec=importlib.util.spec_from_file_location('collector',Path(__file__).parents[1]/'collector.py');c=importlib.util.module_from_spec(spec);spec.loader.exec_module(c)
 class CollectorTests(unittest.TestCase):
  def test_parsing_rejects_unverified_and_expired_conditions(self):

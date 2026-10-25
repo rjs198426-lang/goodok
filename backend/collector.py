@@ -2,24 +2,33 @@
 import argparse,concurrent.futures,datetime as dt,hashlib,json,re,sqlite3,time,urllib.parse,urllib.request
 from pathlib import Path
 from html.parser import HTMLParser
+from discovery import safe_url,public_host,init_discovery,run_discovery
+from catalog_engine import normal_plan,expand_catalog
+from factcheck import verify_candidates
 ROOT=Path(__file__).resolve().parent
 MAX_BYTES=3*1024*1024
 UTC=dt.timezone.utc
 
 def stamp(value=None):return (value or dt.datetime.now(UTC)).isoformat(timespec='seconds').replace('+00:00','Z')
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False
+ def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None
  def handle_starttag(self,tag,attrs):
   if tag in ('script','style','noscript'):self.skip+=1
+  if tag=='script' and dict(attrs).get('type','').lower()=='application/ld+json':self.ld_buffer=[]
   if tag=='title':self.in_title=True
   if tag=='a':self.href=dict(attrs).get('href');self.label=[]
   if not self.skip:self.parts.append(' ')
  def handle_endtag(self,tag):
+  if tag=='script' and self.ld_buffer is not None:
+   try:self.jsonld.append(json.loads(''.join(self.ld_buffer)))
+   except (ValueError,TypeError):pass
+   self.ld_buffer=None
   if tag in ('script','style','noscript'):self.skip=max(0,self.skip-1)
   if tag=='title':self.in_title=False
   if tag=='a' and self.href:self.links.append((self.href,''.join(self.label)));self.href=None
   if not self.skip:self.parts.append(' ')
  def handle_data(self,data):
+  if self.ld_buffer is not None:self.ld_buffer.append(data)
   if not self.skip:
    self.parts.append(data)
    if self.href:self.label.append(data)
@@ -29,9 +38,10 @@ class Page(HTMLParser):
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
  def redirect_request(self,req,fp,code,msg,headers,newurl):
   old,new=urllib.parse.urlparse(req.full_url),urllib.parse.urlparse(newurl)
-  if new.scheme!='https' or new.hostname!=old.hostname:raise ValueError('cross-site redirect rejected')
+  if new.scheme!='https' or new.hostname!=old.hostname or not public_host(new.hostname):raise ValueError('cross-site redirect rejected')
   return super().redirect_request(req,fp,code,msg,headers,newurl)
 def fetch(url):
+ if not safe_url(url) or not public_host(urllib.parse.urlparse(url).hostname):raise ValueError('non-public URL')
  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 GoodokBenefits/2.0 (+public-offer-monitor)','Accept':'text/html','Accept-Language':'ko-KR,ko;q=0.9,en;q=0.8'})
  with urllib.request.build_opener(SafeRedirect()).open(req,timeout=18) as response:
   if 'text/html' not in response.headers.get('Content-Type',''):raise ValueError('not HTML')
@@ -107,7 +117,7 @@ def investigate(source):
      if offer:offers.append(offer)
      observations.append({'url':url,'status':'verified' if offer else 'no_verified_offer'})
     except Exception:observations.append({'url':url,'status':'unavailable'})
-  return {'id':source['id'],'name':source['name'],'status':'ok','offers':offers,'observations':observations,'price':observed_price(source,page.text)}
+  return {'id':source['id'],'name':source['name'],'status':'ok','offers':offers,'observations':observations,'price':observed_price(source,page.text),'plans':normal_plan(source,page,observed_price(source,page.text),stamp())}
  except Exception as exc:return {'id':source['id'],'name':source['name'],'status':'unavailable','offers':[],'observations':[{'url':source['url'],'status':'unavailable'}]}
 
 def init_db(path):
@@ -116,7 +126,7 @@ def init_db(path):
  CREATE TABLE IF NOT EXISTS observations(run_id INTEGER,source_id TEXT,url TEXT,status TEXT,checked_at TEXT);
  CREATE TABLE IF NOT EXISTS offers(id TEXT PRIMARY KEY,source_id TEXT,payload TEXT,first_seen TEXT,last_verified TEXT);
  CREATE TABLE IF NOT EXISTS comparison_profiles(service TEXT PRIMARY KEY,payload TEXT,checked_at TEXT);
- ''');return db
+ ''');init_discovery(db);return db
 
 def store_and_export(db,results,now,out,profiles):
  profiles=json.loads(json.dumps(profiles));timestamp=stamp(now);day=now.astimezone(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
@@ -124,25 +134,40 @@ def store_and_export(db,results,now,out,profiles):
   run=db.execute('INSERT INTO runs(started_at,finished_at,successful_sources,total_sources) VALUES(?,?,?,?)',(timestamp,timestamp,sum(r['status']=='ok' for r in results),len(results))).lastrowid
   for result in results:
    if result.get('price') and result['id'] in profiles:profiles[result['id']]['price']=result['price']
+   for plan in result.get('plans',[]):
+    payload=json.dumps(plan,ensure_ascii=False);db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],plan['service'],payload,plan['verifiedAt']));db.execute('INSERT INTO plan_history VALUES(?,?,?)',(plan['id'],payload,plan['verifiedAt']))
    for observation in result['observations']:db.execute('INSERT INTO observations VALUES(?,?,?,?,?)',(run,result['id'],observation['url'],observation['status'],timestamp))
    for offer in result['offers']:
     db.execute('INSERT INTO offers VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,last_verified=excluded.last_verified',(offer['id'],result['id'],json.dumps(offer,ensure_ascii=False),timestamp,timestamp))
-  for service,profile in profiles.items():db.execute('INSERT OR REPLACE INTO comparison_profiles VALUES(?,?,?)',(service,json.dumps(profile,ensure_ascii=False),profile.get('checked',day)))
+  for service,profile in profiles.items():
+   previous=db.execute('SELECT payload FROM comparison_profiles WHERE service=?',(service,)).fetchone()
+   if previous:
+    old=json.loads(previous[0]);old_price=old.get('price');new_price=profile.get('price')
+    if old_price and (not new_price or old_price.get('checked','')>new_price.get('checked','')):profile['price']=old_price
+   db.execute('INSERT OR REPLACE INTO comparison_profiles VALUES(?,?,?)',(service,json.dumps(profile,ensure_ascii=False),profile.get('checked',day)))
   db.execute('DELETE FROM observations WHERE checked_at < ?', (stamp(now-dt.timedelta(days=30)),))
  offers=[]
  for payload,first,last in db.execute('SELECT payload,first_seen,last_verified FROM offers ORDER BY last_verified DESC'):
   offer=json.loads(payload)
   if last<stamp(now-dt.timedelta(hours=72)) or (offer['ends'] and offer['ends']<day):continue
-  offer.update(checked=last[:10],verifiedAt=last,firstSeen=first);offer.pop('evidence',None);offers.append(offer)
+  offer.update(checked=last[:10],verifiedAt=last,firstSeen=first);offer.pop('evidence',None);offer['factCheck']={'status':'official_verified','checkedAt':last,'officialSource':offer['source']};offers.append(offer)
  latest_success=db.execute('SELECT MAX(finished_at) FROM runs WHERE successful_sources>0').fetchone()[0]
  feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'verifiedOffers':len(r['offers'])} for r in results]}
+ catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
+ plans=[json.loads(row[0]) for row in db.execute('SELECT payload FROM plan_facts WHERE last_verified>=?',(stamp(now-dt.timedelta(days=7)),))]
+ query_rows=list(db.execute('SELECT provider,status,COUNT(*) FROM discovery_queries WHERE checked_at>=? GROUP BY provider,status',(stamp(now-dt.timedelta(days=1)),)))
+ feed.update(catalog=catalog,plans=plans,research={'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'candidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog)})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
 
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--database',default=str(ROOT/'data/benefits.sqlite'));parser.add_argument('--output',default=str(ROOT/'data/feed.json'));args=parser.parse_args()
- sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
+ sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
+ db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
+ attempts,candidates=run_discovery(db,seeds,fetch,timestamp)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))
- db=init_db(args.database);feed=store_and_export(db,results,dt.datetime.now(UTC),Path(args.output),profiles);db.close()
- print(json.dumps({'sources':len(results),'available':sum(r['status']=='ok' for r in results),'offers':len(feed['offers'])}))
+ catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp)
+ checks=verify_candidates(db,seeds,[offer for result in results for offer in result['offers']],fetch,timestamp)
+ feed=store_and_export(db,results,dt.datetime.now(UTC),Path(args.output),profiles);db.close()
+ print(json.dumps({'sources':len(results),'available':sum(r['status']=='ok' for r in results),'offers':len(feed['offers']),'searchAttempts':len(attempts),'candidates':len(candidates),'catalogue':catalogue,'factChecks':checks}))
  if not any(r['status']=='ok' for r in results):raise SystemExit('All sources unavailable; previous verified results retained with original verification times')
 if __name__=='__main__':main()

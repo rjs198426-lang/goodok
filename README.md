@@ -18,3 +18,14 @@ python backend/collector.py
 ```
 
 `Collect subscription benefits hourly` 작업의 Run workflow로 첫 수집을 시작할 수 있습니다. 모든 출처 연결이 실패하면 작업은 실패로 보고하고 이전 정상 자료의 실제 확인일을 유지합니다.
+
+## Research pipeline v2
+
+The scheduled job runs without the Android app. Every run now queries Google, Naver and Bing public search pages, Google News RSS, and a rotating selection of eight deal/community sites. Provider failures, bot blocks, empty results and publisher-only RSS candidates are recorded explicitly. A Google News publisher link is a discovery lead, not a verified article claim. No captcha or access restriction is bypassed.
+
+- The existing 53 services seed a persistent catalogue. Ten catalogue entries are revisited per run, using a durable cursor rather than a fixed 14-page ceiling.
+- Discovery URLs, referral URLs, claims and official fact checks are stored separately. Third-party text alone cannot enter the verified offers feed.
+- New providers require a referring discovery source, matching first-party structured organization identity, and an explicit recurring structured price. Brand/domain collisions, lifetime licences, unclear billing intervals and unsupported prices remain pending.
+- Structured monthly/yearly prices and supported source-specific normal prices are recorded with currency, period, region, introductory eligibility, verification time and evidence. Trial prices do not become normal comparison prices.
+- The feed exports `catalog`, `plans` and `research` as well as existing offers. Unknown conditions are preserved as unknown; an absent value does not mean a missing feature.
+- Search/crawl budgets bound each run; the persistent queues and cursors expand coverage over successive hourly runs. Search engines may deny automated access, and JavaScript-only sites may remain unverified. The run's actual statuses are exposed in `research.providers`.
