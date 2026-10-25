@@ -73,6 +73,7 @@ def structured_plans(page,service,timestamp):
 
 def text_plans(page,service,timestamp):
  result=[]
+ if not re.search(r'pricing|plans?|price|subscription|compare|premium|buy|요금|가격',service['officialUrl']+' '+''.join(page.title),re.I):return []
  for section in page.sections:
   name=re.sub(r'\s+',' ',section['title']).strip();text=re.sub(r'\s+',' ',section['text']).strip()
   if len(name)>90 or not re.search(r'\b(?:Pro|Plus|Personal|Individual|Standard|Premium|Basic|Starter|Free|Max|Ultra)\b|개인|스탠다드|프리미엄|베이직',name,re.I):continue
@@ -97,12 +98,16 @@ def identify_new(page,url,seeds,reference):
  organizations=[item for item in flatten(page.jsonld) if item.get('@type') in ('Organization','Corporation')]
  products=[item for item in flatten(page.jsonld) if item.get('@type') in ('Product','SoftwareApplication','Service')]
  organization=next((item for item in organizations if safe_url(item.get('url')) and same_site(item['url'],url)),None)
- if not organization or not products:return None
- name=str(organization.get('name') or products[0].get('name') or '').strip()
+ if not organization:return None
+ name=str(organization.get('name') or (products[0].get('name') if products else '') or '').strip()
+ if not products:
+  legal=any(re.search(r'terms|privacy|이용약관|개인정보',label,re.I) for _,label in page.links)
+  if not legal or name.casefold() not in ''.join(page.title).casefold():return None
+ elif not any(name.casefold() in str(product.get('name','')).casefold() or str(product.get('name','')).casefold() in name.casefold() for product in products):return None
  if not name or len(name)>80:return None
  for seed in seeds:
   if any(alias.casefold() in name.casefold() for alias in [seed['name'],*seed.get('aliases',[])] if len(alias)>=4) and not same_site(seed['officialUrl'],url):return None
- description=str(products[0].get('description') or '')[:240]
+ description=str((products[0].get('description') if products else None) or page.meta.get('description') or page.meta.get('og:description') or '')[:240]
  return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else purpose_for(category_for(name+' '+description))), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
 
 def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10):

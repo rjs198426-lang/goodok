@@ -25,7 +25,7 @@ if __name__=='__main__':unittest.main()
 class TextPlanTests(unittest.TestCase):
  def test_heading_scoped_normal_monthly_prices(self):
   from catalog_engine import text_plans
-  page=c.Page();page.feed('<h2>Pro</h2><p>₩12,000/월</p><h2>Premium</h2><p>₩20,000/월</p>')
+  page=c.Page();page.feed('<title>Plans</title><h2>Pro</h2><p>₩12,000/월</p><h2>Premium</h2><p>₩20,000/월</p>')
   plans=text_plans(page,{'key':'new','category':'AI','officialUrl':'https://new.example/pricing'},'2026-10-25T12:00:00Z');self.assertEqual([p['amount'] for p in plans],[12000,20000])
  def test_annual_monthly_equivalent_does_not_become_uncommitted_monthly_price(self):
   from catalog_engine import text_plans

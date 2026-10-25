@@ -11,10 +11,13 @@ UTC=dt.timezone.utc
 
 def stamp(value=None):return (value or dt.datetime.now(UTC)).isoformat(timespec='seconds').replace('+00:00','Z')
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None;self.sections=[];self.section=None
+ def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None;self.sections=[];self.section=None;self.meta={}
  def handle_starttag(self,tag,attrs):
   if tag in ('script','style','noscript'):self.skip+=1
   if tag=='script' and dict(attrs).get('type','').lower()=='application/ld+json':self.ld_buffer=[]
+  if tag=='meta':
+   info=dict(attrs);key=info.get('property') or info.get('name')
+   if key:self.meta[key]=info.get('content','')
   if tag=='title':self.in_title=True
   if re.fullmatch(r'h[1-4]',tag):self.section={'title':'','text':''};self.sections.append(self.section);self.heading=True
   if tag=='a':self.href=dict(attrs).get('href');self.label=[]
