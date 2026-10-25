@@ -4,15 +4,27 @@ from discovery import safe_url
 
 def money_tokens(text):return set(re.findall(r'(?:₩|\$|€|£)\s*[\d,]+(?:\.\d+)?',text))
 def same_host(a,b):return urllib.parse.urlparse(a).hostname.removeprefix('www.')==urllib.parse.urlparse(b).hostname.removeprefix('www.')
-def verify_candidates(db,seeds,offers,fetch,timestamp,budget=8):
+def verify_candidates(db,seeds,offers,fetch,timestamp,budget=8,extract_offer=None):
  rows=list(db.execute("SELECT url,title,service_key FROM candidates WHERE status='pending' ORDER BY last_seen LIMIT ?",(budget,)))
- stats={'checked':0,'confirmed':0,'pending':0}
+ stats={'checked':0,'confirmed':0,'pending':0,'verifiedOffers':[]}
  for url,title,service_key in rows:
-  seed=next((s for s in seeds if s['key']==service_key),None)
+  seed=next((s for s in seeds if s['key']==service_key),None) or next((s for s in seeds if same_host(s['officialUrl'],url)),None)
   if not seed:continue
   stats['checked']+=1;official=next((offer for offer in offers if offer['service']==service_key),None);status='needs_verification';reason='공식 페이지에서 동일 혜택을 확인하지 못했어요.';evidence='';official_url=seed['officialUrl']
   try:
    page=fetch(url)
+   if extract_offer and not official:
+    official_pages=[(url,page)] if same_host(url,seed['officialUrl']) else []
+    for href,label in page.links:
+     candidate=safe_url(urllib.parse.urljoin(url,href))
+     if candidate and same_host(candidate,seed['officialUrl']) and re.search(r'offer|event|promo|coupon|할인|이벤트|혜택',candidate+' '+label,re.I):
+      try:official_pages.append((candidate,fetch(candidate)))
+      except Exception:pass
+      if len(official_pages)>=2:break
+    for official_page_url,official_page in official_pages:
+     source={'id':seed['key'],'service':seed['key'],'name':seed['name'],'url':official_page_url,'parser':seed['key'] if seed['key'] in ('surfshark','adobe','spotify','apple-music','nordvpn') else 'event'}
+     observed=extract_offer(source,official_page,official_page_url)
+     if observed and (not observed.get('ends') or observed['ends']>=timestamp[:10]):official=observed;stats['verifiedOffers'].append(observed);break
    if official:
     official_url=official['source'];prices=money_tokens(official['benefit']);claim_prices=money_tokens(page.text)
     # A generic percentage is not sufficient: require a first-party match or full exact price/term evidence.

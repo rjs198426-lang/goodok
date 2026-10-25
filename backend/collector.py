@@ -181,8 +181,15 @@ def main():
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
  attempts,candidates=run_discovery(db,seeds,fetch,timestamp)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))
- catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp)
- checks=verify_candidates(db,seeds,[offer for result in results for offer in result['offers']],fetch,timestamp)
+ catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract)
+ discovered_offers=catalogue.pop('verifiedOffers',[])
+ all_catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
+ checks=verify_candidates(db,all_catalog,[offer for result in results for offer in result['offers']]+discovered_offers,fetch,timestamp,extract_offer=extract)
+ discovered_offers+=checks.pop('verifiedOffers',[])
+ existing={offer['id'] for result in results for offer in result['offers']}
+ for offer in discovered_offers:
+  if offer['id'] in existing:continue
+  existing.add(offer['id']);results.append({'id':'discovered-'+offer['service'],'name':offer['publisher'],'status':'ok','offers':[offer],'observations':[{'url':offer['source'],'status':'verified'}]})
  feed=store_and_export(db,results,dt.datetime.now(UTC),Path(args.output),profiles);db.close()
  print(json.dumps({'sources':len(results),'available':sum(r['status']=='ok' for r in results),'offers':len(feed['offers']),'searchAttempts':len(attempts),'candidates':len(candidates),'catalogue':catalogue,'factChecks':checks}))
  if not any(r['status']=='ok' for r in results):raise SystemExit('All sources unavailable; previous verified results retained with original verification times')

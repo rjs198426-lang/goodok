@@ -112,14 +112,18 @@ def identify_new(page,url,seeds,reference):
  description=str((products[0].get('description') if products else None) or page.meta.get('description') or page.meta.get('og:description') or '')[:240]
  return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else 'coding' if re.search(r'coding|code editor|코딩',description,re.I) else 'assistant' if re.search(r'chatbot|AI assistant|대화형|챗봇',description,re.I) else purpose_for(category_for(name+' '+description))), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
 
-def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10):
+def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,extract_offer=None):
  for seed in seeds:db.execute('INSERT INTO service_catalog VALUES(?,?,?,?) ON CONFLICT(service_key) DO UPDATE SET payload=excluded.payload',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
  known={key:json.loads(payload) for key,payload in db.execute('SELECT service_key,payload FROM service_catalog')}
  cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);selected=rotating(list(known.values()),cursor,budget)
- results=[];new_count=0
+ results=[];new_count=0;verified_offers=[]
  for service in selected:
   try:
    page=fetch(service['officialUrl']);source={'id':service['key'],'category':service['category'],'purpose':service.get('purpose'),'url':service['officialUrl']};price=observed_price(source,page.text)
+   if extract_offer:
+    offer_source={**source,'service':service['key'],'name':service['name'],'parser':service['key'] if service['key'] in ('surfshark','adobe','spotify','apple-music','nordvpn') else 'event'}
+    offer=extract_offer(offer_source,page)
+    if offer:verified_offers.append(offer)
    plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)
    for plan in plans:
     payload=json.dumps(plan,ensure_ascii=False);db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],service['key'],payload,timestamp));db.execute('INSERT INTO plan_history VALUES(?,?,?)',(plan['id'],payload,timestamp))
@@ -158,4 +162,4 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10)
    db.execute("UPDATE candidates SET catalog_status='verified',status='catalog_verified',reason=NULL WHERE url=?",(url,))
   except Exception:db.execute("UPDATE candidates SET reason='현재 페이지 접근 불가' WHERE url=?",(url,))
  db.execute("INSERT OR REPLACE INTO research_state VALUES('catalog_cursor',?)",(str(cursor+budget),));db.commit()
- return {'checked':results,'newServices':new_count,'catalogSize':len(known)}
+ return {'checked':results,'newServices':new_count,'catalogSize':len(known),'verifiedOffers':verified_offers}

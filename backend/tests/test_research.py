@@ -30,3 +30,15 @@ class TextPlanTests(unittest.TestCase):
  def test_annual_monthly_equivalent_does_not_become_uncommitted_monthly_price(self):
   from catalog_engine import text_plans
   page=c.Page();page.feed('<h2>Pro</h2><p>₩12,000/월 연간 결제</p>');self.assertEqual(text_plans(page,{'key':'new','category':'AI','officialUrl':'https://new.example/'},'2026-10-25T12:00:00Z'),[])
+
+class DiscoveredOfferTests(unittest.TestCase):
+ def test_official_offer_from_search_candidate_outside_bootstrap_sources_is_verified(self):
+  from factcheck import verify_candidates
+  with tempfile.TemporaryDirectory() as tmp:
+   db=c.init_db(Path(tmp)/'test.sqlite');timestamp='2026-10-25T12:00:00Z'
+   db.execute("INSERT INTO candidates(url,title,provider,discovery_url,service_key,status,first_seen,last_seen,reason) VALUES(?,?,?,?,?,'pending',?,?,NULL)",('https://deals.example/new','New discount','Google','https://google.com/search','new',timestamp,timestamp));db.commit()
+   blog=c.Page();blog.feed('<title>할인 소개</title><a href="https://vendor.example/event">공식 할인 이벤트</a>')
+   official=c.Page();official.feed('<title>신규 구독 할인 이벤트</title><p>30% 할인 · 2026년 10월 31일까지</p>')
+   def fetch(url):return official if 'vendor.example' in url else blog
+   result=verify_candidates(db,[{'key':'new','name':'New','officialUrl':'https://vendor.example/'}],[],fetch,timestamp,extract_offer=c.extract)
+   self.assertEqual(len(result['verifiedOffers']),1);self.assertEqual(result['verifiedOffers'][0]['service'],'new');self.assertEqual(result['verifiedOffers'][0]['source'],'https://vendor.example/event');db.close()
