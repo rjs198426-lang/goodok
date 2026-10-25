@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T10:47:39Z",
-  "lastSuccessAt": "2026-10-25T10:47:39Z",
+  "generatedAt": "2026-10-25T11:45:50Z",
+  "lastSuccessAt": "2026-10-25T11:45:50Z",
   "offers": [
     {
       "id": "dff625c040866fdd04888146",
@@ -14,11 +14,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T10:47:39Z",
+      "verifiedAt": "2026-10-25T11:45:50Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T10:47:39Z",
+        "checkedAt": "2026-10-25T11:45:50Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T10:47:39Z",
+      "verifiedAt": "2026-10-25T11:45:50Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T10:47:39Z",
+        "checkedAt": "2026-10-25T11:45:50Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T10:47:39Z",
+      "verifiedAt": "2026-10-25T11:45:50Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T10:47:39Z",
+        "checkedAt": "2026-10-25T11:45:50Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     }
@@ -1656,7 +1656,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-25T10:47:29Z",
+      "verifiedAt": "2026-10-25T11:45:35Z",
       "status": "verified",
       "evidence": [
         {
@@ -1686,7 +1686,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-25T10:47:29Z",
+      "verifiedAt": "2026-10-25T11:45:35Z",
       "status": "verified",
       "evidence": [
         {
@@ -1710,7 +1710,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-25T10:47:31Z",
+      "verifiedAt": "2026-10-25T11:45:36Z",
       "status": "verified",
       "evidence": [
         {
@@ -1725,7 +1725,7 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Bing",
@@ -1735,7 +1735,7 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 7
+        "attempts": 11
       },
       {
         "name": "DealMirror",
@@ -1750,7 +1750,7 @@
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 8
+        "attempts": 12
       },
       {
         "name": "Google News",
@@ -1760,12 +1760,12 @@
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 3
+        "attempts": 5
       },
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 8
+        "attempts": 12
       },
       {
         "name": "Slickdeals",
@@ -1780,16 +1780,21 @@
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
+        "attempts": 2
+      },
+      {
+        "name": "퀘이사존 핫딜",
+        "status": "unavailable",
         "attempts": 1
       }
     ],
-    "candidateCount": 86,
-    "factChecks": 13,
+    "candidateCount": 112,
+    "factChecks": 14,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
   }
