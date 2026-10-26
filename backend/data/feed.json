@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T03:54:43Z",
-  "lastSuccessAt": "2026-10-26T03:54:43Z",
+  "generatedAt": "2026-10-26T04:53:28Z",
+  "lastSuccessAt": "2026-10-26T04:53:28Z",
   "offers": [
     {
       "id": "dff625c040866fdd04888146",
@@ -14,11 +14,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T03:54:43Z",
+      "verifiedAt": "2026-10-26T04:53:28Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T03:54:43Z",
+        "checkedAt": "2026-10-26T04:53:28Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T03:54:43Z",
+      "verifiedAt": "2026-10-26T04:53:28Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T03:54:43Z",
+        "checkedAt": "2026-10-26T04:53:28Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T03:54:43Z",
+      "verifiedAt": "2026-10-26T04:53:28Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T03:54:43Z",
+        "checkedAt": "2026-10-26T04:53:28Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -70,12 +70,12 @@
       "source": "https://www.spotify.com/kr-ko/premium/",
       "publisher": "Spotify 공식",
       "ends": null,
-      "checked": "2026-10-25",
-      "verifiedAt": "2026-10-25T23:41:52Z",
+      "checked": "2026-10-26",
+      "verifiedAt": "2026-10-26T04:53:28Z",
       "firstSeen": "2026-10-25T13:46:17Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-25T23:41:52Z",
+        "checkedAt": "2026-10-26T04:53:28Z",
         "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     }
@@ -866,6 +866,12 @@
       "name": "Claude",
       "status": "ok",
       "verifiedOffers": 0
+    },
+    {
+      "id": "discovered-spotify",
+      "name": "Spotify 공식",
+      "status": "ok",
+      "verifiedOffers": 1
     }
   ],
   "catalog": [
@@ -2046,7 +2052,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-26T03:54:29Z",
+      "verifiedAt": "2026-10-26T04:53:12Z",
       "status": "verified",
       "evidence": [
         {
@@ -2092,7 +2098,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-26T03:54:30Z",
+      "verifiedAt": "2026-10-26T04:53:12Z",
       "status": "verified",
       "evidence": [
         {
@@ -2136,7 +2142,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-26T03:54:32Z",
+      "verifiedAt": "2026-10-26T04:53:13Z",
       "status": "verified",
       "evidence": [
         {
@@ -2165,22 +2171,22 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 90
+        "attempts": 94
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 96
+        "attempts": 100
       },
       {
         "name": "Google",
@@ -2195,7 +2201,7 @@
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 44
+        "attempts": 46
       },
       {
         "name": "Naver",
@@ -2205,12 +2211,12 @@
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 87
+        "attempts": 91
       },
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "StackSocial",
@@ -2230,7 +2236,7 @@
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "퀘이사존 핫딜",
@@ -2238,7 +2244,7 @@
         "attempts": 12
       }
     ],
-    "candidateCount": 451,
+    "candidateCount": 459,
     "factChecks": 64,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
