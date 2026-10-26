@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T17:52:45Z",
-  "lastSuccessAt": "2026-10-26T17:52:45Z",
+  "generatedAt": "2026-10-26T19:05:54Z",
+  "lastSuccessAt": "2026-10-26T19:05:54Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -14,11 +14,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T17:52:45Z",
+      "verifiedAt": "2026-10-26T19:05:54Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T17:52:45Z",
+        "checkedAt": "2026-10-26T19:05:54Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -29,16 +29,16 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr-ko/premium/",
-      "publisher": "Spotify 공식",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T17:52:45Z",
+      "verifiedAt": "2026-10-26T19:05:54Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T17:52:45Z",
-        "officialSource": "https://www.spotify.com/kr-ko/premium/"
+        "checkedAt": "2026-10-26T19:05:54Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
@@ -52,11 +52,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T17:52:45Z",
+      "verifiedAt": "2026-10-26T19:05:54Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T17:52:45Z",
+        "checkedAt": "2026-10-26T19:05:54Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     }
@@ -847,12 +847,6 @@
       "name": "Claude",
       "status": "ok",
       "verifiedOffers": 0
-    },
-    {
-      "id": "discovered-spotify",
-      "name": "Spotify 공식",
-      "status": "ok",
-      "verifiedOffers": 1
     }
   ],
   "catalog": [
@@ -1746,78 +1740,6 @@
       ]
     },
     {
-      "id": "2bffc38e09724b178e2a50b3",
-      "service": "krea",
-      "name": "Basic",
-      "amount": 5.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-26T10:56:27Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Basic $5 /month"
-        }
-      ]
-    },
-    {
-      "id": "e8cbd069fa838878acdba0eb",
-      "service": "krea",
-      "name": "Pro",
-      "amount": 21.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-26T10:56:27Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Pro $21 /month"
-        }
-      ]
-    },
-    {
-      "id": "c68765557ea1dd0587844b2a",
-      "service": "krea",
-      "name": "Max",
-      "amount": 63.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-26T10:56:27Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Max $63 /month"
-        }
-      ]
-    },
-    {
       "id": "a2a72f1c3ddff35b9d73ed09",
       "service": "cursor",
       "name": "Plus",
@@ -2014,6 +1936,78 @@
       ]
     },
     {
+      "id": "2bffc38e09724b178e2a50b3",
+      "service": "krea",
+      "name": "Basic",
+      "amount": 5.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-26T19:05:32Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Basic $5 /month"
+        }
+      ]
+    },
+    {
+      "id": "e8cbd069fa838878acdba0eb",
+      "service": "krea",
+      "name": "Pro",
+      "amount": 21.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-26T19:05:32Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Pro $21 /month"
+        }
+      ]
+    },
+    {
+      "id": "c68765557ea1dd0587844b2a",
+      "service": "krea",
+      "name": "Max",
+      "amount": 63.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-26T19:05:32Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Max $63 /month"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2033,7 +2027,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-26T17:52:29Z",
+      "verifiedAt": "2026-10-26T19:05:41Z",
       "status": "verified",
       "evidence": [
         {
@@ -2079,7 +2073,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-26T17:52:29Z",
+      "verifiedAt": "2026-10-26T19:05:41Z",
       "status": "verified",
       "evidence": [
         {
@@ -2123,7 +2117,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-26T17:52:31Z",
+      "verifiedAt": "2026-10-26T19:05:42Z",
       "status": "verified",
       "evidence": [
         {
@@ -2147,12 +2141,12 @@
       {
         "name": "Bing",
         "status": "no_results",
-        "attempts": 8
+        "attempts": 7
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 80
+        "attempts": 81
       },
       {
         "name": "DealMirror",
@@ -2162,7 +2156,7 @@
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 11
+        "attempts": 10
       },
       {
         "name": "Google",
@@ -2197,7 +2191,7 @@
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 9
+        "attempts": 10
       },
       {
         "name": "StackSocial",
@@ -2207,12 +2201,12 @@
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "퀘이사존 핫딜",
@@ -2220,8 +2214,8 @@
         "attempts": 11
       }
     ],
-    "candidateCount": 507,
-    "factChecks": 64,
+    "candidateCount": 513,
+    "factChecks": 65,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
   }
