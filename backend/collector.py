@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 from discovery import safe_url,public_host,init_discovery,run_discovery
 from catalog_engine import normal_plan,expand_catalog
 from factcheck import verify_candidates
+from offer_identity import campaign_id,compact_offers
 ROOT=Path(__file__).resolve().parent
 MAX_BYTES=3*1024*1024
 UTC=dt.timezone.utc
@@ -134,19 +135,22 @@ def init_db(path):
  CREATE TABLE IF NOT EXISTS observations(run_id INTEGER,source_id TEXT,url TEXT,status TEXT,checked_at TEXT);
  CREATE TABLE IF NOT EXISTS offers(id TEXT PRIMARY KEY,source_id TEXT,payload TEXT,first_seen TEXT,last_verified TEXT);
  CREATE TABLE IF NOT EXISTS comparison_profiles(service TEXT PRIMARY KEY,payload TEXT,checked_at TEXT);
+ CREATE TABLE IF NOT EXISTS offer_history(offer_id TEXT,campaign_key TEXT,payload TEXT,verified_at TEXT,source_id TEXT,PRIMARY KEY(offer_id,verified_at,payload));
  ''');init_discovery(db);return db
 
 def store_and_export(db,results,now,out,profiles):
  profiles=json.loads(json.dumps(profiles));timestamp=stamp(now);day=now.astimezone(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
  with db:
+  compact_offers(db)
   run=db.execute('INSERT INTO runs(started_at,finished_at,successful_sources,total_sources) VALUES(?,?,?,?)',(timestamp,timestamp,sum(r['status']=='ok' for r in results),len(results))).lastrowid
   for result in results:
    if result.get('price') and result['id'] in profiles:profiles[result['id']]['price']=result['price']
    for plan in result.get('plans',[]):
     payload=json.dumps(plan,ensure_ascii=False);db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],plan['service'],payload,plan['verifiedAt']));db.execute('INSERT INTO plan_history VALUES(?,?,?)',(plan['id'],payload,plan['verifiedAt']))
    for observation in result['observations']:db.execute('INSERT INTO observations VALUES(?,?,?,?,?)',(run,result['id'],observation['url'],observation['status'],timestamp))
-   for offer in result['offers']:
-    db.execute('INSERT INTO offers VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,last_verified=excluded.last_verified',(offer['id'],result['id'],json.dumps(offer,ensure_ascii=False),timestamp,timestamp))
+   for raw_offer in result['offers']:
+    offer={**raw_offer,'id':campaign_id(raw_offer)}
+    db.execute('INSERT INTO offers VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,last_verified=excluded.last_verified WHERE excluded.last_verified>=offers.last_verified',(offer['id'],result['id'],json.dumps(offer,ensure_ascii=False),timestamp,timestamp))
   for service,profile in profiles.items():
    previous=db.execute('SELECT payload FROM comparison_profiles WHERE service=?',(service,)).fetchone()
    if previous:
