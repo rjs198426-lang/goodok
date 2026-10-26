@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T05:52:37Z",
-  "lastSuccessAt": "2026-10-26T05:52:37Z",
+  "generatedAt": "2026-10-26T06:05:36Z",
+  "lastSuccessAt": "2026-10-26T06:05:36Z",
   "offers": [
     {
-      "id": "9b015f671c3754d75a01d6b4",
-      "service": "surfshark",
-      "title": "Surfshark One 첫 이용 기간 선결제",
-      "benefit": "첫 27개월 CA$91.53",
-      "detail": "Surfshark One 첫 이용 기간 선결제",
-      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
-      "source": "https://surfshark.com/pricing",
-      "publisher": "Surfshark 공식",
+      "id": "4b0ac5dbb84be7dce5c71f98",
+      "service": "apple-music",
+      "title": "Apple Music 한국 신규 개인 체험",
+      "benefit": "Apple Music 신규 1개월 무료",
+      "detail": "Apple Music 한국 신규 개인 체험",
+      "conditions": "신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인.",
+      "source": "https://www.apple.com/kr/apple-music/",
+      "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T05:52:37Z",
+      "verifiedAt": "2026-10-26T06:05:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T05:52:37Z",
-        "officialSource": "https://surfshark.com/pricing"
+        "checkedAt": "2026-10-26T06:05:36Z",
+        "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
     {
@@ -33,31 +33,31 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T05:52:37Z",
+      "verifiedAt": "2026-10-26T06:05:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T05:52:37Z",
+        "checkedAt": "2026-10-26T06:05:36Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
-      "id": "4b0ac5dbb84be7dce5c71f98",
-      "service": "apple-music",
-      "title": "Apple Music 한국 신규 개인 체험",
-      "benefit": "Apple Music 신규 1개월 무료",
-      "detail": "Apple Music 한국 신규 개인 체험",
-      "conditions": "신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인.",
-      "source": "https://www.apple.com/kr/apple-music/",
-      "publisher": "Apple Music 한국 공식",
+      "id": "9b015f671c3754d75a01d6b4",
+      "service": "surfshark",
+      "title": "Surfshark One 첫 이용 기간 선결제",
+      "benefit": "첫 27개월 $67.23",
+      "detail": "Surfshark One 첫 이용 기간 선결제",
+      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
+      "source": "https://surfshark.com/pricing",
+      "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T05:52:37Z",
+      "verifiedAt": "2026-10-26T06:05:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T05:52:37Z",
-        "officialSource": "https://www.apple.com/kr/apple-music/"
+        "checkedAt": "2026-10-26T06:05:36Z",
+        "officialSource": "https://surfshark.com/pricing"
       }
     }
   ],
@@ -1740,82 +1740,6 @@
       ]
     },
     {
-      "id": "a2a72f1c3ddff35b9d73ed09",
-      "service": "cursor",
-      "name": "Plus",
-      "amount": 8.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-26T01:59:30Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Plus $8 /월"
-        }
-      ]
-    },
-    {
-      "id": "83d70292cceb594608a2dba4",
-      "service": "cursor",
-      "name": "Premium",
-      "amount": 30.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-26T01:59:30Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Premium $30 /월"
-        },
-        {
-          "field": "capability.adfree",
-          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
-        }
-      ]
-    },
-    {
-      "id": "1c0f421607e3300c305b5b8a",
-      "service": "cursor",
-      "name": "Ultra",
-      "amount": 200.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-26T01:59:30Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Ultra $200 /월"
-        }
-      ]
-    },
-    {
       "id": "7e25938563b056214586d97c",
       "service": "expressvpn",
       "name": "Basic",
@@ -2008,6 +1932,82 @@
       ]
     },
     {
+      "id": "a2a72f1c3ddff35b9d73ed09",
+      "service": "cursor",
+      "name": "Plus",
+      "amount": 8.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-26T06:05:15Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Plus $8 /월"
+        }
+      ]
+    },
+    {
+      "id": "83d70292cceb594608a2dba4",
+      "service": "cursor",
+      "name": "Premium",
+      "amount": 30.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-26T06:05:15Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Premium $30 /월"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
+        }
+      ]
+    },
+    {
+      "id": "1c0f421607e3300c305b5b8a",
+      "service": "cursor",
+      "name": "Ultra",
+      "amount": 200.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-26T06:05:15Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Ultra $200 /월"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2027,7 +2027,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-26T05:52:27Z",
+      "verifiedAt": "2026-10-26T06:05:26Z",
       "status": "verified",
       "evidence": [
         {
@@ -2073,7 +2073,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-26T05:52:27Z",
+      "verifiedAt": "2026-10-26T06:05:26Z",
       "status": "verified",
       "evidence": [
         {
@@ -2117,7 +2117,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-26T05:52:29Z",
+      "verifiedAt": "2026-10-26T06:05:27Z",
       "status": "verified",
       "evidence": [
         {
@@ -2146,12 +2146,12 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 98
+        "attempts": 102
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "Dealify",
@@ -2161,7 +2161,7 @@
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 104
+        "attempts": 108
       },
       {
         "name": "Google",
@@ -2176,7 +2176,7 @@
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 48
+        "attempts": 50
       },
       {
         "name": "Naver",
@@ -2186,17 +2186,17 @@
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 95
+        "attempts": 99
       },
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "StackSocial",
@@ -2206,7 +2206,7 @@
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -2219,7 +2219,7 @@
         "attempts": 13
       }
     ],
-    "candidateCount": 467,
+    "candidateCount": 475,
     "factChecks": 64,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
