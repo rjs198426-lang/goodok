@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T19:55:17Z",
-  "lastSuccessAt": "2026-10-26T19:55:17Z",
+  "generatedAt": "2026-10-26T20:53:01Z",
+  "lastSuccessAt": "2026-10-26T20:53:01Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -14,11 +14,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T19:55:17Z",
+      "verifiedAt": "2026-10-26T20:53:01Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T19:55:17Z",
+        "checkedAt": "2026-10-26T20:53:01Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T19:55:17Z",
+      "verifiedAt": "2026-10-26T20:53:01Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T19:55:17Z",
+        "checkedAt": "2026-10-26T20:53:01Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-26",
-      "verifiedAt": "2026-10-26T19:55:17Z",
+      "verifiedAt": "2026-10-26T20:53:01Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-26T19:55:17Z",
+        "checkedAt": "2026-10-26T20:53:01Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     }
@@ -1740,54 +1740,6 @@
       ]
     },
     {
-      "id": "7e25938563b056214586d97c",
-      "service": "expressvpn",
-      "name": "Basic",
-      "amount": 2.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "vpn",
-      "capabilities": {},
-      "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-26T15:45:05Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Basic $ 2.99 / mo"
-        }
-      ]
-    },
-    {
-      "id": "91e29a92a0be5a92d074d118",
-      "service": "expressvpn",
-      "name": "Express Pro",
-      "amount": 7.49,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "vpn",
-      "capabilities": {},
-      "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-26T15:45:05Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Express Pro $ 7.49 / mo"
-        }
-      ]
-    },
-    {
       "id": "afaf14b1f252428b344da7e2",
       "service": "microsoft365",
       "name": "Microsoft 365 Personal",
@@ -2008,6 +1960,54 @@
       ]
     },
     {
+      "id": "7e25938563b056214586d97c",
+      "service": "expressvpn",
+      "name": "Basic",
+      "amount": 2.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "vpn",
+      "capabilities": {},
+      "source": "https://www.expressvpn.com/order",
+      "verifiedAt": "2026-10-26T20:52:37Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Basic $ 2.99 / mo"
+        }
+      ]
+    },
+    {
+      "id": "91e29a92a0be5a92d074d118",
+      "service": "expressvpn",
+      "name": "Express Pro",
+      "amount": 7.49,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "vpn",
+      "capabilities": {},
+      "source": "https://www.expressvpn.com/order",
+      "verifiedAt": "2026-10-26T20:52:37Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Express Pro $ 7.49 / mo"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2027,7 +2027,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-26T19:55:06Z",
+      "verifiedAt": "2026-10-26T20:52:46Z",
       "status": "verified",
       "evidence": [
         {
@@ -2073,7 +2073,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-26T19:55:05Z",
+      "verifiedAt": "2026-10-26T20:52:47Z",
       "status": "verified",
       "evidence": [
         {
@@ -2117,7 +2117,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-26T19:55:07Z",
+      "verifiedAt": "2026-10-26T20:52:49Z",
       "status": "verified",
       "evidence": [
         {
@@ -2136,7 +2136,7 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 10
+        "attempts": 11
       },
       {
         "name": "Bing",
@@ -2151,7 +2151,7 @@
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "Dealify",
@@ -2166,12 +2166,12 @@
       {
         "name": "Google News",
         "status": "no_results",
-        "attempts": 8
+        "attempts": 7
       },
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 36
+        "attempts": 37
       },
       {
         "name": "Naver",
@@ -2186,7 +2186,7 @@
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 11
+        "attempts": 10
       },
       {
         "name": "StackSocial",
@@ -2211,11 +2211,11 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 11
+        "attempts": 12
       }
     ],
-    "candidateCount": 519,
-    "factChecks": 66,
+    "candidateCount": 526,
+    "factChecks": 68,
     "verifiedCatalogCount": 0,
     "catalogCount": 53
   }
