@@ -1,0 +1,22 @@
+Google Play Protect review request draft — owner must review and submit
+
+App: 달핏 (Dalfit)
+Package: kr.goodok.note
+Affected version: 2.0.0 / versionCode 45
+New review build: 2.0.1 / versionCode 46
+APK: https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.0.1-build46/dalfit-2.0.1-build46-release.apk
+APK SHA-256: aab21fbacf6f4adfe9694339d2f10f5fa200ab19ed5ab89258b1eed82a8329ec
+Certificate SHA-256: 0b4682adf3ebd7b3e959af01dcf7fa7c5eaecc0775ba081ef0d3f1e7d269b258
+
+A user reports harmful/dangerous app installation blocking. The exact detection name, screenshot, Android version and device model still need to be added by the owner. We do not assert that the detection is a false positive.
+
+This is a subscription and personal expense tracker. The review build removes the NotificationListenerService, its manifest entry and the setting that requested other-app notification access. Existing local transaction data and manually selected image/text input remain. It uses a bundled Korean OCR model. Its own payment reminder notification permission remains. It requests no SMS, contacts, accessibility, overlay or package-install privileges.
+
+The existing development signing certificate is retained for compatibility; this is not a completed production developer-verification process. The old signed file is preserved for review. Please review the harmful-app classification and provide the detected behavior or remediation required. We have not independently reproduced or cleared the Google verdict.
+
+Warning screenshot / exact detection: [owner to supply]
+Device / Android version: [owner to supply]
+Developer contact: [owner to supply]
+
+Submit through https://support.google.com/googleplay/android-developer/contact/protectappeals
+This draft has NOT been submitted.

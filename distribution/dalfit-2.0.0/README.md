@@ -1,3 +1,5 @@
+> ⚠️ 2.0.0에서 Play 프로텍트 유해/위험 앱 차단이 보고됐습니다. 설치를 권장하지 않습니다. 보호 기능을 끄지 마세요. [권한 축소 수정본·검증 대기 및 보안 자료](../dalfit-2.0.1/README.md)
+
 # 달핏 Android 다운로드
 
 **[달핏 2.0.0 · 빌드 45 APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.0.0-build45/dalfit-2.0.0-build45-release.apk)**
