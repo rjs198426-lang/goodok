@@ -44,3 +44,12 @@ The scheduled job runs without the Android app. Runs query Google, Naver and Bin
 Automatic comparison policy: the Android app has no manual alternative-price field. Alternatives require a normal, recently verified KRW monthly price, a known one-month commitment, an identified baseline and evidence that known baseline capabilities are preserved. There must also be a lower price or a proven feature improvement; extra cost is shown explicitly. Missing feature evidence is unknown, not false. Introductory prices, stale observations, mismatched currency/region and unknown commitments do not qualify. When nothing qualifies, the app displays no substitute.
 
 The candidate table keeps catalogue processing state separately from fact-check state. A failed or already-known candidate cannot permanently occupy the front of the expansion queue; failures can be retried after one day while other pending providers continue to be investigated.
+
+## Optional official search API connections
+
+Google and Naver public-page/RSS research remains available without API keys. When automated HTML access is blocked, an official API connection can be configured using GitHub Actions repository secrets:
+
+- `GOOGLE_SEARCH_API_KEY` and `GOOGLE_SEARCH_ENGINE_ID`: an enabled Google Custom Search JSON API project/engine.
+- `NAVER_CLIENT_ID` and `NAVER_CLIENT_SECRET`: an authorized Naver Search API application.
+
+No credentials have been provisioned by this change. Usage/quota or billing follows the account owner's provider configuration. Credentials stay in request headers and are never put in the APK, feed, published URLs or logs. Missing/failed API connections retain the existing public search/RSS path, retry times and official evidence requirements. API responses are search leads, never verified benefits by themselves.

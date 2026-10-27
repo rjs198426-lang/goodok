@@ -13,6 +13,7 @@ def write_report(db,feed,directory):
  lines+=['','## 기능 검증 범위',json.dumps(metrics.get('featureCoverage',{}),ensure_ascii=False),f"비교 가능한 원화 정상 플랜: {metrics.get('comparableKRWPlans',0)}개"]
  lines+=['','## 신규 서비스','서비스 식별과 가격·지역·기능 검증은 서로 다른 단계입니다.','| 이름 | 상태 | 용도 | 확인된 공식 주소 |','| --- | --- | --- | --- |']
  for s in report['newServices']:lines.append('| '+' | '.join(map(cell,[s['name'],s['status'],', '.join(s.get('purposes',[])),s['officialUrl']]))+' |')
+ lines+=['','공식 검색 API 연결: '+', '.join(name+(' 연결됨' if ready else ' 설정 필요') for name,ready in research.get('searchApiConnections',{}).items())]
  lines+=['','## 출처 접근 및 재시도','| 출처 | 최신 상태 | 다음 재시도 UTC |','| --- | --- | --- |']
  for p in report['providerHealth']:lines.append('| '+' | '.join(map(cell,[p['name'],p['status'],p.get('nextCheckAt') or '제한 없음']))+' |')
  lines+=['','작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.','']

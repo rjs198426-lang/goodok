@@ -70,7 +70,7 @@ def news_links(payload):
   if safe_url(link):links.append((link,item.findtext('title') or '',item.find('source').get('url') if item.find('source') is not None else None))
  return links
 
-def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None):
+def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None,api_search=None,api_providers=()):
  clean_legacy_candidates(db,seeds)
  cursor=int((db.execute("SELECT value FROM research_state WHERE key='cursor'").fetchone() or ['0'])[0]);selected=rotating(seeds,cursor,budget)
  month=dt.datetime.fromisoformat(stamp.replace('Z','+00:00')).strftime('%Y %m')
@@ -101,6 +101,9 @@ def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None):
   return row and row[0] and row[0]>stamp
  for query,scope in queries:
   for provider,url in [('Google','https://www.google.com/search?q='+urllib.parse.quote(query)),('Naver','https://search.naver.com/search.naver?where=web&query='+urllib.parse.quote(query)),('Bing','https://www.bing.com/search?q='+urllib.parse.quote(query))]:
+   if provider in api_providers and api_search and not deferred(provider+' API'):
+    try:remember(provider+' API',query,url,api_search(provider,query),'ok',scope);continue
+    except Exception:remember(provider+' API',query,url,[],'unavailable',scope)
    if deferred(provider):remember(provider,query,url,[],'deferred',scope);continue
    try:
     page=fetch(url)

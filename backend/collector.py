@@ -9,6 +9,7 @@ from offer_identity import campaign_id,compact_offers
 from research_common import as_offers
 from taste_research import research_taste,export_taste
 from catalog_publish import publish_catalog
+from search_api import search_api,configured_providers
 ROOT=Path(__file__).resolve().parent
 MAX_BYTES=3*1024*1024
 UTC=dt.timezone.utc
@@ -231,7 +232,7 @@ def store_and_export(db,results,now,out,profiles):
  metrics['featureCoverage']={key:sum(any(e.get('field')=='capability.'+key and e.get('quote') for e in p.get('evidence',[])) for p in plans if p.get('status')=='verified') for key in sorted({key for p in plans for key in p.get('capabilities',{})})}
  metrics['comparableKRWPlans']=sum(p.get('status')=='verified' and p.get('currency')=='KRW' and p.get('region')=='KR' and p.get('commitmentMonths')==1 for p in plans)
  latest=db.execute("SELECT value FROM research_state WHERE key='latest_run'").fetchone()
- feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':3,'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
+ feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':3,'searchApiConnections':{name:name in configured_providers() for name in ('Google','Naver')},'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
 
 def main():
@@ -239,7 +240,7 @@ def main():
  sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
  for source in sources:source['purpose']=next((seed.get('purpose') for seed in seeds if seed['key']==source['id']),None)
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
- attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml)
+ attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml,api_search=search_api,api_providers=configured_providers())
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))
  catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract_all)
  discovered_offers=catalogue.pop('verifiedOffers',[])
