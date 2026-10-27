@@ -6,7 +6,7 @@ import collector as c
 from discovery import run_discovery,news_links,init_discovery,clean_legacy_candidates
 from research_common import rejection_reason,match_service
 from factcheck import verify_candidates
-from catalog_engine import text_plans,structured_plans,enrich_service
+from catalog_engine import text_plans,structured_plans,enrich_service,vendor_normal_plans
 from taste_research import extract_activity,research_taste,export_taste
 from research_report import write_report
 NOW='2026-10-27T14:00:00Z'
@@ -85,6 +85,11 @@ class PipelineV3Tests(unittest.TestCase):
  def test_annual_equivalent_price_is_rejected(self):
   p=page('<h2>Pro</h2>$5/month billed annually cancel anytime')
   self.assertEqual(text_plans(p,{'key':'deepai','category':'AI','officialUrl':'https://deepai.org/pricing'},NOW),[])
+ def test_monthly_renewal_must_corroborate_dual_billing_toggle(self):
+  p=page('<h1>DeepAI Pro Pricing Overview</h1>Pro $7.50$9.99/month Billed annually at $89.99 Billed monthly cancel any time.<h2>Renewal</h2>Your price remains the same ($9.99 a month, or $89.99 a year).')
+  service={'key':'deepai','name':'DeepAI','category':'AI','officialUrl':'https://deepai.org/pricing'}
+  self.assertEqual(vendor_normal_plans(p,service,NOW)[0]['amount'],9.99)
+  service['officialUrl']='https://fake.example/pricing';self.assertEqual(vendor_normal_plans(p,service,NOW),[])
  def test_official_activity_requires_current_dates_and_never_fabricates_price(self):
   p=page('<script type="application/ld+json">{"@type":"Event","name":"새 전시","startDate":"2026-10-01","endDate":"2026-11-30"}</script>')
   result=extract_activity(p,'https://www.museum.go.kr/exhibit/detail/1',NOW);self.assertEqual(result['status'],'official_verified');self.assertNotIn('price',result)

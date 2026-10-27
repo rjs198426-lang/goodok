@@ -123,10 +123,10 @@ def extract_all(source,page,url=None):
   price=re.search(r'가족\s*₩([\d,]+)\s*/\s*월',text)
   if family and price:add('apple-family-trial','Apple Music 가족 요금제 체험',f'가족 요금제 {family[1]}개월 무료',f'신규 가족 구독 자격 확인. 체험 이후 월 ₩{price[1]}. 가족 공유·자동 갱신 조건 확인.',family[0]+' / '+price[0],'family','new_family')
  if kind=='spotify':
-  student=re.search(r'학생(.{0,180})',text)
-  if student:
+  for student in re.finditer(r'학생(.{0,240})',text):
    trial=re.search(r'1개월\s*(?:이용\s*시|동안)?\s*₩0',student[1]);price=re.search(r'(?:이후|종료\s*후).{0,25}₩([\d,]+)',student[1])
-   if trial and price and re.search(r'승인된\s*대학|교육\s*기관',text):add('spotify-student-trial','Spotify 학생 요금제 체험','학생 요금제 첫 1개월 ₩0',f'승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩{price[1]}(부가세 포함). 이전 체험 이력 확인.',student[0],'student','eligible_student')
+   if trial and price and re.search(r'승인된\s*대학|교육\s*기관',text):
+    add('spotify-student-trial','Spotify 학생 요금제 체험','학생 요금제 첫 1개월 ₩0',f'승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩{price[1]}(부가세 포함). 이전 체험 이력 확인.',student[0],'student','eligible_student');break
   wallet=re.search(r'1개월\s*동안\s*₩100\s*전자\s*지갑(.{0,140})',text)
   if wallet:add('spotify-wallet-trial','Spotify 전자지갑 결제 체험','전자지갑 결제 첫 1개월 ₩100','개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.',wallet[0],'individual','eligible_wallet')
  if kind=='event':

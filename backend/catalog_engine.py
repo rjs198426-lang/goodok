@@ -123,6 +123,17 @@ def enrich_service(service,page,plans,timestamp):
   plan['verification']={'price':True,'billingTerms':plan.get('commitmentMonths') is not None,'region':plan.get('region')!='unspecified'}
  return service
 
+def vendor_normal_plans(page,service,timestamp):
+ """An explicit monthly renewal statement disambiguates dual billing toggles."""
+ if host(service['officialUrl']).removeprefix('www.')!='deepai.org':return []
+ text=page.text
+ monthly=re.search(r'\$([\d,.]+)\s+a\s+month\s*,\s*or\s*\$[\d,.]+\s+a\s+year',text,re.I)
+ if not monthly or not re.search(r'billed monthly',text,re.I) or not re.search(r'cancel\s+any\s*time',text,re.I):return []
+ amount=float(monthly[1].replace(',',''))
+ matching=[s for s in page.sections if re.search(r'\bPro\b',s['title']) and re.search(r'\$'+re.escape(monthly[1])+r'\s*/\s*month',s['text'])]
+ if not matching or not 0<amount<1e5:return []
+ return [{'id':service['key']+'-regular-monthly','service':service['key'],'name':'Pro · 월간','amount':amount,'currency':'USD','interval':'monthly','region':'unspecified','taxBasis':'official_display','commitmentMonths':1,'introductory':False,'eligibility':'general','purpose':service.get('purpose'),'capabilities':{},'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':monthly[0]},{'field':'billing','quote':'Billed monthly · cancel any time'}]}]
+
 def identify_new(page,url,seeds,reference):
  if not reference:return None
  organizations=[item for item in flatten(page.jsonld) if item.get('@type') in ('Organization','Corporation')]
@@ -143,7 +154,8 @@ def identify_new(page,url,seeds,reference):
 def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,extract_offer=None):
  for seed in seeds:db.execute('INSERT INTO service_catalog VALUES(?,?,?,?) ON CONFLICT(service_key) DO UPDATE SET payload=excluded.payload',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
  known={key:json.loads(payload) for key,payload in db.execute('SELECT service_key,payload FROM service_catalog')}
- cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);selected=rotating(list(known.values()),cursor,budget)
+ cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);priority=[s for s in known.values() if s.get('origin')=='discovered' and not s.get('verification')]
+ selected=(priority+rotating([s for s in known.values() if s not in priority],cursor,max(0,budget-len(priority))))[:budget]
  results=[];new_count=0;verified_offers=[]
  for service in selected:
   try:
@@ -151,7 +163,7 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,
    if extract_offer:
     offer_source={**source,'service':service['key'],'name':service['name'],'parser':service['key'] if service['key'] in ('surfshark','adobe','spotify','apple-music','nordvpn') else 'event'}
     verified_offers.extend(as_offers(extract_offer(offer_source,page)))
-   plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)
+   plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
    service=enrich_service(service,page,plans,timestamp);known[service['key']]=service
    db.execute('UPDATE service_catalog SET payload=? WHERE service_key=?',(json.dumps(service,ensure_ascii=False),service['key']))
    for plan in plans:
@@ -182,11 +194,11 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,
     db.execute("UPDATE candidates SET catalog_status='discovered_links' WHERE url=?",(url,));continue
    service=identify_new(page,url,seeds,reference)
    if not service:db.execute("UPDATE candidates SET catalog_status='needs_identity',reason='공식 사업자·구독 상품 증거 미확인' WHERE url=?",(url,));continue
-   plans=structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)
+   plans=structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
    if not plans:
     pricing=[safe_url(urllib.parse.urljoin(url,href)) for href,label in page.links if re.search(r'pricing|plans|요금|가격',label,re.I)]
     for target in [p for p in pricing if p and same_site(p,url)][:2]:
-     pricing_page=fetch(target);service['officialUrl']=target;plans.extend(structured_plans(pricing_page,service,timestamp)+text_plans(pricing_page,service,timestamp))
+     pricing_page=fetch(target);service['officialUrl']=target;plans.extend(structured_plans(pricing_page,service,timestamp)+text_plans(pricing_page,service,timestamp)+vendor_normal_plans(pricing_page,service,timestamp))
      if plans:page=pricing_page;break
    if not plans:db.execute("UPDATE candidates SET catalog_status='needs_price',reason='정기 결제 요금 증거 미확인' WHERE url=?",(url,));continue
    service=enrich_service(service,page,plans,timestamp);service['verifiedAt']=timestamp;known[service['key']]=service;new_count+=1

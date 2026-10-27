@@ -4,6 +4,7 @@ from discovery import safe_url
 from research_common import host,time_after
 
 OFFICIAL_HOSTS=('museum.go.kr','mmca.go.kr','koreafilm.or.kr','culture.seoul.go.kr','nl.go.kr','culture.go.kr')
+OFFICIAL_INDEXES=('https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?menuId=current&schM=list','https://www.mmca.go.kr/','https://culture.seoul.go.kr/culture/main/main.do?ready=Y')
 def official_activity_url(url):
  h=host(url)
  return bool(safe_url(url)) and any(h==d or h.endswith('.'+d) for d in OFFICIAL_HOSTS)
@@ -34,6 +35,7 @@ def extract_activity(page,url,timestamp):
   location=event.get('location')
   if isinstance(location,dict) and isinstance(location.get('name'),str):result['location']=location['name'][:100]
   return finish(result,url,timestamp)
+ if url in OFFICIAL_INDEXES or re.search(r'(?:schM|act)=list(?:&|$)',url,re.I):return None
  title=str(page.meta.get('og:title') or ''.join(page.title)).strip()
  if not 3<=len(title)<=100 or not re.search(r'전시|공연|영화|상영|독서|체험|교육|행사',title):return None
  text=page.text[:5000]
@@ -57,7 +59,10 @@ def init_taste(db):db.execute('CREATE TABLE IF NOT EXISTS taste_suggestions(id T
 
 def research_taste(db,fetch,timestamp,budget=6):
  init_taste(db);stats={'checked':0,'verified':0,'waitingOfficial':0}
- rows=list(db.execute("SELECT url FROM candidates WHERE scope='taste' AND status!='rejected' AND (next_check_at IS NULL OR next_check_at<=?) ORDER BY fact_checked_at NULLS FIRST,first_seen LIMIT ?",(timestamp,budget)))
+ cursor=int((db.execute("SELECT value FROM research_state WHERE key='taste_cursor'").fetchone() or ['0'])[0]);index=OFFICIAL_INDEXES[cursor%len(OFFICIAL_INDEXES)]
+ db.execute("INSERT OR IGNORE INTO candidates(url,title,provider,discovery_url,status,first_seen,last_seen,scope) VALUES(?,'공식 문화 행사 목록','official_activity_index',?,'pending',?,?,'taste')",(index,index,timestamp,timestamp))
+ db.execute("INSERT OR REPLACE INTO research_state VALUES('taste_cursor',?)",(str(cursor+1),))
+ rows=list(db.execute("SELECT url FROM candidates WHERE scope='taste' AND status!='rejected' AND (next_check_at IS NULL OR next_check_at<=?) ORDER BY CASE WHEN provider='official_activity_index' THEN 0 WHEN provider='official_activity_link' THEN 1 ELSE 2 END,fact_checked_at NULLS FIRST,first_seen LIMIT ?",(timestamp,budget)))
  for (url,) in rows:
   status='needs_official';reason='공식 문화 기관의 행사 상세 페이지 확인 대기';found=None
   try:
@@ -65,10 +70,13 @@ def research_taste(db,fetch,timestamp,budget=6):
     stats['checked']+=1;page=fetch(url);found=extract_activity(page,url,timestamp)
     if not found:
      # A list page can lead to dated first-party detail pages, but is not an event.
+     linked=0
      for href,label in page.links:
       target=safe_url(urllib.parse.urljoin(url,href))
-      if target and target!=url and official_activity_url(target) and re.search(r'전시|공연|상영|체험|독서',label) and len(label.strip())>=5:
+      if target and target!=url and official_activity_url(target) and re.search(r'전시|공연|상영|체험|독서|exhi|exhibit|detail|view',target+' '+label,re.I) and len(label.strip())>=5 and not re.search(r'로그인|회원가입|개인정보|이용약관',label):
        db.execute("INSERT OR IGNORE INTO candidates(url,title,provider,discovery_url,status,first_seen,last_seen,scope) VALUES(?,?,?,?,'pending',?,?,'taste')",(target,label[:180],'official_activity_link',url,timestamp,timestamp))
+       linked+=1
+       if linked>=12:break
    else:
     # News is a lead only; never turn the article itself into a verified activity.
     stats['waitingOfficial']+=1
