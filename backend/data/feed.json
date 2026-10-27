@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T09:56:49Z",
-  "lastSuccessAt": "2026-10-27T09:56:49Z",
+  "generatedAt": "2026-10-27T10:54:49Z",
+  "lastSuccessAt": "2026-10-27T10:54:49Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -14,11 +14,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T09:56:49Z",
+      "verifiedAt": "2026-10-27T10:54:49Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T09:56:49Z",
+        "checkedAt": "2026-10-27T10:54:49Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -29,16 +29,16 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T09:56:49Z",
+      "verifiedAt": "2026-10-27T10:54:49Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T09:56:49Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
+        "checkedAt": "2026-10-27T10:54:49Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
     {
@@ -52,11 +52,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T09:56:49Z",
+      "verifiedAt": "2026-10-27T10:54:49Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T09:56:49Z",
+        "checkedAt": "2026-10-27T10:54:49Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     }
@@ -847,6 +847,12 @@
       "name": "Claude",
       "status": "ok",
       "verifiedOffers": 0
+    },
+    {
+      "id": "discovered-spotify",
+      "name": "Spotify 공식",
+      "status": "ok",
+      "verifiedOffers": 1
     }
   ],
   "catalog": [
@@ -1761,38 +1767,6 @@
       ]
     },
     {
-      "id": "3246ece9c901ae141997400f",
-      "service": "discovered-f6d59d44d511",
-      "name": "Consider DeepAI Pro",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://deepai.org/pricing",
-      "verifiedAt": "2026-10-27T05:50:14Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Consider DeepAI Pro $9.99 per month"
-        },
-        {
-          "field": "capability.music",
-          "quote": "Music"
-        },
-        {
-          "field": "capability.adfree",
-          "quote": "Ad-free"
-        }
-      ]
-    },
-    {
       "id": "2bffc38e09724b178e2a50b3",
       "service": "krea",
       "name": "Basic",
@@ -2061,6 +2035,38 @@
       ]
     },
     {
+      "id": "3246ece9c901ae141997400f",
+      "service": "discovered-f6d59d44d511",
+      "name": "Consider DeepAI Pro",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://deepai.org/pricing",
+      "verifiedAt": "2026-10-27T10:54:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Consider DeepAI Pro $9.99 per month"
+        },
+        {
+          "field": "capability.music",
+          "quote": "Music"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "Ad-free"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2080,7 +2086,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T09:56:38Z",
+      "verifiedAt": "2026-10-27T10:54:38Z",
       "status": "verified",
       "evidence": [
         {
@@ -2126,7 +2132,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T09:56:38Z",
+      "verifiedAt": "2026-10-27T10:54:38Z",
       "status": "verified",
       "evidence": [
         {
@@ -2170,7 +2176,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T09:56:40Z",
+      "verifiedAt": "2026-10-27T10:54:40Z",
       "status": "verified",
       "evidence": [
         {
@@ -2209,7 +2215,7 @@
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 11
+        "attempts": 10
       },
       {
         "name": "Google",
@@ -2219,22 +2225,22 @@
       {
         "name": "Google News",
         "status": "no_results",
-        "attempts": 9
+        "attempts": 7
       },
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 35
+        "attempts": 37
       },
       {
         "name": "Naver",
         "status": "ok",
-        "attempts": 8
+        "attempts": 12
       },
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 80
+        "attempts": 76
       },
       {
         "name": "Slickdeals",
@@ -2244,17 +2250,17 @@
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 10
+        "attempts": 11
       },
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "퀘이사존 핫딜",
@@ -2262,8 +2268,8 @@
         "attempts": 11
       }
     ],
-    "candidateCount": 600,
-    "factChecks": 84,
+    "candidateCount": 621,
+    "factChecks": 85,
     "verifiedCatalogCount": 1,
     "catalogCount": 54
   }
