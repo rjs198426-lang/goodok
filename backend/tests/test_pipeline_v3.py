@@ -90,6 +90,11 @@ class PipelineV3Tests(unittest.TestCase):
   service={'key':'deepai','name':'DeepAI','category':'AI','officialUrl':'https://deepai.org/pricing'}
   self.assertEqual(vendor_normal_plans(p,service,NOW)[0]['amount'],9.99)
   service['officialUrl']='https://fake.example/pricing';self.assertEqual(vendor_normal_plans(p,service,NOW),[])
+ def test_free_features_are_not_paid_bundle_evidence(self):
+  p=page('<h1>DeepAI Pro Pricing Overview</h1>Free AI coding agent Pro Everything DeepAI makes, in one subscription. $9.99/month Billed monthly cancel any time. 500 HD images, 2000 chat messages. What\'s in each plan')
+  service={'key':'deepai','category':'AI','origin':'discovered','officialUrl':'https://deepai.org/pricing'}
+  enriched=enrich_service(service,p,[{'status':'verified','commitmentMonths':1,'region':'unspecified'}],NOW)
+  self.assertEqual(set(enriched['purposes']),{'assistant','image'});self.assertTrue(all('Free' not in e['quote'] for e in enriched['purposeEvidence']))
  def test_official_activity_requires_current_dates_and_never_fabricates_price(self):
   p=page('<script type="application/ld+json">{"@type":"Event","name":"새 전시","startDate":"2026-10-01","endDate":"2026-11-30"}</script>')
   result=extract_activity(p,'https://www.museum.go.kr/exhibit/detail/1',NOW);self.assertEqual(result['status'],'official_verified');self.assertNotIn('price',result)

@@ -103,8 +103,11 @@ def enrich_service(service,page,plans,timestamp):
  """Describe paid scope rather than a free sub-product's metadata."""
  service=dict(service)
  if service.get('origin')=='discovered':
-  sections=[s for s in page.sections if re.search(r'\b(?:Pro|Plus|Premium|Standard|Personal|Individual|Basic|Starter|Max|Ultra)\b',s['title'],re.I) and re.search(r'(?:₩|\$|€|£)\s*\d',s['text'])]
+  sections=[s for s in page.sections if re.fullmatch(r'(?:Consider\s+)?(?:DeepAI\s+)?(?:Pro|Plus|Premium|Standard|Personal|Individual|Basic|Starter|Max|Ultra)(?:\s+Plan)?',s['title'].strip(),re.I) and re.search(r'(?:₩|\$|€|£)\s*\d',s['text'])]
   scope=' '.join(s['text'] for s in sections)
+  if host(service['officialUrl']).removeprefix('www.')=='deepai.org':
+   paid=re.search(r'\bPro\s+Everything DeepAI makes.{0,100}?subscription(.{0,2500}?)(?=What.s in each plan|$)',page.text,re.I)
+   if paid:scope=paid[0]
   patterns=[('assistant',r'chat\s*(?:messages|models)|chatbot|AI\s*chat|대화형|챗봇'),('image',r'image\s*generat|이미지\s*생성|\d[\d,]*\s*(?:HD\s*)?images'),('coding',r'coding|code editor|AI\s*code|DeepAI\s*Code|코딩'),('music_creation',r'music\s*generat|AI.generated\s*songs|음악\s*생성'),('appbuilder',r'website\s*builder|앱\s*제작')]
   evidence=[];purposes=[]
   for purpose,pattern in patterns:
@@ -116,7 +119,7 @@ def enrich_service(service,page,plans,timestamp):
    service['description']=' · '.join(labels[p] for p in purposes)+' 도구를 포함한 구독 서비스'
  service.setdefault('purposes',[service['purpose']] if service.get('purpose') and service['purpose'] not in ('ai_unspecified','other') else [])
  verified=[p for p in plans if p.get('status')=='verified']
- service['verification']={'identity':True,'priceObserved':bool(plans),'billingTerms':bool(verified),'regionConfirmed':any(p.get('region')=='KR' for p in verified),'paidScope':bool(service.get('purposeEvidence')),'checkedAt':timestamp}
+ service['verification']={'schemaVersion':3,'identity':True,'priceObserved':bool(plans),'billingTerms':bool(verified),'regionConfirmed':any(p.get('region')=='KR' for p in verified),'paidScope':bool(service.get('purposeEvidence')),'checkedAt':timestamp}
  if service.get('origin')=='discovered':service['status']='verified' if verified else 'verified_identity'
  for plan in plans:
   plan['purpose']=service.get('purpose',plan.get('purpose'));plan['purposes']=service.get('purposes',[])
@@ -154,7 +157,7 @@ def identify_new(page,url,seeds,reference):
 def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,extract_offer=None):
  for seed in seeds:db.execute('INSERT INTO service_catalog VALUES(?,?,?,?) ON CONFLICT(service_key) DO UPDATE SET payload=excluded.payload',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
  known={key:json.loads(payload) for key,payload in db.execute('SELECT service_key,payload FROM service_catalog')}
- cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);priority=[s for s in known.values() if s.get('origin')=='discovered' and not s.get('verification')]
+ cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);priority=[s for s in known.values() if s.get('origin')=='discovered' and s.get('verification',{}).get('schemaVersion')!=3]
  selected=(priority+rotating([s for s in known.values() if s not in priority],cursor,max(0,budget-len(priority))))[:budget]
  results=[];new_count=0;verified_offers=[]
  for service in selected:
