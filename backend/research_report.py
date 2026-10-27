@@ -10,6 +10,7 @@ def write_report(db,feed,directory):
  confirmed=sum(outcomes.get(s,0) for s in ('official_verified','corroborated'))
  lines=['# 달핏 백그라운드 조사 결과',f'기준 UTC: {feed["generatedAt"]} · 파이프라인 3','',f'- 공개 중인 혜택: {len(feed["offers"])}개 (기존 혜택 재확인은 신규 발굴과 별도)',f'- 외부 후보 대조 확정 기록: {confirmed}개 / 대조 기록 {sum(outcomes.values())}개',f'- 서비스 목록: {len(feed["catalog"])}개 · 신규 편입 누적 {metrics["newServiceCount"]}개 · 이번 실행 신규 {latest.get("newServices",0)}개',f'- 유효 후보 URL: {research["candidateCount"]}개 · 제외 이력 포함 {research["rawCandidateCount"]}개',f'- 요금제: 검증 {metrics["verifiedPlanCount"]}개 / 미확정 {metrics["candidatePlanCount"]}개',f'- 공식 기간 확인 취향 정보: {len(feed.get("tasteSuggestions",[]))}개','','## 현재 혜택','| 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |','| --- | --- | --- | --- | --- | --- |']
  for o in feed['offers']:lines.append('| '+' | '.join(map(cell,[o['service'],o['benefit'],o['conditions'],o.get('firstSeen'),o['verifiedAt'],o['source']]))+' |')
+ lines+=['','## 기능 검증 범위',json.dumps(metrics.get('featureCoverage',{}),ensure_ascii=False),f"비교 가능한 원화 정상 플랜: {metrics.get('comparableKRWPlans',0)}개"]
  lines+=['','## 신규 서비스','서비스 식별과 가격·지역·기능 검증은 서로 다른 단계입니다.','| 이름 | 상태 | 용도 | 확인된 공식 주소 |','| --- | --- | --- | --- |']
  for s in report['newServices']:lines.append('| '+' | '.join(map(cell,[s['name'],s['status'],', '.join(s.get('purposes',[])),s['officialUrl']]))+' |')
  lines+=['','## 출처 접근 및 재시도','| 출처 | 최신 상태 | 다음 재시도 UTC |','| --- | --- | --- |']

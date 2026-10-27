@@ -2,6 +2,7 @@
 import datetime as dt,hashlib,json,re,urllib.parse
 from discovery import safe_url,rotating
 from research_common import as_offers,rejection_reason,match_service
+from plan_capabilities import enrich_plan_capabilities
 UTC=dt.timezone.utc
 
 def host(url):return urllib.parse.urlparse(url).hostname or ''
@@ -101,7 +102,7 @@ def text_plans(page,service,timestamp):
 
 def enrich_service(service,page,plans,timestamp):
  """Describe paid scope rather than a free sub-product's metadata."""
- service=dict(service)
+ service=dict(service);enrich_plan_capabilities(plans,page)
  if service.get('origin')=='discovered':
   sections=[s for s in page.sections if re.fullmatch(r'(?:Consider\s+)?(?:DeepAI\s+)?(?:Pro|Plus|Premium|Standard|Personal|Individual|Basic|Starter|Max|Ultra)(?:\s+Plan)?',s['title'].strip(),re.I) and re.search(r'(?:₩|\$|€|£)\s*\d',s['text'])]
   scope=' '.join(s['text'] for s in sections)

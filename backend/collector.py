@@ -142,6 +142,12 @@ def extract_all(source,page,url=None):
   offer.setdefault('offerType','trial' if re.search(r'체험|무료',offer['title']+' '+offer['benefit']) else 'introductory' if kind in ('surfshark','adobe','nordvpn') else 'limited')
   if offer['offerType']=='trial' and kind in ('apple-music','spotify'):offer['ends']=None
   offer['endsKnown']=bool(offer.get('ends'))
+  audience={}
+  if offer.get('eligibility')=='eligible_student':audience['student']=True
+  if offer.get('eligibility')=='eligible_device':audience['device']=True
+  if offer.get('eligibility')=='eligible_wallet':audience['payment']='wallet'
+  if re.search(r'신규',offer['conditions']+' '+offer['title']) or kind=='spotify' and offer['offerType']=='trial' and re.search(r'이전에\s*Premium|이전.*체험',text):audience['newCustomer']=True
+  offer['audience']=audience
  return list({campaign_id(o):o for o in offers}.values())
 
 def observed_price(source,text):
@@ -222,6 +228,8 @@ def store_and_export(db,results,now,out,profiles):
  db.commit()
  query_rows=list(db.execute('SELECT provider,status,COUNT(*) FROM discovery_queries WHERE checked_at>=? GROUP BY provider,status',(stamp(now-dt.timedelta(days=1)),)))
  metrics={'candidateOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM candidates GROUP BY status')),'catalogOutcomes':dict(db.execute("SELECT catalog_status,COUNT(*) FROM candidates WHERE scope='subscription' GROUP BY catalog_status")),'factCheckOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM fact_checks GROUP BY status')),'newServiceCount':sum(item.get('origin')=='discovered' for item in catalog),'verifiedPlanCount':sum(p.get('status')=='verified' for p in plans),'candidatePlanCount':sum(p.get('status')!='verified' for p in plans),'rejectedLinkCount':db.execute('SELECT COALESCE(SUM(rejected_count),0) FROM discovery_queries WHERE checked_at>=?',(stamp(now-dt.timedelta(days=1)),)).fetchone()[0]}
+ metrics['featureCoverage']={key:sum(any(e.get('field')=='capability.'+key and e.get('quote') for e in p.get('evidence',[])) for p in plans if p.get('status')=='verified') for key in sorted({key for p in plans for key in p.get('capabilities',{})})}
+ metrics['comparableKRWPlans']=sum(p.get('status')=='verified' and p.get('currency')=='KRW' and p.get('region')=='KR' and p.get('commitmentMonths')==1 for p in plans)
  latest=db.execute("SELECT value FROM research_state WHERE key='latest_run'").fetchone()
  feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':3,'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
