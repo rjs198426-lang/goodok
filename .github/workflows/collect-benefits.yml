@@ -2,6 +2,7 @@ name: Collect subscription benefits hourly
 on:
   schedule:
     - cron: '17 * * * *'
+    - cron: '0 16 * * *' # 01:00 Asia/Seoul: daily catalogue publication
   workflow_dispatch:
   push:
     branches: [main]

@@ -8,6 +8,7 @@ from factcheck import verify_candidates
 from offer_identity import campaign_id,compact_offers
 from research_common import as_offers
 from taste_research import research_taste,export_taste
+from catalog_publish import publish_catalog
 ROOT=Path(__file__).resolve().parent
 MAX_BYTES=3*1024*1024
 UTC=dt.timezone.utc
@@ -209,6 +210,8 @@ def store_and_export(db,results,now,out,profiles):
  latest_success=db.execute('SELECT MAX(finished_at) FROM runs WHERE successful_sources>0').fetchone()[0]
  feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'verifiedOffers':len(r['offers'])} for r in results]}
  catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
+ published_catalog=publish_catalog(db,catalog,timestamp)
+ feed['catalogUpdate']=published_catalog
  plans=[json.loads(row[0]) for row in db.execute('SELECT payload FROM plan_facts WHERE last_verified>=?',(stamp(now-dt.timedelta(days=7)),))]
  # Preserve old price evidence timestamps while correcting incomplete plan status and purpose metadata.
  purpose_index={item['key']:item.get('purpose') for item in catalog}
