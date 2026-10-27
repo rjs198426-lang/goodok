@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T14:05:28Z",
-  "lastSuccessAt": "2026-10-27T14:05:28Z",
+  "generatedAt": "2026-10-27T14:55:54Z",
+  "lastSuccessAt": "2026-10-27T14:55:54Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -13,12 +13,14 @@
       "source": "https://www.apple.com/kr/apple-music/",
       "publisher": "Apple Music 한국 공식",
       "ends": null,
+      "offerType": "trial",
+      "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:05:28Z",
+      "verifiedAt": "2026-10-27T14:55:54Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:05:28Z",
+        "checkedAt": "2026-10-27T14:55:54Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -32,12 +34,14 @@
       "source": "https://www.spotify.com/kr/premium/",
       "publisher": "Spotify 한국 공식",
       "ends": null,
+      "offerType": "trial",
+      "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:05:28Z",
+      "verifiedAt": "2026-10-27T14:55:54Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:05:28Z",
+        "checkedAt": "2026-10-27T14:55:54Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -51,13 +55,87 @@
       "source": "https://surfshark.com/pricing",
       "publisher": "Surfshark 공식",
       "ends": null,
+      "offerType": "introductory",
+      "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:05:28Z",
+      "verifiedAt": "2026-10-27T14:55:54Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:05:28Z",
+        "checkedAt": "2026-10-27T14:55:54Z",
         "officialSource": "https://surfshark.com/pricing"
+      }
+    },
+    {
+      "id": "af1051d7b5d0715c5d75af8a",
+      "campaignId": "spotify-wallet-trial",
+      "service": "spotify",
+      "title": "Spotify 전자지갑 결제 체험",
+      "benefit": "전자지갑 결제 첫 1개월 ₩100",
+      "detail": "Spotify 전자지갑 결제 체험",
+      "conditions": "개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
+      "ends": null,
+      "planId": "individual",
+      "eligibility": "eligible_wallet",
+      "offerType": "trial",
+      "endsKnown": false,
+      "checked": "2026-10-27",
+      "verifiedAt": "2026-10-27T14:55:54Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-27T14:55:54Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
+      }
+    },
+    {
+      "id": "90d2b13a6deb8abc9b52a56f",
+      "campaignId": "apple-device-trial",
+      "service": "apple-music",
+      "title": "Apple Music 대상 기기 구매 체험",
+      "benefit": "대상 기기 구매 시 3개월 무료",
+      "detail": "Apple Music 대상 기기 구매 체험",
+      "conditions": "적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인.",
+      "source": "https://www.apple.com/kr/apple-music/",
+      "publisher": "Apple Music 한국 공식",
+      "ends": null,
+      "planId": "individual",
+      "eligibility": "eligible_device",
+      "offerType": "trial",
+      "endsKnown": false,
+      "checked": "2026-10-27",
+      "verifiedAt": "2026-10-27T14:55:54Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-27T14:55:54Z",
+        "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
+    {
+      "id": "2acd5057bab19be4a80b7a0b",
+      "campaignId": "apple-family-trial",
+      "service": "apple-music",
+      "title": "Apple Music 가족 요금제 체험",
+      "benefit": "가족 요금제 1개월 무료",
+      "detail": "Apple Music 가족 요금제 체험",
+      "conditions": "신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인.",
+      "source": "https://www.apple.com/kr/apple-music/",
+      "publisher": "Apple Music 한국 공식",
+      "ends": null,
+      "planId": "family",
+      "eligibility": "new_family",
+      "offerType": "trial",
+      "endsKnown": false,
+      "checked": "2026-10-27",
+      "verifiedAt": "2026-10-27T14:55:54Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-27T14:55:54Z",
+        "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     }
   ],
@@ -792,13 +870,13 @@
       "id": "spotify",
       "name": "Spotify 한국",
       "status": "ok",
-      "verifiedOffers": 1
+      "verifiedOffers": 2
     },
     {
       "id": "apple-music",
       "name": "Apple Music 한국",
       "status": "ok",
-      "verifiedOffers": 1
+      "verifiedOffers": 3
     },
     {
       "id": "naver-plus",
@@ -1349,7 +1427,18 @@
       "officialHost": "www.notion.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "notes"
+      "purpose": "notes",
+      "purposes": [
+        "notes"
+      ],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "icloud",
@@ -1364,7 +1453,18 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "google-one",
@@ -1379,7 +1479,18 @@
       "officialHost": "one.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "google-workspace",
@@ -1396,7 +1507,18 @@
       "officialHost": "workspace.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office"
+      "purpose": "office",
+      "purposes": [
+        "office"
+      ],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "dropbox",
@@ -1412,7 +1534,18 @@
       "officialHost": "www.dropbox.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "identity": true,
+        "priceObserved": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "adobe",
@@ -1429,7 +1562,16 @@
       "officialHost": "www.adobe.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "canva",
@@ -1459,7 +1601,16 @@
       "officialHost": "www.figma.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "zoom",
@@ -1489,7 +1640,16 @@
       "officialHost": "slack.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T14:55:13Z"
+      }
     },
     {
       "key": "onedrive",
@@ -1757,30 +1917,6 @@
         {
           "field": "capability.spatial",
           "quote": "공간 음향 및 무손실 오디오 품질 독점 아티스트 콘텐츠 및 엄선"
-        }
-      ]
-    },
-    {
-      "id": "c056c5ba4e7948387070156c",
-      "service": "dropbox",
-      "name": "Standard",
-      "amount": 15.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {},
-      "source": "https://www.dropbox.com/plans",
-      "verifiedAt": "2026-10-27T09:56:23Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Standard US$15/월"
         }
       ]
     },
@@ -2061,6 +2197,38 @@
       ]
     },
     {
+      "id": "c056c5ba4e7948387070156c",
+      "service": "dropbox",
+      "name": "Standard",
+      "amount": 15.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {},
+      "source": "https://www.dropbox.com/plans",
+      "verifiedAt": "2026-10-27T14:55:13Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Standard US$15/월"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2080,7 +2248,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T14:05:12Z",
+      "verifiedAt": "2026-10-27T14:55:23Z",
       "status": "verified",
       "evidence": [
         {
@@ -2126,7 +2294,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T14:05:12Z",
+      "verifiedAt": "2026-10-27T14:55:23Z",
       "status": "verified",
       "evidence": [
         {
@@ -2170,7 +2338,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T14:05:14Z",
+      "verifiedAt": "2026-10-27T14:55:25Z",
       "status": "verified",
       "evidence": [
         {
@@ -2184,12 +2352,19 @@
       ]
     }
   ],
+  "tasteSuggestions": [],
   "research": {
+    "pipelineVersion": 3,
     "providers": [
       {
         "name": "AppSumo",
         "status": "ok",
         "attempts": 12
+      },
+      {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "attempts": 3
       },
       {
         "name": "Bing",
@@ -2199,17 +2374,22 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 81
+        "attempts": 83
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
+      },
+      {
+        "name": "Google",
+        "status": "no_relevant_results",
+        "attempts": 5
       },
       {
         "name": "Google",
@@ -2223,8 +2403,18 @@
       },
       {
         "name": "Google News",
+        "status": "ok",
+        "attempts": 2
+      },
+      {
+        "name": "Google News",
         "status": "publisher_candidates",
         "attempts": 37
+      },
+      {
+        "name": "Naver",
+        "status": "deferred",
+        "attempts": 4
       },
       {
         "name": "Naver",
@@ -2234,12 +2424,12 @@
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 75
+        "attempts": 76
       },
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "StackSocial",
@@ -2259,7 +2449,7 @@
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "퀘이사존 핫딜",
@@ -2267,9 +2457,97 @@
         "attempts": 12
       }
     ],
-    "candidateCount": 651,
-    "factChecks": 87,
+    "providerHealth": [
+      {
+        "name": "Naver",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-27T16:55:13Z"
+      },
+      {
+        "name": "Google",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Slickdeals",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "DealMirror",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Dealify",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "뽐뿌 해외뽐뿌",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-27T16:55:13Z"
+      }
+    ],
+    "candidateCount": 513,
+    "rawCandidateCount": 673,
+    "factChecks": 92,
     "verifiedCatalogCount": 1,
-    "catalogCount": 54
+    "catalogCount": 54,
+    "metrics": {
+      "candidateOutcomes": {
+        "catalog_verified": 1,
+        "needs_identity": 7,
+        "needs_official": 6,
+        "needs_service": 10,
+        "needs_verification": 72,
+        "pending": 417,
+        "rejected": 160
+      },
+      "catalogOutcomes": {
+        "discovered_links": 13,
+        "known": 69,
+        "needs_identity": 120,
+        "needs_price": 15,
+        "pending": 285,
+        "rejected": 160,
+        "unavailable": 2,
+        "verified": 1
+      },
+      "factCheckOutcomes": {
+        "needs_verification": 92
+      },
+      "newServiceCount": 1,
+      "verifiedPlanCount": 3,
+      "candidatePlanCount": 13,
+      "rejectedLinkCount": 178
+    },
+    "latestRun": {
+      "startedAt": "2026-10-27T14:55:13Z",
+      "searchAttempts": 21,
+      "newServices": 0,
+      "factChecks": {
+        "checked": 12,
+        "confirmed": 0,
+        "pending": 12,
+        "unmatched": 10,
+        "rejected": 0
+      },
+      "taste": {
+        "checked": 0,
+        "verified": 0,
+        "waitingOfficial": 6
+      }
+    }
   }
 }
