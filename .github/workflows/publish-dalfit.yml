@@ -1,16 +1,16 @@
-name: Publish Dalfit security review build
+name: Publish Dalfit Android update
 on:
   push:
     branches: [main]
     paths:
-      - 'distribution/dalfit-2.0.1/**'
+      - 'distribution/dalfit-2.0.2/**'
       - 'distribution/publish_dalfit.py'
       - '.github/workflows/publish-dalfit.yml'
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: dalfit-release-2.0.1-build46
+  group: dalfit-release-2.0.2-build47
   cancel-in-progress: false
 jobs:
   release:
