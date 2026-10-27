@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-27T19:00:45Z",
+  "generatedAt": "2026-10-27T19:55:29Z",
   "pipelineVersion": 3,
   "publishedOffers": 7,
   "catalogueServices": 54,
   "newServicesCumulative": 1,
   "newServicesThisRun": 0,
-  "candidatesRetained": 862,
-  "candidatesIncludingRejected": 1022,
+  "candidatesRetained": 865,
+  "candidatesIncludingRejected": 1025,
   "factCheckOutcomes": {
-    "needs_verification": 161,
+    "needs_verification": 173,
     "official_verified": 2,
     "partial_match": 1
   },
   "latestRun": {
-    "startedAt": "2026-10-27T18:59:47Z",
+    "startedAt": "2026-10-27T19:54:39Z",
     "searchAttempts": 21,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 3,
+      "unmatched": 8,
       "rejected": 0
     },
     "taste": {
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
+        "checkedAt": "2026-10-27T19:55:29Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -77,11 +77,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
+        "checkedAt": "2026-10-27T19:55:29Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -101,11 +101,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
+        "checkedAt": "2026-10-27T19:55:29Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -129,11 +129,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
+        "checkedAt": "2026-10-27T19:55:29Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -144,8 +144,8 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
@@ -153,12 +153,12 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
+        "checkedAt": "2026-10-27T19:55:29Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
     {
@@ -175,11 +175,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
+        "checkedAt": "2026-10-27T19:55:29Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -203,11 +203,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T19:00:45Z",
+      "verifiedAt": "2026-10-27T19:55:29Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T19:00:45Z",
+        "checkedAt": "2026-10-27T19:55:29Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -296,21 +296,6 @@
       "nextCheckAt": "2026-10-27T20:59:49Z"
     },
     {
-      "name": "AppSumo",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sumo 구독 할인",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "StackSocial",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Slickdeals",
       "status": "ok",
       "nextCheckAt": null
@@ -319,16 +304,6 @@
       "name": "Bing",
       "status": "blocked",
       "nextCheckAt": "2026-10-28T06:59:47Z"
-    },
-    {
-      "name": "Google",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "DealMirror",
@@ -344,6 +319,31 @@
       "name": "퀘이사존 핫딜",
       "status": "unavailable",
       "nextCheckAt": "2026-10-27T22:59:47Z"
+    },
+    {
+      "name": "Google",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "AppSumo",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sumo 구독 할인",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
     }
   ]
 }
