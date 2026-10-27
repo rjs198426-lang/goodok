@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T08:00:47Z",
-  "lastSuccessAt": "2026-10-27T08:00:47Z",
+  "generatedAt": "2026-10-27T08:58:33Z",
+  "lastSuccessAt": "2026-10-27T08:58:33Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -14,11 +14,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T08:00:47Z",
+      "verifiedAt": "2026-10-27T08:58:33Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T08:00:47Z",
+        "checkedAt": "2026-10-27T08:58:33Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T08:00:47Z",
+      "verifiedAt": "2026-10-27T08:58:33Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T08:00:47Z",
+        "checkedAt": "2026-10-27T08:58:33Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T08:00:47Z",
+      "verifiedAt": "2026-10-27T08:58:33Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T08:00:47Z",
+        "checkedAt": "2026-10-27T08:58:33Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     }
@@ -1761,102 +1761,6 @@
       ]
     },
     {
-      "id": "7e25938563b056214586d97c",
-      "service": "expressvpn",
-      "name": "Basic",
-      "amount": 2.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "vpn",
-      "capabilities": {},
-      "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-27T02:51:05Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Basic $ 2.99 / mo"
-        }
-      ]
-    },
-    {
-      "id": "91e29a92a0be5a92d074d118",
-      "service": "expressvpn",
-      "name": "Express Pro",
-      "amount": 7.49,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "vpn",
-      "capabilities": {},
-      "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-27T02:51:05Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Express Pro $ 7.49 / mo"
-        }
-      ]
-    },
-    {
-      "id": "afaf14b1f252428b344da7e2",
-      "service": "microsoft365",
-      "name": "Microsoft 365 Personal",
-      "amount": 12500.0,
-      "currency": "KRW",
-      "interval": "monthly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "office",
-      "capabilities": {},
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-27T03:52:08Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Personal ₩12,500/월"
-        }
-      ]
-    },
-    {
-      "id": "01c52c3a758d88dbf4db749f",
-      "service": "microsoft365",
-      "name": "Microsoft 365 Premium",
-      "amount": 29000.0,
-      "currency": "KRW",
-      "interval": "monthly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "office",
-      "capabilities": {},
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-27T03:52:08Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Premium ₩29,000/월"
-        }
-      ]
-    },
-    {
       "id": "c056c5ba4e7948387070156c",
       "service": "dropbox",
       "name": "Standard",
@@ -2061,6 +1965,102 @@
       ]
     },
     {
+      "id": "7e25938563b056214586d97c",
+      "service": "expressvpn",
+      "name": "Basic",
+      "amount": 2.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "vpn",
+      "capabilities": {},
+      "source": "https://www.expressvpn.com/order",
+      "verifiedAt": "2026-10-27T08:58:02Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Basic $ 2.99 / mo"
+        }
+      ]
+    },
+    {
+      "id": "91e29a92a0be5a92d074d118",
+      "service": "expressvpn",
+      "name": "Express Pro",
+      "amount": 7.49,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "vpn",
+      "capabilities": {},
+      "source": "https://www.expressvpn.com/order",
+      "verifiedAt": "2026-10-27T08:58:02Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Express Pro $ 7.49 / mo"
+        }
+      ]
+    },
+    {
+      "id": "afaf14b1f252428b344da7e2",
+      "service": "microsoft365",
+      "name": "Microsoft 365 Personal",
+      "amount": 12500.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "office",
+      "capabilities": {},
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
+      "verifiedAt": "2026-10-27T08:58:02Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Personal ₩12,500/월"
+        }
+      ]
+    },
+    {
+      "id": "01c52c3a758d88dbf4db749f",
+      "service": "microsoft365",
+      "name": "Microsoft 365 Premium",
+      "amount": 29000.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "office",
+      "capabilities": {},
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
+      "verifiedAt": "2026-10-27T08:58:02Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Premium ₩29,000/월"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2080,7 +2080,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T08:00:34Z",
+      "verifiedAt": "2026-10-27T08:58:20Z",
       "status": "verified",
       "evidence": [
         {
@@ -2126,7 +2126,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T08:00:34Z",
+      "verifiedAt": "2026-10-27T08:58:20Z",
       "status": "verified",
       "evidence": [
         {
@@ -2170,7 +2170,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T08:00:35Z",
+      "verifiedAt": "2026-10-27T08:58:21Z",
       "status": "verified",
       "evidence": [
         {
@@ -2189,22 +2189,22 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "Bing",
         "status": "no_results",
-        "attempts": 15
+        "attempts": 14
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 73
+        "attempts": 74
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 10
+        "attempts": 11
       },
       {
         "name": "Dealify",
@@ -2219,22 +2219,27 @@
       {
         "name": "Google News",
         "status": "no_results",
-        "attempts": 9
+        "attempts": 8
       },
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 35
+        "attempts": 36
+      },
+      {
+        "name": "Naver",
+        "status": "ok",
+        "attempts": 4
       },
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 88
+        "attempts": 84
       },
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "StackSocial",
@@ -2254,11 +2259,11 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 11
+        "attempts": 10
       }
     ],
-    "candidateCount": 562,
-    "factChecks": 82,
+    "candidateCount": 577,
+    "factChecks": 83,
     "verifiedCatalogCount": 1,
     "catalogCount": 54
   }
