@@ -1,0 +1,28 @@
+name: Publish verified Dalfit APK
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'distribution/dalfit-2.0.0/**'
+      - 'distribution/publish_dalfit.py'
+      - '.github/workflows/publish-dalfit.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: dalfit-release-2.0.0-build45
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Reassemble and verify signed APK, then publish download
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: python3 distribution/publish_dalfit.py
