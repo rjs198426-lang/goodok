@@ -1,33 +1,57 @@
 {
-  "generatedAt": "2026-10-27T14:55:54Z",
+  "generatedAt": "2026-10-27T15:02:51Z",
   "pipelineVersion": 3,
-  "publishedOffers": 6,
+  "publishedOffers": 7,
   "catalogueServices": 54,
   "newServicesCumulative": 1,
   "newServicesThisRun": 0,
-  "candidatesRetained": 513,
-  "candidatesIncludingRejected": 673,
+  "candidatesRetained": 557,
+  "candidatesIncludingRejected": 717,
   "factCheckOutcomes": {
-    "needs_verification": 92
+    "needs_verification": 95
   },
   "latestRun": {
-    "startedAt": "2026-10-27T14:55:13Z",
+    "startedAt": "2026-10-27T15:02:16Z",
     "searchAttempts": 21,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 10,
+      "unmatched": 25,
       "rejected": 0
     },
     "taste": {
-      "checked": 0,
+      "checked": 1,
       "verified": 0,
-      "waitingOfficial": 6
+      "waitingOfficial": 5
     }
   },
   "offers": [
+    {
+      "id": "2acd5057bab19be4a80b7a0b",
+      "campaignId": "apple-family-trial",
+      "service": "apple-music",
+      "title": "Apple Music 가족 요금제 체험",
+      "benefit": "가족 요금제 1개월 무료",
+      "detail": "Apple Music 가족 요금제 체험",
+      "conditions": "신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인.",
+      "source": "https://www.apple.com/kr/apple-music/",
+      "publisher": "Apple Music 한국 공식",
+      "ends": null,
+      "planId": "family",
+      "eligibility": "new_family",
+      "offerType": "trial",
+      "endsKnown": false,
+      "checked": "2026-10-27",
+      "verifiedAt": "2026-10-27T15:02:51Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-27T15:02:51Z",
+        "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
       "service": "apple-music",
@@ -41,11 +65,35 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:55:54Z",
+      "verifiedAt": "2026-10-27T15:02:51Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:55:54Z",
+        "checkedAt": "2026-10-27T15:02:51Z",
+        "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
+    {
+      "id": "90d2b13a6deb8abc9b52a56f",
+      "campaignId": "apple-device-trial",
+      "service": "apple-music",
+      "title": "Apple Music 대상 기기 구매 체험",
+      "benefit": "대상 기기 구매 시 3개월 무료",
+      "detail": "Apple Music 대상 기기 구매 체험",
+      "conditions": "적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인.",
+      "source": "https://www.apple.com/kr/apple-music/",
+      "publisher": "Apple Music 한국 공식",
+      "ends": null,
+      "planId": "individual",
+      "eligibility": "eligible_device",
+      "offerType": "trial",
+      "endsKnown": false,
+      "checked": "2026-10-27",
+      "verifiedAt": "2026-10-27T15:02:51Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-27T15:02:51Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -62,11 +110,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:55:54Z",
+      "verifiedAt": "2026-10-27T15:02:51Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:55:54Z",
+        "checkedAt": "2026-10-27T15:02:51Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -83,11 +131,11 @@
       "offerType": "introductory",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:55:54Z",
+      "verifiedAt": "2026-10-27T15:02:51Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:55:54Z",
+        "checkedAt": "2026-10-27T15:02:51Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -107,60 +155,36 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:55:54Z",
+      "verifiedAt": "2026-10-27T15:02:51Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:55:54Z",
+        "checkedAt": "2026-10-27T15:02:51Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
-      "id": "90d2b13a6deb8abc9b52a56f",
-      "campaignId": "apple-device-trial",
-      "service": "apple-music",
-      "title": "Apple Music 대상 기기 구매 체험",
-      "benefit": "대상 기기 구매 시 3개월 무료",
-      "detail": "Apple Music 대상 기기 구매 체험",
-      "conditions": "적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인.",
-      "source": "https://www.apple.com/kr/apple-music/",
-      "publisher": "Apple Music 한국 공식",
+      "id": "087184eee8bb004a3643d0ba",
+      "campaignId": "spotify-student-trial",
+      "service": "spotify",
+      "title": "Spotify 학생 요금제 체험",
+      "benefit": "학생 요금제 첫 1개월 ₩0",
+      "detail": "Spotify 학생 요금제 체험",
+      "conditions": "승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인.",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
       "ends": null,
-      "planId": "individual",
-      "eligibility": "eligible_device",
+      "planId": "student",
+      "eligibility": "eligible_student",
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:55:54Z",
-      "firstSeen": "2026-10-27T14:55:54Z",
+      "verifiedAt": "2026-10-27T15:02:51Z",
+      "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T14:55:54Z",
-        "officialSource": "https://www.apple.com/kr/apple-music/"
-      }
-    },
-    {
-      "id": "2acd5057bab19be4a80b7a0b",
-      "campaignId": "apple-family-trial",
-      "service": "apple-music",
-      "title": "Apple Music 가족 요금제 체험",
-      "benefit": "가족 요금제 1개월 무료",
-      "detail": "Apple Music 가족 요금제 체험",
-      "conditions": "신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인.",
-      "source": "https://www.apple.com/kr/apple-music/",
-      "publisher": "Apple Music 한국 공식",
-      "ends": null,
-      "planId": "family",
-      "eligibility": "new_family",
-      "offerType": "trial",
-      "endsKnown": false,
-      "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T14:55:54Z",
-      "firstSeen": "2026-10-27T14:55:54Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-10-27T14:55:54Z",
-        "officialSource": "https://www.apple.com/kr/apple-music/"
+        "checkedAt": "2026-10-27T15:02:51Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
   ],
@@ -176,15 +200,62 @@
       "officialHost": "deepai.org",
       "origin": "discovered",
       "status": "verified",
-      "description": "DeepAI Code is a free AI coding agent for Mac that reads your code, runs commands and edits files in your project folders, with your approval.",
+      "description": "AI 대화 · 이미지 제작 · 코딩 · 음악 제작 · 웹사이트 제작 도구를 포함한 구독 서비스",
       "discoveredFrom": "https://www.bing.com/search?q=AI%20%EA%B5%AC%EB%8F%85%20%ED%95%A0%EC%9D%B8%20%EC%8B%A0%EA%B7%9C%20%EC%84%9C%EB%B9%84%EC%8A%A4",
-      "purpose": "coding",
+      "purpose": "assistant",
       "identityEvidence": {
         "organizationName": "DeepAI",
         "organizationUrl": "https://deepai.org",
         "method": "referring_site_and_first_party_structured_identity"
       },
-      "verifiedAt": "2026-10-26T21:49:07Z"
+      "verifiedAt": "2026-10-26T21:49:07Z",
+      "purposes": [
+        "assistant",
+        "image",
+        "coding",
+        "music_creation",
+        "appbuilder"
+      ],
+      "purposeEvidence": [
+        {
+          "purpose": "assistant",
+          "quote": "editing Limited standard chat messages Up to 200 Theos a day in DeepAI Code Genius and Super Geniu",
+          "source": "https://deepai.org/pricing",
+          "checkedAt": "2026-10-27T15:02:16Z"
+        },
+        {
+          "purpose": "image",
+          "quote": "AI Pro \n       \n         500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
+          "source": "https://deepai.org/pricing",
+          "checkedAt": "2026-10-27T15:02:16Z"
+        },
+        {
+          "purpose": "coding",
+          "quote": "Up to 200 Theos a day in DeepAI Code Genius and Super Genius modes Memory and live web browsing ",
+          "source": "https://deepai.org/pricing",
+          "checkedAt": "2026-10-27T15:02:16Z"
+        },
+        {
+          "purpose": "music_creation",
+          "quote": "ollywood Mode Limited AI music generation AI Website Builder (beta) Limited photo editor, 60 secon",
+          "source": "https://deepai.org/pricing",
+          "checkedAt": "2026-10-27T15:02:16Z"
+        },
+        {
+          "purpose": "appbuilder",
+          "quote": "d AI music generation AI Website Builder (beta) Limited photo editor, 60 seconds/day of AI Voice Cha",
+          "source": "https://deepai.org/pricing",
+          "checkedAt": "2026-10-27T15:02:16Z"
+        }
+      ],
+      "verification": {
+        "identity": true,
+        "priceObserved": true,
+        "billingTerms": true,
+        "regionConfirmed": false,
+        "paidScope": true,
+        "checkedAt": "2026-10-27T15:02:16Z"
+      }
     }
   ],
   "tasteSuggestions": [],
@@ -193,21 +264,6 @@
       "name": "Naver",
       "status": "unavailable",
       "nextCheckAt": "2026-10-27T16:55:13Z"
-    },
-    {
-      "name": "Google",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "Slickdeals",
@@ -228,6 +284,36 @@
       "name": "뽐뿌 해외뽐뿌",
       "status": "unavailable",
       "nextCheckAt": "2026-10-27T16:55:13Z"
+    },
+    {
+      "name": "Google",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "퀘이사존 핫딜",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-27T17:02:16Z"
+    },
+    {
+      "name": "AppSumo",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sumo 구독 할인",
+      "status": "ok",
+      "nextCheckAt": null
     }
   ]
 }
