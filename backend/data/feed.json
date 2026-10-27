@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T08:58:33Z",
-  "lastSuccessAt": "2026-10-27T08:58:33Z",
+  "generatedAt": "2026-10-27T09:56:49Z",
+  "lastSuccessAt": "2026-10-27T09:56:49Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -14,11 +14,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T08:58:33Z",
+      "verifiedAt": "2026-10-27T09:56:49Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T08:58:33Z",
+        "checkedAt": "2026-10-27T09:56:49Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T08:58:33Z",
+      "verifiedAt": "2026-10-27T09:56:49Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T08:58:33Z",
+        "checkedAt": "2026-10-27T09:56:49Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T08:58:33Z",
+      "verifiedAt": "2026-10-27T09:56:49Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T08:58:33Z",
+        "checkedAt": "2026-10-27T09:56:49Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     }
@@ -1761,30 +1761,6 @@
       ]
     },
     {
-      "id": "c056c5ba4e7948387070156c",
-      "service": "dropbox",
-      "name": "Standard",
-      "amount": 15.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {},
-      "source": "https://www.dropbox.com/plans",
-      "verifiedAt": "2026-10-27T03:52:08Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Standard US$15/월"
-        }
-      ]
-    },
-    {
       "id": "3246ece9c901ae141997400f",
       "service": "discovered-f6d59d44d511",
       "name": "Consider DeepAI Pro",
@@ -2061,6 +2037,30 @@
       ]
     },
     {
+      "id": "c056c5ba4e7948387070156c",
+      "service": "dropbox",
+      "name": "Standard",
+      "amount": 15.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {},
+      "source": "https://www.dropbox.com/plans",
+      "verifiedAt": "2026-10-27T09:56:23Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Standard US$15/월"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2080,7 +2080,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T08:58:20Z",
+      "verifiedAt": "2026-10-27T09:56:38Z",
       "status": "verified",
       "evidence": [
         {
@@ -2126,7 +2126,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T08:58:20Z",
+      "verifiedAt": "2026-10-27T09:56:38Z",
       "status": "verified",
       "evidence": [
         {
@@ -2170,7 +2170,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T08:58:21Z",
+      "verifiedAt": "2026-10-27T09:56:40Z",
       "status": "verified",
       "evidence": [
         {
@@ -2219,32 +2219,32 @@
       {
         "name": "Google News",
         "status": "no_results",
-        "attempts": 8
+        "attempts": 9
       },
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 36
+        "attempts": 35
       },
       {
         "name": "Naver",
         "status": "ok",
-        "attempts": 4
+        "attempts": 8
       },
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 84
+        "attempts": 80
       },
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 11
+        "attempts": 10
       },
       {
         "name": "Sumo 구독 할인",
@@ -2254,16 +2254,16 @@
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 10
+        "attempts": 11
       }
     ],
-    "candidateCount": 577,
-    "factChecks": 83,
+    "candidateCount": 600,
+    "factChecks": 84,
     "verifiedCatalogCount": 1,
     "catalogCount": 54
   }
