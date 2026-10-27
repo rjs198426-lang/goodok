@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T16:00:58Z",
-  "lastSuccessAt": "2026-10-27T16:00:58Z",
+  "generatedAt": "2026-10-27T16:08:18Z",
+  "lastSuccessAt": "2026-10-27T16:08:18Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -18,12 +18,16 @@
       "eligibility": "eligible_student",
       "offerType": "trial",
       "endsKnown": false,
+      "audience": {
+        "student": true,
+        "newCustomer": true
+      },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -42,12 +46,15 @@
       "eligibility": "new_family",
       "offerType": "trial",
       "endsKnown": false,
+      "audience": {
+        "newCustomer": true
+      },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -63,12 +70,15 @@
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
+      "audience": {
+        "newCustomer": true
+      },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -87,12 +97,16 @@
       "eligibility": "eligible_device",
       "offerType": "trial",
       "endsKnown": false,
+      "audience": {
+        "device": true,
+        "newCustomer": true
+      },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -108,12 +122,15 @@
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
+      "audience": {
+        "newCustomer": true
+      },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -129,12 +146,13 @@
       "ends": null,
       "offerType": "introductory",
       "endsKnown": false,
+      "audience": {},
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -153,12 +171,16 @@
       "eligibility": "eligible_wallet",
       "offerType": "trial",
       "endsKnown": false,
+      "audience": {
+        "payment": "wallet",
+        "newCustomer": true
+      },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T16:00:58Z",
+      "verifiedAt": "2026-10-27T16:08:18Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T16:00:58Z",
+        "checkedAt": "2026-10-27T16:08:18Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -2467,19 +2489,7 @@
       "officialHost": "www.expressvpn.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "vpn",
-      "purposes": [
-        "vpn"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "vpn"
     },
     {
       "key": "protonvpn",
@@ -2495,19 +2505,7 @@
       "officialHost": "protonvpn.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "vpn",
-      "purposes": [
-        "vpn"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "vpn"
     },
     {
       "key": "microsoft365",
@@ -2527,19 +2525,7 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office",
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "office"
     },
     {
       "key": "notion",
@@ -2554,19 +2540,7 @@
       "officialHost": "www.notion.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "notes",
-      "purposes": [
-        "notes"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "notes"
     },
     {
       "key": "icloud",
@@ -2581,19 +2555,7 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "storage"
     },
     {
       "key": "google-one",
@@ -2608,19 +2570,7 @@
       "officialHost": "one.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "storage"
     },
     {
       "key": "google-workspace",
@@ -2637,19 +2587,7 @@
       "officialHost": "workspace.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office",
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "office"
     },
     {
       "key": "dropbox",
@@ -2665,19 +2603,7 @@
       "officialHost": "www.dropbox.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "storage"
     },
     {
       "key": "adobe",
@@ -2694,17 +2620,7 @@
       "officialHost": "www.adobe.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:00:05Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "canva",
@@ -2734,7 +2650,17 @@
       "officialHost": "www.figma.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T16:07:09Z"
+      }
     },
     {
       "key": "zoom",
@@ -2764,7 +2690,17 @@
       "officialHost": "slack.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T16:07:09Z"
+      }
     },
     {
       "key": "onedrive",
@@ -2779,7 +2715,19 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T16:07:09Z"
+      }
     },
     {
       "key": "evernote",
@@ -2794,7 +2742,19 @@
       "officialHost": "evernote.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "notes"
+      "purpose": "notes",
+      "purposes": [
+        "notes"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T16:07:09Z"
+      }
     },
     {
       "key": "kakao-emoticon",
@@ -2841,7 +2801,17 @@
       "officialHost": "page.kakao.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T16:07:09Z"
+      }
     },
     {
       "key": "kakao-webtoon",
@@ -2855,7 +2825,17 @@
       "officialHost": "webtoon.kakao.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T16:07:09Z"
+      }
     },
     {
       "key": "kakao",
@@ -3503,7 +3483,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T16:00:18Z",
+      "verifiedAt": "2026-10-27T16:07:15Z",
       "status": "verified",
       "evidence": [
         {
@@ -3549,7 +3529,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T16:00:18Z",
+      "verifiedAt": "2026-10-27T16:07:15Z",
       "status": "verified",
       "evidence": [
         {
@@ -3593,7 +3573,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T16:00:20Z",
+      "verifiedAt": "2026-10-27T16:07:17Z",
       "status": "verified",
       "evidence": [
         {
@@ -3614,12 +3594,12 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 7
+        "attempts": 9
       },
       {
         "name": "Bing",
@@ -3629,7 +3609,7 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 100
+        "attempts": 103
       },
       {
         "name": "DealMirror",
@@ -3639,17 +3619,22 @@
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "Google",
         "status": "no_relevant_results",
-        "attempts": 30
+        "attempts": 35
       },
       {
         "name": "Google",
         "status": "ok",
         "attempts": 88
+      },
+      {
+        "name": "Google News",
+        "status": "no_relevant_results",
+        "attempts": 1
       },
       {
         "name": "Google News",
@@ -3659,7 +3644,7 @@
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "Google News",
@@ -3669,7 +3654,7 @@
       {
         "name": "Naver",
         "status": "deferred",
-        "attempts": 29
+        "attempts": 34
       },
       {
         "name": "Naver",
@@ -3709,7 +3694,7 @@
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 2
+        "attempts": 3
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -3719,7 +3704,7 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "deferred",
-        "attempts": 2
+        "attempts": 3
       },
       {
         "name": "퀘이사존 핫딜",
@@ -3744,11 +3729,6 @@
         "nextCheckAt": "2026-10-27T17:02:16Z"
       },
       {
-        "name": "AppSumo",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Sumo 구독 할인",
         "status": "ok",
         "nextCheckAt": null
@@ -3757,21 +3737,6 @@
         "name": "StackSocial",
         "status": "unavailable",
         "nextCheckAt": "2026-10-27T17:16:51Z"
-      },
-      {
-        "name": "Google",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
       },
       {
         "name": "Slickdeals",
@@ -3784,54 +3749,82 @@
         "nextCheckAt": null
       },
       {
+        "name": "Google",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
         "name": "Dealify",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "AppSumo",
         "status": "ok",
         "nextCheckAt": null
       }
     ],
-    "candidateCount": 699,
-    "rawCandidateCount": 859,
-    "factChecks": 102,
+    "candidateCount": 729,
+    "rawCandidateCount": 889,
+    "factChecks": 108,
     "verifiedCatalogCount": 1,
     "catalogCount": 54,
     "metrics": {
       "candidateOutcomes": {
         "catalog_verified": 1,
-        "needs_dates": 23,
+        "needs_dates": 29,
         "needs_official": 11,
-        "needs_service": 71,
-        "needs_verification": 82,
-        "pending": 509,
+        "needs_service": 76,
+        "needs_verification": 88,
+        "pending": 522,
         "rejected": 160,
         "unavailable": 2
       },
       "catalogOutcomes": {
         "discovered_links": 42,
-        "known": 78,
-        "needs_identity": 139,
-        "needs_price": 17,
-        "pending": 305,
+        "known": 81,
+        "needs_identity": 147,
+        "needs_price": 18,
+        "pending": 303,
         "rejected": 160,
         "unavailable": 3,
         "verified": 1
       },
       "factCheckOutcomes": {
-        "needs_verification": 102
+        "needs_verification": 108
       },
       "newServiceCount": 1,
       "verifiedPlanCount": 4,
       "candidatePlanCount": 13,
-      "rejectedLinkCount": 1053
+      "rejectedLinkCount": 1177,
+      "featureCoverage": {
+        "adfree": 3,
+        "lossless": 2,
+        "music": 2,
+        "offline": 2,
+        "spatial": 1
+      },
+      "comparableKRWPlans": 3
     },
     "latestRun": {
-      "startedAt": "2026-10-27T16:00:05Z",
+      "startedAt": "2026-10-27T16:07:09Z",
       "searchAttempts": 21,
       "newServices": 0,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 3,
+        "unmatched": 5,
         "rejected": 0
       },
       "taste": {
