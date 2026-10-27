@@ -1,23 +1,23 @@
 # 달핏 백그라운드 조사 결과
-기준 UTC: 2026-10-27T16:08:18Z · 파이프라인 3
+기준 UTC: 2026-10-27T16:25:42Z · 파이프라인 3
 
 - 공개 중인 혜택: 7개 (기존 혜택 재확인은 신규 발굴과 별도)
-- 외부 후보 대조 확정 기록: 0개 / 대조 기록 108개
+- 외부 후보 대조 확정 기록: 0개 / 대조 기록 116개
 - 서비스 목록: 54개 · 신규 편입 누적 1개 · 이번 실행 신규 0개
-- 유효 후보 URL: 729개 · 제외 이력 포함 889개
+- 유효 후보 URL: 758개 · 제외 이력 포함 918개
 - 요금제: 검증 4개 / 미확정 13개
 - 공식 기간 확인 취향 정보: 0개
 
 ## 현재 혜택
 | 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |
 | --- | --- | --- | --- | --- | --- |
-| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-10-27T16:08:18Z | https://www.spotify.com/kr/premium/ |
-| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-10-27T16:08:18Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-27T16:08:18Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-10-27T16:08:18Z | https://www.apple.com/kr/apple-music/ |
-| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-10-27T16:08:18Z | https://www.spotify.com/kr/premium/ |
-| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-27T16:08:18Z | https://surfshark.com/pricing |
-| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-10-27T16:08:18Z | https://www.spotify.com/kr/premium/ |
+| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-10-27T16:25:42Z | https://www.spotify.com/kr/premium/ |
+| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-10-27T16:25:42Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-27T16:25:42Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-10-27T16:25:42Z | https://www.apple.com/kr/apple-music/ |
+| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-10-27T16:25:42Z | https://www.spotify.com/kr-ko/premium/ |
+| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-27T16:25:42Z | https://surfshark.com/pricing |
+| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-10-27T16:25:42Z | https://www.spotify.com/kr/premium/ |
 
 ## 기능 검증 범위
 {"adfree": 3, "lossless": 2, "music": 2, "offline": 2, "spatial": 1}
@@ -29,20 +29,22 @@
 | --- | --- | --- | --- |
 | DeepAI | verified | assistant, image, coding, music_creation, appbuilder | https://deepai.org/pricing |
 
+공식 검색 API 연결: Google 설정 필요, Naver 설정 필요
+
 ## 출처 접근 및 재시도
 | 출처 | 최신 상태 | 다음 재시도 UTC |
 | --- | --- | --- |
 | Naver | unavailable | 2026-10-27T16:55:13Z |
 | 뽐뿌 해외뽐뿌 | unavailable | 2026-10-27T16:55:13Z |
 | 퀘이사존 핫딜 | unavailable | 2026-10-27T17:02:16Z |
-| Sumo 구독 할인 | ok | 제한 없음 |
 | StackSocial | unavailable | 2026-10-27T17:16:51Z |
-| Slickdeals | ok | 제한 없음 |
 | DealMirror | ok | 제한 없음 |
-| Google | no_relevant_results | 제한 없음 |
-| Bing | no_relevant_results | 제한 없음 |
-| Google News | ok | 제한 없음 |
 | Dealify | ok | 제한 없음 |
+| Google | no_relevant_results | 제한 없음 |
+| Bing | ok | 제한 없음 |
+| Google News | ok | 제한 없음 |
 | AppSumo | ok | 제한 없음 |
+| Sumo 구독 할인 | ok | 제한 없음 |
+| Slickdeals | ok | 제한 없음 |
 
 작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.
