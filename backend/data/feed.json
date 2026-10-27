@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T17:00:33Z",
-  "lastSuccessAt": "2026-10-27T17:00:33Z",
+  "generatedAt": "2026-10-27T17:58:45Z",
+  "lastSuccessAt": "2026-10-27T17:58:45Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T17:00:33Z",
+      "verifiedAt": "2026-10-27T17:58:45Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T17:00:33Z",
+        "checkedAt": "2026-10-27T17:58:45Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -2251,19 +2251,7 @@
       "officialHost": "help.netflix.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "youtube",
@@ -2280,19 +2268,7 @@
       "officialHost": "www.youtube.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video_platform",
-      "purposes": [
-        "video_platform"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video_platform"
     },
     {
       "key": "disney-plus",
@@ -2309,19 +2285,7 @@
       "officialHost": "www.disneyplus.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": true,
-        "billingTerms": true,
-        "regionConfirmed": true,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "tving",
@@ -2335,19 +2299,7 @@
       "officialHost": "www.tving.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "wavve",
@@ -2361,19 +2313,7 @@
       "officialHost": "www.wavve.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "watcha",
@@ -2387,19 +2327,7 @@
       "officialHost": "watcha.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "coupang-play",
@@ -2413,19 +2341,7 @@
       "officialHost": "www.coupangplay.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "apple-tv",
@@ -2441,19 +2357,7 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video",
-      "purposes": [
-        "video"
-      ],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "video"
     },
     {
       "key": "prime-video",
@@ -2488,17 +2392,7 @@
       "officialHost": "nid.naver.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 3,
-        "identity": true,
-        "priceObserved": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-27T16:59:49Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "coupang",
@@ -2563,7 +2457,19 @@
       "officialHost": "surfshark.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "vpn"
+      "purpose": "vpn",
+      "purposes": [
+        "vpn"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T17:57:51Z"
+      }
     },
     {
       "key": "nordvpn",
@@ -2595,7 +2501,19 @@
       "officialHost": "www.expressvpn.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "vpn"
+      "purpose": "vpn",
+      "purposes": [
+        "vpn"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T17:57:51Z"
+      }
     },
     {
       "key": "protonvpn",
@@ -2611,7 +2529,19 @@
       "officialHost": "protonvpn.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "vpn"
+      "purpose": "vpn",
+      "purposes": [
+        "vpn"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T17:57:51Z"
+      }
     },
     {
       "key": "microsoft365",
@@ -2631,7 +2561,19 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office"
+      "purpose": "office",
+      "purposes": [
+        "office"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T17:57:51Z"
+      }
     },
     {
       "key": "notion",
@@ -2646,7 +2588,19 @@
       "officialHost": "www.notion.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "notes"
+      "purpose": "notes",
+      "purposes": [
+        "notes"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T17:57:51Z"
+      }
     },
     {
       "key": "icloud",
@@ -2661,7 +2615,19 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "schemaVersion": 3,
+        "identity": true,
+        "priceObserved": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-27T17:57:51Z"
+      }
     },
     {
       "key": "google-one",
@@ -3154,70 +3120,6 @@
       ]
     },
     {
-      "id": "afaf14b1f252428b344da7e2",
-      "service": "microsoft365",
-      "name": "Microsoft 365 Personal",
-      "amount": 12500.0,
-      "currency": "KRW",
-      "interval": "monthly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "office",
-      "capabilities": {},
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-27T16:00:05Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Personal ₩12,500/월"
-        }
-      ],
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": true
-      }
-    },
-    {
-      "id": "01c52c3a758d88dbf4db749f",
-      "service": "microsoft365",
-      "name": "Microsoft 365 Premium",
-      "amount": 29000.0,
-      "currency": "KRW",
-      "interval": "monthly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "office",
-      "capabilities": {},
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-27T16:00:05Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Premium ₩29,000/월"
-        }
-      ],
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": true
-      }
-    },
-    {
       "id": "c056c5ba4e7948387070156c",
       "service": "dropbox",
       "name": "Standard",
@@ -3530,6 +3432,70 @@
       }
     },
     {
+      "id": "afaf14b1f252428b344da7e2",
+      "service": "microsoft365",
+      "name": "Microsoft 365 Personal",
+      "amount": 12500.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "office",
+      "capabilities": {},
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
+      "verifiedAt": "2026-10-27T17:57:51Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Personal ₩12,500/월"
+        }
+      ],
+      "purposes": [
+        "office"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": true
+      }
+    },
+    {
+      "id": "01c52c3a758d88dbf4db749f",
+      "service": "microsoft365",
+      "name": "Microsoft 365 Premium",
+      "amount": 29000.0,
+      "currency": "KRW",
+      "interval": "monthly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "office",
+      "capabilities": {},
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
+      "verifiedAt": "2026-10-27T17:57:51Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Premium ₩29,000/월"
+        }
+      ],
+      "purposes": [
+        "office"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": true
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -3549,7 +3515,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T16:59:56Z",
+      "verifiedAt": "2026-10-27T17:58:00Z",
       "status": "verified",
       "evidence": [
         {
@@ -3595,7 +3561,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T16:59:57Z",
+      "verifiedAt": "2026-10-27T17:58:00Z",
       "status": "verified",
       "evidence": [
         {
@@ -3639,7 +3605,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T16:59:59Z",
+      "verifiedAt": "2026-10-27T17:58:02Z",
       "status": "verified",
       "evidence": [
         {
@@ -3669,7 +3635,7 @@
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "Bing",
@@ -3689,17 +3655,17 @@
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 16
+        "attempts": 15
       },
       {
         "name": "Google",
         "status": "no_relevant_results",
-        "attempts": 50
+        "attempts": 55
       },
       {
         "name": "Google",
         "status": "ok",
-        "attempts": 84
+        "attempts": 80
       },
       {
         "name": "Google News",
@@ -3709,22 +3675,22 @@
       {
         "name": "Google News",
         "status": "no_results",
-        "attempts": 8
+        "attempts": 7
       },
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 19
+        "attempts": 21
       },
       {
         "name": "Google News",
         "status": "publisher_candidates",
-        "attempts": 34
+        "attempts": 33
       },
       {
         "name": "Naver",
         "status": "deferred",
-        "attempts": 48
+        "attempts": 53
       },
       {
         "name": "Naver",
@@ -3734,12 +3700,12 @@
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 69
+        "attempts": 65
       },
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 15
+        "attempts": 16
       },
       {
         "name": "StackSocial",
@@ -3749,7 +3715,7 @@
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "StackSocial",
@@ -3759,7 +3725,7 @@
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 15
+        "attempts": 16
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -3769,7 +3735,7 @@
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "퀘이사존 핫딜",
@@ -3779,7 +3745,7 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 12
+        "attempts": 11
       }
     ],
     "providerHealth": [
@@ -3787,21 +3753,6 @@
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
         "nextCheckAt": "2026-10-27T17:02:16Z"
-      },
-      {
-        "name": "StackSocial",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-27T17:16:51Z"
-      },
-      {
-        "name": "Slickdeals",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "DealMirror",
-        "status": "ok",
-        "nextCheckAt": null
       },
       {
         "name": "Dealify",
@@ -3814,21 +3765,6 @@
         "nextCheckAt": "2026-10-27T20:59:49Z"
       },
       {
-        "name": "Google",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
         "nextCheckAt": "2026-10-27T20:59:49Z"
@@ -3839,44 +3775,78 @@
         "nextCheckAt": null
       },
       {
+        "name": "Google",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
         "name": "Sumo 구독 할인",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "StackSocial",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Slickdeals",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "DealMirror",
         "status": "ok",
         "nextCheckAt": null
       }
     ],
-    "candidateCount": 815,
-    "rawCandidateCount": 975,
-    "factChecks": 140,
+    "candidateCount": 830,
+    "rawCandidateCount": 990,
+    "factChecks": 152,
     "verifiedCatalogCount": 1,
     "catalogCount": 54,
     "metrics": {
       "candidateOutcomes": {
         "catalog_verified": 1,
-        "needs_dates": 47,
+        "needs_dates": 53,
         "needs_official": 11,
-        "needs_service": 96,
-        "needs_verification": 120,
-        "pending": 538,
+        "needs_service": 100,
+        "needs_verification": 129,
+        "official_verified": 2,
+        "partial_match": 1,
+        "pending": 531,
         "rejected": 160,
         "unavailable": 2
       },
       "catalogOutcomes": {
-        "discovered_links": 42,
-        "known": 92,
-        "needs_identity": 169,
-        "needs_price": 18,
-        "pending": 316,
+        "discovered_links": 43,
+        "known": 97,
+        "needs_identity": 173,
+        "needs_price": 19,
+        "pending": 308,
         "rejected": 160,
-        "unavailable": 6,
+        "unavailable": 7,
         "verified": 1
       },
       "factCheckOutcomes": {
-        "needs_verification": 140
+        "needs_verification": 149,
+        "official_verified": 2,
+        "partial_match": 1
       },
       "newServiceCount": 1,
       "verifiedPlanCount": 4,
       "candidatePlanCount": 13,
-      "rejectedLinkCount": 1720,
+      "rejectedLinkCount": 1994,
       "featureCoverage": {
         "adfree": 3,
         "lossless": 2,
@@ -3887,14 +3857,14 @@
       "comparableKRWPlans": 3
     },
     "latestRun": {
-      "startedAt": "2026-10-27T16:59:49Z",
+      "startedAt": "2026-10-27T17:57:51Z",
       "searchAttempts": 21,
       "newServices": 0,
       "factChecks": {
         "checked": 12,
-        "confirmed": 0,
-        "pending": 12,
-        "unmatched": 12,
+        "confirmed": 2,
+        "pending": 10,
+        "unmatched": 4,
         "rejected": 0
       },
       "taste": {
