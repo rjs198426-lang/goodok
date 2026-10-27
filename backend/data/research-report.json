@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-10-27T15:04:49Z",
+  "generatedAt": "2026-10-27T15:08:15Z",
   "pipelineVersion": 3,
   "publishedOffers": 7,
   "catalogueServices": 54,
   "newServicesCumulative": 1,
   "newServicesThisRun": 0,
-  "candidatesRetained": 604,
-  "candidatesIncludingRejected": 764,
+  "candidatesRetained": 638,
+  "candidatesIncludingRejected": 798,
   "factCheckOutcomes": {
     "needs_verification": 96
   },
   "latestRun": {
-    "startedAt": "2026-10-27T15:03:48Z",
+    "startedAt": "2026-10-27T15:07:07Z",
     "searchAttempts": 21,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 20,
+      "unmatched": 7,
       "rejected": 0
     },
     "taste": {
@@ -44,11 +44,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -68,11 +68,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -89,11 +89,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -113,11 +113,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -134,11 +134,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -155,11 +155,11 @@
       "offerType": "introductory",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -179,11 +179,11 @@
       "offerType": "trial",
       "endsKnown": false,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T15:04:49Z",
+      "verifiedAt": "2026-10-27T15:08:15Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T15:04:49Z",
+        "checkedAt": "2026-10-27T15:08:15Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -219,42 +219,43 @@
       "purposeEvidence": [
         {
           "purpose": "assistant",
-          "quote": "editing Limited standard chat messages Up to 200 Theos a day in DeepAI Code Genius and Super Geniu",
+          "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-27T15:03:48Z"
+          "checkedAt": "2026-10-27T15:07:07Z"
         },
         {
           "purpose": "image",
-          "quote": "AI Pro \n       \n         500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
+          "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-27T15:03:48Z"
+          "checkedAt": "2026-10-27T15:07:07Z"
         },
         {
           "purpose": "coding",
-          "quote": "Up to 200 Theos a day in DeepAI Code Genius and Super Genius modes Memory and live web browsing ",
+          "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-27T15:03:48Z"
+          "checkedAt": "2026-10-27T15:07:07Z"
         },
         {
           "purpose": "music_creation",
-          "quote": "ollywood Mode Limited AI music generation AI Website Builder (beta) Limited photo editor, 60 secon",
+          "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-27T15:03:48Z"
+          "checkedAt": "2026-10-27T15:07:07Z"
         },
         {
           "purpose": "appbuilder",
-          "quote": "d AI music generation AI Website Builder (beta) Limited photo editor, 60 seconds/day of AI Voice Cha",
+          "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-27T15:03:48Z"
+          "checkedAt": "2026-10-27T15:07:07Z"
         }
       ],
       "verification": {
+        "schemaVersion": 3,
         "identity": true,
         "priceObserved": true,
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-27T15:03:48Z"
+        "checkedAt": "2026-10-27T15:07:07Z"
       }
     }
   ],
@@ -264,11 +265,6 @@
       "name": "Naver",
       "status": "unavailable",
       "nextCheckAt": "2026-10-27T16:55:13Z"
-    },
-    {
-      "name": "Dealify",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "뽐뿌 해외뽐뿌",
@@ -282,21 +278,6 @@
     },
     {
       "name": "AppSumo",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Google",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Google News",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -316,7 +297,27 @@
       "nextCheckAt": null
     },
     {
+      "name": "Google",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
       "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Dealify",
       "status": "ok",
       "nextCheckAt": null
     }
