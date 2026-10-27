@@ -6,6 +6,8 @@ from discovery import safe_url,public_host,init_discovery,run_discovery
 from catalog_engine import normal_plan,expand_catalog
 from factcheck import verify_candidates
 from offer_identity import campaign_id,compact_offers
+from research_common import as_offers
+from taste_research import research_taste,export_taste
 ROOT=Path(__file__).resolve().parent
 MAX_BYTES=3*1024*1024
 UTC=dt.timezone.utc
@@ -58,6 +60,15 @@ def fetch(url):
   if len(data)>MAX_BYTES:raise ValueError('oversize')
   page=Page();page.feed(data.decode(response.headers.get_content_charset() or 'utf-8',errors='replace'));return page
 
+def fetch_xml(url):
+ if not safe_url(url) or not public_host(urllib.parse.urlparse(url).hostname):raise ValueError('non-public URL')
+ req=urllib.request.Request(url,headers={'User-Agent':'DalfitResearch/3.0','Accept':'application/rss+xml,application/xml,text/xml'})
+ with urllib.request.build_opener(SafeRedirect()).open(req,timeout=15) as response:
+  if not any(t in response.headers.get('Content-Type','') for t in ('xml','rss')):raise ValueError('not XML')
+  data=response.read(1024*1024+1)
+  if len(data)>1024*1024:raise ValueError('oversize RSS')
+  return data
+
 def ending(text):
  m=re.search(r'(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})\s*일?\s*(?:까지|종료)',text)
  if m:
@@ -98,6 +109,40 @@ def extract(source,page,url=None):
  if not benefit:return None
  return {'id':hashlib.sha256((source['id']+'|'+url+'|'+detail).encode()).hexdigest()[:24],'service':source['service'],'title':detail[:120],'benefit':benefit,'detail':detail,'conditions':conditions,'source':url,'publisher':source['name']+' 공식','ends':ends,'evidence':evidence[:350]}
 
+def extract_all(source,page,url=None):
+ """Separate eligibility/payment campaigns on a single first-party page."""
+ from types import SimpleNamespace
+ text=page.text;url=url or source['url'];kind=source['parser'];base=extract(source,page,url);offers=as_offers(base)
+ def add(campaign,title,benefit,conditions,evidence,plan,eligibility):
+  offers.append({'id':campaign,'campaignId':campaign,'service':source['service'],'title':title,'benefit':benefit,'detail':title,'conditions':conditions,'source':url,'publisher':source['name']+' 공식','ends':None,'evidence':evidence[:350],'planId':plan,'eligibility':eligibility,'offerType':'trial'})
+ if kind=='apple-music':
+  device=re.search(r'신규\s*기기\s*(\d{1,2})개월\s*무료(.{0,160})',text)
+  if device and re.search(r'대상\s*기기|기기를\s*구입',device[2]):
+   add('apple-device-trial','Apple Music 대상 기기 구매 체험',f'대상 기기 구매 시 {device[1]}개월 무료','적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인.',device[0],'individual','eligible_device')
+  family=re.search(r'가족\s*요금제\s*(\d{1,2})개월\s*무료',text)
+  price=re.search(r'가족\s*₩([\d,]+)\s*/\s*월',text)
+  if family and price:add('apple-family-trial','Apple Music 가족 요금제 체험',f'가족 요금제 {family[1]}개월 무료',f'신규 가족 구독 자격 확인. 체험 이후 월 ₩{price[1]}. 가족 공유·자동 갱신 조건 확인.',family[0]+' / '+price[0],'family','new_family')
+ if kind=='spotify':
+  student=re.search(r'학생(.{0,180})',text)
+  if student:
+   trial=re.search(r'1개월\s*(?:이용\s*시|동안)?\s*₩0',student[1]);price=re.search(r'(?:이후|종료\s*후).{0,25}₩([\d,]+)',student[1])
+   if trial and price and re.search(r'승인된\s*대학|교육\s*기관',text):add('spotify-student-trial','Spotify 학생 요금제 체험','학생 요금제 첫 1개월 ₩0',f'승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩{price[1]}(부가세 포함). 이전 체험 이력 확인.',student[0],'student','eligible_student')
+  wallet=re.search(r'1개월\s*동안\s*₩100\s*전자\s*지갑(.{0,140})',text)
+  if wallet:add('spotify-wallet-trial','Spotify 전자지갑 결제 체험','전자지갑 결제 첫 1개월 ₩100','개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.',wallet[0],'individual','eligible_wallet')
+ if kind=='event':
+  scoped=[]
+  for section in page.sections:
+   title=section['title'].strip()
+   if not re.search(r'할인|혜택|프로모션|event|offer|sale',title,re.I):continue
+   view=SimpleNamespace(text=section['text'],title=[title]);offer=extract(source,view,url)
+   if offer:scoped.append(offer)
+  if scoped:offers=scoped
+ for offer in offers:
+  offer.setdefault('offerType','trial' if re.search(r'체험|무료',offer['title']+' '+offer['benefit']) else 'introductory' if kind in ('surfshark','adobe','nordvpn') else 'limited')
+  if offer['offerType']=='trial' and kind in ('apple-music','spotify'):offer['ends']=None
+  offer['endsKnown']=bool(offer.get('ends'))
+ return list({campaign_id(o):o for o in offers}.values())
+
 def observed_price(source,text):
  key=source['id'];match=None;currency='KRW';plan=''
  if key=='spotify':match=re.search(r'이후에는\s*₩([\d,]+)',text);plan='Premium 개인 · 월간'
@@ -112,19 +157,17 @@ def observed_price(source,text):
 def investigate(source):
  observations=[];offers=[]
  try:
-  page=fetch(source['url']);offer=extract(source,page)
-  if offer:offers.append(offer)
-  observations.append({'url':source['url'],'status':'verified' if offer else 'no_verified_offer'})
-  if source.get('discover'):
+  page=fetch(source['url']);offers=extract_all(source,page)
+  observations.append({'url':source['url'],'status':'verified' if offers else 'no_verified_offer'})
+  if source.get('discover',True):
    urls=[]
    for href,label in page.links:
     url=urllib.parse.urljoin(source['url'],href);parsed=urllib.parse.urlparse(url)
     if parsed.scheme=='https' and parsed.hostname==urllib.parse.urlparse(source['url']).hostname and url!=source['url'] and re.search(r'할인|혜택|프로모션|무료|%|이벤트',label) and url not in urls:urls.append(url)
    for url in urls[:3]:
     try:
-     detail=fetch(url);offer=extract(source,detail,url)
-     if offer:offers.append(offer)
-     observations.append({'url':url,'status':'verified' if offer else 'no_verified_offer'})
+     detail=fetch(url);found=extract_all(source,detail,url);offers.extend(found)
+     observations.append({'url':url,'status':'verified' if found else 'no_verified_offer'})
     except Exception:observations.append({'url':url,'status':'unavailable'})
   return {'id':source['id'],'name':source['name'],'status':'ok','offers':offers,'observations':observations,'price':observed_price(source,page.text),'plans':normal_plan(source,page,observed_price(source,page.text),stamp())}
  except Exception as exc:return {'id':source['id'],'name':source['name'],'status':'unavailable','offers':[],'observations':[{'url':source['url'],'status':'unavailable'}]}
@@ -175,7 +218,9 @@ def store_and_export(db,results,now,out,profiles):
   db.execute('UPDATE plan_facts SET payload=? WHERE plan_id=?',(json.dumps(plan,ensure_ascii=False),plan['id']))
  db.commit()
  query_rows=list(db.execute('SELECT provider,status,COUNT(*) FROM discovery_queries WHERE checked_at>=? GROUP BY provider,status',(stamp(now-dt.timedelta(days=1)),)))
- feed.update(catalog=catalog,plans=plans,research={'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'candidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog)})
+ metrics={'candidateOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM candidates GROUP BY status')),'catalogOutcomes':dict(db.execute("SELECT catalog_status,COUNT(*) FROM candidates WHERE scope='subscription' GROUP BY catalog_status")),'factCheckOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM fact_checks GROUP BY status')),'newServiceCount':sum(item.get('origin')=='discovered' for item in catalog),'verifiedPlanCount':sum(p.get('status')=='verified' for p in plans),'candidatePlanCount':sum(p.get('status')!='verified' for p in plans),'rejectedLinkCount':db.execute('SELECT COALESCE(SUM(rejected_count),0) FROM discovery_queries WHERE checked_at>=?',(stamp(now-dt.timedelta(days=1)),)).fetchone()[0]}
+ latest=db.execute("SELECT value FROM research_state WHERE key='latest_run'").fetchone()
+ feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':3,'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
 
 def main():
@@ -183,18 +228,23 @@ def main():
  sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
  for source in sources:source['purpose']=next((seed.get('purpose') for seed in seeds if seed['key']==source['id']),None)
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
- attempts,candidates=run_discovery(db,seeds,fetch,timestamp)
+ attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))
- catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract)
+ catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract_all)
  discovered_offers=catalogue.pop('verifiedOffers',[])
  all_catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
- checks=verify_candidates(db,all_catalog,[offer for result in results for offer in result['offers']]+discovered_offers,fetch,timestamp,extract_offer=extract)
+ checks=verify_candidates(db,all_catalog,[offer for result in results for offer in result['offers']]+discovered_offers,fetch,timestamp,extract_offer=extract_all)
+ taste=research_taste(db,fetch,timestamp)
  discovered_offers+=checks.pop('verifiedOffers',[])
  existing={offer['id'] for result in results for offer in result['offers']}
  for offer in discovered_offers:
   if offer['id'] in existing:continue
   existing.add(offer['id']);results.append({'id':'discovered-'+offer['service'],'name':offer['publisher'],'status':'ok','offers':[offer],'observations':[{'url':offer['source'],'status':'verified'}]})
- feed=store_and_export(db,results,dt.datetime.now(UTC),Path(args.output),profiles);db.close()
+ db.execute("INSERT OR REPLACE INTO research_state VALUES('latest_run',?)",(json.dumps({'startedAt':timestamp,'searchAttempts':len(attempts),'newServices':catalogue['newServices'],'factChecks':checks,'taste':taste}),));db.commit()
+ feed=store_and_export(db,results,dt.datetime.now(UTC),Path(args.output),profiles)
+ from research_report import write_report
+ write_report(db,feed,Path(args.output).parent)
+ db.close()
  print(json.dumps({'sources':len(results),'available':sum(r['status']=='ok' for r in results),'offers':len(feed['offers']),'searchAttempts':len(attempts),'candidates':len(candidates),'catalogue':catalogue,'factChecks':checks}))
  if not any(r['status']=='ok' for r in results):raise SystemExit('All sources unavailable; previous verified results retained with original verification times')
 if __name__=='__main__':main()

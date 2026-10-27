@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name 'goodok-benefits-bot'
           git config user.email 'goodok-benefits-bot@users.noreply.github.com'
-          git add backend/data/feed.json backend/data/benefits.sqlite
+          git add backend/data/feed.json backend/data/benefits.sqlite backend/data/research-report.json backend/data/research-report.md
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh verified subscription benefits [skip ci]'
             git push
