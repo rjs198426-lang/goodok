@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T01:07:08Z",
-  "lastSuccessAt": "2026-10-27T01:07:08Z",
+  "generatedAt": "2026-10-27T01:57:05Z",
+  "lastSuccessAt": "2026-10-27T01:57:05Z",
   "offers": [
     {
       "id": "4b0ac5dbb84be7dce5c71f98",
@@ -14,11 +14,11 @@
       "publisher": "Apple Music 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T01:07:08Z",
+      "verifiedAt": "2026-10-27T01:57:05Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T01:07:08Z",
+        "checkedAt": "2026-10-27T01:57:05Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -33,11 +33,11 @@
       "publisher": "Spotify 한국 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T01:07:08Z",
+      "verifiedAt": "2026-10-27T01:57:05Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T01:07:08Z",
+        "checkedAt": "2026-10-27T01:57:05Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -52,11 +52,11 @@
       "publisher": "Surfshark 공식",
       "ends": null,
       "checked": "2026-10-27",
-      "verifiedAt": "2026-10-27T01:07:08Z",
+      "verifiedAt": "2026-10-27T01:57:05Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-27T01:07:08Z",
+        "checkedAt": "2026-10-27T01:57:05Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     }
@@ -1761,82 +1761,6 @@
       ]
     },
     {
-      "id": "a2a72f1c3ddff35b9d73ed09",
-      "service": "cursor",
-      "name": "Plus",
-      "amount": 8.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-26T19:54:55Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Plus $8 /월"
-        }
-      ]
-    },
-    {
-      "id": "83d70292cceb594608a2dba4",
-      "service": "cursor",
-      "name": "Premium",
-      "amount": 30.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-26T19:54:55Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Premium $30 /월"
-        },
-        {
-          "field": "capability.adfree",
-          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
-        }
-      ]
-    },
-    {
-      "id": "1c0f421607e3300c305b5b8a",
-      "service": "cursor",
-      "name": "Ultra",
-      "amount": 200.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-26T19:54:55Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Ultra $200 /월"
-        }
-      ]
-    },
-    {
       "id": "7e25938563b056214586d97c",
       "service": "expressvpn",
       "name": "Basic",
@@ -2061,6 +1985,82 @@
       ]
     },
     {
+      "id": "a2a72f1c3ddff35b9d73ed09",
+      "service": "cursor",
+      "name": "Plus",
+      "amount": 8.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-27T01:56:39Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Plus $8 /월"
+        }
+      ]
+    },
+    {
+      "id": "83d70292cceb594608a2dba4",
+      "service": "cursor",
+      "name": "Premium",
+      "amount": 30.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-27T01:56:39Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Premium $30 /월"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
+        }
+      ]
+    },
+    {
+      "id": "1c0f421607e3300c305b5b8a",
+      "service": "cursor",
+      "name": "Ultra",
+      "amount": 200.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-27T01:56:39Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Ultra $200 /월"
+        }
+      ]
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -2080,7 +2080,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-27T01:06:57Z",
+      "verifiedAt": "2026-10-27T01:56:48Z",
       "status": "verified",
       "evidence": [
         {
@@ -2126,7 +2126,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-27T01:06:56Z",
+      "verifiedAt": "2026-10-27T01:56:48Z",
       "status": "verified",
       "evidence": [
         {
@@ -2170,7 +2170,7 @@
       "purpose": "video",
       "capabilities": {},
       "source": "https://www.disneyplus.com/ko-kr",
-      "verifiedAt": "2026-10-27T01:06:58Z",
+      "verifiedAt": "2026-10-27T01:56:50Z",
       "status": "verified",
       "evidence": [
         {
@@ -2189,7 +2189,7 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "Bing",
@@ -2204,12 +2204,12 @@
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "Google",
@@ -2229,12 +2229,12 @@
       {
         "name": "Naver",
         "status": "ok",
-        "attempts": 5
+        "attempts": 4
       },
       {
         "name": "Naver",
         "status": "unavailable",
-        "attempts": 87
+        "attempts": 88
       },
       {
         "name": "Slickdeals",
@@ -2247,19 +2247,14 @@
         "attempts": 11
       },
       {
-        "name": "StackSocial",
-        "status": "unavailable",
-        "attempts": 1
-      },
-      {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "퀘이사존 핫딜",
@@ -2267,8 +2262,8 @@
         "attempts": 11
       }
     ],
-    "candidateCount": 533,
-    "factChecks": 75,
+    "candidateCount": 539,
+    "factChecks": 76,
     "verifiedCatalogCount": 1,
     "catalogCount": 54
   }
