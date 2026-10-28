@@ -82,3 +82,8 @@ class PipelineV4Tests(unittest.TestCase):
    return c.parse_html('<title>New official</title>'+('public homepage '*20))
   with patch.object(c,'fetch',side_effect=fake):result=c.investigate(source)
   self.assertEqual(result['status'],'ok');self.assertEqual(result['observations'][0]['status'],'http_404');self.assertEqual(result['observations'][1]['url'],'https://vendor.example/')
+ def test_one_empty_query_does_not_block_other_category_queries(self):
+  seed={'key':'tool','name':'Tool','aliases':[],'officialUrl':'https://tool.example/'};calls=[]
+  def fetch(url):calls.append(url);return c.parse_html('<title>No results</title>')
+  run_discovery(self.db,[seed],fetch,'2026-10-28T00:00:00Z',fetch_xml=lambda _:'<rss/>')
+  self.assertGreaterEqual(sum('www.google.com/search' in url for url in calls),4)

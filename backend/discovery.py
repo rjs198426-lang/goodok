@@ -83,6 +83,10 @@ def sitemap_links(payload,base):
 
 def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None,api_search=None,api_providers=(),fetch_text=None):
  clean_legacy_candidates(db,seeds)
+ route_version=db.execute("SELECT value FROM research_state WHERE key='search_routes_revision'").fetchone()
+ if not route_version or route_version[0]!='4.2':
+  db.execute("UPDATE provider_health SET failures=0,next_check_at=NULL WHERE last_status='no_relevant_results'")
+  db.execute("INSERT OR REPLACE INTO research_state VALUES('search_routes_revision','4.2')")
  cursor=int((db.execute("SELECT value FROM research_state WHERE key='cursor'").fetchone() or ['0'])[0]);selected=rotating(seeds,cursor,budget)
  month=dt.datetime.fromisoformat(stamp.replace('Z','+00:00')).strftime('%Y %m')
  queries=[(f'{s["name"]} 구독 할인 프로모션 가격 {month}','subscription') for s in selected]
@@ -103,6 +107,7 @@ def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None,api_search=None,a
   if status not in ('deferred',):
    health=db.execute('SELECT failures FROM provider_health WHERE provider=?',(provider,)).fetchone();failures=(health[0] if health else 0)+1 if status in ('blocked','unavailable','no_relevant_results') else 0
    due=time_after(stamp,12 if status=='blocked' else min(6 if status=='no_relevant_results' else 24,2**min(failures,5))) if failures else None
+   if status=='no_relevant_results' and failures<6:due=None
    db.execute('INSERT OR REPLACE INTO provider_health VALUES(?,?,?,?,?)',(provider,failures,due,status,stamp))
   for link,title,publisher in kept:
    service=match_service(link,title,seeds) if scope=='subscription' else None
