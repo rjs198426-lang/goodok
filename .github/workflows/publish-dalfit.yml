@@ -3,14 +3,14 @@ on:
   push:
     branches: [main]
     paths:
-      - 'distribution/dalfit-2.0.2/**'
+      - 'distribution/dalfit-2.1.0/**'
       - 'distribution/publish_dalfit.py'
       - '.github/workflows/publish-dalfit.yml'
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: dalfit-release-2.0.2-build47
+  group: dalfit-release-2.1.0-build48
   cancel-in-progress: false
 jobs:
   release:
@@ -25,4 +25,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
-        run: python3 distribution/publish_dalfit.py
+        run: |
+          python3 -m pip install --disable-pip-version-check 'bsdiff4==1.2.6'
+          python3 distribution/publish_dalfit.py
