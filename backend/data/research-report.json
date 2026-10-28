@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-28T12:18:35Z",
+  "generatedAt": "2026-10-28T12:29:59Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 56,
   "newServicesCumulative": 3,
-  "newServicesThisRun": 1,
-  "candidatesRetained": 1029,
-  "candidatesIncludingRejected": 1189,
+  "newServicesThisRun": 0,
+  "candidatesRetained": 1047,
+  "candidatesIncludingRejected": 1207,
   "factCheckOutcomes": {
-    "needs_verification": 356,
+    "needs_verification": 368,
     "official_verified": 2,
     "partial_match": 10
   },
   "latestRun": {
-    "startedAt": "2026-10-28T12:17:40Z",
-    "searchAttempts": 28,
-    "newServices": 1,
+    "startedAt": "2026-10-28T12:28:59Z",
+    "searchAttempts": 32,
+    "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 8,
+      "unmatched": 2,
       "rejected": 0
     },
     "taste": {
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
+        "checkedAt": "2026-10-28T12:29:59Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -77,11 +77,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
+        "checkedAt": "2026-10-28T12:29:59Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -101,11 +101,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
+        "checkedAt": "2026-10-28T12:29:59Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -129,11 +129,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
+        "checkedAt": "2026-10-28T12:29:59Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -144,8 +144,8 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
@@ -153,12 +153,12 @@
         "newCustomer": true
       },
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
+        "checkedAt": "2026-10-28T12:29:59Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
     {
@@ -175,11 +175,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
+        "checkedAt": "2026-10-28T12:29:59Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -203,11 +203,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-28",
-      "verifiedAt": "2026-10-28T12:18:35Z",
+      "verifiedAt": "2026-10-28T12:29:59Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-28T12:18:35Z",
+        "checkedAt": "2026-10-28T12:29:59Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -370,11 +370,6 @@
       "nextCheckAt": "2026-10-29T02:59:50Z"
     },
     {
-      "name": "Slickdeals",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Google",
       "status": "no_relevant_results",
       "nextCheckAt": "2026-10-28T14:06:03Z"
@@ -395,21 +390,6 @@
       "nextCheckAt": "2026-10-28T14:06:03Z"
     },
     {
-      "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Dealify",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
@@ -420,7 +400,47 @@
       "nextCheckAt": null
     },
     {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: kakao",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-28T14:28:59Z"
+    },
+    {
+      "name": "Official links: spotify",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: spotify",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-10-28T14:28:59Z"
+    },
+    {
+      "name": "Official links: youtube-music",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-28T14:28:59Z"
+    },
+    {
       "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Slickdeals",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Dealify",
       "status": "ok",
       "nextCheckAt": null
     }
@@ -428,21 +448,62 @@
   "retrieval": {
     "outcomes": {
       "captcha": 1,
-      "cross_site_redirect": 12,
-      "deferred_http_403": 3,
-      "deferred_http_404": 1,
-      "deferred_render_budget_exhausted": 2,
+      "cross_site_redirect": 18,
+      "deferred_cross_site_redirect": 4,
+      "deferred_http_403": 6,
+      "deferred_http_404": 2,
+      "deferred_render_budget_exhausted": 5,
       "deferred_response_too_large": 1,
-      "http_403": 14,
+      "http_403": 24,
       "http_404": 2,
       "http_417": 2,
-      "ok": 155,
+      "ok": 220,
       "render_budget_exhausted": 10,
       "response_too_large": 2
     },
-    "cacheHitsThisRun": 12,
-    "renderAttemptsThisRun": 6,
+    "cacheHitsThisRun": 10,
+    "renderAttemptsThisRun": 8,
     "recentFailures": [
+      {
+        "url": "https://www.tving.com/live/C00551",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-28T13:29:59Z"
+      },
+      {
+        "url": "https://www.tving.com/live/C01582",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-28T13:29:59Z"
+      },
+      {
+        "url": "https://www.tving.com/live/C00709",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-28T13:29:59Z"
+      },
+      {
+        "url": "https://www.canva.cn/en/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-29T12:29:59Z"
+      },
+      {
+        "url": "https://www.producthunt.com/products/canva",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-29T12:29:59Z"
+      },
+      {
+        "url": "https://www.canva.com/?msockid=233409bd2fd564c5387e1e422ec4651d",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-29T12:29:59Z"
+      },
+      {
+        "url": "https://www.canva.com/login/?msockid=233409bd2fd564c5387e1e422ec4651d",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-29T12:29:59Z"
+      },
+      {
+        "url": "https://www.canva.com/templates/?msockid=233409bd2fd564c5387e1e422ec4651d",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-29T12:29:59Z"
+      },
       {
         "url": "https://www.zoom.com/en/products/virtual-meetings/",
         "reason": "cross_site_redirect",
@@ -556,7 +617,7 @@
     ]
   },
   "comparableByCurrency": {
-    "KRW": 3,
-    "USD": 1
+    "KRW": 7,
+    "USD": 3
   }
 }
