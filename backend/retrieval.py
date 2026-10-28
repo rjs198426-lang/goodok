@@ -32,7 +32,7 @@ def configure(db,urls=()):
 def note(url,route,result,status=None):
  with LOCK:
   if len(AUDIT)<1000:AUDIT.append({'url':url,'route':route,'result':result,'httpStatus':status})
-def download(url,accept='text/html',limit=3*1024*1024):
+def download(url,accept='text/html',limit=8*1024*1024):
  if not safe_url(url) or not public_host(urllib.parse.urlsplit(url).hostname):raise FetchFailure('non_public_url')
  for attempt in range(2):
   try:
@@ -76,7 +76,12 @@ def render(url):
    page.wait_for_timeout(1200)
    text=page.locator('body').inner_text(timeout=5000)
    if re.search(r'captcha|verify you are human|unusual traffic|자동입력 방지|로봇이 아닙니다',text,re.I):raise FetchFailure('captcha')
-   html=page.content()
+   # Select only a public billing-period control, never signup/payment buttons.
+   for role in ('tab','radio','button'):
+    choices=page.get_by_role(role,name=re.compile(r'^(monthly(?: billing)?|월간(?: 결제)?|월별(?: 결제)?|월 결제)$',re.I))
+    if choices.count()==1 and choices.first.is_visible() and choices.first.is_enabled():
+     choices.first.click(timeout=2000);page.wait_for_timeout(350);break
+   html=page.evaluate('''()=>{const copy=document.documentElement.cloneNode(true),original=[...document.documentElement.querySelectorAll('*')],nodes=[...copy.querySelectorAll('*')];for(let i=original.length-1;i>=0;i--){const e=original[i],keep=e.tagName==='SCRIPT'&&e.type==='application/ld+json';if(keep)continue;const style=getComputedStyle(e);if(e.hidden||e.getAttribute('aria-hidden')==='true'||style.display==='none'||style.visibility==='hidden'||['SCRIPT','STYLE','NOSCRIPT'].includes(e.tagName))nodes[i].remove();}return copy.outerHTML}''')
    if len(html.encode())>3*1024*1024:raise FetchFailure('response_too_large')
    return html
   finally:browser.close()

@@ -22,7 +22,16 @@ def purpose_for(category):return {'보안':'passwords','백업':'backup','업무
 def research_targets():return json.loads((Path(__file__).parent/'research-targets.json').read_text())
 def enqueue_targets(db,timestamp):
  for target in research_targets():db.execute("INSERT OR IGNORE INTO candidates(url,title,provider,discovery_url,status,first_seen,last_seen,scope) VALUES(?,?,'official_target',?,'pending',?,?,'subscription')",(target['url'],target['name'],target['url'],timestamp,timestamp))
+ revision='4.1';old=db.execute("SELECT value FROM research_state WHERE key='catalog_parser_revision'").fetchone()
+ if not old or old[0]!=revision:
+  db.execute("UPDATE candidates SET catalog_checked_at=NULL WHERE provider='official_target' AND catalog_status IN ('needs_price','needs_identity')")
+  db.execute("INSERT OR REPLACE INTO research_state VALUES('catalog_parser_revision',?)",(revision,))
  db.commit()
+def explicit_currency(symbol,text,page):
+ currency={'₩':'KRW','€':'EUR','£':'GBP','US$':'USD'}.get(symbol)
+ if symbol.upper().startswith('USD'):return 'USD'
+ if symbol=='$' and (re.search(r'\bUSD\b|US\$',text) or page.meta.get('priceCurrency')=='USD' or re.search(r'\bUSD\b',page.text) and not re.search(r'\b(?:CAD|AUD|NZD|HKD|SGD)\b',page.text)):return 'USD'
+ return currency
 
 def core_capabilities(text,purpose):
  capabilities={}
@@ -85,7 +94,7 @@ def text_plans(page,service,timestamp):
  if not re.search(r'pricing|plans?|price|subscription|compare|premium|buy|요금|가격',service['officialUrl']+' '+''.join(page.title),re.I):return []
  for section in page.sections:
   name=re.sub(r'\s+',' ',section['title']).strip();text=re.sub(r'\s+',' ',section['text']).strip()
-  if len(name)>90 or not re.search(r'\b(?:Pro|Plus|Personal|Individual|Standard|Premium|Basic|Starter|Free|Max|Ultra|Business|Teams?|Growth|Professional|Developer|Family|Families|Advanced|Core|Creator|Unlimited|Essential|Complete|Reader)\b|개인|스탠다드|프리미엄|베이직',name,re.I):continue
+  if len(name)>90 or not re.search(r'\b(?:Pro|Plus|Personal|Individual|Standard|Premium|Basic|Starter|Free|Max|Ultra|Business|Teams?|Growth|Professional|Developer|Family|Families|Advanced|Core|Creator|Unlimited|Essential|Complete|Reader|Full|Lite|Solo)\b|개인|스탠다드|프리미엄|베이직',name,re.I):continue
   if re.search(r'lifetime|평생|신규 가입자만|new customers only|first year only',text,re.I):continue
   explicit=re.search(r'(US\$|\$|₩|€|£)\s*([\d,]+(?:\.\d+)?)\s*if billed monthly',text,re.I)
   if not explicit:explicit=re.search(r'(US\$|\$|₩|€|£)\s*([\d,]+(?:\.\d+)?)\s*/\s*(?:month|mo)\b\s*(?:[·|—–-]\s*)?billed monthly',text,re.I)
@@ -96,13 +105,31 @@ def text_plans(page,service,timestamp):
   if not explicit and re.search(r'annual|yearly|매년|연간|연 결제',text[max(0,match.start()-70):match.end()+100],re.I):continue
   symbol,value=next(iter(prices));amount=float(value.replace(',',''))
   if amount<=0:continue
-  currency={'₩':'KRW','€':'EUR','£':'GBP','US$':'USD'}.get(symbol)
+  currency=explicit_currency(symbol,text,page)
   if symbol=='$' and (re.search(r'USD|US\$',text) or host(service['officialUrl']).removeprefix('www.') in {'chatgpt.com','claude.com','cursor.com','github.com','notion.com','lovable.dev','krea.ai','suno.com','perplexity.ai','deepai.org'}):currency='USD'
   if not currency:continue
   identifier=hashlib.sha256((service['key']+'|'+name+'|'+currency+'|monthly').encode()).hexdigest()[:24]
   result.append({'id':identifier,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':'monthly','region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'official_display','commitmentMonths':1 if re.search(r'cancel\s+any\s*time|언제든.{0,15}해지|무약정',text,re.I) else None,'introductory':False,'eligibility':'general','purpose':service.get('purpose') or purpose_for(service['category']),'capabilities':core_capabilities(text,service.get('purpose') or purpose_for(service['category'])),'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':(name+' '+match[0])[:220]}]+capability_evidence(text)})
  for plan in result:
   if plan['commitmentMonths'] is None:plan['status']='candidate'
+ return result
+
+def yearly_text_plans(page,service,timestamp):
+ """Observe an explicit full-year charge; never multiply an annual-equivalent monthly price."""
+ result=[]
+ for section in page.sections:
+  name=re.sub(r'\s+',' ',section['title']).strip();text=re.sub(r'\s+',' ',section['text']).strip()
+  if not 1<len(name)<90 or not re.search(r'\bPro\b|Premium|Personal|Individual|Families|Family|Plus|Standard|Basic|Starter|Creator|Business|Full|Lite|개인|프리미엄',name,re.I):continue
+  if re.search(r'lifetime|trial|first year|평생|첫해|체험',name+' '+text,re.I):continue
+  matches=list(re.finditer(r'(US\$|USD\s*\$?|\$|₩|€|£)\s*([\d,]+(?:\.\d+)?)\s*(?:/|per)\s*(?:year|yr|년|연)\b',text,re.I))
+  values={(m[1],m[2]) for m in matches}
+  if len(values)!=1:continue
+  symbol,value=next(iter(values));amount=float(value.replace(',',''))
+  currency=explicit_currency(symbol,text,page)
+  if symbol.upper().startswith('USD') or symbol=='$' and re.search(r'\bUSD\b|US\$',text):currency='USD'
+  if not currency or not 0<amount<1e8:continue
+  quote=matches[0][0];identifier=hashlib.sha256((service['key']+'|'+name+'|'+currency+'|yearly').encode()).hexdigest()[:24]
+  result.append({'id':identifier,'service':service['key'],'name':name,'amount':amount,'currency':currency,'interval':'yearly','region':'KR' if currency=='KRW' else 'unspecified','taxBasis':'official_display','commitmentMonths':12,'introductory':False,'eligibility':'general','purpose':service.get('purpose') or purpose_for(service['category']),'capabilities':{},'source':service['officialUrl'],'verifiedAt':timestamp,'status':'verified','evidence':[{'field':'amount','quote':name+' '+quote},{'field':'billing','quote':quote}]})
  return result
 
 def enrich_service(service,page,plans,timestamp):
@@ -197,11 +224,11 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=16,
     db.execute("UPDATE candidates SET catalog_status='discovered_links' WHERE url=?",(url,));continue
    service=identify_new(page,url,seeds,reference)
    if not service:db.execute("UPDATE candidates SET catalog_status='needs_identity',reason='공식 사업자·구독 상품 증거 미확인' WHERE url=?",(url,));continue
-   plans=structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
+   plans=structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+yearly_text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
    if not plans:
     pricing=[safe_url(urllib.parse.urljoin(url,href)) for href,label in page.links if re.search(r'pricing|plans|요금|가격',label,re.I)]
     for target in [p for p in pricing if p and same_site(p,url)][:2]:
-     pricing_page=fetch(target);service['officialUrl']=target;plans.extend(structured_plans(pricing_page,service,timestamp)+text_plans(pricing_page,service,timestamp)+vendor_normal_plans(pricing_page,service,timestamp))
+     pricing_page=fetch(target);service['officialUrl']=target;plans.extend(structured_plans(pricing_page,service,timestamp)+text_plans(pricing_page,service,timestamp)+yearly_text_plans(pricing_page,service,timestamp)+vendor_normal_plans(pricing_page,service,timestamp))
      if plans:page=pricing_page;break
    if not plans:db.execute("UPDATE candidates SET catalog_status='needs_price',reason='정기 결제 요금 증거 미확인' WHERE url=?",(url,));continue
    service=enrich_service(service,page,plans,timestamp);service['verifiedAt']=timestamp;known[service['key']]=service;new_count+=1
@@ -215,7 +242,7 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=16,
    if extract_offer:
     offer_source={**source,'service':service['key'],'name':service['name'],'parser':service['key'] if service['key'] in ('surfshark','adobe','spotify','apple-music','nordvpn') else 'event'}
     verified_offers.extend(as_offers(extract_offer(offer_source,page)))
-   plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
+   plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+yearly_text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
    service=enrich_service(service,page,plans,timestamp);known[service['key']]=service
    db.execute('UPDATE service_catalog SET payload=? WHERE service_key=?',(json.dumps(service,ensure_ascii=False),service['key']))
    for plan in plans:

@@ -4,7 +4,7 @@ from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).parents[1]))
 import collector as c,retrieval as r
 from discovery import run_discovery
-from catalog_engine import identify_new,text_plans,enrich_service,category_for,enqueue_targets
+from catalog_engine import identify_new,text_plans,yearly_text_plans,enrich_service,category_for,enqueue_targets
 from catalog_publish import publish_catalog
 
 class PipelineV4Tests(unittest.TestCase):
@@ -51,3 +51,16 @@ class PipelineV4Tests(unittest.TestCase):
    self.assertIsNotNone(r.PublicRedirect().redirect_request(req,None,301,'m',{},'https://www.vendor.example/pricing'))
    for url in ('https://other.example/pricing','http://vendor.example/','https://user:secret@vendor.example/'):
     with self.assertRaises(r.FetchFailure):r.PublicRedirect().redirect_request(req,None,301,'m',{},url)
+ def test_full_year_price_is_preserved_without_annual_equivalent_inference(self):
+  service={'key':'x','category':'보안','purpose':'passwords','officialUrl':'https://x.example/pricing'}
+  full=c.parse_html('<h2>Premium</h2>US$19.80/year')
+  result=yearly_text_plans(full,service,'2026-10-28T00:00:00Z')[0];self.assertEqual(result['amount'],19.8);self.assertEqual(result['interval'],'yearly');self.assertEqual(result['commitmentMonths'],12)
+  self.assertEqual(yearly_text_plans(c.parse_html('<h2>Premium</h2>US$1.65/month billed annually'),service,'2026-10-28T00:00:00Z'),[])
+ def test_trial_and_ambiguous_dollar_are_not_normal_annual_prices(self):
+  service={'key':'x','category':'보안','officialUrl':'https://x.example/pricing'}
+  for text in ('<h2>Premium</h2>US$10/year first year offer','<h2>Premium</h2>$10/year'):
+   self.assertEqual(yearly_text_plans(c.parse_html(text),service,'2026-10-28T00:00:00Z'),[])
+ def test_parser_upgrade_rechecks_price_unknown_targets_once(self):
+  enqueue_targets(self.db,'2026-10-28T00:00:00Z');self.db.execute("UPDATE candidates SET catalog_status='needs_price',catalog_checked_at='2026-10-28T00:00:00Z' WHERE provider='official_target'")
+  self.db.execute("UPDATE research_state SET value='4.0' WHERE key='catalog_parser_revision'")
+  enqueue_targets(self.db,'2026-10-28T01:00:00Z');self.assertEqual(self.db.execute("SELECT COUNT(*) FROM candidates WHERE catalog_checked_at IS NULL").fetchone()[0],12)

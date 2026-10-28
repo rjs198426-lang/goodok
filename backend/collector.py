@@ -22,10 +22,10 @@ class Page(HTMLParser):
   if tag in ('script','style','noscript'):self.skip+=1
   if tag=='script' and dict(attrs).get('type','').lower()=='application/ld+json':self.ld_buffer=[]
   if tag=='meta':
-   info=dict(attrs);key=info.get('property') or info.get('name')
+   info=dict(attrs);key=info.get('property') or info.get('name') or info.get('itemprop')
    if key:self.meta[key]=info.get('content','')
   if tag=='title':self.in_title=True
-  if re.fullmatch(r'h[1-4]',tag):self.section={'title':'','text':''};self.sections.append(self.section);self.heading=True
+  if re.fullmatch(r'h[1-6]',tag):self.section={'title':'','text':''};self.sections.append(self.section);self.heading=True
   if tag=='a':self.href=dict(attrs).get('href');self.label=[]
   if not self.skip:self.parts.append(' ')
  def handle_endtag(self,tag):
@@ -35,7 +35,7 @@ class Page(HTMLParser):
    self.ld_buffer=None
   if tag in ('script','style','noscript'):self.skip=max(0,self.skip-1)
   if tag=='title':self.in_title=False
-  if re.fullmatch(r'h[1-4]',tag):self.heading=False
+  if re.fullmatch(r'h[1-6]',tag):self.heading=False
   if tag=='a' and self.href:self.links.append((self.href,''.join(self.label)));self.href=None
   if not self.skip:self.parts.append(' ')
  def handle_data(self,data):
