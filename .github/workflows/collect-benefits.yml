@@ -31,7 +31,7 @@ jobs:
         id: collect
         continue-on-error: true
         env:
-          DALFIT_BROWSER_RENDER_LIMIT: '6'
+          DALFIT_BROWSER_RENDER_LIMIT: '10'
           GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
           GOOGLE_SEARCH_ENGINE_ID: ${{ secrets.GOOGLE_SEARCH_ENGINE_ID }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}

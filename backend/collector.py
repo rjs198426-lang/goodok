@@ -156,7 +156,13 @@ def observed_price(source,text):
 def investigate(source):
  observations=[];offers=[]
  try:
-  page=fetch(source['url']);offers=extract_all(source,page)
+  try:page=fetch(source['url'])
+  except Exception as exc:
+   if retrieval.error_code(exc).removeprefix('deferred_')!='http_404':raise
+   observations.append({'url':source['url'],'status':'http_404'})
+   root_url=urllib.parse.urlunsplit(('https',urllib.parse.urlsplit(source['url']).netloc,'/','',''))
+   page=fetch(root_url);source={**source,'url':root_url}
+  offers=extract_all(source,page)
   observations.append({'url':source['url'],'status':'verified' if offers else 'no_verified_offer'})
   if source.get('discover',True):
    urls=[]
@@ -222,7 +228,7 @@ def store_and_export(db,results,now,out,profiles):
  metrics={'candidateOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM candidates GROUP BY status')),'catalogOutcomes':dict(db.execute("SELECT catalog_status,COUNT(*) FROM candidates WHERE scope='subscription' GROUP BY catalog_status")),'factCheckOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM fact_checks GROUP BY status')),'newServiceCount':sum(item.get('origin')=='discovered' for item in catalog),'verifiedPlanCount':sum(p.get('status')=='verified' for p in plans),'candidatePlanCount':sum(p.get('status')!='verified' for p in plans),'rejectedLinkCount':db.execute('SELECT COALESCE(SUM(rejected_count),0) FROM discovery_queries WHERE checked_at>=?',(stamp(now-dt.timedelta(days=1)),)).fetchone()[0]}
  metrics['featureCoverage']={key:sum(any(e.get('field')=='capability.'+key and e.get('quote') for e in p.get('evidence',[])) for p in plans if p.get('status')=='verified') for key in sorted({key for p in plans for key in p.get('capabilities',{})})}
  metrics['comparableKRWPlans']=sum(p.get('status')=='verified' and p.get('currency')=='KRW' and p.get('region')=='KR' and p.get('commitmentMonths')==1 for p in plans)
- metrics['comparableByCurrency']={currency:sum(p.get('status')=='verified' and p.get('currency')==currency and p.get('commitmentMonths')==1 for p in plans) for currency in sorted({p.get('currency','unknown') for p in plans})}
+ metrics['comparableByCurrency']={currency:sum(p.get('status')=='verified' and p.get('currency')==currency and p.get('commitmentMonths') in (1,12) for p in plans) for currency in sorted({p.get('currency','unknown') for p in plans})}
  retrieval_status=retrieval.persist(db,timestamp)
  latest=db.execute("SELECT value FROM research_state WHERE key='latest_run'").fetchone()
  feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':4,'retrieval':retrieval_status,'searchApiConnections':{name:name in configured_providers() for name in ('Google','Naver')},'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})

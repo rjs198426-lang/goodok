@@ -3,7 +3,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).parents[1]))
 import collector as c,retrieval as r
-from discovery import run_discovery
+from discovery import run_discovery,sitemap_links
 from catalog_engine import identify_new,text_plans,yearly_text_plans,enrich_service,category_for,enqueue_targets
 from catalog_publish import publish_catalog
 
@@ -64,3 +64,21 @@ class PipelineV4Tests(unittest.TestCase):
   enqueue_targets(self.db,'2026-10-28T00:00:00Z');self.db.execute("UPDATE candidates SET catalog_status='needs_price',catalog_checked_at='2026-10-28T00:00:00Z' WHERE provider='official_target'")
   self.db.execute("UPDATE research_state SET value='4.0' WHERE key='catalog_parser_revision'")
   enqueue_targets(self.db,'2026-10-28T01:00:00Z');self.assertEqual(self.db.execute("SELECT COUNT(*) FROM candidates WHERE catalog_checked_at IS NULL").fetchone()[0],12)
+ def test_optional_monthly_render_keeps_static_evidence_when_budget_exhausted(self):
+  r.configure(self.db,['https://vendor.example/pricing']);html='<div id="root"><h2>Pro</h2>US$10/mo billed annually; US$20/mo billed monthly cancel any time. '+('public pricing description '*8)+'</div>'
+  with patch.object(r,'download',return_value=(html.encode(),'text/html','utf-8')),patch.object(r,'render',side_effect=r.FetchFailure('render_budget_exhausted')):
+   self.assertIn('US$20',c.fetch('https://vendor.example/pricing').text)
+ def test_fact_changes_publish_another_same_day_revision(self):
+  service={'key':'s','name':'S','category':'AI','status':'verified_identity','origin':'seed','purpose':'assistant'}
+  first=publish_catalog(self.db,[service],'2026-10-28T00:00:00Z');second=publish_catalog(self.db,[dict(service,purposes=['assistant','image'])],'2026-10-28T01:00:00Z');self.assertGreater(second['revision'],first['revision'])
+ def test_sitemap_rejects_offsite_and_entities(self):
+  xml='<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://vendor.example/event/1</loc></url><url><loc>https://evil.example/pricing</loc></url></urlset>'
+  self.assertEqual(sitemap_links(xml,'https://vendor.example/'),[('https://vendor.example/event/1','공식 요금·이벤트 상세 페이지')])
+  with self.assertRaises(ValueError):sitemap_links('<!DOCTYPE x><urlset/>','https://vendor.example/')
+ def test_404_event_entry_uses_public_homepage_and_preserves_original_failure(self):
+  source={'id':'new','name':'New','service':'new','parser':'event','url':'https://vendor.example/old-event','discover':False}
+  def fake(url):
+   if 'old-event' in url:raise urllib.error.HTTPError(url,404,'missing',{},None)
+   return c.parse_html('<title>New official</title>'+('public homepage '*20))
+  with patch.object(c,'fetch',side_effect=fake):result=c.investigate(source)
+  self.assertEqual(result['status'],'ok');self.assertEqual(result['observations'][0]['status'],'http_404');self.assertEqual(result['observations'][1]['url'],'https://vendor.example/')

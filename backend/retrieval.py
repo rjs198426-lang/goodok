@@ -102,9 +102,13 @@ def fetch_html(url,parse):
   html=raw.decode(charset,errors='replace');page=parse(html)
   if re.search(r'captcha|verify you are human|unusual traffic|자동입력 방지|로봇이 아닙니다',page.text,re.I):raise FetchFailure('captcha')
   shell=bool(re.search(r'id=["\'](?:app|root|__next)["\']|enable javascript|자바스크립트',html,re.I))
-  if host(url) in HOSTS and (len(page.text)<100 or shell and not re.search(r'[$₩€£]\s*[1-9]\d*',page.text)):
+  required=len(page.text)<100 or shell and not re.search(r'[$₩€£]\s*[1-9]\d*',page.text)
+  ambiguous=shell and any(re.search(r'annual|yearly|연간',s['text'],re.I) and re.search(r'monthly|월간',s['text'],re.I) and len(set(re.findall(r'[$₩€£]\s*([\d,.]+)',s['text'])))>1 for s in page.sections)
+  if host(url) in HOSTS and (required or ambiguous):
    try:page=parse(render(url));note(url,'browser','ok')
-   except Exception as e:note(url,'browser',error_code(e));raise
+   except Exception as e:
+    note(url,'browser',error_code(e))
+    if required:raise
   note(url,'page','ok');future.set_result(page);return page
  except Exception as e:
   note(url,'page',error_code(e),getattr(e,'code',None) if isinstance(e,urllib.error.HTTPError) else None);future.set_exception(e);raise

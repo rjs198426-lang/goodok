@@ -71,6 +71,16 @@ def news_links(payload):
   if safe_url(link):links.append((link,item.findtext('title') or '',item.find('source').get('url') if item.find('source') is not None else None))
  return links
 
+def sitemap_links(payload,base):
+ from research_common import same_site
+ raw=payload.decode('utf-8',errors='replace') if isinstance(payload,bytes) else payload
+ if re.search(r'<!DOCTYPE|<!ENTITY',raw,re.I):raise ValueError('DTD not accepted')
+ root=ET.fromstring(raw);result=[]
+ for loc in root.findall('.//{*}loc')[:1000]:
+  url=safe_url((loc.text or '').strip())
+  if url and same_site(url,base) and re.search(r'pricing|promotion|offer|event|benefit|할인|이벤트',url,re.I):result.append((url,'공식 요금·이벤트 상세 페이지'))
+ return result[:10]
+
 def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None,api_search=None,api_providers=(),fetch_text=None):
  clean_legacy_candidates(db,seeds)
  cursor=int((db.execute("SELECT value FROM research_state WHERE key='cursor'").fetchone() or ['0'])[0]);selected=rotating(seeds,cursor,budget)
@@ -136,6 +146,22 @@ def run_discovery(db,seeds,fetch,stamp,budget=3,fetch_xml=None,api_search=None,a
    except Exception as e:
     from retrieval import error_code
     remember('Public tool directory','새 서비스 공식 사이트 후보',url,[],'unavailable',error=error_code(e))
+ # First-party navigation and sitemap discovery continue without search engines.
+ from research_common import same_site
+ for service in selected:
+  url=service['officialUrl'];name='Official links: '+service['key']
+  try:
+   page=fetch(url);links=[(urllib.parse.urljoin(url,h),label) for h,label in page.links if same_site(urllib.parse.urljoin(url,h),url) and re.search(r'pricing|plans|offer|event|promo|benefit|할인|혜택|이벤트|요금',h+' '+label,re.I)]
+   remember(name,service['name']+' 공식 내부 링크',url,links)
+   sitemap=urllib.parse.urlunsplit(('https',urllib.parse.urlsplit(url).netloc,'/sitemap.xml','',''))
+   if fetch_xml and not deferred('Sitemap: '+service['key']):
+    try:remember('Sitemap: '+service['key'],'공식 사이트맵',sitemap,sitemap_links(fetch_xml(sitemap),url))
+    except Exception as e:
+     from retrieval import error_code
+     remember('Sitemap: '+service['key'],'공식 사이트맵',sitemap,[],'unavailable',error=error_code(e))
+  except Exception as e:
+   from retrieval import error_code
+   remember(name,'공식 내부 링크',url,[],'unavailable',error=error_code(e))
  # Ordinary RSS access; never bypass a provider's CAPTCHA or login wall.
  for query,scope in [queries[0],queries[-1]]:
   url='https://news.google.com/rss/search?q='+urllib.parse.quote(query)+'&hl=ko&gl=KR&ceid=KR:ko'
