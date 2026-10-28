@@ -3,7 +3,8 @@ import argparse,concurrent.futures,datetime as dt,hashlib,json,re,sqlite3,time,u
 from pathlib import Path
 from html.parser import HTMLParser
 from discovery import safe_url,public_host,init_discovery,run_discovery
-from catalog_engine import normal_plan,expand_catalog
+from catalog_engine import normal_plan,expand_catalog,research_targets,enqueue_targets
+import retrieval
 from factcheck import verify_candidates
 from offer_identity import campaign_id,compact_offers
 from research_common import as_offers
@@ -48,28 +49,18 @@ class Page(HTMLParser):
    if self.in_title:self.title.append(data)
  @property
  def text(self):return re.sub(r'\s+',' ',''.join(self.parts)).strip()
-class SafeRedirect(urllib.request.HTTPRedirectHandler):
- def redirect_request(self,req,fp,code,msg,headers,newurl):
-  old,new=urllib.parse.urlparse(req.full_url),urllib.parse.urlparse(newurl)
-  if new.scheme!='https' or new.hostname!=old.hostname or not public_host(new.hostname):raise ValueError('cross-site redirect rejected')
-  return super().redirect_request(req,fp,code,msg,headers,newurl)
-def fetch(url):
- if not safe_url(url) or not public_host(urllib.parse.urlparse(url).hostname):raise ValueError('non-public URL')
- req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 GoodokBenefits/2.0 (+public-offer-monitor)','Accept':'text/html','Accept-Language':'ko-KR,ko;q=0.9,en;q=0.8'})
- with urllib.request.build_opener(SafeRedirect()).open(req,timeout=18) as response:
-  if 'text/html' not in response.headers.get('Content-Type',''):raise ValueError('not HTML')
-  data=response.read(MAX_BYTES+1)
-  if len(data)>MAX_BYTES:raise ValueError('oversize')
-  page=Page();page.feed(data.decode(response.headers.get_content_charset() or 'utf-8',errors='replace'));return page
+def parse_html(text):
+ page=Page();page.feed(text);return page
+def fetch(url):return retrieval.fetch_html(url,parse_html)
 
 def fetch_xml(url):
- if not safe_url(url) or not public_host(urllib.parse.urlparse(url).hostname):raise ValueError('non-public URL')
- req=urllib.request.Request(url,headers={'User-Agent':'DalfitResearch/3.0','Accept':'application/rss+xml,application/xml,text/xml'})
- with urllib.request.build_opener(SafeRedirect()).open(req,timeout=15) as response:
-  if not any(t in response.headers.get('Content-Type','') for t in ('xml','rss')):raise ValueError('not XML')
-  data=response.read(1024*1024+1)
-  if len(data)>1024*1024:raise ValueError('oversize RSS')
-  return data
+ data,mime,_=retrieval.download(url,'application/rss+xml,application/xml,text/xml',1024*1024)
+ if not any(t in mime for t in ('xml','rss')):raise retrieval.FetchFailure('unexpected_content_type')
+ return data
+
+def fetch_text(url):
+ data,_,charset=retrieval.download(url,'text/plain',1024*1024)
+ return data.decode(charset,errors='replace')
 
 def ending(text):
  m=re.search(r'(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})\s*일?\s*(?:까지|종료)',text)
@@ -178,7 +169,7 @@ def investigate(source):
      observations.append({'url':url,'status':'verified' if found else 'no_verified_offer'})
     except Exception:observations.append({'url':url,'status':'unavailable'})
   return {'id':source['id'],'name':source['name'],'status':'ok','offers':offers,'observations':observations,'price':observed_price(source,page.text),'plans':normal_plan(source,page,observed_price(source,page.text),stamp())}
- except Exception as exc:return {'id':source['id'],'name':source['name'],'status':'unavailable','offers':[],'observations':[{'url':source['url'],'status':'unavailable'}]}
+ except Exception as exc:return {'id':source['id'],'name':source['name'],'status':'unavailable','errorCode':retrieval.error_code(exc),'offers':[],'observations':[{'url':source['url'],'status':'unavailable'}]}
 
 def init_db(path):
  db=sqlite3.connect(path)
@@ -187,7 +178,7 @@ def init_db(path):
  CREATE TABLE IF NOT EXISTS offers(id TEXT PRIMARY KEY,source_id TEXT,payload TEXT,first_seen TEXT,last_verified TEXT);
  CREATE TABLE IF NOT EXISTS comparison_profiles(service TEXT PRIMARY KEY,payload TEXT,checked_at TEXT);
  CREATE TABLE IF NOT EXISTS offer_history(offer_id TEXT,campaign_key TEXT,payload TEXT,verified_at TEXT,source_id TEXT,PRIMARY KEY(offer_id,verified_at,payload));
- ''');init_discovery(db);return db
+ ''');init_discovery(db);retrieval.init_tables(db);return db
 
 def store_and_export(db,results,now,out,profiles):
  profiles=json.loads(json.dumps(profiles));timestamp=stamp(now);day=now.astimezone(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
@@ -215,7 +206,7 @@ def store_and_export(db,results,now,out,profiles):
   if last<stamp(now-dt.timedelta(hours=72)) or (offer['ends'] and offer['ends']<day):continue
   offer.update(checked=last[:10],verifiedAt=last,firstSeen=first);offer.pop('evidence',None);offer['factCheck']={'status':'official_verified','checkedAt':last,'officialSource':offer['source']};offers.append(offer)
  latest_success=db.execute('SELECT MAX(finished_at) FROM runs WHERE successful_sources>0').fetchone()[0]
- feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'verifiedOffers':len(r['offers'])} for r in results]}
+ feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'errorCode':r.get('errorCode'),'verifiedOffers':len(r['offers'])} for r in results]}
  catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
  published_catalog=publish_catalog(db,catalog,timestamp)
  feed['catalogUpdate']=published_catalog
@@ -231,8 +222,10 @@ def store_and_export(db,results,now,out,profiles):
  metrics={'candidateOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM candidates GROUP BY status')),'catalogOutcomes':dict(db.execute("SELECT catalog_status,COUNT(*) FROM candidates WHERE scope='subscription' GROUP BY catalog_status")),'factCheckOutcomes':dict(db.execute('SELECT status,COUNT(*) FROM fact_checks GROUP BY status')),'newServiceCount':sum(item.get('origin')=='discovered' for item in catalog),'verifiedPlanCount':sum(p.get('status')=='verified' for p in plans),'candidatePlanCount':sum(p.get('status')!='verified' for p in plans),'rejectedLinkCount':db.execute('SELECT COALESCE(SUM(rejected_count),0) FROM discovery_queries WHERE checked_at>=?',(stamp(now-dt.timedelta(days=1)),)).fetchone()[0]}
  metrics['featureCoverage']={key:sum(any(e.get('field')=='capability.'+key and e.get('quote') for e in p.get('evidence',[])) for p in plans if p.get('status')=='verified') for key in sorted({key for p in plans for key in p.get('capabilities',{})})}
  metrics['comparableKRWPlans']=sum(p.get('status')=='verified' and p.get('currency')=='KRW' and p.get('region')=='KR' and p.get('commitmentMonths')==1 for p in plans)
+ metrics['comparableByCurrency']={currency:sum(p.get('status')=='verified' and p.get('currency')==currency and p.get('commitmentMonths')==1 for p in plans) for currency in sorted({p.get('currency','unknown') for p in plans})}
+ retrieval_status=retrieval.persist(db,timestamp)
  latest=db.execute("SELECT value FROM research_state WHERE key='latest_run'").fetchone()
- feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':3,'searchApiConnections':{name:name in configured_providers() for name in ('Google','Naver')},'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
+ feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':4,'retrieval':retrieval_status,'searchApiConnections':{name:name in configured_providers() for name in ('Google','Naver')},'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
 
 def main():
@@ -240,7 +233,9 @@ def main():
  sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
  for source in sources:source['purpose']=next((seed.get('purpose') for seed in seeds if seed['key']==source['id']),None)
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
- attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml,api_search=search_api,api_providers=configured_providers())
+ retrieval.configure(db,[s['officialUrl'] for s in seeds]+[t['url'] for t in research_targets()])
+ enqueue_targets(db,timestamp)
+ attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml,api_search=search_api,api_providers=configured_providers(),fetch_text=fetch_text)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))
  catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract_all)
  discovered_offers=catalogue.pop('verifiedOffers',[])

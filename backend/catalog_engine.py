@@ -1,5 +1,6 @@
 """Evidence-backed subscription catalogue and normal recurring plan observations."""
 import datetime as dt,hashlib,json,re,urllib.parse
+from pathlib import Path
 from discovery import safe_url,rotating
 from research_common import as_offers,rejection_reason,match_service
 from plan_capabilities import enrich_plan_capabilities
@@ -14,10 +15,14 @@ def flatten(items):
    yield item
    if isinstance(item.get('@graph'),list):yield from flatten(item['@graph'])
 def category_for(text):
- for category,pattern in [('VPN',r'\bVPN\b'),('음악',r'music|음악|음원'),('OTT',r'streaming video|영화|시리즈|OTT'),('AI',r'\bAI\b|인공지능|generative'),('생산성',r'productivity|workspace|협업|문서')]:
+ for category,pattern in [('보안',r'password manager|password vault|비밀번호 관리'),('백업',r'cloud backup|computer backup|클라우드 백업'),('업무 자동화',r'workflow automation|automate workflows|업무 자동화'),('웹·호스팅',r'web hosting|website hosting|웹 호스팅'),('음성·오디오',r'text.to.speech|voice cloning|speech synthesis|음성 합성'),('영상 제작',r'video generat|video edit|영상 편집|영상 생성'),('디자인',r'graphic design|design collaboration|디자인 협업'),('독서·지식',r'reading subscription|read.it.later|독서 구독'),('개발 도구',r'developer tool|code editor|개발 도구'),('학습',r'online courses|language learning|온라인 강의|언어 학습'),('VPN',r'\bVPN\b'),('음악',r'music|음악|음원'),('OTT',r'streaming video|영화|시리즈|OTT'),('AI',r'\bAI\b|인공지능|generative'),('생산성',r'productivity|workspace|협업|문서')]:
   if re.search(pattern,text,re.I):return category
  return '기타'
-def purpose_for(category):return {'음악':'music','OTT':'video','VPN':'vpn','AI':'ai_unspecified','생산성':'productivity'}.get(category,'other')
+def purpose_for(category):return {'보안':'passwords','백업':'backup','업무 자동화':'automation','웹·호스팅':'hosting','음성·오디오':'speech','영상 제작':'video_creation','디자인':'design','독서·지식':'reading','개발 도구':'coding','학습':'learning','음악':'music','OTT':'video','VPN':'vpn','AI':'ai_unspecified','생산성':'productivity'}.get(category,'other')
+def research_targets():return json.loads((Path(__file__).parent/'research-targets.json').read_text())
+def enqueue_targets(db,timestamp):
+ for target in research_targets():db.execute("INSERT OR IGNORE INTO candidates(url,title,provider,discovery_url,status,first_seen,last_seen,scope) VALUES(?,?,'official_target',?,'pending',?,?,'subscription')",(target['url'],target['name'],target['url'],timestamp,timestamp))
+ db.commit()
 
 def core_capabilities(text,purpose):
  capabilities={}
@@ -80,7 +85,7 @@ def text_plans(page,service,timestamp):
  if not re.search(r'pricing|plans?|price|subscription|compare|premium|buy|요금|가격',service['officialUrl']+' '+''.join(page.title),re.I):return []
  for section in page.sections:
   name=re.sub(r'\s+',' ',section['title']).strip();text=re.sub(r'\s+',' ',section['text']).strip()
-  if len(name)>90 or not re.search(r'\b(?:Pro|Plus|Personal|Individual|Standard|Premium|Basic|Starter|Free|Max|Ultra)\b|개인|스탠다드|프리미엄|베이직',name,re.I):continue
+  if len(name)>90 or not re.search(r'\b(?:Pro|Plus|Personal|Individual|Standard|Premium|Basic|Starter|Free|Max|Ultra|Business|Teams?|Growth|Professional|Developer|Family|Families|Advanced|Core|Creator|Unlimited|Essential|Complete|Reader)\b|개인|스탠다드|프리미엄|베이직',name,re.I):continue
   if re.search(r'lifetime|평생|신규 가입자만|new customers only|first year only',text,re.I):continue
   explicit=re.search(r'(US\$|\$|₩|€|£)\s*([\d,]+(?:\.\d+)?)\s*if billed monthly',text,re.I)
   if not explicit:explicit=re.search(r'(US\$|\$|₩|€|£)\s*([\d,]+(?:\.\d+)?)\s*/\s*(?:month|mo)\b\s*(?:[·|—–-]\s*)?billed monthly',text,re.I)
@@ -120,7 +125,7 @@ def enrich_service(service,page,plans,timestamp):
    service['description']=' · '.join(labels[p] for p in purposes)+' 도구를 포함한 구독 서비스'
  service.setdefault('purposes',[service['purpose']] if service.get('purpose') and service['purpose'] not in ('ai_unspecified','other') else [])
  verified=[p for p in plans if p.get('status')=='verified']
- service['verification']={'schemaVersion':3,'identity':True,'priceObserved':bool(plans),'billingTerms':bool(verified),'regionConfirmed':any(p.get('region')=='KR' for p in verified),'paidScope':bool(service.get('purposeEvidence')),'checkedAt':timestamp}
+ service['verification']={'schemaVersion':4,'identity':True,'priceObserved':bool(plans),'recurringPrice':any(p.get('amount',0)>0 and p.get('interval') in ('monthly','yearly') and p.get('evidence') for p in plans),'billingTerms':bool(verified),'regionConfirmed':any(p.get('region')=='KR' for p in verified),'paidScope':bool(service.get('purposeEvidence')),'checkedAt':timestamp}
  if service.get('origin')=='discovered':service['status']='verified' if verified else 'verified_identity'
  for plan in plans:
   plan['purpose']=service.get('purpose',plan.get('purpose'));plan['purposes']=service.get('purposes',[])
@@ -143,8 +148,14 @@ def identify_new(page,url,seeds,reference):
  organizations=[item for item in flatten(page.jsonld) if item.get('@type') in ('Organization','Corporation')]
  products=[item for item in flatten(page.jsonld) if item.get('@type') in ('Product','SoftwareApplication','Service')]
  organization=next((item for item in organizations if safe_url(item.get('url')) and same_site(item['url'],url)),None)
+ target=next((t for t in research_targets() if same_site(t['url'],url)),None)
+ if not organization and target:
+  legal=any(re.search(r'terms|privacy|이용약관|개인정보',href+' '+label,re.I) for href,label in page.links)
+  brand=re.search(re.escape(target['name']),''.join(page.title)+' '+page.meta.get('og:site_name',''),re.I)
+  if legal and brand:organization={'name':target['name'],'url':target['url']}
  if not organization:return None
  name=str(organization.get('name') or (products[0].get('name') if products else '') or '').strip()
+ if target and target['name'].casefold() in ''.join(page.title).casefold():name=target['name']
  if not products:
   legal=any(re.search(r'terms|privacy|이용약관|개인정보',label,re.I) for _,label in page.links)
   if not legal or name.casefold() not in ''.join(page.title).casefold():return None
@@ -153,32 +164,20 @@ def identify_new(page,url,seeds,reference):
  for seed in seeds:
   if any(alias.casefold() in name.casefold() for alias in [seed['name'],*seed.get('aliases',[])] if len(alias)>=4) and not same_site(seed['officialUrl'],url):return None
  description=str((products[0].get('description') if products else None) or page.meta.get('description') or page.meta.get('og:description') or '')[:240]
- return {'key':'discovered-'+hashlib.sha256(host(url).encode()).hexdigest()[:12],'name':name,'category':category_for(name+' '+description),'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else 'coding' if re.search(r'coding|code editor|코딩',description,re.I) else 'assistant' if re.search(r'chatbot|AI assistant|대화형|챗봇',description,re.I) else purpose_for(category_for(name+' '+description))), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'referring_site_and_first_party_structured_identity'}}
+ category=target['category'] if target else category_for(name+' '+description)
+ return {'key':'discovered-'+hashlib.sha256(host(url).removeprefix('www.').encode()).hexdigest()[:12],'name':name,'category':category,'aliases':[name],'officialUrl':url,'officialHost':host(url),'origin':'discovered','status':'verified_identity','description':description,'discoveredFrom':reference,'purpose':('music_creation' if re.search(r'music generat|음악 생성|작곡',description,re.I) else 'image' if re.search(r'image generat|이미지 생성',description,re.I) else 'coding' if re.search(r'coding|code editor|코딩',description,re.I) else 'assistant' if re.search(r'chatbot|AI assistant|대화형|챗봇',description,re.I) else purpose_for(category)), 'identityEvidence':{'organizationName':name,'organizationUrl':organization['url'],'method':'curated_official_target_and_first_party_brand' if target else 'referring_site_and_first_party_structured_identity'}}
 
-def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,extract_offer=None):
+def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=16,extract_offer=None):
  for seed in seeds:db.execute('INSERT INTO service_catalog VALUES(?,?,?,?) ON CONFLICT(service_key) DO UPDATE SET payload=excluded.payload',(seed['key'],json.dumps(seed,ensure_ascii=False),timestamp,None))
  known={key:json.loads(payload) for key,payload in db.execute('SELECT service_key,payload FROM service_catalog')}
- cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);priority=[s for s in known.values() if s.get('origin')=='discovered' and s.get('verification',{}).get('schemaVersion')!=3]
+ cursor=int((db.execute("SELECT value FROM research_state WHERE key='catalog_cursor'").fetchone() or ['0'])[0]);priority=[s for s in known.values() if s.get('origin')=='discovered' and s.get('verification',{}).get('schemaVersion')!=4]
  selected=(priority+rotating([s for s in known.values() if s not in priority],cursor,max(0,budget-len(priority))))[:budget]
  results=[];new_count=0;verified_offers=[]
- for service in selected:
-  try:
-   page=fetch(service['officialUrl']);source={'id':service['key'],'category':service['category'],'purpose':service.get('purpose'),'url':service['officialUrl']};price=observed_price(source,page.text)
-   if extract_offer:
-    offer_source={**source,'service':service['key'],'name':service['name'],'parser':service['key'] if service['key'] in ('surfshark','adobe','spotify','apple-music','nordvpn') else 'event'}
-    verified_offers.extend(as_offers(extract_offer(offer_source,page)))
-   plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
-   service=enrich_service(service,page,plans,timestamp);known[service['key']]=service
-   db.execute('UPDATE service_catalog SET payload=? WHERE service_key=?',(json.dumps(service,ensure_ascii=False),service['key']))
-   for plan in plans:
-    payload=json.dumps(plan,ensure_ascii=False);db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],service['key'],payload,timestamp));db.execute('INSERT INTO plan_history VALUES(?,?,?)',(plan['id'],payload,timestamp))
-   db.execute('UPDATE service_catalog SET last_checked=? WHERE service_key=?',(timestamp,service['key']));results.append({'service':service['key'],'status':'checked','plans':len(plans)})
-  except Exception:results.append({'service':service['key'],'status':'unavailable','plans':0})
  known_hosts={item['officialHost'].removeprefix('www.') for item in known.values()}
  market_hosts={'appsumo.com','marketplace.sumo.com','stacksocial.com','www.stacksocial.com','slickdeals.net','dealmirror.com','dealify.com','www.ppomppu.co.kr','quasarzone.com'}
  # Pending discovery pages are revisited in later runs; a growing queue is not a fixed source list.
  cutoff=(dt.datetime.fromisoformat(timestamp.replace('Z','+00:00'))-dt.timedelta(days=1)).isoformat(timespec='seconds').replace('+00:00','Z')
- pending=list(db.execute("SELECT url,title,discovery_url FROM candidates WHERE scope='subscription' AND catalog_status NOT IN ('known','verified','rejected') AND (catalog_checked_at IS NULL OR catalog_checked_at<?) ORDER BY catalog_checked_at NULLS FIRST,first_seen LIMIT 12",(cutoff,)))
+ pending=list(db.execute("SELECT url,title,discovery_url FROM candidates WHERE scope='subscription' AND catalog_status NOT IN ('known','verified','rejected') AND (catalog_checked_at IS NULL OR catalog_checked_at<?) ORDER BY CASE WHEN provider='official_target' THEN 0 WHEN provider='vendor_link' THEN 1 ELSE 2 END,catalog_checked_at NULLS FIRST,first_seen LIMIT 28",(cutoff,)))
  for url,title,reference in pending:
   if host(url).removeprefix('www.') in known_hosts:
    db.execute("UPDATE candidates SET catalog_status='known',catalog_checked_at=? WHERE url=?",(timestamp,url));continue
@@ -210,5 +209,18 @@ def expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,budget=10,
    for plan in plans:db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],service['key'],json.dumps(plan,ensure_ascii=False),timestamp))
    db.execute("UPDATE candidates SET catalog_status='verified',status='catalog_verified',reason=NULL WHERE url=?",(url,))
   except Exception:db.execute("UPDATE candidates SET catalog_status='unavailable',reason='현재 페이지 접근 불가' WHERE url=?",(url,))
+ for service in selected:
+  try:
+   page=fetch(service['officialUrl']);source={'id':service['key'],'category':service['category'],'purpose':service.get('purpose'),'url':service['officialUrl']};price=observed_price(source,page.text)
+   if extract_offer:
+    offer_source={**source,'service':service['key'],'name':service['name'],'parser':service['key'] if service['key'] in ('surfshark','adobe','spotify','apple-music','nordvpn') else 'event'}
+    verified_offers.extend(as_offers(extract_offer(offer_source,page)))
+   plans=normal_plan(source,page,price,timestamp)+structured_plans(page,service,timestamp)+text_plans(page,service,timestamp)+vendor_normal_plans(page,service,timestamp)
+   service=enrich_service(service,page,plans,timestamp);known[service['key']]=service
+   db.execute('UPDATE service_catalog SET payload=? WHERE service_key=?',(json.dumps(service,ensure_ascii=False),service['key']))
+   for plan in plans:
+    payload=json.dumps(plan,ensure_ascii=False);db.execute('INSERT OR REPLACE INTO plan_facts VALUES(?,?,?,?)',(plan['id'],service['key'],payload,timestamp));db.execute('INSERT INTO plan_history VALUES(?,?,?)',(plan['id'],payload,timestamp))
+   db.execute('UPDATE service_catalog SET last_checked=? WHERE service_key=?',(timestamp,service['key']));results.append({'service':service['key'],'status':'checked','plans':len(plans)})
+  except Exception:results.append({'service':service['key'],'status':'unavailable','plans':0})
  db.execute("INSERT OR REPLACE INTO research_state VALUES('catalog_cursor',?)",(str(cursor+budget),));db.commit()
  return {'checked':results,'newServices':new_count,'catalogSize':len(known),'verifiedOffers':verified_offers}

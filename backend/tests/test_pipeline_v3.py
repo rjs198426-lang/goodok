@@ -109,6 +109,6 @@ class PipelineV3Tests(unittest.TestCase):
   self.assertEqual(result['verified'],1);self.assertEqual(len(export_taste(self.db,NOW)),1);self.assertEqual(export_taste(self.db,'2026-12-01T00:00:00Z'),[])
  def test_export_separates_pending_checks_from_confirmations_and_writes_report(self):
   feed=c.store_and_export(self.db,[],__import__('datetime').datetime.fromisoformat(NOW.replace('Z','+00:00')),Path(self.tmp.name)/'feed.json',{})
-  self.assertEqual(feed['research']['pipelineVersion'],3);write_report(self.db,feed,Path(self.tmp.name))
+  self.assertEqual(feed['research']['pipelineVersion'],4);write_report(self.db,feed,Path(self.tmp.name))
   report=json.loads((Path(self.tmp.name)/'research-report.json').read_text());self.assertEqual(report['factCheckOutcomes'],{});self.assertEqual(report['publishedOffers'],0)
 if __name__=='__main__':unittest.main()
