@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-29T22:57:16Z",
+  "generatedAt": "2026-10-29T23:54:01Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 65,
   "newServicesCumulative": 12,
   "newServicesThisRun": 0,
-  "candidatesRetained": 1858,
-  "candidatesIncludingRejected": 2018,
+  "candidatesRetained": 1879,
+  "candidatesIncludingRejected": 2039,
   "factCheckOutcomes": {
-    "needs_verification": 747,
+    "needs_verification": 755,
     "official_verified": 4,
     "partial_match": 20
   },
   "latestRun": {
-    "startedAt": "2026-10-29T22:56:10Z",
+    "startedAt": "2026-10-29T23:52:26Z",
     "searchAttempts": 33,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 21,
+      "unmatched": 18,
       "rejected": 0
     },
     "taste": {
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
+        "checkedAt": "2026-10-29T23:54:01Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -77,11 +77,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
+        "checkedAt": "2026-10-29T23:54:01Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -101,11 +101,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
+        "checkedAt": "2026-10-29T23:54:01Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -129,11 +129,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
+        "checkedAt": "2026-10-29T23:54:01Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -144,8 +144,8 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
@@ -153,12 +153,12 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
+        "checkedAt": "2026-10-29T23:54:01Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
     {
@@ -175,11 +175,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
+        "checkedAt": "2026-10-29T23:54:01Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -203,11 +203,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T22:57:16Z",
+      "verifiedAt": "2026-10-29T23:54:01Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T22:57:16Z",
+        "checkedAt": "2026-10-29T23:54:01Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -665,31 +665,6 @@
       "nextCheckAt": "2026-10-30T03:02:38Z"
     },
     {
-      "name": "Official links: deezer",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: deezer",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Official links: duolingo",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: duolingo",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T09:01:59Z"
-    },
-    {
-      "name": "Official links: chatgpt",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T09:58:59Z"
-    },
-    {
       "name": "Official links: grok",
       "status": "no_relevant_results",
       "nextCheckAt": null
@@ -1075,11 +1050,6 @@
       "nextCheckAt": "2026-10-30T00:59:41Z"
     },
     {
-      "name": "StackSocial",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Google",
       "status": "no_relevant_results",
       "nextCheckAt": "2026-10-30T03:57:36Z"
@@ -1115,16 +1085,6 @@
       "nextCheckAt": null
     },
     {
-      "name": "Slickdeals",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Dealify",
       "status": "ok",
       "nextCheckAt": null
@@ -1133,21 +1093,6 @@
       "name": "Naver",
       "status": "unavailable",
       "nextCheckAt": "2026-10-30T22:56:10Z"
-    },
-    {
-      "name": "Bing",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "Official links: youtube-music",
@@ -1175,12 +1120,52 @@
       "nextCheckAt": "2026-10-30T06:56:10Z"
     },
     {
-      "name": "Google News",
+      "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
     },
     {
-      "name": "AppSumo",
+      "name": "Bing",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: deezer",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: deezer",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: duolingo",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: duolingo",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T07:52:26Z"
+    },
+    {
+      "name": "Official links: chatgpt",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T07:52:26Z"
+    },
+    {
+      "name": "Google News",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1188,28 +1173,43 @@
       "name": "Sumo 구독 할인",
       "status": "ok",
       "nextCheckAt": null
+    },
+    {
+      "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Slickdeals",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
     }
   ],
   "retrieval": {
     "outcomes": {
       "captcha": 6,
-      "cross_site_redirect": 204,
-      "deferred_cross_site_redirect": 58,
-      "deferred_http_403": 113,
+      "cross_site_redirect": 200,
+      "deferred_cross_site_redirect": 62,
+      "deferred_http_403": 110,
       "deferred_http_404": 21,
       "deferred_http_429": 5,
       "deferred_render_http_403": 5,
       "http_402": 4,
-      "http_403": 166,
-      "http_404": 38,
+      "http_403": 168,
+      "http_404": 37,
       "http_406": 1,
       "http_429": 8,
       "http_503": 3,
       "http_526": 2,
       "http_530": 2,
       "network_error": 2,
-      "non_public_url": 28,
-      "ok": 1793,
+      "non_public_url": 23,
+      "ok": 1792,
       "render_budget_exhausted": 49,
       "render_http_403": 8,
       "response_too_large": 3,
@@ -1217,9 +1217,59 @@
       "tls_error": 4,
       "unexpected_content_type": 7
     },
-    "cacheHitsThisRun": 14,
-    "renderAttemptsThisRun": 6,
+    "cacheHitsThisRun": 9,
+    "renderAttemptsThisRun": 10,
     "recentFailures": [
+      {
+        "url": "https://www.tving.com/live/C00708",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-30T03:54:01Z"
+      },
+      {
+        "url": "https://openai.com/index/start-using-chatgpt-instantly/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T23:54:01Z"
+      },
+      {
+        "url": "https://platform.openai.com/onboarding",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T23:54:01Z"
+      },
+      {
+        "url": "https://help.openai.com/en/articles/12677804-what-is-chatgpt-faq",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T23:54:01Z"
+      },
+      {
+        "url": "https://www.examsamur.ai/",
+        "reason": "non_public_url",
+        "nextCheckAt": "2026-10-30T00:54:01Z"
+      },
+      {
+        "url": "https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T23:54:01Z"
+      },
+      {
+        "url": "https://app.primevideo.com/home",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-30T00:54:01Z"
+      },
+      {
+        "url": "https://www.zoom.com/en/products/virtual-meetings/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-30T11:54:01Z"
+      },
+      {
+        "url": "https://chatgpt.com/overview/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T23:54:01Z"
+      },
+      {
+        "url": "https://www.canva.com/graphs/workflow-diagrams/?msockid=1bd688ae725c6e9714ac90af73c86fa5",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T23:54:01Z"
+      },
       {
         "url": "https://search.naver.com/search.naver?where=web&query=YouTube%20Music%20%EA%B5%AC%EB%8F%85%20%ED%95%A0%EC%9D%B8%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%EA%B0%80%EA%B2%A9%202026%2010",
         "reason": "http_403",
@@ -1319,56 +1369,6 @@
         "url": "https://emoticon.kakao.com/",
         "reason": "cross_site_redirect",
         "nextCheckAt": "2026-10-30T09:01:14Z"
-      },
-      {
-        "url": "https://drive.kakao.com/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-30T09:01:14Z"
-      },
-      {
-        "url": "https://theresanai.com/wellsaid-labs",
-        "reason": "non_public_url",
-        "nextCheckAt": "2026-10-29T22:01:14Z"
-      },
-      {
-        "url": "https://www.lovo.ai/",
-        "reason": "http_402",
-        "nextCheckAt": "2026-10-29T22:01:14Z"
-      },
-      {
-        "url": "https://theresanai.com/lovo-ai",
-        "reason": "non_public_url",
-        "nextCheckAt": "2026-10-29T22:01:14Z"
-      },
-      {
-        "url": "https://audify-ai.ahmedtokyo.com/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T22:01:14Z"
-      },
-      {
-        "url": "https://ainterview.space/",
-        "reason": "non_public_url",
-        "nextCheckAt": "2026-10-29T22:01:14Z"
-      },
-      {
-        "url": "https://claude.ai/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T21:01:14Z"
-      },
-      {
-        "url": "https://en.m.wikipedia.org/wiki/Perplexity_AI",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T22:01:14Z"
-      },
-      {
-        "url": "https://github.tw.cn/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T21:01:14Z"
-      },
-      {
-        "url": "https://chatgpt.com/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T21:01:14Z"
       }
     ]
   },
