@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T10:06:47Z",
-  "lastSuccessAt": "2026-10-29T10:06:47Z",
+  "generatedAt": "2026-10-29T11:02:09Z",
+  "lastSuccessAt": "2026-10-29T11:02:09Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T10:06:47Z",
+      "verifiedAt": "2026-10-29T11:02:09Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T10:06:47Z",
+        "checkedAt": "2026-10-29T11:02:09Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -989,9 +989,9 @@
   ],
   "catalogUpdate": {
     "version": "2026-10-29",
-    "revision": 19,
-    "signature": "622c41a61ba19fc6c0380f3fc6266b838d658caad46a7b3ccc9236748db6c709",
-    "publishedAt": "2026-10-29T10:06:47Z",
+    "revision": 20,
+    "signature": "dab73fbde74aa91dd250304aa5eae5d2543e842d4ab7d3ae6b1441523bbbe08f",
+    "publishedAt": "2026-10-29T11:02:09Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -1325,7 +1325,20 @@
         "officialHost": "www.wavve.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T11:01:07Z"
+        }
       },
       {
         "key": "watcha",
@@ -1339,7 +1352,20 @@
         "officialHost": "watcha.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T11:01:07Z"
+        }
       },
       {
         "key": "coupang-play",
@@ -1369,7 +1395,20 @@
         "officialHost": "www.apple.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T11:01:07Z"
+        }
       },
       {
         "key": "prime-video",
@@ -1398,7 +1437,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1427,7 +1466,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1505,7 +1544,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1550,7 +1589,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1579,7 +1618,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1612,7 +1651,7 @@
           "billingTerms": true,
           "regionConfirmed": true,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1640,7 +1679,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1668,7 +1707,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
+          "checkedAt": "2026-10-29T11:01:07Z"
         }
       },
       {
@@ -1684,20 +1723,7 @@
         "officialHost": "one.google.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "storage",
-        "purposes": [
-          "storage"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
-        }
+        "purpose": "storage"
       },
       {
         "key": "google-workspace",
@@ -1714,20 +1740,7 @@
         "officialHost": "workspace.google.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "office",
-        "purposes": [
-          "office"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
-        }
+        "purpose": "office"
       },
       {
         "key": "dropbox",
@@ -1743,20 +1756,7 @@
         "officialHost": "www.dropbox.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "storage",
-        "purposes": [
-          "storage"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
-        }
+        "purpose": "storage"
       },
       {
         "key": "adobe",
@@ -1773,18 +1773,7 @@
         "officialHost": "www.adobe.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T10:05:41Z"
-        }
+        "purpose": "other"
       },
       {
         "key": "canva",
@@ -2657,7 +2646,20 @@
       "officialHost": "www.wavve.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T11:01:07Z"
+      }
     },
     {
       "key": "watcha",
@@ -2671,7 +2673,20 @@
       "officialHost": "watcha.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T11:01:07Z"
+      }
     },
     {
       "key": "coupang-play",
@@ -2701,7 +2716,20 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T11:01:07Z"
+      }
     },
     {
       "key": "prime-video",
@@ -2730,7 +2758,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -2759,7 +2787,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -2837,7 +2865,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -2882,7 +2910,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -2911,7 +2939,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -2944,7 +2972,7 @@
         "billingTerms": true,
         "regionConfirmed": true,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -2972,7 +3000,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -3000,7 +3028,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
+        "checkedAt": "2026-10-29T11:01:07Z"
       }
     },
     {
@@ -3016,20 +3044,7 @@
       "officialHost": "one.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
-      }
+      "purpose": "storage"
     },
     {
       "key": "google-workspace",
@@ -3046,20 +3061,7 @@
       "officialHost": "workspace.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office",
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
-      }
+      "purpose": "office"
     },
     {
       "key": "dropbox",
@@ -3075,20 +3077,7 @@
       "officialHost": "www.dropbox.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
-      }
+      "purpose": "storage"
     },
     {
       "key": "adobe",
@@ -3105,18 +3094,7 @@
       "officialHost": "www.adobe.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T10:05:41Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "canva",
@@ -4921,10 +4899,42 @@
       }
     },
     {
+      "id": "c056c5ba4e7948387070156c",
+      "service": "dropbox",
+      "name": "Standard",
+      "amount": 15.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {},
+      "source": "https://www.dropbox.com/plans",
+      "verifiedAt": "2026-10-29T10:05:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Standard US$15/월"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
       "id": "7e25938563b056214586d97c",
       "service": "expressvpn",
       "name": "Basic",
-      "amount": 4.99,
+      "amount": 2.99,
       "currency": "USD",
       "interval": "monthly",
       "region": "unspecified",
@@ -4937,12 +4947,12 @@
         "refundDays": 30
       },
       "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "candidate",
       "evidence": [
         {
           "field": "amount",
-          "quote": "Basic $ 4.99 / mo"
+          "quote": "Basic $ 2.99 / mo"
         },
         {
           "field": "capability.refundDays",
@@ -4962,7 +4972,7 @@
       "id": "d0909a65d7c014d83aa1071a",
       "service": "expressvpn",
       "name": "Advanced",
-      "amount": 5.99,
+      "amount": 4.49,
       "currency": "USD",
       "interval": "monthly",
       "region": "unspecified",
@@ -4975,12 +4985,12 @@
         "refundDays": 30
       },
       "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "candidate",
       "evidence": [
         {
           "field": "amount",
-          "quote": "Advanced $ 5.99 / mo"
+          "quote": "Advanced $ 4.49 / mo"
         },
         {
           "field": "capability.refundDays",
@@ -5000,7 +5010,7 @@
       "id": "91e29a92a0be5a92d074d118",
       "service": "expressvpn",
       "name": "Express Pro",
-      "amount": 8.99,
+      "amount": 7.49,
       "currency": "USD",
       "interval": "monthly",
       "region": "unspecified",
@@ -5013,12 +5023,12 @@
         "refundDays": 30
       },
       "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "candidate",
       "evidence": [
         {
           "field": "amount",
-          "quote": "Express Pro $ 8.99 / mo"
+          "quote": "Express Pro $ 7.49 / mo"
         },
         {
           "field": "capability.refundDays",
@@ -5049,7 +5059,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "candidate",
       "evidence": [
         {
@@ -5081,7 +5091,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "candidate",
       "evidence": [
         {
@@ -5113,7 +5123,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "candidate",
       "evidence": [
         {
@@ -5145,7 +5155,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "verified",
       "evidence": [
         {
@@ -5181,7 +5191,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "verified",
       "evidence": [
         {
@@ -5217,7 +5227,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T10:05:41Z",
+      "verifiedAt": "2026-10-29T11:01:07Z",
       "status": "verified",
       "evidence": [
         {
@@ -5236,38 +5246,6 @@
         "price": true,
         "billingTerms": true,
         "region": true
-      }
-    },
-    {
-      "id": "c056c5ba4e7948387070156c",
-      "service": "dropbox",
-      "name": "Standard",
-      "amount": 15.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {},
-      "source": "https://www.dropbox.com/plans",
-      "verifiedAt": "2026-10-29T10:05:41Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Standard US$15/월"
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
       }
     },
     {
@@ -5290,7 +5268,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-29T10:05:55Z",
+      "verifiedAt": "2026-10-29T11:01:25Z",
       "status": "verified",
       "evidence": [
         {
@@ -5336,7 +5314,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-29T10:05:49Z",
+      "verifiedAt": "2026-10-29T11:01:22Z",
       "status": "verified",
       "evidence": [
         {
@@ -5372,35 +5350,115 @@
     "retrieval": {
       "outcomes": {
         "captcha": 3,
-        "cross_site_redirect": 230,
+        "cross_site_redirect": 250,
         "deferred_cross_site_redirect": 59,
-        "deferred_http_403": 126,
-        "deferred_http_404": 20,
-        "deferred_http_429": 4,
+        "deferred_http_403": 131,
+        "deferred_http_404": 21,
+        "deferred_http_429": 5,
         "deferred_render_budget_exhausted": 5,
         "deferred_render_http_403": 3,
         "deferred_response_too_large": 1,
         "http_402": 2,
-        "http_403": 164,
-        "http_404": 37,
+        "http_403": 168,
+        "http_404": 41,
         "http_406": 2,
         "http_417": 2,
-        "http_429": 10,
+        "http_429": 14,
         "http_503": 8,
         "http_521": 4,
         "network_error": 2,
         "non_public_url": 21,
-        "ok": 1873,
+        "ok": 1950,
         "render_budget_exhausted": 22,
-        "render_http_403": 10,
+        "render_http_403": 12,
         "response_too_large": 3,
         "timeout": 7,
         "tls_error": 4,
         "unexpected_content_type": 13
       },
-      "cacheHitsThisRun": 6,
-      "renderAttemptsThisRun": 6,
+      "cacheHitsThisRun": 20,
+      "renderAttemptsThisRun": 9,
       "recentFailures": [
+        {
+          "url": "https://www.tving.com/live/C51850",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T13:02:09Z"
+        },
+        {
+          "url": "https://www.tving.com/live/C52311",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T13:02:09Z"
+        },
+        {
+          "url": "https://www.tving.com/live/C52205",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://www.codium.ai/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://spotify.link/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://spotify.link/8JnKrNFWLob",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://en.m.wikipedia.org/wiki/History_of_YouTube",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://en.m.wikipedia.org/wiki/Reading",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/reading",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T11:02:09Z"
+        },
+        {
+          "url": "https://en.m.wikipedia.org/wiki/Reading,_Berkshire",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://avatarai.me/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://prisma-ai.com/lensa",
+          "reason": "http_404",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://www.coupangplay.com/",
+          "reason": "render_http_403",
+          "nextCheckAt": "2026-10-29T23:02:09Z"
+        },
+        {
+          "url": "https://slack.com/intl/ko-kr/pricing",
+          "reason": "http_429",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://slack.com/partner-offers",
+          "reason": "http_429",
+          "nextCheckAt": "2026-10-29T12:02:09Z"
+        },
+        {
+          "url": "https://slack.com/plans",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T11:02:09Z"
+        },
         {
           "url": "https://phoenix.arize.com/",
           "reason": "cross_site_redirect",
@@ -5462,16 +5520,6 @@
           "nextCheckAt": "2026-10-30T10:06:47Z"
         },
         {
-          "url": "https://www.tving.com/live/C51850",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T10:08:10Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C52311",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T10:08:10Z"
-        },
-        {
           "url": "https://www.tving.com/live/C52310",
           "reason": "cross_site_redirect",
           "nextCheckAt": "2026-10-29T10:08:10Z"
@@ -5480,76 +5528,6 @@
           "url": "https://elicit.org/",
           "reason": "cross_site_redirect",
           "nextCheckAt": "2026-10-29T10:08:10Z"
-        },
-        {
-          "url": "https://www.adobe.com/creativecloud/plans/merch-shared/fragments/cco/personalization/modals/switch-modal-single-app-upgrade",
-          "reason": "render_http_403",
-          "nextCheckAt": "2026-10-29T10:08:10Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C52420",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T11:19:35Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C05441",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T09:19:35Z"
-        },
-        {
-          "url": "https://www.forbes.com/advisor/business/software/best-free-ecommerce-website-builder/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T07:19:35Z"
-        },
-        {
-          "url": "https://www.merriam-webster.com/dictionary/design",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T07:19:35Z"
-        },
-        {
-          "url": "https://gosh.app/",
-          "reason": "non_public_url",
-          "nextCheckAt": "2026-10-29T08:19:35Z"
-        },
-        {
-          "url": "https://www.zoom.com/en/products/virtual-meetings/",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T19:19:35Z"
-        },
-        {
-          "url": "https://emoticon.kakao.com/",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T19:19:35Z"
-        },
-        {
-          "url": "https://drive.kakao.com/",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T19:19:35Z"
-        },
-        {
-          "url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=fd48eadeda9c460aaf566a1dff845145",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T08:19:35Z"
-        },
-        {
-          "url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=fd48eadeda9c460aaf566a1dff845145",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T08:19:35Z"
-        },
-        {
-          "url": "https://www.notion.com/signup?target=plans",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T08:19:35Z"
-        },
-        {
-          "url": "https://one.google.com/about/about/plans",
-          "reason": "http_404",
-          "nextCheckAt": "2026-10-29T08:19:35Z"
-        },
-        {
-          "url": "https://thedigitalprojectmanager.com/productivity/what-is-a-workflow/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T06:00:25Z"
         }
       ]
     },
@@ -5561,7 +5539,7 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "Bing",
@@ -5576,7 +5554,7 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 132
+        "attempts": 133
       },
       {
         "name": "Bing RSS",
@@ -5586,32 +5564,32 @@
       {
         "name": "Bing RSS",
         "status": "no_relevant_results",
-        "attempts": 23
+        "attempts": 25
       },
       {
         "name": "Bing RSS",
         "status": "ok",
-        "attempts": 49
+        "attempts": 50
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "Google",
         "status": "deferred",
-        "attempts": 146
+        "attempts": 152
       },
       {
         "name": "Google",
         "status": "no_relevant_results",
-        "attempts": 20
+        "attempts": 15
       },
       {
         "name": "Google News",
@@ -5621,17 +5599,17 @@
       {
         "name": "Google News",
         "status": "no_relevant_results",
-        "attempts": 7
+        "attempts": 6
       },
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 44
+        "attempts": 45
       },
       {
         "name": "Naver",
         "status": "deferred",
-        "attempts": 165
+        "attempts": 166
       },
       {
         "name": "Naver",
@@ -5701,7 +5679,7 @@
       {
         "name": "Official links: disney-plus",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: dropbox",
@@ -5816,7 +5794,7 @@
       {
         "name": "Official links: netflix",
         "status": "no_relevant_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: nordvpn",
@@ -5896,7 +5874,7 @@
       {
         "name": "Official links: youtube",
         "status": "no_relevant_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: youtube-music",
@@ -5916,7 +5894,7 @@
       {
         "name": "Public tool directory",
         "status": "ok",
-        "attempts": 26
+        "attempts": 27
       },
       {
         "name": "Sitemap: adobe",
@@ -5956,7 +5934,7 @@
       {
         "name": "Sitemap: disney-plus",
         "status": "no_relevant_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: dropbox",
@@ -6051,7 +6029,7 @@
       {
         "name": "Sitemap: netflix",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: notion",
@@ -6111,7 +6089,7 @@
       {
         "name": "Sitemap: youtube",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: youtube-music",
@@ -6121,22 +6099,22 @@
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 15
+        "attempts": 14
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 13
+        "attempts": 12
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -6151,40 +6129,10 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 1
       }
     ],
     "providerHealth": [
-      {
-        "name": "Official links: netflix",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: netflix",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-28T18:37:08Z"
-      },
-      {
-        "name": "Official links: youtube",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: youtube",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-28T18:37:08Z"
-      },
-      {
-        "name": "Official links: disney-plus",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: disney-plus",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
       {
         "name": "Official links: tving",
         "status": "ok",
@@ -6591,11 +6539,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "Slickdeals",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Official links: perplexity",
         "status": "unavailable",
         "nextCheckAt": "2026-10-29T13:07:26Z"
@@ -6619,31 +6562,6 @@
         "name": "Sitemap: github-copilot",
         "status": "unavailable",
         "nextCheckAt": "2026-10-29T13:07:26Z"
-      },
-      {
-        "name": "DealMirror",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Dealify",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
-        "status": "ok",
-        "nextCheckAt": null
       },
       {
         "name": "Official links: midjourney",
@@ -6671,11 +6589,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "AppSumo",
         "status": "ok",
         "nextCheckAt": null
@@ -6686,14 +6599,79 @@
         "nextCheckAt": null
       },
       {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: netflix",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: netflix",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-29T15:01:07Z"
+      },
+      {
+        "name": "Official links: youtube",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: youtube",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-29T15:01:07Z"
+      },
+      {
+        "name": "Official links: disney-plus",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: disney-plus",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
         "name": "StackSocial",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Slickdeals",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "DealMirror",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Dealify",
         "status": "ok",
         "nextCheckAt": null
       }
     ],
-    "candidateCount": 1661,
-    "rawCandidateCount": 1821,
-    "factChecks": 644,
+    "candidateCount": 1682,
+    "rawCandidateCount": 1842,
+    "factChecks": 656,
     "verifiedCatalogCount": 6,
     "catalogCount": 62,
     "metrics": {
@@ -6701,33 +6679,33 @@
         "catalog_verified": 9,
         "needs_dates": 171,
         "needs_official": 16,
-        "needs_service": 594,
-        "needs_verification": 605,
+        "needs_service": 599,
+        "needs_verification": 617,
         "official_verified": 4,
         "partial_match": 15,
-        "pending": 242,
+        "pending": 246,
         "rejected": 160,
         "unavailable": 5
       },
       "catalogOutcomes": {
-        "discovered_links": 191,
-        "known": 348,
-        "needs_identity": 484,
-        "needs_price": 77,
-        "pending": 128,
+        "discovered_links": 196,
+        "known": 352,
+        "needs_identity": 493,
+        "needs_price": 78,
+        "pending": 120,
         "rejected": 160,
-        "unavailable": 140,
+        "unavailable": 149,
         "verified": 9
       },
       "factCheckOutcomes": {
-        "needs_verification": 625,
+        "needs_verification": 637,
         "official_verified": 4,
         "partial_match": 15
       },
       "newServiceCount": 9,
       "verifiedPlanCount": 22,
       "candidatePlanCount": 25,
-      "rejectedLinkCount": 6345,
+      "rejectedLinkCount": 6542,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -6747,14 +6725,14 @@
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-29T10:05:41Z",
-      "searchAttempts": 33,
-      "newServices": 1,
+      "startedAt": "2026-10-29T11:01:07Z",
+      "searchAttempts": 34,
+      "newServices": 0,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 3,
+        "unmatched": 5,
         "rejected": 0
       },
       "taste": {
