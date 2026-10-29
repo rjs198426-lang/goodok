@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T13:19:47Z",
-  "lastSuccessAt": "2026-10-29T13:19:47Z",
+  "generatedAt": "2026-10-29T15:11:47Z",
+  "lastSuccessAt": "2026-10-29T15:11:47Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T13:19:47Z",
+      "verifiedAt": "2026-10-29T15:11:47Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T13:19:47Z",
+        "checkedAt": "2026-10-29T15:11:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -906,7 +906,7 @@
       "id": "nordvpn",
       "name": "NordVPN",
       "status": "unavailable",
-      "errorCode": "http_403",
+      "errorCode": "deferred_http_403",
       "verifiedOffers": 0
     },
     {
@@ -941,7 +941,7 @@
       "id": "yodok",
       "name": "LG U+ 유독",
       "status": "unavailable",
-      "errorCode": "http_403",
+      "errorCode": "deferred_http_403",
       "verifiedOffers": 0
     },
     {
@@ -962,7 +962,7 @@
       "id": "canva",
       "name": "Canva",
       "status": "unavailable",
-      "errorCode": "http_403",
+      "errorCode": "deferred_http_403",
       "verifiedOffers": 0
     },
     {
@@ -989,9 +989,9 @@
   ],
   "catalogUpdate": {
     "version": "2026-10-29",
-    "revision": 22,
-    "signature": "82d8de4e3633a37fb4dcd237a4fce505ccafcc7d2883036e006cfc9c6d3dbb12",
-    "publishedAt": "2026-10-29T13:19:47Z",
+    "revision": 23,
+    "signature": "99905f74e13339da610c47f88cbdf55c7e49cd65673cd699ea00a79dd74565ec",
+    "publishedAt": "2026-10-29T15:11:47Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -1034,7 +1034,7 @@
       {
         "name": "음악",
         "kind": "subscription",
-        "count": 5
+        "count": 6
       },
       {
         "name": "카카오",
@@ -1086,20 +1086,7 @@
         "officialHost": "grok.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant",
-        "purposes": [
-          "assistant"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T13:18:22Z"
-        }
+        "purpose": "assistant"
       },
       {
         "key": "lovable",
@@ -1116,7 +1103,20 @@
         "officialHost": "lovable.dev",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "appbuilder"
+        "purpose": "appbuilder",
+        "purposes": [
+          "appbuilder"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "krea",
@@ -1133,7 +1133,20 @@
         "officialHost": "www.krea.ai",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "image"
+        "purpose": "image",
+        "purposes": [
+          "image"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "claude",
@@ -1148,7 +1161,20 @@
         "officialHost": "claude.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant"
+        "purpose": "assistant",
+        "purposes": [
+          "assistant"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "gemini",
@@ -1168,7 +1194,20 @@
         "officialHost": "gemini.google",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant"
+        "purpose": "assistant",
+        "purposes": [
+          "assistant"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "perplexity",
@@ -1201,7 +1240,20 @@
         "officialHost": "www.microsoft.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant"
+        "purpose": "assistant",
+        "purposes": [
+          "assistant"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "github-copilot",
@@ -1217,7 +1269,20 @@
         "officialHost": "github.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "coding"
+        "purpose": "coding",
+        "purposes": [
+          "coding"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "midjourney",
@@ -1247,7 +1312,20 @@
         "officialHost": "cursor.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "coding"
+        "purpose": "coding",
+        "purposes": [
+          "coding"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "suno",
@@ -1262,7 +1340,20 @@
         "officialHost": "suno.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "music_creation"
+        "purpose": "music_creation",
+        "purposes": [
+          "music_creation"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "netflix",
@@ -1276,7 +1367,20 @@
         "officialHost": "help.netflix.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "youtube",
@@ -1293,7 +1397,20 @@
         "officialHost": "www.youtube.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video_platform"
+        "purpose": "video_platform",
+        "purposes": [
+          "video_platform"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "disney-plus",
@@ -1310,7 +1427,20 @@
         "officialHost": "www.disneyplus.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "tving",
@@ -1324,7 +1454,20 @@
         "officialHost": "www.tving.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "wavve",
@@ -1338,7 +1481,20 @@
         "officialHost": "www.wavve.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "watcha",
@@ -1352,7 +1508,20 @@
         "officialHost": "watcha.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        }
       },
       {
         "key": "coupang-play",
@@ -1841,20 +2010,7 @@
         "officialHost": "music.youtube.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T13:18:22Z"
-        }
+        "purpose": "music"
       },
       {
         "key": "apple-music",
@@ -1869,20 +2025,7 @@
         "officialHost": "www.apple.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": true,
-          "regionConfirmed": true,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T13:18:22Z"
-        }
+        "purpose": "music"
       },
       {
         "key": "tidal",
@@ -1912,20 +2055,7 @@
         "officialHost": "www.deezer.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T13:18:22Z"
-        }
+        "purpose": "music"
       },
       {
         "key": "duolingo",
@@ -1940,18 +2070,7 @@
         "officialHost": "www.duolingo.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T13:18:22Z"
-        }
+        "purpose": "other"
       },
       {
         "key": "discovered-f6d59d44d511",
@@ -2292,6 +2411,40 @@
           "checkedAt": "2026-10-29T13:18:22Z"
         },
         "verifiedAt": "2026-10-29T10:05:41Z"
+      },
+      {
+        "key": "discovered-47abea84f21d",
+        "name": "Mubert",
+        "category": "음악",
+        "aliases": [
+          "Mubert"
+        ],
+        "officialUrl": "https://mubert.com/ko/render/pricing",
+        "officialHost": "mubert.com",
+        "origin": "discovered",
+        "status": "verified",
+        "description": "로열티 프리 음악을 위한 최고의 AI 음악 생성기, Mubert를 확인하세요 ➠ 텍스트 프롬프트로 비디오 및 온라인 프로젝트를 위한 음악 생성 ✓ 로열티 프리 오디오 생성",
+        "discoveredFrom": "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+        "purpose": "music_creation",
+        "identityEvidence": {
+          "organizationName": "Mubert",
+          "organizationUrl": "https://mubert.com",
+          "method": "referring_site_and_first_party_structured_identity"
+        },
+        "purposes": [
+          "music_creation"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T15:10:25Z"
+        },
+        "verifiedAt": "2026-10-29T15:10:25Z"
       }
     ]
   },
@@ -2329,20 +2482,7 @@
       "officialHost": "grok.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant",
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T13:18:22Z"
-      }
+      "purpose": "assistant"
     },
     {
       "key": "lovable",
@@ -2359,7 +2499,20 @@
       "officialHost": "lovable.dev",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "appbuilder"
+      "purpose": "appbuilder",
+      "purposes": [
+        "appbuilder"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "krea",
@@ -2376,7 +2529,20 @@
       "officialHost": "www.krea.ai",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "image"
+      "purpose": "image",
+      "purposes": [
+        "image"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "claude",
@@ -2391,7 +2557,20 @@
       "officialHost": "claude.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant"
+      "purpose": "assistant",
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "gemini",
@@ -2411,7 +2590,20 @@
       "officialHost": "gemini.google",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant"
+      "purpose": "assistant",
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "perplexity",
@@ -2444,7 +2636,20 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant"
+      "purpose": "assistant",
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "github-copilot",
@@ -2460,7 +2665,20 @@
       "officialHost": "github.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "coding"
+      "purpose": "coding",
+      "purposes": [
+        "coding"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "midjourney",
@@ -2490,7 +2708,20 @@
       "officialHost": "cursor.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "coding"
+      "purpose": "coding",
+      "purposes": [
+        "coding"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "suno",
@@ -2505,7 +2736,20 @@
       "officialHost": "suno.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "music_creation"
+      "purpose": "music_creation",
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "netflix",
@@ -2519,7 +2763,20 @@
       "officialHost": "help.netflix.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "youtube",
@@ -2536,7 +2793,20 @@
       "officialHost": "www.youtube.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video_platform"
+      "purpose": "video_platform",
+      "purposes": [
+        "video_platform"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "disney-plus",
@@ -2553,7 +2823,20 @@
       "officialHost": "www.disneyplus.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "tving",
@@ -2567,7 +2850,20 @@
       "officialHost": "www.tving.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "wavve",
@@ -2581,7 +2877,20 @@
       "officialHost": "www.wavve.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "watcha",
@@ -2595,7 +2904,20 @@
       "officialHost": "watcha.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      }
     },
     {
       "key": "coupang-play",
@@ -3084,20 +3406,7 @@
       "officialHost": "music.youtube.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T13:18:22Z"
-      }
+      "purpose": "music"
     },
     {
       "key": "apple-music",
@@ -3112,20 +3421,7 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": true,
-        "regionConfirmed": true,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T13:18:22Z"
-      }
+      "purpose": "music"
     },
     {
       "key": "tidal",
@@ -3155,20 +3451,7 @@
       "officialHost": "www.deezer.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T13:18:22Z"
-      }
+      "purpose": "music"
     },
     {
       "key": "duolingo",
@@ -3183,18 +3466,7 @@
       "officialHost": "www.duolingo.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T13:18:22Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "discovered-f6d59d44d511",
@@ -3535,6 +3807,40 @@
         "checkedAt": "2026-10-29T13:18:22Z"
       },
       "verifiedAt": "2026-10-29T10:05:41Z"
+    },
+    {
+      "key": "discovered-47abea84f21d",
+      "name": "Mubert",
+      "category": "음악",
+      "aliases": [
+        "Mubert"
+      ],
+      "officialUrl": "https://mubert.com/ko/render/pricing",
+      "officialHost": "mubert.com",
+      "origin": "discovered",
+      "status": "verified",
+      "description": "로열티 프리 음악을 위한 최고의 AI 음악 생성기, Mubert를 확인하세요 ➠ 텍스트 프롬프트로 비디오 및 온라인 프로젝트를 위한 음악 생성 ✓ 로열티 프리 오디오 생성",
+      "discoveredFrom": "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+      "purpose": "music_creation",
+      "identityEvidence": {
+        "organizationName": "Mubert",
+        "organizationUrl": "https://mubert.com",
+        "method": "referring_site_and_first_party_structured_identity"
+      },
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T15:10:25Z"
+      },
+      "verifiedAt": "2026-10-29T15:10:25Z"
     }
   ],
   "plans": [
@@ -3615,234 +3921,6 @@
           "quote": "광고 없는 스트리밍*** 광고 없는 스트리밍*** 콘텐츠 저장"
         }
       ]
-    },
-    {
-      "id": "2bffc38e09724b178e2a50b3",
-      "service": "krea",
-      "name": "Basic",
-      "amount": 5.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Basic $5 /month"
-        }
-      ],
-      "purposes": [
-        "image"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "e8cbd069fa838878acdba0eb",
-      "service": "krea",
-      "name": "Pro",
-      "amount": 21.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Pro $21 /month"
-        }
-      ],
-      "purposes": [
-        "image"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "c68765557ea1dd0587844b2a",
-      "service": "krea",
-      "name": "Max",
-      "amount": 63.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Max $63 /month"
-        }
-      ],
-      "purposes": [
-        "image"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "910ad5d8ceb193c5fad41d07",
-      "service": "krea",
-      "name": "Business",
-      "amount": 160.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "image",
-      "capabilities": {},
-      "source": "https://www.krea.ai/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Business $160 /month"
-        }
-      ],
-      "purposes": [
-        "image"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "a2a72f1c3ddff35b9d73ed09",
-      "service": "cursor",
-      "name": "Plus",
-      "amount": 8.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Plus $8 /월"
-        }
-      ],
-      "purposes": [
-        "coding"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "83d70292cceb594608a2dba4",
-      "service": "cursor",
-      "name": "Premium",
-      "amount": 30.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Premium $30 /월"
-        },
-        {
-          "field": "capability.adfree",
-          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
-        }
-      ],
-      "purposes": [
-        "coding"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "1c0f421607e3300c305b5b8a",
-      "service": "cursor",
-      "name": "Ultra",
-      "amount": 200.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "coding",
-      "capabilities": {},
-      "source": "https://cursor.com/pricing",
-      "verifiedAt": "2026-10-29T04:02:28Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Ultra $200 /월"
-        }
-      ],
-      "purposes": [
-        "coding"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
     },
     {
       "id": "7e25938563b056214586d97c",
@@ -5093,6 +5171,458 @@
       }
     },
     {
+      "id": "403f58f139c785e15a37363b",
+      "service": "discovered-47abea84f21d",
+      "name": "대사 (monthly)",
+      "amount": 0.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"대사 (monthly)\",\"description\":\"Non-Commercial\",\"price\":\"0.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecificatio"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "3c42a3a07200d3fe84ee8c96",
+      "service": "discovered-47abea84f21d",
+      "name": "창조자 (monthly)",
+      "amount": 14.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"창조자 (monthly)\",\"description\":\"Non-Commercial\",\"price\":\"14.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecificat"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "8c071533f13b0f75e35dfbb9",
+      "service": "discovered-47abea84f21d",
+      "name": "창조자 (yearly)",
+      "amount": 140.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"창조자 (yearly)\",\"description\":\"Non-Commercial\",\"price\":\"140.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecificat"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "39a42f0a502c8d0ae8c8ada6",
+      "service": "discovered-47abea84f21d",
+      "name": "찬성 (monthly)",
+      "amount": 39.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"찬성 (monthly)\",\"description\":\"Commercial Usage\",\"price\":\"39.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecifica"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "63582fdf63e9478dd8bc4423",
+      "service": "discovered-47abea84f21d",
+      "name": "찬성 (yearly)",
+      "amount": 390.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"찬성 (yearly)\",\"description\":\"Commercial Usage\",\"price\":\"390.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecifica"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "4b2caca9b552a5331228e89e",
+      "service": "discovered-47abea84f21d",
+      "name": "사업 (monthly)",
+      "amount": 199.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"사업 (monthly)\",\"description\":\"Apps & Agency Work\",\"price\":\"199.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecif"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "80898da9d9812df00a82d3a9",
+      "service": "discovered-47abea84f21d",
+      "name": "사업 (yearly)",
+      "amount": 1791.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"사업 (yearly)\",\"description\":\"Apps & Agency Work\",\"price\":\"1791.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecif"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "2bffc38e09724b178e2a50b3",
+      "service": "krea",
+      "name": "Basic",
+      "amount": 5.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Basic $5 /month"
+        }
+      ],
+      "purposes": [
+        "image"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "e8cbd069fa838878acdba0eb",
+      "service": "krea",
+      "name": "Pro",
+      "amount": 21.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Pro $21 /month"
+        }
+      ],
+      "purposes": [
+        "image"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "c68765557ea1dd0587844b2a",
+      "service": "krea",
+      "name": "Max",
+      "amount": 63.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Max $63 /month"
+        }
+      ],
+      "purposes": [
+        "image"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "910ad5d8ceb193c5fad41d07",
+      "service": "krea",
+      "name": "Business",
+      "amount": 160.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "image",
+      "capabilities": {},
+      "source": "https://www.krea.ai/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Business $160 /month"
+        }
+      ],
+      "purposes": [
+        "image"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "a2a72f1c3ddff35b9d73ed09",
+      "service": "cursor",
+      "name": "Plus",
+      "amount": 8.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Plus $8 /월"
+        }
+      ],
+      "purposes": [
+        "coding"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "83d70292cceb594608a2dba4",
+      "service": "cursor",
+      "name": "Premium",
+      "amount": 30.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Premium $30 /월"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "광고 없이 스크롤 ✓ 선호하는 @핸들 ✓ 더 높은 답글 부스트"
+        }
+      ],
+      "purposes": [
+        "coding"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "1c0f421607e3300c305b5b8a",
+      "service": "cursor",
+      "name": "Ultra",
+      "amount": 200.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "coding",
+      "capabilities": {},
+      "source": "https://cursor.com/pricing",
+      "verifiedAt": "2026-10-29T15:10:25Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Ultra $200 /월"
+        }
+      ],
+      "purposes": [
+        "coding"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -5112,7 +5642,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-29T13:18:38Z",
+      "verifiedAt": "2026-10-29T15:10:39Z",
       "status": "verified",
       "evidence": [
         {
@@ -5158,7 +5688,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-29T13:18:32Z",
+      "verifiedAt": "2026-10-29T15:10:36Z",
       "status": "verified",
       "evidence": [
         {
@@ -5194,32 +5724,102 @@
     "retrieval": {
       "outcomes": {
         "captcha": 3,
-        "cross_site_redirect": 238,
+        "cross_site_redirect": 234,
         "deferred_cross_site_redirect": 59,
         "deferred_http_403": 124,
         "deferred_http_404": 21,
-        "deferred_http_429": 5,
+        "deferred_http_429": 6,
         "deferred_render_http_403": 4,
         "http_402": 2,
-        "http_403": 156,
-        "http_404": 40,
+        "http_403": 162,
+        "http_404": 41,
         "http_406": 2,
         "http_429": 12,
         "http_503": 8,
         "http_521": 4,
-        "network_error": 2,
+        "network_error": 4,
         "non_public_url": 24,
-        "ok": 1805,
+        "ok": 1800,
         "render_budget_exhausted": 46,
         "render_http_403": 10,
         "response_too_large": 1,
         "timeout": 7,
         "tls_error": 4,
-        "unexpected_content_type": 14
+        "unexpected_content_type": 16
       },
-      "cacheHitsThisRun": 11,
-      "renderAttemptsThisRun": 10,
+      "cacheHitsThisRun": 5,
+      "renderAttemptsThisRun": 6,
       "recentFailures": [
+        {
+          "url": "https://www.coupang.com/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T15:11:47Z"
+        },
+        {
+          "url": "https://www.tving.com/live/C01141",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T16:11:47Z"
+        },
+        {
+          "url": "https://www.tving.com/live/C01581",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T16:11:47Z"
+        },
+        {
+          "url": "https://www.suno.edu/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T15:11:47Z"
+        },
+        {
+          "url": "https://www.suno.edu/page/online-programs",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T15:11:47Z"
+        },
+        {
+          "url": "https://adon-web.awakast.com/en/recruiter/",
+          "reason": "network_error",
+          "nextCheckAt": "2026-10-29T16:11:47Z"
+        },
+        {
+          "url": "https://www.perplexity.ai/pro",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T15:11:47Z"
+        },
+        {
+          "url": "https://www.midjourney.com/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T15:11:47Z"
+        },
+        {
+          "url": "https://en.m.wikipedia.org/wiki/History_of_YouTube",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T17:11:47Z"
+        },
+        {
+          "url": "https://spotify.link/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T17:11:47Z"
+        },
+        {
+          "url": "https://spotify.link/8JnKrNFWLob",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T17:11:47Z"
+        },
+        {
+          "url": "https://www.canva.com/ai-image-generator/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T15:11:47Z"
+        },
+        {
+          "url": "https://www.museum.go.kr/afile/fileDownloadById/260826456981nqoj?siteCode=MUSEUM",
+          "reason": "unexpected_content_type",
+          "nextCheckAt": "2026-10-29T16:11:47Z"
+        },
+        {
+          "url": "https://www.museum.go.kr/afile/fileDownloadById/26051947043Eq5WO?siteCode=MUSEUM",
+          "reason": "unexpected_content_type",
+          "nextCheckAt": "2026-10-29T16:11:47Z"
+        },
         {
           "url": "https://nordvpn.com/pricing/",
           "reason": "http_403",
@@ -5299,76 +5899,6 @@
           "url": "https://page.kakao.com/open/webview/event/?hash_uid=04cf81f4589c19554fdcf29a943cd92b",
           "reason": "render_budget_exhausted",
           "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=68fa9e900737f17b32ce1c610a0c224f",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=82599e2cd9c02f7a236f748a1aee0ed6",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=4842551a5c465a468fd16d91d2c30f7c",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=1e27d61822a122597c6e9e2fed01db23",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=9064cb2023c1b8c26376771f75866719",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=dbc98eb796226bcc5407de6e5acec9d4",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=2d0e4c348bc10d5a6e27e1e306e090f2",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=df842d7be0436ebec8aee4464f4f7d67",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/open/webview/event/?hash_uid=1662cb8ac9443d133d1a69e757263aad",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://page.kakao.com/landing/event/0/",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://webtoon.kakao.com/event?event_id=423953221",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://webtoon.kakao.com/event?event_id=7537196590",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://webtoon.kakao.com/event?event_id=9737495731",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
-        },
-        {
-          "url": "https://www.kakaocorp.com/page/",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-29T14:19:47Z"
         }
       ]
     },
@@ -5385,12 +5915,12 @@
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 25
+        "attempts": 26
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 119
+        "attempts": 118
       },
       {
         "name": "Bing RSS",
@@ -5415,22 +5945,22 @@
       {
         "name": "Google",
         "status": "deferred",
-        "attempts": 141
+        "attempts": 140
       },
       {
         "name": "Google",
         "status": "no_relevant_results",
-        "attempts": 3
+        "attempts": 4
       },
       {
         "name": "Google News",
         "status": "no_relevant_results",
-        "attempts": 5
+        "attempts": 4
       },
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 43
+        "attempts": 44
       },
       {
         "name": "Naver",
@@ -5450,7 +5980,7 @@
       {
         "name": "Official links: amazon-prime",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: apple-music",
@@ -5475,7 +6005,7 @@
       {
         "name": "Official links: claude",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: copilot",
@@ -5485,7 +6015,7 @@
       {
         "name": "Official links: coupang",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: coupang-play",
@@ -5590,12 +6120,12 @@
       {
         "name": "Official links: krea",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: lovable",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: microsoft365",
@@ -5610,7 +6140,7 @@
       {
         "name": "Official links: naver-plus",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: netflix",
@@ -5735,7 +6265,7 @@
       {
         "name": "Sitemap: claude",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: copilot",
@@ -5830,12 +6360,12 @@
       {
         "name": "Sitemap: krea",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: lovable",
         "status": "no_relevant_results",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: microsoft365",
@@ -5845,7 +6375,7 @@
       {
         "name": "Sitemap: naver-plus",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: netflix",
@@ -5954,26 +6484,6 @@
       }
     ],
     "providerHealth": [
-      {
-        "name": "Official links: naver-plus",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: naver-plus",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-28T21:07:59Z"
-      },
-      {
-        "name": "Official links: coupang",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-28T21:07:59Z"
-      },
-      {
-        "name": "Official links: amazon-prime",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-28T21:59:39Z"
-      },
       {
         "name": "Official links: yodok",
         "status": "unavailable",
@@ -6270,11 +6780,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "Google",
-        "status": "no_relevant_results",
-        "nextCheckAt": "2026-10-29T13:18:36Z"
-      },
-      {
         "name": "Official links: krea",
         "status": "ok",
         "nextCheckAt": null
@@ -6385,11 +6890,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "DealMirror",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Official links: tving",
         "status": "ok",
         "nextCheckAt": null
@@ -6420,26 +6920,6 @@
         "nextCheckAt": "2026-10-29T15:58:39Z"
       },
       {
-        "name": "Dealify",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Official links: coupang-play",
         "status": "unavailable",
         "nextCheckAt": "2026-10-29T17:18:22Z"
@@ -6465,11 +6945,6 @@
         "nextCheckAt": "2026-10-29T17:18:22Z"
       },
       {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "AppSumo",
         "status": "ok",
         "nextCheckAt": null
@@ -6485,48 +6960,103 @@
         "nextCheckAt": null
       },
       {
+        "name": "Google",
+        "status": "no_relevant_results",
+        "nextCheckAt": "2026-10-29T21:10:25Z"
+      },
+      {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: naver-plus",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: naver-plus",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-29T19:10:25Z"
+      },
+      {
+        "name": "Official links: coupang",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-29T19:10:25Z"
+      },
+      {
+        "name": "Official links: amazon-prime",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-29T19:10:25Z"
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
         "name": "Slickdeals",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "DealMirror",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Dealify",
         "status": "ok",
         "nextCheckAt": null
       }
     ],
-    "candidateCount": 1714,
-    "rawCandidateCount": 1874,
-    "factChecks": 680,
-    "verifiedCatalogCount": 6,
-    "catalogCount": 62,
+    "candidateCount": 1727,
+    "rawCandidateCount": 1887,
+    "factChecks": 692,
+    "verifiedCatalogCount": 7,
+    "catalogCount": 63,
     "metrics": {
       "candidateOutcomes": {
-        "catalog_verified": 9,
+        "catalog_verified": 10,
         "needs_dates": 171,
         "needs_official": 16,
-        "needs_service": 624,
-        "needs_verification": 641,
+        "needs_service": 639,
+        "needs_verification": 648,
         "official_verified": 4,
-        "partial_match": 15,
-        "pending": 229,
+        "partial_match": 20,
+        "pending": 214,
         "rejected": 160,
         "unavailable": 5
       },
       "catalogOutcomes": {
-        "discovered_links": 202,
-        "known": 360,
-        "needs_identity": 513,
-        "needs_price": 80,
-        "pending": 105,
+        "discovered_links": 204,
+        "known": 366,
+        "needs_identity": 524,
+        "needs_price": 85,
+        "pending": 90,
         "rejected": 160,
-        "unavailable": 158,
-        "verified": 9
+        "unavailable": 161,
+        "verified": 10
       },
       "factCheckOutcomes": {
-        "needs_verification": 661,
+        "needs_verification": 668,
         "official_verified": 4,
-        "partial_match": 15
+        "partial_match": 20
       },
-      "newServiceCount": 9,
-      "verifiedPlanCount": 22,
-      "candidatePlanCount": 25,
-      "rejectedLinkCount": 5783,
+      "newServiceCount": 10,
+      "verifiedPlanCount": 25,
+      "candidatePlanCount": 29,
+      "rejectedLinkCount": 5771,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -6542,18 +7072,18 @@
       "comparableKRWPlans": 3,
       "comparableByCurrency": {
         "KRW": 10,
-        "USD": 12
+        "USD": 15
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-29T13:18:22Z",
-      "searchAttempts": 33,
-      "newServices": 0,
+      "startedAt": "2026-10-29T15:10:25Z",
+      "searchAttempts": 32,
+      "newServices": 1,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 11,
+        "unmatched": 15,
         "rejected": 0
       },
       "taste": {
