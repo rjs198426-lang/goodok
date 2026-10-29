@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T09:08:10Z",
-  "lastSuccessAt": "2026-10-29T09:08:10Z",
+  "generatedAt": "2026-10-29T10:06:47Z",
+  "lastSuccessAt": "2026-10-29T10:06:47Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T09:08:10Z",
+      "verifiedAt": "2026-10-29T10:06:47Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T09:08:10Z",
+        "checkedAt": "2026-10-29T10:06:47Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -989,9 +989,9 @@
   ],
   "catalogUpdate": {
     "version": "2026-10-29",
-    "revision": 18,
-    "signature": "4f576971969c28ff02feb106e0d7b71c23bce701be92f8bcfc018a4be96a0fe2",
-    "publishedAt": "2026-10-29T09:08:10Z",
+    "revision": 19,
+    "signature": "622c41a61ba19fc6c0380f3fc6266b838d658caad46a7b3ccc9236748db6c709",
+    "publishedAt": "2026-10-29T10:06:47Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -999,7 +999,7 @@
       {
         "name": "AI",
         "kind": "subscription",
-        "count": 17
+        "count": 18
       },
       {
         "name": "OTT",
@@ -1386,7 +1386,20 @@
         "officialHost": "www.primevideo.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "purposes": [
+          "video"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T10:05:41Z"
+        }
       },
       {
         "key": "naver-plus",
@@ -1404,7 +1417,18 @@
         "officialHost": "nid.naver.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T10:05:41Z"
+        }
       },
       {
         "key": "coupang",
@@ -1481,7 +1505,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1526,7 +1550,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1555,7 +1579,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1588,7 +1612,7 @@
           "billingTerms": true,
           "regionConfirmed": true,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1616,7 +1640,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1644,7 +1668,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1672,7 +1696,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1702,7 +1726,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1731,7 +1755,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1759,7 +1783,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
+          "checkedAt": "2026-10-29T10:05:41Z"
         }
       },
       {
@@ -1790,18 +1814,7 @@
         "officialHost": "www.figma.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
-        }
+        "purpose": "other"
       },
       {
         "key": "zoom",
@@ -1831,18 +1844,7 @@
         "officialHost": "slack.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T09:07:26Z"
-        }
+        "purpose": "other"
       },
       {
         "key": "onedrive",
@@ -2347,6 +2349,38 @@
           "checkedAt": "2026-10-29T09:07:26Z"
         },
         "verifiedAt": "2026-10-29T09:07:26Z"
+      },
+      {
+        "key": "discovered-ca579acb3f8a",
+        "name": "AI2SQL",
+        "category": "AI",
+        "aliases": [
+          "AI2SQL"
+        ],
+        "officialUrl": "https://www.ai2sql.io/pricing",
+        "officialHost": "www.ai2sql.io",
+        "origin": "discovered",
+        "status": "verified",
+        "description": "AI-powered SQL query builder and generator. Connect your database and generate, explain, optimize and fix SQL from plain English — or let your AI agent query it via MCP.",
+        "discoveredFrom": "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+        "purpose": "ai_unspecified",
+        "identityEvidence": {
+          "organizationName": "AI2SQL",
+          "organizationUrl": "https://ai2sql.io",
+          "method": "referring_site_and_first_party_structured_identity"
+        },
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T10:05:41Z"
+        },
+        "verifiedAt": "2026-10-29T10:05:41Z"
       }
     ]
   },
@@ -2684,7 +2718,20 @@
       "officialHost": "www.primevideo.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "purposes": [
+        "video"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T10:05:41Z"
+      }
     },
     {
       "key": "naver-plus",
@@ -2702,7 +2749,18 @@
       "officialHost": "nid.naver.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T10:05:41Z"
+      }
     },
     {
       "key": "coupang",
@@ -2779,7 +2837,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -2824,7 +2882,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -2853,7 +2911,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -2886,7 +2944,7 @@
         "billingTerms": true,
         "regionConfirmed": true,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -2914,7 +2972,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -2942,7 +3000,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -2970,7 +3028,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -3000,7 +3058,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -3029,7 +3087,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -3057,7 +3115,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
+        "checkedAt": "2026-10-29T10:05:41Z"
       }
     },
     {
@@ -3088,18 +3146,7 @@
       "officialHost": "www.figma.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "zoom",
@@ -3129,18 +3176,7 @@
       "officialHost": "slack.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T09:07:26Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "onedrive",
@@ -3645,6 +3681,38 @@
         "checkedAt": "2026-10-29T09:07:26Z"
       },
       "verifiedAt": "2026-10-29T09:07:26Z"
+    },
+    {
+      "key": "discovered-ca579acb3f8a",
+      "name": "AI2SQL",
+      "category": "AI",
+      "aliases": [
+        "AI2SQL"
+      ],
+      "officialUrl": "https://www.ai2sql.io/pricing",
+      "officialHost": "www.ai2sql.io",
+      "origin": "discovered",
+      "status": "verified",
+      "description": "AI-powered SQL query builder and generator. Connect your database and generate, explain, optimize and fix SQL from plain English — or let your AI agent query it via MCP.",
+      "discoveredFrom": "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+      "purpose": "ai_unspecified",
+      "identityEvidence": {
+        "organizationName": "AI2SQL",
+        "organizationUrl": "https://ai2sql.io",
+        "method": "referring_site_and_first_party_structured_identity"
+      },
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T10:05:41Z"
+      },
+      "verifiedAt": "2026-10-29T10:05:41Z"
     }
   ],
   "plans": [
@@ -4727,10 +4795,136 @@
       }
     },
     {
+      "id": "f906934d632dd869ccf2805a",
+      "service": "figma",
+      "name": "Full seat",
+      "amount": 90.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "other",
+      "capabilities": {},
+      "source": "https://www.figma.com/pricing/",
+      "verifiedAt": "2026-10-29T09:07:26Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Full seat $90 /mo"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "c786630778d68ac927955029",
+      "service": "discovered-ca579acb3f8a",
+      "name": "Start",
+      "amount": 9.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.ai2sql.io/pricing",
+      "verifiedAt": "2026-10-29T10:05:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Start\",\"price\":\"9\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=start\",\"description\":\"Start plan, $9 per month ($7 per month billed annually). 7-day"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "faf22031443a1363f8f0d1cf",
+      "service": "discovered-ca579acb3f8a",
+      "name": "Pro",
+      "amount": 19.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {
+        "windows": true
+      },
+      "source": "https://www.ai2sql.io/pricing",
+      "verifiedAt": "2026-10-29T10:05:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro\",\"price\":\"19\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=pro\",\"description\":\"Pro plan, $19 per month ($14 per month billed annually). 7-day tr"
+        },
+        {
+          "field": "capability.windows",
+          "quote": "rt     ✓   Desktop App  (Windows & Mac)       \nStart Free Trial\n   "
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "80e8df59b15d84bd0014ec86",
+      "service": "discovered-ca579acb3f8a",
+      "name": "Team",
+      "amount": 39.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.ai2sql.io/pricing",
+      "verifiedAt": "2026-10-29T10:05:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Team\",\"price\":\"39\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=team\",\"description\":\"Team plan, $39 per month ($29 per month billed annually). 7-day"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
       "id": "7e25938563b056214586d97c",
       "service": "expressvpn",
       "name": "Basic",
-      "amount": 2.99,
+      "amount": 4.99,
       "currency": "USD",
       "interval": "monthly",
       "region": "unspecified",
@@ -4743,12 +4937,12 @@
         "refundDays": 30
       },
       "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
           "field": "amount",
-          "quote": "Basic $ 2.99 / mo"
+          "quote": "Basic $ 4.99 / mo"
         },
         {
           "field": "capability.refundDays",
@@ -4768,7 +4962,7 @@
       "id": "d0909a65d7c014d83aa1071a",
       "service": "expressvpn",
       "name": "Advanced",
-      "amount": 4.49,
+      "amount": 5.99,
       "currency": "USD",
       "interval": "monthly",
       "region": "unspecified",
@@ -4781,12 +4975,12 @@
         "refundDays": 30
       },
       "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
           "field": "amount",
-          "quote": "Advanced $ 4.49 / mo"
+          "quote": "Advanced $ 5.99 / mo"
         },
         {
           "field": "capability.refundDays",
@@ -4806,7 +5000,7 @@
       "id": "91e29a92a0be5a92d074d118",
       "service": "expressvpn",
       "name": "Express Pro",
-      "amount": 7.49,
+      "amount": 8.99,
       "currency": "USD",
       "interval": "monthly",
       "region": "unspecified",
@@ -4819,12 +5013,12 @@
         "refundDays": 30
       },
       "source": "https://www.expressvpn.com/order",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
           "field": "amount",
-          "quote": "Express Pro $ 7.49 / mo"
+          "quote": "Express Pro $ 8.99 / mo"
         },
         {
           "field": "capability.refundDays",
@@ -4855,7 +5049,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
@@ -4887,7 +5081,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
@@ -4919,7 +5113,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
@@ -4951,7 +5145,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "verified",
       "evidence": [
         {
@@ -4987,7 +5181,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "verified",
       "evidence": [
         {
@@ -5023,7 +5217,7 @@
       "purpose": "office",
       "capabilities": {},
       "source": "https://www.microsoft.com/ko-kr/microsoft-365/buy/compare-all-microsoft-365-products",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "verified",
       "evidence": [
         {
@@ -5059,7 +5253,7 @@
       "purpose": "storage",
       "capabilities": {},
       "source": "https://www.dropbox.com/plans",
-      "verifiedAt": "2026-10-29T09:07:26Z",
+      "verifiedAt": "2026-10-29T10:05:41Z",
       "status": "candidate",
       "evidence": [
         {
@@ -5070,36 +5264,6 @@
       "purposes": [
         "storage"
       ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "f906934d632dd869ccf2805a",
-      "service": "figma",
-      "name": "Full seat",
-      "amount": 90.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "other",
-      "capabilities": {},
-      "source": "https://www.figma.com/pricing/",
-      "verifiedAt": "2026-10-29T09:07:26Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Full seat $90 /mo"
-        }
-      ],
-      "purposes": [],
       "verification": {
         "price": true,
         "billingTerms": false,
@@ -5126,7 +5290,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-29T09:07:36Z",
+      "verifiedAt": "2026-10-29T10:05:55Z",
       "status": "verified",
       "evidence": [
         {
@@ -5172,7 +5336,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-29T09:07:32Z",
+      "verifiedAt": "2026-10-29T10:05:49Z",
       "status": "verified",
       "evidence": [
         {
@@ -5208,25 +5372,25 @@
     "retrieval": {
       "outcomes": {
         "captcha": 3,
-        "cross_site_redirect": 226,
-        "deferred_cross_site_redirect": 56,
-        "deferred_http_403": 120,
-        "deferred_http_404": 19,
+        "cross_site_redirect": 230,
+        "deferred_cross_site_redirect": 59,
+        "deferred_http_403": 126,
+        "deferred_http_404": 20,
         "deferred_http_429": 4,
         "deferred_render_budget_exhausted": 5,
         "deferred_render_http_403": 3,
         "deferred_response_too_large": 1,
         "http_402": 2,
-        "http_403": 150,
-        "http_404": 35,
+        "http_403": 164,
+        "http_404": 37,
         "http_406": 2,
         "http_417": 2,
-        "http_429": 8,
+        "http_429": 10,
         "http_503": 8,
         "http_521": 4,
         "network_error": 2,
-        "non_public_url": 20,
-        "ok": 1799,
+        "non_public_url": 21,
+        "ok": 1873,
         "render_budget_exhausted": 22,
         "render_http_403": 10,
         "response_too_large": 3,
@@ -5234,9 +5398,69 @@
         "tls_error": 4,
         "unexpected_content_type": 13
       },
-      "cacheHitsThisRun": 11,
-      "renderAttemptsThisRun": 7,
+      "cacheHitsThisRun": 6,
+      "renderAttemptsThisRun": 6,
       "recentFailures": [
+        {
+          "url": "https://phoenix.arize.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T11:06:47Z"
+        },
+        {
+          "url": "https://namu.wiki/w/%EC%B9%B4%EC%B9%B4%EC%98%A4%28%EA%B8%B0%EC%97%85%29",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
+        {
+          "url": "https://www.tabnine.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T11:06:47Z"
+        },
+        {
+          "url": "https://debuild.app/",
+          "reason": "non_public_url",
+          "nextCheckAt": "2026-10-29T11:06:47Z"
+        },
+        {
+          "url": "https://www.amazon.com/amazonprime",
+          "reason": "http_429",
+          "nextCheckAt": "2026-10-29T22:06:47Z"
+        },
+        {
+          "url": "https://www.adobe.com/creativecloud/plans/merch-shared/fragments/merch/creativecloud/plans/header/plans-header-compare-table-2-links",
+          "reason": "http_404",
+          "nextCheckAt": "2026-10-29T11:06:47Z"
+        },
+        {
+          "url": "https://www.canva.com/?msockid=0046f4d016f960642a38ecd0170261fe",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
+        {
+          "url": "https://www.canva.com/?msockid=32bc437aa1c56cc82bd95b7aa0206d0a",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
+        {
+          "url": "https://www.canva.com/create/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
+        {
+          "url": "https://www.canva.com/create/?msockid=32bc437aa1c56cc82bd95b7aa0206d0a",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
+        {
+          "url": "https://www.canva.com/login/?msockid=0046f4d016f960642a38ecd0170261fe",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
+        {
+          "url": "https://www.canva.com/templates/?msockid=0046f4d016f960642a38ecd0170261fe",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T10:06:47Z"
+        },
         {
           "url": "https://www.tving.com/live/C51850",
           "reason": "cross_site_redirect",
@@ -5326,66 +5550,6 @@
           "url": "https://thedigitalprojectmanager.com/productivity/what-is-a-workflow/",
           "reason": "http_403",
           "nextCheckAt": "2026-10-30T06:00:25Z"
-        },
-        {
-          "url": "https://www.headlinesai.pro/",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T07:00:25Z"
-        },
-        {
-          "url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T10:00:25Z"
-        },
-        {
-          "url": "https://www.tving.com/event",
-          "reason": "http_404",
-          "nextCheckAt": "2026-10-29T17:03:01Z"
-        },
-        {
-          "url": "https://en.m.wikipedia.org/wiki/Cloud_computing",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://en.m.wikipedia.org/wiki/Cloud",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01kxqzj99jeh7r2b4adyds9ctd&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkbtpnwfesa6egjadkvkn1y&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkcn1p7enb8kxp7nx2r9gnb&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkbtpnyfesa6eh2v5161rnz&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkcn1paenb8kxphntwmdmeg&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkd0fasf6erqcnfsscbtqtc&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/wp-ws-cache/uploads-expressvpn/2026/01/3m-summary-of-benefits.pdf",
-          "reason": "unexpected_content_type",
-          "nextCheckAt": "2026-10-29T06:03:01Z"
         }
       ]
     },
@@ -5397,7 +5561,7 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "Bing",
@@ -5412,7 +5576,7 @@
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 131
+        "attempts": 132
       },
       {
         "name": "Bing RSS",
@@ -5422,32 +5586,32 @@
       {
         "name": "Bing RSS",
         "status": "no_relevant_results",
-        "attempts": 22
+        "attempts": 23
       },
       {
         "name": "Bing RSS",
         "status": "ok",
-        "attempts": 47
+        "attempts": 49
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 15
+        "attempts": 14
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "Google",
         "status": "deferred",
-        "attempts": 140
+        "attempts": 146
       },
       {
         "name": "Google",
         "status": "no_relevant_results",
-        "attempts": 25
+        "attempts": 20
       },
       {
         "name": "Google News",
@@ -5457,17 +5621,17 @@
       {
         "name": "Google News",
         "status": "no_relevant_results",
-        "attempts": 6
+        "attempts": 7
       },
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 45
+        "attempts": 44
       },
       {
         "name": "Naver",
         "status": "deferred",
-        "attempts": 164
+        "attempts": 165
       },
       {
         "name": "Naver",
@@ -5527,7 +5691,7 @@
       {
         "name": "Official links: cursor",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: deezer",
@@ -5642,7 +5806,7 @@
       {
         "name": "Official links: midjourney",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: naver-plus",
@@ -5697,7 +5861,7 @@
       {
         "name": "Official links: suno",
         "status": "no_relevant_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: surfshark",
@@ -5752,7 +5916,7 @@
       {
         "name": "Public tool directory",
         "status": "ok",
-        "attempts": 25
+        "attempts": 26
       },
       {
         "name": "Sitemap: adobe",
@@ -5782,7 +5946,7 @@
       {
         "name": "Sitemap: cursor",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: deezer",
@@ -5922,7 +6086,7 @@
       {
         "name": "Sitemap: suno",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: surfshark",
@@ -5957,22 +6121,22 @@
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -5982,7 +6146,7 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "deferred",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "퀘이사존 핫딜",
@@ -5991,31 +6155,6 @@
       }
     ],
     "providerHealth": [
-      {
-        "name": "Official links: midjourney",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-28T18:06:54Z"
-      },
-      {
-        "name": "Official links: cursor",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: cursor",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Official links: suno",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: suno",
-        "status": "ok",
-        "nextCheckAt": null
-      },
       {
         "name": "Official links: netflix",
         "status": "no_relevant_results",
@@ -6417,11 +6556,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "AppSumo",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Google",
         "status": "no_relevant_results",
         "nextCheckAt": "2026-10-29T13:18:36Z"
@@ -6457,32 +6591,7 @@
         "nextCheckAt": null
       },
       {
-        "name": "Sumo 구독 할인",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "StackSocial",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Slickdeals",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
         "status": "ok",
         "nextCheckAt": null
       },
@@ -6512,11 +6621,6 @@
         "nextCheckAt": "2026-10-29T13:07:26Z"
       },
       {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "DealMirror",
         "status": "ok",
         "nextCheckAt": null
@@ -6525,20 +6629,80 @@
         "name": "Dealify",
         "status": "ok",
         "nextCheckAt": null
+      },
+      {
+        "name": "Bing",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: midjourney",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-29T14:05:41Z"
+      },
+      {
+        "name": "Official links: cursor",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: cursor",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: suno",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: suno",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "AppSumo",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sumo 구독 할인",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "StackSocial",
+        "status": "ok",
+        "nextCheckAt": null
       }
     ],
-    "candidateCount": 1645,
-    "rawCandidateCount": 1805,
-    "factChecks": 632,
-    "verifiedCatalogCount": 5,
-    "catalogCount": 61,
+    "candidateCount": 1661,
+    "rawCandidateCount": 1821,
+    "factChecks": 644,
+    "verifiedCatalogCount": 6,
+    "catalogCount": 62,
     "metrics": {
       "candidateOutcomes": {
-        "catalog_verified": 8,
+        "catalog_verified": 9,
         "needs_dates": 171,
         "needs_official": 16,
-        "needs_service": 591,
-        "needs_verification": 593,
+        "needs_service": 594,
+        "needs_verification": 605,
         "official_verified": 4,
         "partial_match": 15,
         "pending": 242,
@@ -6547,23 +6711,23 @@
       },
       "catalogOutcomes": {
         "discovered_links": 191,
-        "known": 341,
-        "needs_identity": 471,
-        "needs_price": 75,
-        "pending": 139,
+        "known": 348,
+        "needs_identity": 484,
+        "needs_price": 77,
+        "pending": 128,
         "rejected": 160,
-        "unavailable": 136,
-        "verified": 8
+        "unavailable": 140,
+        "verified": 9
       },
       "factCheckOutcomes": {
-        "needs_verification": 613,
+        "needs_verification": 625,
         "official_verified": 4,
         "partial_match": 15
       },
-      "newServiceCount": 8,
-      "verifiedPlanCount": 19,
+      "newServiceCount": 9,
+      "verifiedPlanCount": 22,
       "candidatePlanCount": 25,
-      "rejectedLinkCount": 6311,
+      "rejectedLinkCount": 6345,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -6573,23 +6737,24 @@
         "music": 2,
         "offline": 2,
         "refundDays": 0,
-        "spatial": 1
+        "spatial": 1,
+        "windows": 1
       },
       "comparableKRWPlans": 3,
       "comparableByCurrency": {
         "KRW": 10,
-        "USD": 9
+        "USD": 12
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-29T09:07:26Z",
+      "startedAt": "2026-10-29T10:05:41Z",
       "searchAttempts": 33,
       "newServices": 1,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 8,
+        "unmatched": 3,
         "rejected": 0
       },
       "taste": {
