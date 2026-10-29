@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-29T20:02:08Z",
+  "generatedAt": "2026-10-29T21:01:14Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 65,
   "newServicesCumulative": 12,
-  "newServicesThisRun": 1,
-  "candidatesRetained": 1826,
-  "candidatesIncludingRejected": 1986,
+  "newServicesThisRun": 0,
+  "candidatesRetained": 1836,
+  "candidatesIncludingRejected": 1996,
   "factCheckOutcomes": {
-    "needs_verification": 739,
+    "needs_verification": 742,
     "official_verified": 4,
     "partial_match": 20
   },
   "latestRun": {
-    "startedAt": "2026-10-29T20:00:35Z",
-    "searchAttempts": 34,
-    "newServices": 1,
+    "startedAt": "2026-10-29T20:59:41Z",
+    "searchAttempts": 32,
+    "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 28,
+      "unmatched": 6,
       "rejected": 0
     },
     "taste": {
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -77,11 +77,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -101,11 +101,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -129,11 +129,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -153,11 +153,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -175,11 +175,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -203,11 +203,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -245,31 +245,31 @@
           "purpose": "assistant",
           "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "image",
           "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "coding",
           "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "music_creation",
           "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "appbuilder",
           "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         }
       ],
       "verification": {
@@ -280,7 +280,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-29T19:10:19Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       }
     },
     {
@@ -313,7 +313,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T19:10:19Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T12:06:03Z"
     },
@@ -347,7 +347,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T19:10:19Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T12:17:40Z"
     },
@@ -379,7 +379,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T16:06:54Z"
     },
@@ -411,7 +411,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T20:58:22Z"
     },
@@ -443,7 +443,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T05:01:59Z"
     },
@@ -475,7 +475,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T07:18:36Z"
     },
@@ -506,7 +506,7 @@
           "purpose": "assistant",
           "quote": "meetings       Unlimited AI chat       Integrations with HubSpot, Pipedrive, Slack, Asana, M",
           "source": "https://www.scribbl.co/pricing",
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         }
       ],
       "verification": {
@@ -517,7 +517,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T09:07:26Z"
     },
@@ -549,7 +549,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T10:05:41Z"
     },
@@ -583,7 +583,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T15:10:25Z"
     },
@@ -615,7 +615,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T18:00:57Z"
     },
@@ -647,7 +647,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T20:00:35Z"
     }
@@ -663,26 +663,6 @@
       "name": "뽐뿌 해외뽐뿌",
       "status": "unavailable",
       "nextCheckAt": "2026-10-29T23:51:07Z"
-    },
-    {
-      "name": "Official links: kakao-emoticon",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T04:12:00Z"
-    },
-    {
-      "name": "Official links: kakao-drawer",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T04:12:00Z"
-    },
-    {
-      "name": "Official links: kakao-page",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: kakao-page",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T05:02:38Z"
     },
     {
       "name": "Official links: kakao-webtoon",
@@ -1090,11 +1070,6 @@
       "nextCheckAt": "2026-10-29T22:00:57Z"
     },
     {
-      "name": "Sumo 구독 할인",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: canva",
       "status": "unavailable",
       "nextCheckAt": "2026-10-29T23:10:19Z"
@@ -1115,32 +1090,7 @@
       "nextCheckAt": "2026-10-29T23:10:19Z"
     },
     {
-      "name": "StackSocial",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Slickdeals",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1175,17 +1125,67 @@
       "nextCheckAt": null
     },
     {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Dealify",
       "status": "ok",
       "nextCheckAt": null
     },
     {
+      "name": "Bing",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: kakao-emoticon",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T00:59:41Z"
+    },
+    {
+      "name": "Official links: kakao-drawer",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T00:59:41Z"
+    },
+    {
+      "name": "Official links: kakao-page",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: kakao-page",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T00:59:41Z"
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
       "name": "AppSumo",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sumo 구독 할인",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Slickdeals",
       "status": "ok",
       "nextCheckAt": null
     }
@@ -1194,30 +1194,95 @@
     "outcomes": {
       "captcha": 4,
       "cross_site_redirect": 204,
-      "deferred_cross_site_redirect": 57,
-      "deferred_http_403": 112,
-      "deferred_http_404": 20,
-      "deferred_http_429": 7,
+      "deferred_cross_site_redirect": 58,
+      "deferred_http_403": 109,
+      "deferred_http_404": 21,
+      "deferred_http_429": 6,
       "deferred_render_http_403": 4,
       "http_402": 4,
-      "http_403": 164,
-      "http_404": 40,
+      "http_403": 160,
+      "http_404": 38,
       "http_406": 1,
       "http_429": 8,
       "http_503": 5,
       "http_530": 2,
       "network_error": 2,
-      "non_public_url": 26,
-      "ok": 1771,
+      "non_public_url": 28,
+      "ok": 1784,
       "render_budget_exhausted": 49,
       "render_http_403": 8,
       "response_too_large": 4,
       "timeout": 13,
       "unexpected_content_type": 7
     },
-    "cacheHitsThisRun": 6,
-    "renderAttemptsThisRun": 5,
+    "cacheHitsThisRun": 3,
+    "renderAttemptsThisRun": 9,
     "recentFailures": [
+      {
+        "url": "https://emoticon.kakao.com/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-30T09:01:14Z"
+      },
+      {
+        "url": "https://drive.kakao.com/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-30T09:01:14Z"
+      },
+      {
+        "url": "https://theresanai.com/wellsaid-labs",
+        "reason": "non_public_url",
+        "nextCheckAt": "2026-10-29T22:01:14Z"
+      },
+      {
+        "url": "https://www.lovo.ai/",
+        "reason": "http_402",
+        "nextCheckAt": "2026-10-29T22:01:14Z"
+      },
+      {
+        "url": "https://theresanai.com/lovo-ai",
+        "reason": "non_public_url",
+        "nextCheckAt": "2026-10-29T22:01:14Z"
+      },
+      {
+        "url": "https://audify-ai.ahmedtokyo.com/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-29T22:01:14Z"
+      },
+      {
+        "url": "https://ainterview.space/",
+        "reason": "non_public_url",
+        "nextCheckAt": "2026-10-29T22:01:14Z"
+      },
+      {
+        "url": "https://claude.ai/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T21:01:14Z"
+      },
+      {
+        "url": "https://en.m.wikipedia.org/wiki/Perplexity_AI",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-29T22:01:14Z"
+      },
+      {
+        "url": "https://github.tw.cn/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T21:01:14Z"
+      },
+      {
+        "url": "https://chatgpt.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T21:01:14Z"
+      },
+      {
+        "url": "https://chatgpt.com/features",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T21:01:14Z"
+      },
+      {
+        "url": "https://lovable.dev/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-10-30T21:01:14Z"
+      },
       {
         "url": "https://runwayml.com/",
         "reason": "cross_site_redirect",
@@ -1302,71 +1367,6 @@
         "url": "https://www.stockphotoai.net/?ref=mahseema-awesome-ai-tools",
         "reason": "non_public_url",
         "nextCheckAt": "2026-10-29T20:11:21Z"
-      },
-      {
-        "url": "https://nordvpn.com/download/?msockid=29a0663a9e78651f16db7e3b9fd1649e",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T19:11:21Z"
-      },
-      {
-        "url": "https://nordvpn.com/download/windows/?msockid=29a0663a9e78651f16db7e3b9fd1649e",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T19:11:21Z"
-      },
-      {
-        "url": "https://nordvpn.com/risk-free-vpn/?msockid=29a0663a9e78651f16db7e3b9fd1649e",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T19:11:21Z"
-      },
-      {
-        "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkbtpnwfesa6egjadkvkn1y&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T21:11:21Z"
-      },
-      {
-        "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkcn1p7enb8kxp7nx2r9gnb&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T21:11:21Z"
-      },
-      {
-        "url": "https://www.expressvpn.com/payment?offer_id=pp_01kxqzj99jeh7r2b4adyds9ctd&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T21:11:21Z"
-      },
-      {
-        "url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=aad2fb75c1db4b51bc574ed1155538b4",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T20:11:21Z"
-      },
-      {
-        "url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=aad2fb75c1db4b51bc574ed1155538b4",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T20:11:21Z"
-      },
-      {
-        "url": "https://www.tving.com/live/C52381",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-30T02:02:05Z"
-      },
-      {
-        "url": "https://www.gamesgames.com/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T18:02:05Z"
-      },
-      {
-        "url": "https://galactica.org/",
-        "reason": "http_530",
-        "nextCheckAt": "2026-10-29T19:02:05Z"
-      },
-      {
-        "url": "https://scispace.com/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-30T18:02:05Z"
-      },
-      {
-        "url": "https://www.mathgptpro.com/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-10-29T19:02:05Z"
       }
     ]
   },

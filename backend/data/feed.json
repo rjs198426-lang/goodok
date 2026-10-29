@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T20:02:08Z",
-  "lastSuccessAt": "2026-10-29T20:02:08Z",
+  "generatedAt": "2026-10-29T21:01:14Z",
+  "lastSuccessAt": "2026-10-29T21:01:14Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-29",
-      "verifiedAt": "2026-10-29T20:02:08Z",
+      "verifiedAt": "2026-10-29T21:01:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-29T20:02:08Z",
+        "checkedAt": "2026-10-29T21:01:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -989,9 +989,9 @@
   ],
   "catalogUpdate": {
     "version": "2026-10-30",
-    "revision": 6,
-    "signature": "6a9d1336abc5f74022c01f8445061fa71ffbc93f39b4f8caf013d34df4d43d6d",
-    "publishedAt": "2026-10-29T20:02:08Z",
+    "revision": 7,
+    "signature": "02f185cae6f09f89eee254dd77ab20f54ace93769df84cd79fb29723d3eeeb63",
+    "publishedAt": "2026-10-29T21:01:14Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -1098,7 +1098,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         }
       },
       {
@@ -1116,20 +1116,7 @@
         "officialHost": "lovable.dev",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "appbuilder",
-        "purposes": [
-          "appbuilder"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
-        }
+        "purpose": "appbuilder"
       },
       {
         "key": "krea",
@@ -1146,20 +1133,7 @@
         "officialHost": "www.krea.ai",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "image",
-        "purposes": [
-          "image"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
-        }
+        "purpose": "image"
       },
       {
         "key": "claude",
@@ -1174,20 +1148,7 @@
         "officialHost": "claude.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant",
-        "purposes": [
-          "assistant"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
-        }
+        "purpose": "assistant"
       },
       {
         "key": "gemini",
@@ -1207,20 +1168,7 @@
         "officialHost": "gemini.google",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant",
-        "purposes": [
-          "assistant"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
-        }
+        "purpose": "assistant"
       },
       {
         "key": "perplexity",
@@ -1253,20 +1201,7 @@
         "officialHost": "www.microsoft.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant",
-        "purposes": [
-          "assistant"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
-        }
+        "purpose": "assistant"
       },
       {
         "key": "github-copilot",
@@ -1951,7 +1886,20 @@
         "officialHost": "www.deezer.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "music"
+        "purpose": "music",
+        "purposes": [
+          "music"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T20:59:41Z"
+        }
       },
       {
         "key": "duolingo",
@@ -1966,7 +1914,18 @@
         "officialHost": "www.duolingo.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-29T20:59:41Z"
+        }
       },
       {
         "key": "discovered-f6d59d44d511",
@@ -2000,31 +1959,31 @@
             "purpose": "assistant",
             "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-29T19:10:19Z"
+            "checkedAt": "2026-10-29T20:59:41Z"
           },
           {
             "purpose": "image",
             "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-29T19:10:19Z"
+            "checkedAt": "2026-10-29T20:59:41Z"
           },
           {
             "purpose": "coding",
             "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-29T19:10:19Z"
+            "checkedAt": "2026-10-29T20:59:41Z"
           },
           {
             "purpose": "music_creation",
             "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-29T19:10:19Z"
+            "checkedAt": "2026-10-29T20:59:41Z"
           },
           {
             "purpose": "appbuilder",
             "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-29T19:10:19Z"
+            "checkedAt": "2026-10-29T20:59:41Z"
           }
         ],
         "verification": {
@@ -2035,7 +1994,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": true,
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         }
       },
       {
@@ -2068,7 +2027,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-28T12:06:03Z"
       },
@@ -2102,7 +2061,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-28T12:17:40Z"
       },
@@ -2134,7 +2093,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-28T16:06:54Z"
       },
@@ -2166,7 +2125,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-28T20:58:22Z"
       },
@@ -2198,7 +2157,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T05:01:59Z"
       },
@@ -2230,7 +2189,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T07:18:36Z"
       },
@@ -2261,7 +2220,7 @@
             "purpose": "assistant",
             "quote": "meetings       Unlimited AI chat       Integrations with HubSpot, Pipedrive, Slack, Asana, M",
             "source": "https://www.scribbl.co/pricing",
-            "checkedAt": "2026-10-29T20:00:35Z"
+            "checkedAt": "2026-10-29T20:59:41Z"
           }
         ],
         "verification": {
@@ -2272,7 +2231,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": true,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T09:07:26Z"
       },
@@ -2304,7 +2263,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T10:05:41Z"
       },
@@ -2338,7 +2297,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T15:10:25Z"
       },
@@ -2370,7 +2329,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T18:00:57Z"
       },
@@ -2402,7 +2361,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         "verifiedAt": "2026-10-29T20:00:35Z"
       }
@@ -2454,7 +2413,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       }
     },
     {
@@ -2472,20 +2431,7 @@
       "officialHost": "lovable.dev",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "appbuilder",
-      "purposes": [
-        "appbuilder"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
-      }
+      "purpose": "appbuilder"
     },
     {
       "key": "krea",
@@ -2502,20 +2448,7 @@
       "officialHost": "www.krea.ai",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "image",
-      "purposes": [
-        "image"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
-      }
+      "purpose": "image"
     },
     {
       "key": "claude",
@@ -2530,20 +2463,7 @@
       "officialHost": "claude.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant",
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
-      }
+      "purpose": "assistant"
     },
     {
       "key": "gemini",
@@ -2563,20 +2483,7 @@
       "officialHost": "gemini.google",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant",
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
-      }
+      "purpose": "assistant"
     },
     {
       "key": "perplexity",
@@ -2609,20 +2516,7 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant",
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
-      }
+      "purpose": "assistant"
     },
     {
       "key": "github-copilot",
@@ -3307,7 +3201,20 @@
       "officialHost": "www.deezer.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "music"
+      "purpose": "music",
+      "purposes": [
+        "music"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T20:59:41Z"
+      }
     },
     {
       "key": "duolingo",
@@ -3322,7 +3229,18 @@
       "officialHost": "www.duolingo.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-29T20:59:41Z"
+      }
     },
     {
       "key": "discovered-f6d59d44d511",
@@ -3356,31 +3274,31 @@
           "purpose": "assistant",
           "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "image",
           "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "coding",
           "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "music_creation",
           "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         },
         {
           "purpose": "appbuilder",
           "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-29T19:10:19Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         }
       ],
       "verification": {
@@ -3391,7 +3309,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-29T19:10:19Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       }
     },
     {
@@ -3424,7 +3342,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T19:10:19Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T12:06:03Z"
     },
@@ -3458,7 +3376,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T19:10:19Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T12:17:40Z"
     },
@@ -3490,7 +3408,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T16:06:54Z"
     },
@@ -3522,7 +3440,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-28T20:58:22Z"
     },
@@ -3554,7 +3472,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T05:01:59Z"
     },
@@ -3586,7 +3504,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T07:18:36Z"
     },
@@ -3617,7 +3535,7 @@
           "purpose": "assistant",
           "quote": "meetings       Unlimited AI chat       Integrations with HubSpot, Pipedrive, Slack, Asana, M",
           "source": "https://www.scribbl.co/pricing",
-          "checkedAt": "2026-10-29T20:00:35Z"
+          "checkedAt": "2026-10-29T20:59:41Z"
         }
       ],
       "verification": {
@@ -3628,7 +3546,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T09:07:26Z"
     },
@@ -3660,7 +3578,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T10:05:41Z"
     },
@@ -3694,7 +3612,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T15:10:25Z"
     },
@@ -3726,7 +3644,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T18:00:57Z"
     },
@@ -3758,7 +3676,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-29T20:00:35Z"
+        "checkedAt": "2026-10-29T20:59:41Z"
       },
       "verifiedAt": "2026-10-29T20:00:35Z"
     }
@@ -4671,1060 +4589,6 @@
       }
     },
     {
-      "id": "3246ece9c901ae141997400f",
-      "service": "discovered-f6d59d44d511",
-      "name": "Consider DeepAI Pro",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://deepai.org/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Consider DeepAI Pro $9.99 per month"
-        },
-        {
-          "field": "capability.music",
-          "quote": "Music"
-        },
-        {
-          "field": "capability.adfree",
-          "quote": "Ad-free"
-        }
-      ],
-      "purposes": [
-        "assistant",
-        "image",
-        "coding",
-        "music_creation",
-        "appbuilder"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "discovered-f6d59d44d511-regular-monthly",
-      "service": "discovered-f6d59d44d511",
-      "name": "Pro · 월간",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://deepai.org/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "$9.99 a month, or $89.99 a year"
-        },
-        {
-          "field": "billing",
-          "quote": "Billed monthly · cancel any time"
-        }
-      ],
-      "purposes": [
-        "assistant",
-        "image",
-        "coding",
-        "music_creation",
-        "appbuilder"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "06be7edb92032e45fa019596",
-      "service": "discovered-3da74ddb9a73",
-      "name": "프로 (월간)",
-      "amount": 7.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-monthly\",\"name\":\"프로 (월간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":7,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "24012c9ad37cf1daf8b42574",
-      "service": "discovered-3da74ddb9a73",
-      "name": "프로 (연간)",
-      "amount": 60.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-yearly\",\"name\":\"프로 (연간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":60,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "bf3ba57b1165d3f6b759dc77",
-      "service": "discovered-3da74ddb9a73",
-      "name": "비지니스 (월간)",
-      "amount": 10.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-monthly\",\"name\":\"비지니스 (월간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":10,\"priceCurrency\":\"USD\",\"priceSpecification\":{\""
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "50b84a291a2b252b41f1d896",
-      "service": "discovered-3da74ddb9a73",
-      "name": "비지니스 (연간)",
-      "amount": 96.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-yearly\",\"name\":\"비지니스 (연간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":96,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@"
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "3b0a212dc2929ae23c0392dc",
-      "service": "discovered-1130fb3c5635",
-      "name": "Localize Essential",
-      "amount": 9.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "hosting",
-      "capabilities": {},
-      "source": "https://webflow.com/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Localize Essential $ 9 /mo"
-        }
-      ],
-      "purposes": [
-        "hosting"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "bbb1bdc7c14d6251db5fada7",
-      "service": "discovered-1130fb3c5635",
-      "name": "Localize Advanced",
-      "amount": 29.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "hosting",
-      "capabilities": {},
-      "source": "https://webflow.com/pricing",
-      "verifiedAt": "2026-10-29T19:10:19Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Localize Advanced $ 29 /mo"
-        }
-      ],
-      "purposes": [
-        "hosting"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "82ebf3d006655b7e75ed12ed",
-      "service": "discovered-31f30f095316",
-      "name": "Comparison Table of Best AI Business Plan Generators",
-      "amount": 18.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.unite.ai/business-plan-generators/",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Comparison Table of Best AI Business Plan Generators $18/mo"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "20c8d546f9b5d7fabcc58856",
-      "service": "discovered-9147608fbd20",
-      "name": "QuickCreator",
-      "amount": 29.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://quickcreator.io/",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "ba1a6c7908df181c51b7488e",
-      "service": "discovered-195e1a465e02",
-      "name": "TextFree Plus",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "other",
-      "capabilities": {},
-      "source": "https://textfree.com/",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"TextFree Plus\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "9b6df70fbb8b49055038d142",
-      "service": "discovered-9aa180304be1",
-      "name": "Pro",
-      "amount": 59.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.jasper.ai/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Pro $ 59 month"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "84ccc459e60777190f5eb6b9",
-      "service": "discovered-56e27794ecfb",
-      "name": "Pro",
-      "amount": 49.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://mindpal.space/",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro\",\"price\":\"49\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/InStock\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"49\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "d06c3579fb9011552c273d99",
-      "service": "discovered-56e27794ecfb",
-      "name": "Advanced",
-      "amount": 179.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://mindpal.space/",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Advanced\",\"price\":\"179\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/InStock\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"179\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "03018c68d8aca0c9fb086acb",
-      "service": "discovered-56e27794ecfb",
-      "name": "Ultra",
-      "amount": 449.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://mindpal.space/",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra\",\"price\":\"449\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/InStock\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"449\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "a9ae8a68bd7d45e808cde0bd",
-      "service": "discovered-476eddabad32",
-      "name": "Pro, billed annually",
-      "amount": 13.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://www.scribbl.co/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro, billed annually\",\"price\":\"13\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"13\",\"priceCurrency\":\"USD\",\"unitText\":\"per user per month\",\"referenceQuantity\":{\"@typ"
-        }
-      ],
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "8940b7510045797691f1bc83",
-      "service": "discovered-476eddabad32",
-      "name": "Pro, billed monthly",
-      "amount": 20.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://www.scribbl.co/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro, billed monthly\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"unitText\":\"per user per month\",\"referenceQuantity\":{\"@type"
-        }
-      ],
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "f96e486f39a6f57b17f02a57",
-      "service": "discovered-476eddabad32",
-      "name": "Team, billed annually",
-      "amount": 20.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://www.scribbl.co/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Team, billed annually\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"unitText\":\"per person per month\",\"referenceQuantity\":{\"@"
-        }
-      ],
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "758e26de9412d667d4e6af97",
-      "service": "discovered-476eddabad32",
-      "name": "Team, billed monthly",
-      "amount": 29.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://www.scribbl.co/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Team, billed monthly\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"unitText\":\"per person per month\",\"referenceQuantity\":{\"@t"
-        }
-      ],
-      "purposes": [
-        "assistant"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "c786630778d68ac927955029",
-      "service": "discovered-ca579acb3f8a",
-      "name": "Start",
-      "amount": 9.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.ai2sql.io/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Start\",\"price\":\"9\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=start\",\"description\":\"Start plan, $9 per month ($7 per month billed annually). 7-day"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "faf22031443a1363f8f0d1cf",
-      "service": "discovered-ca579acb3f8a",
-      "name": "Pro",
-      "amount": 19.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {
-        "windows": true
-      },
-      "source": "https://www.ai2sql.io/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro\",\"price\":\"19\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=pro\",\"description\":\"Pro plan, $19 per month ($14 per month billed annually). 7-day tr"
-        },
-        {
-          "field": "capability.windows",
-          "quote": "rt     ✓   Desktop App  (Windows & Mac)       \nStart Free Trial\n   "
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "80e8df59b15d84bd0014ec86",
-      "service": "discovered-ca579acb3f8a",
-      "name": "Team",
-      "amount": 39.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.ai2sql.io/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Team\",\"price\":\"39\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=team\",\"description\":\"Team plan, $39 per month ($29 per month billed annually). 7-day"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "fcf7444f76abafb19835c8d5",
-      "service": "discovered-47abea84f21d",
-      "name": "무료 (monthly)",
-      "amount": 0.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"무료 (monthly)\",\"description\":\"Non-Commercial\",\"price\":\"0.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecificatio"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "deaeb09202bb88af37eee0b8",
-      "service": "discovered-47abea84f21d",
-      "name": "Creator (monthly)",
-      "amount": 14.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Creator (monthly)\",\"description\":\"Non-Commercial\",\"price\":\"14.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecif"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "12e8f997ddf1e39808c8a4b0",
-      "service": "discovered-47abea84f21d",
-      "name": "Creator (yearly)",
-      "amount": 140.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Creator (yearly)\",\"description\":\"Non-Commercial\",\"price\":\"140.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecif"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "39a42f0a502c8d0ae8c8ada6",
-      "service": "discovered-47abea84f21d",
-      "name": "찬성 (monthly)",
-      "amount": 39.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"찬성 (monthly)\",\"description\":\"Commercial Usage\",\"price\":\"39.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecifica"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "63582fdf63e9478dd8bc4423",
-      "service": "discovered-47abea84f21d",
-      "name": "찬성 (yearly)",
-      "amount": 390.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"찬성 (yearly)\",\"description\":\"Commercial Usage\",\"price\":\"390.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecifica"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "d3bde30f568beb71850979e3",
-      "service": "discovered-47abea84f21d",
-      "name": "Ultra (monthly)",
-      "amount": 89.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (monthly)\",\"description\":\"Apps & Agency Work\",\"price\":\"89.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpec"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "411456746e803cce57266e17",
-      "service": "discovered-47abea84f21d",
-      "name": "Ultra (yearly)",
-      "amount": 750.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "music_creation",
-      "capabilities": {},
-      "source": "https://mubert.com/ko/render/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (yearly)\",\"description\":\"Apps & Agency Work\",\"price\":\"750.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpec"
-        }
-      ],
-      "purposes": [
-        "music_creation"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "dc9ede25c7cfc04ac85ee0cb",
-      "service": "discovered-50d3a0fa6f29",
-      "name": "Pro (Monthly)",
-      "amount": 17.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.sourcely.net/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro (Monthly)\",\"price\":\"17\",\"priceCurrency\":\"USD\",\"description\":\"Unlimited sources, 10 deep searches/month, source summaries\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/InS"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "73b2bca7245166e53339174b",
-      "service": "discovered-50d3a0fa6f29",
-      "name": "Ultra (Monthly)",
-      "amount": 37.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.sourcely.net/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (Monthly)\",\"price\":\"37\",\"priceCurrency\":\"USD\",\"description\":\"Smarter AI model, 30 deep searches/month, chat with sources\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/I"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "f88708c3ec5616185b500dbc",
-      "service": "discovered-50d3a0fa6f29",
-      "name": "Pro (Yearly)",
-      "amount": 9.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.sourcely.net/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro (Yearly)\",\"price\":\"9\",\"priceCurrency\":\"USD\",\"description\":\"Pro plan billed annually ($9/month equivalent)\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/InStock\",\"priceSpe"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "5d4235d7d6b71ccbe182da94",
-      "service": "discovered-50d3a0fa6f29",
-      "name": "Ultra (Yearly)",
-      "amount": 19.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://www.sourcely.net/pricing",
-      "verifiedAt": "2026-10-29T20:00:35Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (Yearly)\",\"price\":\"19\",\"priceCurrency\":\"USD\",\"description\":\"Ultra plan billed annually ($19/month equivalent)\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/InStock\",\"pr"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
       "id": "2bffc38e09724b178e2a50b3",
       "service": "krea",
       "name": "Basic",
@@ -5853,6 +4717,1060 @@
       }
     },
     {
+      "id": "3246ece9c901ae141997400f",
+      "service": "discovered-f6d59d44d511",
+      "name": "Consider DeepAI Pro",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://deepai.org/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Consider DeepAI Pro $9.99 per month"
+        },
+        {
+          "field": "capability.music",
+          "quote": "Music"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "Ad-free"
+        }
+      ],
+      "purposes": [
+        "assistant",
+        "image",
+        "coding",
+        "music_creation",
+        "appbuilder"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "discovered-f6d59d44d511-regular-monthly",
+      "service": "discovered-f6d59d44d511",
+      "name": "Pro · 월간",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://deepai.org/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "$9.99 a month, or $89.99 a year"
+        },
+        {
+          "field": "billing",
+          "quote": "Billed monthly · cancel any time"
+        }
+      ],
+      "purposes": [
+        "assistant",
+        "image",
+        "coding",
+        "music_creation",
+        "appbuilder"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "06be7edb92032e45fa019596",
+      "service": "discovered-3da74ddb9a73",
+      "name": "프로 (월간)",
+      "amount": 7.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-monthly\",\"name\":\"프로 (월간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":7,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "24012c9ad37cf1daf8b42574",
+      "service": "discovered-3da74ddb9a73",
+      "name": "프로 (연간)",
+      "amount": 60.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-yearly\",\"name\":\"프로 (연간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":60,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "bf3ba57b1165d3f6b759dc77",
+      "service": "discovered-3da74ddb9a73",
+      "name": "비지니스 (월간)",
+      "amount": 10.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-monthly\",\"name\":\"비지니스 (월간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":10,\"priceCurrency\":\"USD\",\"priceSpecification\":{\""
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "50b84a291a2b252b41f1d896",
+      "service": "discovered-3da74ddb9a73",
+      "name": "비지니스 (연간)",
+      "amount": 96.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-yearly\",\"name\":\"비지니스 (연간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":96,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@"
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "3b0a212dc2929ae23c0392dc",
+      "service": "discovered-1130fb3c5635",
+      "name": "Localize Essential",
+      "amount": 9.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "hosting",
+      "capabilities": {},
+      "source": "https://webflow.com/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Localize Essential $ 9 /mo"
+        }
+      ],
+      "purposes": [
+        "hosting"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "bbb1bdc7c14d6251db5fada7",
+      "service": "discovered-1130fb3c5635",
+      "name": "Localize Advanced",
+      "amount": 29.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "hosting",
+      "capabilities": {},
+      "source": "https://webflow.com/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Localize Advanced $ 29 /mo"
+        }
+      ],
+      "purposes": [
+        "hosting"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "20c8d546f9b5d7fabcc58856",
+      "service": "discovered-9147608fbd20",
+      "name": "QuickCreator",
+      "amount": 29.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://quickcreator.io/",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "ba1a6c7908df181c51b7488e",
+      "service": "discovered-195e1a465e02",
+      "name": "TextFree Plus",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "other",
+      "capabilities": {},
+      "source": "https://textfree.com/",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"TextFree Plus\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "9b6df70fbb8b49055038d142",
+      "service": "discovered-9aa180304be1",
+      "name": "Pro",
+      "amount": 59.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.jasper.ai/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Pro $ 59 month"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "84ccc459e60777190f5eb6b9",
+      "service": "discovered-56e27794ecfb",
+      "name": "Pro",
+      "amount": 49.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://mindpal.space/",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro\",\"price\":\"49\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/InStock\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"49\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "d06c3579fb9011552c273d99",
+      "service": "discovered-56e27794ecfb",
+      "name": "Advanced",
+      "amount": 179.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://mindpal.space/",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Advanced\",\"price\":\"179\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/InStock\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"179\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "03018c68d8aca0c9fb086acb",
+      "service": "discovered-56e27794ecfb",
+      "name": "Ultra",
+      "amount": 449.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://mindpal.space/",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra\",\"price\":\"449\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/InStock\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"449\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "a9ae8a68bd7d45e808cde0bd",
+      "service": "discovered-476eddabad32",
+      "name": "Pro, billed annually",
+      "amount": 13.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://www.scribbl.co/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro, billed annually\",\"price\":\"13\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"13\",\"priceCurrency\":\"USD\",\"unitText\":\"per user per month\",\"referenceQuantity\":{\"@typ"
+        }
+      ],
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "8940b7510045797691f1bc83",
+      "service": "discovered-476eddabad32",
+      "name": "Pro, billed monthly",
+      "amount": 20.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://www.scribbl.co/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro, billed monthly\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"unitText\":\"per user per month\",\"referenceQuantity\":{\"@type"
+        }
+      ],
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "f96e486f39a6f57b17f02a57",
+      "service": "discovered-476eddabad32",
+      "name": "Team, billed annually",
+      "amount": 20.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://www.scribbl.co/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Team, billed annually\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"20\",\"priceCurrency\":\"USD\",\"unitText\":\"per person per month\",\"referenceQuantity\":{\"@"
+        }
+      ],
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "758e26de9412d667d4e6af97",
+      "service": "discovered-476eddabad32",
+      "name": "Team, billed monthly",
+      "amount": 29.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://www.scribbl.co/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Team, billed monthly\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"unitText\":\"per person per month\",\"referenceQuantity\":{\"@t"
+        }
+      ],
+      "purposes": [
+        "assistant"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "c786630778d68ac927955029",
+      "service": "discovered-ca579acb3f8a",
+      "name": "Start",
+      "amount": 9.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.ai2sql.io/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Start\",\"price\":\"9\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=start\",\"description\":\"Start plan, $9 per month ($7 per month billed annually). 7-day"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "faf22031443a1363f8f0d1cf",
+      "service": "discovered-ca579acb3f8a",
+      "name": "Pro",
+      "amount": 19.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {
+        "windows": true
+      },
+      "source": "https://www.ai2sql.io/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro\",\"price\":\"19\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=pro\",\"description\":\"Pro plan, $19 per month ($14 per month billed annually). 7-day tr"
+        },
+        {
+          "field": "capability.windows",
+          "quote": "rt     ✓   Desktop App  (Windows & Mac)       \nStart Free Trial\n   "
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "80e8df59b15d84bd0014ec86",
+      "service": "discovered-ca579acb3f8a",
+      "name": "Team",
+      "amount": 39.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.ai2sql.io/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Team\",\"price\":\"39\",\"priceCurrency\":\"USD\",\"url\":\"https://builder.ai2sql.io/dashboard/choose-plan?source=pricing_page&plan=team\",\"description\":\"Team plan, $39 per month ($29 per month billed annually). 7-day"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "fcf7444f76abafb19835c8d5",
+      "service": "discovered-47abea84f21d",
+      "name": "무료 (monthly)",
+      "amount": 0.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"무료 (monthly)\",\"description\":\"Non-Commercial\",\"price\":\"0.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecificatio"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "deaeb09202bb88af37eee0b8",
+      "service": "discovered-47abea84f21d",
+      "name": "Creator (monthly)",
+      "amount": 14.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Creator (monthly)\",\"description\":\"Non-Commercial\",\"price\":\"14.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecif"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "12e8f997ddf1e39808c8a4b0",
+      "service": "discovered-47abea84f21d",
+      "name": "Creator (yearly)",
+      "amount": 140.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Creator (yearly)\",\"description\":\"Non-Commercial\",\"price\":\"140.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecif"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "39a42f0a502c8d0ae8c8ada6",
+      "service": "discovered-47abea84f21d",
+      "name": "찬성 (monthly)",
+      "amount": 39.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"찬성 (monthly)\",\"description\":\"Commercial Usage\",\"price\":\"39.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecifica"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "63582fdf63e9478dd8bc4423",
+      "service": "discovered-47abea84f21d",
+      "name": "찬성 (yearly)",
+      "amount": 390.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"찬성 (yearly)\",\"description\":\"Commercial Usage\",\"price\":\"390.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecifica"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "d3bde30f568beb71850979e3",
+      "service": "discovered-47abea84f21d",
+      "name": "Ultra (monthly)",
+      "amount": 89.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (monthly)\",\"description\":\"Apps & Agency Work\",\"price\":\"89.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpec"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "411456746e803cce57266e17",
+      "service": "discovered-47abea84f21d",
+      "name": "Ultra (yearly)",
+      "amount": 750.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "music_creation",
+      "capabilities": {},
+      "source": "https://mubert.com/ko/render/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (yearly)\",\"description\":\"Apps & Agency Work\",\"price\":\"750.00\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"url\":\"https://mubert.com/ko/render/pricing\",\"priceSpecification\":{\"@type\":\"UnitPriceSpec"
+        }
+      ],
+      "purposes": [
+        "music_creation"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "dc9ede25c7cfc04ac85ee0cb",
+      "service": "discovered-50d3a0fa6f29",
+      "name": "Pro (Monthly)",
+      "amount": 17.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.sourcely.net/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro (Monthly)\",\"price\":\"17\",\"priceCurrency\":\"USD\",\"description\":\"Unlimited sources, 10 deep searches/month, source summaries\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/InS"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "73b2bca7245166e53339174b",
+      "service": "discovered-50d3a0fa6f29",
+      "name": "Ultra (Monthly)",
+      "amount": 37.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.sourcely.net/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (Monthly)\",\"price\":\"37\",\"priceCurrency\":\"USD\",\"description\":\"Smarter AI model, 30 deep searches/month, chat with sources\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/I"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "f88708c3ec5616185b500dbc",
+      "service": "discovered-50d3a0fa6f29",
+      "name": "Pro (Yearly)",
+      "amount": 9.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.sourcely.net/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Pro (Yearly)\",\"price\":\"9\",\"priceCurrency\":\"USD\",\"description\":\"Pro plan billed annually ($9/month equivalent)\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/InStock\",\"priceSpe"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "5d4235d7d6b71ccbe182da94",
+      "service": "discovered-50d3a0fa6f29",
+      "name": "Ultra (Yearly)",
+      "amount": 19.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.sourcely.net/pricing",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"Ultra (Yearly)\",\"price\":\"19\",\"priceCurrency\":\"USD\",\"description\":\"Ultra plan billed annually ($19/month equivalent)\",\"url\":\"https://www.sourcely.net/pricing\",\"availability\":\"https://schema.org/InStock\",\"pr"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "82ebf3d006655b7e75ed12ed",
+      "service": "discovered-31f30f095316",
+      "name": "Comparison Table of Best AI Business Plan Generators",
+      "amount": 18.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.unite.ai/business-plan-generators/",
+      "verifiedAt": "2026-10-29T20:59:41Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Comparison Table of Best AI Business Plan Generators $18/mo"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -5872,7 +5790,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-29T20:00:46Z",
+      "verifiedAt": "2026-10-29T21:00:02Z",
       "status": "verified",
       "evidence": [
         {
@@ -5918,7 +5836,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-29T20:00:42Z",
+      "verifiedAt": "2026-10-29T20:59:58Z",
       "status": "verified",
       "evidence": [
         {
@@ -5955,30 +5873,95 @@
       "outcomes": {
         "captcha": 4,
         "cross_site_redirect": 204,
-        "deferred_cross_site_redirect": 57,
-        "deferred_http_403": 112,
-        "deferred_http_404": 20,
-        "deferred_http_429": 7,
+        "deferred_cross_site_redirect": 58,
+        "deferred_http_403": 109,
+        "deferred_http_404": 21,
+        "deferred_http_429": 6,
         "deferred_render_http_403": 4,
         "http_402": 4,
-        "http_403": 164,
-        "http_404": 40,
+        "http_403": 160,
+        "http_404": 38,
         "http_406": 1,
         "http_429": 8,
         "http_503": 5,
         "http_530": 2,
         "network_error": 2,
-        "non_public_url": 26,
-        "ok": 1771,
+        "non_public_url": 28,
+        "ok": 1784,
         "render_budget_exhausted": 49,
         "render_http_403": 8,
         "response_too_large": 4,
         "timeout": 13,
         "unexpected_content_type": 7
       },
-      "cacheHitsThisRun": 6,
-      "renderAttemptsThisRun": 5,
+      "cacheHitsThisRun": 3,
+      "renderAttemptsThisRun": 9,
       "recentFailures": [
+        {
+          "url": "https://emoticon.kakao.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-30T09:01:14Z"
+        },
+        {
+          "url": "https://drive.kakao.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-30T09:01:14Z"
+        },
+        {
+          "url": "https://theresanai.com/wellsaid-labs",
+          "reason": "non_public_url",
+          "nextCheckAt": "2026-10-29T22:01:14Z"
+        },
+        {
+          "url": "https://www.lovo.ai/",
+          "reason": "http_402",
+          "nextCheckAt": "2026-10-29T22:01:14Z"
+        },
+        {
+          "url": "https://theresanai.com/lovo-ai",
+          "reason": "non_public_url",
+          "nextCheckAt": "2026-10-29T22:01:14Z"
+        },
+        {
+          "url": "https://audify-ai.ahmedtokyo.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T22:01:14Z"
+        },
+        {
+          "url": "https://ainterview.space/",
+          "reason": "non_public_url",
+          "nextCheckAt": "2026-10-29T22:01:14Z"
+        },
+        {
+          "url": "https://claude.ai/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T21:01:14Z"
+        },
+        {
+          "url": "https://en.m.wikipedia.org/wiki/Perplexity_AI",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-29T22:01:14Z"
+        },
+        {
+          "url": "https://github.tw.cn/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T21:01:14Z"
+        },
+        {
+          "url": "https://chatgpt.com/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T21:01:14Z"
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T21:01:14Z"
+        },
+        {
+          "url": "https://lovable.dev/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-30T21:01:14Z"
+        },
         {
           "url": "https://runwayml.com/",
           "reason": "cross_site_redirect",
@@ -6063,71 +6046,6 @@
           "url": "https://www.stockphotoai.net/?ref=mahseema-awesome-ai-tools",
           "reason": "non_public_url",
           "nextCheckAt": "2026-10-29T20:11:21Z"
-        },
-        {
-          "url": "https://nordvpn.com/download/?msockid=29a0663a9e78651f16db7e3b9fd1649e",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T19:11:21Z"
-        },
-        {
-          "url": "https://nordvpn.com/download/windows/?msockid=29a0663a9e78651f16db7e3b9fd1649e",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T19:11:21Z"
-        },
-        {
-          "url": "https://nordvpn.com/risk-free-vpn/?msockid=29a0663a9e78651f16db7e3b9fd1649e",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T19:11:21Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkbtpnwfesa6egjadkvkn1y&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T21:11:21Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01krkcn1p7enb8kxp7nx2r9gnb&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T21:11:21Z"
-        },
-        {
-          "url": "https://www.expressvpn.com/payment?offer_id=pp_01kxqzj99jeh7r2b4adyds9ctd&cur=usd&pricing_table_id=pt_01ktv91n5tfevvmjgnan70535f&product_type=vpn",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T21:11:21Z"
-        },
-        {
-          "url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=aad2fb75c1db4b51bc574ed1155538b4",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T20:11:21Z"
-        },
-        {
-          "url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=aad2fb75c1db4b51bc574ed1155538b4",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T20:11:21Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C52381",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T02:02:05Z"
-        },
-        {
-          "url": "https://www.gamesgames.com/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T18:02:05Z"
-        },
-        {
-          "url": "https://galactica.org/",
-          "reason": "http_530",
-          "nextCheckAt": "2026-10-29T19:02:05Z"
-        },
-        {
-          "url": "https://scispace.com/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-30T18:02:05Z"
-        },
-        {
-          "url": "https://www.mathgptpro.com/",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-29T19:02:05Z"
         }
       ]
     },
@@ -6139,17 +6057,17 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 24
+        "attempts": 23
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 114
+        "attempts": 115
       },
       {
         "name": "Bing RSS",
@@ -6164,12 +6082,12 @@
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 12
+        "attempts": 11
       },
       {
         "name": "Google",
@@ -6284,7 +6202,7 @@
       {
         "name": "Official links: expressvpn",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: figma",
@@ -6329,11 +6247,16 @@
       {
         "name": "Official links: kakao-drawer",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: kakao-emoticon",
         "status": "unavailable",
+        "attempts": 2
+      },
+      {
+        "name": "Official links: kakao-page",
+        "status": "no_relevant_results",
         "attempts": 1
       },
       {
@@ -6379,7 +6302,7 @@
       {
         "name": "Official links: nordvpn",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: notion",
@@ -6404,7 +6327,7 @@
       {
         "name": "Official links: protonvpn",
         "status": "no_relevant_results",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: slack",
@@ -6529,7 +6452,7 @@
       {
         "name": "Sitemap: expressvpn",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: figma",
@@ -6574,7 +6497,7 @@
       {
         "name": "Sitemap: kakao-page",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: kakao-webtoon",
@@ -6624,7 +6547,7 @@
       {
         "name": "Sitemap: protonvpn",
         "status": "no_relevant_results",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: slack",
@@ -6679,17 +6602,17 @@
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 11
+        "attempts": 10
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -6717,26 +6640,6 @@
         "name": "뽐뿌 해외뽐뿌",
         "status": "unavailable",
         "nextCheckAt": "2026-10-29T23:51:07Z"
-      },
-      {
-        "name": "Official links: kakao-emoticon",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-29T04:12:00Z"
-      },
-      {
-        "name": "Official links: kakao-drawer",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-29T04:12:00Z"
-      },
-      {
-        "name": "Official links: kakao-page",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: kakao-page",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-29T05:02:38Z"
       },
       {
         "name": "Official links: kakao-webtoon",
@@ -7144,11 +7047,6 @@
         "nextCheckAt": "2026-10-29T22:00:57Z"
       },
       {
-        "name": "Sumo 구독 할인",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Official links: canva",
         "status": "unavailable",
         "nextCheckAt": "2026-10-29T23:10:19Z"
@@ -7169,32 +7067,7 @@
         "nextCheckAt": "2026-10-29T23:10:19Z"
       },
       {
-        "name": "StackSocial",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Slickdeals",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "DealMirror",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
         "status": "ok",
         "nextCheckAt": null
       },
@@ -7229,12 +7102,47 @@
         "nextCheckAt": null
       },
       {
-        "name": "Google News",
+        "name": "Dealify",
         "status": "ok",
         "nextCheckAt": null
       },
       {
-        "name": "Dealify",
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: kakao-emoticon",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-30T00:59:41Z"
+      },
+      {
+        "name": "Official links: kakao-drawer",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-30T00:59:41Z"
+      },
+      {
+        "name": "Official links: kakao-page",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: kakao-page",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-30T00:59:41Z"
+      },
+      {
+        "name": "Google News",
         "status": "ok",
         "nextCheckAt": null
       },
@@ -7242,11 +7150,26 @@
         "name": "AppSumo",
         "status": "ok",
         "nextCheckAt": null
+      },
+      {
+        "name": "Sumo 구독 할인",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "StackSocial",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Slickdeals",
+        "status": "ok",
+        "nextCheckAt": null
       }
     ],
-    "candidateCount": 1826,
-    "rawCandidateCount": 1986,
-    "factChecks": 763,
+    "candidateCount": 1836,
+    "rawCandidateCount": 1996,
+    "factChecks": 766,
     "verifiedCatalogCount": 7,
     "catalogCount": 65,
     "metrics": {
@@ -7254,33 +7177,33 @@
         "catalog_verified": 12,
         "needs_dates": 171,
         "needs_official": 16,
-        "needs_service": 781,
-        "needs_verification": 718,
+        "needs_service": 787,
+        "needs_verification": 721,
         "official_verified": 4,
         "partial_match": 20,
-        "pending": 99,
+        "pending": 100,
         "rejected": 160,
         "unavailable": 5
       },
       "catalogOutcomes": {
-        "discovered_links": 223,
-        "known": 389,
-        "needs_identity": 590,
-        "needs_price": 94,
-        "pending": 30,
+        "discovered_links": 224,
+        "known": 390,
+        "needs_identity": 594,
+        "needs_price": 93,
+        "pending": 26,
         "rejected": 160,
-        "unavailable": 197,
+        "unavailable": 205,
         "verified": 12
       },
       "factCheckOutcomes": {
-        "needs_verification": 739,
+        "needs_verification": 742,
         "official_verified": 4,
         "partial_match": 20
       },
       "newServiceCount": 12,
       "verifiedPlanCount": 27,
       "candidatePlanCount": 37,
-      "rejectedLinkCount": 5448,
+      "rejectedLinkCount": 5553,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -7300,14 +7223,14 @@
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-29T20:00:35Z",
-      "searchAttempts": 34,
-      "newServices": 1,
+      "startedAt": "2026-10-29T20:59:41Z",
+      "searchAttempts": 32,
+      "newServices": 0,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 28,
+        "unmatched": 6,
         "rejected": 0
       },
       "taste": {
