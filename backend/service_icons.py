@@ -44,7 +44,10 @@ def normalize_image(raw):
   warnings.simplefilter('error',Image.DecompressionBombWarning)
   with Image.open(io.BytesIO(raw)) as image:
    if image.width<8 or image.height<8 or image.width*image.height>4096*4096:raise ValueError(f'icon_dimensions_{image.width}x{image.height}')
-   image=image.convert('RGBA');image.thumbnail((96,96),Image.Resampling.LANCZOS)
+   image=image.convert('RGBA');bounds=image.getbbox()
+   if not bounds:raise ValueError('empty_icon')
+   image=image.crop(bounds);scale=min(96/image.width,96/image.height)
+   image=image.resize((max(1,round(image.width*scale)),max(1,round(image.height*scale))),Image.Resampling.LANCZOS)
    canvas=Image.new('RGBA',(96,96));canvas.alpha_composite(image,((96-image.width)//2,(96-image.height)//2))
    if not canvas.getbbox():raise ValueError('empty_icon')
    result=io.BytesIO();canvas.quantize(colors=96,method=Image.Quantize.FASTOCTREE).save(result,format='PNG',optimize=True)
@@ -73,9 +76,14 @@ def init_icons(db):
 def collect_icons(db,catalog,fetch,timestamp,limit=24):
  init_icons(db)
  revision=db.execute("SELECT value FROM research_state WHERE key='icon_parser_revision'").fetchone()
- if not revision or revision[0]!='3':
+ if not revision or revision[0]!='4':
   db.execute("UPDATE service_icons SET next_check_at=NULL WHERE last_error LIKE '%response_too_large%' OR last_error LIKE '%icon_dimensions%'")
-  db.execute("INSERT OR REPLACE INTO research_state VALUES('icon_parser_revision','3')");db.commit()
+  for key,payload in list(db.execute('SELECT service,payload FROM service_icons WHERE payload IS NOT NULL')):
+   try:
+    icon=json.loads(payload);png=normalize_image(base64.b64decode(icon['data'].split(',')[1]));icon.update(data='data:image/png;base64,'+base64.b64encode(png).decode(),sha256=hashlib.sha256(png).hexdigest(),normalizedAt=timestamp)
+    db.execute('UPDATE service_icons SET payload=? WHERE service=?',(json.dumps(icon),key))
+   except Exception:pass # Retain the original good pixels; never erase on normalization failure.
+  db.execute("INSERT OR REPLACE INTO research_state VALUES('icon_parser_revision','4')");db.commit()
  previous={key:{'icon':json.loads(payload) if payload else None,'due':due} for key,payload,due in db.execute('SELECT service,payload,next_check_at FROM service_icons')}
  eligible=[s for s in catalog if s.get('status') in ('verified','verified_identity') and (s.get('origin')=='seed' or s.get('verification',{}).get('recurringPrice') is True)]
  pending=sorted((s for s in eligible if not previous.get(s['key'],{}).get('due') or previous[s['key']]['due']<=timestamp),key=lambda s:(bool(previous.get(s['key'],{}).get('icon')),s.get('origin')=='seed',s['key']))[:limit]

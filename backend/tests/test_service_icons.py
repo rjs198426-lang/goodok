@@ -15,7 +15,7 @@ class ServiceIconTests(unittest.TestCase):
  def service(self):return {'key':'fresh','name':'Fresh','category':'웹·호스팅','officialUrl':'https://fresh.example/pricing','origin':'discovered','status':'verified_identity','verification':{'recurringPrice':True}}
  def test_normalized_png_is_bounded_and_reencoded(self):
   from PIL import Image
-  result=normalize_image(self.png());image=Image.open(io.BytesIO(result));self.assertEqual(image.size,(96,96));self.assertEqual(image.format,'PNG');self.assertLess(len(result),7500)
+  result=normalize_image(self.png());image=Image.open(io.BytesIO(result));self.assertEqual(image.size,(96,96));self.assertEqual(image.convert('RGBA').getbbox(),(0,0,96,96));self.assertEqual(image.format,'PNG');self.assertLess(len(result),7500)
  def test_large_but_bounded_brand_raster_is_downsampled(self):
   from PIL import Image
   large=io.BytesIO();Image.new('RGB',(2048,2048),'blue').save(large,format='PNG');result=normalize_image(large.getvalue());self.assertEqual(Image.open(io.BytesIO(result)).size,(96,96))
