@@ -1,0 +1,46 @@
+{
+  "version": "2.1.1",
+  "build": 49,
+  "package": "kr.goodok.note",
+  "appTests": 62,
+  "backendTests": 64,
+  "browserSuites": 12,
+  "lintErrors": 0,
+  "lintWarnings": 12,
+  "sameSigningCertificate": true,
+  "otherAppNotificationAccess": false,
+  "deviceExecution": "not performed for 2.1.1",
+  "bundledBrandIcons": 14,
+  "categoryIconsAdded": 9,
+  "artifacts": [
+    {
+      "name": "dalfit-2.1.1-build49-release.apk",
+      "bytes": 48334085,
+      "sha256": "7ce514b408536de0b394293763794b5e4be45f60a7c4bdad4a48f70fb6cf385c",
+      "baseName": "dalfit-2.1.0-build48-release.apk",
+      "baseSha256": "1e006c6e4dcca6cf00bff2bfc10c0179a37190457dce7dcf726544eda56bcd18",
+      "parts": [
+        "build49.bsdiff.part001",
+        "build49.bsdiff.part002",
+        "build49.bsdiff.part003",
+        "build49.bsdiff.part004",
+        "build49.bsdiff.part005"
+      ],
+      "patchBytes": 2714833,
+      "patchSha256": "b9d39eb6a1d1b88671d2791db4c4ea911e9cdce661d5953cbf70bf96781d008b"
+    },
+    {
+      "name": "dalfit-android-source-2.1.1-build49.zip",
+      "bytes": 2465034,
+      "sha256": "512d061e048da3dd42fc11909a7c3942dd3e588ec2e23f4b06a18fe552a7f7d5",
+      "baseName": "dalfit-android-source-2.1.0-build48.zip",
+      "baseSha256": "68fc87134cda3f3f20a6316975883b230848b1bee4c7937fe8d67cc0532eacef",
+      "parts": [
+        "source49.bsdiff.part001"
+      ],
+      "patchBytes": 288489,
+      "patchSha256": "05757677971d74706ee28b566dc5e2d48bb926138458991ef7e888b984611643"
+    }
+  ],
+  "backendCommit": "8063db6d78e97a5bd22bd08afe3b9ccb065d66e6"
+}
