@@ -19,7 +19,7 @@ class ServiceIconTests(unittest.TestCase):
  def test_active_external_and_oversized_images_rejected(self):
   for svg in [b'<svg><script>x</script></svg>',b'<svg><image href="https://bad.example/a"/></svg>',b'<svg xml:base="https://bad.example/"></svg>',b'<!DOCTYPE svg><svg/>',b'<svg style="fill:url(https://bad.example/a)"/>']:
    with self.subTest(svg=svg),self.assertRaises((ValueError,Exception)):normalize_image(svg)
-  with self.assertRaises(ValueError):normalize_image(b'a'*(256*1024+1))
+  with self.assertRaises(ValueError):normalize_image(b'a'*(2*1024*1024+1))
  def test_svg_converted_to_pixels_without_executing_it(self):
   result=normalize_image(b'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" fill="#f00"/></svg>');self.assertTrue(result.startswith(b'\x89PNG\r\n\x1a\n'))
  def test_first_party_icon_links_are_resolved_without_og_promo_art(self):

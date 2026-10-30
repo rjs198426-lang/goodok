@@ -27,8 +27,9 @@ def category_style(name):
 
 def normalize_image(raw):
  """Re-encode to pixels: no SVG/script/URL reaches the device or resulting PNG."""
- if not raw or len(raw)>256*1024:raise ValueError('icon_size')
+ if not raw or len(raw)>2*1024*1024:raise ValueError('icon_size')
  if b'<svg' in raw[:4096].lower():
+  if len(raw)>256*1024:raise ValueError('icon_size')
   if re.search(br'<!DOCTYPE|<!ENTITY|<\?xml-stylesheet|@import|@font-face|xml:base|\\|url\(\s*[\'"]?(?!#)[^\s)]',raw,re.I):raise ValueError('external_svg')
   root=ET.fromstring(raw)
   if root.tag.split('}')[-1]!='svg':raise ValueError('not_svg')
@@ -71,6 +72,10 @@ def init_icons(db):
 
 def collect_icons(db,catalog,fetch,timestamp,limit=24):
  init_icons(db)
+ revision=db.execute("SELECT value FROM research_state WHERE key='icon_parser_revision'").fetchone()
+ if not revision or revision[0]!='2':
+  db.execute("UPDATE service_icons SET next_check_at=NULL WHERE last_error LIKE '%response_too_large%'")
+  db.execute("INSERT OR REPLACE INTO research_state VALUES('icon_parser_revision','2')");db.commit()
  previous={key:{'icon':json.loads(payload) if payload else None,'due':due} for key,payload,due in db.execute('SELECT service,payload,next_check_at FROM service_icons')}
  eligible=[s for s in catalog if s.get('status') in ('verified','verified_identity') and (s.get('origin')=='seed' or s.get('verification',{}).get('recurringPrice') is True)]
  pending=sorted((s for s in eligible if not previous.get(s['key'],{}).get('due') or previous[s['key']]['due']<=timestamp),key=lambda s:(bool(previous.get(s['key'],{}).get('icon')),s.get('origin')=='seed',s['key']))[:limit]
@@ -78,7 +83,7 @@ def collect_icons(db,catalog,fetch,timestamp,limit=24):
   failures=[]
   for url,method in icon_candidates(service,fetch):
    try:
-    raw,_,_=retrieval.download(url,'image/png,image/svg+xml,image/x-icon,image/webp',256*1024,timeout=7)
+    raw,_,_=retrieval.download(url,'image/png,image/svg+xml,image/x-icon,image/webp',2*1024*1024,timeout=7)
     png=normalize_image(raw);digest=hashlib.sha256(png).hexdigest()
     return service['key'],{'data':'data:image/png;base64,'+base64.b64encode(png).decode(),'sha256':digest,'source':url,'method':method,'checkedAt':timestamp,'width':96,'height':96},None
    except Exception as exc:failures.append(retrieval.error_code(exc) if not isinstance(exc,ValueError) else str(exc))
