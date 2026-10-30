@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T16:36:14Z",
-  "lastSuccessAt": "2026-10-30T16:36:14Z",
+  "generatedAt": "2026-10-30T17:02:00Z",
+  "lastSuccessAt": "2026-10-30T17:02:00Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
+        "checkedAt": "2026-10-30T17:02:00Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
+        "checkedAt": "2026-10-30T17:02:00Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
+        "checkedAt": "2026-10-30T17:02:00Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
+        "checkedAt": "2026-10-30T17:02:00Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -117,8 +117,8 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
@@ -126,12 +126,12 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
+        "checkedAt": "2026-10-30T17:02:00Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
     {
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
+        "checkedAt": "2026-10-30T17:02:00Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T16:36:14Z",
+      "verifiedAt": "2026-10-30T17:02:00Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T16:36:14Z",
+        "checkedAt": "2026-10-30T17:02:00Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -985,13 +985,20 @@
       "status": "ok",
       "errorCode": null,
       "verifiedOffers": 0
+    },
+    {
+      "id": "discovered-spotify",
+      "name": "Spotify 공식",
+      "status": "ok",
+      "errorCode": null,
+      "verifiedOffers": 1
     }
   ],
   "catalogUpdate": {
     "version": "2026-10-31",
-    "revision": 2,
-    "signature": "1fdbd1ec5bbb2460a1ee3a50dc72e9246a80646b1e9e975f8e5cc5ca2c12a341",
-    "publishedAt": "2026-10-30T16:36:14Z",
+    "revision": 3,
+    "signature": "491170e3ba16853b5ce3b736ff3bc290559d173e63d71922d6142ace14f72c1d",
+    "publishedAt": "2026-10-30T17:02:00Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -999,7 +1006,7 @@
       {
         "name": "AI",
         "kind": "subscription",
-        "count": 21,
+        "count": 22,
         "icon": "category-0",
         "color": "#a93754"
       },
@@ -1759,20 +1766,7 @@
         "officialHost": "www.expressvpn.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "vpn",
-        "purposes": [
-          "vpn"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        }
+        "purpose": "vpn"
       },
       {
         "key": "protonvpn",
@@ -1789,19 +1783,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "vpn",
-        "purposes": [
-          "vpn"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "865577faae00410929097411e95122cf5f974c615c467d5204f8af246261397d",
@@ -1832,19 +1813,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "office",
-        "purposes": [
-          "office"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": true,
-          "regionConfirmed": true,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
           "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
@@ -1869,20 +1837,7 @@
         "officialHost": "www.notion.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "notes",
-        "purposes": [
-          "notes"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        }
+        "purpose": "notes"
       },
       {
         "key": "icloud",
@@ -1898,19 +1853,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
-        "purposes": [
-          "storage"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "e4057449fe48ad2fd5f55056523900292629714c088db49f2f29c171af62e72a",
@@ -1936,19 +1878,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
-        "purposes": [
-          "storage"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUpjp0gduNSddIunmn1Ny/pWS3opQn/yQAQaOEccubqUh8wpVVsZ6+OYZXtUizPS1D8xAESomIyplIFqf8rherrSDD0jxL9xgH+xgMkeucyqzgrhPsi3W4A//9VqlX7PCIAAP8OY6ojhbZJeNyuZWa0VW3OS0/CUF0AfwA4sTwiiLIig7t/AAB/fwBfX79/qqpfgLOqAAC6U2aLZJ2qqgCqpGDsPzD/VVX1mRDKhkQAAAAreuv6uQMzplPpQjQzg/gve/X+xQIse+0yplH//wAAf3/8uQE0o0gddew/fz8Ge/g3slYqeOzxeB0wpk75uQP6ugL6uwL/AAD/fwD5ugPsQjH7uQPxPSzoQTT6ugIyp1H7qgAA/wDoQjMxplGsVXFnvt5LAAAAYHRSTlPV1t7bFeQUFxNyGXPa5IrlWAqqF+tO1ovcqgtuBAED7QEGthMS53e7Av8eXwICGAapA2hWAy1EA6a6AP38+/v9EP13iwECDg76BAj+m94uj8+wAQJS0C/4cW3TBAGyUtD6sOS1AAADk0lEQVR42u3X2VLiQBQG4KBAEBWVcV/GfZx9X08SYqSNjoxkDwQE3/8tpjugQhaqaLq94lyAVlHny+m/ExoBxi7UzuLX7M9mp9MphX8WR3xaGL+/DdAuNpuljud5nVKziA2bJYAJfa1TeazOWtGG98yAYh4gX/IqA+U1i/DlFxsAOQBivpSrVIaFLGQZAfj6l39H+uNVyqanIIzZPr+8sZ5rRIVm1maUgRiY5nolBnhrDEJ2dADd0OT1XByoTA6QeMHfkEMgXs2JQ3YQAt/SMHDrcQDaIl4e19JCoJIEnEwEIEzoron7pwGvXkwCIByvb4T9uQC4vej2+6cA3tdJABuQa8n9SgRyZ9+oAUd0wA5MWRsBNJZmds7pALw38RItmw/tE4FGY1Hd+UgJtBG5e5/6J05wP6PuHNMATp7cvYa2OQpokP7qBc0SkQek7hvyQPukCXD/VSoA6TbogaUN9Y8C+5VFfP1UE5Dvdj8wI/0jQGNpUVJViQawycPNkGM1BDSWFiRVpZugDYDvruj1DwPe/YKq0gKgi5Ysj5wgR7bPjEQL+In9B4ClMF7qJdIDWRsBNHr9JfolIgGMmuB04PKpAMMcAezvn5K1lx5KlcYHTFNOySDXi1caKBpAllMBz1uQhosG0FKB27MFaXVyIH2CP/julXgBmrZpfJZiRQNYiSFrm8s/ttgAQeJ9YLnt839sANGIPeg02XBP4IYRAK4c/aYxDREO9GNWQORhhPsHOoIDxGqJdOQbm5rWP87hN8vFJ7z8J2AFtMEWjYHjluHr+JR0c84MICcu392wyHY1rY3AR8AWwO0+kEOdGxiGQVYH9CIAU6AXRa8e/mULIPKz9RFC7IHwp5+DvreRg7hMEA5BCAfZvIBoTYEpMAWeCdjiCewVoHCR4QkcwuG7LY7A5V+4qs4KXIHtamtWiB9+bxhOoCiKkIkCBbaAImBC5QnUZo8yXAFFwUFccwVqrafdxAUIh8hc92vuhgdAhAxXoKYIfAEyxFGGK1DrB8FvAkVp4XuOKxBmPVfgCbyZFebe8gRwEvMrfIFatc55gikwBabAMwDzV+xOdvOtBKALbIC7S9juluMjtFgBxMBrVIsC6RGMDVwCdGNAKz2CsQH83K/HRqhereyym+DlLhFqTwEr5W4IM8oAXsLd8AzV+iXcsQuZ9Nqtd6u9zdoqV7v1PXjNEiAz4CDK/Xjrd3hjjfjwf4lZQ0iC0v1SAAAAAElFTkSuQmCC",
           "sha256": "99e63fa068ef873c96532e7981bc9be0371a5a0576b920e54a6e399ed6bd94f8",
@@ -1976,19 +1905,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "office",
-        "purposes": [
-          "office"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "17064ab7e90cd451fe91d8bb1026d97f8c6e7bde100c3b1c41853e13bdbde491",
@@ -2015,19 +1931,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
-        "purposes": [
-          "storage"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "336363b7a7028c7634841002d47a2c5d628ff5cb16bf9a935266f5db1ac53f43",
@@ -2055,17 +1958,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXpEAD+/PzoCADrJRb86ukAAAD4tbDsNyrxZlz72NXuRTn6ycb7AQDqEgDwVUn2l5Dya2Lzd273qqXpDgDrEAD0hHv3o53rDwDrEADYAADmDQDqDgD0iYLqEAD5wr7mDQDlDgDpEQDlFADsLCHwTkLaEgDoEACqAAD74d///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZA3aNAAAAYHRSTlP9//3+/wD//v///v8FFf7/////qdH//9FaBkB7/5j/N5N6MP7/DqwD/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgA2RiAAADZUlEQVR42u1a2ZabMAx1MMGYLayBkHUyS9v//8HaUGa8cQpYfst9mCXJ0bV8JVsKQvv9PkkS9jN9qxHyPGQJbqF+S7/NIvYHt54+uyscwbV7ptxswgk40Z/+WtXWtgWWunq7jz6ggai/ImjUj34wjU5sf7ovBA+v6pgSJ3T6lfYVcoKq/0wYQdJdPTcE3qNPT2gMTzdozymLomeFnKF67lHate4I2i5FZ4cOMBfOqK1dEtQt8pBTODY/HU5OrTsneOGFn3BQAZyOJgIPNJwxiQQQDBvinofzMhZQ5hiYgJQ7CSUBJohimSDOAAnYgYVCKhPQAsOpzNb6cfBlAv+YwanAJG6UHWIuXCAJVIk5AgJIEMU6AYWSmVl5L6hO4BcERma2zuzoGwjKDCabucQGB+BkNksMmM2el8VmgjgbctBaYlxQM4HfEHsVmAJGicdUCDEEwWXGASbzgQAQkEDYlDiQ2G4RAEEmmPQPTSky0NBSZrY+0vjiIR3lgfC/f7GUmSkQigbjDJOLSGArM1NAuggCtufS1eNbyszO0UA19yGlXWAjM9dPkjjgtQSR0oLaZLMq8SgpLmKobB4kVoKSGYtkWSxk5hJTLa1YDUaBslm5Kv+ZUi/QeKvMajU0xbx6P2zOZnW3Jzm5zDcpdqNtMg+GfH2lGvGtwBsJ5IifUkovJDdenaYsNtdJm2TmV2VOzceals35hkJY2+nLT5mlZfMWmVUjv/N58l28QWZNYiK1f3I2+0eygUDO4gZJBKrMawthLRTpISMkIhzv/F01m9f2O3pPQ2/BgFvQYO6FKvPKQtjY04hRz24iK5nnC94x6nljXthks7mnEaJeK4lXZfNcTyPeYdxHKZuL9+Uyz/U0YuOhtiWsrV0u82xPI/aX6iJog1cQiAXvbH+pbOOKtlYueE39JTYEwuK2djio450/D3oZ44idVj/YxUsPbV5u5ccgKIM5lMVIgMPD9CH2+5gvLME4QRbmeTgD9k5GhqNP/Nz06sJvg/F/8L0X6qsLVVgAq28inRO88HoCsr5GdGu+rV1S1K37R43OH5bu718OHXjyqYSzMxeGB9antH84feR+SlwPDfCxhwo+47xp7GEc3HiA69BOgxvjjMv9DD16cp5GT6bhmTvs8Mw9TafhGcfjP38BCX0y8IoqfCAAAAAASUVORK5CYII=",
           "sha256": "3eba46efdb043be54f94342966f63941762b256b6373875a19ce966a0ed4ac94",
@@ -2106,17 +1998,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXqLiZ1JRxdMK6gcFozHmMnZ181gXwd52pYPMpxTT1Bn5mCIzy6NF2dgHPPQHrRQIH/hD3/gkIAAAD9Njb+cjeGTf0Atv4kynCKUv35bDMm13h7SO20JiYCOFECqu8hu2h9UvwDFhACldABwv66VSkZ12KrTCX/Mx7RPoABaJIXhUowEwosGVVCop0AGiQSZzkdpFsqCwkHJhUAKDcVdkIDdahTJRKFHBwKPCFIK45wGBiCOhzSLS3GWSoWDSgMRycDh7wBi8UbllROFBBzQtcASWdsOsqYQiGshnTYYS4PUTAAXoQAc5cfsGI9I3Q+mJNADg5AJXlSMJtZNKlGqqVvNBqvRRrPPnwJNR0AU3MUcT8erGADodsaulwYyFwczWLrT5XRAAAAYHRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9ebwvOAAACsUlEQVR42u3ZaXOaQBgHcJP0vrvcKCiY2oBWxfu+tSY9kubs3e//LbqoqaAbjmWZcab8X2Qyvnh+syz7PAzEQMiJRUAEREAERICZVj1hzeE63Uy7Fhiodyh7BNoSQei2jSDAOEFRToBpZGr4wFmHQgD2NdD08RgXMBD1t1YAc5zFBOqUN4DOZLGAFuUVoGtYQMI78B4HGHe8A90aBoDcgTsAYS9soI0BtMIGdmsFV7t4FxlhnwMfJ1nAO8noJQj+FuDY7LIxb0AXt5sCwxPg2K1dJpqBmmgCjMde7T6Tjb0EvE5v/yVG0a9g0deLeWwmc5UN+FRx9vTZzcujVW6OXmTMXF8fHszn8+cHj7NBnyp6ueajOB9PLQP/W/4saQOZZeWhJuWDAbkZY8sSyFdh9VVUKQhwHmd4fguYqqwlsoYPnDM8s70C6WfaCqRZDRe4t1l+AeQHtvpmJDwgN2FQwMet+uygjAU0eRQgqdsAO8UBevsIgElZbqD1NlTzGEBuggRUFhGHe/Vu4EsccYWYlIwC5G8YQJPxAXzYRcDPJVKnWJvMeN7kIc4m9y5Cvk3BZ88HLa3htYpZyK0C5JDNrjwk1ezMOxXZrlVS7RqAC1jSNnEWA0ciNnDgRk+QI3PIEhqZ5tDfn8X526wAoEiaKsOo1bIS9GWIcv/B6eW7VZ5cnt7+XJZgym7PFK6AcqL/+vNmnYe/FeAvzkBJ50TOGjFJ9H1RqchthCwA64thAkplszxhoJ/kwgUQCyAKNIohAwXEFSILcBHgApx8QgmjkO8iTicHoA9yg+RJRmyB7wU4AbBXb9b/0Sf6er+0uc1ihfD3g69F0bIPolhRCAOgryfFhWH+LRYw6rvO5MJo2ZKSRb0BAHnAPA/fRyO9UiiF+JFIURSAneg7WgREQAT8F8Bfix/LlFwiU4MAAAAASUVORK5CYII=",
           "sha256": "a9a7cb160eeb9d003b5d28671ab29022684cbe5337d32068f9c60b56fec3a5f1",
@@ -2167,17 +2048,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "aa0a93b00a7a819d69466ed59bd5b7c550ad5a3f49240922973ce78590cc3092",
@@ -2203,19 +2073,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
-        "purposes": [
-          "storage"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": true,
-          "regionConfirmed": true,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
           "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
@@ -2241,19 +2098,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "notes",
-        "purposes": [
-          "notes"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T16:34:26Z"
-        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+/v4Bpi0BtjIBxzbh4eECmSnb29sCiSIAAAAB0zkry1UT10fN6dRUrGlJyGn///9y1our4rhzxohQ1XK25sJBs16V2aYp1Vbc3NwttU862GNCqlza2tqt1rfc3NwTyEPe7eFPtWnX8N0sl0UsqUzi4uI34mSE2Zlnunuqqqo9zWJCmVaU4acZuEJ/f3+Ex5SYzaW/v7/MzMzd3d3c8eHi4uLh4eFkqnNvtoBh1H6Du48erEIX4E0k4lapzrHc3Nzi4uLj4+Mkkz5iy30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwu9c8AAAAYHRSTlP+/////v/+/wD///////8C///////////L////b/85////////yv///wP/////BP//BAWM/2GL//////////9fP0D//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtAhv8AAADiklEQVR42s3aiXKqMBgF4B9QtBgwiKJoEaxarUv3fe+97/9ON0ErYCskkMzcM9PO1NHzkYBbE6hHOSM/n/c9XUh691/bShKIfjfr53dTvSIs+vTunJTugGZ9OKW3g6DQrulwI0DUfyywfWccRwIBrki/LrifCDoRrihAj18HCdGjMQCZfzn9VBjWz6B53atU5ACVSu+6CfQEA8gSPsgU9aT1E6HXhKEuE9CHcFORCVRugH2GbIwdB7uIb46AdYZcp//2+tpodPsY8cwRK4BP3xpHURoNqy0eeDrd1keEYYsGcLKfCN2VTYJuRQF7/XSaujSOM2uLAH70x06j67ilAdKvHR1MNsEC0P6sEOIJlQBwf9t/lEEs2oWB2Xe/FgSHR3Hwws0F4n4DuRq/kAfE/ZoFbSNDCAxUAHDjfu0C7CxACyx+INnvoRxACzAv4DqJ65McXw6g/TZJWYDtdOMHr8l1uMoBtL9cQKpfbdEzHmjcQzgMuAtD3cW7oDc5eYCG2QE0x61dNu+S7b6mpurUvXpVs0q8o5HXjK6aE22NSgCYDCA3bmHAdvpBfn90LTABqB3Htl3s9LsqSyw2wCd9RiqBypYRE4AYD7cwgA1VLuAEhYEOE2Cp/w+gKEohQGGsH7Vac0/hBjA9sNyoiudHd7+cxPdnA9w1C6BMwu+nzQsngDwmwN89oMUJgMUE2CeboJPVmhOYMZ0Ew9rG6aucAOMckctHUdPHwggkJpUzrADrEAoD4MoGYCQbgE4hYMAOoIlkANBAMgAwrypKlSucAHmd5CU4AQhbk6pUgBCX5lgqQM+2f/E4Mn9kMBEFHPyO7c/HUgE6OHMPMAUD9FKWDMAoBYzEA3bqiTIXD4CXBC6EAGH6E0IS8AUA7ZnlHgRQWQCtnhbexEv8MxAZ1dqufwzlABs7hlet1aqJb0rYq2VcRDwAou0KqSdRWt9jWC02t9BUq5dlgLAzibsUy0W3cGLjhVKLgXFYaorcuJ+UvXjkM100YXEeodw56KTa6NSn/q79QSUBf69wP89QEoBWpjCA0gCYGf1jJAAIB4f7dRAAQHhoDEsEQgCAx1/7HyogCgD/5zQt3wWs4SQJc5ycfPM9e/2gyEJg6D8/mMvl0nx49sO8ZS7pC3XSlxqlL5bWP2Qu9x7X5S9Yn8ldcm/K3zQgf9uD/I0b8reeyN88s9mr8yVu+89nvP3nH1lYaJImSUUfAAAAAElFTkSuQmCC",
           "sha256": "10107eb7cae0a1e3e14a9063ccb4a23f889a5c585e39e71cb243407007231c6f",
@@ -2321,6 +2165,17 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX6uQACAgL+xQAXFAazhQCMaADUnQBGNAEsIQJmTAH8/Pj8xizZogNxc3QxMzPlqgRKTE6XmJjY2Nj92W1yVgf95JH99dNSUlG4uLYpKy3s7e6ieAT6zEn+01MjGwSXcglYQwb86a/z6s24vMLAjgHKxrn/8LVnaGh7cVGRezeGh4eZkXWVmaGlkFPSqjbYxpHt1ZHAv7zsuStDPSdTRyNeVjlsXjB/aSeriSW0lDq9rX26sZLCmyrHqVLBq2ffu1Xbv2zKysnjuEDvzWn/0Dvs3rfg39yfoJ+foKCvr68AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwqRdYAAAAYHRSTlP//////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAABTdyhxAAACWUlEQVR42u2Z6XKbMBSFKSCWgoFgJeDgAMGmtuM1zr5vTdq+/wv1IoYs06klEZJpGn0/bP/x+ewrwcBBkgQCwX+KXJM3jmdWfHxBTcs/tIdc17VtW+MEvgJfZMqH7L5agz5YXNrcSb6qRgniJolUlRj+vh6lQFMjhDA2OcEYoUjVVgnkSoCwmercpCZGlUBeIbD7ETJ13eBG100U9W2KQJZsNcGpbsQKJ7GhpzhRbUmmChAu8r9wUhhgRnQBLIGpG9z5YDBgRqomBEIgBEIgBEIgBELwWkEsRvSuV3Z/Xpsa1bWp1IRAUTodh9CpPjh7+xhFWjOCIt7zAsArIG/BweFRQr8BYRIoEB8MBq0XDIej0fHqWyhWAczHC1o7axWTCbyMx9Ppyfnqm0BmQceB/B9hmOe7YRj2ej14PTu9vJjNXKkZgTfY+Rne+P6DX5HP59dXt0upGYEDgl83/uZXYLMgy+4Xi7uuZTUlCFprYZlfspFtr7e3QCA3J9j1n+VvfFsHAeQ3KMgfnglI/ndaft1/wPr7udfgMR/mT/LZOii2bfq0yGR9212LpY+qI6jyLalpQY8Iyvkw5vMcaK0JEZD8LdZ8fsFjvty8ANYgK/YnmQ9X48shyIr9zzwfbkF+v10eX9KbCMZn8wVvPmshpRhOMByfzhdtznzWSi029g6G08vrO3J+4xXQSsG4aP/2D0fTi6sux/7hqzVTfDQ6md1aDOfPWsUsxig5Pp8tl9z5rNVyEpUVslSz0aeX49QS/HX1PunxP/aTrnd5ivbJBXSFeBgrEHw2fgMwfWODGAATxwAAAABJRU5ErkJggg==",
           "sha256": "0babf2964811511a45fd47a1e0036d7a4b9f78b6d6dd700309990821d7dc85f6",
@@ -2344,7 +2199,18 @@
         "officialHost": "webtoon.kakao.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        }
       },
       {
         "key": "kakao",
@@ -2359,7 +2225,18 @@
         "officialHost": "www.kakaocorp.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        }
       },
       {
         "key": "spotify",
@@ -2375,6 +2252,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
+        "purposes": [
+          "music"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": true,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUe12D+/v4W1Vol2GWQ67Br5Ja08crK9dlX4Yja+ORF3XtN3oF756Ki7r2n78AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfIeZaAAAAYHRSTlP///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB60ErgAAADaUlEQVR42u1Z25arIAwVQsJF7f9/7gSwrTc0oH05xzx0Os6abEjCZid23WOPPfZfGQBsvt3oW6+suxEkeQcIvWPD+BHSo5swoGPvzpBamB3RMcgNCLxQN3q1Z9YwxMXV8xqHfe/ZqI+RuhB7GNSJRQhoXj5adW4cKGjzDy8lMo8tmwDtvJJayyb0oCrM1iJobVSV+b4KQXeV/tlcDYKu91+DAE3+lQpSBI1N/pUHLVt/rxqNRAAabCuAMoIgtSYg23mx8gG+4F9Rp38YoGio6yvIkzEGke9K/uCvZC9U0nID7NpFBbG57qFHU4AZjrMw2wAN4eNyxVPZ4kXtd7ZwnGL7rbioJOBYamjAcZuFg3/SYRbLhXeYbKOWOkBanTaQnAFaeJ5nYQGU/xRISEmzFFv9jcPkNIT04/NknpWeJDFasJB7ZxLNSNZaz/n0nr/QyDUblslnVPdZ2+sgQvNDgMBlYkv3Mldwn+XjO+VBcBRqaYgw6cppdXSahBaaGBHyLkC/TulCg29gHzukYp2tzujTU7BxQmyjIdrNiY8QYE4pdRfAGuxTSX5oCNwwbkI5Gr8QSTIAdv5tbBY0xBSxbhgEjLq+jCk3NqWGqgtYwhACuOx9QRXdmyfSMwjmCkDQX99vrps3gLl1M+0AmJ0Fh4OJVcQswXfbgH0manj3b0YOsEoyQtjNJdNEyv6nyyJpkkPN+TIpQrlT8WstfwNALLOpkV1LqaJ20VBNE5guPk0rfXejJrKxFFCsjXa7Pm8py6LeRV1Em2SQtFGAjeqyWRitZZEzh1stXjgbXYpfHvqqivwoDEUuooMbbZmEUc9dzmgv6xVnqrXdqt7GGQHFQQ66PkzckTlklyeOJPw6Ri6x/2t5y3DGw8Szem8YcNjmzKRjTrItHeN0xmCvnz5UvyDv7/OwCLaH81i/V937iY36yjatbkQxgLNVG2iVLgIeKp/mOmoS9OKaLgAI5hVQT9p1jfiVIFnpsKK11xePW7rXrxLwSUNLolE+8mpCwJqRWgMC1k2xocD194wEp6E+VtVny+g3WDmttkyvJbP3LPBa3yLES2s8n4yDvvIC4WQEH91ffM8StUOhZP0LL79jmQLlhs3oKXeI3R3vobI+gdTpZGOBBKUO8cKbtB++qXtvpPDLY4899s/bHzxEH50cjlX6AAAAAElFTkSuQmCC",
           "sha256": "a45ea797cca00106771ecee72f59337437bcdfdc71c4967008a69b7a37f91540",
@@ -2400,6 +2290,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
+        "purposes": [
+          "music"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "5a05c5ed2bdefcf9b87998bcf3ba623e97024e54c57e11292bafe1637e294bb6",
@@ -2425,6 +2328,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
+        "purposes": [
+          "music"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": true,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "e4057449fe48ad2fd5f55056523900292629714c088db49f2f29c171af62e72a",
@@ -2475,6 +2391,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
+        "purposes": [
+          "music"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "7d92324fd3c83ada20ef03f82c2277f24ec05d0bedda6558093795dc8dc14af5",
@@ -2499,7 +2428,18 @@
         "officialHost": "www.duolingo.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        }
       },
       {
         "key": "discovered-f6d59d44d511",
@@ -2533,31 +2473,31 @@
             "purpose": "assistant",
             "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-30T14:15:56Z"
+            "checkedAt": "2026-10-30T17:00:21Z"
           },
           {
             "purpose": "image",
             "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-30T14:15:56Z"
+            "checkedAt": "2026-10-30T17:00:21Z"
           },
           {
             "purpose": "coding",
             "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-30T14:15:56Z"
+            "checkedAt": "2026-10-30T17:00:21Z"
           },
           {
             "purpose": "music_creation",
             "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-30T14:15:56Z"
+            "checkedAt": "2026-10-30T17:00:21Z"
           },
           {
             "purpose": "appbuilder",
             "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
             "source": "https://deepai.org/pricing",
-            "checkedAt": "2026-10-30T14:15:56Z"
+            "checkedAt": "2026-10-30T17:00:21Z"
           }
         ],
         "verification": {
@@ -2568,7 +2508,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": true,
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         "icon": {
           "data": "data:image/png;base64,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",
@@ -2611,7 +2551,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         "verifiedAt": "2026-10-28T12:06:03Z",
         "icon": {
@@ -2655,7 +2595,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         "verifiedAt": "2026-10-28T12:17:40Z",
         "icon": {
@@ -2697,7 +2637,7 @@
           "billingTerms": true,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         "verifiedAt": "2026-10-28T16:06:54Z",
         "icon": {
@@ -2739,7 +2679,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         "verifiedAt": "2026-10-28T20:58:22Z",
         "icon": {
@@ -3143,6 +3083,47 @@
           "width": 96,
           "height": 96,
           "normalizedAt": "2026-10-30T11:45:35Z"
+        }
+      },
+      {
+        "key": "discovered-f22df8286ea6",
+        "name": "Twig AI",
+        "category": "AI",
+        "aliases": [
+          "Twig AI"
+        ],
+        "officialUrl": "https://www.twig.so/",
+        "officialHost": "www.twig.so",
+        "origin": "discovered",
+        "status": "verified",
+        "description": "Sera is an AI receptionist: she answers every call, text and web chat 24/7, qualifies the caller, and books them with your team.",
+        "discoveredFrom": "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+        "purpose": "ai_unspecified",
+        "identityEvidence": {
+          "organizationName": "Twig AI",
+          "organizationUrl": "https://www.twig.so",
+          "method": "referring_site_and_first_party_structured_identity"
+        },
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:00:21Z"
+        },
+        "verifiedAt": "2026-10-30T17:00:21Z",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAAAAD8/PwAAAAAAAAAAAAAAAAAAAAAAADm5uYWFhYjIyObm5u5ublJSUl5eXlWVlZlZWX6+vrFxcWHh4erq6vX19cWFhY5OTn///83NzcVFRXq6ur///8xMTEwMDBISEhQUFB3d3cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLlN+WAAAAYHRSTlMA/v6WT89rsC7+/v/////+/v/C/////xj/tBAv0QEksQcTDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPmCswAAADaUlEQVR42r1a65qjIAwtcgmgVh1r253Z2dv7P+RWRatWIKiUnzNfc0wOSQ6B0wm3mKDAiVkcqGCn4xajo+np4vQIEClWjQ8LhNz37UC8C7b7sf7xIGd8tLESB5onhI7Bgz0QzBp6OqN/hAgMlCP21OIoDfl8F6nUuhPQTlASBPCMJ84JyUkowCNQhgm5MzyOzzRxkrvtW+MgUEQIshlgiC3bad/FJPgQGNkHYPYf22XfvRepi2lJ9gMYhPX/8SMAegQeWH5CAHo7dCsBmHrA14kmhwHIVRrgOIA+GHRjgFAlE16DxLHmtQZERX7ZSYgSoe9Vll+VUkX7Y+5WXmLpgs96WuUqMesyUV7StZM42oEyTybrMlN3FuHF5i64GNCX4dtVnRVVef790EUPYfQkXXpdYAjzeXHXNl0E0uOCPQfKa2e9rlKLLjI/FesugKeK6qYz35wdeSCppduLZzrbKD530cnvnkQzEGItF4SL4qI1fy0Rmdw3Y1hJZ3BEKGvtZxpXKsRKE2BDjNYj1G39Cl2LOicWRAz7CGz21T1YeMnlX6iFgixRSZ2GVVNYK3DcQoF+rB3lekZCQCcIPQf0QROhAMC+/uIAeJcJEGg/TR/RA/EPeUyi+F7WGi+6tqDyIiWIYx/tUg0PoLNJV8g0fHrPqd02Qts/q2nbSdSZ/0JsIzxAlSxXyW+YfYr9/uR1neE4AK1WAH56mJYBAE9+62YUGD8EOQogHSVFW0F0YQBObhcCAIqB1xkjHyfKD+KgXkqiqgdgxA+ASrQ+6mpSYa8dwM158O4TDfAU5AvWP06fzlNxXyooHqCZ/OnSAXw7AfpiJ/Z48McJ0JdrFsABCePAdP2AXVTMK4dnF0mjW3hAHgw6I1WIPDBNP4TlQSmZyu3J5EG2sKBadG2apsbVolHAR6qmo3TE5XK52g++PREC9BRqQ0d7ynfkGKd86clf3uFZ2BhhqSpuXtUFoXOEtKixumh+jg0QXzpN0/Ze4hOh6njQsHGiTbHjXbFhWIRV14tRQpALGADxcu7kxwK8ngmjD6SOH6nBu4eC8ceaqMazZzAbf7Qcfzgefbwf/4Ii/hVL/Eui+Ndc8S/q4l81xr8sfcN1b/wLa/yVO2y9co//aOANzx7e8HAD9fTkiOctUR/PjCBbn//8B/YlJ7DMOTmMAAAAAElFTkSuQmCC",
+          "sha256": "05bc0416b63f641240df271d77c9e5ce9d9b95f0684d1c8334c0b26bddfffd32",
+          "source": "https://www.twig.so/apple-icon.png?0ae67a3e0a3804d7",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T17:00:21Z",
+          "width": 96,
+          "height": 96
         }
       }
     ]
@@ -3825,20 +3806,7 @@
       "officialHost": "www.expressvpn.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "vpn",
-      "purposes": [
-        "vpn"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      }
+      "purpose": "vpn"
     },
     {
       "key": "protonvpn",
@@ -3855,19 +3823,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "vpn",
-      "purposes": [
-        "vpn"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "865577faae00410929097411e95122cf5f974c615c467d5204f8af246261397d",
@@ -3898,19 +3853,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "office",
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": true,
-        "regionConfirmed": true,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
         "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
@@ -3935,20 +3877,7 @@
       "officialHost": "www.notion.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "notes",
-      "purposes": [
-        "notes"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      }
+      "purpose": "notes"
     },
     {
       "key": "icloud",
@@ -3964,19 +3893,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX9/f0AAAAcHB7n5+n///8jIyUeHiDX19nLy9DJycq+vr7Ly8/Ly8/Y2NvNzdLV1djV1dnHx8hGRkhnZ2jU1NR/f392dneHh4jR0dYMDA5WVle7u8be3uGqqqo1NTfT09bc3OCnp6iXl5jOztK1tbXMzNHR0dfm5v/j4+Xc3OA+PkEAAP9eXmGZmZm/v//JybvU1OJ/f4C/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADtshoCAAAAYHRSTlP+AP/7Af7/824KBjBMsY+OzP7+/gcC/f11//4X9AX/La7+/dH+pksK19D+Af0FBBMk//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAfYMAAAAFY0lEQVR42r1aiXajOgy1sdl3CPuUBLK1nc7S+f+PezIkLWmLZZKX6szktNTRRbJ8LckmVCrcWa34+NPa88oyLEPLsjzPPT1crRwu10Bk2u3xy43rgdbQ3/ggEfzfhIGAcZuLYUsBhm9lD417CP3IZIyRicCvZuSHB7d5yN4GLwPgtgOfrrXfflQ+BdnuLReGOfNGzADwh0F74D9+qXuC8ugHA8YDX2jBynZDE9F+wjBD114tsSBzflF+2JtMSb/wlbk/cPrLyZQA+G/hndJX1H7C8Evhp98cB4Ahme0GJlkoZuDa2Rfh9AkA4mEdbE22FAAiKlhD7CEAHN7AC3+Qq+RH6I0apBY4rn+lfkDwXUdqAXfo0Yqu1g8IkXWkl+xEpu7h1LaeGLlB2JNlD4q+BIDVVZrkRjHL1UUskQk78KNlslsBmGkd+YQ33gEA2IrI/yCRNSj7AACQthepvz9js0TCIs9+99IZwPlJvQXxExdJW7DZWPLoT+cSgNsPa3X2Mfu6raqUzTPT+uG8Q5wBqBM8KuvPdU3TjGJ+xGPg0CkAqKfrrbL+F6FfazvJmO2aniAGANi+1PlTvL8O/+pYzq2D2hOAQ1fqK6AH5YZe6QWTr4YVdc4AWeZ4vrKDUk0AaM+xfJzvOVl2ArDpn0A5groEALSq7bFsIPhD7TMAd5UpiA0RpMkdNJrq8hGAwyIolZcYqzVD05Ie/8KPEpYCBwCYCu9JnSISTU/yncrQJ0+Ej7DAxmfgjXlYUecdG7kISWtYYAsLOM3WWAjFXfFa9F08QomPXZHneVF00rnz1xnlxKGNJSUJUPaStCDJS7ETClncp0mr6zo8SntJtD5aDXWITZu9dMn0iaGdJcm7risSvXp7oqfz88H2DbXJiroyFopTXXsXA14bXl2byvM8J21duiLcPkgcGYuwB5UGyKC5qqoBxzDeHrX97FI42JzQJpz3EIP3N/QLCwa06RNNy2f3trCBMHXnAVjfVoZmTB1iGJe/AvPls/PMQhfCVLIT/xt4RyKGmOV5D8PuDC6y5gf0gjhlAICeSrcFC1xksfkIQg0wkk66hgDgOA/QJ5qGGICwKrOO5O8sEQ3MjAAg2w4L/hIvlMSoIQMQf6wRmgw94m2k1G/IQyhHADYeKWUAOgLQYhvbxiKlf2eAILoBAHfRjRboKQIQhSS8wQI8igDA8q+PIr3C0i9wkbW5dh0orGQEAF3JIkPaYQDzCw3nIpRNxUKbpwoS1wibYvvBQBXzZAc+wgCGmZbYIMhOQteiFDBQAChFOhldSzYcsksMHAGKkYRJNhzZlmm+qphgzAOILVO26ZN/baUb6CTMMtK46buyvOhFM/BIrXeytEWaeJ0KJjlAlRNZ4iVPHdkrnhk976SpI5L87pDVDPXsfDk4JL9I+s56XTrPulab8vQdK0BMkb/rF8nve/YLEyDJ3scCBC2hRH43apwm1cbpQy+wEgovAsU0iLeeVB5jgSA6FoWJFYF4GcsgVoeaqYIKtk7TtG61anyg56ZKGYsW4l09+h5KtNg0zV1Rt+ODPFYoxFVaCXGR1mnex+y98gRLhoIZbyUoNUNYvIsvGj4sjmNTtRmyqJ2jKtN2zrKGlGp7dtKQWtZSUz2umLbUljUFVeRDU3BhWxOXj23NpY1Z/MjoU2N2aWsZOab43Fpe3ByXvf+XzfG7t/e/4YDi7kcs9z8kuvsx1zcc1H3LUeOdD0u/4bj37gfW9z9yP0eT7ZZq3MSi0rWda649NJ7atQevuebaw3ihRPHiBl98ceOLqyef/H7j1ZOBOSaXZ4Jwc748Az+I2zNvl2ec6y7PSK//rJWv//wH/uhkwGw9q/wAAAAASUVORK5CYII=",
         "sha256": "e4057449fe48ad2fd5f55056523900292629714c088db49f2f29c171af62e72a",
@@ -4002,19 +3918,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUpjp0gduNSddIunmn1Ny/pWS3opQn/yQAQaOEccubqUh8wpVVsZ6+OYZXtUizPS1D8xAESomIyplIFqf8rherrSDD0jxL9xgH+xgMkeucyqzgrhPsi3W4A//9VqlX7PCIAAP8OY6ojhbZJeNyuZWa0VW3OS0/CUF0AfwA4sTwiiLIig7t/AAB/fwBfX79/qqpfgLOqAAC6U2aLZJ2qqgCqpGDsPzD/VVX1mRDKhkQAAAAreuv6uQMzplPpQjQzg/gve/X+xQIse+0yplH//wAAf3/8uQE0o0gddew/fz8Ge/g3slYqeOzxeB0wpk75uQP6ugL6uwL/AAD/fwD5ugPsQjH7uQPxPSzoQTT6ugIyp1H7qgAA/wDoQjMxplGsVXFnvt5LAAAAYHRSTlPV1t7bFeQUFxNyGXPa5IrlWAqqF+tO1ovcqgtuBAED7QEGthMS53e7Av8eXwICGAapA2hWAy1EA6a6AP38+/v9EP13iwECDg76BAj+m94uj8+wAQJS0C/4cW3TBAGyUtD6sOS1AAADk0lEQVR42u3X2VLiQBQG4KBAEBWVcV/GfZx9X08SYqSNjoxkDwQE3/8tpjugQhaqaLq94lyAVlHny+m/ExoBxi7UzuLX7M9mp9MphX8WR3xaGL+/DdAuNpuljud5nVKziA2bJYAJfa1TeazOWtGG98yAYh4gX/IqA+U1i/DlFxsAOQBivpSrVIaFLGQZAfj6l39H+uNVyqanIIzZPr+8sZ5rRIVm1maUgRiY5nolBnhrDEJ2dADd0OT1XByoTA6QeMHfkEMgXs2JQ3YQAt/SMHDrcQDaIl4e19JCoJIEnEwEIEzoron7pwGvXkwCIByvb4T9uQC4vej2+6cA3tdJABuQa8n9SgRyZ9+oAUd0wA5MWRsBNJZmds7pALw38RItmw/tE4FGY1Hd+UgJtBG5e5/6J05wP6PuHNMATp7cvYa2OQpokP7qBc0SkQek7hvyQPukCXD/VSoA6TbogaUN9Y8C+5VFfP1UE5Dvdj8wI/0jQGNpUVJViQawycPNkGM1BDSWFiRVpZugDYDvruj1DwPe/YKq0gKgi5Ysj5wgR7bPjEQL+In9B4ClMF7qJdIDWRsBNHr9JfolIgGMmuB04PKpAMMcAezvn5K1lx5KlcYHTFNOySDXi1caKBpAllMBz1uQhosG0FKB27MFaXVyIH2CP/julXgBmrZpfJZiRQNYiSFrm8s/ttgAQeJ9YLnt839sANGIPeg02XBP4IYRAK4c/aYxDREO9GNWQORhhPsHOoIDxGqJdOQbm5rWP87hN8vFJ7z8J2AFtMEWjYHjluHr+JR0c84MICcu392wyHY1rY3AR8AWwO0+kEOdGxiGQVYH9CIAU6AXRa8e/mULIPKz9RFC7IHwp5+DvreRg7hMEA5BCAfZvIBoTYEpMAWeCdjiCewVoHCR4QkcwuG7LY7A5V+4qs4KXIHtamtWiB9+bxhOoCiKkIkCBbaAImBC5QnUZo8yXAFFwUFccwVqrafdxAUIh8hc92vuhgdAhAxXoKYIfAEyxFGGK1DrB8FvAkVp4XuOKxBmPVfgCbyZFebe8gRwEvMrfIFatc55gikwBabAMwDzV+xOdvOtBKALbIC7S9juluMjtFgBxMBrVIsC6RGMDVwCdGNAKz2CsQH83K/HRqhereyym+DlLhFqTwEr5W4IM8oAXsLd8AzV+iXcsQuZ9Nqtd6u9zdoqV7v1PXjNEiAz4CDK/Xjrd3hjjfjwf4lZQ0iC0v1SAAAAAElFTkSuQmCC",
         "sha256": "99e63fa068ef873c96532e7981bc9be0371a5a0576b920e54a6e399ed6bd94f8",
@@ -4042,19 +3945,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "office",
-      "purposes": [
-        "office"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUlkPX7VVn+nxT/YDFexBYgevn/ahygyALozwQWmNb9SEvuzwIIrJkTxl/yywX7qQj9SUwqiPUriPQQul8IqKcRulzsygQQs2EK8A3/WzJfswv/XDEA//8QuV5Wp/z+pw74OTgIpqUIqKJkcvJn1Q7/qAwptymstAA1wzF/fwBawRb8G2mkxgKf0QIuvjWcxQL/UUZYwRYAAP8Af38wvTIH2V8AfwUyvjD///8JcLeiaJ3/AP+sWWMJwqF/f39ybLhHvR8A3ay/P3T/qlUxwC9q/2oAP785wCp/AP9KvyBFvyR///+qAACDvwvabZH/Vf8AAAAuh/z9SEn4zAcTu1YMuWkxk/381Qj/AAAuhfwuhfz//wAuhvsIpa39R0n/Zy2fu7yWAAAAYHRSTlMXFfXy9wcQ9OT1ohvv/6QTYKtqoxTUYRUFXwuiAWMDnwWeXQUUXRMI+AKiBaAY6V//XwECXhICmAEECQED/wIGWwcFA7MCBHcCpOECA0QHAwD4+ff3+f79AYvLAU770vnBu4YKAAAJc0lEQVR42rWai1/ayhLHEzURD5QI5REjKkoMIqBVfB6t7WnPufec+4ylajS0/f//izszu5vsJougn9tpSwHt75t57MwEa4SyxaaNFonXbdtcXf0F7DvYF8nwNb6/umqa5n/Et0dmu93+V6RIGsqryEZC20707bVZACS02wJgmn1VPwPg3xfBb0LZa2ta/SwBdNtR8o+nAKI4+VLUZqFaAxP6GoAgcIZ5kWppAHTJIjR9k6mvr69rr1/2QWKkIYg0AMe2nZieXvVJfh1t8bteXvFCROq/SbLN6BlAn4KD4mRfZhpRZB/0gLjPCs3m+ovz6hMjKSjzJsoDIjvmL/u2cvnv3r37MjeBO2G2IwLwRBik//kzJ5g8+otCf14AxUnUU3RxEYUXN1cpwLZZjZri8n/8eFGE1DCxTJjXfQXAQsWi/wPtlYQcIKIjAM/jJLs/ZMDLCBoAXDskBcvUUfRfA0g8wPwKgGODB/DUAZP1s4R3szMuHDBvsIpEkm2HdSHQ393dwvLRE+bR/4UXkSmXqcMaENPfWljUEeaKFUtx37yKwuu2dNAYwOb6CwsyQEWI7qNtTd95CZFoHhAXiw7TzxIEYp01VtlkkNDnBWQqgBisiA4sLMiExbRcUR0O+KpsCYJSo+iHNwrAibtFyQFGEMb1cTbYtikZY3xX89vvs4mWnQcZfYlADqA+lUdfqNucIQhcH2X77XZ+6LMKWtAAFrk+iF9l5rYgsKGT5LetAxRFBckA9siCb6fTMDUWJzHQxHeYeg9UfdDmHCYPpgFciVQoA7kv5VcAokyAUj9A32Z2EWpdkC0/7wUAHVjQA9bYohE72BFVw/cv2jAiaU5eaDYiDoAz7DQAMB7nABAfscjEsO6hWJtX0qfrTzcZpU/m9fWvnRaYRQZPjsHgHBQbjXJh/JAlbKG+nW6tbV6pv5J9+GC11Cv9AG92OkZilrXZAQ4HjMcPDypga2sXEyCvrVCCJopsbnY6FkjIhJZhdTokaDAHLMMihuEUi41yGfRVAOg7sj7LX3TxwSIA6lsGxoMorZaRCFsJwKILKaIDDCATtnZ3HQdLmNZ5lfQiMxoNTMHDQ4YADtAegPptWMb0JTInoIw5JsBYMCBCxTABmMli9hpAuYyAMddnDMwAB0AVv/7yEUD6OoAjAK+Pfx7A4oT6uw5PLwccs2/vGFiIcxqU0qZlcP0xOUCZKJRJ34E9En4T4Njixwr/3aRancxjHKMHUOQ/Q3IZwPqb1eGASfWxUqk8zja8DAIUCmkKOKBBgDDGoxXj0gRH9J8MMKlWnlZWVp6eKpWnKca/UCHExGD6KWCMgKKDhRnTfQkCNiGaHPD4dHt/f387hzGEBlBGALR3kuaASwGoVkB/ZQbhHg0BQDBIXsoBABoAwAYa42JM96SpBwiAEN3PNu6CIYqfVykQEBDTmHHEAc4CmAdzAB5TAHOgQIAiAxT1gNv7mUngIdIBCgwQsn0yD3hRkp8DQG6fAdy+AJD2IExACoCV9f/jwTRAL/65IYJT9pMBPyvJvEydaWX6oiQ/ygdtrBw0vPa4i4AoD5jTMq0iIVAvoixgq4BOBBRcQjKAp/maXVU0uwQw5oCYNTu8v0KAlQAqIJ3v0TO7qQQoiBixpZQARgKAeYPNPmsaBAeUZYIEKPph6IZhz0FAKx2ZQNCZhiAAfGTKACQMh67n+XGv2+3hTO6wqQ8TfwIzOTeUqxoCAiYTdSaPZYDveV7PcxAALvAlhHaK/GJBhCzgUQDK8lAeJ4Re1+u5vSIBhPGtlv7gA7Fwk8kScBywua9ZvAAgTnOYAUxdrwwVgGeRRUhaHdOuV0gB3rDrnbnuLEAHJpHiAAeAf3z5lQDYkZDAAZ4bnPq9GQxrogPQXsTW93S7LjArs8Efer4XBMEf/vMAK9tCCIAOyDcgD5I+AA67pwgodt0z15+ahxE+1AzmwL00k6FKAWAhgN1CYaNO9QvlweHQH3azei1cZw1eOR36eOHPDtXQ063UxjnAgJtkAjQ4AJWXlwmwPBgcHg670uo+ap4FQbNZq4F8DX4ZfF29sngJycsGAh45QNzGPjD5ZSLAIyMk+k33tIlWE2ZYVwJQrVRWVlZW1IXvCXMMgBjvY8uFRF2yweG/E0ALtIOmbLWa6B4Tro8mNwoGgBtJDljO2eDI96ildqHhuZBsYfjMurT4Eaum+ikBIjTBFkwf50CMlnW2vw8E3w98T3cTCHnGUFWrFQ2AOWDBfTJ94tUoDzT6S0tAODrCpudrix/kd3Z2tmV9ngfqpIZ13OlwQGMw0AGAsH90cuK6OoLB5Le3S2AS4J4HCKot7FzQB1JAOByoyuwREefnJydBkD/JdPkk/w1NATyxU7zJAUU8C6kLS4rtHQBhY6N52jzlhcoMnqM+l//2raQA8Aw0sQl2jG43duAsFBMXlrKAg7dvN9BOmzIA35H0FYAoUbw1MoZd/FwWAIKQA9Trb9E2MobvlVKARBCHGAGG0fXYljg8ZEHK6u/V61/rnKEavHsnE9I8QAmJPYoDgNA9JEJO/81XyeqJ3TErKQShX6kKDxJAGA+HRFD1Dw7qifgbNPibS8MLTsi6wPStY/ysCgDeMHR7Lo4uIOzva/XfSPaVq5NlXJD0jc6lZbRwCwEP3N5ZGAZD3z86Ugk6AKhKTwkg+VAS+kZ4iR/qtSzDj0PoXRAk3/c9lZAGSNGXHeCEtFhL26gPhzC0ajUCgLTrBWf4mCHs7UkZSOwuYyWFUNre3oFhdDmikw5JOOYADzfQsCVHaQ8q9OtMQEkGlFAfrx4/YGKAkAE8BggDFwl/7S/9A/X3ROFMv34ZgPLbOzu139iEkgE9T6xvQPj48SM4kegrjDsd4P3790jg8jUOOG7VRgIABDFQXBe6/8ej8/PfZcCbqfp3pI8AjA7p18SQZZ/ZJj+wdsMz+iuAVcs7+fv5+cHBQSZAd3daAjN++Swuo1Yr9xPxM0hElxzpwS53cnL++0G2iJ4DMP0mBce6NFqjHAAzPWSRcgMknJyf85ZWr08h4JcotTw8zTD55DDvAWQ6mYsuR2wkbbNez/lC78JXSZzC0+RTD49YS/M/Q+JkKo7cABBuU7T9t1kC12dzgue21jwN1fxO/a8noxEuQX+4Ac0tPaEujSEszVOoyZFuA1cBLiY4CESGmgphGgCGtbjyS6N2mf3JiPKqh/3Ic4/DHCEDEAFC/WYaWuhy1Ick+x997Zq4thYMAwAAAABJRU5ErkJggg==",
         "sha256": "17064ab7e90cd451fe91d8bb1026d97f8c6e7bde100c3b1c41853e13bdbde491",
@@ -4081,19 +3971,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "336363b7a7028c7634841002d47a2c5d628ff5cb16bf9a935266f5db1ac53f43",
@@ -4121,17 +3998,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXpEAD+/PzoCADrJRb86ukAAAD4tbDsNyrxZlz72NXuRTn6ycb7AQDqEgDwVUn2l5Dya2Lzd273qqXpDgDrEAD0hHv3o53rDwDrEADYAADmDQDqDgD0iYLqEAD5wr7mDQDlDgDpEQDlFADsLCHwTkLaEgDoEACqAAD74d///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZA3aNAAAAYHRSTlP9//3+/wD//v///v8FFf7/////qdH//9FaBkB7/5j/N5N6MP7/DqwD/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgA2RiAAADZUlEQVR42u1a2ZabMAx1MMGYLayBkHUyS9v//8HaUGa8cQpYfst9mCXJ0bV8JVsKQvv9PkkS9jN9qxHyPGQJbqF+S7/NIvYHt54+uyscwbV7ptxswgk40Z/+WtXWtgWWunq7jz6ggai/ImjUj34wjU5sf7ovBA+v6pgSJ3T6lfYVcoKq/0wYQdJdPTcE3qNPT2gMTzdozymLomeFnKF67lHate4I2i5FZ4cOMBfOqK1dEtQt8pBTODY/HU5OrTsneOGFn3BQAZyOJgIPNJwxiQQQDBvinofzMhZQ5hiYgJQ7CSUBJohimSDOAAnYgYVCKhPQAsOpzNb6cfBlAv+YwanAJG6UHWIuXCAJVIk5AgJIEMU6AYWSmVl5L6hO4BcERma2zuzoGwjKDCabucQGB+BkNksMmM2el8VmgjgbctBaYlxQM4HfEHsVmAJGicdUCDEEwWXGASbzgQAQkEDYlDiQ2G4RAEEmmPQPTSky0NBSZrY+0vjiIR3lgfC/f7GUmSkQigbjDJOLSGArM1NAuggCtufS1eNbyszO0UA19yGlXWAjM9dPkjjgtQSR0oLaZLMq8SgpLmKobB4kVoKSGYtkWSxk5hJTLa1YDUaBslm5Kv+ZUi/QeKvMajU0xbx6P2zOZnW3Jzm5zDcpdqNtMg+GfH2lGvGtwBsJ5IifUkovJDdenaYsNtdJm2TmV2VOzceals35hkJY2+nLT5mlZfMWmVUjv/N58l28QWZNYiK1f3I2+0eygUDO4gZJBKrMawthLRTpISMkIhzv/F01m9f2O3pPQ2/BgFvQYO6FKvPKQtjY04hRz24iK5nnC94x6nljXthks7mnEaJeK4lXZfNcTyPeYdxHKZuL9+Uyz/U0YuOhtiWsrV0u82xPI/aX6iJog1cQiAXvbH+pbOOKtlYueE39JTYEwuK2djio450/D3oZ44idVj/YxUsPbV5u5ccgKIM5lMVIgMPD9CH2+5gvLME4QRbmeTgD9k5GhqNP/Nz06sJvg/F/8L0X6qsLVVgAq28inRO88HoCsr5GdGu+rV1S1K37R43OH5bu718OHXjyqYSzMxeGB9antH84feR+SlwPDfCxhwo+47xp7GEc3HiA69BOgxvjjMv9DD16cp5GT6bhmTvs8Mw9TafhGcfjP38BCX0y8IoqfCAAAAAASUVORK5CYII=",
         "sha256": "3eba46efdb043be54f94342966f63941762b256b6373875a19ce966a0ed4ac94",
@@ -4172,17 +4038,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXqLiZ1JRxdMK6gcFozHmMnZ181gXwd52pYPMpxTT1Bn5mCIzy6NF2dgHPPQHrRQIH/hD3/gkIAAAD9Njb+cjeGTf0Atv4kynCKUv35bDMm13h7SO20JiYCOFECqu8hu2h9UvwDFhACldABwv66VSkZ12KrTCX/Mx7RPoABaJIXhUowEwosGVVCop0AGiQSZzkdpFsqCwkHJhUAKDcVdkIDdahTJRKFHBwKPCFIK45wGBiCOhzSLS3GWSoWDSgMRycDh7wBi8UbllROFBBzQtcASWdsOsqYQiGshnTYYS4PUTAAXoQAc5cfsGI9I3Q+mJNADg5AJXlSMJtZNKlGqqVvNBqvRRrPPnwJNR0AU3MUcT8erGADodsaulwYyFwczWLrT5XRAAAAYHRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9ebwvOAAACsUlEQVR42u3ZaXOaQBgHcJP0vrvcKCiY2oBWxfu+tSY9kubs3e//LbqoqaAbjmWZcab8X2Qyvnh+syz7PAzEQMiJRUAEREAERICZVj1hzeE63Uy7Fhiodyh7BNoSQei2jSDAOEFRToBpZGr4wFmHQgD2NdD08RgXMBD1t1YAc5zFBOqUN4DOZLGAFuUVoGtYQMI78B4HGHe8A90aBoDcgTsAYS9soI0BtMIGdmsFV7t4FxlhnwMfJ1nAO8noJQj+FuDY7LIxb0AXt5sCwxPg2K1dJpqBmmgCjMde7T6Tjb0EvE5v/yVG0a9g0deLeWwmc5UN+FRx9vTZzcujVW6OXmTMXF8fHszn8+cHj7NBnyp6ueajOB9PLQP/W/4saQOZZeWhJuWDAbkZY8sSyFdh9VVUKQhwHmd4fguYqqwlsoYPnDM8s70C6WfaCqRZDRe4t1l+AeQHtvpmJDwgN2FQwMet+uygjAU0eRQgqdsAO8UBevsIgElZbqD1NlTzGEBuggRUFhGHe/Vu4EsccYWYlIwC5G8YQJPxAXzYRcDPJVKnWJvMeN7kIc4m9y5Cvk3BZ88HLa3htYpZyK0C5JDNrjwk1ezMOxXZrlVS7RqAC1jSNnEWA0ciNnDgRk+QI3PIEhqZ5tDfn8X526wAoEiaKsOo1bIS9GWIcv/B6eW7VZ5cnt7+XJZgym7PFK6AcqL/+vNmnYe/FeAvzkBJ50TOGjFJ9H1RqchthCwA64thAkplszxhoJ/kwgUQCyAKNIohAwXEFSILcBHgApx8QgmjkO8iTicHoA9yg+RJRmyB7wU4AbBXb9b/0Sf6er+0uc1ihfD3g69F0bIPolhRCAOgryfFhWH+LRYw6rvO5MJo2ZKSRb0BAHnAPA/fRyO9UiiF+JFIURSAneg7WgREQAT8F8Bfix/LlFwiU4MAAAAASUVORK5CYII=",
         "sha256": "a9a7cb160eeb9d003b5d28671ab29022684cbe5337d32068f9c60b56fec3a5f1",
@@ -4233,17 +4088,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "aa0a93b00a7a819d69466ed59bd5b7c550ad5a3f49240922973ce78590cc3092",
@@ -4269,19 +4113,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": true,
-        "regionConfirmed": true,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
         "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
@@ -4307,19 +4138,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "notes",
-      "purposes": [
-        "notes"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T16:34:26Z"
-      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+/v4Bpi0BtjIBxzbh4eECmSnb29sCiSIAAAAB0zkry1UT10fN6dRUrGlJyGn///9y1our4rhzxohQ1XK25sJBs16V2aYp1Vbc3NwttU862GNCqlza2tqt1rfc3NwTyEPe7eFPtWnX8N0sl0UsqUzi4uI34mSE2Zlnunuqqqo9zWJCmVaU4acZuEJ/f3+Ex5SYzaW/v7/MzMzd3d3c8eHi4uLh4eFkqnNvtoBh1H6Du48erEIX4E0k4lapzrHc3Nzi4uLj4+Mkkz5iy30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwu9c8AAAAYHRSTlP+/////v/+/wD///////8C///////////L////b/85////////yv///wP/////BP//BAWM/2GL//////////9fP0D//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtAhv8AAADiklEQVR42s3aiXKqMBgF4B9QtBgwiKJoEaxarUv3fe+97/9ON0ErYCskkMzcM9PO1NHzkYBbE6hHOSM/n/c9XUh691/bShKIfjfr53dTvSIs+vTunJTugGZ9OKW3g6DQrulwI0DUfyywfWccRwIBrki/LrifCDoRrihAj18HCdGjMQCZfzn9VBjWz6B53atU5ACVSu+6CfQEA8gSPsgU9aT1E6HXhKEuE9CHcFORCVRugH2GbIwdB7uIb46AdYZcp//2+tpodPsY8cwRK4BP3xpHURoNqy0eeDrd1keEYYsGcLKfCN2VTYJuRQF7/XSaujSOM2uLAH70x06j67ilAdKvHR1MNsEC0P6sEOIJlQBwf9t/lEEs2oWB2Xe/FgSHR3Hwws0F4n4DuRq/kAfE/ZoFbSNDCAxUAHDjfu0C7CxACyx+INnvoRxACzAv4DqJ65McXw6g/TZJWYDtdOMHr8l1uMoBtL9cQKpfbdEzHmjcQzgMuAtD3cW7oDc5eYCG2QE0x61dNu+S7b6mpurUvXpVs0q8o5HXjK6aE22NSgCYDCA3bmHAdvpBfn90LTABqB3Htl3s9LsqSyw2wCd9RiqBypYRE4AYD7cwgA1VLuAEhYEOE2Cp/w+gKEohQGGsH7Vac0/hBjA9sNyoiudHd7+cxPdnA9w1C6BMwu+nzQsngDwmwN89oMUJgMUE2CeboJPVmhOYMZ0Ew9rG6aucAOMckctHUdPHwggkJpUzrADrEAoD4MoGYCQbgE4hYMAOoIlkANBAMgAwrypKlSucAHmd5CU4AQhbk6pUgBCX5lgqQM+2f/E4Mn9kMBEFHPyO7c/HUgE6OHMPMAUD9FKWDMAoBYzEA3bqiTIXD4CXBC6EAGH6E0IS8AUA7ZnlHgRQWQCtnhbexEv8MxAZ1dqufwzlABs7hlet1aqJb0rYq2VcRDwAou0KqSdRWt9jWC02t9BUq5dlgLAzibsUy0W3cGLjhVKLgXFYaorcuJ+UvXjkM100YXEeodw56KTa6NSn/q79QSUBf69wP89QEoBWpjCA0gCYGf1jJAAIB4f7dRAAQHhoDEsEQgCAx1/7HyogCgD/5zQt3wWs4SQJc5ycfPM9e/2gyEJg6D8/mMvl0nx49sO8ZS7pC3XSlxqlL5bWP2Qu9x7X5S9Yn8ldcm/K3zQgf9uD/I0b8reeyN88s9mr8yVu+89nvP3nH1lYaJImSUUfAAAAAElFTkSuQmCC",
         "sha256": "10107eb7cae0a1e3e14a9063ccb4a23f889a5c585e39e71cb243407007231c6f",
@@ -4387,6 +4205,17 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX6uQACAgL+xQAXFAazhQCMaADUnQBGNAEsIQJmTAH8/Pj8xizZogNxc3QxMzPlqgRKTE6XmJjY2Nj92W1yVgf95JH99dNSUlG4uLYpKy3s7e6ieAT6zEn+01MjGwSXcglYQwb86a/z6s24vMLAjgHKxrn/8LVnaGh7cVGRezeGh4eZkXWVmaGlkFPSqjbYxpHt1ZHAv7zsuStDPSdTRyNeVjlsXjB/aSeriSW0lDq9rX26sZLCmyrHqVLBq2ffu1Xbv2zKysnjuEDvzWn/0Dvs3rfg39yfoJ+foKCvr68AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwqRdYAAAAYHRSTlP//////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAABTdyhxAAACWUlEQVR42u2Z6XKbMBSFKSCWgoFgJeDgAMGmtuM1zr5vTdq+/wv1IoYs06klEZJpGn0/bP/x+ewrwcBBkgQCwX+KXJM3jmdWfHxBTcs/tIdc17VtW+MEvgJfZMqH7L5agz5YXNrcSb6qRgniJolUlRj+vh6lQFMjhDA2OcEYoUjVVgnkSoCwmercpCZGlUBeIbD7ETJ13eBG100U9W2KQJZsNcGpbsQKJ7GhpzhRbUmmChAu8r9wUhhgRnQBLIGpG9z5YDBgRqomBEIgBEIgBEIgBELwWkEsRvSuV3Z/Xpsa1bWp1IRAUTodh9CpPjh7+xhFWjOCIt7zAsArIG/BweFRQr8BYRIoEB8MBq0XDIej0fHqWyhWAczHC1o7axWTCbyMx9Ppyfnqm0BmQceB/B9hmOe7YRj2ej14PTu9vJjNXKkZgTfY+Rne+P6DX5HP59dXt0upGYEDgl83/uZXYLMgy+4Xi7uuZTUlCFprYZlfspFtr7e3QCA3J9j1n+VvfFsHAeQ3KMgfnglI/ndaft1/wPr7udfgMR/mT/LZOii2bfq0yGR9212LpY+qI6jyLalpQY8Iyvkw5vMcaK0JEZD8LdZ8fsFjvty8ANYgK/YnmQ9X48shyIr9zzwfbkF+v10eX9KbCMZn8wVvPmshpRhOMByfzhdtznzWSi029g6G08vrO3J+4xXQSsG4aP/2D0fTi6sux/7hqzVTfDQ6md1aDOfPWsUsxig5Pp8tl9z5rNVyEpUVslSz0aeX49QS/HX1PunxP/aTrnd5ivbJBXSFeBgrEHw2fgMwfWODGAATxwAAAABJRU5ErkJggg==",
         "sha256": "0babf2964811511a45fd47a1e0036d7a4b9f78b6d6dd700309990821d7dc85f6",
@@ -4410,7 +4239,18 @@
       "officialHost": "webtoon.kakao.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      }
     },
     {
       "key": "kakao",
@@ -4425,7 +4265,18 @@
       "officialHost": "www.kakaocorp.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      }
     },
     {
       "key": "spotify",
@@ -4441,6 +4292,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
+      "purposes": [
+        "music"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": true,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUe12D+/v4W1Vol2GWQ67Br5Ja08crK9dlX4Yja+ORF3XtN3oF756Ki7r2n78AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfIeZaAAAAYHRSTlP///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB60ErgAAADaUlEQVR42u1Z25arIAwVQsJF7f9/7gSwrTc0oH05xzx0Os6abEjCZid23WOPPfZfGQBsvt3oW6+suxEkeQcIvWPD+BHSo5swoGPvzpBamB3RMcgNCLxQN3q1Z9YwxMXV8xqHfe/ZqI+RuhB7GNSJRQhoXj5adW4cKGjzDy8lMo8tmwDtvJJayyb0oCrM1iJobVSV+b4KQXeV/tlcDYKu91+DAE3+lQpSBI1N/pUHLVt/rxqNRAAabCuAMoIgtSYg23mx8gG+4F9Rp38YoGio6yvIkzEGke9K/uCvZC9U0nID7NpFBbG57qFHU4AZjrMw2wAN4eNyxVPZ4kXtd7ZwnGL7rbioJOBYamjAcZuFg3/SYRbLhXeYbKOWOkBanTaQnAFaeJ5nYQGU/xRISEmzFFv9jcPkNIT04/NknpWeJDFasJB7ZxLNSNZaz/n0nr/QyDUblslnVPdZ2+sgQvNDgMBlYkv3Mldwn+XjO+VBcBRqaYgw6cppdXSahBaaGBHyLkC/TulCg29gHzukYp2tzujTU7BxQmyjIdrNiY8QYE4pdRfAGuxTSX5oCNwwbkI5Gr8QSTIAdv5tbBY0xBSxbhgEjLq+jCk3NqWGqgtYwhACuOx9QRXdmyfSMwjmCkDQX99vrps3gLl1M+0AmJ0Fh4OJVcQswXfbgH0manj3b0YOsEoyQtjNJdNEyv6nyyJpkkPN+TIpQrlT8WstfwNALLOpkV1LqaJ20VBNE5guPk0rfXejJrKxFFCsjXa7Pm8py6LeRV1Em2SQtFGAjeqyWRitZZEzh1stXjgbXYpfHvqqivwoDEUuooMbbZmEUc9dzmgv6xVnqrXdqt7GGQHFQQ66PkzckTlklyeOJPw6Ri6x/2t5y3DGw8Szem8YcNjmzKRjTrItHeN0xmCvnz5UvyDv7/OwCLaH81i/V937iY36yjatbkQxgLNVG2iVLgIeKp/mOmoS9OKaLgAI5hVQT9p1jfiVIFnpsKK11xePW7rXrxLwSUNLolE+8mpCwJqRWgMC1k2xocD194wEp6E+VtVny+g3WDmttkyvJbP3LPBa3yLES2s8n4yDvvIC4WQEH91ffM8StUOhZP0LL79jmQLlhs3oKXeI3R3vobI+gdTpZGOBBKUO8cKbtB++qXtvpPDLY4899s/bHzxEH50cjlX6AAAAAElFTkSuQmCC",
         "sha256": "a45ea797cca00106771ecee72f59337437bcdfdc71c4967008a69b7a37f91540",
@@ -4466,6 +4330,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
+      "purposes": [
+        "music"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "5a05c5ed2bdefcf9b87998bcf3ba623e97024e54c57e11292bafe1637e294bb6",
@@ -4491,6 +4368,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
+      "purposes": [
+        "music"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": true,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "e4057449fe48ad2fd5f55056523900292629714c088db49f2f29c171af62e72a",
@@ -4541,6 +4431,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
+      "purposes": [
+        "music"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "7d92324fd3c83ada20ef03f82c2277f24ec05d0bedda6558093795dc8dc14af5",
@@ -4565,7 +4468,18 @@
       "officialHost": "www.duolingo.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      }
     },
     {
       "key": "discovered-f6d59d44d511",
@@ -4599,31 +4513,31 @@
           "purpose": "assistant",
           "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         {
           "purpose": "image",
           "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         {
           "purpose": "coding",
           "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         {
           "purpose": "music_creation",
           "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         },
         {
           "purpose": "appbuilder",
           "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T14:15:56Z"
+          "checkedAt": "2026-10-30T17:00:21Z"
         }
       ],
       "verification": {
@@ -4634,7 +4548,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-30T14:15:56Z"
+        "checkedAt": "2026-10-30T17:00:21Z"
       },
       "icon": {
         "data": "data:image/png;base64,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",
@@ -4677,7 +4591,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T14:15:56Z"
+        "checkedAt": "2026-10-30T17:00:21Z"
       },
       "verifiedAt": "2026-10-28T12:06:03Z",
       "icon": {
@@ -4721,7 +4635,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T14:15:56Z"
+        "checkedAt": "2026-10-30T17:00:21Z"
       },
       "verifiedAt": "2026-10-28T12:17:40Z",
       "icon": {
@@ -4763,7 +4677,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T14:15:56Z"
+        "checkedAt": "2026-10-30T17:00:21Z"
       },
       "verifiedAt": "2026-10-28T16:06:54Z",
       "icon": {
@@ -4805,7 +4719,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T14:15:56Z"
+        "checkedAt": "2026-10-30T17:00:21Z"
       },
       "verifiedAt": "2026-10-28T20:58:22Z",
       "icon": {
@@ -5210,6 +5124,47 @@
         "height": 96,
         "normalizedAt": "2026-10-30T11:45:35Z"
       }
+    },
+    {
+      "key": "discovered-f22df8286ea6",
+      "name": "Twig AI",
+      "category": "AI",
+      "aliases": [
+        "Twig AI"
+      ],
+      "officialUrl": "https://www.twig.so/",
+      "officialHost": "www.twig.so",
+      "origin": "discovered",
+      "status": "verified",
+      "description": "Sera is an AI receptionist: she answers every call, text and web chat 24/7, qualifies the caller, and books them with your team.",
+      "discoveredFrom": "https://raw.githubusercontent.com/mahseema/awesome-ai-tools/main/README.md",
+      "purpose": "ai_unspecified",
+      "identityEvidence": {
+        "organizationName": "Twig AI",
+        "organizationUrl": "https://www.twig.so",
+        "method": "referring_site_and_first_party_structured_identity"
+      },
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:00:21Z"
+      },
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAAAAD8/PwAAAAAAAAAAAAAAAAAAAAAAADm5uYWFhYjIyObm5u5ublJSUl5eXlWVlZlZWX6+vrFxcWHh4erq6vX19cWFhY5OTn///83NzcVFRXq6ur///8xMTEwMDBISEhQUFB3d3cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADLlN+WAAAAYHRSTlMA/v6WT89rsC7+/v/////+/v/C/////xj/tBAv0QEksQcTDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPmCswAAADaUlEQVR42r1a65qjIAwtcgmgVh1r253Z2dv7P+RWRatWIKiUnzNfc0wOSQ6B0wm3mKDAiVkcqGCn4xajo+np4vQIEClWjQ8LhNz37UC8C7b7sf7xIGd8tLESB5onhI7Bgz0QzBp6OqN/hAgMlCP21OIoDfl8F6nUuhPQTlASBPCMJ84JyUkowCNQhgm5MzyOzzRxkrvtW+MgUEQIshlgiC3bad/FJPgQGNkHYPYf22XfvRepi2lJ9gMYhPX/8SMAegQeWH5CAHo7dCsBmHrA14kmhwHIVRrgOIA+GHRjgFAlE16DxLHmtQZERX7ZSYgSoe9Vll+VUkX7Y+5WXmLpgs96WuUqMesyUV7StZM42oEyTybrMlN3FuHF5i64GNCX4dtVnRVVef790EUPYfQkXXpdYAjzeXHXNl0E0uOCPQfKa2e9rlKLLjI/FesugKeK6qYz35wdeSCppduLZzrbKD530cnvnkQzEGItF4SL4qI1fy0Rmdw3Y1hJZ3BEKGvtZxpXKsRKE2BDjNYj1G39Cl2LOicWRAz7CGz21T1YeMnlX6iFgixRSZ2GVVNYK3DcQoF+rB3lekZCQCcIPQf0QROhAMC+/uIAeJcJEGg/TR/RA/EPeUyi+F7WGi+6tqDyIiWIYx/tUg0PoLNJV8g0fHrPqd02Qts/q2nbSdSZ/0JsIzxAlSxXyW+YfYr9/uR1neE4AK1WAH56mJYBAE9+62YUGD8EOQogHSVFW0F0YQBObhcCAIqB1xkjHyfKD+KgXkqiqgdgxA+ASrQ+6mpSYa8dwM158O4TDfAU5AvWP06fzlNxXyooHqCZ/OnSAXw7AfpiJ/Z48McJ0JdrFsABCePAdP2AXVTMK4dnF0mjW3hAHgw6I1WIPDBNP4TlQSmZyu3J5EG2sKBadG2apsbVolHAR6qmo3TE5XK52g++PREC9BRqQ0d7ynfkGKd86clf3uFZ2BhhqSpuXtUFoXOEtKixumh+jg0QXzpN0/Ze4hOh6njQsHGiTbHjXbFhWIRV14tRQpALGADxcu7kxwK8ngmjD6SOH6nBu4eC8ceaqMazZzAbf7Qcfzgefbwf/4Ii/hVL/Eui+Ndc8S/q4l81xr8sfcN1b/wLa/yVO2y9co//aOANzx7e8HAD9fTkiOctUR/PjCBbn//8B/YlJ7DMOTmMAAAAAElFTkSuQmCC",
+        "sha256": "05bc0416b63f641240df271d77c9e5ce9d9b95f0684d1c8334c0b26bddfffd32",
+        "source": "https://www.twig.so/apple-icon.png?0ae67a3e0a3804d7",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T17:00:21Z",
+        "width": 96,
+        "height": 96
+      }
     }
   ],
   "plans": [
@@ -5448,342 +5403,6 @@
       "verification": {
         "price": true,
         "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "3246ece9c901ae141997400f",
-      "service": "discovered-f6d59d44d511",
-      "name": "Consider DeepAI Pro",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://deepai.org/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Consider DeepAI Pro $9.99 per month"
-        },
-        {
-          "field": "capability.music",
-          "quote": "Music"
-        },
-        {
-          "field": "capability.adfree",
-          "quote": "Ad-free"
-        }
-      ],
-      "purposes": [
-        "assistant",
-        "image",
-        "coding",
-        "music_creation",
-        "appbuilder"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "discovered-f6d59d44d511-regular-monthly",
-      "service": "discovered-f6d59d44d511",
-      "name": "Pro · 월간",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "assistant",
-      "capabilities": {},
-      "source": "https://deepai.org/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "$9.99 a month, or $89.99 a year"
-        },
-        {
-          "field": "billing",
-          "quote": "Billed monthly · cancel any time"
-        }
-      ],
-      "purposes": [
-        "assistant",
-        "image",
-        "coding",
-        "music_creation",
-        "appbuilder"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "06be7edb92032e45fa019596",
-      "service": "discovered-3da74ddb9a73",
-      "name": "프로 (월간)",
-      "amount": 7.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-monthly\",\"name\":\"프로 (월간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":7,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "24012c9ad37cf1daf8b42574",
-      "service": "discovered-3da74ddb9a73",
-      "name": "프로 (연간)",
-      "amount": 60.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-yearly\",\"name\":\"프로 (연간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":60,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "bf3ba57b1165d3f6b759dc77",
-      "service": "discovered-3da74ddb9a73",
-      "name": "비지니스 (월간)",
-      "amount": 10.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-monthly\",\"name\":\"비지니스 (월간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":10,\"priceCurrency\":\"USD\",\"priceSpecification\":{\""
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "50b84a291a2b252b41f1d896",
-      "service": "discovered-3da74ddb9a73",
-      "name": "비지니스 (연간)",
-      "amount": 96.0,
-      "currency": "USD",
-      "interval": "yearly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "productivity",
-      "capabilities": {},
-      "source": "https://www.todoist.com/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-yearly\",\"name\":\"비지니스 (연간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":96,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@"
-        }
-      ],
-      "purposes": [
-        "productivity"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "3b0a212dc2929ae23c0392dc",
-      "service": "discovered-1130fb3c5635",
-      "name": "Localize Essential",
-      "amount": 9.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "hosting",
-      "capabilities": {},
-      "source": "https://webflow.com/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Localize Essential $ 9 /mo"
-        }
-      ],
-      "purposes": [
-        "hosting"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "bbb1bdc7c14d6251db5fada7",
-      "service": "discovered-1130fb3c5635",
-      "name": "Localize Advanced",
-      "amount": 29.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "hosting",
-      "capabilities": {},
-      "source": "https://webflow.com/pricing",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Localize Advanced $ 29 /mo"
-        }
-      ],
-      "purposes": [
-        "hosting"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "20c8d546f9b5d7fabcc58856",
-      "service": "discovered-9147608fbd20",
-      "name": "QuickCreator",
-      "amount": 29.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": 1,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "ai_unspecified",
-      "capabilities": {},
-      "source": "https://quickcreator.io/",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": false
-      }
-    },
-    {
-      "id": "ba1a6c7908df181c51b7488e",
-      "service": "discovered-195e1a465e02",
-      "name": "TextFree Plus",
-      "amount": 9.99,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "unknown",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "other",
-      "capabilities": {},
-      "source": "https://textfree.com/",
-      "verifiedAt": "2026-10-30T14:15:56Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "structured_offer",
-          "quote": "{\"@type\":\"Offer\",\"name\":\"TextFree Plus\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
         "region": false
       }
     },
@@ -7550,6 +7169,372 @@
       }
     },
     {
+      "id": "80ab7cff486cf0ddac880d24",
+      "service": "discovered-f22df8286ea6",
+      "name": "Twig",
+      "amount": 49.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://www.twig.so/",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"price\":\"49\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"49\",\"priceCurrency\":\"USD\",\"unitCode\":\"MON\",\"referenceQuantity\":{\"@type\":\"QuantitativeValue\",\"value\":1,\"unitCode\":\""
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "3246ece9c901ae141997400f",
+      "service": "discovered-f6d59d44d511",
+      "name": "Consider DeepAI Pro",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://deepai.org/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Consider DeepAI Pro $9.99 per month"
+        },
+        {
+          "field": "capability.music",
+          "quote": "Music"
+        },
+        {
+          "field": "capability.adfree",
+          "quote": "Ad-free"
+        }
+      ],
+      "purposes": [
+        "assistant",
+        "image",
+        "coding",
+        "music_creation",
+        "appbuilder"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "discovered-f6d59d44d511-regular-monthly",
+      "service": "discovered-f6d59d44d511",
+      "name": "Pro · 월간",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "assistant",
+      "capabilities": {},
+      "source": "https://deepai.org/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "$9.99 a month, or $89.99 a year"
+        },
+        {
+          "field": "billing",
+          "quote": "Billed monthly · cancel any time"
+        }
+      ],
+      "purposes": [
+        "assistant",
+        "image",
+        "coding",
+        "music_creation",
+        "appbuilder"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "06be7edb92032e45fa019596",
+      "service": "discovered-3da74ddb9a73",
+      "name": "프로 (월간)",
+      "amount": 7.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-monthly\",\"name\":\"프로 (월간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":7,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "24012c9ad37cf1daf8b42574",
+      "service": "discovered-3da74ddb9a73",
+      "name": "프로 (연간)",
+      "amount": 60.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#pro-yearly\",\"name\":\"프로 (연간)\",\"description\":\"일과 생활을 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-pro\",\"price\":60,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type"
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "bf3ba57b1165d3f6b759dc77",
+      "service": "discovered-3da74ddb9a73",
+      "name": "비지니스 (월간)",
+      "amount": 10.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-monthly\",\"name\":\"비지니스 (월간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":10,\"priceCurrency\":\"USD\",\"priceSpecification\":{\""
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "50b84a291a2b252b41f1d896",
+      "service": "discovered-3da74ddb9a73",
+      "name": "비지니스 (연간)",
+      "amount": 96.0,
+      "currency": "USD",
+      "interval": "yearly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "productivity",
+      "capabilities": {},
+      "source": "https://www.todoist.com/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"@id\":\"https://www.todoist.com/ko/pricing#teams-yearly\",\"name\":\"비지니스 (연간)\",\"description\":\"팀워크도 관리하세요\",\"url\":\"https://www.todoist.com/ko/pricing#plan-teams\",\"price\":96,\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@"
+        }
+      ],
+      "purposes": [
+        "productivity"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "3b0a212dc2929ae23c0392dc",
+      "service": "discovered-1130fb3c5635",
+      "name": "Localize Essential",
+      "amount": 9.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "hosting",
+      "capabilities": {},
+      "source": "https://webflow.com/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Localize Essential $ 9 /mo"
+        }
+      ],
+      "purposes": [
+        "hosting"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "bbb1bdc7c14d6251db5fada7",
+      "service": "discovered-1130fb3c5635",
+      "name": "Localize Advanced",
+      "amount": 29.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "hosting",
+      "capabilities": {},
+      "source": "https://webflow.com/pricing",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Localize Advanced $ 29 /mo"
+        }
+      ],
+      "purposes": [
+        "hosting"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "20c8d546f9b5d7fabcc58856",
+      "service": "discovered-9147608fbd20",
+      "name": "QuickCreator",
+      "amount": 29.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": 1,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "ai_unspecified",
+      "capabilities": {},
+      "source": "https://quickcreator.io/",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"29\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": false
+      }
+    },
+    {
+      "id": "ba1a6c7908df181c51b7488e",
+      "service": "discovered-195e1a465e02",
+      "name": "TextFree Plus",
+      "amount": 9.99,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "unknown",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "other",
+      "capabilities": {},
+      "source": "https://textfree.com/",
+      "verifiedAt": "2026-10-30T17:00:21Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "structured_offer",
+          "quote": "{\"@type\":\"Offer\",\"name\":\"TextFree Plus\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"category\":\"subscription\",\"priceSpecification\":{\"@type\":\"UnitPriceSpecification\",\"price\":\"9.99\",\"priceCurrency\":\"USD\",\"billingDuration\":\"P1M\"}}"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -7569,7 +7554,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-30T16:34:43Z",
+      "verifiedAt": "2026-10-30T17:00:35Z",
       "status": "verified",
       "evidence": [
         {
@@ -7615,7 +7600,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-30T16:34:38Z",
+      "verifiedAt": "2026-10-30T17:00:30Z",
       "status": "verified",
       "evidence": [
         {
@@ -7651,37 +7636,71 @@
     "retrieval": {
       "outcomes": {
         "captcha": 5,
-        "cross_site_redirect": 218,
+        "cross_site_redirect": 210,
         "deferred_captcha": 2,
-        "deferred_cross_site_redirect": 91,
-        "deferred_http_403": 149,
+        "deferred_cross_site_redirect": 95,
+        "deferred_http_403": 147,
         "deferred_http_404": 26,
-        "deferred_http_429": 1,
         "deferred_render_budget_exhausted": 2,
-        "deferred_render_http_403": 6,
-        "http_402": 8,
-        "http_403": 220,
-        "http_404": 56,
+        "deferred_render_http_403": 5,
+        "http_402": 6,
+        "http_403": 226,
+        "http_404": 53,
         "http_406": 3,
         "http_429": 4,
         "http_500": 5,
         "http_503": 9,
-        "http_521": 4,
+        "http_521": 6,
         "http_525": 2,
         "http_526": 2,
         "http_530": 4,
         "non_public_url": 12,
-        "ok": 2317,
+        "ok": 2320,
         "render_budget_exhausted": 21,
         "render_http_403": 6,
         "response_too_large": 3,
         "timeout": 46,
         "tls_error": 12,
-        "unexpected_content_type": 2
+        "unexpected_content_type": 4
       },
-      "cacheHitsThisRun": 15,
-      "renderAttemptsThisRun": 5,
+      "cacheHitsThisRun": 5,
+      "renderAttemptsThisRun": 10,
       "recentFailures": [
+        {
+          "url": "https://blog.csdn.net/qq_59961910/article/details/145964505",
+          "reason": "http_521",
+          "nextCheckAt": "2026-10-30T18:02:00Z"
+        },
+        {
+          "url": "https://www.suno.edu/page/admissions",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:02:00Z"
+        },
+        {
+          "url": "https://hiring.amazon.com/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:02:00Z"
+        },
+        {
+          "url": "https://onedrive.live.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-30T19:02:00Z"
+        },
+        {
+          "url": "https://slack.com/signin",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:02:00Z"
+        },
+        {
+          "url": "https://www.museum.go.kr/afile/fileDownloadById/260826456981nqoj?siteCode=MUSEUM",
+          "reason": "unexpected_content_type",
+          "nextCheckAt": "2026-10-30T19:02:00Z"
+        },
+        {
+          "url": "https://www.museum.go.kr/afile/fileDownloadById/26051947043Eq5WO?siteCode=MUSEUM",
+          "reason": "unexpected_content_type",
+          "nextCheckAt": "2026-10-30T19:02:00Z"
+        },
         {
           "url": "https://www.tving.com/live/C04601",
           "reason": "cross_site_redirect",
@@ -7796,41 +7815,6 @@
           "url": "https://quillbot.com/",
           "reason": "http_403",
           "nextCheckAt": "2026-10-31T15:14:20Z"
-        },
-        {
-          "url": "https://offer.tidal.com/?lang=en&skipLandingPage=true",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
-        },
-        {
-          "url": "https://x.com/ChatGPT",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
-        },
-        {
-          "url": "https://x.com/github",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
-        },
-        {
-          "url": "https://www.ottreleases.com/",
-          "reason": "http_500",
-          "nextCheckAt": "2026-10-30T16:14:20Z"
-        },
-        {
-          "url": "https://trip.coupang.com/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
-        },
-        {
-          "url": "https://chatgpt.com/pricing",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
-        },
-        {
-          "url": "https://www.perplexity.ai/pro",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
         }
       ]
     },
@@ -7842,37 +7826,37 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 27
+        "attempts": 28
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 141
+        "attempts": 140
       },
       {
         "name": "Bing RSS",
         "status": "no_relevant_results",
-        "attempts": 25
+        "attempts": 26
       },
       {
         "name": "Bing RSS",
         "status": "ok",
-        "attempts": 59
+        "attempts": 58
       },
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 15
+        "attempts": 14
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "Google",
@@ -7942,7 +7926,7 @@
       {
         "name": "Official links: copilot",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: coupang",
@@ -7987,7 +7971,7 @@
       {
         "name": "Official links: expressvpn",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: figma",
@@ -7997,7 +7981,7 @@
       {
         "name": "Official links: gemini",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: github-copilot",
@@ -8062,7 +8046,7 @@
       {
         "name": "Official links: microsoft365",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: midjourney",
@@ -8097,7 +8081,7 @@
       {
         "name": "Official links: perplexity",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: prime-video",
@@ -8107,7 +8091,7 @@
       {
         "name": "Official links: protonvpn",
         "status": "no_relevant_results",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: slack",
@@ -8202,7 +8186,7 @@
       {
         "name": "Sitemap: copilot",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: cursor",
@@ -8237,7 +8221,7 @@
       {
         "name": "Sitemap: expressvpn",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: figma",
@@ -8247,7 +8231,7 @@
       {
         "name": "Sitemap: gemini",
         "status": "no_relevant_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: github-copilot",
@@ -8302,7 +8286,7 @@
       {
         "name": "Sitemap: microsoft365",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: naver-plus",
@@ -8332,7 +8316,7 @@
       {
         "name": "Sitemap: protonvpn",
         "status": "no_relevant_results",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: slack",
@@ -8382,22 +8366,22 @@
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 15
+        "attempts": 14
       },
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 12
+        "attempts": 13
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -8407,7 +8391,7 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "deferred",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "퀘이사존 핫딜",
@@ -8427,34 +8411,9 @@
         "nextCheckAt": "2026-10-31T01:20:26Z"
       },
       {
-        "name": "Official links: gemini",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: gemini",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Official links: perplexity",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-30T11:03:56Z"
-      },
-      {
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
         "nextCheckAt": "2026-10-31T03:03:56Z"
-      },
-      {
-        "name": "Official links: copilot",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: copilot",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-30T12:03:32Z"
       },
       {
         "name": "Official links: github-copilot",
@@ -8872,11 +8831,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "AppSumo",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Sumo 구독 할인",
         "status": "ok",
         "nextCheckAt": null
@@ -8885,21 +8839,6 @@
         "name": "Google",
         "status": "no_relevant_results",
         "nextCheckAt": "2026-10-30T22:34:26Z"
-      },
-      {
-        "name": "Bing",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
-        "status": "ok",
-        "nextCheckAt": null
       },
       {
         "name": "Official links: lovable",
@@ -8932,11 +8871,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "StackSocial",
         "status": "ok",
         "nextCheckAt": null
@@ -8952,23 +8886,73 @@
         "nextCheckAt": null
       },
       {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: gemini",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: gemini",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: perplexity",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-31T09:00:21Z"
+      },
+      {
+        "name": "Official links: copilot",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: copilot",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-31T09:00:21Z"
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
         "name": "Dealify",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "AppSumo",
         "status": "ok",
         "nextCheckAt": null
       }
     ],
-    "candidateCount": 2188,
-    "rawCandidateCount": 2348,
-    "factChecks": 870,
-    "verifiedCatalogCount": 8,
-    "catalogCount": 67,
+    "candidateCount": 2194,
+    "rawCandidateCount": 2354,
+    "factChecks": 872,
+    "verifiedCatalogCount": 9,
+    "catalogCount": 68,
     "metrics": {
       "candidateOutcomes": {
-        "catalog_verified": 14,
+        "catalog_verified": 15,
         "needs_dates": 173,
         "needs_official": 16,
-        "needs_service": 1005,
-        "needs_verification": 822,
+        "needs_service": 1008,
+        "needs_verification": 824,
         "official_verified": 5,
         "partial_match": 22,
         "pending": 127,
@@ -8977,22 +8961,22 @@
       },
       "catalogOutcomes": {
         "discovered_links": 254,
-        "known": 435,
-        "needs_identity": 733,
+        "known": 437,
+        "needs_identity": 735,
         "needs_price": 111,
         "rejected": 160,
-        "unavailable": 321,
-        "verified": 14
+        "unavailable": 322,
+        "verified": 15
       },
       "factCheckOutcomes": {
-        "needs_verification": 843,
+        "needs_verification": 845,
         "official_verified": 5,
         "partial_match": 22
       },
-      "newServiceCount": 14,
-      "verifiedPlanCount": 31,
+      "newServiceCount": 15,
+      "verifiedPlanCount": 32,
       "candidatePlanCount": 41,
-      "rejectedLinkCount": 6469,
+      "rejectedLinkCount": 6305,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -9008,18 +8992,18 @@
       "comparableKRWPlans": 3,
       "comparableByCurrency": {
         "KRW": 10,
-        "USD": 21
+        "USD": 22
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-30T16:34:26Z",
-      "searchAttempts": 34,
-      "newServices": 0,
+      "startedAt": "2026-10-30T17:00:21Z",
+      "searchAttempts": 33,
+      "newServices": 1,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 9,
+        "unmatched": 13,
         "rejected": 0
       },
       "taste": {
@@ -9028,9 +9012,9 @@
         "waitingOfficial": 0
       },
       "icons": {
-        "attempted": 0,
-        "updated": 0,
-        "available": 56,
+        "attempted": 1,
+        "updated": 1,
+        "available": 57,
         "failures": []
       }
     }
