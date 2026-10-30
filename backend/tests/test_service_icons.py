@@ -16,6 +16,9 @@ class ServiceIconTests(unittest.TestCase):
  def test_normalized_png_is_bounded_and_reencoded(self):
   from PIL import Image
   result=normalize_image(self.png());image=Image.open(io.BytesIO(result));self.assertEqual(image.size,(96,96));self.assertEqual(image.format,'PNG');self.assertLess(len(result),7500)
+ def test_large_but_bounded_brand_raster_is_downsampled(self):
+  from PIL import Image
+  large=io.BytesIO();Image.new('RGB',(2048,2048),'blue').save(large,format='PNG');result=normalize_image(large.getvalue());self.assertEqual(Image.open(io.BytesIO(result)).size,(96,96))
  def test_active_external_and_oversized_images_rejected(self):
   for svg in [b'<svg><script>x</script></svg>',b'<svg><image href="https://bad.example/a"/></svg>',b'<svg xml:base="https://bad.example/"></svg>',b'<!DOCTYPE svg><svg/>',b'<svg style="fill:url(https://bad.example/a)"/>']:
    with self.subTest(svg=svg),self.assertRaises((ValueError,Exception)):normalize_image(svg)
