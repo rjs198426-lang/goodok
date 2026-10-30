@@ -11,13 +11,14 @@ from research_common import as_offers
 from taste_research import research_taste,export_taste
 from catalog_publish import publish_catalog
 from search_api import search_api,configured_providers
+from service_icons import collect_icons
 ROOT=Path(__file__).resolve().parent
 MAX_BYTES=3*1024*1024
 UTC=dt.timezone.utc
 
 def stamp(value=None):return (value or dt.datetime.now(UTC)).isoformat(timespec='seconds').replace('+00:00','Z')
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None;self.sections=[];self.section=None;self.meta={}
+ def __init__(self):super().__init__();self.parts=[];self.skip=0;self.links=[];self.icons=[];self.href=None;self.label=[];self.title=[];self.in_title=False;self.jsonld=[];self.ld_buffer=None;self.sections=[];self.section=None;self.meta={}
  def handle_starttag(self,tag,attrs):
   if tag in ('script','style','noscript'):self.skip+=1
   if tag=='script' and dict(attrs).get('type','').lower()=='application/ld+json':self.ld_buffer=[]
@@ -25,6 +26,9 @@ class Page(HTMLParser):
    info=dict(attrs);key=info.get('property') or info.get('name') or info.get('itemprop')
    if key:self.meta[key]=info.get('content','')
   if tag=='title':self.in_title=True
+  if tag=='link':
+   info=dict(attrs);rel=info.get('rel','').lower().split()
+   if any(value in ('icon','apple-touch-icon','apple-touch-icon-precomposed') for value in rel) and info.get('href'):self.icons.append({'rel':rel,'href':info['href']})
   if re.fullmatch(r'h[1-6]',tag):self.section={'title':'','text':''};self.sections.append(self.section);self.heading=True
   if tag=='a':self.href=dict(attrs).get('href');self.label=[]
   if not self.skip:self.parts.append(' ')
@@ -246,6 +250,7 @@ def main():
  catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract_all)
  discovered_offers=catalogue.pop('verifiedOffers',[])
  all_catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
+ icon_results=collect_icons(db,all_catalog,fetch,timestamp)
  checks=verify_candidates(db,all_catalog,[offer for result in results for offer in result['offers']]+discovered_offers,fetch,timestamp,extract_offer=extract_all)
  taste=research_taste(db,fetch,timestamp)
  discovered_offers+=checks.pop('verifiedOffers',[])
@@ -253,7 +258,7 @@ def main():
  for offer in discovered_offers:
   if offer['id'] in existing:continue
   existing.add(offer['id']);results.append({'id':'discovered-'+offer['service'],'name':offer['publisher'],'status':'ok','offers':[offer],'observations':[{'url':offer['source'],'status':'verified'}]})
- db.execute("INSERT OR REPLACE INTO research_state VALUES('latest_run',?)",(json.dumps({'startedAt':timestamp,'searchAttempts':len(attempts),'newServices':catalogue['newServices'],'factChecks':checks,'taste':taste}),));db.commit()
+ db.execute("INSERT OR REPLACE INTO research_state VALUES('latest_run',?)",(json.dumps({'startedAt':timestamp,'searchAttempts':len(attempts),'newServices':catalogue['newServices'],'factChecks':checks,'taste':taste,'icons':icon_results}),));db.commit()
  feed=store_and_export(db,results,dt.datetime.now(UTC),Path(args.output),profiles)
  from research_report import write_report
  write_report(db,feed,Path(args.output).parent)

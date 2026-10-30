@@ -32,12 +32,12 @@ def configure(db,urls=()):
 def note(url,route,result,status=None):
  with LOCK:
   if len(AUDIT)<1000:AUDIT.append({'url':url,'route':route,'result':result,'httpStatus':status})
-def download(url,accept='text/html',limit=8*1024*1024):
+def download(url,accept='text/html',limit=8*1024*1024,timeout=15):
  if not safe_url(url) or not public_host(urllib.parse.urlsplit(url).hostname):raise FetchFailure('non_public_url')
  for attempt in range(2):
   try:
    req=urllib.request.Request(url,headers={'User-Agent':'DalfitResearch/4.0 (+public subscription research)','Accept':accept,'Accept-Language':'ko-KR,ko;q=0.9,en;q=0.8'})
-   with urllib.request.build_opener(PublicRedirect()).open(req,timeout=15) as r:
+   with urllib.request.build_opener(PublicRedirect()).open(req,timeout=timeout) as r:
     data=r.read(limit+1)
     if len(data)>limit:raise FetchFailure('response_too_large')
     return data,r.headers.get('Content-Type',''),r.headers.get_content_charset() or 'utf-8'
