@@ -1,4 +1,10 @@
-# 구독노트 할인 데이터
+# 달핏 · Android 다운로드
+
+**[2.1.2 · 빌드 50 APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.2-build50/dalfit-2.1.2-build50-release.apk)**
+
+2.1.1 업데이트 후 빈 화면·탭 미동작을 일으킨 시작 파일 접근 오류를 수정했습니다. 기존 앱을 삭제하거나 데이터를 초기화하지 않고 업데이트로 설치하세요. [수정 내용과 검증](distribution/dalfit-2.1.2/HOTFIX_NOTES.md)
+
+## 구독노트 할인 데이터
 
 GitHub Actions가 매시간 공식 구독 사이트를 조회·검증하고 SQLite 데이터베이스와 앱용 JSON을 갱신합니다. 개인의 구독 기록은 이 저장소에 저장하지 않습니다.
 
@@ -53,3 +59,4 @@ Google and Naver public-page/RSS research remains available without API keys. Wh
 - `NAVER_CLIENT_ID` and `NAVER_CLIENT_SECRET`: an authorized Naver Search API application.
 
 No credentials have been provisioned by this change. Usage/quota or billing follows the account owner's provider configuration. Credentials stay in request headers and are never put in the APK, feed, published URLs or logs. Missing/failed API connections retain the existing public search/RSS path, retry times and official evidence requirements. API responses are search leads, never verified benefits by themselves.
+

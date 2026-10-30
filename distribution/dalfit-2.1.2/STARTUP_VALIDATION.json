@@ -1,0 +1,24 @@
+{
+  "oldVersion": "2.1.1",
+  "oldFailure": "ES module dependency blocked by Android allowlist",
+  "missingOldAssets": [
+    "/brands/category-audio.svg",
+    "/brands/category-automation.svg",
+    "/brands/category-backup.svg",
+    "/brands/category-code.svg",
+    "/brands/category-design.svg",
+    "/brands/category-hosting.svg",
+    "/brands/category-reading.svg",
+    "/brands/category-security.svg",
+    "/brands/category-video.svg",
+    "/bundled_icons.js",
+    "/icons.js"
+  ],
+  "newVersion": "2.1.2",
+  "newBuild": 50,
+  "packagedAssets": 140,
+  "newBlockedAssets": [],
+  "preservedExistingData": true,
+  "newCategoryIconsDecoded": 9,
+  "browser": "Chromium with actual Android allowlist/MIME/CSP and APK assets; not an Android device run"
+}
