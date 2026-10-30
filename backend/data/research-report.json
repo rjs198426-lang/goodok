@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-10-30T11:02:12Z",
+  "generatedAt": "2026-10-30T11:42:39Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 67,
   "newServicesCumulative": 14,
   "newServicesThisRun": 0,
-  "candidatesRetained": 2067,
-  "candidatesIncludingRejected": 2227,
+  "candidatesRetained": 2099,
+  "candidatesIncludingRejected": 2259,
   "factCheckOutcomes": {
-    "needs_verification": 799,
+    "needs_verification": 811,
     "official_verified": 5,
     "partial_match": 22
   },
   "latestRun": {
-    "startedAt": "2026-10-30T10:59:21Z",
-    "searchAttempts": 34,
+    "startedAt": "2026-10-30T11:41:06Z",
+    "searchAttempts": 33,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 17,
+      "unmatched": 11,
       "rejected": 0
     },
     "taste": {
@@ -29,9 +29,9 @@
       "waitingOfficial": 0
     },
     "icons": {
-      "attempted": 0,
-      "updated": 0,
-      "available": 54,
+      "attempted": 1,
+      "updated": 1,
+      "available": 55,
       "failures": []
     }
   },
@@ -56,11 +56,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
+      "verifiedAt": "2026-10-30T11:42:39Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
+        "checkedAt": "2026-10-30T11:42:39Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -83,11 +83,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
+      "verifiedAt": "2026-10-30T11:42:39Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
+        "checkedAt": "2026-10-30T11:42:39Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -107,11 +107,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
+      "verifiedAt": "2026-10-30T11:42:39Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
+        "checkedAt": "2026-10-30T11:42:39Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -135,11 +135,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
+      "verifiedAt": "2026-10-30T11:42:39Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
+        "checkedAt": "2026-10-30T11:42:39Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -150,8 +150,8 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr-ko/premium/",
-      "publisher": "Spotify 공식",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
@@ -159,34 +159,12 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
+      "verifiedAt": "2026-10-30T11:42:39Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
-        "officialSource": "https://www.spotify.com/kr-ko/premium/"
-      }
-    },
-    {
-      "id": "9b015f671c3754d75a01d6b4",
-      "service": "surfshark",
-      "title": "Surfshark One 첫 이용 기간 선결제",
-      "benefit": "첫 27개월 $67.23",
-      "detail": "Surfshark One 첫 이용 기간 선결제",
-      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
-      "source": "https://surfshark.com/pricing",
-      "publisher": "Surfshark 공식",
-      "ends": null,
-      "offerType": "introductory",
-      "endsKnown": false,
-      "audience": {},
-      "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
-      "firstSeen": "2026-10-25T09:41:23Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
-        "officialSource": "https://surfshark.com/pricing"
+        "checkedAt": "2026-10-30T11:42:39Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
@@ -209,12 +187,34 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T11:02:12Z",
+      "verifiedAt": "2026-10-30T11:42:39Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T11:02:12Z",
+        "checkedAt": "2026-10-30T11:42:39Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
+      }
+    },
+    {
+      "id": "9b015f671c3754d75a01d6b4",
+      "service": "surfshark",
+      "title": "Surfshark One 첫 이용 기간 선결제",
+      "benefit": "첫 27개월 $67.23",
+      "detail": "Surfshark One 첫 이용 기간 선결제",
+      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
+      "source": "https://surfshark.com/pricing",
+      "publisher": "Surfshark 공식",
+      "ends": null,
+      "offerType": "introductory",
+      "endsKnown": false,
+      "audience": {},
+      "checked": "2026-10-30",
+      "verifiedAt": "2026-10-30T11:02:12Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-10-30T11:02:12Z",
+        "officialSource": "https://surfshark.com/pricing"
       }
     }
   ],
@@ -251,31 +251,31 @@
           "purpose": "assistant",
           "quote": "10 Super Genius 2K 2,000 chat messages, 250 in Genius Mode, 30 in Super Genius Includes memory and",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T07:18:34Z"
+          "checkedAt": "2026-10-30T11:41:06Z"
         },
         {
           "purpose": "image",
           "quote": " Started with DeepAI Pro 500 HD images, 60 Genius, 10 Super Genius 2K 2,000 chat messages, 250 in ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T07:18:34Z"
+          "checkedAt": "2026-10-30T11:41:06Z"
         },
         {
           "purpose": "coding",
           "quote": "200 extra Theos a day in DeepAI Code 25 seconds of HD video, 8 seconds of 2K Hollywood Mode 100 ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T07:18:34Z"
+          "checkedAt": "2026-10-30T11:41:06Z"
         },
         {
           "purpose": "music_creation",
           "quote": "of 2K Hollywood Mode 100 AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T07:18:34Z"
+          "checkedAt": "2026-10-30T11:41:06Z"
         },
         {
           "purpose": "appbuilder",
           "quote": "AI-generated songs 20 AI Website Builder credits (beta) Full photo editor and AI Voice Chat Prepaid ",
           "source": "https://deepai.org/pricing",
-          "checkedAt": "2026-10-30T07:18:34Z"
+          "checkedAt": "2026-10-30T11:41:06Z"
         }
       ],
       "verification": {
@@ -286,7 +286,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD+/v4LBDX+/v78/Pz9/f3o5+z9/f39/f1MRmv+/v4uJ1JrZoS6t8bU09x4dJCqqLn9/f0aE0E5M1taVXfd3OMjHEnGxdBCPWOPi6KalqugnbE+OGBjXn6FgZqBfZYWETwAABja2toXD0BlX4C/v78AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfpzeYAAAAYHRSTlMA/v8Mzor/bK//Lv///////1D/////////////////////B///BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhLuadAAACp0lEQVR42u1YaZOjIBAdQIkHeB9RJ8fM7vz/vzjqOgmCImCS3drifUhZKaof9PFo+u3NwsLCwsJCHShIXc9xQA/H8dw0QA+1nrqjaRaOmz6KAx0E6xPH4REUyAUSuGj37sEG9p0i8MAmnMDc/gEo4fAU7++PBPKAMjz0XPsmDGv2Mcb37z0MC/7HLTmGWVaFPkkwSEhehTlJbnHYmz91kcE7qvDnK6cmuRQI9i9wFfG0RKMeEC8++AglKLBuGHgH4VxmH340mk5CvH/eZeb9uImmdcgwg2KZeyK2os0OUF5l+58tRUYRaKQBiLVl75NPoZOUANasdCOTGvDlBO/s2sBEJIicACZ6YRaKDHRQ/QgKPhJVArMi1CtdHP/22b8g1fJRKsro+cdSRugk0bhjInNi1qZGOj0pxYktKpDc9CPUCsLSRTMmapWsRp/JVG+TYKGLKwcjx3Lddy0TZROCdtCcxQs0Fqp5m2DBjM8JwoioLm9FyEbZhOByPQtx7xU88ymI/kjqToJZ+zAhnHxDHkKw7LYBZDwC0SFwtAhgM3xcjLKojHpsEoRF/9PpEHj3i/jXXClnuJexbqG5szCuEZSs2OlJRTrb4xpBwhIQLbELlE7gm8v17cKREdRrHlK5lF2FLJodoNXsjILtImjXDqB06aPNUqNwLQLOp3bjhalo/7qv8eJaRxpjWaNn0jpy13Kbs6mUzF8K+YzdNWvfOxiex24C0wv3UDhikwMI7S/NPmD/9qsyvuUipi9+/g2Li6WOruq4oYXGS1aoBSp0wBkffKA1FBGfsZSErPPP5c6RyFKDVzek8H2/iLsFCdF8iGuOKh45rPg74xbPbGCkPpD6+jdHakM9KHRJ3o6h4PPHms8fzL5gtPyC4fgLxvsWFhYWFv89vgFWSyMUgQz+gQAAAABJRU5ErkJggg==",
@@ -328,7 +328,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-28T12:06:03Z",
       "icon": {
@@ -371,7 +371,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-28T12:17:40Z",
       "icon": {
@@ -412,7 +412,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-28T16:06:54Z",
       "icon": {
@@ -453,7 +453,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-28T20:58:22Z",
       "icon": {
@@ -494,7 +494,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-29T05:01:59Z",
       "icon": {
@@ -535,9 +535,18 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
-      "verifiedAt": "2026-10-29T07:18:36Z"
+      "verifiedAt": "2026-10-29T07:18:36Z",
+      "icon": {
+        "data": "data:image/png;base64,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",
+        "sha256": "e945365f307019249d8c27cf195949e0150804d40db028bfec622914a670a41c",
+        "source": "https://mindpal.space/favicon.ico",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T11:41:06Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "discovered-476eddabad32",
@@ -566,7 +575,7 @@
           "purpose": "assistant",
           "quote": "meetings       Unlimited AI chat       Integrations with HubSpot, Pipedrive, Slack, Asana, M",
           "source": "https://www.scribbl.co/pricing",
-          "checkedAt": "2026-10-30T07:18:34Z"
+          "checkedAt": "2026-10-30T11:41:06Z"
         }
       ],
       "verification": {
@@ -577,7 +586,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": true,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-29T09:07:26Z",
       "icon": {
@@ -618,7 +627,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-29T10:05:41Z",
       "icon": {
@@ -661,7 +670,7 @@
         "billingTerms": true,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-29T15:10:25Z",
       "icon": {
@@ -702,7 +711,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T07:18:34Z"
+        "checkedAt": "2026-10-30T11:41:06Z"
       },
       "verifiedAt": "2026-10-29T18:00:57Z",
       "icon": {
@@ -843,31 +852,6 @@
   ],
   "tasteSuggestions": [],
   "providerHealth": [
-    {
-      "name": "Official links: dropbox",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: dropbox",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T22:00:57Z"
-    },
-    {
-      "name": "Official links: adobe",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: adobe",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T22:00:57Z"
-    },
-    {
-      "name": "Official links: canva",
-      "status": "unavailable",
-      "nextCheckAt": "2026-10-29T23:10:19Z"
-    },
     {
       "name": "Official links: figma",
       "status": "ok",
@@ -1304,27 +1288,7 @@
       "nextCheckAt": null
     },
     {
-      "name": "AppSumo",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Sumo 구독 할인",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1359,11 +1323,6 @@
       "nextCheckAt": null
     },
     {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "StackSocial",
       "status": "ok",
       "nextCheckAt": null
@@ -1379,7 +1338,57 @@
       "nextCheckAt": null
     },
     {
+      "name": "Bing",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: dropbox",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: dropbox",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T19:41:06Z"
+    },
+    {
+      "name": "Official links: adobe",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: adobe",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T19:41:06Z"
+    },
+    {
+      "name": "Official links: canva",
+      "status": "unavailable",
+      "nextCheckAt": "2026-10-30T19:41:06Z"
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
       "name": "Dealify",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
     }
@@ -1387,17 +1396,17 @@
   "retrieval": {
     "outcomes": {
       "captcha": 5,
-      "cross_site_redirect": 189,
+      "cross_site_redirect": 191,
       "deferred_captcha": 2,
-      "deferred_cross_site_redirect": 75,
-      "deferred_http_403": 122,
-      "deferred_http_404": 22,
+      "deferred_cross_site_redirect": 78,
+      "deferred_http_403": 126,
+      "deferred_http_404": 23,
       "deferred_http_429": 2,
       "deferred_render_budget_exhausted": 2,
       "deferred_render_http_403": 5,
       "http_402": 8,
       "http_403": 200,
-      "http_404": 45,
+      "http_404": 47,
       "http_406": 3,
       "http_500": 2,
       "http_503": 9,
@@ -1407,7 +1416,7 @@
       "http_530": 4,
       "network_error": 2,
       "non_public_url": 16,
-      "ok": 1975,
+      "ok": 2054,
       "render_budget_exhausted": 47,
       "render_http_403": 4,
       "response_too_large": 5,
@@ -1415,9 +1424,14 @@
       "tls_error": 8,
       "unexpected_content_type": 6
     },
-    "cacheHitsThisRun": 6,
-    "renderAttemptsThisRun": 9,
+    "cacheHitsThisRun": 13,
+    "renderAttemptsThisRun": 7,
     "recentFailures": [
+      {
+        "url": "https://apps.canva.com/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-10-30T12:42:39Z"
+      },
       {
         "url": "https://theresanai.com/category/music-generation",
         "reason": "non_public_url",
@@ -1562,11 +1576,6 @@
         "url": "https://account.tidal.com/profile",
         "reason": "cross_site_redirect",
         "nextCheckAt": "2026-10-30T10:08:01Z"
-      },
-      {
-        "url": "https://www.britannica.com/technology/artificial-intelligence",
-        "reason": "http_403",
-        "nextCheckAt": "2026-10-31T09:08:01Z"
       }
     ]
   },
