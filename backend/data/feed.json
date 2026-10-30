@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T06:38:00Z",
-  "lastSuccessAt": "2026-10-30T06:38:00Z",
+  "generatedAt": "2026-10-30T06:45:14Z",
+  "lastSuccessAt": "2026-10-30T06:45:14Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T06:38:00Z",
+      "verifiedAt": "2026-10-30T06:45:14Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T06:38:00Z",
+        "checkedAt": "2026-10-30T06:45:14Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -996,9 +996,9 @@
   ],
   "catalogUpdate": {
     "version": "2026-10-30",
-    "revision": 16,
-    "signature": "909b43a3978e6904aade9d0083a1c11b3ade9a2f4e8326e74ea0293c3db5a738",
-    "publishedAt": "2026-10-30T06:38:00Z",
+    "revision": 17,
+    "signature": "828653f372e3e4c6b1c2585809d3634863d530f4dc1b401a8f23d68054e56b0f",
+    "publishedAt": "2026-10-30T06:45:14Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -1122,7 +1122,16 @@
         "officialHost": "grok.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant"
+        "purpose": "assistant",
+        "icon": {
+          "data": "data:image/png;base64,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",
+          "sha256": "081acec5a7cc1ddd529bf3e173bdc2388b5a8bf35e93402e41c2f902d643b245",
+          "source": "https://grok.com/images/apple-touch-icon.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "lovable",
@@ -1139,7 +1148,16 @@
         "officialHost": "lovable.dev",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "appbuilder"
+        "purpose": "appbuilder",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+YQTiYNxacP//OhX+YAX+YgWkX+n/OiL+JWD/bHn7U65ocPz9Zgb//wD///+8Xtn9NTHqSp/cZdtucPydaO37PGHyPYL3T6f/qgAA//9/AP9/f39Vqv+RbPP/SFW/P7+qVQCqVar/NCL8L0z6NWbuO4j/RHP9RHrjSKgAAAD9dwL9Vw9rcPyPbff9ZwWuaO39SU/uVq/+SC/7SW7QW8r+SRX2UpHzSo3LZujQYdh4bvv+USr+OjDsXcj/AABqcPxYcf5Zcf1bcf38OU4/f//bU7gAAP/4O27lYNaMbPX/VQG6YdzlTKj6UHj/fgBUcv5+fv/9ZgP/AP//gQKtaO5scPz/PBtVVf93bvr/VVX+dQFVcv6BcPv6SZHnZeb/eAKIG++vAAAAYHRSTlOd1ygQImcWmhcL2WjSAQHzYqISi6OL9wUDAQICA2brBAMD1mvYHmygSgD+/vP5/vv+/v7++v7+/v7++P7+/gHRV9Hv/QT8Af7+0Qb3+/4EsgINAf7VuvsD0gOHlPrY/k+RRl34AAAEbklEQVR42u3Ze1faSBgG8BhAcAXU2trubrfdS7u7Q7iG+8WkSAG5FEGR4trq9/8WO5OZJJPJDBlA/9izPB5ROfH5+b4JyFEFPHOUHbADdsD/ADAmw2FoAjOcJJ4BMEIG9dVwaDwtYAzhTTgSUVAi4RkynhIYonZF07QsTApGeYTG5KkAwwBhpVzWNCJYRPxxbUEEwG0fx8sUkMJRwmuuSRH1h6LlMgGyFHCTegRrnWtFsJ9QVF/QQMpNBIS2BQxjEm0teANYQ0TW2RIXuAPRlhhI3TyucaYVbv9xC0awIZSJvMABDoxYB/brBMj6gRtlOwC8yhNA4wNoSW82BgwQ68AJ9JVA/E1iY+AODhAEpFLSjzfeit7lOx3dAXgnOXXzz8bAHTgo5vN53RI04QjxX4GxKfCnDAB3NNkMOAB/FYmw8iTIXkc+4BqcFL0jZLnXUWTTCQzwveiOINwRPMuzjYGqO4ImGmFbwBaeHRCPsBXAjkCE7BMBP1QooEkDNLENUBCOQBGKMUkkEgbMRoArNFmBOIrkKz4uULEBStBYYBaezWZDGMsw1gJcAQF8AcW6O45eVooJPsAIAoLcq8HnrGgICJ5dOcDeuVdouoLmK7fqYRaQCK0FVOyLNd9s0gQTUr9YtH4PAd4VxQUYQRcLdj96mdM6BneGPICEokfwG2WSFgkUpIBLR6h8wQKXIO26bvd3On+AmCRAC5hoUiHtOo5TDxPzXUs84OGcI7wjVyyKToeq7/Q/xK6vA39l7j1c0kLli70n/OTExmnv9GFewV/qEsClvSU8BEWwSD7foer7/bOPzGngAg8U4QxBGZ5Q7f2zs+oJeB0I1GCYIfAUfKNYJPVVlO+vwbUMQAsewqMU3VRxxuO/vSP4gB4BanUfUXEIJtWqUz8en4D3AcC8VnOIc4Yg1y2v3Gofd7snLzw7WgXU6niKQoExqv6Q9m63tBcM5GAcok5NQRm0groLBasd5QX4WQKgBGwUqBDCvaPrtFvAVAbwEqUSYxQE7aXS0X4QMMjkch6jXicIZHzNdHepNBqN5vtBKxpkMi7hN4Q5OhqN4DdAIBkM0ISUActRe26ee7kPOyQAr4GVOpMSuhmNSLeV+fwl+A1IAgzhDEPqRyNvdy6XyQwGg1/AfgBgNhrfMisQfqxjYT/c0I8BwDINQxOBiH3YwBrgJxAA3KbTDWRk2KyodvoH3keBCMBpNDLfMvJB9cvTaQ8EAyYBLEM2S3NpmrcqsyEuYJr2COjNyspqdEDaXC7NW/OQWRAXuGqbDkFW1bCgNFyZuzP4Gf4BrEPgT8/t5wMwtNDAs9hLw0k77fDdNK3+02kyKfHnnPu2lbQvpJKUpt0PJlq/aR6qoCfz96L7K2uG9gVMWiYmHuAQeB9igQAmLuTqzVMVJHtAFnAIbIgVVI0Ou/+k+s/vKoAuv+Aizt3t9tWh+hkI+nmAqqqf1oiqos1Me8/5T6KpsJ4LTL/ivH37WSJfp8ndP+p2wA7YATvgvw/8C1s9UDjlLSMDAAAAAElFTkSuQmCC",
+          "sha256": "41fd1b86d39f1fc15d98f3aaf80bd397ca498fa0b4209c391bd660fc3df109d8",
+          "source": "https://lovable.dev/apple-touch-icon.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "krea",
@@ -1156,7 +1174,16 @@
         "officialHost": "www.krea.ai",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "image"
+        "purpose": "image",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD4+PgMDAycnJzb29tkZGS9vb2CgoIqKiqurq4bGxtzc3Pp6enMzMxHR0c5OTlWVlYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwd7FdAAAAYHRSTlMA/////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP5F0kAAAA0klEQVR42u3WvRbCIAwF4IaEf6i+/9NahUqPiw7J4rnfki23BRq6bQAAAAAAAD+iLxDwVwHBe75W7YDoDpGozqodIO4l9FFFPSCPxsyzqgfMxr3ONzEKqJSslohduftMfvRP+pucmaTzfP61BYrHVHb3lsQgIK3+zuJDC5f+kWwDYrMIaOcS7UFuJrNIngnFB+LiSrM5ptJIYjIaduzSfoxpuw+N5/4Wu1Exhtwcdtkq4BzX2erC6cFqicaVWdfVqX/ps/fhWvFfhAAAAAAAAIAPD2JvB0le6QT9AAAAAElFTkSuQmCC",
+          "sha256": "37fc2acaffadbcf38caa52a9c60a878d4cfec29e391d38f3ba0bb05b3548dfb8",
+          "source": "https://www.krea.ai/favicon/favicon-32.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "claude",
@@ -1200,7 +1227,16 @@
         "officialHost": "gemini.google",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "assistant"
+        "purpose": "assistant",
+        "icon": {
+          "data": "data:image/png;base64,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",
+          "sha256": "ea3a3684e374b3a0f0ab46f396552c34f828efe3056c2f6c069871626b3d2b37",
+          "source": "https://gemini.google/images/spark_4c.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "perplexity",
@@ -1258,7 +1294,16 @@
         "officialHost": "github.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "coding"
+        "purpose": "coding",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAkKS4jKS4hJywjKS0kKC0gICsjKC0jKS0gMDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3C3EiAAAAYHRSTlMA/tojlWkQTa0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADD407EAAABH0lEQVR42u2WwZLDIAxDwTYx+f8fboFst5BwaCMuHb1byIyFDcgOgRBCCCGEEEI+Zksm8YmYbwvCa45vmKJ3b3HAoFmoxBOia+MjFa7j4xS2El9yr1IvlGDOoZ6vh5Ck6OTcvrzKQApUd1yqsR8l0a1bvku+jtQEACnsreZpXPe2fv8U0uTC7HIt/GWF/PzDQTWSaSVaarcF5mGa9EKBvFoAmcH8DCLokKe3SEDXNM9+GOihnR/Use4oqxgVjvgAqyilMC9OnV671fTXHBB+/bRN8eY8+b36MLuuDUdr2/TOSFENp/qmBTVL/QuAtcza9PX8xMBjhaU0ZLBgMOr9CTs92ihg6AG4DL//AvDhtw5gr6C6YnwnhBBCCCGE/DwPQRAEPQfO9pgAAAAASUVORK5CYII=",
+          "sha256": "b461a872bc6c89677ac60181ee824bf4b32d649b75a0d35b97a18679e235ffc2",
+          "source": "https://github.githubassets.com/favicons/favicon.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "midjourney",
@@ -1288,7 +1333,16 @@
         "officialHost": "cursor.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "coding"
+        "purpose": "coding",
+        "icon": {
+          "data": "data:image/png;base64,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",
+          "sha256": "95c5ff522cd34919cf7f627a637cb563556f40cf9d50a9a165db3182731231c0",
+          "source": "https://cursor.com/marketing-static/apple-touch-icon-light.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "suno",
@@ -1351,7 +1405,16 @@
         "officialHost": "www.disneyplus.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "video"
+        "purpose": "video",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAATaHgTaHgTaHgTaHgTZ3gTaHgTaHgTaHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2MozXAAAAYHRSTlMA+wvPrixNcZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADNfIxEAAABrUlEQVR42u2XSZLgMAgEbRDL/1/cQtba1qVH+DAR1ANIi6XA1xUKhUKhUCgUCv0HAiAWERVhJgDv8CQJ7yFMwq4QnqMPCHkxCC1eES6o5PQOKZGqiFhHvlA9niE5Ei8Vz5DOcEDkeAyvrhoMpa86l1NNlMBX09EQia6PEci+j4BRWZCnFupK0HvKCak7AfBOUziQpxDgCUBYKoG+BPo9esVOHLPEOZhcG4LXQGwAlcA+ACuq7qg3kh+AKK+2Vy+ph/VJsznEpNxnDspQ02F0Sa/llppNlCTpUfh39NnryhPw33MEum7laX3WqHLUSM/3JbtbUqmmLaK2PqUP4Kt//9D8dkhAe0ptF1uf3SXoqAjSswu6GI89Ta9zACHPyeoA6/86X2cpAm2EFSBjY54V2dzm6fg1RflUgu7iR21qBIV3DdY2lpNBzoSy3beAx4vwzItsArIz7AB1M5/6dfnMMsMLIHtUHbhzM+3nHI17uDugy0Zrh5CZdTnphyN5XV+wNVXPC1U2ji2eP1Vc8iHZSk1Jhcn5NMXiaf23x/+oJvnslyAUCoVCoVAoFPpeP7o9CLu8NSVPAAAAAElFTkSuQmCC",
+          "sha256": "b0297cd10258c3f81dee989949bb6dfa5eb1be704dfee715412bacd4feee4d7b",
+          "source": "https://www.disneyplus.com/favicon.ico",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "tving",
@@ -1618,7 +1681,16 @@
         "officialHost": "www.microsoft.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "office"
+        "purpose": "office",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
+          "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
+          "source": "https://www.microsoft.com/favicon.ico?v2",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "notion",
@@ -1648,7 +1720,16 @@
         "officialHost": "www.apple.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "storage"
+        "purpose": "storage",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD+/v4dHR/n5+nU1NjS0tfS0tfS0tfS0tfS0tfS0tdmZmg1NTclJSfS0tdHR0mYmJmnp6d2dndXV1i2trbIyMmMjI0eHiDc3OA/P0Cfn6C/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRl1c1AAAAYHRSTlMA////9gyKL9RyWP///7r/////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASxnZtAAACGklEQVR42u1Ya1PDIBBsCM+83636//+nSWp1lCMeF+g4DvupUzu7sgfHcpdLQkJCQkKCF4QqjJTSmEKJ8OSF1JznH+Bcy0KEZG9W7uwbVpUmkIaQ/Af5pwiX5yWEcdHfJcxJCaUP6HcJraK4E8Yn0fxKv0s0IpI9J21SHMm/2aSi8pMUhPbg31wSIfm7l5qfVJAH/LxlrLb+nku/AhzwV4yxEfheBTJo/f8Z686VwRzwTxt/Bf0gN+gFHBiUlSt/PcPmiQALyNYKtLNjr5oAC8jGsXPXH7eEAjS4H8qhu0vzpRzLYQJ+VKAEGuhobXtzNb+c5n687p9Za0s0VIdKBqIneQQ45OBnV07xyO4Sry7+ntQvNLQzQQDbSVNK0Dv4S9pGtfucowI1dFwQHc+ucQsLtOBhLgh9osI7hOkW8s8IjKCADCdQEQUMtshsollkC7gaRUsTsLep66BBZUZsU/ug8dqpkBMOGtCtR5eAXWhMv7abXY8X0LRQ52qnbKG0a+DCcS3BCpCoCwe6MlvkhYCLFcClP9e4g9CQY0uHuhCQsQUMXoPNP5GzIxgdh3su6ue3bq9I3dPTL5wdp+GR7LJ5GRZ+Ivwep1/3Ow0d331fgIRXmuL+An4vWem9BL9HoL9JgR/K5/njjxLiD0Pij3PiD6Tij9TiDwWfMNY8lAhC/4TR8tdw/PYYjt8CD8efMd5PSEhISPjneAdfMxxCpvQLPgAAAABJRU5ErkJggg==",
+          "sha256": "b832cd97ed67c053b8547919e1d9eb1bce6464c175a701495b58ca7fac787560",
+          "source": "https://www.apple.com/favicon.ico",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "google-one",
@@ -1663,7 +1744,16 @@
         "officialHost": "one.google.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "storage"
+        "purpose": "storage",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAreuz7uwMzp1PpQzQ4gPAzp1Ioee4qeuwddOjvWyk2gPMbdOkzp1P7vAP7uwP6uwP/xAD6uwQyp1L/vAD//wAzp1PqQDPpQjT9vAD7vAIrk5Awp1BPdtZzbLTUSUnrQS3pQjTlQzgbdt4edeckf84ifs0geNcmiaormHsvnmwwr1AmpGUwoWRDeedHfuZEfOZAhfNjccGLY5q6UWemWYCqcW/DUF/sQzXpQzXuXSj0aRztYif0fhvzhRj5rAn/1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXiSxbAAAAYHRSTlMA/v7+/f/ALNL82iwsQlO30xOKaBEBqjS2L2y1IOTGyRNu0cfcjbTAs7/VEDXTKt7xLNXEvyizs1yC6i7TyWvQBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYFlkQAAABTklEQVR42u3YyVrCQBCF0U5VGkUknTDPCM7zPI/v/1QKCnTSS+u6sf4dm3s+UsACYzRN0zTtn9aedDqTLdj88zSe9wDaf4sXPSLmm7WnJRC35fcb7n21H3fE97OUXj0glj50l4hefED4GSVf+7ThA7ey56UAOJN8/I4C4P5S8OOTUgicV0TPGwAjWxE9bxEYWSng57wFYGilgIajEBhfWCkgSykEbiIrBXzk97+Ba2vFgB6FwJUVBFwATIfRIgmAisA4iqDAXSQMFG6crEsDuSOnXZMD1iS+Zt6+y4w84P0O1ZoGASyFZP4KAJisV3MuyQwMyKWAAgr8AbCLBkp9NMCnq6e0CQGY99AA98tggI92yrNwAPM+GuADNMCHaIB5Gw3wCRqoKqDArwHEf2p1b7+EAAYeUDfYtwB5A57QOgYBZtCazVeNpmmapmmSfQIvmBdrX7vkAAAAAABJRU5ErkJggg==",
+          "sha256": "98919b66bda8cf6ebc218bbed03eb9def7bd37fdeccc61327ed054e74f01f67e",
+          "source": "https://www.gstatic.com/images/branding/product/1x/one_64dp.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "google-workspace",
@@ -1680,7 +1770,16 @@
         "officialHost": "workspace.google.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "office"
+        "purpose": "office",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAuhv3+SEn4zAcUvFYMuWguhvwJpK6pxgH/Sjz/SUn9SU7/ZS3/eSX/qA8QmswIq5d0wwv9S1L+Rkf+0AwckeQNumMAvIUJsIcoi/Y0hfswhv5XwhdJwSKLxQbKyQP/WDT/kxj/qgD7ywP9zgP/1gccnNUYldwYldcGro8KqpsKorkIpa0bv0kSu1MPvF0PvF4Nt3YPumcA//8xhv8whf8vvjsovzgqvj0zzDM8wCk5wStTwhdgvxiNxQKoyQfGyQDXygPHyAD/Rz7/SlH/QGD/VTb/VDr/UDn/VVX/ZjP/ZC7/aCv/Zmb/hx7/mhT/kRb/vwv/uQb/sA7/uAf/vQryzwn6zQD/0AwAAAAAAAAAAAAAAAAAAAAAAAAAAACCV988AAAAYHRSTlMA/fv8+/67/v7+Fq769vz+9/5Y2/7+3gv+LHSP/vfv+/7+A0rQDBKLy1tpod4cVqjYZq4BFVp+3v4FUf6OII0mUJTfVnUIUYDeBgUhjgX+Jo0wUJTf/jqkpAAAAAAAAACyxKWKAAABHElEQVR42u3WZ1PCQBAG4HCbIzENQlBEmigW7F3sDexdLP//l3ghZhy/7w3jzPt8uv2y72Rzm4lhAAAAAAAAAAzD7YUbCRG5BUdP/8vrEZGICjr633uTaYAQGhKefU8l/ES4Pfb+r0HT970rNX2nK9wb9v5T/aD56N8lhfPAP6Bpeg+CJ4039IuI3nSuQKtI9DI4ZVITrAFERZr5G1D5XwEt9Q4+BqdsjH9Enyrg7LeME7aZryk1GidpVY6fYIt30c5t264fJcXsfG40k2W+p6d2PQxrO8uGUWovWSqgzL0Jx2G12jFNc0zKvGXl5vh37bB2oPqbUsrxvLW4qWGb93eT/ipgQc/3Ym9ldU3NaGO9hN8HAAAAAAAAGIpvAH0UEDdBLK0AAAAASUVORK5CYII=",
+          "sha256": "844f02b0af5928b4ad2610ab18ae573ce6d92cdb3114b9bde8175580a5af89a7",
+          "source": "https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "dropbox",
@@ -1696,7 +1795,16 @@
         "officialHost": "www.dropbox.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "storage"
+        "purpose": "storage",
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAAYf37+vEAWf7K2vNypfhJivqSuPYxe/tZlvmpx/XY4/MccfyCrvcATP87g/q60fTn7PNjnPkpb/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZfgOOAAAAYHRSTlMA/P///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmKx31AAABLElEQVR42u2WyXLEIAxEByQWAzZ48v//GlbXJJWq5CBfJv1OOqmLpiV4PAAAAAAAAADgj6hfgMA7CRDRD6WYAFHa1OxL6irFBIhs1MW3tkSeNdulICJQmznd2FtpeunmISQEqiVRD9jaMstYfRITcHqxPa/SEclZZLn3DPUWfJlnkbOoX8Ku9Wmoocw5b0M0pkfmdNAoE9tDPKbK8d5vtR2BgxKNae32bDni3Czq9xE3QYtI5TCTs3/4lajgBWMarmwac5VBycV0Tq8+qzFr6JwSjakPo6cxY+xKlo1pG4Roj1RlSjq2aIRT1G0iGkaNebvhwfFr42n2dMeLlq6VF9IdAtWizK9rTv7RHyvPqdf+wr+Kuifyl/by35Zv7fHxegsBAAAAAAAAwL/hE4QnCXGuwgnCAAAAAElFTkSuQmCC",
+          "sha256": "d590cddc8d73e7385b3ba36171bff48c22e3029c1d88ad37423e0a73da8ea0dd",
+          "source": "https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon.ico",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "adobe",
@@ -1714,6 +1822,17 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T06:43:20Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAADqEAD+/v72jofqEADqDwD96unsJRfoFQDxV0zpDgDuNSf5ubT719XvRTnyY1nzdm33opz6yMT0g3v4q6XqEQDwT0P2l5DzamD6wr784N4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhC7lfAAAAYHRSTlMA/v//r/z//xf/jv////////////+S//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYdQlVAAABPElEQVR42u2Y0XKDIBBFAwpC1JiYNGn7/x/aNKBC6kwEdqed6T0v4sse2EUQdjsAAAAAAPASUwslXqBEbXLjv4mN7PPi12IzNWv/M8dgRBKGM0F5SRKJJAtUWnz190YAQZagkw86LkEjPS2ToJoENyaBngSSRzDM8eU7i2BcBCOHoJUBBwbBLRScGAQ+cu+eDbng6HPjn0dyget5P31tPbXgMHe8Wy9zqeAyp9661oVW0ASTR6+WuVBwDvLi22dSwWdQWT8aTSmw0dz0ZbaEgi5Ku13bd4oEzdPE0Sv7TpFg2mn0nX55r8gEOlzn7LywairBIJ8X0g/XHIgEYySQi3KkEbRx/Mf0/FnmAsG1ivkWDK55xa8jDiC/egg0aTnKuE7YMx/E+a8S7mPYmCWVeRnCf50DAAAAAPCf+ALkTg7nJcXNBQAAAABJRU5ErkJggg==",
           "sha256": "bc646f0f6641df270d8305a5306f304bade19d6fa41397c8523f2aa75fe87428",
@@ -1752,7 +1871,27 @@
         "officialHost": "www.figma.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T06:43:20Z"
+        },
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAAAAD+NjaHTv7/cjcky3EAtv+8KCi/VikhCwcAnNt6XewbmFUCqu0ht2YAFyAAiL8SCiIFGQ4WfUVpFxcARGAAW4BlO792Rd8QWTESZjgAZo9MLI9aNKrvazM8I3BwMhiHHR2AORufRyPfMDDfZDAHJhUAIzAALkAJMx0AOVALQCMARF8Acp8AcqAZi04dpVwwFQogPEcgdZYgotYgruZADg5AHQ5QJBJDJ39VMZ+PQR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABO3XM/AAAAYHRSTlP/AP////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsiJqQAAABnklEQVR42u3ZaXOCMBAGYCoQCOUGtZ71qL3v+/j//6vqOAwkarS7cey470c+7DOQ7GYA40hzDAIIIGCngIEYAggg4ACBfOgUcYv8fCIBea0cq5TJAANwaisBy3LhgFBfAFYJmwN5bT1gjWAAP1MBfRgg3YAEWAMQ4KiBsW7APXBgqAZGIOBdDXBYozkqYAzsZK4AJhw6i/haoP8En6bCtKjuII5y4OTOUqDvfiCdaMlX0yzCZ3l+eX0L4kaEA3TNcqYXopgt0kEAkhNTAG4DVsSLwIBQ3zSiUv2pAAW+TRHwWCUNGJCI9c16tT4LYMCpBMQCwOogoCcBgQjcgYCmBIj1WbzfwAaPqLPfi2wotymLYEBXc6MtGRUXuKNiybC7xh12RtKTxrWHOa5nRLd5XGR+5fLe87y4gfWOduWHdhH8l8DUt8tBB85DWyuQCvXRgczWC6S2ZqCtG/AJUAHSJnpEBloikGH3gdhnKTbQ/tMNbDOLKsscpvhAWdi4/nbnQWuxDmFb20fBm8x/yFr03ZQAAgjYBUC/ewkg4N8Cv7TyL86YrF5nAAAAAElFTkSuQmCC",
+          "sha256": "683babd4482c05437b6898b4218285fd15d7d3ef203d85f688bbdbff0be816e7",
+          "source": "https://static.figma.com/app/icon/2/touch-76.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "zoom",
@@ -1782,7 +1921,18 @@
         "officialHost": "slack.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T06:43:20Z"
+        }
       },
       {
         "key": "onedrive",
@@ -1797,7 +1947,20 @@
         "officialHost": "www.microsoft.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "storage"
+        "purpose": "storage",
+        "purposes": [
+          "storage"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": true,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T06:43:20Z"
+        }
       },
       {
         "key": "evernote",
@@ -1812,7 +1975,29 @@
         "officialHost": "evernote.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "notes"
+        "purpose": "notes",
+        "purposes": [
+          "notes"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T06:43:20Z"
+        },
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+/v4Bpi0BtjIBxzbh4eECmSnb29sCiSIAAAAB0zkry1UT10fN6dRUrGlJyGn///9y1our4rhzxohQ1XK25sJBs16V2aYp1Vbc3NwttU862GNCqlza2tqt1rfc3NwTyEPe7eFPtWnX8N0sl0UsqUzi4uI34mSE2Zlnunuqqqo9zWJCmVaU4acZuEJ/f3+Ex5SYzaW/v7/MzMzd3d3c8eHi4uLh4eFkqnNvtoBh1H6Du48erEIX4E0k4lapzrHc3Nzi4uLj4+Mkkz5iy30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwu9c8AAAAYHRSTlP+/////v/+/wD///////8C///////////L////b/85////////yv///wP/////BP//BAWM/2GL//////////9fP0D//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtAhv8AAADiklEQVR42s3aiXKqMBgF4B9QtBgwiKJoEaxarUv3fe+97/9ON0ErYCskkMzcM9PO1NHzkYBbE6hHOSM/n/c9XUh691/bShKIfjfr53dTvSIs+vTunJTugGZ9OKW3g6DQrulwI0DUfyywfWccRwIBrki/LrifCDoRrihAj18HCdGjMQCZfzn9VBjWz6B53atU5ACVSu+6CfQEA8gSPsgU9aT1E6HXhKEuE9CHcFORCVRugH2GbIwdB7uIb46AdYZcp//2+tpodPsY8cwRK4BP3xpHURoNqy0eeDrd1keEYYsGcLKfCN2VTYJuRQF7/XSaujSOM2uLAH70x06j67ilAdKvHR1MNsEC0P6sEOIJlQBwf9t/lEEs2oWB2Xe/FgSHR3Hwws0F4n4DuRq/kAfE/ZoFbSNDCAxUAHDjfu0C7CxACyx+INnvoRxACzAv4DqJ65McXw6g/TZJWYDtdOMHr8l1uMoBtL9cQKpfbdEzHmjcQzgMuAtD3cW7oDc5eYCG2QE0x61dNu+S7b6mpurUvXpVs0q8o5HXjK6aE22NSgCYDCA3bmHAdvpBfn90LTABqB3Htl3s9LsqSyw2wCd9RiqBypYRE4AYD7cwgA1VLuAEhYEOE2Cp/w+gKEohQGGsH7Vac0/hBjA9sNyoiudHd7+cxPdnA9w1C6BMwu+nzQsngDwmwN89oMUJgMUE2CeboJPVmhOYMZ0Ew9rG6aucAOMckctHUdPHwggkJpUzrADrEAoD4MoGYCQbgE4hYMAOoIlkANBAMgAwrypKlSucAHmd5CU4AQhbk6pUgBCX5lgqQM+2f/E4Mn9kMBEFHPyO7c/HUgE6OHMPMAUD9FKWDMAoBYzEA3bqiTIXD4CXBC6EAGH6E0IS8AUA7ZnlHgRQWQCtnhbexEv8MxAZ1dqufwzlABs7hlet1aqJb0rYq2VcRDwAou0KqSdRWt9jWC02t9BUq5dlgLAzibsUy0W3cGLjhVKLgXFYaorcuJ+UvXjkM100YXEeodw56KTa6NSn/q79QSUBf69wP89QEoBWpjCA0gCYGf1jJAAIB4f7dRAAQHhoDEsEQgCAx1/7HyogCgD/5zQt3wWs4SQJc5ycfPM9e/2gyEJg6D8/mMvl0nx49sO8ZS7pC3XSlxqlL5bWP2Qu9x7X5S9Yn8ldcm/K3zQgf9uD/I0b8reeyN88s9mr8yVu+89nvP3nH1lYaJImSUUfAAAAAElFTkSuQmCC",
+          "sha256": "10107eb7cae0a1e3e14a9063ccb4a23f889a5c585e39e71cb243407007231c6f",
+          "source": "https://evernote.com/images/evernote-logo-ios.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "kakao-emoticon",
@@ -1828,7 +2013,16 @@
         "officialHost": "emoticon.kakao.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other"
+        "purpose": "other",
+        "icon": {
+          "data": "data:image/png;base64,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",
+          "sha256": "dceef34e506476017c894781297e9e8ac7b10dfc2d397f8cecfe0dca97f6df94",
+          "source": "https://emoticon.kakao.com/favicon.ico",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
+        }
       },
       {
         "key": "kakao-drawer",
@@ -1869,7 +2063,16 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+          "checkedAt": "2026-10-30T06:43:20Z"
+        },
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD8ugABAQI4KgEiJCVkSwJURhvqwEn/1mHj39Ll5ebMzMz//O8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjgceQAAAAYHRSTlMA////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCST5+AAAAU0lEQVR42u3UKRKAMBREQUI2Erj/eTEoCoP4haD7Ak/NLAsAAADwWroReArUfKlBgbxessC3gVJKiwyUfY4eGpjHlkIDY4sdWuu+6KsAAAAA/MAJmukB2wQxFsUAAAAASUVORK5CYII=",
+          "sha256": "17e5125efa0268e170a149cb14ee09b7082e3e760325042153e261b396ae7c19",
+          "source": "https://page.kakao.com/favicon.ico",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
         }
       },
       {
@@ -1894,7 +2097,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+          "checkedAt": "2026-10-30T06:43:20Z"
         }
       },
       {
@@ -1920,7 +2123,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+          "checkedAt": "2026-10-30T06:43:20Z"
         }
       },
       {
@@ -1948,7 +2151,7 @@
           "billingTerms": true,
           "regionConfirmed": true,
           "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+          "checkedAt": "2026-10-30T06:43:20Z"
         }
       },
       {
@@ -1976,7 +2179,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+          "checkedAt": "2026-10-30T06:43:20Z"
         }
       },
       {
@@ -2004,7 +2207,7 @@
           "billingTerms": true,
           "regionConfirmed": true,
           "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+          "checkedAt": "2026-10-30T06:43:20Z"
         },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD+/v4dHR/n5+nU1NjS0tfS0tfS0tfS0tfS0tfS0tdmZmg1NTclJSfS0tdHR0mYmJmnp6d2dndXV1i2trbIyMmMjI0eHiDc3OA/P0Cfn6C/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRl1c1AAAAYHRSTlMA////9gyKL9RyWP///7r/////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASxnZtAAACGklEQVR42u1Ya1PDIBBsCM+83636//+nSWp1lCMeF+g4DvupUzu7sgfHcpdLQkJCQkKCF4QqjJTSmEKJ8OSF1JznH+Bcy0KEZG9W7uwbVpUmkIaQ/Af5pwiX5yWEcdHfJcxJCaUP6HcJraK4E8Yn0fxKv0s0IpI9J21SHMm/2aSi8pMUhPbg31wSIfm7l5qfVJAH/LxlrLb+nku/AhzwV4yxEfheBTJo/f8Z686VwRzwTxt/Bf0gN+gFHBiUlSt/PcPmiQALyNYKtLNjr5oAC8jGsXPXH7eEAjS4H8qhu0vzpRzLYQJ+VKAEGuhobXtzNb+c5n687p9Za0s0VIdKBqIneQQ45OBnV07xyO4Sry7+ntQvNLQzQQDbSVNK0Dv4S9pGtfucowI1dFwQHc+ucQsLtOBhLgh9osI7hOkW8s8IjKCADCdQEQUMtshsollkC7gaRUsTsLep66BBZUZsU/ug8dqpkBMOGtCtR5eAXWhMv7abXY8X0LRQ52qnbKG0a+DCcS3BCpCoCwe6MlvkhYCLFcClP9e4g9CQY0uHuhCQsQUMXoPNP5GzIxgdh3su6ue3bq9I3dPTL5wdp+GR7LJ5GRZ+Ivwep1/3Ow0d331fgIRXmuL+An4vWem9BL9HoL9JgR/K5/njjxLiD0Pij3PiD6Tij9TiDwWfMNY8lAhC/4TR8tdw/PYYjt8CD8efMd5PSEhISPjneAdfMxxCpvQLPgAAAABJRU5ErkJggg==",
@@ -2045,18 +2248,14 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T06:36:06Z"
+        "icon": {
+          "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAACiOP//AP+hN/+iN/+hN/+iN/+hN/+qVf+pOf9/AP+hN/8AAP+bN///f/9/f/+eOP+nLP+qAP9/P/+eOP+RSP9VVf+fN/+oRP9/Kv+RJP+fN//MM/////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADlnSjAAAAAYHRSTlMA/gHPTJAxcQMSAq4BEQICNwsDBEIHA2EUBgepBQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABoM26aAAAD1klEQVR42u1Z6bKrIAyOCYtsdjvb3d7/NS8gttoKorX/mpnO6RkCIV8WkhTgTW9605ueI2xxJ6Z50v5jl5hsYtxAFhT7XGY7Mbd8jVnVQVBjFBYBQFR/GhKAmwxgmqaRPVAzB2APjvRMxq0VgIgtiCaQ62+n5wzkl1RkEnBG1GvQB/gHPO5lcPE4u0cmpcAvscjE4y1sPfrSKHBN2tvaiyE21UEDI3OxbbpF49mNrLWEDuBI+GiGvQFnUmM7WKso8CSEgp4yAFWHUrwWaXnd6yj+accsARo6JYS8LKSobBVA9jMcKMywt7e2AW1HSsbVIwy3MCIKtDUgHfoDOQ17+1NI3SBG+KFedjJBQ7x3pkMVQlHv4fyGDia5Ynd3h8bgjau5hzF3fx8Ag96JBCWoLgPTJbGQoAmnhBY7W2Xjybarv4bwDrnzyvI95Vy0soXfXACY6bb0bzACphyhaLJ05QQQvJT6AvwGcar3lRScQXEe/rh5DtJoiobQQXXlMgIExPAihcnGjwKUCjjpfIo4+QOYmt/tr4a8951rfN2T8wv0K5sydIx8mbleI+0xqWK/MyxCRih1KQkVBAy+w+8deSogn5K6qDo/Znbzq2lPWQE8QtkVY5jnAL4tMJ4zEy/G85IA/vhtVwFEj9/WCeiikbMCKigKEFkbJC96RkDZi3ygBaZnBLBbHTKb684+e4lnBHgIjM5nu68QSk5sFyBiLvrKJrtgZQ5PCDj6G+ZtHOnDPSfAseVHWdFmAWr59E7HnL2N6C/oblnE/ZNZTwa62sJuG9WVdm022y+SrBSwOdJYlYBuu5+KKhvgZj8dl6/L5ftKVzL15XuPEV9paekv9VGFUOwvOamVlmaKuKrvNfXqjCTAt7Jr+nFUK7PQyk4ZQZtxa5F1nMHGZ1gtYbByMXHwawyv7fVv8Vy0NlsVw9MKIxWKxhWhT0C69SMdtCYpXzACJSCNXT9uGTASpefBWLERoTAtiP04h9LzkFZJ2Q0jKR1UIIel50GCDpmRbRuqIRylAlV6HphfPsltA68owX+Kz8MROkyM28aOvuvWw8jGzPTOoR3DVsNzlPpm+dj9E8IONBQB47kEiRWP/LKAfl407s/Jmfo3eNnU8Wg5Drh+hkQOdsHoHE/7GQcc71t2v7QH6aCChHE8sDAoJAV6FwGhkDlOy6UAvlD7ADREHIzGPITx/d3tfH/UYVIUxwJI73j+fc3KdvH/fEm5l3tm63r5EgXCIyqGgdRLFBh+jUi/WbxEBTx4R+IHfJEC8RcIcYRtPwnVi3jl8WG2fYA3velNb9qd/gNlQR+keq/QkwAAAABJRU5ErkJggg==",
+          "sha256": "97a23811a445814615d653e8d2f05ae07730bc7414ec44f872c2fad37290e8e0",
+          "source": "https://cdn-files.dzcdn.net/cache/images/common/favicon/apple-touch-icon.dc494e31ef5f888a087a.png",
+          "method": "official_site_icon",
+          "checkedAt": "2026-10-30T06:43:20Z",
+          "width": 96,
+          "height": 96
         }
       },
       {
@@ -2731,7 +2930,16 @@
       "officialHost": "grok.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant"
+      "purpose": "assistant",
+      "icon": {
+        "data": "data:image/png;base64,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",
+        "sha256": "081acec5a7cc1ddd529bf3e173bdc2388b5a8bf35e93402e41c2f902d643b245",
+        "source": "https://grok.com/images/apple-touch-icon.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "lovable",
@@ -2748,7 +2956,16 @@
       "officialHost": "lovable.dev",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "appbuilder"
+      "purpose": "appbuilder",
+      "icon": {
+        "data": "data:image/png;base64,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",
+        "sha256": "41fd1b86d39f1fc15d98f3aaf80bd397ca498fa0b4209c391bd660fc3df109d8",
+        "source": "https://lovable.dev/apple-touch-icon.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "krea",
@@ -2765,7 +2982,16 @@
       "officialHost": "www.krea.ai",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "image"
+      "purpose": "image",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD4+PgMDAycnJzb29tkZGS9vb2CgoIqKiqurq4bGxtzc3Pp6enMzMxHR0c5OTlWVlYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwd7FdAAAAYHRSTlMA/////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP5F0kAAAA0klEQVR42u3WvRbCIAwF4IaEf6i+/9NahUqPiw7J4rnfki23BRq6bQAAAAAAAD+iLxDwVwHBe75W7YDoDpGozqodIO4l9FFFPSCPxsyzqgfMxr3ONzEKqJSslohduftMfvRP+pucmaTzfP61BYrHVHb3lsQgIK3+zuJDC5f+kWwDYrMIaOcS7UFuJrNIngnFB+LiSrM5ptJIYjIaduzSfoxpuw+N5/4Wu1Exhtwcdtkq4BzX2erC6cFqicaVWdfVqX/ps/fhWvFfhAAAAAAAAIAPD2JvB0le6QT9AAAAAElFTkSuQmCC",
+        "sha256": "37fc2acaffadbcf38caa52a9c60a878d4cfec29e391d38f3ba0bb05b3548dfb8",
+        "source": "https://www.krea.ai/favicon/favicon-32.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "claude",
@@ -2809,7 +3035,16 @@
       "officialHost": "gemini.google",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "assistant"
+      "purpose": "assistant",
+      "icon": {
+        "data": "data:image/png;base64,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",
+        "sha256": "ea3a3684e374b3a0f0ab46f396552c34f828efe3056c2f6c069871626b3d2b37",
+        "source": "https://gemini.google/images/spark_4c.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "perplexity",
@@ -2867,7 +3102,16 @@
       "officialHost": "github.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "coding"
+      "purpose": "coding",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAkKS4jKS4hJywjKS0kKC0gICsjKC0jKS0gMDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3C3EiAAAAYHRSTlMA/tojlWkQTa0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADD407EAAABH0lEQVR42u2WwZLDIAxDwTYx+f8fboFst5BwaCMuHb1byIyFDcgOgRBCCCGEEEI+Zksm8YmYbwvCa45vmKJ3b3HAoFmoxBOia+MjFa7j4xS2El9yr1IvlGDOoZ6vh5Ck6OTcvrzKQApUd1yqsR8l0a1bvku+jtQEACnsreZpXPe2fv8U0uTC7HIt/GWF/PzDQTWSaSVaarcF5mGa9EKBvFoAmcH8DCLokKe3SEDXNM9+GOihnR/Use4oqxgVjvgAqyilMC9OnV671fTXHBB+/bRN8eY8+b36MLuuDUdr2/TOSFENp/qmBTVL/QuAtcza9PX8xMBjhaU0ZLBgMOr9CTs92ihg6AG4DL//AvDhtw5gr6C6YnwnhBBCCCGE/DwPQRAEPQfO9pgAAAAASUVORK5CYII=",
+        "sha256": "b461a872bc6c89677ac60181ee824bf4b32d649b75a0d35b97a18679e235ffc2",
+        "source": "https://github.githubassets.com/favicons/favicon.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "midjourney",
@@ -2897,7 +3141,16 @@
       "officialHost": "cursor.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "coding"
+      "purpose": "coding",
+      "icon": {
+        "data": "data:image/png;base64,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",
+        "sha256": "95c5ff522cd34919cf7f627a637cb563556f40cf9d50a9a165db3182731231c0",
+        "source": "https://cursor.com/marketing-static/apple-touch-icon-light.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "suno",
@@ -2960,7 +3213,16 @@
       "officialHost": "www.disneyplus.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "video"
+      "purpose": "video",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAATaHgTaHgTaHgTaHgTZ3gTaHgTaHgTaHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2MozXAAAAYHRSTlMA+wvPrixNcZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADNfIxEAAABrUlEQVR42u2XSZLgMAgEbRDL/1/cQtba1qVH+DAR1ANIi6XA1xUKhUKhUCgUCv0HAiAWERVhJgDv8CQJ7yFMwq4QnqMPCHkxCC1eES6o5PQOKZGqiFhHvlA9niE5Ei8Vz5DOcEDkeAyvrhoMpa86l1NNlMBX09EQia6PEci+j4BRWZCnFupK0HvKCak7AfBOUziQpxDgCUBYKoG+BPo9esVOHLPEOZhcG4LXQGwAlcA+ACuq7qg3kh+AKK+2Vy+ph/VJsznEpNxnDspQ02F0Sa/llppNlCTpUfh39NnryhPw33MEum7laX3WqHLUSM/3JbtbUqmmLaK2PqUP4Kt//9D8dkhAe0ptF1uf3SXoqAjSswu6GI89Ta9zACHPyeoA6/86X2cpAm2EFSBjY54V2dzm6fg1RflUgu7iR21qBIV3DdY2lpNBzoSy3beAx4vwzItsArIz7AB1M5/6dfnMMsMLIHtUHbhzM+3nHI17uDugy0Zrh5CZdTnphyN5XV+wNVXPC1U2ji2eP1Vc8iHZSk1Jhcn5NMXiaf23x/+oJvnslyAUCoVCoVAoFPpeP7o9CLu8NSVPAAAAAElFTkSuQmCC",
+        "sha256": "b0297cd10258c3f81dee989949bb6dfa5eb1be704dfee715412bacd4feee4d7b",
+        "source": "https://www.disneyplus.com/favicon.ico",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "tving",
@@ -3227,7 +3489,16 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office"
+      "purpose": "office",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
+        "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
+        "source": "https://www.microsoft.com/favicon.ico?v2",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "notion",
@@ -3257,7 +3528,16 @@
       "officialHost": "www.apple.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD+/v4dHR/n5+nU1NjS0tfS0tfS0tfS0tfS0tfS0tdmZmg1NTclJSfS0tdHR0mYmJmnp6d2dndXV1i2trbIyMmMjI0eHiDc3OA/P0Cfn6C/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRl1c1AAAAYHRSTlMA////9gyKL9RyWP///7r/////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASxnZtAAACGklEQVR42u1Ya1PDIBBsCM+83636//+nSWp1lCMeF+g4DvupUzu7sgfHcpdLQkJCQkKCF4QqjJTSmEKJ8OSF1JznH+Bcy0KEZG9W7uwbVpUmkIaQ/Af5pwiX5yWEcdHfJcxJCaUP6HcJraK4E8Yn0fxKv0s0IpI9J21SHMm/2aSi8pMUhPbg31wSIfm7l5qfVJAH/LxlrLb+nku/AhzwV4yxEfheBTJo/f8Z686VwRzwTxt/Bf0gN+gFHBiUlSt/PcPmiQALyNYKtLNjr5oAC8jGsXPXH7eEAjS4H8qhu0vzpRzLYQJ+VKAEGuhobXtzNb+c5n687p9Za0s0VIdKBqIneQQ45OBnV07xyO4Sry7+ntQvNLQzQQDbSVNK0Dv4S9pGtfucowI1dFwQHc+ucQsLtOBhLgh9osI7hOkW8s8IjKCADCdQEQUMtshsollkC7gaRUsTsLep66BBZUZsU/ug8dqpkBMOGtCtR5eAXWhMv7abXY8X0LRQ52qnbKG0a+DCcS3BCpCoCwe6MlvkhYCLFcClP9e4g9CQY0uHuhCQsQUMXoPNP5GzIxgdh3su6ue3bq9I3dPTL5wdp+GR7LJ5GRZ+Ivwep1/3Ow0d331fgIRXmuL+An4vWem9BL9HoL9JgR/K5/njjxLiD0Pij3PiD6Tij9TiDwWfMNY8lAhC/4TR8tdw/PYYjt8CD8efMd5PSEhISPjneAdfMxxCpvQLPgAAAABJRU5ErkJggg==",
+        "sha256": "b832cd97ed67c053b8547919e1d9eb1bce6464c175a701495b58ca7fac787560",
+        "source": "https://www.apple.com/favicon.ico",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "google-one",
@@ -3272,7 +3552,16 @@
       "officialHost": "one.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAreuz7uwMzp1PpQzQ4gPAzp1Ioee4qeuwddOjvWyk2gPMbdOkzp1P7vAP7uwP6uwP/xAD6uwQyp1L/vAD//wAzp1PqQDPpQjT9vAD7vAIrk5Awp1BPdtZzbLTUSUnrQS3pQjTlQzgbdt4edeckf84ifs0geNcmiaormHsvnmwwr1AmpGUwoWRDeedHfuZEfOZAhfNjccGLY5q6UWemWYCqcW/DUF/sQzXpQzXuXSj0aRztYif0fhvzhRj5rAn/1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXiSxbAAAAYHRSTlMA/v7+/f/ALNL82iwsQlO30xOKaBEBqjS2L2y1IOTGyRNu0cfcjbTAs7/VEDXTKt7xLNXEvyizs1yC6i7TyWvQBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYFlkQAAABTklEQVR42u3YyVrCQBCF0U5VGkUknTDPCM7zPI/v/1QKCnTSS+u6sf4dm3s+UsACYzRN0zTtn9aedDqTLdj88zSe9wDaf4sXPSLmm7WnJRC35fcb7n21H3fE97OUXj0glj50l4hefED4GSVf+7ThA7ey56UAOJN8/I4C4P5S8OOTUgicV0TPGwAjWxE9bxEYWSng57wFYGilgIajEBhfWCkgSykEbiIrBXzk97+Ba2vFgB6FwJUVBFwATIfRIgmAisA4iqDAXSQMFG6crEsDuSOnXZMD1iS+Zt6+y4w84P0O1ZoGASyFZP4KAJisV3MuyQwMyKWAAgr8AbCLBkp9NMCnq6e0CQGY99AA98tggI92yrNwAPM+GuADNMCHaIB5Gw3wCRqoKqDArwHEf2p1b7+EAAYeUDfYtwB5A57QOgYBZtCazVeNpmmapmmSfQIvmBdrX7vkAAAAAABJRU5ErkJggg==",
+        "sha256": "98919b66bda8cf6ebc218bbed03eb9def7bd37fdeccc61327ed054e74f01f67e",
+        "source": "https://www.gstatic.com/images/branding/product/1x/one_64dp.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "google-workspace",
@@ -3289,7 +3578,16 @@
       "officialHost": "workspace.google.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "office"
+      "purpose": "office",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAuhv3+SEn4zAcUvFYMuWguhvwJpK6pxgH/Sjz/SUn9SU7/ZS3/eSX/qA8QmswIq5d0wwv9S1L+Rkf+0AwckeQNumMAvIUJsIcoi/Y0hfswhv5XwhdJwSKLxQbKyQP/WDT/kxj/qgD7ywP9zgP/1gccnNUYldwYldcGro8KqpsKorkIpa0bv0kSu1MPvF0PvF4Nt3YPumcA//8xhv8whf8vvjsovzgqvj0zzDM8wCk5wStTwhdgvxiNxQKoyQfGyQDXygPHyAD/Rz7/SlH/QGD/VTb/VDr/UDn/VVX/ZjP/ZC7/aCv/Zmb/hx7/mhT/kRb/vwv/uQb/sA7/uAf/vQryzwn6zQD/0AwAAAAAAAAAAAAAAAAAAAAAAAAAAACCV988AAAAYHRSTlMA/fv8+/67/v7+Fq769vz+9/5Y2/7+3gv+LHSP/vfv+/7+A0rQDBKLy1tpod4cVqjYZq4BFVp+3v4FUf6OII0mUJTfVnUIUYDeBgUhjgX+Jo0wUJTf/jqkpAAAAAAAAACyxKWKAAABHElEQVR42u3WZ1PCQBAG4HCbIzENQlBEmigW7F3sDexdLP//l3ghZhy/7w3jzPt8uv2y72Rzm4lhAAAAAAAAAAzD7YUbCRG5BUdP/8vrEZGICjr633uTaYAQGhKefU8l/ES4Pfb+r0HT970rNX2nK9wb9v5T/aD56N8lhfPAP6Bpeg+CJ4039IuI3nSuQKtI9DI4ZVITrAFERZr5G1D5XwEt9Q4+BqdsjH9Enyrg7LeME7aZryk1GidpVY6fYIt30c5t264fJcXsfG40k2W+p6d2PQxrO8uGUWovWSqgzL0Jx2G12jFNc0zKvGXl5vh37bB2oPqbUsrxvLW4qWGb93eT/ipgQc/3Ym9ldU3NaGO9hN8HAAAAAAAAGIpvAH0UEDdBLK0AAAAASUVORK5CYII=",
+        "sha256": "844f02b0af5928b4ad2610ab18ae573ce6d92cdb3114b9bde8175580a5af89a7",
+        "source": "https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "dropbox",
@@ -3305,7 +3603,16 @@
       "officialHost": "www.dropbox.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAAYf37+vEAWf7K2vNypfhJivqSuPYxe/tZlvmpx/XY4/MccfyCrvcATP87g/q60fTn7PNjnPkpb/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZfgOOAAAAYHRSTlMA/P///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmKx31AAABLElEQVR42u2WyXLEIAxEByQWAzZ48v//GlbXJJWq5CBfJv1OOqmLpiV4PAAAAAAAAADgj6hfgMA7CRDRD6WYAFHa1OxL6irFBIhs1MW3tkSeNdulICJQmznd2FtpeunmISQEqiVRD9jaMstYfRITcHqxPa/SEclZZLn3DPUWfJlnkbOoX8Ku9Wmoocw5b0M0pkfmdNAoE9tDPKbK8d5vtR2BgxKNae32bDni3Czq9xE3QYtI5TCTs3/4lajgBWMarmwac5VBycV0Tq8+qzFr6JwSjakPo6cxY+xKlo1pG4Roj1RlSjq2aIRT1G0iGkaNebvhwfFr42n2dMeLlq6VF9IdAtWizK9rTv7RHyvPqdf+wr+Kuifyl/by35Zv7fHxegsBAAAAAAAAwL/hE4QnCXGuwgnCAAAAAElFTkSuQmCC",
+        "sha256": "d590cddc8d73e7385b3ba36171bff48c22e3029c1d88ad37423e0a73da8ea0dd",
+        "source": "https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon.ico",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "adobe",
@@ -3323,6 +3630,17 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T06:43:20Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAADqEAD+/v72jofqEADqDwD96unsJRfoFQDxV0zpDgDuNSf5ubT719XvRTnyY1nzdm33opz6yMT0g3v4q6XqEQDwT0P2l5DzamD6wr784N4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhC7lfAAAAYHRSTlMA/v//r/z//xf/jv////////////+S//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYdQlVAAABPElEQVR42u2Y0XKDIBBFAwpC1JiYNGn7/x/aNKBC6kwEdqed6T0v4sse2EUQdjsAAAAAAPASUwslXqBEbXLjv4mN7PPi12IzNWv/M8dgRBKGM0F5SRKJJAtUWnz190YAQZagkw86LkEjPS2ToJoENyaBngSSRzDM8eU7i2BcBCOHoJUBBwbBLRScGAQ+cu+eDbng6HPjn0dyget5P31tPbXgMHe8Wy9zqeAyp9661oVW0ASTR6+WuVBwDvLi22dSwWdQWT8aTSmw0dz0ZbaEgi5Ku13bd4oEzdPE0Sv7TpFg2mn0nX55r8gEOlzn7LywairBIJ8X0g/XHIgEYySQi3KkEbRx/Mf0/FnmAsG1ivkWDK55xa8jDiC/egg0aTnKuE7YMx/E+a8S7mPYmCWVeRnCf50DAAAAAPCf+ALkTg7nJcXNBQAAAABJRU5ErkJggg==",
         "sha256": "bc646f0f6641df270d8305a5306f304bade19d6fa41397c8523f2aa75fe87428",
@@ -3361,7 +3679,27 @@
       "officialHost": "www.figma.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T06:43:20Z"
+      },
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAAAAAD+NjaHTv7/cjcky3EAtv+8KCi/VikhCwcAnNt6XewbmFUCqu0ht2YAFyAAiL8SCiIFGQ4WfUVpFxcARGAAW4BlO792Rd8QWTESZjgAZo9MLI9aNKrvazM8I3BwMhiHHR2AORufRyPfMDDfZDAHJhUAIzAALkAJMx0AOVALQCMARF8Acp8AcqAZi04dpVwwFQogPEcgdZYgotYgruZADg5AHQ5QJBJDJ39VMZ+PQR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABO3XM/AAAAYHRSTlP/AP////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsiJqQAAABnklEQVR42u3ZaXOCMBAGYCoQCOUGtZ71qL3v+/j//6vqOAwkarS7cey470c+7DOQ7GYA40hzDAIIIGCngIEYAggg4ACBfOgUcYv8fCIBea0cq5TJAANwaisBy3LhgFBfAFYJmwN5bT1gjWAAP1MBfRgg3YAEWAMQ4KiBsW7APXBgqAZGIOBdDXBYozkqYAzsZK4AJhw6i/haoP8En6bCtKjuII5y4OTOUqDvfiCdaMlX0yzCZ3l+eX0L4kaEA3TNcqYXopgt0kEAkhNTAG4DVsSLwIBQ3zSiUv2pAAW+TRHwWCUNGJCI9c16tT4LYMCpBMQCwOogoCcBgQjcgYCmBIj1WbzfwAaPqLPfi2wotymLYEBXc6MtGRUXuKNiybC7xh12RtKTxrWHOa5nRLd5XGR+5fLe87y4gfWOduWHdhH8l8DUt8tBB85DWyuQCvXRgczWC6S2ZqCtG/AJUAHSJnpEBloikGH3gdhnKTbQ/tMNbDOLKsscpvhAWdi4/nbnQWuxDmFb20fBm8x/yFr03ZQAAgjYBUC/ewkg4N8Cv7TyL86YrF5nAAAAAElFTkSuQmCC",
+        "sha256": "683babd4482c05437b6898b4218285fd15d7d3ef203d85f688bbdbff0be816e7",
+        "source": "https://static.figma.com/app/icon/2/touch-76.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "zoom",
@@ -3391,7 +3729,18 @@
       "officialHost": "slack.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T06:43:20Z"
+      }
     },
     {
       "key": "onedrive",
@@ -3406,7 +3755,20 @@
       "officialHost": "www.microsoft.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "storage"
+      "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": true,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T06:43:20Z"
+      }
     },
     {
       "key": "evernote",
@@ -3421,7 +3783,29 @@
       "officialHost": "evernote.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "notes"
+      "purpose": "notes",
+      "purposes": [
+        "notes"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T06:43:20Z"
+      },
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+/v4Bpi0BtjIBxzbh4eECmSnb29sCiSIAAAAB0zkry1UT10fN6dRUrGlJyGn///9y1our4rhzxohQ1XK25sJBs16V2aYp1Vbc3NwttU862GNCqlza2tqt1rfc3NwTyEPe7eFPtWnX8N0sl0UsqUzi4uI34mSE2Zlnunuqqqo9zWJCmVaU4acZuEJ/f3+Ex5SYzaW/v7/MzMzd3d3c8eHi4uLh4eFkqnNvtoBh1H6Du48erEIX4E0k4lapzrHc3Nzi4uLj4+Mkkz5iy30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwu9c8AAAAYHRSTlP+/////v/+/wD///////8C///////////L////b/85////////yv///wP/////BP//BAWM/2GL//////////9fP0D//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtAhv8AAADiklEQVR42s3aiXKqMBgF4B9QtBgwiKJoEaxarUv3fe+97/9ON0ErYCskkMzcM9PO1NHzkYBbE6hHOSM/n/c9XUh691/bShKIfjfr53dTvSIs+vTunJTugGZ9OKW3g6DQrulwI0DUfyywfWccRwIBrki/LrifCDoRrihAj18HCdGjMQCZfzn9VBjWz6B53atU5ACVSu+6CfQEA8gSPsgU9aT1E6HXhKEuE9CHcFORCVRugH2GbIwdB7uIb46AdYZcp//2+tpodPsY8cwRK4BP3xpHURoNqy0eeDrd1keEYYsGcLKfCN2VTYJuRQF7/XSaujSOM2uLAH70x06j67ilAdKvHR1MNsEC0P6sEOIJlQBwf9t/lEEs2oWB2Xe/FgSHR3Hwws0F4n4DuRq/kAfE/ZoFbSNDCAxUAHDjfu0C7CxACyx+INnvoRxACzAv4DqJ65McXw6g/TZJWYDtdOMHr8l1uMoBtL9cQKpfbdEzHmjcQzgMuAtD3cW7oDc5eYCG2QE0x61dNu+S7b6mpurUvXpVs0q8o5HXjK6aE22NSgCYDCA3bmHAdvpBfn90LTABqB3Htl3s9LsqSyw2wCd9RiqBypYRE4AYD7cwgA1VLuAEhYEOE2Cp/w+gKEohQGGsH7Vac0/hBjA9sNyoiudHd7+cxPdnA9w1C6BMwu+nzQsngDwmwN89oMUJgMUE2CeboJPVmhOYMZ0Ew9rG6aucAOMckctHUdPHwggkJpUzrADrEAoD4MoGYCQbgE4hYMAOoIlkANBAMgAwrypKlSucAHmd5CU4AQhbk6pUgBCX5lgqQM+2f/E4Mn9kMBEFHPyO7c/HUgE6OHMPMAUD9FKWDMAoBYzEA3bqiTIXD4CXBC6EAGH6E0IS8AUA7ZnlHgRQWQCtnhbexEv8MxAZ1dqufwzlABs7hlet1aqJb0rYq2VcRDwAou0KqSdRWt9jWC02t9BUq5dlgLAzibsUy0W3cGLjhVKLgXFYaorcuJ+UvXjkM100YXEeodw56KTa6NSn/q79QSUBf69wP89QEoBWpjCA0gCYGf1jJAAIB4f7dRAAQHhoDEsEQgCAx1/7HyogCgD/5zQt3wWs4SQJc5ycfPM9e/2gyEJg6D8/mMvl0nx49sO8ZS7pC3XSlxqlL5bWP2Qu9x7X5S9Yn8ldcm/K3zQgf9uD/I0b8reeyN88s9mr8yVu+89nvP3nH1lYaJImSUUfAAAAAElFTkSuQmCC",
+        "sha256": "10107eb7cae0a1e3e14a9063ccb4a23f889a5c585e39e71cb243407007231c6f",
+        "source": "https://evernote.com/images/evernote-logo-ios.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "kakao-emoticon",
@@ -3437,7 +3821,16 @@
       "officialHost": "emoticon.kakao.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other"
+      "purpose": "other",
+      "icon": {
+        "data": "data:image/png;base64,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",
+        "sha256": "dceef34e506476017c894781297e9e8ac7b10dfc2d397f8cecfe0dca97f6df94",
+        "source": "https://emoticon.kakao.com/favicon.ico",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
+      }
     },
     {
       "key": "kakao-drawer",
@@ -3478,7 +3871,16 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+        "checkedAt": "2026-10-30T06:43:20Z"
+      },
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD8ugABAQI4KgEiJCVkSwJURhvqwEn/1mHj39Ll5ebMzMz//O8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjgceQAAAAYHRSTlMA////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCST5+AAAAU0lEQVR42u3UKRKAMBREQUI2Erj/eTEoCoP4haD7Ak/NLAsAAADwWroReArUfKlBgbxessC3gVJKiwyUfY4eGpjHlkIDY4sdWuu+6KsAAAAA/MAJmukB2wQxFsUAAAAASUVORK5CYII=",
+        "sha256": "17e5125efa0268e170a149cb14ee09b7082e3e760325042153e261b396ae7c19",
+        "source": "https://page.kakao.com/favicon.ico",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
       }
     },
     {
@@ -3503,7 +3905,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+        "checkedAt": "2026-10-30T06:43:20Z"
       }
     },
     {
@@ -3529,7 +3931,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+        "checkedAt": "2026-10-30T06:43:20Z"
       }
     },
     {
@@ -3557,7 +3959,7 @@
         "billingTerms": true,
         "regionConfirmed": true,
         "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+        "checkedAt": "2026-10-30T06:43:20Z"
       }
     },
     {
@@ -3585,7 +3987,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+        "checkedAt": "2026-10-30T06:43:20Z"
       }
     },
     {
@@ -3613,7 +4015,7 @@
         "billingTerms": true,
         "regionConfirmed": true,
         "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+        "checkedAt": "2026-10-30T06:43:20Z"
       },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAAD+/v4dHR/n5+nU1NjS0tfS0tfS0tfS0tfS0tfS0tdmZmg1NTclJSfS0tdHR0mYmJmnp6d2dndXV1i2trbIyMmMjI0eHiDc3OA/P0Cfn6C/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRl1c1AAAAYHRSTlMA////9gyKL9RyWP///7r/////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASxnZtAAACGklEQVR42u1Ya1PDIBBsCM+83636//+nSWp1lCMeF+g4DvupUzu7sgfHcpdLQkJCQkKCF4QqjJTSmEKJ8OSF1JznH+Bcy0KEZG9W7uwbVpUmkIaQ/Af5pwiX5yWEcdHfJcxJCaUP6HcJraK4E8Yn0fxKv0s0IpI9J21SHMm/2aSi8pMUhPbg31wSIfm7l5qfVJAH/LxlrLb+nku/AhzwV4yxEfheBTJo/f8Z686VwRzwTxt/Bf0gN+gFHBiUlSt/PcPmiQALyNYKtLNjr5oAC8jGsXPXH7eEAjS4H8qhu0vzpRzLYQJ+VKAEGuhobXtzNb+c5n687p9Za0s0VIdKBqIneQQ45OBnV07xyO4Sry7+ntQvNLQzQQDbSVNK0Dv4S9pGtfucowI1dFwQHc+ucQsLtOBhLgh9osI7hOkW8s8IjKCADCdQEQUMtshsollkC7gaRUsTsLep66BBZUZsU/ug8dqpkBMOGtCtR5eAXWhMv7abXY8X0LRQ52qnbKG0a+DCcS3BCpCoCwe6MlvkhYCLFcClP9e4g9CQY0uHuhCQsQUMXoPNP5GzIxgdh3su6ue3bq9I3dPTL5wdp+GR7LJ5GRZ+Ivwep1/3Ow0d331fgIRXmuL+An4vWem9BL9HoL9JgR/K5/njjxLiD0Pij3PiD6Tij9TiDwWfMNY8lAhC/4TR8tdw/PYYjt8CD8efMd5PSEhISPjneAdfMxxCpvQLPgAAAABJRU5ErkJggg==",
@@ -3654,18 +4056,14 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T06:36:06Z"
+      "icon": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAAACiOP//AP+hN/+iN/+hN/+iN/+hN/+qVf+pOf9/AP+hN/8AAP+bN///f/9/f/+eOP+nLP+qAP9/P/+eOP+RSP9VVf+fN/+oRP9/Kv+RJP+fN//MM/////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADlnSjAAAAAYHRSTlMA/gHPTJAxcQMSAq4BEQICNwsDBEIHA2EUBgepBQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABoM26aAAAD1klEQVR42u1Z6bKrIAyOCYtsdjvb3d7/NS8gttoKorX/mpnO6RkCIV8WkhTgTW9605ueI2xxJ6Z50v5jl5hsYtxAFhT7XGY7Mbd8jVnVQVBjFBYBQFR/GhKAmwxgmqaRPVAzB2APjvRMxq0VgIgtiCaQ62+n5wzkl1RkEnBG1GvQB/gHPO5lcPE4u0cmpcAvscjE4y1sPfrSKHBN2tvaiyE21UEDI3OxbbpF49mNrLWEDuBI+GiGvQFnUmM7WKso8CSEgp4yAFWHUrwWaXnd6yj+accsARo6JYS8LKSobBVA9jMcKMywt7e2AW1HSsbVIwy3MCIKtDUgHfoDOQ17+1NI3SBG+KFedjJBQ7x3pkMVQlHv4fyGDia5Ynd3h8bgjau5hzF3fx8Ag96JBCWoLgPTJbGQoAmnhBY7W2Xjybarv4bwDrnzyvI95Vy0soXfXACY6bb0bzACphyhaLJ05QQQvJT6AvwGcar3lRScQXEe/rh5DtJoiobQQXXlMgIExPAihcnGjwKUCjjpfIo4+QOYmt/tr4a8951rfN2T8wv0K5sydIx8mbleI+0xqWK/MyxCRih1KQkVBAy+w+8deSogn5K6qDo/Znbzq2lPWQE8QtkVY5jnAL4tMJ4zEy/G85IA/vhtVwFEj9/WCeiikbMCKigKEFkbJC96RkDZi3ygBaZnBLBbHTKb684+e4lnBHgIjM5nu68QSk5sFyBiLvrKJrtgZQ5PCDj6G+ZtHOnDPSfAseVHWdFmAWr59E7HnL2N6C/oblnE/ZNZTwa62sJuG9WVdm022y+SrBSwOdJYlYBuu5+KKhvgZj8dl6/L5ftKVzL15XuPEV9paekv9VGFUOwvOamVlmaKuKrvNfXqjCTAt7Jr+nFUK7PQyk4ZQZtxa5F1nMHGZ1gtYbByMXHwawyv7fVv8Vy0NlsVw9MKIxWKxhWhT0C69SMdtCYpXzACJSCNXT9uGTASpefBWLERoTAtiP04h9LzkFZJ2Q0jKR1UIIel50GCDpmRbRuqIRylAlV6HphfPsltA68owX+Kz8MROkyM28aOvuvWw8jGzPTOoR3DVsNzlPpm+dj9E8IONBQB47kEiRWP/LKAfl407s/Jmfo3eNnU8Wg5Drh+hkQOdsHoHE/7GQcc71t2v7QH6aCChHE8sDAoJAV6FwGhkDlOy6UAvlD7ADREHIzGPITx/d3tfH/UYVIUxwJI73j+fc3KdvH/fEm5l3tm63r5EgXCIyqGgdRLFBh+jUi/WbxEBTx4R+IHfJEC8RcIcYRtPwnVi3jl8WG2fYA3velNb9qd/gNlQR+keq/QkwAAAABJRU5ErkJggg==",
+        "sha256": "97a23811a445814615d653e8d2f05ae07730bc7414ec44f872c2fad37290e8e0",
+        "source": "https://cdn-files.dzcdn.net/cache/images/common/favicon/apple-touch-icon.dc494e31ef5f888a087a.png",
+        "method": "official_site_icon",
+        "checkedAt": "2026-10-30T06:43:20Z",
+        "width": 96,
+        "height": 96
       }
     },
     {
@@ -5969,224 +6367,6 @@
       }
     },
     {
-      "id": "f906934d632dd869ccf2805a",
-      "service": "figma",
-      "name": "Full seat",
-      "amount": 90.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "other",
-      "capabilities": {},
-      "source": "https://www.figma.com/pricing/",
-      "verifiedAt": "2026-10-30T05:59:12Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Full seat $90 /mo"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "bc47ab317240fa97b45848d3",
-      "service": "onedrive",
-      "name": "Microsoft 365 Basic",
-      "amount": 29900.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "android": true
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T05:59:12Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Basic ₩29,900 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩29,900 /년"
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
-      "id": "2a22fc77644e7197b8c457bd",
-      "service": "onedrive",
-      "name": "Microsoft 365 Personal",
-      "amount": 125000.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "images": true,
-        "android": true
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T05:59:12Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Personal ₩125,000 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩125,000 /년"
-        },
-        {
-          "field": "capability.images",
-          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
-      "id": "0f7a5c8dd51368393d5213cb",
-      "service": "onedrive",
-      "name": "Microsoft 365 Family",
-      "amount": 155000.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "images": true,
-        "android": true,
-        "familyMembers": 6
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T05:59:12Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Family ₩155,000 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩155,000 /년"
-        },
-        {
-          "field": "capability.images",
-          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
-        },
-        {
-          "field": "capability.familyMembers",
-          "quote": "6명의 사용자"
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
-      "id": "6e534406615ae23193364bf0",
-      "service": "onedrive",
-      "name": "Microsoft 365 Premium",
-      "amount": 290000.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "images": true,
-        "android": true
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T05:59:12Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Premium ₩290,000 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩290,000 /년"
-        },
-        {
-          "field": "capability.images",
-          "quote": "       Copilot Chat에서 AI 이미지 생성 사용량 확대 [popover:]                 "
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:] [popover:"
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
       "id": "8b2fa4610c2764ce39ffa0fb",
       "service": "discovered-1cf54549cc79",
       "name": "Starter",
@@ -6643,6 +6823,224 @@
       }
     },
     {
+      "id": "f906934d632dd869ccf2805a",
+      "service": "figma",
+      "name": "Full seat",
+      "amount": 90.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "other",
+      "capabilities": {},
+      "source": "https://www.figma.com/pricing/",
+      "verifiedAt": "2026-10-30T06:43:20Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Full seat $90 /mo"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "bc47ab317240fa97b45848d3",
+      "service": "onedrive",
+      "name": "Microsoft 365 Basic",
+      "amount": 29900.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "android": true
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T06:43:20Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Basic ₩29,900 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩29,900 /년"
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
+      "id": "2a22fc77644e7197b8c457bd",
+      "service": "onedrive",
+      "name": "Microsoft 365 Personal",
+      "amount": 125000.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "images": true,
+        "android": true
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T06:43:20Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Personal ₩125,000 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩125,000 /년"
+        },
+        {
+          "field": "capability.images",
+          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
+      "id": "0f7a5c8dd51368393d5213cb",
+      "service": "onedrive",
+      "name": "Microsoft 365 Family",
+      "amount": 155000.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "images": true,
+        "android": true,
+        "familyMembers": 6
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T06:43:20Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Family ₩155,000 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩155,000 /년"
+        },
+        {
+          "field": "capability.images",
+          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
+        },
+        {
+          "field": "capability.familyMembers",
+          "quote": "6명의 사용자"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
+      "id": "6e534406615ae23193364bf0",
+      "service": "onedrive",
+      "name": "Microsoft 365 Premium",
+      "amount": 290000.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "images": true,
+        "android": true
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T06:43:20Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Premium ₩290,000 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩290,000 /년"
+        },
+        {
+          "field": "capability.images",
+          "quote": "       Copilot Chat에서 AI 이미지 생성 사용량 확대 [popover:]                 "
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:] [popover:"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -6662,7 +7060,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-30T06:36:31Z",
+      "verifiedAt": "2026-10-30T06:43:36Z",
       "status": "verified",
       "evidence": [
         {
@@ -6708,7 +7106,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-30T06:36:29Z",
+      "verifiedAt": "2026-10-30T06:43:30Z",
       "status": "verified",
       "evidence": [
         {
@@ -6744,34 +7142,80 @@
     "retrieval": {
       "outcomes": {
         "captcha": 5,
-        "cross_site_redirect": 195,
+        "cross_site_redirect": 201,
         "deferred_captcha": 2,
-        "deferred_cross_site_redirect": 64,
-        "deferred_http_403": 111,
-        "deferred_http_404": 21,
+        "deferred_cross_site_redirect": 70,
+        "deferred_http_403": 116,
+        "deferred_http_404": 22,
         "deferred_http_429": 3,
+        "deferred_render_budget_exhausted": 1,
         "deferred_render_http_403": 4,
         "http_402": 4,
-        "http_403": 178,
-        "http_404": 39,
-        "http_406": 2,
+        "http_403": 188,
+        "http_404": 50,
+        "http_406": 4,
         "http_429": 6,
         "http_525": 2,
         "http_526": 2,
-        "http_530": 2,
+        "http_530": 4,
         "network_error": 2,
         "non_public_url": 14,
-        "ok": 1826,
-        "render_budget_exhausted": 43,
+        "ok": 1925,
+        "render_budget_exhausted": 45,
         "render_http_403": 8,
         "response_too_large": 4,
         "timeout": 42,
         "tls_error": 8,
         "unexpected_content_type": 6
       },
-      "cacheHitsThisRun": 17,
+      "cacheHitsThisRun": 13,
       "renderAttemptsThisRun": 10,
       "recentFailures": [
+        {
+          "url": "https://appleid.apple.com/cn/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-30T07:45:14Z"
+        },
+        {
+          "url": "https://www.godaddy.com/?msockid=26ec84fa479b6a061d0f9cf8463a6bbb",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T06:45:14Z"
+        },
+        {
+          "url": "https://www.godaddy.com/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T06:45:14Z"
+        },
+        {
+          "url": "https://callstack.ai/pr-reviewer",
+          "reason": "http_530",
+          "nextCheckAt": "2026-10-30T07:45:14Z"
+        },
+        {
+          "url": "https://getkiln.ai/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-30T07:45:14Z"
+        },
+        {
+          "url": "https://expressvpn.en.softonic.com/",
+          "reason": "http_406",
+          "nextCheckAt": "2026-10-30T07:45:14Z"
+        },
+        {
+          "url": "https://zhuanlan.zhihu.com/p/64356746",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T06:45:14Z"
+        },
+        {
+          "url": "https://www.duolingo.com/",
+          "reason": "render_budget_exhausted",
+          "nextCheckAt": "2026-10-30T07:45:14Z"
+        },
+        {
+          "url": "https://x.com/YouTube",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T06:45:14Z"
+        },
         {
           "url": "https://www.tving.com/live/C05441",
           "reason": "cross_site_redirect",
@@ -6876,51 +7320,6 @@
           "url": "https://lemmy.co/?ref=mahseema-awesome-ai-tools",
           "reason": "timeout",
           "nextCheckAt": "2026-10-30T06:04:03Z"
-        },
-        {
-          "url": "https://saedu.naver.com/adbiz/searchad/clickChoice.naver",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T06:04:03Z"
-        },
-        {
-          "url": "https://suno.com/?plan_key=premier",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-30T06:04:03Z"
-        },
-        {
-          "url": "https://www.midjourney.com/explore",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T05:04:03Z"
-        },
-        {
-          "url": "https://en.m.wikipedia.org/wiki/YouTube",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T07:04:03Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C00551",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T16:04:41Z"
-        },
-        {
-          "url": "https://en.m.wikipedia.org/wiki/Midjourney",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T05:04:41Z"
-        },
-        {
-          "url": "https://en.m.wikipedia.org/wiki/Midjourney,_Inc.",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T05:04:41Z"
-        },
-        {
-          "url": "https://www.smashingapps.com/how-to-use-midjourney/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T04:04:41Z"
-        },
-        {
-          "url": "https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E8%BF%90%E8%90%A5%E6%9C%8D%E5%8A%A1/8904485",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T04:04:41Z"
         }
       ]
     },
@@ -6932,27 +7331,27 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 25
+        "attempts": 26
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 113
+        "attempts": 118
       },
       {
         "name": "Bing RSS",
         "status": "no_relevant_results",
-        "attempts": 23
+        "attempts": 24
       },
       {
         "name": "Bing RSS",
         "status": "ok",
-        "attempts": 46
+        "attempts": 48
       },
       {
         "name": "DealMirror",
@@ -6967,7 +7366,7 @@
       {
         "name": "Google",
         "status": "deferred",
-        "attempts": 134
+        "attempts": 140
       },
       {
         "name": "Google",
@@ -6982,12 +7381,12 @@
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 42
+        "attempts": 44
       },
       {
         "name": "Naver",
         "status": "deferred",
-        "attempts": 137
+        "attempts": 143
       },
       {
         "name": "Naver",
@@ -7012,7 +7411,7 @@
       {
         "name": "Official links: apple-tv",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: canva",
@@ -7162,7 +7561,7 @@
       {
         "name": "Official links: naver-plus",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: netflix",
@@ -7192,7 +7591,7 @@
       {
         "name": "Official links: prime-video",
         "status": "no_relevant_results",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: protonvpn",
@@ -7267,7 +7666,7 @@
       {
         "name": "Public tool directory",
         "status": "ok",
-        "attempts": 23
+        "attempts": 24
       },
       {
         "name": "Sitemap: adobe",
@@ -7282,7 +7681,7 @@
       {
         "name": "Sitemap: apple-tv",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: claude",
@@ -7397,7 +7796,7 @@
       {
         "name": "Sitemap: naver-plus",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: netflix",
@@ -7417,7 +7816,7 @@
       {
         "name": "Sitemap: prime-video",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: protonvpn",
@@ -7482,12 +7881,12 @@
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 11
+        "attempts": 12
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 10
+        "attempts": 11
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -7497,7 +7896,7 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "deferred",
-        "attempts": 10
+        "attempts": 11
       },
       {
         "name": "퀘이사존 핫딜",
@@ -7506,36 +7905,6 @@
       }
     ],
     "providerHealth": [
-      {
-        "name": "Official links: apple-tv",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: apple-tv",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Official links: prime-video",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: prime-video",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-29T17:18:22Z"
-      },
-      {
-        "name": "Official links: naver-plus",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: naver-plus",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-29T19:10:25Z"
-      },
       {
         "name": "Official links: coupang",
         "status": "unavailable",
@@ -7967,32 +8336,7 @@
         "nextCheckAt": null
       },
       {
-        "name": "AppSumo",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sumo 구독 할인",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "StackSocial",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
         "status": "ok",
         "nextCheckAt": null
       },
@@ -8022,11 +8366,6 @@
         "nextCheckAt": "2026-10-30T14:36:06Z"
       },
       {
-        "name": "Google News",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Slickdeals",
         "status": "ok",
         "nextCheckAt": null
@@ -8040,11 +8379,71 @@
         "name": "Dealify",
         "status": "ok",
         "nextCheckAt": null
+      },
+      {
+        "name": "Bing",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: apple-tv",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: apple-tv",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: prime-video",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: prime-video",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-30T14:43:20Z"
+      },
+      {
+        "name": "Official links: naver-plus",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: naver-plus",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-30T14:43:20Z"
+      },
+      {
+        "name": "Google News",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "AppSumo",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sumo 구독 할인",
+        "status": "ok",
+        "nextCheckAt": null
       }
     ],
-    "candidateCount": 1979,
-    "rawCandidateCount": 2139,
-    "factChecks": 810,
+    "candidateCount": 1995,
+    "rawCandidateCount": 2155,
+    "factChecks": 811,
     "verifiedCatalogCount": 8,
     "catalogCount": 67,
     "metrics": {
@@ -8052,8 +8451,8 @@
         "catalog_verified": 14,
         "needs_dates": 172,
         "needs_official": 16,
-        "needs_service": 877,
-        "needs_verification": 765,
+        "needs_service": 892,
+        "needs_verification": 766,
         "official_verified": 4,
         "partial_match": 20,
         "pending": 107,
@@ -8063,22 +8462,22 @@
       "catalogOutcomes": {
         "discovered_links": 238,
         "known": 402,
-        "needs_identity": 648,
-        "needs_price": 100,
-        "pending": 4,
+        "needs_identity": 658,
+        "needs_price": 101,
+        "pending": 2,
         "rejected": 160,
-        "unavailable": 274,
+        "unavailable": 281,
         "verified": 14
       },
       "factCheckOutcomes": {
-        "needs_verification": 786,
+        "needs_verification": 787,
         "official_verified": 4,
         "partial_match": 20
       },
       "newServiceCount": 14,
       "verifiedPlanCount": 31,
       "candidatePlanCount": 41,
-      "rejectedLinkCount": 5443,
+      "rejectedLinkCount": 5605,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -8098,14 +8497,14 @@
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-30T06:36:06Z",
-      "searchAttempts": 33,
-      "newServices": 1,
+      "startedAt": "2026-10-30T06:43:20Z",
+      "searchAttempts": 34,
+      "newServices": 0,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 20,
+        "unmatched": 18,
         "rejected": 0
       },
       "taste": {
@@ -8115,24 +8514,36 @@
       },
       "icons": {
         "attempted": 24,
-        "updated": 20,
-        "available": 20,
+        "updated": 17,
+        "available": 37,
         "failures": [
           {
             "service": "discovered-56e27794ecfb",
-            "reason": "response_too_large,http_404"
+            "reason": "icon_dimensions,http_404"
           },
           {
-            "service": "canva",
-            "reason": "cross_site_redirect,http_404"
+            "service": "duolingo",
+            "reason": "network_error,http_404"
           },
           {
-            "service": "chatgpt",
-            "reason": "http_403"
+            "service": "expressvpn",
+            "reason": "http_404"
           },
           {
-            "service": "coupang-play",
+            "service": "kakao",
+            "reason": "http_404"
+          },
+          {
+            "service": "kakao-drawer",
+            "reason": "cross_site_redirect"
+          },
+          {
+            "service": "kakao-webtoon",
             "reason": "network_error"
+          },
+          {
+            "service": "midjourney",
+            "reason": "http_403"
           }
         ]
       }
