@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: dalfit-release-2.1.2-build50
+  group: dalfit-release-2.1.2-build51
   cancel-in-progress: false
 jobs:
   release:

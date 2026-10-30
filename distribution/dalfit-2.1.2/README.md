@@ -1,6 +1,6 @@
-# 달핏 2.1.2 · 빌드 50
+# 달핏 2.1.2 · 빌드 51
 
-**[APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.2-build50/dalfit-2.1.2-build50-release.apk)** · [시작 오류 수정 내역](HOTFIX_NOTES.md)
+**[APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.2-build51/dalfit-2.1.2-build51-release.apk)** · [시작 오류 수정 내역](HOTFIX_NOTES.md)
 
 2.1.1에서 시작 파일 차단으로 빈 화면·탭 미동작이 발생하던 문제를 수정했습니다. 기존 앱을 삭제하거나 데이터를 초기화하지 않고 업데이트로 설치하세요. 같은 패키지·서명을 유지합니다.
 

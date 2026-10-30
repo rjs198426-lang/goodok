@@ -1,6 +1,6 @@
 # 달핏 · Android 다운로드
 
-**[2.1.2 · 빌드 50 APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.2-build50/dalfit-2.1.2-build50-release.apk)**
+**[2.1.2 · 빌드 51 APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.2-build51/dalfit-2.1.2-build51-release.apk)**
 
 2.1.1 업데이트 후 빈 화면·탭 미동작을 일으킨 시작 파일 접근 오류를 수정했습니다. 기존 앱을 삭제하거나 데이터를 초기화하지 않고 업데이트로 설치하세요. [수정 내용과 검증](distribution/dalfit-2.1.2/HOTFIX_NOTES.md)
 

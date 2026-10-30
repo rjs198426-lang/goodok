@@ -35,7 +35,7 @@ with tempfile.TemporaryDirectory() as temp:
  checksums=work/'SHA256SUMS.txt';checksums.write_text(''.join(item['sha256']+'  '+item['name']+'\n' for item in CONFIG['assets']));assets.extend((checksums,BASE/'HOTFIX_NOTES.md',BASE/'VALIDATION.json',BASE/'STARTUP_VALIDATION.json'))
  view=gh('release','view',TAG,'--json','assets',check=False)
  if view.returncode:
-  gh('release','create',TAG,'--target',os.environ['RELEASE_COMMIT'],'--title','달핏 2.1.2 · 빌드 50','--notes-file',str(BASE/'RELEASE_NOTES.md'),'--latest');view=gh('release','view',TAG,'--json','assets')
+  gh('release','create',TAG,'--target',os.environ['RELEASE_COMMIT'],'--title','달핏 2.1.2 · 빌드 51','--notes-file',str(BASE/'RELEASE_NOTES.md'),'--latest');view=gh('release','view',TAG,'--json','assets')
  existing={a['name'] for a in json.loads(view.stdout)['assets']}
  for p in assets:
   if p.name in existing:
