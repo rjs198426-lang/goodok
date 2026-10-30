@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T17:02:00Z",
-  "lastSuccessAt": "2026-10-30T17:02:00Z",
+  "generatedAt": "2026-10-30T17:57:36Z",
+  "lastSuccessAt": "2026-10-30T17:57:36Z",
   "offers": [
     {
       "id": "087184eee8bb004a3643d0ba",
@@ -23,11 +23,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -50,11 +50,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -74,11 +74,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -102,11 +102,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -126,11 +126,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
@@ -148,11 +148,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -176,11 +176,11 @@
         "newCustomer": true
       },
       "checked": "2026-10-30",
-      "verifiedAt": "2026-10-30T17:02:00Z",
+      "verifiedAt": "2026-10-30T17:57:36Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-10-30T17:02:00Z",
+        "checkedAt": "2026-10-30T17:57:36Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -996,9 +996,9 @@
   ],
   "catalogUpdate": {
     "version": "2026-10-31",
-    "revision": 3,
-    "signature": "491170e3ba16853b5ce3b736ff3bc290559d173e63d71922d6142ace14f72c1d",
-    "publishedAt": "2026-10-30T17:02:00Z",
+    "revision": 4,
+    "signature": "2d2095bf98df2cfd3a982b8b20a4720a03ad55485e2e1b3b9ad24e17dbb8cd92",
+    "publishedAt": "2026-10-30T17:57:36Z",
     "timezone": "Asia/Seoul",
     "scheduledTime": "01:00",
     "incremental": true,
@@ -1878,6 +1878,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
+        "purposes": [
+          "storage"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUpjp0gduNSddIunmn1Ny/pWS3opQn/yQAQaOEccubqUh8wpVVsZ6+OYZXtUizPS1D8xAESomIyplIFqf8rherrSDD0jxL9xgH+xgMkeucyqzgrhPsi3W4A//9VqlX7PCIAAP8OY6ojhbZJeNyuZWa0VW3OS0/CUF0AfwA4sTwiiLIig7t/AAB/fwBfX79/qqpfgLOqAAC6U2aLZJ2qqgCqpGDsPzD/VVX1mRDKhkQAAAAreuv6uQMzplPpQjQzg/gve/X+xQIse+0yplH//wAAf3/8uQE0o0gddew/fz8Ge/g3slYqeOzxeB0wpk75uQP6ugL6uwL/AAD/fwD5ugPsQjH7uQPxPSzoQTT6ugIyp1H7qgAA/wDoQjMxplGsVXFnvt5LAAAAYHRSTlPV1t7bFeQUFxNyGXPa5IrlWAqqF+tO1ovcqgtuBAED7QEGthMS53e7Av8eXwICGAapA2hWAy1EA6a6AP38+/v9EP13iwECDg76BAj+m94uj8+wAQJS0C/4cW3TBAGyUtD6sOS1AAADk0lEQVR42u3X2VLiQBQG4KBAEBWVcV/GfZx9X08SYqSNjoxkDwQE3/8tpjugQhaqaLq94lyAVlHny+m/ExoBxi7UzuLX7M9mp9MphX8WR3xaGL+/DdAuNpuljud5nVKziA2bJYAJfa1TeazOWtGG98yAYh4gX/IqA+U1i/DlFxsAOQBivpSrVIaFLGQZAfj6l39H+uNVyqanIIzZPr+8sZ5rRIVm1maUgRiY5nolBnhrDEJ2dADd0OT1XByoTA6QeMHfkEMgXs2JQ3YQAt/SMHDrcQDaIl4e19JCoJIEnEwEIEzoron7pwGvXkwCIByvb4T9uQC4vej2+6cA3tdJABuQa8n9SgRyZ9+oAUd0wA5MWRsBNJZmds7pALw38RItmw/tE4FGY1Hd+UgJtBG5e5/6J05wP6PuHNMATp7cvYa2OQpokP7qBc0SkQek7hvyQPukCXD/VSoA6TbogaUN9Y8C+5VFfP1UE5Dvdj8wI/0jQGNpUVJViQawycPNkGM1BDSWFiRVpZugDYDvruj1DwPe/YKq0gKgi5Ysj5wgR7bPjEQL+In9B4ClMF7qJdIDWRsBNHr9JfolIgGMmuB04PKpAMMcAezvn5K1lx5KlcYHTFNOySDXi1caKBpAllMBz1uQhosG0FKB27MFaXVyIH2CP/julXgBmrZpfJZiRQNYiSFrm8s/ttgAQeJ9YLnt839sANGIPeg02XBP4IYRAK4c/aYxDREO9GNWQORhhPsHOoIDxGqJdOQbm5rWP87hN8vFJ7z8J2AFtMEWjYHjluHr+JR0c84MICcu392wyHY1rY3AR8AWwO0+kEOdGxiGQVYH9CIAU6AXRa8e/mULIPKz9RFC7IHwp5+DvreRg7hMEA5BCAfZvIBoTYEpMAWeCdjiCewVoHCR4QkcwuG7LY7A5V+4qs4KXIHtamtWiB9+bxhOoCiKkIkCBbaAImBC5QnUZo8yXAFFwUFccwVqrafdxAUIh8hc92vuhgdAhAxXoKYIfAEyxFGGK1DrB8FvAkVp4XuOKxBmPVfgCbyZFebe8gRwEvMrfIFatc55gikwBabAMwDzV+xOdvOtBKALbIC7S9juluMjtFgBxMBrVIsC6RGMDVwCdGNAKz2CsQH83K/HRqhereyym+DlLhFqTwEr5W4IM8oAXsLd8AzV+iXcsQuZ9Nqtd6u9zdoqV7v1PXjNEiAz4CDK/Xjrd3hjjfjwf4lZQ0iC0v1SAAAAAElFTkSuQmCC",
           "sha256": "99e63fa068ef873c96532e7981bc9be0371a5a0576b920e54a6e399ed6bd94f8",
@@ -1905,6 +1918,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "office",
+        "purposes": [
+          "office"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "17064ab7e90cd451fe91d8bb1026d97f8c6e7bde100c3b1c41853e13bdbde491",
@@ -1931,6 +1957,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
+        "purposes": [
+          "storage"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUAYfz6+vABWf0td/uPt/Wqx/TH2fNHiPnX5PJ0pvcAS/5Ylfjk7PJlm/g6g/m60vQka/sbcfqCrfedwfQAP/9Ce/t/sPYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACbsY+iAAAAYHRSTlP8//7+/v7+/v/+/v7//v3+/v3+/v7//gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACioq1YAAAEbklEQVR42u1Z65abIBCeDSIoipe0ff9H7TBcRAXFJHvansqPPbsJzH3m+2AB7nWve93rXt+7Hm6d7vhbFTyW9eKGIuPzMtzHrynxZxjDX9u0APpiYlN2w7n4SSslpnQunAFCCQZXfQjmq6aqGqXHrQD/56j7qqp6zS5m220WzbOWsuaNsbHdK0ADKl7jhqoXcEGBPy0aLr9wyaFSKxODg31Vd7ihczYUqFgKgqHzVj4KGKomCvRiwLO2G74kj+OU12K/bdv2wdTMyTongGwM1ULxQ/NlvAHdpKNHGhbrVBWJJy/4vConH79lQx0F8qgxAUYTno18ioLCKNBiWF4b+aQBwzRCNhf+c4xtxXfyKQpzLxgugdU7yN0GzDXlCo4aH6j09oe9jSiAYfSHzA7jJguikgomMQ/dV25hnIXJbnZDN4RUZRSgAzJ7/Es+eyEafrTDFNOJgvrQA33sQX2igOqb10kTcWqYOjFFUMukEfHUyJepSWIqCDgxGkV1amZgKlGmn33Hn06hXZywl0MjmUAO+z4omEg0KHycuo358dw3nbYKZOejQ+cLkECrOAqSb6fdqNWvKJA4D1UZKgQbsSF4Fzm/GaZmwxLI7aQ614B+jsIOBDsi4NG2WxWinylOFL+xGPuXKNDEJ7gZt/Y7xKRkU3LHi9zCZhs0RoGryc/5tRXmw0nxeqi8f5dYS9v+aB9WAVgFmx2tWYCNz1EBbm6vyXe4htVKCW7X550DLbmIOzyWXSR1JB/Pz2rdnnEhWVrRXKBGSwIta8EJhEWi2S7N1CtogOw6apMRiqvUhIPmjRtp1KUrDaHbUXrc6AVxckboNWoR3sKGtKyGicWy00HkflB0usSsC7xA7yZuRJ6clAwmQ2Zey/ppBThSsceMMK0BjkAfCTUOgDSiz6anTfarNG47N09Av6nqPKtAE7UxP4fIA+bqBPR7nkdcxORGqYWSpm1gxwqOOQM3Ck52ZEGTPibWK/OnDfE60EDVegj6tj/TAhzuQAqyQwg1gzP2O6VNXOhzjl5GBPsUBnbMh2AFXJEDJPippKlYBvrEsFcCqMvsN7ZdR7Eupg53BNgvvGAu9ep8R4AQ5tqJqtoNyaQGgLKbYOSEE4C+I6Y7ABoGd1lCJ2aXCTNGFINrgGBT2dEUw96hEW6vZdKDHPy0PNh0hx7Lr8oraiSlx3TiQSEgxASMSwRoxaRo6wOFXAPFI047eTXay3rlKOOlm7gP58TwWkem9gHfPMjNduiYS1uIzkViER5zQKQulVs++fJz1Ji7MJhyGh+vP3otLxK5K0+I04uvah4gZMH4f/nNznC3/KUQeXuj31RgSv3oXqve9WAyFKk7QKDpTQU5kmIvrY0oGKCnvcBYikg4GgRvPf2GFt098Fx4Risgw74buuSl9S35sCbrMn57evdlPD29S1/PrmuwF1tOD6kG3N18/sy/ESB6akSA6MOlGD6jYIXUSuhPFM9RU3yPeNhfAv/MP3U+lIp/WMG97nWv/3T9BtVkN0JDBuYNAAAAAElFTkSuQmCC",
           "sha256": "336363b7a7028c7634841002d47a2c5d628ff5cb16bf9a935266f5db1ac53f43",
@@ -1958,6 +1997,17 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXpEAD+/PzoCADrJRb86ukAAAD4tbDsNyrxZlz72NXuRTn6ycb7AQDqEgDwVUn2l5Dya2Lzd273qqXpDgDrEAD0hHv3o53rDwDrEADYAADmDQDqDgD0iYLqEAD5wr7mDQDlDgDpEQDlFADsLCHwTkLaEgDoEACqAAD74d///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZA3aNAAAAYHRSTlP9//3+/wD//v///v8FFf7/////qdH//9FaBkB7/5j/N5N6MP7/DqwD/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgA2RiAAADZUlEQVR42u1a2ZabMAx1MMGYLayBkHUyS9v//8HaUGa8cQpYfst9mCXJ0bV8JVsKQvv9PkkS9jN9qxHyPGQJbqF+S7/NIvYHt54+uyscwbV7ptxswgk40Z/+WtXWtgWWunq7jz6ggai/ImjUj34wjU5sf7ovBA+v6pgSJ3T6lfYVcoKq/0wYQdJdPTcE3qNPT2gMTzdozymLomeFnKF67lHate4I2i5FZ4cOMBfOqK1dEtQt8pBTODY/HU5OrTsneOGFn3BQAZyOJgIPNJwxiQQQDBvinofzMhZQ5hiYgJQ7CSUBJohimSDOAAnYgYVCKhPQAsOpzNb6cfBlAv+YwanAJG6UHWIuXCAJVIk5AgJIEMU6AYWSmVl5L6hO4BcERma2zuzoGwjKDCabucQGB+BkNksMmM2el8VmgjgbctBaYlxQM4HfEHsVmAJGicdUCDEEwWXGASbzgQAQkEDYlDiQ2G4RAEEmmPQPTSky0NBSZrY+0vjiIR3lgfC/f7GUmSkQigbjDJOLSGArM1NAuggCtufS1eNbyszO0UA19yGlXWAjM9dPkjjgtQSR0oLaZLMq8SgpLmKobB4kVoKSGYtkWSxk5hJTLa1YDUaBslm5Kv+ZUi/QeKvMajU0xbx6P2zOZnW3Jzm5zDcpdqNtMg+GfH2lGvGtwBsJ5IifUkovJDdenaYsNtdJm2TmV2VOzceals35hkJY2+nLT5mlZfMWmVUjv/N58l28QWZNYiK1f3I2+0eygUDO4gZJBKrMawthLRTpISMkIhzv/F01m9f2O3pPQ2/BgFvQYO6FKvPKQtjY04hRz24iK5nnC94x6nljXthks7mnEaJeK4lXZfNcTyPeYdxHKZuL9+Uyz/U0YuOhtiWsrV0u82xPI/aX6iJog1cQiAXvbH+pbOOKtlYueE39JTYEwuK2djio450/D3oZ44idVj/YxUsPbV5u5ccgKIM5lMVIgMPD9CH2+5gvLME4QRbmeTgD9k5GhqNP/Nz06sJvg/F/8L0X6qsLVVgAq28inRO88HoCsr5GdGu+rV1S1K37R43OH5bu718OHXjyqYSzMxeGB9antH84feR+SlwPDfCxhwo+47xp7GEc3HiA69BOgxvjjMv9DD16cp5GT6bhmTvs8Mw9TafhGcfjP38BCX0y8IoqfCAAAAAASUVORK5CYII=",
           "sha256": "3eba46efdb043be54f94342966f63941762b256b6373875a19ce966a0ed4ac94",
@@ -1998,6 +2048,17 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXqLiZ1JRxdMK6gcFozHmMnZ181gXwd52pYPMpxTT1Bn5mCIzy6NF2dgHPPQHrRQIH/hD3/gkIAAAD9Njb+cjeGTf0Atv4kynCKUv35bDMm13h7SO20JiYCOFECqu8hu2h9UvwDFhACldABwv66VSkZ12KrTCX/Mx7RPoABaJIXhUowEwosGVVCop0AGiQSZzkdpFsqCwkHJhUAKDcVdkIDdahTJRKFHBwKPCFIK45wGBiCOhzSLS3GWSoWDSgMRycDh7wBi8UbllROFBBzQtcASWdsOsqYQiGshnTYYS4PUTAAXoQAc5cfsGI9I3Q+mJNADg5AJXlSMJtZNKlGqqVvNBqvRRrPPnwJNR0AU3MUcT8erGADodsaulwYyFwczWLrT5XRAAAAYHRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9ebwvOAAACsUlEQVR42u3ZaXOaQBgHcJP0vrvcKCiY2oBWxfu+tSY9kubs3e//LbqoqaAbjmWZcab8X2Qyvnh+syz7PAzEQMiJRUAEREAERICZVj1hzeE63Uy7Fhiodyh7BNoSQei2jSDAOEFRToBpZGr4wFmHQgD2NdD08RgXMBD1t1YAc5zFBOqUN4DOZLGAFuUVoGtYQMI78B4HGHe8A90aBoDcgTsAYS9soI0BtMIGdmsFV7t4FxlhnwMfJ1nAO8noJQj+FuDY7LIxb0AXt5sCwxPg2K1dJpqBmmgCjMde7T6Tjb0EvE5v/yVG0a9g0deLeWwmc5UN+FRx9vTZzcujVW6OXmTMXF8fHszn8+cHj7NBnyp6ueajOB9PLQP/W/4saQOZZeWhJuWDAbkZY8sSyFdh9VVUKQhwHmd4fguYqqwlsoYPnDM8s70C6WfaCqRZDRe4t1l+AeQHtvpmJDwgN2FQwMet+uygjAU0eRQgqdsAO8UBevsIgElZbqD1NlTzGEBuggRUFhGHe/Vu4EsccYWYlIwC5G8YQJPxAXzYRcDPJVKnWJvMeN7kIc4m9y5Cvk3BZ88HLa3htYpZyK0C5JDNrjwk1ezMOxXZrlVS7RqAC1jSNnEWA0ciNnDgRk+QI3PIEhqZ5tDfn8X526wAoEiaKsOo1bIS9GWIcv/B6eW7VZ5cnt7+XJZgym7PFK6AcqL/+vNmnYe/FeAvzkBJ50TOGjFJ9H1RqchthCwA64thAkplszxhoJ/kwgUQCyAKNIohAwXEFSILcBHgApx8QgmjkO8iTicHoA9yg+RJRmyB7wU4AbBXb9b/0Sf6er+0uc1ihfD3g69F0bIPolhRCAOgryfFhWH+LRYw6rvO5MJo2ZKSRb0BAHnAPA/fRyO9UiiF+JFIURSAneg7WgREQAT8F8Bfix/LlFwiU4MAAAAASUVORK5CYII=",
           "sha256": "a9a7cb160eeb9d003b5d28671ab29022684cbe5337d32068f9c60b56fec3a5f1",
@@ -2048,6 +2109,17 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "other",
+        "purposes": [],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXxqgwzqWLfDGoFr/gKpurgD1tFtVX8xAJYsFD5zAH7vgPjBWr8yAI9s18Asv5AtVf4wgUHfPusJ5P9Bgn/fA34ugVKzmMA/wACyfsr0mk/vD//AP8Af3+vsxVqrSlq6GyuE2sAAP9/AH/lFKY+tFYFsa8A0f/1YFxUxlhFwl0Awv9OnezeBmg/s1Z/f39u3SKqVaoceBx/AABVVapVqqqvDz+0ah+qVVWqqlX/CIIAAH8/f78zzJl/f/+qAP+ZzDOR2kj/qlX///8AAADpBmwAtP9Bt1j8wgL6vgMAxf/+1ANIyWEAs/3kBmtBtlgAtP1Fwl0As/7jBmtDtlX9wwFBtVfkBWr3AXX2uAcAuP7SAWj+vAEAm//6vgP//wAA//+jdRbAAAAAYHRSTlMQDWBgDhFfmwwKl6rTXqqtXgIJAQNU7QEPBAQBAgUEDAQBAgSYBPkFZJ2RBer6AgQDBQIDAwgDAwP/AgQFAgMFBwMBAPz7+/z3/v7+y8rKKvyOKyspjY0IaAwKCgbKAQEiMPKlAAAIDUlEQVR42uWaaWOiSBCGGwUE4xkiJiZGc0zm3Dl3Zmf23iXexiNqUInw///FVlWDt4gz5tO+MURB66Gqu6uqnWHGWjlpR4Q/YjhRqpVK8JsQ03jWePYzXRfi1+VOuVxulK/j+DJ3ls2ut8Q2AeCQFsVwkwClUiIsji7gHAEERZCTBOiUk7KgGKeGsSvAgdsXw+FEs8TV7IZF9OnsrZFTlHh80CqXCdB6KQuCsSPgAh8XEJ/mTclTE31A8oXQkwdJbh8RejKOgBMjOIDi44zCXYhPzbUPTxLhtgi3eSbIcPudjgdolFuyclIAwIdsQID4CIfjBfvwjAjPcHzBfqMxAzTKL+WeADHNCQEBIwSMws2Zec7AkUZAsjw1T2p0wAf4iBIU8IiAdre0DKg1OaAFYVkA6OVBDyfX3gBg8WkByx40ygNhH4CSByivAnr/L8DGabovAC00ERfaEwHSlKnby4T9AS4cSEfiqA3FAFMECZ7d1PYFwPt3jNFInCfUbm5u9gkY0Th3E3sJ0QXE4/HxEX9JoxE8RqIBQQIECA7dbvdVN4yAE1/AmZLLCaATIadkPYAjokG0OwOII1EUR6P2nI7bbRHS9YnsA8gqgqIIJCV35hOiDfpytgWwJkROOr0DYQsgt1jTlEIWAU5wwvkWgFBYeDsOA4XoURSPMcLtDYJrMEiOIwr+AKpqitADFQoCFjkjyxxKC2GYI5v1CiYQTlwNJ8ZmAEVFluUB6OXLePwDQlkaJhG2P4uJbVnQFo3gVs63ARSvo+lAnQaPsgozHnl/clPzE2+8jjcDKDwK2sfXjYauQ8/XE3Caov3aVmHj1R49O/MDYEfWokYG1WlAN6MYDFbrtvi4SsBCfrYpVRBAnjV81M2ADwbDfFMLAOA++AJ62PEtnE7KMks0SwE1bbw2TtMBPp0KustWK8lKpeCALdm0t9zyoVgtOKC2G+An6lz35MH1Zg++B9B5IsBc69ihACz1pmsAnc53jUFnqX3X9zUGs2m6CGi0fELUTTQDLTR3I4g1OTnbQPHprg/iCi20BQAMTWswYJCpAwLcjWYOt7Bz9tEM32guAfQGXFAY9Ve1YPbb4oXjvBUoZXpJARxIxnsckASj7lkkd5LgGMPmJNEMkE3BPrQyjpCFpCm7SbkBBlvXcSFn5AjQ0fUGT6a63tEHMqVrh/vgFybX/jEU72MB9rECEeDe4S7RvmBc5JY8wNUtKznsKqCDw5LmrwRWA9pD/47HAhBaKB3C3CsY9vlftm335Jaut7h0PYk7z7MCFX380mCb6IsEAFAp/7sHYUK9kOVe3rZVS7UsC+rxixeye+GFrOSpJuP7T39Li55ev8YWg2t6UkynP53ONySF83OF693XI7h5+wiU986Rzr/yxuuP107Qrij9+l9u/F3ADwjwTma+fxsUcFi8xD+2GrTfzOdtjd5rFouH8/qUTqcdUPr9oXfh6v3lwkcZgwf+qvCYinHl83g6b3vNrySFFnWILTYADg9n5yTpCt///B88qv1MJpVKDYcp/MmkMvjI0GsuuJhhaPsIDtJ96ODg7u7uzZ2rkAQewJw/dC+gDkIhkwDkcj8VjU5isdhkMonhX1eTqeBFdMgscIAZV2bo4e52XgcSzqxTaTx/4SB0PzZNBDDLykRiFX/V65VIiqlAWLb/7dvtwT0ArszFC+DDvSlpGrOtfiY6QRP+qsQiQ7h/ZkIcbm9XPYDzSxcgStJzzWYsFZlUK9tVr0RTfYOFVuzfPqAH5soF8EHSYNgyUR6fKvxUqutEp8HFWCTTZzCMawHj0MoFJBCA36FnaQ2gygGVWDTKbldFYyA9rIBv7xDAhhPwHu/fJ05VfhEOGwH3D7d+gOrWUXAZ6wAPAQCVHwHsxwNXPmOwzxC92c2DemBAvf70IYJstmzmwTdEuNDqW9YBnqd1EIlOV/Kbmf2Qrwdf2JCnus1OVN2VDLkiw4ylXIT2x36AXyAZRSuBclEkpULBWcx2mDTHkh/g8rnFhpiOtmdTyHWGW3DmM+Z4vNkDKDqnV1APUxAlP+P1GN5/H+uBCe2IFLqbxgdfF30Bp1QysSRUNg9yvTIZYkFTGYbjsxR6ILl10d8DCQksE42A6AB/FkWnh1hcLYtpZHF8TxqPEWD6Ai4l6LSgbLI+ivUZPPorUvsWVW+bGZpkzjckl1LRZ5ARcBW0j7JVW4NB1kxp4bRp+gN+Dfz9mG3Z678U3OLBnzt9j8i8myaZpqltA8BCgwhP486YpaoWw59pZ6dir82saWdnaEVzTCoWL/0BlIuGNG+8+TPE6Y4UHHguC16plq1t+t7UH+BWNLfkVisRTAgwIe3g/xK4xYMhNIZzi7YCMx6s23sDYMHBfI0JgQjV6LCv2kfA0PYF8ELkCvsrC20d7RFAxcZrLWJ8GNZuTH4AwCsaJwwRgO36Xj1w0ym16n2D9gJPBojuHzCrvwCoPrUH1QjbGbDUtrzhAI0WWn0JEONjoP4IwPXg81rAriGiijYOre4PphsQt/FyMfX6ZKhCqgg8TYsQiNPxyt4NOgIJxwAar0q97i4Fegb9gwW1MR90JWsfsUSY0pIPYP85faSfQsIUgP2VaqvWTv8zxMA6Lc1v06AjGxMdMrPXPPJVHOX9A9sNoPGvGKYbNezIPuJ5m4xlIpFZpqMkZx/tCoBtPez1D6bbqit4DefBzpHGrFTE6z8zcO+25V+T1wEuTYqSBzgY8+kFALpXFq3W+Wab91dHmwD/AXlvn8qaGWY8AAAAAElFTkSuQmCC",
           "sha256": "aa0a93b00a7a819d69466ed59bd5b7c550ad5a3f49240922973ce78590cc3092",
@@ -2073,6 +2145,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "storage",
+        "purposes": [
+          "storage"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": true,
+          "recurringPrice": true,
+          "billingTerms": true,
+          "regionConfirmed": true,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
           "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
@@ -2098,6 +2183,19 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "notes",
+        "purposes": [
+          "notes"
+        ],
+        "verification": {
+          "schemaVersion": 4,
+          "identity": true,
+          "priceObserved": false,
+          "recurringPrice": false,
+          "billingTerms": false,
+          "regionConfirmed": false,
+          "paidScope": false,
+          "checkedAt": "2026-10-30T17:55:48Z"
+        },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+/v4Bpi0BtjIBxzbh4eECmSnb29sCiSIAAAAB0zkry1UT10fN6dRUrGlJyGn///9y1our4rhzxohQ1XK25sJBs16V2aYp1Vbc3NwttU862GNCqlza2tqt1rfc3NwTyEPe7eFPtWnX8N0sl0UsqUzi4uI34mSE2Zlnunuqqqo9zWJCmVaU4acZuEJ/f3+Ex5SYzaW/v7/MzMzd3d3c8eHi4uLh4eFkqnNvtoBh1H6Du48erEIX4E0k4lapzrHc3Nzi4uLj4+Mkkz5iy30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwu9c8AAAAYHRSTlP+/////v/+/wD///////8C///////////L////b/85////////yv///wP/////BP//BAWM/2GL//////////9fP0D//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtAhv8AAADiklEQVR42s3aiXKqMBgF4B9QtBgwiKJoEaxarUv3fe+97/9ON0ErYCskkMzcM9PO1NHzkYBbE6hHOSM/n/c9XUh691/bShKIfjfr53dTvSIs+vTunJTugGZ9OKW3g6DQrulwI0DUfyywfWccRwIBrki/LrifCDoRrihAj18HCdGjMQCZfzn9VBjWz6B53atU5ACVSu+6CfQEA8gSPsgU9aT1E6HXhKEuE9CHcFORCVRugH2GbIwdB7uIb46AdYZcp//2+tpodPsY8cwRK4BP3xpHURoNqy0eeDrd1keEYYsGcLKfCN2VTYJuRQF7/XSaujSOM2uLAH70x06j67ilAdKvHR1MNsEC0P6sEOIJlQBwf9t/lEEs2oWB2Xe/FgSHR3Hwws0F4n4DuRq/kAfE/ZoFbSNDCAxUAHDjfu0C7CxACyx+INnvoRxACzAv4DqJ65McXw6g/TZJWYDtdOMHr8l1uMoBtL9cQKpfbdEzHmjcQzgMuAtD3cW7oDc5eYCG2QE0x61dNu+S7b6mpurUvXpVs0q8o5HXjK6aE22NSgCYDCA3bmHAdvpBfn90LTABqB3Htl3s9LsqSyw2wCd9RiqBypYRE4AYD7cwgA1VLuAEhYEOE2Cp/w+gKEohQGGsH7Vac0/hBjA9sNyoiudHd7+cxPdnA9w1C6BMwu+nzQsngDwmwN89oMUJgMUE2CeboJPVmhOYMZ0Ew9rG6aucAOMckctHUdPHwggkJpUzrADrEAoD4MoGYCQbgE4hYMAOoIlkANBAMgAwrypKlSucAHmd5CU4AQhbk6pUgBCX5lgqQM+2f/E4Mn9kMBEFHPyO7c/HUgE6OHMPMAUD9FKWDMAoBYzEA3bqiTIXD4CXBC6EAGH6E0IS8AUA7ZnlHgRQWQCtnhbexEv8MxAZ1dqufwzlABs7hlet1aqJb0rYq2VcRDwAou0KqSdRWt9jWC02t9BUq5dlgLAzibsUy0W3cGLjhVKLgXFYaorcuJ+UvXjkM100YXEeodw56KTa6NSn/q79QSUBf69wP89QEoBWpjCA0gCYGf1jJAAIB4f7dRAAQHhoDEsEQgCAx1/7HyogCgD/5zQt3wWs4SQJc5ycfPM9e/2gyEJg6D8/mMvl0nx49sO8ZS7pC3XSlxqlL5bWP2Qu9x7X5S9Yn8ldcm/K3zQgf9uD/I0b8reeyN88s9mr8yVu+89nvP3nH1lYaJImSUUfAAAAAElFTkSuQmCC",
           "sha256": "10107eb7cae0a1e3e14a9063ccb4a23f889a5c585e39e71cb243407007231c6f",
@@ -2174,7 +2272,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
+          "checkedAt": "2026-10-30T17:55:48Z"
         },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX6uQACAgL+xQAXFAazhQCMaADUnQBGNAEsIQJmTAH8/Pj8xizZogNxc3QxMzPlqgRKTE6XmJjY2Nj92W1yVgf95JH99dNSUlG4uLYpKy3s7e6ieAT6zEn+01MjGwSXcglYQwb86a/z6s24vMLAjgHKxrn/8LVnaGh7cVGRezeGh4eZkXWVmaGlkFPSqjbYxpHt1ZHAv7zsuStDPSdTRyNeVjlsXjB/aSeriSW0lDq9rX26sZLCmyrHqVLBq2ffu1Xbv2zKysnjuEDvzWn/0Dvs3rfg39yfoJ+foKCvr68AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwqRdYAAAAYHRSTlP//////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAABTdyhxAAACWUlEQVR42u2Z6XKbMBSFKSCWgoFgJeDgAMGmtuM1zr5vTdq+/wv1IoYs06klEZJpGn0/bP/x+ewrwcBBkgQCwX+KXJM3jmdWfHxBTcs/tIdc17VtW+MEvgJfZMqH7L5agz5YXNrcSb6qRgniJolUlRj+vh6lQFMjhDA2OcEYoUjVVgnkSoCwmercpCZGlUBeIbD7ETJ13eBG100U9W2KQJZsNcGpbsQKJ7GhpzhRbUmmChAu8r9wUhhgRnQBLIGpG9z5YDBgRqomBEIgBEIgBEIgBELwWkEsRvSuV3Z/Xpsa1bWp1IRAUTodh9CpPjh7+xhFWjOCIt7zAsArIG/BweFRQr8BYRIoEB8MBq0XDIej0fHqWyhWAczHC1o7axWTCbyMx9Ppyfnqm0BmQceB/B9hmOe7YRj2ej14PTu9vJjNXKkZgTfY+Rne+P6DX5HP59dXt0upGYEDgl83/uZXYLMgy+4Xi7uuZTUlCFprYZlfspFtr7e3QCA3J9j1n+VvfFsHAeQ3KMgfnglI/ndaft1/wPr7udfgMR/mT/LZOii2bfq0yGR9212LpY+qI6jyLalpQY8Iyvkw5vMcaK0JEZD8LdZ8fsFjvty8ANYgK/YnmQ9X48shyIr9zzwfbkF+v10eX9KbCMZn8wVvPmshpRhOMByfzhdtznzWSi029g6G08vrO3J+4xXQSsG4aP/2D0fTi6sux/7hqzVTfDQ6md1aDOfPWsUsxig5Pp8tl9z5rNVyEpUVslSz0aeX49QS/HX1PunxP/aTrnd5ivbJBXSFeBgrEHw2fgMwfWODGAATxwAAAABJRU5ErkJggg==",
@@ -2209,7 +2307,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
+          "checkedAt": "2026-10-30T17:55:48Z"
         }
       },
       {
@@ -2235,7 +2333,7 @@
           "billingTerms": false,
           "regionConfirmed": false,
           "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
+          "checkedAt": "2026-10-30T17:55:48Z"
         }
       },
       {
@@ -2263,7 +2361,7 @@
           "billingTerms": true,
           "regionConfirmed": true,
           "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
+          "checkedAt": "2026-10-30T17:55:48Z"
         },
         "icon": {
           "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUe12D+/v4W1Vol2GWQ67Br5Ja08crK9dlX4Yja+ORF3XtN3oF756Ki7r2n78AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfIeZaAAAAYHRSTlP///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB60ErgAAADaUlEQVR42u1Z25arIAwVQsJF7f9/7gSwrTc0oH05xzx0Os6abEjCZid23WOPPfZfGQBsvt3oW6+suxEkeQcIvWPD+BHSo5swoGPvzpBamB3RMcgNCLxQN3q1Z9YwxMXV8xqHfe/ZqI+RuhB7GNSJRQhoXj5adW4cKGjzDy8lMo8tmwDtvJJayyb0oCrM1iJobVSV+b4KQXeV/tlcDYKu91+DAE3+lQpSBI1N/pUHLVt/rxqNRAAabCuAMoIgtSYg23mx8gG+4F9Rp38YoGio6yvIkzEGke9K/uCvZC9U0nID7NpFBbG57qFHU4AZjrMw2wAN4eNyxVPZ4kXtd7ZwnGL7rbioJOBYamjAcZuFg3/SYRbLhXeYbKOWOkBanTaQnAFaeJ5nYQGU/xRISEmzFFv9jcPkNIT04/NknpWeJDFasJB7ZxLNSNZaz/n0nr/QyDUblslnVPdZ2+sgQvNDgMBlYkv3Mldwn+XjO+VBcBRqaYgw6cppdXSahBaaGBHyLkC/TulCg29gHzukYp2tzujTU7BxQmyjIdrNiY8QYE4pdRfAGuxTSX5oCNwwbkI5Gr8QSTIAdv5tbBY0xBSxbhgEjLq+jCk3NqWGqgtYwhACuOx9QRXdmyfSMwjmCkDQX99vrps3gLl1M+0AmJ0Fh4OJVcQswXfbgH0manj3b0YOsEoyQtjNJdNEyv6nyyJpkkPN+TIpQrlT8WstfwNALLOpkV1LqaJ20VBNE5guPk0rfXejJrKxFFCsjXa7Pm8py6LeRV1Em2SQtFGAjeqyWRitZZEzh1stXjgbXYpfHvqqivwoDEUuooMbbZmEUc9dzmgv6xVnqrXdqt7GGQHFQQ66PkzckTlklyeOJPw6Ri6x/2t5y3DGw8Szem8YcNjmzKRjTrItHeN0xmCvnz5UvyDv7/OwCLaH81i/V937iY36yjatbkQxgLNVG2iVLgIeKp/mOmoS9OKaLgAI5hVQT9p1jfiVIFnpsKK11xePW7rXrxLwSUNLolE+8mpCwJqRWgMC1k2xocD194wEp6E+VtVny+g3WDmttkyvJbP3LPBa3yLES2s8n4yDvvIC4WQEH91ffM8StUOhZP0LL79jmQLlhs3oKXeI3R3vobI+gdTpZGOBBKUO8cKbtB++qXtvpPDLY4899s/bHzxEH50cjlX6AAAAAElFTkSuQmCC",
@@ -2290,19 +2388,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "5a05c5ed2bdefcf9b87998bcf3ba623e97024e54c57e11292bafe1637e294bb6",
@@ -2328,19 +2413,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": true,
-          "recurringPrice": true,
-          "billingTerms": true,
-          "regionConfirmed": true,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "e4057449fe48ad2fd5f55056523900292629714c088db49f2f29c171af62e72a",
@@ -2391,19 +2463,6 @@
         "origin": "seed",
         "status": "verified_identity",
         "purpose": "music",
-        "purposes": [
-          "music"
-        ],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
-        },
         "icon": {
           "data": "data:image/png;base64,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",
           "sha256": "7d92324fd3c83ada20ef03f82c2277f24ec05d0bedda6558093795dc8dc14af5",
@@ -2428,18 +2487,7 @@
         "officialHost": "www.duolingo.com",
         "origin": "seed",
         "status": "verified_identity",
-        "purpose": "other",
-        "purposes": [],
-        "verification": {
-          "schemaVersion": 4,
-          "identity": true,
-          "priceObserved": false,
-          "recurringPrice": false,
-          "billingTerms": false,
-          "regionConfirmed": false,
-          "paidScope": false,
-          "checkedAt": "2026-10-30T17:00:21Z"
-        }
+        "purpose": "other"
       },
       {
         "key": "discovered-f6d59d44d511",
@@ -3918,6 +3966,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUpjp0gduNSddIunmn1Ny/pWS3opQn/yQAQaOEccubqUh8wpVVsZ6+OYZXtUizPS1D8xAESomIyplIFqf8rherrSDD0jxL9xgH+xgMkeucyqzgrhPsi3W4A//9VqlX7PCIAAP8OY6ojhbZJeNyuZWa0VW3OS0/CUF0AfwA4sTwiiLIig7t/AAB/fwBfX79/qqpfgLOqAAC6U2aLZJ2qqgCqpGDsPzD/VVX1mRDKhkQAAAAreuv6uQMzplPpQjQzg/gve/X+xQIse+0yplH//wAAf3/8uQE0o0gddew/fz8Ge/g3slYqeOzxeB0wpk75uQP6ugL6uwL/AAD/fwD5ugPsQjH7uQPxPSzoQTT6ugIyp1H7qgAA/wDoQjMxplGsVXFnvt5LAAAAYHRSTlPV1t7bFeQUFxNyGXPa5IrlWAqqF+tO1ovcqgtuBAED7QEGthMS53e7Av8eXwICGAapA2hWAy1EA6a6AP38+/v9EP13iwECDg76BAj+m94uj8+wAQJS0C/4cW3TBAGyUtD6sOS1AAADk0lEQVR42u3X2VLiQBQG4KBAEBWVcV/GfZx9X08SYqSNjoxkDwQE3/8tpjugQhaqaLq94lyAVlHny+m/ExoBxi7UzuLX7M9mp9MphX8WR3xaGL+/DdAuNpuljud5nVKziA2bJYAJfa1TeazOWtGG98yAYh4gX/IqA+U1i/DlFxsAOQBivpSrVIaFLGQZAfj6l39H+uNVyqanIIzZPr+8sZ5rRIVm1maUgRiY5nolBnhrDEJ2dADd0OT1XByoTA6QeMHfkEMgXs2JQ3YQAt/SMHDrcQDaIl4e19JCoJIEnEwEIEzoron7pwGvXkwCIByvb4T9uQC4vej2+6cA3tdJABuQa8n9SgRyZ9+oAUd0wA5MWRsBNJZmds7pALw38RItmw/tE4FGY1Hd+UgJtBG5e5/6J05wP6PuHNMATp7cvYa2OQpokP7qBc0SkQek7hvyQPukCXD/VSoA6TbogaUN9Y8C+5VFfP1UE5Dvdj8wI/0jQGNpUVJViQawycPNkGM1BDSWFiRVpZugDYDvruj1DwPe/YKq0gKgi5Ysj5wgR7bPjEQL+In9B4ClMF7qJdIDWRsBNHr9JfolIgGMmuB04PKpAMMcAezvn5K1lx5KlcYHTFNOySDXi1caKBpAllMBz1uQhosG0FKB27MFaXVyIH2CP/julXgBmrZpfJZiRQNYiSFrm8s/ttgAQeJ9YLnt839sANGIPeg02XBP4IYRAK4c/aYxDREO9GNWQORhhPsHOoIDxGqJdOQbm5rWP87hN8vFJ7z8J2AFtMEWjYHjluHr+JR0c84MICcu392wyHY1rY3AR8AWwO0+kEOdGxiGQVYH9CIAU6AXRa8e/mULIPKz9RFC7IHwp5+DvreRg7hMEA5BCAfZvIBoTYEpMAWeCdjiCewVoHCR4QkcwuG7LY7A5V+4qs4KXIHtamtWiB9+bxhOoCiKkIkCBbaAImBC5QnUZo8yXAFFwUFccwVqrafdxAUIh8hc92vuhgdAhAxXoKYIfAEyxFGGK1DrB8FvAkVp4XuOKxBmPVfgCbyZFebe8gRwEvMrfIFatc55gikwBabAMwDzV+xOdvOtBKALbIC7S9juluMjtFgBxMBrVIsC6RGMDVwCdGNAKz2CsQH83K/HRqhereyym+DlLhFqTwEr5W4IM8oAXsLd8AzV+iXcsQuZ9Nqtd6u9zdoqV7v1PXjNEiAz4CDK/Xjrd3hjjfjwf4lZQ0iC0v1SAAAAAElFTkSuQmCC",
         "sha256": "99e63fa068ef873c96532e7981bc9be0371a5a0576b920e54a6e399ed6bd94f8",
@@ -3945,6 +4006,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "office",
+      "purposes": [
+        "office"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "17064ab7e90cd451fe91d8bb1026d97f8c6e7bde100c3b1c41853e13bdbde491",
@@ -3971,6 +4045,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "336363b7a7028c7634841002d47a2c5d628ff5cb16bf9a935266f5db1ac53f43",
@@ -3998,6 +4085,17 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXpEAD+/PzoCADrJRb86ukAAAD4tbDsNyrxZlz72NXuRTn6ycb7AQDqEgDwVUn2l5Dya2Lzd273qqXpDgDrEAD0hHv3o53rDwDrEADYAADmDQDqDgD0iYLqEAD5wr7mDQDlDgDpEQDlFADsLCHwTkLaEgDoEACqAAD74d///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADZA3aNAAAAYHRSTlP9//3+/wD//v///v8FFf7/////qdH//9FaBkB7/5j/N5N6MP7/DqwD/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgA2RiAAADZUlEQVR42u1a2ZabMAx1MMGYLayBkHUyS9v//8HaUGa8cQpYfst9mCXJ0bV8JVsKQvv9PkkS9jN9qxHyPGQJbqF+S7/NIvYHt54+uyscwbV7ptxswgk40Z/+WtXWtgWWunq7jz6ggai/ImjUj34wjU5sf7ovBA+v6pgSJ3T6lfYVcoKq/0wYQdJdPTcE3qNPT2gMTzdozymLomeFnKF67lHate4I2i5FZ4cOMBfOqK1dEtQt8pBTODY/HU5OrTsneOGFn3BQAZyOJgIPNJwxiQQQDBvinofzMhZQ5hiYgJQ7CSUBJohimSDOAAnYgYVCKhPQAsOpzNb6cfBlAv+YwanAJG6UHWIuXCAJVIk5AgJIEMU6AYWSmVl5L6hO4BcERma2zuzoGwjKDCabucQGB+BkNksMmM2el8VmgjgbctBaYlxQM4HfEHsVmAJGicdUCDEEwWXGASbzgQAQkEDYlDiQ2G4RAEEmmPQPTSky0NBSZrY+0vjiIR3lgfC/f7GUmSkQigbjDJOLSGArM1NAuggCtufS1eNbyszO0UA19yGlXWAjM9dPkjjgtQSR0oLaZLMq8SgpLmKobB4kVoKSGYtkWSxk5hJTLa1YDUaBslm5Kv+ZUi/QeKvMajU0xbx6P2zOZnW3Jzm5zDcpdqNtMg+GfH2lGvGtwBsJ5IifUkovJDdenaYsNtdJm2TmV2VOzceals35hkJY2+nLT5mlZfMWmVUjv/N58l28QWZNYiK1f3I2+0eygUDO4gZJBKrMawthLRTpISMkIhzv/F01m9f2O3pPQ2/BgFvQYO6FKvPKQtjY04hRz24iK5nnC94x6nljXthks7mnEaJeK4lXZfNcTyPeYdxHKZuL9+Uyz/U0YuOhtiWsrV0u82xPI/aX6iJog1cQiAXvbH+pbOOKtlYueE39JTYEwuK2djio450/D3oZ44idVj/YxUsPbV5u5ccgKIM5lMVIgMPD9CH2+5gvLME4QRbmeTgD9k5GhqNP/Nz06sJvg/F/8L0X6qsLVVgAq28inRO88HoCsr5GdGu+rV1S1K37R43OH5bu718OHXjyqYSzMxeGB9antH84feR+SlwPDfCxhwo+47xp7GEc3HiA69BOgxvjjMv9DD16cp5GT6bhmTvs8Mw9TafhGcfjP38BCX0y8IoqfCAAAAAASUVORK5CYII=",
         "sha256": "3eba46efdb043be54f94342966f63941762b256b6373875a19ce966a0ed4ac94",
@@ -4038,6 +4136,17 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEXqLiZ1JRxdMK6gcFozHmMnZ181gXwd52pYPMpxTT1Bn5mCIzy6NF2dgHPPQHrRQIH/hD3/gkIAAAD9Njb+cjeGTf0Atv4kynCKUv35bDMm13h7SO20JiYCOFECqu8hu2h9UvwDFhACldABwv66VSkZ12KrTCX/Mx7RPoABaJIXhUowEwosGVVCop0AGiQSZzkdpFsqCwkHJhUAKDcVdkIDdahTJRKFHBwKPCFIK45wGBiCOhzSLS3GWSoWDSgMRycDh7wBi8UbllROFBBzQtcASWdsOsqYQiGshnTYYS4PUTAAXoQAc5cfsGI9I3Q+mJNADg5AJXlSMJtZNKlGqqVvNBqvRRrPPnwJNR0AU3MUcT8erGADodsaulwYyFwczWLrT5XRAAAAYHRSTlP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9ebwvOAAACsUlEQVR42u3ZaXOaQBgHcJP0vrvcKCiY2oBWxfu+tSY9kubs3e//LbqoqaAbjmWZcab8X2Qyvnh+syz7PAzEQMiJRUAEREAERICZVj1hzeE63Uy7Fhiodyh7BNoSQei2jSDAOEFRToBpZGr4wFmHQgD2NdD08RgXMBD1t1YAc5zFBOqUN4DOZLGAFuUVoGtYQMI78B4HGHe8A90aBoDcgTsAYS9soI0BtMIGdmsFV7t4FxlhnwMfJ1nAO8noJQj+FuDY7LIxb0AXt5sCwxPg2K1dJpqBmmgCjMde7T6Tjb0EvE5v/yVG0a9g0deLeWwmc5UN+FRx9vTZzcujVW6OXmTMXF8fHszn8+cHj7NBnyp6ueajOB9PLQP/W/4saQOZZeWhJuWDAbkZY8sSyFdh9VVUKQhwHmd4fguYqqwlsoYPnDM8s70C6WfaCqRZDRe4t1l+AeQHtvpmJDwgN2FQwMet+uygjAU0eRQgqdsAO8UBevsIgElZbqD1NlTzGEBuggRUFhGHe/Vu4EsccYWYlIwC5G8YQJPxAXzYRcDPJVKnWJvMeN7kIc4m9y5Cvk3BZ88HLa3htYpZyK0C5JDNrjwk1ezMOxXZrlVS7RqAC1jSNnEWA0ciNnDgRk+QI3PIEhqZ5tDfn8X526wAoEiaKsOo1bIS9GWIcv/B6eW7VZ5cnt7+XJZgym7PFK6AcqL/+vNmnYe/FeAvzkBJ50TOGjFJ9H1RqchthCwA64thAkplszxhoJ/kwgUQCyAKNIohAwXEFSILcBHgApx8QgmjkO8iTicHoA9yg+RJRmyB7wU4AbBXb9b/0Sf6er+0uc1ihfD3g69F0bIPolhRCAOgryfFhWH+LRYw6rvO5MJo2ZKSRb0BAHnAPA/fRyO9UiiF+JFIURSAneg7WgREQAT8F8Bfix/LlFwiU4MAAAAASUVORK5CYII=",
         "sha256": "a9a7cb160eeb9d003b5d28671ab29022684cbe5337d32068f9c60b56fec3a5f1",
@@ -4088,6 +4197,17 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "other",
+      "purposes": [],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "aa0a93b00a7a819d69466ed59bd5b7c550ad5a3f49240922973ce78590cc3092",
@@ -4113,6 +4233,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "storage",
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": true,
+        "recurringPrice": true,
+        "billingTerms": true,
+        "regionConfirmed": true,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUApO/yUCL/uQB/ugAAAAAAo+8Av/9/vwD/Pz//vwB+uQDxTyH/uAD/wwCFxADxTyIAqv+qqgD/qgAApO8At/9+ugCAugCFxQCO0AD/VQDzUCL/VST/VVX/ugD/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABXBUbdAAAAYHRSTlP+/v7+AMMEBAQEw8PD/v77AwMDlf+V+cP/A5XDA5XDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkTV3AAAAkUlEQVR42u3QOQ6DQBBE0R7T7JjNBu++/zEREuRUMAn6P289VVs4XhdqL3Kv2kTIAAAAAAAAAAAAAAAAAAAAzgR0QjswR1oQNuDZClkt9Hn7d/DpUQmZR84Kpdd6MuRKlin1KzCWSvFflCrdvB/992+ETOmeelZ6c1WSANuAixAAAAAAAAAAAAAAAAAAAACA0AKig1shF/c1KgAAAABJRU5ErkJggg==",
         "sha256": "ccfa7d269606e483d861e9878733c3516c7890c6ce273397ff745d10f3e3d1e7",
@@ -4138,6 +4271,19 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "notes",
+      "purposes": [
+        "notes"
+      ],
+      "verification": {
+        "schemaVersion": 4,
+        "identity": true,
+        "priceObserved": false,
+        "recurringPrice": false,
+        "billingTerms": false,
+        "regionConfirmed": false,
+        "paidScope": false,
+        "checkedAt": "2026-10-30T17:55:48Z"
+      },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX+/v4Bpi0BtjIBxzbh4eECmSnb29sCiSIAAAAB0zkry1UT10fN6dRUrGlJyGn///9y1our4rhzxohQ1XK25sJBs16V2aYp1Vbc3NwttU862GNCqlza2tqt1rfc3NwTyEPe7eFPtWnX8N0sl0UsqUzi4uI34mSE2Zlnunuqqqo9zWJCmVaU4acZuEJ/f3+Ex5SYzaW/v7/MzMzd3d3c8eHi4uLh4eFkqnNvtoBh1H6Du48erEIX4E0k4lapzrHc3Nzi4uLj4+Mkkz5iy30AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwu9c8AAAAYHRSTlP+/////v/+/wD///////8C///////////L////b/85////////yv///wP/////BP//BAWM/2GL//////////9fP0D//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtAhv8AAADiklEQVR42s3aiXKqMBgF4B9QtBgwiKJoEaxarUv3fe+97/9ON0ErYCskkMzcM9PO1NHzkYBbE6hHOSM/n/c9XUh691/bShKIfjfr53dTvSIs+vTunJTugGZ9OKW3g6DQrulwI0DUfyywfWccRwIBrki/LrifCDoRrihAj18HCdGjMQCZfzn9VBjWz6B53atU5ACVSu+6CfQEA8gSPsgU9aT1E6HXhKEuE9CHcFORCVRugH2GbIwdB7uIb46AdYZcp//2+tpodPsY8cwRK4BP3xpHURoNqy0eeDrd1keEYYsGcLKfCN2VTYJuRQF7/XSaujSOM2uLAH70x06j67ilAdKvHR1MNsEC0P6sEOIJlQBwf9t/lEEs2oWB2Xe/FgSHR3Hwws0F4n4DuRq/kAfE/ZoFbSNDCAxUAHDjfu0C7CxACyx+INnvoRxACzAv4DqJ65McXw6g/TZJWYDtdOMHr8l1uMoBtL9cQKpfbdEzHmjcQzgMuAtD3cW7oDc5eYCG2QE0x61dNu+S7b6mpurUvXpVs0q8o5HXjK6aE22NSgCYDCA3bmHAdvpBfn90LTABqB3Htl3s9LsqSyw2wCd9RiqBypYRE4AYD7cwgA1VLuAEhYEOE2Cp/w+gKEohQGGsH7Vac0/hBjA9sNyoiudHd7+cxPdnA9w1C6BMwu+nzQsngDwmwN89oMUJgMUE2CeboJPVmhOYMZ0Ew9rG6aucAOMckctHUdPHwggkJpUzrADrEAoD4MoGYCQbgE4hYMAOoIlkANBAMgAwrypKlSucAHmd5CU4AQhbk6pUgBCX5lgqQM+2f/E4Mn9kMBEFHPyO7c/HUgE6OHMPMAUD9FKWDMAoBYzEA3bqiTIXD4CXBC6EAGH6E0IS8AUA7ZnlHgRQWQCtnhbexEv8MxAZ1dqufwzlABs7hlet1aqJb0rYq2VcRDwAou0KqSdRWt9jWC02t9BUq5dlgLAzibsUy0W3cGLjhVKLgXFYaorcuJ+UvXjkM100YXEeodw56KTa6NSn/q79QSUBf69wP89QEoBWpjCA0gCYGf1jJAAIB4f7dRAAQHhoDEsEQgCAx1/7HyogCgD/5zQt3wWs4SQJc5ycfPM9e/2gyEJg6D8/mMvl0nx49sO8ZS7pC3XSlxqlL5bWP2Qu9x7X5S9Yn8ldcm/K3zQgf9uD/I0b8reeyN88s9mr8yVu+89nvP3nH1lYaJImSUUfAAAAAElFTkSuQmCC",
         "sha256": "10107eb7cae0a1e3e14a9063ccb4a23f889a5c585e39e71cb243407007231c6f",
@@ -4214,7 +4360,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
+        "checkedAt": "2026-10-30T17:55:48Z"
       },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEX6uQACAgL+xQAXFAazhQCMaADUnQBGNAEsIQJmTAH8/Pj8xizZogNxc3QxMzPlqgRKTE6XmJjY2Nj92W1yVgf95JH99dNSUlG4uLYpKy3s7e6ieAT6zEn+01MjGwSXcglYQwb86a/z6s24vMLAjgHKxrn/8LVnaGh7cVGRezeGh4eZkXWVmaGlkFPSqjbYxpHt1ZHAv7zsuStDPSdTRyNeVjlsXjB/aSeriSW0lDq9rX26sZLCmyrHqVLBq2ffu1Xbv2zKysnjuEDvzWn/0Dvs3rfg39yfoJ+foKCvr68AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwqRdYAAAAYHRSTlP//////////////////////////////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAABTdyhxAAACWUlEQVR42u2Z6XKbMBSFKSCWgoFgJeDgAMGmtuM1zr5vTdq+/wv1IoYs06klEZJpGn0/bP/x+ewrwcBBkgQCwX+KXJM3jmdWfHxBTcs/tIdc17VtW+MEvgJfZMqH7L5agz5YXNrcSb6qRgniJolUlRj+vh6lQFMjhDA2OcEYoUjVVgnkSoCwmercpCZGlUBeIbD7ETJ13eBG100U9W2KQJZsNcGpbsQKJ7GhpzhRbUmmChAu8r9wUhhgRnQBLIGpG9z5YDBgRqomBEIgBEIgBEIgBELwWkEsRvSuV3Z/Xpsa1bWp1IRAUTodh9CpPjh7+xhFWjOCIt7zAsArIG/BweFRQr8BYRIoEB8MBq0XDIej0fHqWyhWAczHC1o7axWTCbyMx9Ppyfnqm0BmQceB/B9hmOe7YRj2ej14PTu9vJjNXKkZgTfY+Rne+P6DX5HP59dXt0upGYEDgl83/uZXYLMgy+4Xi7uuZTUlCFprYZlfspFtr7e3QCA3J9j1n+VvfFsHAeQ3KMgfnglI/ndaft1/wPr7udfgMR/mT/LZOii2bfq0yGR9212LpY+qI6jyLalpQY8Iyvkw5vMcaK0JEZD8LdZ8fsFjvty8ANYgK/YnmQ9X48shyIr9zzwfbkF+v10eX9KbCMZn8wVvPmshpRhOMByfzhdtznzWSi029g6G08vrO3J+4xXQSsG4aP/2D0fTi6sux/7hqzVTfDQ6md1aDOfPWsUsxig5Pp8tl9z5rNVyEpUVslSz0aeX49QS/HX1PunxP/aTrnd5ivbJBXSFeBgrEHw2fgMwfWODGAATxwAAAABJRU5ErkJggg==",
@@ -4249,7 +4395,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
+        "checkedAt": "2026-10-30T17:55:48Z"
       }
     },
     {
@@ -4275,7 +4421,7 @@
         "billingTerms": false,
         "regionConfirmed": false,
         "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
+        "checkedAt": "2026-10-30T17:55:48Z"
       }
     },
     {
@@ -4303,7 +4449,7 @@
         "billingTerms": true,
         "regionConfirmed": true,
         "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
+        "checkedAt": "2026-10-30T17:55:48Z"
       },
       "icon": {
         "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABIFBMVEUe12D+/v4W1Vol2GWQ67Br5Ja08crK9dlX4Yja+ORF3XtN3oF756Ki7r2n78AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfIeZaAAAAYHRSTlP///////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB60ErgAAADaUlEQVR42u1Z25arIAwVQsJF7f9/7gSwrTc0oH05xzx0Os6abEjCZid23WOPPfZfGQBsvt3oW6+suxEkeQcIvWPD+BHSo5swoGPvzpBamB3RMcgNCLxQN3q1Z9YwxMXV8xqHfe/ZqI+RuhB7GNSJRQhoXj5adW4cKGjzDy8lMo8tmwDtvJJayyb0oCrM1iJobVSV+b4KQXeV/tlcDYKu91+DAE3+lQpSBI1N/pUHLVt/rxqNRAAabCuAMoIgtSYg23mx8gG+4F9Rp38YoGio6yvIkzEGke9K/uCvZC9U0nID7NpFBbG57qFHU4AZjrMw2wAN4eNyxVPZ4kXtd7ZwnGL7rbioJOBYamjAcZuFg3/SYRbLhXeYbKOWOkBanTaQnAFaeJ5nYQGU/xRISEmzFFv9jcPkNIT04/NknpWeJDFasJB7ZxLNSNZaz/n0nr/QyDUblslnVPdZ2+sgQvNDgMBlYkv3Mldwn+XjO+VBcBRqaYgw6cppdXSahBaaGBHyLkC/TulCg29gHzukYp2tzujTU7BxQmyjIdrNiY8QYE4pdRfAGuxTSX5oCNwwbkI5Gr8QSTIAdv5tbBY0xBSxbhgEjLq+jCk3NqWGqgtYwhACuOx9QRXdmyfSMwjmCkDQX99vrps3gLl1M+0AmJ0Fh4OJVcQswXfbgH0manj3b0YOsEoyQtjNJdNEyv6nyyJpkkPN+TIpQrlT8WstfwNALLOpkV1LqaJ20VBNE5guPk0rfXejJrKxFFCsjXa7Pm8py6LeRV1Em2SQtFGAjeqyWRitZZEzh1stXjgbXYpfHvqqivwoDEUuooMbbZmEUc9dzmgv6xVnqrXdqt7GGQHFQQ66PkzckTlklyeOJPw6Ri6x/2t5y3DGw8Szem8YcNjmzKRjTrItHeN0xmCvnz5UvyDv7/OwCLaH81i/V937iY36yjatbkQxgLNVG2iVLgIeKp/mOmoS9OKaLgAI5hVQT9p1jfiVIFnpsKK11xePW7rXrxLwSUNLolE+8mpCwJqRWgMC1k2xocD194wEp6E+VtVny+g3WDmttkyvJbP3LPBa3yLES2s8n4yDvvIC4WQEH91ffM8StUOhZP0LL79jmQLlhs3oKXeI3R3vobI+gdTpZGOBBKUO8cKbtB++qXtvpPDLY4899s/bHzxEH50cjlX6AAAAAElFTkSuQmCC",
@@ -4330,19 +4476,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
-      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "5a05c5ed2bdefcf9b87998bcf3ba623e97024e54c57e11292bafe1637e294bb6",
@@ -4368,19 +4501,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": true,
-        "recurringPrice": true,
-        "billingTerms": true,
-        "regionConfirmed": true,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
-      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "e4057449fe48ad2fd5f55056523900292629714c088db49f2f29c171af62e72a",
@@ -4431,19 +4551,6 @@
       "origin": "seed",
       "status": "verified_identity",
       "purpose": "music",
-      "purposes": [
-        "music"
-      ],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
-      },
       "icon": {
         "data": "data:image/png;base64,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",
         "sha256": "7d92324fd3c83ada20ef03f82c2277f24ec05d0bedda6558093795dc8dc14af5",
@@ -4468,18 +4575,7 @@
       "officialHost": "www.duolingo.com",
       "origin": "seed",
       "status": "verified_identity",
-      "purpose": "other",
-      "purposes": [],
-      "verification": {
-        "schemaVersion": 4,
-        "identity": true,
-        "priceObserved": false,
-        "recurringPrice": false,
-        "billingTerms": false,
-        "regionConfirmed": false,
-        "paidScope": false,
-        "checkedAt": "2026-10-30T17:00:21Z"
-      }
+      "purpose": "other"
     },
     {
       "key": "discovered-f6d59d44d511",
@@ -6919,256 +7015,6 @@
       }
     },
     {
-      "id": "c056c5ba4e7948387070156c",
-      "service": "dropbox",
-      "name": "Standard",
-      "amount": 15.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {},
-      "source": "https://www.dropbox.com/plans",
-      "verifiedAt": "2026-10-30T16:34:26Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Standard US$15/월"
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "f906934d632dd869ccf2805a",
-      "service": "figma",
-      "name": "Full seat",
-      "amount": 90.0,
-      "currency": "USD",
-      "interval": "monthly",
-      "region": "unspecified",
-      "taxBasis": "official_display",
-      "commitmentMonths": null,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "other",
-      "capabilities": {},
-      "source": "https://www.figma.com/pricing/",
-      "verifiedAt": "2026-10-30T16:34:26Z",
-      "status": "candidate",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Full seat $90 /mo"
-        }
-      ],
-      "purposes": [],
-      "verification": {
-        "price": true,
-        "billingTerms": false,
-        "region": false
-      }
-    },
-    {
-      "id": "bc47ab317240fa97b45848d3",
-      "service": "onedrive",
-      "name": "Microsoft 365 Basic",
-      "amount": 29900.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "android": true
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T16:34:26Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Basic ₩29,900 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩29,900 /년"
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
-      "id": "2a22fc77644e7197b8c457bd",
-      "service": "onedrive",
-      "name": "Microsoft 365 Personal",
-      "amount": 125000.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "images": true,
-        "android": true
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T16:34:26Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Personal ₩125,000 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩125,000 /년"
-        },
-        {
-          "field": "capability.images",
-          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
-      "id": "0f7a5c8dd51368393d5213cb",
-      "service": "onedrive",
-      "name": "Microsoft 365 Family",
-      "amount": 155000.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "images": true,
-        "android": true,
-        "familyMembers": 6
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T16:34:26Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Family ₩155,000 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩155,000 /년"
-        },
-        {
-          "field": "capability.images",
-          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
-        },
-        {
-          "field": "capability.familyMembers",
-          "quote": "6명의 사용자"
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
-      "id": "6e534406615ae23193364bf0",
-      "service": "onedrive",
-      "name": "Microsoft 365 Premium",
-      "amount": 290000.0,
-      "currency": "KRW",
-      "interval": "yearly",
-      "region": "KR",
-      "taxBasis": "official_display",
-      "commitmentMonths": 12,
-      "introductory": false,
-      "eligibility": "general",
-      "purpose": "storage",
-      "capabilities": {
-        "images": true,
-        "android": true
-      },
-      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
-      "verifiedAt": "2026-10-30T16:34:26Z",
-      "status": "verified",
-      "evidence": [
-        {
-          "field": "amount",
-          "quote": "Microsoft 365 Premium ₩290,000 /년"
-        },
-        {
-          "field": "billing",
-          "quote": "₩290,000 /년"
-        },
-        {
-          "field": "capability.images",
-          "quote": "       Copilot Chat에서 AI 이미지 생성 사용량 확대 [popover:]                 "
-        },
-        {
-          "field": "capability.android",
-          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:] [popover:"
-        }
-      ],
-      "purposes": [
-        "storage"
-      ],
-      "verification": {
-        "price": true,
-        "billingTerms": true,
-        "region": true
-      }
-    },
-    {
       "id": "80ab7cff486cf0ddac880d24",
       "service": "discovered-f22df8286ea6",
       "name": "Twig",
@@ -7535,6 +7381,256 @@
       }
     },
     {
+      "id": "c056c5ba4e7948387070156c",
+      "service": "dropbox",
+      "name": "Standard",
+      "amount": 15.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {},
+      "source": "https://www.dropbox.com/plans",
+      "verifiedAt": "2026-10-30T17:55:48Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Standard US$15/월"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "f906934d632dd869ccf2805a",
+      "service": "figma",
+      "name": "Full seat",
+      "amount": 90.0,
+      "currency": "USD",
+      "interval": "monthly",
+      "region": "unspecified",
+      "taxBasis": "official_display",
+      "commitmentMonths": null,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "other",
+      "capabilities": {},
+      "source": "https://www.figma.com/pricing/",
+      "verifiedAt": "2026-10-30T17:55:48Z",
+      "status": "candidate",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Full seat $90 /mo"
+        }
+      ],
+      "purposes": [],
+      "verification": {
+        "price": true,
+        "billingTerms": false,
+        "region": false
+      }
+    },
+    {
+      "id": "bc47ab317240fa97b45848d3",
+      "service": "onedrive",
+      "name": "Microsoft 365 Basic",
+      "amount": 29900.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "android": true
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T17:55:48Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Basic ₩29,900 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩29,900 /년"
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
+      "id": "2a22fc77644e7197b8c457bd",
+      "service": "onedrive",
+      "name": "Microsoft 365 Personal",
+      "amount": 125000.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "images": true,
+        "android": true
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T17:55:48Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Personal ₩125,000 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩125,000 /년"
+        },
+        {
+          "field": "capability.images",
+          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
+      "id": "0f7a5c8dd51368393d5213cb",
+      "service": "onedrive",
+      "name": "Microsoft 365 Family",
+      "amount": 155000.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "images": true,
+        "android": true,
+        "familyMembers": 6
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T17:55:48Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Family ₩155,000 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩155,000 /년"
+        },
+        {
+          "field": "capability.images",
+          "quote": "            Copilot에서 AI 이미지 생성 사용량 확대 [popover:]                 "
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:]          "
+        },
+        {
+          "field": "capability.familyMembers",
+          "quote": "6명의 사용자"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
+      "id": "6e534406615ae23193364bf0",
+      "service": "onedrive",
+      "name": "Microsoft 365 Premium",
+      "amount": 290000.0,
+      "currency": "KRW",
+      "interval": "yearly",
+      "region": "KR",
+      "taxBasis": "official_display",
+      "commitmentMonths": 12,
+      "introductory": false,
+      "eligibility": "general",
+      "purpose": "storage",
+      "capabilities": {
+        "images": true,
+        "android": true
+      },
+      "source": "https://www.microsoft.com/ko-kr/microsoft-365/onedrive/compare-onedrive-plans",
+      "verifiedAt": "2026-10-30T17:55:48Z",
+      "status": "verified",
+      "evidence": [
+        {
+          "field": "amount",
+          "quote": "Microsoft 365 Premium ₩290,000 /년"
+        },
+        {
+          "field": "billing",
+          "quote": "₩290,000 /년"
+        },
+        {
+          "field": "capability.images",
+          "quote": "       Copilot Chat에서 AI 이미지 생성 사용량 확대 [popover:]                 "
+        },
+        {
+          "field": "capability.android",
+          "quote": "  PC, Mac, iPhone, iPad, Android 휴대폰, 태블릿에서 작동 [popover:] [popover:"
+        }
+      ],
+      "purposes": [
+        "storage"
+      ],
+      "verification": {
+        "price": true,
+        "billingTerms": true,
+        "region": true
+      }
+    },
+    {
       "id": "spotify-regular-monthly",
       "service": "spotify",
       "name": "Premium 개인 · 월간",
@@ -7554,7 +7650,7 @@
         "lossless": true
       },
       "source": "https://www.spotify.com/kr/premium/",
-      "verifiedAt": "2026-10-30T17:00:35Z",
+      "verifiedAt": "2026-10-30T17:56:02Z",
       "status": "verified",
       "evidence": [
         {
@@ -7600,7 +7696,7 @@
         "spatial": true
       },
       "source": "https://www.apple.com/kr/apple-music/",
-      "verifiedAt": "2026-10-30T17:00:30Z",
+      "verifiedAt": "2026-10-30T17:55:58Z",
       "status": "verified",
       "evidence": [
         {
@@ -7636,17 +7732,17 @@
     "retrieval": {
       "outcomes": {
         "captcha": 5,
-        "cross_site_redirect": 210,
+        "cross_site_redirect": 216,
         "deferred_captcha": 2,
-        "deferred_cross_site_redirect": 95,
-        "deferred_http_403": 147,
-        "deferred_http_404": 26,
+        "deferred_cross_site_redirect": 92,
+        "deferred_http_403": 150,
+        "deferred_http_404": 27,
         "deferred_render_budget_exhausted": 2,
         "deferred_render_http_403": 5,
         "http_402": 6,
-        "http_403": 226,
-        "http_404": 53,
-        "http_406": 3,
+        "http_403": 240,
+        "http_404": 51,
+        "http_406": 4,
         "http_429": 4,
         "http_500": 5,
         "http_503": 9,
@@ -7656,16 +7752,86 @@
         "http_530": 4,
         "non_public_url": 12,
         "ok": 2320,
-        "render_budget_exhausted": 21,
+        "render_budget_exhausted": 18,
         "render_http_403": 6,
-        "response_too_large": 3,
-        "timeout": 46,
+        "response_too_large": 4,
+        "timeout": 43,
         "tls_error": 12,
-        "unexpected_content_type": 4
+        "unexpected_content_type": 3
       },
-      "cacheHitsThisRun": 5,
-      "renderAttemptsThisRun": 10,
+      "cacheHitsThisRun": 2,
+      "renderAttemptsThisRun": 9,
       "recentFailures": [
+        {
+          "url": "https://www.tving.com/live/C00593",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-31T05:57:36Z"
+        },
+        {
+          "url": "https://www.tving.com/live/C00551",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-31T05:57:36Z"
+        },
+        {
+          "url": "https://www.tving.com/live/C52381",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-31T05:57:36Z"
+        },
+        {
+          "url": "https://zhuanlan.zhihu.com/p/660251019",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://zhuanlan.zhihu.com/p/617025808",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://www.saas.gov.uk/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://www.businesspost.co.kr/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://account.tidal.com/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://wikidocs.net/",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://wikidocs.net/blog/@openwiki/?tag=22127",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://www.spotify.com/",
+          "reason": "cross_site_redirect",
+          "nextCheckAt": "2026-10-30T18:57:36Z"
+        },
+        {
+          "url": "https://account.tidal.com/profile",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://tidal.com/download",
+          "reason": "http_403",
+          "nextCheckAt": "2026-10-31T17:57:36Z"
+        },
+        {
+          "url": "https://www.museum.go.kr/afile/fileDownloadById/26022559986P4054?siteCode=MUSEUM",
+          "reason": "response_too_large",
+          "nextCheckAt": "2026-10-30T19:57:36Z"
+        },
         {
           "url": "https://blog.csdn.net/qq_59961910/article/details/145964505",
           "reason": "http_521",
@@ -7745,76 +7911,6 @@
           "url": "https://culture.seoul.go.kr/culture/main/main.do?ready=Y",
           "reason": "timeout",
           "nextCheckAt": "2026-10-30T20:36:14Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C07382",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T17:05:31Z"
-        },
-        {
-          "url": "https://bettersheets.co/google-sheets-formula-generator?ref=mahseema-awesome-ai-tools",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T16:05:31Z"
-        },
-        {
-          "url": "https://createeasily.com/?ref=mahseema-awesome-ai-tools",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T16:05:31Z"
-        },
-        {
-          "url": "https://app.slack.com/client/*/*/",
-          "reason": "http_404",
-          "nextCheckAt": "2026-10-30T17:05:31Z"
-        },
-        {
-          "url": "https://www.coupangplay.com/",
-          "reason": "render_http_403",
-          "nextCheckAt": "2026-10-31T04:05:31Z"
-        },
-        {
-          "url": "https://www.coupang.com/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T16:05:31Z"
-        },
-        {
-          "url": "https://chatgpt.com/plans/free/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T16:05:31Z"
-        },
-        {
-          "url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-31T04:05:31Z"
-        },
-        {
-          "url": "https://www.canva.com/login/?msockid=1f2eb0ea49c76a0400b2a71748ba6bb7",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T16:05:31Z"
-        },
-        {
-          "url": "https://www.figma.com/login",
-          "reason": "render_budget_exhausted",
-          "nextCheckAt": "2026-10-30T17:05:31Z"
-        },
-        {
-          "url": "https://www.tving.com/live/C00711",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T17:14:20Z"
-        },
-        {
-          "url": "https://en.m.wikipedia.org/wiki/Reading,_Massachusetts",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T16:14:20Z"
-        },
-        {
-          "url": "https://www.writewithlaika.com/",
-          "reason": "cross_site_redirect",
-          "nextCheckAt": "2026-10-30T16:14:20Z"
-        },
-        {
-          "url": "https://quillbot.com/",
-          "reason": "http_403",
-          "nextCheckAt": "2026-10-31T15:14:20Z"
         }
       ]
     },
@@ -7826,17 +7922,17 @@
       {
         "name": "AppSumo",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "Bing",
         "status": "no_relevant_results",
-        "attempts": 28
+        "attempts": 27
       },
       {
         "name": "Bing",
         "status": "ok",
-        "attempts": 140
+        "attempts": 141
       },
       {
         "name": "Bing RSS",
@@ -7851,12 +7947,12 @@
       {
         "name": "DealMirror",
         "status": "ok",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "Dealify",
         "status": "ok",
-        "attempts": 15
+        "attempts": 14
       },
       {
         "name": "Google",
@@ -7871,12 +7967,12 @@
       {
         "name": "Google News",
         "status": "no_relevant_results",
-        "attempts": 6
+        "attempts": 5
       },
       {
         "name": "Google News",
         "status": "ok",
-        "attempts": 50
+        "attempts": 51
       },
       {
         "name": "Naver",
@@ -7941,7 +8037,7 @@
       {
         "name": "Official links: cursor",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: deezer",
@@ -7986,12 +8082,12 @@
       {
         "name": "Official links: github-copilot",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: google-one",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: google-workspace",
@@ -8006,7 +8102,7 @@
       {
         "name": "Official links: icloud",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: kakao",
@@ -8051,7 +8147,7 @@
       {
         "name": "Official links: midjourney",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Official links: naver-plus",
@@ -8071,7 +8167,7 @@
       {
         "name": "Official links: notion",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Official links: onedrive",
@@ -8191,7 +8287,7 @@
       {
         "name": "Sitemap: cursor",
         "status": "ok",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: deezer",
@@ -8236,12 +8332,12 @@
       {
         "name": "Sitemap: github-copilot",
         "status": "unavailable",
-        "attempts": 1
+        "attempts": 2
       },
       {
         "name": "Sitemap: google-one",
         "status": "unavailable",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: google-workspace",
@@ -8256,7 +8352,7 @@
       {
         "name": "Sitemap: icloud",
         "status": "ok",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: kakao",
@@ -8301,7 +8397,7 @@
       {
         "name": "Sitemap: notion",
         "status": "no_relevant_results",
-        "attempts": 2
+        "attempts": 1
       },
       {
         "name": "Sitemap: onedrive",
@@ -8366,22 +8462,22 @@
       {
         "name": "Slickdeals",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "StackSocial",
         "status": "ok",
-        "attempts": 14
+        "attempts": 15
       },
       {
         "name": "Sumo 구독 할인",
         "status": "ok",
-        "attempts": 13
+        "attempts": 14
       },
       {
         "name": "뽐뿌 해외뽐뿌",
         "status": "deferred",
-        "attempts": 13
+        "attempts": 12
       },
       {
         "name": "뽐뿌 해외뽐뿌",
@@ -8391,7 +8487,7 @@
       {
         "name": "퀘이사존 핫딜",
         "status": "deferred",
-        "attempts": 14
+        "attempts": 13
       },
       {
         "name": "퀘이사존 핫딜",
@@ -8414,31 +8510,6 @@
         "name": "퀘이사존 핫딜",
         "status": "unavailable",
         "nextCheckAt": "2026-10-31T03:03:56Z"
-      },
-      {
-        "name": "Official links: github-copilot",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: github-copilot",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-30T12:03:32Z"
-      },
-      {
-        "name": "Official links: midjourney",
-        "status": "unavailable",
-        "nextCheckAt": "2026-10-30T12:03:32Z"
-      },
-      {
-        "name": "Official links: cursor",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Sitemap: cursor",
-        "status": "ok",
-        "nextCheckAt": null
       },
       {
         "name": "Official links: suno",
@@ -8831,11 +8902,6 @@
         "nextCheckAt": null
       },
       {
-        "name": "Sumo 구독 할인",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "Google",
         "status": "no_relevant_results",
         "nextCheckAt": "2026-10-30T22:34:26Z"
@@ -8871,32 +8937,7 @@
         "nextCheckAt": null
       },
       {
-        "name": "StackSocial",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Slickdeals",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
         "name": "DealMirror",
-        "status": "ok",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Bing RSS",
-        "status": "no_relevant_results",
-        "nextCheckAt": null
-      },
-      {
-        "name": "Public tool directory",
         "status": "ok",
         "nextCheckAt": null
       },
@@ -8926,12 +8967,52 @@
         "nextCheckAt": "2026-10-31T09:00:21Z"
       },
       {
-        "name": "Google News",
+        "name": "Dealify",
         "status": "ok",
         "nextCheckAt": null
       },
       {
-        "name": "Dealify",
+        "name": "Bing",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Bing RSS",
+        "status": "no_relevant_results",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Public tool directory",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Official links: github-copilot",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: github-copilot",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-31T09:55:48Z"
+      },
+      {
+        "name": "Official links: midjourney",
+        "status": "unavailable",
+        "nextCheckAt": "2026-10-31T09:55:48Z"
+      },
+      {
+        "name": "Official links: cursor",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Sitemap: cursor",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Google News",
         "status": "ok",
         "nextCheckAt": null
       },
@@ -8939,11 +9020,26 @@
         "name": "AppSumo",
         "status": "ok",
         "nextCheckAt": null
+      },
+      {
+        "name": "Sumo 구독 할인",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "StackSocial",
+        "status": "ok",
+        "nextCheckAt": null
+      },
+      {
+        "name": "Slickdeals",
+        "status": "ok",
+        "nextCheckAt": null
       }
     ],
-    "candidateCount": 2194,
-    "rawCandidateCount": 2354,
-    "factChecks": 872,
+    "candidateCount": 2199,
+    "rawCandidateCount": 2359,
+    "factChecks": 874,
     "verifiedCatalogCount": 9,
     "catalogCount": 68,
     "metrics": {
@@ -8951,10 +9047,10 @@
         "catalog_verified": 15,
         "needs_dates": 173,
         "needs_official": 16,
-        "needs_service": 1008,
-        "needs_verification": 824,
+        "needs_service": 1011,
+        "needs_verification": 825,
         "official_verified": 5,
-        "partial_match": 22,
+        "partial_match": 23,
         "pending": 127,
         "rejected": 160,
         "unavailable": 4
@@ -8962,21 +9058,21 @@
       "catalogOutcomes": {
         "discovered_links": 254,
         "known": 437,
-        "needs_identity": 735,
+        "needs_identity": 738,
         "needs_price": 111,
         "rejected": 160,
-        "unavailable": 322,
+        "unavailable": 324,
         "verified": 15
       },
       "factCheckOutcomes": {
-        "needs_verification": 845,
+        "needs_verification": 846,
         "official_verified": 5,
-        "partial_match": 22
+        "partial_match": 23
       },
       "newServiceCount": 15,
       "verifiedPlanCount": 32,
       "candidatePlanCount": 41,
-      "rejectedLinkCount": 6305,
+      "rejectedLinkCount": 6445,
       "featureCoverage": {
         "adfree": 3,
         "android": 4,
@@ -8996,14 +9092,14 @@
       }
     },
     "latestRun": {
-      "startedAt": "2026-10-30T17:00:21Z",
+      "startedAt": "2026-10-30T17:55:48Z",
       "searchAttempts": 33,
-      "newServices": 1,
+      "newServices": 0,
       "factChecks": {
         "checked": 12,
         "confirmed": 0,
         "pending": 12,
-        "unmatched": 13,
+        "unmatched": 8,
         "rejected": 0
       },
       "taste": {
@@ -9012,8 +9108,8 @@
         "waitingOfficial": 0
       },
       "icons": {
-        "attempted": 1,
-        "updated": 1,
+        "attempted": 0,
+        "updated": 0,
         "available": 57,
         "failures": []
       }
