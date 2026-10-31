@@ -1,15 +1,15 @@
 # 달핏 백그라운드 조사 결과
-기준 UTC: 2026-10-31T08:04:32Z · 파이프라인 4
+기준 UTC: 2026-10-31T08:58:08Z · 파이프라인 4
 
 - 공개 중인 혜택: 7개 (기존 혜택 재확인은 신규 발굴과 별도)
-- 외부 후보 대조 확정 기록: 5개 / 대조 기록 930개
+- 외부 후보 대조 확정 기록: 5개 / 대조 기록 931개
 - 서비스 목록: 68개 · 신규 편입 누적 15개 · 이번 실행 신규 0개
-- 유효 후보 URL: 2314개 · 제외 이력 포함 2474개
+- 유효 후보 URL: 2320개 · 제외 이력 포함 2480개
 - 요금제: 검증 32개 / 미확정 43개
 - 공식 기간 확인 취향 정보: 0개
 
 ## 조회 진단
-{"outcomes": {"captcha": 6, "cross_site_redirect": 191, "deferred_cross_site_redirect": 72, "deferred_http_403": 122, "deferred_http_404": 21, "deferred_render_http_403": 6, "http_402": 4, "http_403": 184, "http_404": 64, "http_406": 3, "http_429": 8, "http_500": 5, "http_503": 9, "http_521": 10, "network_error": 4, "non_public_url": 9, "ok": 1896, "render_budget_exhausted": 30, "render_http_403": 4, "response_too_large": 4, "timeout": 8, "tls_error": 6, "unexpected_content_type": 2}, "cacheHitsThisRun": 9, "renderAttemptsThisRun": 10, "recentFailures": [{"url": "https://www.tving.com/live/C52207", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:04:32Z"}, {"url": "https://tv.youtube.com/start", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:04:32Z"}, {"url": "https://support.tidal.com/hc/en-us/articles/115003671729-Sign-up-for-Tidal", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://support.tidal.com/hc/en-us/articles/115005868269-Download-Tidal", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://excelmatic.ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T10:04:32Z"}, {"url": "https://tc.rebillion.ai/", "reason": "tls_error", "nextCheckAt": "2026-10-31T10:04:32Z"}, {"url": "https://perch.app/", "reason": "http_404", "nextCheckAt": "2026-10-31T10:04:32Z"}, {"url": "https://www.merriam-webster.com/dictionary/workflow", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://youtube.com/%3C/", "reason": "http_404", "nextCheckAt": "2026-10-31T09:04:32Z"}, {"url": "https://nordvpn.com/?msockid=232d085fa51369b8077b1fa0a4ea68a3", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://nordvpn.com/download/?msockid=232d085fa51369b8077b1fa0a4ea68a3", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://www.tving.com/event", "reason": "http_404", "nextCheckAt": "2026-10-31T19:14:20Z"}, {"url": "https://www.tving.com/live/C52206", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://www.tving.com/live/C00711", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T11:14:20Z"}, {"url": "https://www.tving.com/live/C00593", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T19:14:20Z"}, {"url": "https://listomatic.app/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://trolly.ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://dittto.ai/", "reason": "http_404", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://www.getrecall.ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://wwww.tailortask.ai/", "reason": "non_public_url", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://en.m.wikipedia.org/wiki/Workflow", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=4842551a5c465a468fd16d91d2c30f7c", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=503969434c88db4a576fb829f873455a", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T08:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=68fa9e900737f17b32ce1c610a0c224f", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=82599e2cd9c02f7a236f748a1aee0ed6", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=9064cb2023c1b8c26376771f75866719", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=9fa99026cd73b8b38737d5587482be4f", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T08:14:20Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=efe7568c894661b5162233d88a047ec2", "reason": "render_budget_exhausted", "nextCheckAt": "2026-10-31T08:14:20Z"}, {"url": "https://en.m.wikipedia.org/wiki/Kakao", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T06:56:36Z"}, {"url": "https://blog.csdn.net/2301_78858041/article/details/146381380", "reason": "http_521", "nextCheckAt": "2026-10-31T07:56:36Z"}]}
+{"outcomes": {"captcha": 6, "cross_site_redirect": 195, "deferred_cross_site_redirect": 76, "deferred_http_403": 126, "deferred_http_404": 22, "deferred_render_http_403": 6, "http_402": 4, "http_403": 202, "http_404": 64, "http_406": 3, "http_429": 10, "http_500": 5, "http_503": 9, "http_521": 10, "network_error": 4, "non_public_url": 9, "ok": 1987, "render_budget_exhausted": 30, "render_http_403": 4, "response_too_large": 4, "timeout": 8, "tls_error": 6, "unexpected_content_type": 2}, "cacheHitsThisRun": 2, "renderAttemptsThisRun": 8, "recentFailures": [{"url": "https://dealify.com/", "reason": "http_429", "nextCheckAt": "2026-10-31T09:58:08Z"}, {"url": "https://help.x.com/en/using-x/about-grok", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://copilot.microsoft.com/?msockid=09dbb053a45a676e1222a853a53b6627", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T12:58:08Z"}, {"url": "https://openai.com/index/introducing-chatgpt-search/", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://x.com/grok", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://cohere.ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T10:58:08Z"}, {"url": "https://www.dezeen.com/design/", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://www.canva.com/?msockid=06f47bfbaf196fe007526c04aedc6eeb", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://www.canva.com/class/join/?msockid=06f47bfbaf196fe007526c04aedc6eeb", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://www.canva.com/events/", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://www.canva.com/login/?msockid=06f47bfbaf196fe007526c04aedc6eeb", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://www.canva.com/templates/?msockid=06f47bfbaf196fe007526c04aedc6eeb", "reason": "http_403", "nextCheckAt": "2026-11-01T08:58:08Z"}, {"url": "https://www.tving.com/live/C52207", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:04:32Z"}, {"url": "https://tv.youtube.com/start", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:04:32Z"}, {"url": "https://support.tidal.com/hc/en-us/articles/115003671729-Sign-up-for-Tidal", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://support.tidal.com/hc/en-us/articles/115005868269-Download-Tidal", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://excelmatic.ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T10:04:32Z"}, {"url": "https://tc.rebillion.ai/", "reason": "tls_error", "nextCheckAt": "2026-10-31T10:04:32Z"}, {"url": "https://perch.app/", "reason": "http_404", "nextCheckAt": "2026-10-31T10:04:32Z"}, {"url": "https://www.merriam-webster.com/dictionary/workflow", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://youtube.com/%3C/", "reason": "http_404", "nextCheckAt": "2026-10-31T09:04:32Z"}, {"url": "https://nordvpn.com/?msockid=232d085fa51369b8077b1fa0a4ea68a3", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://nordvpn.com/download/?msockid=232d085fa51369b8077b1fa0a4ea68a3", "reason": "http_403", "nextCheckAt": "2026-11-01T08:04:32Z"}, {"url": "https://www.tving.com/event", "reason": "http_404", "nextCheckAt": "2026-10-31T19:14:20Z"}, {"url": "https://www.tving.com/live/C52206", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://www.tving.com/live/C00711", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T11:14:20Z"}, {"url": "https://www.tving.com/live/C00593", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T19:14:20Z"}, {"url": "https://listomatic.app/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://trolly.ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-10-31T09:14:20Z"}, {"url": "https://dittto.ai/", "reason": "http_404", "nextCheckAt": "2026-10-31T09:14:20Z"}]}
 
 ## 통화별 비교 요금
 {"KRW": 10, "USD": 22}
@@ -17,13 +17,13 @@
 ## 현재 혜택
 | 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |
 | --- | --- | --- | --- | --- | --- |
-| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-10-31T08:04:32Z | https://www.spotify.com/kr/premium/ |
-| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-10-31T08:04:32Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-31T08:04:32Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-10-31T08:04:32Z | https://www.apple.com/kr/apple-music/ |
-| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-10-31T08:04:32Z | https://www.spotify.com/kr-ko/premium/ |
-| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-31T08:04:32Z | https://surfshark.com/pricing |
-| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-10-31T08:04:32Z | https://www.spotify.com/kr/premium/ |
+| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-10-31T08:58:08Z | https://www.spotify.com/kr/premium/ |
+| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-10-31T08:58:08Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-31T08:58:08Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-10-31T08:58:08Z | https://www.apple.com/kr/apple-music/ |
+| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-10-31T08:58:08Z | https://www.spotify.com/kr/premium/ |
+| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-10-31T08:58:08Z | https://surfshark.com/pricing |
+| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-10-31T08:58:08Z | https://www.spotify.com/kr/premium/ |
 
 ## 기능 검증 범위
 {"adfree": 3, "android": 4, "familyMembers": 1, "images": 3, "lossless": 2, "music": 2, "offline": 2, "refundDays": 0, "spatial": 1, "windows": 1}
@@ -54,11 +54,6 @@
 ## 출처 접근 및 재시도
 | 출처 | 최신 상태 | 다음 재시도 UTC |
 | --- | --- | --- |
-| Official links: tidal | unavailable | 2026-10-31T07:13:12Z |
-| Official links: deezer | ok | 제한 없음 |
-| Sitemap: deezer | ok | 제한 없음 |
-| Official links: duolingo | no_relevant_results | 제한 없음 |
-| Sitemap: duolingo | unavailable | 2026-10-31T08:04:16Z |
 | Official links: chatgpt | unavailable | 2026-10-31T08:04:16Z |
 | Official links: grok | no_relevant_results | 제한 없음 |
 | Sitemap: grok | no_relevant_results | 제한 없음 |
@@ -140,27 +135,32 @@
 | Sitemap: evernote | no_relevant_results | 제한 없음 |
 | Official links: kakao-emoticon | unavailable | 2026-10-31T21:55:07Z |
 | Official links: kakao-drawer | unavailable | 2026-10-31T21:55:07Z |
-| Slickdeals | ok | 제한 없음 |
 | Official links: kakao-page | ok | 제한 없음 |
 | Sitemap: kakao-page | unavailable | 2026-10-31T23:13:01Z |
 | Official links: kakao-webtoon | ok | 제한 없음 |
 | Sitemap: kakao-webtoon | no_relevant_results | 제한 없음 |
 | Official links: kakao | no_relevant_results | 제한 없음 |
 | Sitemap: kakao | unavailable | 2026-10-31T23:13:01Z |
-| DealMirror | ok | 제한 없음 |
-| Dealify | ok | 제한 없음 |
-| Bing | ok | 제한 없음 |
-| Bing RSS | no_relevant_results | 제한 없음 |
-| Public tool directory | ok | 제한 없음 |
 | Official links: spotify | ok | 제한 없음 |
 | Sitemap: spotify | no_relevant_results | 제한 없음 |
 | Official links: youtube-music | no_relevant_results | 제한 없음 |
 | Sitemap: youtube-music | unavailable | 2026-11-01T00:02:54Z |
 | Official links: apple-music | ok | 제한 없음 |
 | Sitemap: apple-music | ok | 제한 없음 |
-| Google News | ok | 제한 없음 |
 | AppSumo | ok | 제한 없음 |
 | Sumo 구독 할인 | ok | 제한 없음 |
+| Bing | ok | 제한 없음 |
+| Bing RSS | ok | 제한 없음 |
+| Public tool directory | ok | 제한 없음 |
+| Official links: tidal | unavailable | 2026-11-01T08:57:04Z |
+| Official links: deezer | ok | 제한 없음 |
+| Sitemap: deezer | ok | 제한 없음 |
+| Official links: duolingo | no_relevant_results | 제한 없음 |
+| Sitemap: duolingo | unavailable | 2026-11-01T08:57:04Z |
+| Google News | ok | 제한 없음 |
 | StackSocial | ok | 제한 없음 |
+| Slickdeals | ok | 제한 없음 |
+| DealMirror | ok | 제한 없음 |
+| Dealify | unavailable | 2026-10-31T10:57:04Z |
 
 작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.
