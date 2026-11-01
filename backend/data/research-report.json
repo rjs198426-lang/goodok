@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-01T03:03:33Z",
+  "generatedAt": "2026-11-01T04:09:08Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 68,
   "newServicesCumulative": 15,
   "newServicesThisRun": 0,
-  "candidatesRetained": 2445,
-  "candidatesIncludingRejected": 2605,
+  "candidatesRetained": 2460,
+  "candidatesIncludingRejected": 2620,
   "factCheckOutcomes": {
-    "needs_verification": 963,
+    "needs_verification": 969,
     "official_verified": 5,
     "partial_match": 23
   },
   "latestRun": {
-    "startedAt": "2026-11-01T03:02:21Z",
-    "searchAttempts": 32,
+    "startedAt": "2026-11-01T04:07:36Z",
+    "searchAttempts": 34,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 11,
+      "unmatched": 8,
       "rejected": 0
     },
     "taste": {
@@ -56,11 +56,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -83,11 +83,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -107,11 +107,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -135,11 +135,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -159,11 +159,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -181,11 +181,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -209,11 +209,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-01",
-      "verifiedAt": "2026-11-01T03:03:33Z",
+      "verifiedAt": "2026-11-01T04:09:08Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-01T03:03:33Z",
+        "checkedAt": "2026-11-01T04:09:08Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -918,11 +918,6 @@
       "nextCheckAt": "2026-10-31T19:59:48Z"
     },
     {
-      "name": "뽐뿌 해외뽐뿌",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-01T03:59:48Z"
-    },
-    {
       "name": "퀘이사존 핫딜",
       "status": "unavailable",
       "nextCheckAt": "2026-11-01T04:58:31Z"
@@ -936,36 +931,6 @@
       "name": "Sitemap: duolingo",
       "status": "unavailable",
       "nextCheckAt": "2026-11-01T08:57:04Z"
-    },
-    {
-      "name": "Official links: grok",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: grok",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Official links: lovable",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: lovable",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Official links: krea",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: krea",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "Official links: claude",
@@ -1348,11 +1313,6 @@
       "nextCheckAt": null
     },
     {
-      "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Google",
       "status": "no_relevant_results",
       "nextCheckAt": "2026-11-01T07:27:36Z"
@@ -1383,26 +1343,6 @@
       "nextCheckAt": "2026-11-02T01:27:36Z"
     },
     {
-      "name": "Dealify",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: deezer",
       "status": "ok",
       "nextCheckAt": null
@@ -1423,11 +1363,6 @@
       "nextCheckAt": "2026-11-02T03:02:21Z"
     },
     {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
@@ -1443,23 +1378,88 @@
       "nextCheckAt": null
     },
     {
+      "name": "Bing",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: grok",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-01T10:07:36Z"
+    },
+    {
+      "name": "Sitemap: grok",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-01T10:07:36Z"
+    },
+    {
+      "name": "Official links: lovable",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: lovable",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-01T10:07:36Z"
+    },
+    {
+      "name": "Official links: krea",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: krea",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
       "name": "Slickdeals",
       "status": "ok",
       "nextCheckAt": null
+    },
+    {
+      "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Dealify",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "뽐뿌 해외뽐뿌",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-02T04:07:36Z"
     }
   ],
   "retrieval": {
     "outcomes": {
       "captcha": 6,
-      "cross_site_redirect": 211,
+      "cross_site_redirect": 207,
       "deferred_captcha": 1,
-      "deferred_cross_site_redirect": 81,
-      "deferred_http_403": 120,
+      "deferred_cross_site_redirect": 80,
+      "deferred_http_403": 122,
       "deferred_http_404": 22,
-      "deferred_render_http_403": 7,
+      "deferred_render_http_403": 8,
       "http_402": 4,
-      "http_403": 252,
-      "http_404": 75,
+      "http_403": 246,
+      "http_404": 76,
       "http_406": 1,
       "http_429": 2,
       "http_500": 2,
@@ -1467,19 +1467,69 @@
       "http_503": 5,
       "http_521": 4,
       "network_error": 6,
-      "non_public_url": 26,
-      "ok": 1944,
+      "non_public_url": 25,
+      "ok": 1949,
       "parse_error": 2,
-      "render_budget_exhausted": 40,
+      "render_budget_exhausted": 38,
       "render_http_403": 4,
       "response_too_large": 2,
-      "timeout": 10,
+      "timeout": 13,
       "tls_error": 4,
-      "unexpected_content_type": 3
+      "unexpected_content_type": 4
     },
-    "cacheHitsThisRun": 6,
+    "cacheHitsThisRun": 14,
     "renderAttemptsThisRun": 7,
     "recentFailures": [
+      {
+        "url": "https://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu4",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-02T04:09:08Z"
+      },
+      {
+        "url": "https://www.tving.com/live/C00709",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-01T08:09:08Z"
+      },
+      {
+        "url": "https://zhuanlan.zhihu.com/p/2027339640701493322",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-02T04:09:08Z"
+      },
+      {
+        "url": "https://baike.baidu.com/item/Krea/65707428",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-02T04:09:08Z"
+      },
+      {
+        "url": "https://merlin.foyer.work/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-01T06:09:08Z"
+      },
+      {
+        "url": "https://www.chatbotui.com/",
+        "reason": "http_404",
+        "nextCheckAt": "2026-11-01T06:09:08Z"
+      },
+      {
+        "url": "https://chatgptwriter.ai/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-01T08:09:08Z"
+      },
+      {
+        "url": "https://donnees-data.tpsgc-pwgsc.gc.ca/ba1/oc-co/oc-co-2004-eng.csv",
+        "reason": "unexpected_content_type",
+        "nextCheckAt": "2026-11-01T06:09:08Z"
+      },
+      {
+        "url": "https://riffo.ai/",
+        "reason": "timeout",
+        "nextCheckAt": "2026-11-01T06:09:08Z"
+      },
+      {
+        "url": "https://www.rabbitholes.ai/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-01T06:09:08Z"
+      },
       {
         "url": "https://www.tving.com/live/C51403",
         "reason": "cross_site_redirect",
@@ -1579,56 +1629,6 @@
         "url": "https://adon-web.awakast.com/en/recruiter/",
         "reason": "network_error",
         "nextCheckAt": "2026-11-01T03:28:56Z"
-      },
-      {
-        "url": "https://www.suno.edu/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
-      },
-      {
-        "url": "https://www.suno.edu/page/online-programs",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
-      },
-      {
-        "url": "https://baike.baidu.com/item/Cloud/16002960",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
-      },
-      {
-        "url": "https://www.cloudflare.com/plans/",
-        "reason": "captcha",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
-      },
-      {
-        "url": "https://medium.com/kaggle-blog",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
-      },
-      {
-        "url": "https://docs.omniverse.nvidia.com/extensions/latest/ext_animal-explorer.html",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
-      },
-      {
-        "url": "https://theresanai.com/",
-        "reason": "non_public_url",
-        "nextCheckAt": "2026-11-01T03:28:56Z"
-      },
-      {
-        "url": "https://www.youtube.com/feed./",
-        "reason": "http_404",
-        "nextCheckAt": "2026-11-01T02:28:56Z"
-      },
-      {
-        "url": "https://en.m.wikipedia.org/wiki/ICloud",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-01T05:28:56Z"
-      },
-      {
-        "url": "https://www.canva.com/?msockid=38e771cc948c6e9037e469cc95466fe0",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-02T01:28:56Z"
       }
     ]
   },
