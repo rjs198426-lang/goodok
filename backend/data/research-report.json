@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-02T15:12:10Z",
+  "generatedAt": "2026-11-02T16:19:23Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 68,
   "newServicesCumulative": 15,
   "newServicesThisRun": 0,
-  "candidatesRetained": 2716,
-  "candidatesIncludingRejected": 2876,
+  "candidatesRetained": 2723,
+  "candidatesIncludingRejected": 2883,
   "factCheckOutcomes": {
-    "needs_verification": 1066,
+    "needs_verification": 1068,
     "official_verified": 5,
     "partial_match": 23
   },
   "latestRun": {
-    "startedAt": "2026-11-02T15:10:51Z",
-    "searchAttempts": 33,
+    "startedAt": "2026-11-02T16:17:57Z",
+    "searchAttempts": 32,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 10,
+      "unmatched": 20,
       "rejected": 0
     },
     "taste": {
@@ -29,55 +29,10 @@
       "waitingOfficial": 0
     },
     "icons": {
-      "attempted": 11,
+      "attempted": 0,
       "updated": 0,
       "available": 57,
-      "failures": [
-        {
-          "service": "canva",
-          "reason": "cross_site_redirect,http_404"
-        },
-        {
-          "service": "chatgpt",
-          "reason": "http_403"
-        },
-        {
-          "service": "coupang-play",
-          "reason": "network_error"
-        },
-        {
-          "service": "duolingo",
-          "reason": "network_error,http_404"
-        },
-        {
-          "service": "expressvpn",
-          "reason": "http_404"
-        },
-        {
-          "service": "kakao",
-          "reason": "http_404"
-        },
-        {
-          "service": "kakao-drawer",
-          "reason": "cross_site_redirect"
-        },
-        {
-          "service": "kakao-webtoon",
-          "reason": "network_error"
-        },
-        {
-          "service": "midjourney",
-          "reason": "http_403"
-        },
-        {
-          "service": "nordvpn",
-          "reason": "http_403"
-        },
-        {
-          "service": "notion",
-          "reason": "http_404"
-        }
-      ]
+      "failures": []
     }
   },
   "offers": [
@@ -101,11 +56,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
+        "checkedAt": "2026-11-02T16:19:23Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -128,11 +83,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
+        "checkedAt": "2026-11-02T16:19:23Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -152,11 +107,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
+        "checkedAt": "2026-11-02T16:19:23Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -180,11 +135,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
+        "checkedAt": "2026-11-02T16:19:23Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -195,8 +150,8 @@
       "benefit": "Premium 개인 1개월 ₩0",
       "detail": "Spotify 한국 개인 요금제 체험",
       "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
+      "source": "https://www.spotify.com/kr-ko/premium/",
+      "publisher": "Spotify 공식",
       "ends": null,
       "offerType": "trial",
       "endsKnown": false,
@@ -204,12 +159,12 @@
         "newCustomer": true
       },
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
+        "checkedAt": "2026-11-02T16:19:23Z",
+        "officialSource": "https://www.spotify.com/kr-ko/premium/"
       }
     },
     {
@@ -226,11 +181,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
+        "checkedAt": "2026-11-02T16:19:23Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -254,11 +209,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-02",
-      "verifiedAt": "2026-11-02T15:12:10Z",
+      "verifiedAt": "2026-11-02T16:19:23Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-02T15:12:10Z",
+        "checkedAt": "2026-11-02T16:19:23Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -973,26 +928,6 @@
       "nextCheckAt": "2026-11-02T15:50:35Z"
     },
     {
-      "name": "Official links: evernote",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: evernote",
-      "status": "no_relevant_results",
-      "nextCheckAt": "2026-11-01T22:53:02Z"
-    },
-    {
-      "name": "Official links: kakao-emoticon",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-02T16:53:02Z"
-    },
-    {
-      "name": "Official links: kakao-drawer",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-02T17:48:11Z"
-    },
-    {
       "name": "Official links: kakao-page",
       "status": "no_relevant_results",
       "nextCheckAt": null
@@ -1398,11 +1333,6 @@
       "nextCheckAt": "2026-11-03T12:09:54Z"
     },
     {
-      "name": "Sumo 구독 할인",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: adobe",
       "status": "ok",
       "nextCheckAt": null
@@ -1423,32 +1353,7 @@
       "nextCheckAt": "2026-11-02T19:28:36Z"
     },
     {
-      "name": "StackSocial",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Slickdeals",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1478,12 +1383,47 @@
       "nextCheckAt": "2026-11-03T15:10:51Z"
     },
     {
-      "name": "Google News",
+      "name": "Dealify",
       "status": "ok",
       "nextCheckAt": null
     },
     {
-      "name": "Dealify",
+      "name": "Bing",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: evernote",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: evernote",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-02T22:17:57Z"
+    },
+    {
+      "name": "Official links: kakao-emoticon",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-03T16:17:57Z"
+    },
+    {
+      "name": "Official links: kakao-drawer",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-03T16:17:57Z"
+    },
+    {
+      "name": "Google News",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1491,37 +1431,157 @@
       "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
+    },
+    {
+      "name": "Sumo 구독 할인",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Slickdeals",
+      "status": "ok",
+      "nextCheckAt": null
     }
   ],
   "retrieval": {
     "outcomes": {
       "captcha": 5,
-      "cross_site_redirect": 170,
-      "deferred_cross_site_redirect": 60,
+      "cross_site_redirect": 172,
+      "deferred_cross_site_redirect": 59,
       "deferred_http_403": 101,
       "deferred_http_404": 18,
       "deferred_render_budget_exhausted": 2,
       "deferred_render_http_403": 6,
       "http_402": 2,
-      "http_403": 192,
-      "http_404": 70,
-      "http_406": 5,
+      "http_403": 188,
+      "http_404": 71,
+      "http_406": 3,
       "http_429": 4,
       "http_500": 2,
       "http_521": 2,
       "http_530": 2,
-      "non_public_url": 9,
+      "non_public_url": 8,
       "ok": 1678,
-      "render_budget_exhausted": 48,
+      "render_budget_exhausted": 68,
       "render_http_403": 4,
       "response_too_large": 2,
       "timeout": 47,
       "tls_error": 6,
       "unexpected_content_type": 6
     },
-    "cacheHitsThisRun": 21,
+    "cacheHitsThisRun": 5,
     "renderAttemptsThisRun": 10,
     "recentFailures": [
+      {
+        "url": "https://emoticon.kakao.com/",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-03T04:19:23Z"
+      },
+      {
+        "url": "https://nordvpn.com/pricing/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.lguplus.com/pogg/evet",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.canva.com/pricing/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.tving.com/live/C06941",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-03T04:19:23Z"
+      },
+      {
+        "url": "https://quillbot.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://app.slack.com/client/*/*/",
+        "reason": "http_404",
+        "nextCheckAt": "2026-11-02T20:19:23Z"
+      },
+      {
+        "url": "https://bettersheets.co/google-sheets-formula-generator?ref=mahseema-awesome-ai-tools",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://createeasily.com/?ref=mahseema-awesome-ai-tools",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.canva.com/?msockid=31aef7c0b80c62da395cefc5b9fe637b",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.canva.com/create/?msockid=31aef7c0b80c62da395cefc5b9fe637b",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.suno.edu/page/online-programs",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-03T16:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/commerce/billing?productType=MAX_ADS_BUNDLE&offerId=faa8238a-ef02-4225-a974-273cd22ba4da&offerId=d673b395-b890-42e4-af07-e184d7f1efa6&campaignId=456666d0-0b43-4870-ab30-9ea49b634584&campaignId=da03db4a-fcb2-3f5d-aeaf-b1c9eac5cdd2",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/commerce/billing?productType=MAX_BUNDLE&offerId=a774e9b5-62f2-4014-b42f-bf0c3321e310&offerId=d673b395-b890-42e4-af07-e184d7f1efa6&campaignId=456666d0-0b43-4870-ab30-9ea49b634584&campaignId=da03db4a-fcb2-3f5d-aeaf-b1c9eac5cdd2",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/commerce/billing?productType=FLAGSHIP_BUNDLE&offerId=ecf17ceb-5c88-41a1-ae8f-988beb61b0d2&campaignId=da03db4a-fcb2-3f5d-aeaf-b1c9eac5cdd2&offerId=386dc959-54cf-4236-955d-9cc52240fa3c&campaignId=30946abf-9c31-4f6e-b3f9-8bc2a2819176",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/commerce/billing?productType=FLAGSHIP_BUNDLE&offerId=e497477c-617c-464b-ac17-c8d855a3d6fc&campaignId=da03db4a-fcb2-3f5d-aeaf-b1c9eac5cdd2&offerId=386dc959-54cf-4236-955d-9cc52240fa3c&campaignId=30946abf-9c31-4f6e-b3f9-8bc2a2819176",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/identity/login?msockid=0f78d96afce765f8240bc16bfd8164d1",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/ko-kr/browse/page-4c4b78ed-4a17-43eb-8221-14a3959e4517?msockid=0f78d96afce765f8240bc16bfd8164d1",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/ko-kr/browse/page-bceb41c9-cfa9-41e3-b6d7-d547362ea1cd?msockid=0f78d96afce765f8240bc16bfd8164d1",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/ko-kr/identity/login?pinned=true&msockid=0f78d96afce765f8240bc16bfd8164d1",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T17:19:23Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/commerce/plans?default=bundle",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-02T20:19:23Z"
+      },
       {
         "url": "https://www.backblaze.com/cloud-storage/pricing",
         "reason": "captcha",
@@ -1558,11 +1618,6 @@
         "nextCheckAt": "2026-11-03T15:12:10Z"
       },
       {
-        "url": "https://www.kakaocorp.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-02T16:12:10Z"
-      },
-      {
         "url": "https://nordvpn.com/",
         "reason": "http_403",
         "nextCheckAt": "2026-11-03T15:12:10Z"
@@ -1571,106 +1626,6 @@
         "url": "https://www.duolingo.com/",
         "reason": "render_budget_exhausted",
         "nextCheckAt": "2026-11-02T16:12:10Z"
-      },
-      {
-        "url": "https://www.notion.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-03T03:12:10Z"
-      },
-      {
-        "url": "https://suno.com/?plan_key=premier",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-02T17:12:10Z"
-      },
-      {
-        "url": "https://www.suno.edu/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T15:12:10Z"
-      },
-      {
-        "url": "https://www.tving.com/live/C00711",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-03T01:29:48Z"
-      },
-      {
-        "url": "https://www.tving.com/live/C01582",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-03T01:29:48Z"
-      },
-      {
-        "url": "https://www.esteelaudercompanies.com/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-02T14:29:48Z"
-      },
-      {
-        "url": "https://offer.tidal.com/?lang=en&skipLandingPage=true",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T13:29:48Z"
-      },
-      {
-        "url": "https://x.com/ChatGPT",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T13:29:48Z"
-      },
-      {
-        "url": "https://x.com/github",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T13:29:48Z"
-      },
-      {
-        "url": "https://www.coupangplay.com/",
-        "reason": "render_http_403",
-        "nextCheckAt": "2026-11-03T01:29:48Z"
-      },
-      {
-        "url": "https://www.canva.com/?msockid=315b4da38f1c61c03d6a55a68ebc6084",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T13:29:48Z"
-      },
-      {
-        "url": "https://www.canva.com/login/?msockid=315b4da38f1c61c03d6a55a68ebc6084",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T13:29:48Z"
-      },
-      {
-        "url": "https://www.canva.com/templates/?msockid=315b4da38f1c61c03d6a55a68ebc6084",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-03T13:29:48Z"
-      },
-      {
-        "url": "https://www.museum.go.kr/afile/fileDownloadById/260826456981nqoj?siteCode=MUSEUM",
-        "reason": "unexpected_content_type",
-        "nextCheckAt": "2026-11-02T21:29:48Z"
-      },
-      {
-        "url": "https://www.museum.go.kr/afile/fileDownloadById/26051947043Eq5WO?siteCode=MUSEUM",
-        "reason": "unexpected_content_type",
-        "nextCheckAt": "2026-11-02T21:29:48Z"
-      },
-      {
-        "url": "https://www.museum.go.kr/afile/fileDownloadById/26022559986P4054?siteCode=MUSEUM",
-        "reason": "response_too_large",
-        "nextCheckAt": "2026-11-02T21:29:48Z"
-      },
-      {
-        "url": "https://www.tving.com/live/C00551",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-03T00:11:02Z"
-      },
-      {
-        "url": "https://en.m.wikipedia.org/wiki/Text_messaging",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-02T14:11:02Z"
-      },
-      {
-        "url": "https://get.murf.ai/v8i9to5ad4oq",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-02T14:11:02Z"
-      },
-      {
-        "url": "https://try.sanebox.com/yzkpe5s68xk2",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-02T14:11:02Z"
       }
     ]
   },
