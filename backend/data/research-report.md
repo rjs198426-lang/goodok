@@ -1,15 +1,15 @@
 # 달핏 백그라운드 조사 결과
-기준 UTC: 2026-11-03T04:10:41Z · 파이프라인 4
+기준 UTC: 2026-11-03T05:12:24Z · 파이프라인 4
 
 - 공개 중인 혜택: 7개 (기존 혜택 재확인은 신규 발굴과 별도)
-- 외부 후보 대조 확정 기록: 5개 / 대조 기록 1121개
+- 외부 후보 대조 확정 기록: 6개 / 대조 기록 1130개
 - 서비스 목록: 68개 · 신규 편입 누적 15개 · 이번 실행 신규 0개
-- 유효 후보 URL: 2796개 · 제외 이력 포함 2956개
+- 유효 후보 URL: 2814개 · 제외 이력 포함 2974개
 - 요금제: 검증 32개 / 미확정 44개
 - 공식 기간 확인 취향 정보: 0개
 
 ## 조회 진단
-{"outcomes": {"captcha": 3, "cross_site_redirect": 142, "deferred_cross_site_redirect": 46, "deferred_http_403": 103, "deferred_http_404": 18, "deferred_render_budget_exhausted": 2, "deferred_render_http_403": 7, "http_403": 224, "http_404": 59, "http_417": 2, "http_429": 8, "http_500": 2, "http_503": 1, "http_521": 4, "non_public_url": 7, "ok": 1715, "render_budget_exhausted": 64, "render_http_403": 4, "response_too_large": 2, "timeout": 16, "tls_error": 2, "unexpected_content_type": 3}, "cacheHitsThisRun": 16, "renderAttemptsThisRun": 10, "recentFailures": [{"url": "https://dealmirror.com/", "reason": "timeout", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://www.tving.com/live/C52420", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T16:10:41Z"}, {"url": "https://en.m.wikipedia.org/wiki/Proton_Mail", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://gizmodo.com/best-vpn/nordvpn", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.yelp.com/search?cflt=massage&find_loc=Katy%2C+TX&msockid=303c8ae787956d8f1e239d1886bb6c07", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.tripadvisor.com/Attractions-g56062-Activities-c40-Katy_Texas.html", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.chamberofcommerce.com/business-directory/texas/katy/massage-spa/1340218081-katy-massage-center", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://webtoon.kakao.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://www.notion.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T16:10:41Z"}, {"url": "https://www.amazon.com/gp/prime/pipeline/membersignup?campaignId=SlashPrime&offerToken=amzn1.prime.offertoken.1.lTjVF73VRzy6cYVCfj1BskvrO8PasMUrKey8vdhHJcdrb8a4CVgcc5LW3IGbyuj7GD1yeLSfNZmV1Lz2wnxgo3Gav90u2DQG-0xx0IeUO3RxG7BLFWXf91TufYKrXE0_kPHV-kHloRkJmCaLp-xKCAzGDoqHBscpw02cJdastmTS4Q1azaDJbKkqkji4sX9tDwFoy87mJ0V5O8h2i5fmUaTP0liZ6Iko9ykcn_j8Glq_kCCjJySG4nQkyvBSQcH7xPPmwVifFz51tmAWyR8k_S5UuuxRh3HtDhO3IaROBWivkAF-TvRgfASV6H8edfHXgS8Okse1cDCGk6E3&redirectURL=L2dwL3ByaW1l&locationId=prime_confirm&cancelRedirectURL=Lw&containerRequestId=90e22387-a3b8-45bd-a790-52fdd996b992_606a20c1-6806-4c94-9fae-ed2ef71330e9&originalContainerRequestId=90e22387-a3b8-45bd-a790-52fdd996b992_606a20c1-6806-4c94-9fae-ed2ef71330e9&primeSignupFulfillmentType=AMAZON_WALLET", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://www.canva.com/graphs/workflow-diagrams/?msockid=0dddc714f2a269e132eadf12f3cb6843", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.merriam-webster.com/dictionary/lovable", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.perplexity.ai/", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.perplexity.ai/hub", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://search.naver.com/search.naver?where=web&query=%EC%BF%A0%ED%8C%A1%ED%94%8C%EB%A0%88%EC%9D%B4%20%EA%B5%AC%EB%8F%85%20%ED%95%A0%EC%9D%B8%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%EA%B0%80%EA%B2%A9%202026%2011", "reason": "http_403", "nextCheckAt": "2026-11-04T03:07:46Z"}, {"url": "https://www.coupangplay.com/", "reason": "render_http_403", "nextCheckAt": "2026-11-03T15:07:46Z"}, {"url": "https://event.sessions.us/kwhero/mastering-keyword-research-&-content-creation-with-kwhero-ai", "reason": "non_public_url", "nextCheckAt": "2026-11-03T15:07:46Z"}, {"url": "https://openai.com/news/", "reason": "http_403", "nextCheckAt": "2026-11-04T03:07:46Z"}, {"url": "https://www.canva.cn/en/", "reason": "http_403", "nextCheckAt": "2026-11-04T03:07:46Z"}, {"url": "https://www.producthunt.com/products/canva", "reason": "http_403", "nextCheckAt": "2026-11-04T03:07:46Z"}, {"url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_All_SupportAIMarketplace&ocid=cmm3atxvn98", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T15:07:46Z"}, {"url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T15:07:46Z"}, {"url": "https://github.com/signup?source=login", "reason": "http_403", "nextCheckAt": "2026-11-04T03:07:46Z"}, {"url": "https://www.tving.com/live/C52470", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T13:26:18Z"}, {"url": "https://assets.adobe.com/?locale=en", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T09:26:18Z"}, {"url": "https://diallink.com/cloud-phone-system/pricing", "reason": "http_429", "nextCheckAt": "2026-11-03T03:26:18Z"}, {"url": "https://copilot.microsoft.com/?msockid=00e03cfa8d066169329f24f88cfc6053", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T03:26:18Z"}, {"url": "https://music.youtube.com/music_premium", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T02:26:18Z"}, {"url": "https://www.newsspace.kr/", "reason": "timeout", "nextCheckAt": "2026-11-03T02:26:18Z"}, {"url": "https://chatgpt.com/overview/", "reason": "http_403", "nextCheckAt": "2026-11-04T01:26:18Z"}]}
+{"outcomes": {"captcha": 4, "cross_site_redirect": 144, "deferred_cross_site_redirect": 46, "deferred_http_403": 102, "deferred_http_404": 18, "deferred_render_budget_exhausted": 2, "deferred_render_http_403": 6, "http_403": 234, "http_404": 59, "http_417": 2, "http_429": 8, "http_500": 2, "http_503": 1, "http_521": 4, "non_public_url": 6, "ok": 1698, "render_budget_exhausted": 56, "render_http_403": 4, "response_too_large": 2, "timeout": 13, "tls_error": 2, "unexpected_content_type": 3}, "cacheHitsThisRun": 26, "renderAttemptsThisRun": 9, "recentFailures": [{"url": "https://www.lguplus.com/pogg/", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://www.tving.com/live/C00593", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T17:12:24Z"}, {"url": "https://www.tving.com/live/C05441", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T17:12:24Z"}, {"url": "https://en.m.wikipedia.org/wiki/NordVPN", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T06:12:24Z"}, {"url": "https://www.pcmag.com/reviews/nordvpn", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://nordaccount.com/remote", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-ai", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://www.yelp.com/biz/katy-massage-center-katy-2?msockid=303c8ae787956d8f1e239d1886bb6c07", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://nordvpn.com/?msockid=0d0c09876b8c610221a711816ae3606b", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://nordvpn.com/download/?msockid=0d0c09876b8c610221a711816ae3606b", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://surfshark.com/ko/pricing", "reason": "captcha", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://www.canva.com/?msockid=1bf444f2d8646a4d09155cf4d9a06b42", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://www.canva.com/create/?msockid=1bf444f2d8646a4d09155cf4d9a06b42", "reason": "http_403", "nextCheckAt": "2026-11-04T05:12:24Z"}, {"url": "https://dealmirror.com/", "reason": "timeout", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://www.tving.com/live/C52420", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T16:10:41Z"}, {"url": "https://en.m.wikipedia.org/wiki/Proton_Mail", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://gizmodo.com/best-vpn/nordvpn", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.yelp.com/search?cflt=massage&find_loc=Katy%2C+TX&msockid=303c8ae787956d8f1e239d1886bb6c07", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.tripadvisor.com/Attractions-g56062-Activities-c40-Katy_Texas.html", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.chamberofcommerce.com/business-directory/texas/katy/massage-spa/1340218081-katy-massage-center", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://webtoon.kakao.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://www.notion.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T16:10:41Z"}, {"url": "https://www.amazon.com/gp/prime/pipeline/membersignup?campaignId=SlashPrime&offerToken=amzn1.prime.offertoken.1.lTjVF73VRzy6cYVCfj1BskvrO8PasMUrKey8vdhHJcdrb8a4CVgcc5LW3IGbyuj7GD1yeLSfNZmV1Lz2wnxgo3Gav90u2DQG-0xx0IeUO3RxG7BLFWXf91TufYKrXE0_kPHV-kHloRkJmCaLp-xKCAzGDoqHBscpw02cJdastmTS4Q1azaDJbKkqkji4sX9tDwFoy87mJ0V5O8h2i5fmUaTP0liZ6Iko9ykcn_j8Glq_kCCjJySG4nQkyvBSQcH7xPPmwVifFz51tmAWyR8k_S5UuuxRh3HtDhO3IaROBWivkAF-TvRgfASV6H8edfHXgS8Okse1cDCGk6E3&redirectURL=L2dwL3ByaW1l&locationId=prime_confirm&cancelRedirectURL=Lw&containerRequestId=90e22387-a3b8-45bd-a790-52fdd996b992_606a20c1-6806-4c94-9fae-ed2ef71330e9&originalContainerRequestId=90e22387-a3b8-45bd-a790-52fdd996b992_606a20c1-6806-4c94-9fae-ed2ef71330e9&primeSignupFulfillmentType=AMAZON_WALLET", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-03T05:10:41Z"}, {"url": "https://www.canva.com/graphs/workflow-diagrams/?msockid=0dddc714f2a269e132eadf12f3cb6843", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.merriam-webster.com/dictionary/lovable", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.perplexity.ai/", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://www.perplexity.ai/hub", "reason": "http_403", "nextCheckAt": "2026-11-04T04:10:41Z"}, {"url": "https://search.naver.com/search.naver?where=web&query=%EC%BF%A0%ED%8C%A1%ED%94%8C%EB%A0%88%EC%9D%B4%20%EA%B5%AC%EB%8F%85%20%ED%95%A0%EC%9D%B8%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%EA%B0%80%EA%B2%A9%202026%2011", "reason": "http_403", "nextCheckAt": "2026-11-04T03:07:46Z"}, {"url": "https://www.coupangplay.com/", "reason": "render_http_403", "nextCheckAt": "2026-11-03T15:07:46Z"}, {"url": "https://event.sessions.us/kwhero/mastering-keyword-research-&-content-creation-with-kwhero-ai", "reason": "non_public_url", "nextCheckAt": "2026-11-03T15:07:46Z"}]}
 
 ## 통화별 비교 요금
 {"KRW": 10, "USD": 22}
@@ -17,13 +17,13 @@
 ## 현재 혜택
 | 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |
 | --- | --- | --- | --- | --- | --- |
-| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-03T04:10:41Z | https://www.spotify.com/kr/premium/ |
-| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-03T04:10:41Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-03T04:10:41Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-03T04:10:41Z | https://www.apple.com/kr/apple-music/ |
-| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-03T04:10:41Z | https://www.spotify.com/kr/premium/ |
-| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-03T04:10:41Z | https://surfshark.com/pricing |
-| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-03T04:10:41Z | https://www.spotify.com/kr/premium/ |
+| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-03T05:12:24Z | https://www.spotify.com/kr/premium/ |
+| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-03T05:12:24Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-03T05:12:24Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-03T05:12:24Z | https://www.apple.com/kr/apple-music/ |
+| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-03T05:12:24Z | https://www.spotify.com/kr/premium/ |
+| surfshark | 첫 27개월 CA$91.53 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-03T05:12:24Z | https://surfshark.com/pricing |
+| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-03T05:12:24Z | https://www.spotify.com/kr/premium/ |
 
 ## 기능 검증 범위
 {"adfree": 3, "android": 4, "familyMembers": 1, "images": 3, "lossless": 2, "music": 2, "offline": 2, "refundDays": 0, "spatial": 1, "windows": 1}
@@ -67,11 +67,7 @@
 | Sitemap: naver-plus | unavailable | 2026-11-03T05:22:08Z |
 | 뽐뿌 해외뽐뿌 | unavailable | 2026-11-03T05:22:08Z |
 | Sitemap: amazon-prime | unavailable | 2026-11-03T07:44:22Z |
-| Official links: yodok | unavailable | 2026-11-03T07:44:22Z |
-| Official links: surfshark | ok | 제한 없음 |
-| Sitemap: surfshark | no_relevant_results | 2026-11-02T13:44:22Z |
 | 퀘이사존 핫딜 | unavailable | 2026-11-03T07:44:22Z |
-| Official links: nordvpn | unavailable | 2026-11-03T09:23:28Z |
 | Official links: expressvpn | ok | 제한 없음 |
 | Sitemap: expressvpn | unavailable | 2026-11-03T09:23:28Z |
 | Official links: protonvpn | no_relevant_results | 2026-11-02T15:23:28Z |
@@ -144,23 +140,27 @@
 | Official links: wavve | ok | 제한 없음 |
 | Sitemap: wavve | no_relevant_results | 2026-11-03T07:24:18Z |
 | Official links: watcha | no_relevant_results | 2026-11-03T07:24:18Z |
-| Dealify | ok | 제한 없음 |
 | Naver | unavailable | 2026-11-04T03:06:42Z |
 | Official links: coupang-play | unavailable | 2026-11-04T03:06:42Z |
 | Official links: apple-tv | ok | 제한 없음 |
 | Sitemap: apple-tv | ok | 제한 없음 |
 | Official links: prime-video | no_relevant_results | 제한 없음 |
 | AppSumo | ok | 제한 없음 |
-| Bing | no_relevant_results | 제한 없음 |
-| Bing RSS | ok | 제한 없음 |
-| Public tool directory | ok | 제한 없음 |
 | Official links: naver-plus | ok | 제한 없음 |
 | Official links: coupang | unavailable | 2026-11-04T04:08:59Z |
 | Official links: amazon-prime | ok | 제한 없음 |
-| Google News | ok | 제한 없음 |
 | Sumo 구독 할인 | ok | 제한 없음 |
 | StackSocial | unavailable | 2026-11-03T08:08:59Z |
 | Slickdeals | ok | 제한 없음 |
 | DealMirror | unavailable | 2026-11-03T06:08:59Z |
+| Bing | ok | 제한 없음 |
+| Bing RSS | no_relevant_results | 제한 없음 |
+| Public tool directory | ok | 제한 없음 |
+| Official links: yodok | unavailable | 2026-11-04T05:11:18Z |
+| Official links: surfshark | ok | 제한 없음 |
+| Sitemap: surfshark | no_relevant_results | 2026-11-03T11:11:18Z |
+| Official links: nordvpn | unavailable | 2026-11-04T05:11:18Z |
+| Google News | ok | 제한 없음 |
+| Dealify | ok | 제한 없음 |
 
 작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.
