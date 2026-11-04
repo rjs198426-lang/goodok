@@ -1,15 +1,15 @@
 # 달핏 백그라운드 조사 결과
-기준 UTC: 2026-11-04T01:26:52Z · 파이프라인 4
+기준 UTC: 2026-11-04T03:06:11Z · 파이프라인 4
 
 - 공개 중인 혜택: 7개 (기존 혜택 재확인은 신규 발굴과 별도)
-- 외부 후보 대조 확정 기록: 6개 / 대조 기록 1187개
+- 외부 후보 대조 확정 기록: 6개 / 대조 기록 1189개
 - 서비스 목록: 68개 · 신규 편입 누적 15개 · 이번 실행 신규 0개
-- 유효 후보 URL: 2965개 · 제외 이력 포함 3125개
+- 유효 후보 URL: 2968개 · 제외 이력 포함 3128개
 - 요금제: 검증 32개 / 미확정 44개
 - 공식 기간 확인 취향 정보: 0개
 
 ## 조회 진단
-{"outcomes": {"captcha": 6, "cross_site_redirect": 180, "deferred_cross_site_redirect": 62, "deferred_http_403": 115, "deferred_http_404": 20, "deferred_render_budget_exhausted": 4, "deferred_render_http_403": 8, "http_402": 2, "http_403": 258, "http_404": 67, "http_406": 1, "http_500": 2, "http_521": 4, "non_public_url": 18, "ok": 1812, "render_budget_exhausted": 46, "render_http_403": 4, "response_too_large": 3, "timeout": 9, "tls_error": 6, "unexpected_content_type": 11}, "cacheHitsThisRun": 4, "renderAttemptsThisRun": 9, "recentFailures": [{"url": "https://www.tving.com/event", "reason": "http_404", "nextCheckAt": "2026-11-04T13:26:52Z"}, {"url": "https://www.udacity.com/course/intro-to-machine-learning--ud120", "reason": "captcha", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://www.ott.edu.ar/", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://my.surfshark.com/home/dashboard", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://es.gizmodo.com/descargar/nordvpn", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=4efb723dcd4648b8a0013ba1e8ddde88", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T02:26:52Z"}, {"url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=4efb723dcd4648b8a0013ba1e8ddde88", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T02:26:52Z"}, {"url": "https://www.godaddy.com/?msockid=29c36f4e75f269cd20ce774874a8681b", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://vocalreplica.com/", "reason": "timeout", "nextCheckAt": "2026-11-04T03:55:00Z"}, {"url": "https://searchpromptly.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T03:55:00Z"}, {"url": "https://hiring.amazon.com/locations", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://en.m.wikipedia.org/wiki/Website", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T01:55:00Z"}, {"url": "https://www.godaddy.com/?msockid=0898115ad00f6af0028b0959d1716b0c", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://www.duolingo.com/super", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-04T00:55:00Z"}, {"url": "https://nordvpn.com/?msockid=0cf7d4cccf136d890f6dcccace5f6c0d", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://nordvpn.com/download/?msockid=0cf7d4cccf136d890f6dcccace5f6c0d", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://www.expressvpn.com/payment?offer_id=pp_01m5xgekzdfqarh8f0h8rtv3wr&cur=usd&pricing_table_id=pt_01m5xj3be2en8s9af19xvwexxk&product_type=vpn", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T00:55:00Z"}, {"url": "https://www.expressvpn.com/payment?offer_id=pp_01m5xgs9m1e8ksxx48jr9swtt3&cur=usd&pricing_table_id=pt_01m5xj3be2en8s9af19xvwexxk&product_type=vpn", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T00:55:00Z"}, {"url": "https://www.expressvpn.com/payment?offer_id=pp_01m5xh2maqfztsgck80tt3r3tt&cur=usd&pricing_table_id=pt_01m5xj3be2en8s9af19xvwexxk&product_type=vpn", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T00:55:00Z"}, {"url": "https://affiliate.notion.so/9po6cx7rvdr6-4y5a7", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T03:55:00Z"}, {"url": "https://openai.com/api/", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://play.ht/", "reason": "non_public_url", "nextCheckAt": "2026-11-04T03:01:09Z"}, {"url": "https://coqui.ai/", "reason": "http_404", "nextCheckAt": "2026-11-04T03:01:09Z"}, {"url": "https://podcast.ai/", "reason": "non_public_url", "nextCheckAt": "2026-11-04T03:01:09Z"}, {"url": "https://vallex-demo.github.io/", "reason": "http_404", "nextCheckAt": "2026-11-04T03:01:09Z"}, {"url": "https://secure7.store.apple.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T01:01:09Z"}, {"url": "https://cart.coupang.com/cartView.pang", "reason": "http_403", "nextCheckAt": "2026-11-04T23:01:09Z"}, {"url": "https://www.wix.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T03:01:09Z"}, {"url": "https://www.website.com/free-websites/", "reason": "http_403", "nextCheckAt": "2026-11-04T23:01:09Z"}]}
+{"outcomes": {"captcha": 6, "cross_site_redirect": 196, "deferred_cross_site_redirect": 64, "deferred_http_403": 119, "deferred_http_404": 21, "deferred_render_budget_exhausted": 4, "deferred_render_http_403": 9, "http_402": 2, "http_403": 262, "http_404": 71, "http_406": 1, "http_500": 2, "http_521": 4, "non_public_url": 19, "ok": 1894, "render_budget_exhausted": 46, "render_http_403": 4, "response_too_large": 3, "timeout": 9, "tls_error": 6, "unexpected_content_type": 11}, "cacheHitsThisRun": 6, "renderAttemptsThisRun": 9, "recentFailures": [{"url": "https://copilot.microsoft.com/?msockid=0ac15127534269ea180a492052e86839", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T04:06:11Z"}, {"url": "https://copilot.microsoft.com/?msockid=211f9e506f0b67da2cf886576ecd661e", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T04:06:11Z"}, {"url": "https://opt.alpa.ai/", "reason": "non_public_url", "nextCheckAt": "2026-11-04T07:06:11Z"}, {"url": "https://ai.facebook.com/blog/large-language-model-llama-meta-ai/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T07:06:11Z"}, {"url": "https://ai.meta.com/llama/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T07:06:11Z"}, {"url": "https://altern.ai/ai/gpt-4o-mini", "reason": "http_404", "nextCheckAt": "2026-11-04T07:06:11Z"}, {"url": "https://www.cloudflare.com/learning/cloud/what-is-the-cloud/", "reason": "http_403", "nextCheckAt": "2026-11-05T03:06:11Z"}, {"url": "https://rewards.microsoft.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T05:06:11Z"}, {"url": "https://en.m.wikipedia.org/wiki/Cloud_computing", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T07:06:11Z"}, {"url": "https://en.m.wikipedia.org/wiki/Cloud", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T07:06:11Z"}, {"url": "https://www.perplexity.ai/pro", "reason": "http_403", "nextCheckAt": "2026-11-05T03:06:11Z"}, {"url": "https://www.youtube.com/feed.", "reason": "http_404", "nextCheckAt": "2026-11-04T05:06:11Z"}, {"url": "https://psxid.figma.com/pblk4", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T11:06:11Z"}, {"url": "https://www.tving.com/event", "reason": "http_404", "nextCheckAt": "2026-11-04T13:26:52Z"}, {"url": "https://www.udacity.com/course/intro-to-machine-learning--ud120", "reason": "captcha", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://www.ott.edu.ar/", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://my.surfshark.com/home/dashboard", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://es.gizmodo.com/descargar/nordvpn", "reason": "http_403", "nextCheckAt": "2026-11-05T01:26:52Z"}, {"url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=4efb723dcd4648b8a0013ba1e8ddde88", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T02:26:52Z"}, {"url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=4efb723dcd4648b8a0013ba1e8ddde88", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T02:26:52Z"}, {"url": "https://www.godaddy.com/?msockid=29c36f4e75f269cd20ce774874a8681b", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://vocalreplica.com/", "reason": "timeout", "nextCheckAt": "2026-11-04T03:55:00Z"}, {"url": "https://searchpromptly.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T03:55:00Z"}, {"url": "https://hiring.amazon.com/locations", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://en.m.wikipedia.org/wiki/Website", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-04T01:55:00Z"}, {"url": "https://www.godaddy.com/?msockid=0898115ad00f6af0028b0959d1716b0c", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://www.duolingo.com/super", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-04T00:55:00Z"}, {"url": "https://nordvpn.com/?msockid=0cf7d4cccf136d890f6dcccace5f6c0d", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}, {"url": "https://nordvpn.com/download/?msockid=0cf7d4cccf136d890f6dcccace5f6c0d", "reason": "http_403", "nextCheckAt": "2026-11-04T23:55:00Z"}]}
 
 ## 통화별 비교 요금
 {"KRW": 10, "USD": 22}
@@ -17,13 +17,13 @@
 ## 현재 혜택
 | 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |
 | --- | --- | --- | --- | --- | --- |
-| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-04T01:26:52Z | https://www.spotify.com/kr/premium/ |
-| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-04T01:26:52Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-04T01:26:52Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-04T01:26:52Z | https://www.apple.com/kr/apple-music/ |
-| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-04T01:26:52Z | https://www.spotify.com/kr/premium/ |
-| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-04T01:26:52Z | https://surfshark.com/pricing |
-| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-04T01:26:52Z | https://www.spotify.com/kr/premium/ |
+| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-04T03:06:11Z | https://www.spotify.com/kr/premium/ |
+| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-04T03:06:11Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-04T03:06:11Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-04T03:06:11Z | https://www.apple.com/kr/apple-music/ |
+| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-04T03:06:11Z | https://www.spotify.com/kr/premium/ |
+| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-04T03:06:11Z | https://surfshark.com/pricing |
+| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-04T03:06:11Z | https://www.spotify.com/kr/premium/ |
 
 ## 기능 검증 범위
 {"adfree": 3, "android": 4, "familyMembers": 1, "images": 3, "lossless": 2, "music": 2, "offline": 2, "refundDays": 0, "spatial": 1, "windows": 1}
@@ -59,12 +59,7 @@
 | Sitemap: kakao | unavailable | 2026-11-03T16:48:44Z |
 | Sitemap: youtube-music | unavailable | 2026-11-03T18:07:33Z |
 | Naver | unavailable | 2026-11-04T03:06:42Z |
-| Official links: icloud | ok | 제한 없음 |
-| Sitemap: icloud | ok | 제한 없음 |
-| Official links: google-one | ok | 제한 없음 |
 | Sitemap: google-one | unavailable | 2026-11-04T07:30:54Z |
-| Official links: google-workspace | ok | 제한 없음 |
-| Sitemap: google-workspace | no_relevant_results | 2026-11-03T15:07:27Z |
 | Official links: dropbox | ok | 제한 없음 |
 | Official links: adobe | ok | 제한 없음 |
 | Sitemap: adobe | unavailable | 2026-11-04T09:07:27Z |
@@ -142,25 +137,30 @@
 | Official links: amazon-prime | ok | 제한 없음 |
 | Sitemap: amazon-prime | unavailable | 2026-11-04T22:59:41Z |
 | Official links: yodok | unavailable | 2026-11-04T22:59:41Z |
-| Sumo 구독 할인 | ok | 제한 없음 |
 | Official links: surfshark | ok | 제한 없음 |
 | Sitemap: surfshark | no_relevant_results | 2026-11-04T05:53:05Z |
 | Official links: nordvpn | unavailable | 2026-11-04T23:53:05Z |
 | Official links: expressvpn | ok | 제한 없음 |
 | Sitemap: expressvpn | unavailable | 2026-11-04T23:53:05Z |
-| Slickdeals | ok | 제한 없음 |
 | DealMirror | ok | 제한 없음 |
-| Bing | no_relevant_results | 제한 없음 |
-| Bing RSS | no_relevant_results | 제한 없음 |
-| Public tool directory | ok | 제한 없음 |
 | Official links: protonvpn | no_relevant_results | 2026-11-04T07:25:25Z |
 | Sitemap: protonvpn | no_relevant_results | 2026-11-04T07:25:25Z |
 | Official links: microsoft365 | ok | 제한 없음 |
 | Sitemap: microsoft365 | unavailable | 2026-11-05T01:25:25Z |
 | Official links: notion | ok | 제한 없음 |
 | Sitemap: notion | no_relevant_results | 2026-11-04T07:25:25Z |
-| Google News | ok | 제한 없음 |
 | Dealify | ok | 제한 없음 |
+| Bing | ok | 제한 없음 |
+| Bing RSS | no_relevant_results | 제한 없음 |
+| Public tool directory | ok | 제한 없음 |
+| Official links: icloud | ok | 제한 없음 |
+| Sitemap: icloud | ok | 제한 없음 |
+| Official links: google-one | ok | 제한 없음 |
+| Official links: google-workspace | ok | 제한 없음 |
+| Sitemap: google-workspace | no_relevant_results | 2026-11-04T09:05:07Z |
+| Google News | ok | 제한 없음 |
 | AppSumo | ok | 제한 없음 |
+| Sumo 구독 할인 | ok | 제한 없음 |
+| Slickdeals | ok | 제한 없음 |
 
 작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.
