@@ -1,0 +1,46 @@
+{
+  "version": "2.1.3",
+  "build": 52,
+  "package": "kr.goodok.note",
+  "appTests": 67,
+  "targetedBrowserSuites": 2,
+  "packagedNativeOriginSuite": 1,
+  "lintErrors": 0,
+  "lintWarnings": 12,
+  "sameSigningCertificate": true,
+  "otherAppNotificationAccess": false,
+  "deviceExecution": "not performed; packaged APK replay under Android allowlist/MIME/CSP in Chromium",
+  "startupRegression": "Reproduced 2.1.1 blocked module imports, verified 2.1.3 startup, all tabs, forms, icons, and saved costs/categories/payments",
+  "fixedMissingAssets": 11,
+  "nativeNotificationSuite": 1,
+  "artifacts": [
+    {
+      "name": "dalfit-2.1.3-build52-release.apk",
+      "bytes": 48334277,
+      "sha256": "44bc4604fb7fabb7dfd7568ef1433b1a695330d66189355d89d604b03c64c7f4",
+      "baseName": "dalfit-2.1.2-build51-release.apk",
+      "baseSha256": "d502e61130998544afdffab9d9f27dca8765e1a89ac9c334246d270db1bd9c96",
+      "parts": [
+        "build52.bsdiff.part001",
+        "build52.bsdiff.part002",
+        "build52.bsdiff.part003",
+        "build52.bsdiff.part004",
+        "build52.bsdiff.part005"
+      ],
+      "patchBytes": 2659399,
+      "patchSha256": "7c3a593df0c3bcbdce6adcba128e4368d04202f2245692480246f4350d31c94b"
+    },
+    {
+      "name": "dalfit-android-source-2.1.3-build52.zip",
+      "bytes": 2480523,
+      "sha256": "b2740e179615554212ff8ecc9acc566fa24b5cfcc415204d94761d463601bdfc",
+      "baseName": "dalfit-android-source-2.1.2-build51.zip",
+      "baseSha256": "e82d1d4a2e8e030fec63c977999c369f73dc9658be476a20409f12aa90c549e9",
+      "parts": [
+        "source52.bsdiff.part001"
+      ],
+      "patchBytes": 87388,
+      "patchSha256": "ea48831cc812e92b3e425543f1a6e02bdb728117e78f758b8b6486f4e952dac2"
+    }
+  ]
+}
