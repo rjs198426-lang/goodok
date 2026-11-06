@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-06T21:01:36Z",
+  "generatedAt": "2026-11-06T21:57:30Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 70,
   "newServicesCumulative": 17,
   "newServicesThisRun": 0,
-  "candidatesRetained": 3369,
-  "candidatesIncludingRejected": 3529,
+  "candidatesRetained": 3388,
+  "candidatesIncludingRejected": 3548,
   "factCheckOutcomes": {
-    "needs_verification": 1321,
+    "needs_verification": 1330,
     "official_verified": 7,
     "partial_match": 28
   },
   "latestRun": {
-    "startedAt": "2026-11-06T20:59:49Z",
-    "searchAttempts": 34,
+    "startedAt": "2026-11-06T21:56:07Z",
+    "searchAttempts": 32,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 23,
+      "unmatched": 1,
       "rejected": 0
     },
     "taste": {
@@ -52,15 +52,14 @@
       "offerType": "trial",
       "endsKnown": false,
       "audience": {
-        "student": true,
-        "newCustomer": true
+        "student": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T21:01:36Z",
+      "verifiedAt": "2026-11-06T21:57:30Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T21:01:36Z",
+        "checkedAt": "2026-11-06T21:57:30Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -83,11 +82,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T21:01:36Z",
+      "verifiedAt": "2026-11-06T21:57:30Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T21:01:36Z",
+        "checkedAt": "2026-11-06T21:57:30Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -107,11 +106,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T21:01:36Z",
+      "verifiedAt": "2026-11-06T21:57:30Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T21:01:36Z",
+        "checkedAt": "2026-11-06T21:57:30Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -135,12 +134,61 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T21:01:36Z",
+      "verifiedAt": "2026-11-06T21:57:30Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T21:01:36Z",
+        "checkedAt": "2026-11-06T21:57:30Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
+    {
+      "id": "9b015f671c3754d75a01d6b4",
+      "service": "surfshark",
+      "title": "Surfshark One 첫 이용 기간 선결제",
+      "benefit": "첫 27개월 $67.23",
+      "detail": "Surfshark One 첫 이용 기간 선결제",
+      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
+      "source": "https://surfshark.com/pricing",
+      "publisher": "Surfshark 공식",
+      "ends": null,
+      "offerType": "introductory",
+      "endsKnown": false,
+      "audience": {},
+      "checked": "2026-11-06",
+      "verifiedAt": "2026-11-06T21:57:30Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-11-06T21:57:30Z",
+        "officialSource": "https://surfshark.com/pricing"
+      }
+    },
+    {
+      "id": "af1051d7b5d0715c5d75af8a",
+      "campaignId": "spotify-wallet-trial",
+      "service": "spotify",
+      "title": "Spotify 전자지갑 결제 체험",
+      "benefit": "전자지갑 결제 첫 1개월 ₩100",
+      "detail": "Spotify 전자지갑 결제 체험",
+      "conditions": "개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
+      "ends": null,
+      "planId": "individual",
+      "eligibility": "eligible_wallet",
+      "offerType": "trial",
+      "endsKnown": false,
+      "audience": {
+        "payment": "wallet"
+      },
+      "checked": "2026-11-06",
+      "verifiedAt": "2026-11-06T21:57:30Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-11-06T21:57:30Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
@@ -161,56 +209,6 @@
       "checked": "2026-11-06",
       "verifiedAt": "2026-11-06T21:01:36Z",
       "firstSeen": "2026-10-25T09:41:23Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-11-06T21:01:36Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
-      }
-    },
-    {
-      "id": "9b015f671c3754d75a01d6b4",
-      "service": "surfshark",
-      "title": "Surfshark One 첫 이용 기간 선결제",
-      "benefit": "첫 27개월 $67.23",
-      "detail": "Surfshark One 첫 이용 기간 선결제",
-      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
-      "source": "https://surfshark.com/pricing",
-      "publisher": "Surfshark 공식",
-      "ends": null,
-      "offerType": "introductory",
-      "endsKnown": false,
-      "audience": {},
-      "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T21:01:36Z",
-      "firstSeen": "2026-10-25T09:41:23Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-11-06T21:01:36Z",
-        "officialSource": "https://surfshark.com/pricing"
-      }
-    },
-    {
-      "id": "af1051d7b5d0715c5d75af8a",
-      "campaignId": "spotify-wallet-trial",
-      "service": "spotify",
-      "title": "Spotify 전자지갑 결제 체험",
-      "benefit": "전자지갑 결제 첫 1개월 ₩100",
-      "detail": "Spotify 전자지갑 결제 체험",
-      "conditions": "개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
-      "ends": null,
-      "planId": "individual",
-      "eligibility": "eligible_wallet",
-      "offerType": "trial",
-      "endsKnown": false,
-      "audience": {
-        "payment": "wallet",
-        "newCustomer": true
-      },
-      "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T21:01:36Z",
-      "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
         "checkedAt": "2026-11-06T21:01:36Z",
@@ -1002,11 +1000,6 @@
   "tasteSuggestions": [],
   "providerHealth": [
     {
-      "name": "Sitemap: adobe",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-06T03:06:39Z"
-    },
-    {
       "name": "Sitemap: kakao-page",
       "status": "unavailable",
       "nextCheckAt": "2026-11-06T06:20:42Z"
@@ -1062,24 +1055,9 @@
       "nextCheckAt": "2026-11-06T22:00:42Z"
     },
     {
-      "name": "Official links: dropbox",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Sitemap: dropbox",
       "status": "unavailable",
       "nextCheckAt": "2026-11-06T23:56:22Z"
-    },
-    {
-      "name": "Official links: adobe",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Official links: canva",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-07T01:37:37Z"
     },
     {
       "name": "Official links: figma",
@@ -1297,11 +1275,6 @@
       "nextCheckAt": "2026-11-07T13:26:36Z"
     },
     {
-      "name": "Google",
-      "status": "no_relevant_results",
-      "nextCheckAt": "2026-11-06T21:02:32Z"
-    },
-    {
       "name": "Official links: cursor",
       "status": "ok",
       "nextCheckAt": null
@@ -1442,11 +1415,6 @@
       "nextCheckAt": null
     },
     {
-      "name": "Slickdeals",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: protonvpn",
       "status": "no_relevant_results",
       "nextCheckAt": "2026-11-07T02:02:20Z"
@@ -1470,31 +1438,6 @@
       "name": "Sitemap: notion",
       "status": "no_relevant_results",
       "nextCheckAt": "2026-11-07T02:02:20Z"
-    },
-    {
-      "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Dealify",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "Official links: icloud",
@@ -1527,11 +1470,6 @@
       "nextCheckAt": "2026-11-07T02:59:49Z"
     },
     {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
@@ -1542,7 +1480,67 @@
       "nextCheckAt": null
     },
     {
+      "name": "Google",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-07T03:56:07Z"
+    },
+    {
+      "name": "Bing",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: dropbox",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: adobe",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: adobe",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-07T21:56:07Z"
+    },
+    {
+      "name": "Official links: canva",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-07T21:56:07Z"
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
       "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Slickdeals",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Dealify",
       "status": "ok",
       "nextCheckAt": null
     }
@@ -1551,30 +1549,75 @@
     "outcomes": {
       "captcha": 5,
       "cross_site_redirect": 154,
-      "deferred_cross_site_redirect": 55,
+      "deferred_captcha": 1,
+      "deferred_cross_site_redirect": 52,
       "deferred_http_403": 87,
       "deferred_http_404": 18,
       "deferred_render_budget_exhausted": 5,
       "deferred_render_http_403": 4,
-      "http_403": 203,
-      "http_404": 58,
+      "http_403": 193,
+      "http_404": 59,
       "http_406": 2,
       "http_429": 2,
+      "http_500": 3,
       "http_521": 4,
-      "http_530": 2,
       "network_error": 2,
       "non_public_url": 6,
-      "ok": 1708,
+      "ok": 1714,
       "render_budget_exhausted": 50,
-      "render_http_403": 2,
       "response_too_large": 1,
       "timeout": 7,
       "tls_error": 2,
       "unexpected_content_type": 6
     },
-    "cacheHitsThisRun": 4,
-    "renderAttemptsThisRun": 6,
+    "cacheHitsThisRun": 9,
+    "renderAttemptsThisRun": 8,
     "recentFailures": [
+      {
+        "url": "https://www.tving.com/live/C01723",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-07T09:57:30Z"
+      },
+      {
+        "url": "https://wikidocs.net/blog/@openwiki/?tag=22127",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T21:57:30Z"
+      },
+      {
+        "url": "https://www.thefreedictionary.com/online",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T21:57:30Z"
+      },
+      {
+        "url": "https://offer.tidal.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T21:57:30Z"
+      },
+      {
+        "url": "https://claude.ai/login-Claude",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T21:57:30Z"
+      },
+      {
+        "url": "https://en.m.wikipedia.org/wiki/Suno",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-07T09:57:30Z"
+      },
+      {
+        "url": "https://www.canva.com/?msockid=079e23974b31621a378f3b9e4a5d633d",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T21:57:30Z"
+      },
+      {
+        "url": "https://www.canva.com/login/?msockid=079e23974b31621a378f3b9e4a5d633d",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T21:57:30Z"
+      },
+      {
+        "url": "https://www.tving.com/more/genre/PCA",
+        "reason": "http_500",
+        "nextCheckAt": "2026-11-06T22:57:30Z"
+      },
       {
         "url": "https://www.tving.com/live/C00593",
         "reason": "cross_site_redirect",
@@ -1677,51 +1720,6 @@
       },
       {
         "url": "https://nordvpn.com/pricing/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T19:14:05Z"
-      },
-      {
-        "url": "https://www.lguplus.com/pogg/evet",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T19:14:05Z"
-      },
-      {
-        "url": "https://blog.csdn.net/2601_95594015/article/details/161545784",
-        "reason": "http_521",
-        "nextCheckAt": "2026-11-06T23:14:05Z"
-      },
-      {
-        "url": "https://www.godaddy.com/?msockid=059f6614904b6d69131a7e1691776cab",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T19:14:05Z"
-      },
-      {
-        "url": "https://en.m.wikipedia.org/wiki/Claude_(AI)",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-07T03:14:05Z"
-      },
-      {
-        "url": "https://blog.csdn.net/qq_59961910/article/details/145964505",
-        "reason": "http_521",
-        "nextCheckAt": "2026-11-07T07:14:05Z"
-      },
-      {
-        "url": "https://www.suno.edu/page/admissions",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T19:14:05Z"
-      },
-      {
-        "url": "https://hiring.amazon.com/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T19:14:05Z"
-      },
-      {
-        "url": "https://nordvpn.com/?msockid=2a51cdd7657a6c5a3778d5de64226ddf",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T19:14:05Z"
-      },
-      {
-        "url": "https://nordvpn.com/download/?msockid=2a51cdd7657a6c5a3778d5de64226ddf",
         "reason": "http_403",
         "nextCheckAt": "2026-11-07T19:14:05Z"
       }
