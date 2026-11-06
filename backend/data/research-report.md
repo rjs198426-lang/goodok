@@ -1,15 +1,15 @@
 # 달핏 백그라운드 조사 결과
-기준 UTC: 2026-11-06T03:14:55Z · 파이프라인 4
+기준 UTC: 2026-11-06T04:13:14Z · 파이프라인 4
 
 - 공개 중인 혜택: 7개 (기존 혜택 재확인은 신규 발굴과 별도)
-- 외부 후보 대조 확정 기록: 7개 / 대조 기록 1302개
+- 외부 후보 대조 확정 기록: 7개 / 대조 기록 1310개
 - 서비스 목록: 70개 · 신규 편입 누적 17개 · 이번 실행 신규 0개
-- 유효 후보 URL: 3238개 · 제외 이력 포함 3398개
+- 유효 후보 URL: 3258개 · 제외 이력 포함 3418개
 - 요금제: 검증 31개 / 미확정 51개
 - 공식 기간 확인 취향 정보: 0개
 
 ## 조회 진단
-{"outcomes": {"captcha": 6, "cross_site_redirect": 137, "deferred_cross_site_redirect": 50, "deferred_http_403": 84, "deferred_http_404": 16, "deferred_render_budget_exhausted": 5, "deferred_render_http_403": 7, "http_403": 208, "http_404": 51, "http_406": 5, "http_417": 2, "http_500": 2, "http_504": 1, "http_526": 2, "http_530": 2, "network_error": 2, "non_public_url": 4, "ok": 1522, "render_budget_exhausted": 36, "render_http_403": 4, "response_too_large": 2, "timeout": 36, "tls_error": 10, "unexpected_content_type": 3}, "cacheHitsThisRun": 18, "renderAttemptsThisRun": 6, "recentFailures": [{"url": "https://app.slack.com/client/*/*", "reason": "http_404", "nextCheckAt": "2026-11-06T04:14:55Z"}, {"url": "https://slack-status.com/", "reason": "captcha", "nextCheckAt": "2026-11-07T03:14:55Z"}, {"url": "https://www.xbox.com/en-us/play?msockid=0eee737a4fda668602766b734e1e670f", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T04:14:55Z"}, {"url": "https://www.zoom.com/ko/products/event-platform/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T07:14:55Z"}, {"url": "https://www.zoom.com/ko/audiences/marketing-events/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T15:14:55Z"}, {"url": "https://www.evernote.com/billy/subscriptions?onboarding=true&promoCode=starter_LATEST_7_day_ft&offer=ft_perm_generic_button_mktgweb_cp-starter-top&hash=starter-1year", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T15:14:55Z"}, {"url": "https://www.evernote.com/billy/subscriptions?onboarding=true&promoCode=advanced_LATEST_7_day_ft&offer=ft_perm_generic_button_mktgweb_cp-advanced-top&hash=advanced-1year", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T15:14:55Z"}, {"url": "https://www.zoom.com/en/products/virtual-meetings/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T13:38:58Z"}, {"url": "https://openai.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://shortgen.video/", "reason": "non_public_url", "nextCheckAt": "2026-11-06T05:38:58Z"}, {"url": "https://www.agame.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://namu.wiki/w/Wavve", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.midjourney.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.dropbox.com/install", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T02:38:58Z"}, {"url": "https://www.canva.com/?msockid=30eae1ef1e4860442228f9e61fbc619b", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.canva.com/login/?msockid=30eae1ef1e4860442228f9e61fbc619b", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T13:38:58Z"}, {"url": "https://ai.facebook.com/blog/greater-creative-control-for-ai-image-generation/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T03:02:02Z"}, {"url": "https://www.craiyon.com/", "reason": "http_403", "nextCheckAt": "2026-11-06T23:02:02Z"}, {"url": "https://account.tidal.com/profile", "reason": "http_403", "nextCheckAt": "2026-11-06T23:02:02Z"}, {"url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=342d5eb6ebd24648bb15ac20cb509a70", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T00:02:02Z"}, {"url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=342d5eb6ebd24648bb15ac20cb509a70", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T00:02:02Z"}, {"url": "https://www.figma.com/make/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T01:02:02Z"}, {"url": "https://www.figma.com/signup", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T03:02:02Z"}, {"url": "https://www.producthunt.com/products/canva", "reason": "http_403", "nextCheckAt": "2026-11-06T23:02:02Z"}, {"url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_All_SupportAIMarketplace&ocid=cmm3atxvn98", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T11:02:02Z"}, {"url": "https://www.mmca.go.kr/pr/newsDetail.do?bdCId=202609300010619", "reason": "network_error", "nextCheckAt": "2026-11-06T00:02:02Z"}, {"url": "https://www.tving.com/live/C52348", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T10:02:04Z"}, {"url": "https://www.godaddy.com/?msockid=2ad0951d5a3e6d2718978d155bdc6c72", "reason": "http_403", "nextCheckAt": "2026-11-06T22:02:04Z"}, {"url": "https://www.britannica.com/technology/artificial-intelligence", "reason": "http_403", "nextCheckAt": "2026-11-06T22:02:04Z"}]}
+{"outcomes": {"captcha": 6, "cross_site_redirect": 144, "deferred_cross_site_redirect": 52, "deferred_http_403": 90, "deferred_http_404": 17, "deferred_render_budget_exhausted": 6, "deferred_render_http_403": 8, "http_403": 216, "http_404": 62, "http_406": 5, "http_417": 2, "http_500": 2, "http_504": 1, "http_526": 2, "http_530": 2, "network_error": 2, "non_public_url": 4, "ok": 1603, "render_budget_exhausted": 52, "render_http_403": 4, "response_too_large": 2, "timeout": 36, "tls_error": 10, "unexpected_content_type": 3}, "cacheHitsThisRun": 13, "renderAttemptsThisRun": 10, "recentFailures": [{"url": "https://drive.kakao.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T16:13:14Z"}, {"url": "https://www.tving.com/live/C52420", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T16:13:14Z"}, {"url": "https://tidal.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T04:13:14Z"}, {"url": "https://www.duolingo.com/super", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://www.duolingo.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T06:13:14Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=118d85c2d7e33cfb0f2dcc4ced8c0e99", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=5de0c44b91486884affb476426d44f5e", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=8260db7b519a655c4dfa970bc96ad15f", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=865b67a38f30190a6b14edc48b81570f", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=9c9b9fb1a15ec1e7d7b25ee36f7501af", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=dca100c9633d34a1e27fad2785b77f89", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T05:13:14Z"}, {"url": "https://www.canva.com/graphs/workflow-diagrams/?msockid=0d1b8653179566a000d79e5a163967fb", "reason": "http_403", "nextCheckAt": "2026-11-07T04:13:14Z"}, {"url": "https://app.slack.com/client/*/*", "reason": "http_404", "nextCheckAt": "2026-11-06T04:14:55Z"}, {"url": "https://slack-status.com/", "reason": "captcha", "nextCheckAt": "2026-11-07T03:14:55Z"}, {"url": "https://www.xbox.com/en-us/play?msockid=0eee737a4fda668602766b734e1e670f", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T04:14:55Z"}, {"url": "https://www.zoom.com/ko/products/event-platform/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T07:14:55Z"}, {"url": "https://www.zoom.com/ko/audiences/marketing-events/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T15:14:55Z"}, {"url": "https://www.evernote.com/billy/subscriptions?onboarding=true&promoCode=starter_LATEST_7_day_ft&offer=ft_perm_generic_button_mktgweb_cp-starter-top&hash=starter-1year", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T15:14:55Z"}, {"url": "https://www.evernote.com/billy/subscriptions?onboarding=true&promoCode=advanced_LATEST_7_day_ft&offer=ft_perm_generic_button_mktgweb_cp-advanced-top&hash=advanced-1year", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T15:14:55Z"}, {"url": "https://www.zoom.com/en/products/virtual-meetings/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T13:38:58Z"}, {"url": "https://openai.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://shortgen.video/", "reason": "non_public_url", "nextCheckAt": "2026-11-06T05:38:58Z"}, {"url": "https://www.agame.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://namu.wiki/w/Wavve", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.midjourney.com/", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.dropbox.com/install", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-06T02:38:58Z"}, {"url": "https://www.canva.com/?msockid=30eae1ef1e4860442228f9e61fbc619b", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.canva.com/login/?msockid=30eae1ef1e4860442228f9e61fbc619b", "reason": "http_403", "nextCheckAt": "2026-11-07T01:38:58Z"}, {"url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T13:38:58Z"}, {"url": "https://ai.facebook.com/blog/greater-creative-control-for-ai-image-generation/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-06T03:02:02Z"}]}
 
 ## 통화별 비교 요금
 {"KRW": 9, "USD": 22}
@@ -17,13 +17,13 @@
 ## 현재 혜택
 | 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |
 | --- | --- | --- | --- | --- | --- |
-| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-06T03:14:55Z | https://www.spotify.com/kr/premium/ |
-| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-06T03:14:55Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-06T03:14:55Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-06T03:14:55Z | https://www.apple.com/kr/apple-music/ |
-| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-06T03:14:55Z | https://www.spotify.com/kr/premium/ |
-| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-06T03:14:55Z | https://surfshark.com/pricing |
-| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-06T03:14:55Z | https://www.spotify.com/kr/premium/ |
+| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-06T04:13:14Z | https://www.spotify.com/kr/premium/ |
+| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-06T04:13:14Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-06T04:13:14Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-06T04:13:14Z | https://www.apple.com/kr/apple-music/ |
+| spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-06T04:13:14Z | https://www.spotify.com/kr-ko/premium/ |
+| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-06T04:13:14Z | https://surfshark.com/pricing |
+| spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-06T04:13:14Z | https://www.spotify.com/kr/premium/ |
 
 ## 기능 검증 범위
 {"adfree": 2, "android": 4, "familyMembers": 1, "images": 3, "ios": 0, "lossless": 2, "music": 2, "offline": 2, "refundDays": 0, "spatial": 1, "storageGB": 0, "windows": 1}
@@ -61,9 +61,6 @@
 | Sitemap: youtube-music | unavailable | 2026-11-05T10:22:41Z |
 | Sitemap: google-one | unavailable | 2026-11-06T01:27:22Z |
 | Sitemap: adobe | unavailable | 2026-11-06T03:06:39Z |
-| Official links: kakao-emoticon | unavailable | 2026-11-06T05:16:35Z |
-| Official links: kakao-drawer | unavailable | 2026-11-06T05:16:35Z |
-| Official links: kakao-page | no_relevant_results | 2026-11-05T12:20:42Z |
 | Sitemap: kakao-page | unavailable | 2026-11-06T06:20:42Z |
 | Official links: kakao-webtoon | ok | 제한 없음 |
 | Sitemap: kakao-webtoon | no_relevant_results | 2026-11-05T12:20:42Z |
@@ -148,21 +145,24 @@
 | Official links: figma | ok | 제한 없음 |
 | Sitemap: figma | no_relevant_results | 2026-11-06T07:37:37Z |
 | Official links: zoom | unavailable | 2026-11-07T01:37:37Z |
-| AppSumo | ok | 제한 없음 |
 | Sumo 구독 할인 | ok | 제한 없음 |
-| Bing | no_relevant_results | 제한 없음 |
-| Bing RSS | ok | 제한 없음 |
-| Public tool directory | ok | 제한 없음 |
 | Official links: slack | ok | 제한 없음 |
 | Sitemap: slack | no_relevant_results | 2026-11-06T09:13:38Z |
 | Official links: onedrive | ok | 제한 없음 |
 | Sitemap: onedrive | unavailable | 2026-11-07T03:13:38Z |
 | Official links: evernote | ok | 제한 없음 |
 | Sitemap: evernote | no_relevant_results | 2026-11-06T09:13:38Z |
-| Google News | ok | 제한 없음 |
 | StackSocial | ok | 제한 없음 |
 | Slickdeals | ok | 제한 없음 |
 | DealMirror | ok | 제한 없음 |
+| Bing | ok | 제한 없음 |
+| Bing RSS | no_relevant_results | 제한 없음 |
+| Public tool directory | ok | 제한 없음 |
+| Official links: kakao-emoticon | unavailable | 2026-11-07T04:11:48Z |
+| Official links: kakao-drawer | unavailable | 2026-11-07T04:11:48Z |
+| Official links: kakao-page | ok | 제한 없음 |
+| Google News | ok | 제한 없음 |
 | Dealify | ok | 제한 없음 |
+| AppSumo | ok | 제한 없음 |
 
 작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.
