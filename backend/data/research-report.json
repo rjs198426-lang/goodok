@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-06T18:00:09Z",
+  "generatedAt": "2026-11-06T19:14:05Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 70,
   "newServicesCumulative": 17,
   "newServicesThisRun": 0,
-  "candidatesRetained": 3340,
-  "candidatesIncludingRejected": 3500,
+  "candidatesRetained": 3346,
+  "candidatesIncludingRejected": 3506,
   "factCheckOutcomes": {
-    "needs_verification": 1308,
+    "needs_verification": 1314,
     "official_verified": 7,
     "partial_match": 28
   },
   "latestRun": {
-    "startedAt": "2026-11-06T17:59:02Z",
-    "searchAttempts": 31,
+    "startedAt": "2026-11-06T19:12:51Z",
+    "searchAttempts": 32,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 20,
+      "unmatched": 1,
       "rejected": 0
     },
     "taste": {
@@ -56,11 +56,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
+      "verifiedAt": "2026-11-06T19:14:05Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
+        "checkedAt": "2026-11-06T19:14:05Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -83,11 +83,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
+      "verifiedAt": "2026-11-06T19:14:05Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
+        "checkedAt": "2026-11-06T19:14:05Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -107,11 +107,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
+      "verifiedAt": "2026-11-06T19:14:05Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
+        "checkedAt": "2026-11-06T19:14:05Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -135,12 +135,36 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
+      "verifiedAt": "2026-11-06T19:14:05Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
+        "checkedAt": "2026-11-06T19:14:05Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
+    {
+      "id": "9939bdafc3fc630432c8ab1a",
+      "service": "spotify",
+      "title": "Spotify 한국 개인 요금제 체험",
+      "benefit": "Premium 개인 1개월 ₩0",
+      "detail": "Spotify 한국 개인 요금제 체험",
+      "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
+      "ends": null,
+      "offerType": "trial",
+      "endsKnown": false,
+      "audience": {
+        "newCustomer": true
+      },
+      "checked": "2026-11-06",
+      "verifiedAt": "2026-11-06T19:14:05Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-11-06T19:14:05Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
@@ -157,11 +181,11 @@
       "endsKnown": false,
       "audience": {},
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
+      "verifiedAt": "2026-11-06T19:14:05Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
+        "checkedAt": "2026-11-06T19:14:05Z",
         "officialSource": "https://surfshark.com/pricing"
       }
     },
@@ -185,35 +209,11 @@
         "newCustomer": true
       },
       "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
+      "verifiedAt": "2026-11-06T19:14:05Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
-      }
-    },
-    {
-      "id": "9939bdafc3fc630432c8ab1a",
-      "service": "spotify",
-      "title": "Spotify 한국 개인 요금제 체험",
-      "benefit": "Premium 개인 1개월 ₩0",
-      "detail": "Spotify 한국 개인 요금제 체험",
-      "conditions": "이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
-      "ends": null,
-      "offerType": "trial",
-      "endsKnown": false,
-      "audience": {
-        "newCustomer": true
-      },
-      "checked": "2026-11-06",
-      "verifiedAt": "2026-11-06T18:00:09Z",
-      "firstSeen": "2026-10-25T09:41:23Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-11-06T18:00:09Z",
+        "checkedAt": "2026-11-06T19:14:05Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     }
@@ -1057,26 +1057,6 @@
       "nextCheckAt": "2026-11-06T20:09:15Z"
     },
     {
-      "name": "Official links: surfshark",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: surfshark",
-      "status": "no_relevant_results",
-      "nextCheckAt": "2026-11-06T03:04:57Z"
-    },
-    {
-      "name": "Official links: nordvpn",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-06T21:04:57Z"
-    },
-    {
-      "name": "Official links: expressvpn",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Sitemap: expressvpn",
       "status": "unavailable",
       "nextCheckAt": "2026-11-06T22:00:42Z"
@@ -1462,11 +1442,6 @@
       "nextCheckAt": "2026-11-07T16:37:33Z"
     },
     {
-      "name": "StackSocial",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: apple-tv",
       "status": "ok",
       "nextCheckAt": null
@@ -1487,32 +1462,7 @@
       "nextCheckAt": null
     },
     {
-      "name": "Slickdeals",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Dealify",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1532,12 +1482,47 @@
       "nextCheckAt": "2026-11-07T17:59:02Z"
     },
     {
-      "name": "Google News",
+      "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
     },
     {
-      "name": "AppSumo",
+      "name": "Bing",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: surfshark",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: surfshark",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-07T01:12:51Z"
+    },
+    {
+      "name": "Official links: nordvpn",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-07T19:12:51Z"
+    },
+    {
+      "name": "Official links: expressvpn",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Google News",
       "status": "ok",
       "nextCheckAt": null
     },
@@ -1545,35 +1530,125 @@
       "name": "Sumo 구독 할인",
       "status": "ok",
       "nextCheckAt": null
+    },
+    {
+      "name": "StackSocial",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Slickdeals",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
     }
   ],
   "retrieval": {
     "outcomes": {
       "captcha": 5,
-      "cross_site_redirect": 166,
-      "deferred_cross_site_redirect": 50,
-      "deferred_http_403": 90,
+      "cross_site_redirect": 160,
+      "deferred_cross_site_redirect": 49,
+      "deferred_http_403": 91,
       "deferred_http_404": 18,
       "deferred_render_budget_exhausted": 6,
       "deferred_render_http_403": 5,
-      "http_403": 197,
+      "http_403": 211,
       "http_404": 60,
       "http_406": 4,
       "http_429": 2,
       "http_500": 2,
-      "http_504": 1,
+      "http_521": 4,
       "http_530": 2,
       "network_error": 2,
       "non_public_url": 6,
-      "ok": 1722,
-      "render_budget_exhausted": 54,
+      "ok": 1709,
+      "render_budget_exhausted": 48,
       "render_http_403": 2,
       "timeout": 6,
-      "tls_error": 4
+      "tls_error": 2
     },
-    "cacheHitsThisRun": 6,
-    "renderAttemptsThisRun": 9,
+    "cacheHitsThisRun": 13,
+    "renderAttemptsThisRun": 6,
     "recentFailures": [
+      {
+        "url": "https://nordvpn.com/pricing/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://www.lguplus.com/pogg/evet",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://blog.csdn.net/2601_95594015/article/details/161545784",
+        "reason": "http_521",
+        "nextCheckAt": "2026-11-06T23:14:05Z"
+      },
+      {
+        "url": "https://www.godaddy.com/?msockid=059f6614904b6d69131a7e1691776cab",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://en.m.wikipedia.org/wiki/Claude_(AI)",
+        "reason": "cross_site_redirect",
+        "nextCheckAt": "2026-11-07T03:14:05Z"
+      },
+      {
+        "url": "https://blog.csdn.net/qq_59961910/article/details/145964505",
+        "reason": "http_521",
+        "nextCheckAt": "2026-11-07T07:14:05Z"
+      },
+      {
+        "url": "https://www.suno.edu/page/admissions",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://hiring.amazon.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://nordvpn.com/?msockid=2a51cdd7657a6c5a3778d5de64226ddf",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://nordvpn.com/download/?msockid=2a51cdd7657a6c5a3778d5de64226ddf",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://nordvpn.com/download/windows/?msockid=2a51cdd7657a6c5a3778d5de64226ddf",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://nordvpn.com/risk-free-vpn/?msockid=2a51cdd7657a6c5a3778d5de64226ddf",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://www.canva.com/graphs/workflow-diagrams/?msockid=3bc0745c763a6bc91ec56c5577646a93",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://support.tidal.com/hc/en-us/articles/115005868269-Download-Tidal",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
+      {
+        "url": "https://tidal.com/pricing",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-07T19:14:05Z"
+      },
       {
         "url": "https://www.tving.com/event",
         "reason": "http_404",
@@ -1648,81 +1723,6 @@
         "url": "https://app.slack.com/client/*/*/",
         "reason": "http_404",
         "nextCheckAt": "2026-11-07T04:39:13Z"
-      },
-      {
-        "url": "https://quillbot.com/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T16:39:13Z"
-      },
-      {
-        "url": "https://webtoon.kakao.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-06T17:39:13Z"
-      },
-      {
-        "url": "https://www.kakaocorp.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-06T17:39:13Z"
-      },
-      {
-        "url": "https://music.youtube.com/music_premium",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-06T17:39:13Z"
-      },
-      {
-        "url": "https://www.duolingo.com/super",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-06T17:39:13Z"
-      },
-      {
-        "url": "https://www.duolingo.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-07T00:39:13Z"
-      },
-      {
-        "url": "https://drive.kakao.com/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-07T04:39:13Z"
-      },
-      {
-        "url": "https://zhuanlan.zhihu.com/p/2027339640701493322",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T16:39:13Z"
-      },
-      {
-        "url": "https://www.spotify.com/kr-ko/purchase/offer/default-intro?country=KR&ref=spotifycom_premium_hero",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-06T20:39:13Z"
-      },
-      {
-        "url": "https://www.spotify.com/kr-ko/purchase/offer/default-intro?country=KR&ref=spotifycom_premium_plans",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-06T20:39:13Z"
-      },
-      {
-        "url": "https://www.spotify.com/kr-ko/purchase/offer/default-intro-discounted?country=KR&ref=spotifycom_premium_plans",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-06T20:39:13Z"
-      },
-      {
-        "url": "https://www.spotify.com/kr-ko/purchase/offer/default-basic-full-premium?country=KR&ref=spotifycom_premium_plans",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-06T20:39:13Z"
-      },
-      {
-        "url": "https://www.spotify.com/kr-ko/student/verification?country=KR&offerId=default-student-trial-1m&ref=spotifycom_premium_plans",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-06T20:39:13Z"
-      },
-      {
-        "url": "https://www.spotify.com/kr-ko/purchase/offer/default-duo-master?country=KR&ref=spotifycom_premium_plans",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-06T20:39:13Z"
-      },
-      {
-        "url": "https://search.naver.com/search.naver?where=web&query=YouTube%20Premium%20%EA%B5%AC%EB%8F%85%20%ED%95%A0%EC%9D%B8%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%EA%B0%80%EA%B2%A9%202026%2011",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-07T16:04:58Z"
       }
     ]
   },
