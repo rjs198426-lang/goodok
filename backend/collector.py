@@ -175,6 +175,16 @@ def observed_price(source,text):
   if value>0:return {'monthly':value,'currency':currency,'plan':plan,'checked':dt.datetime.now(UTC).date().isoformat(),'conditions':'공식 페이지 정상 월간 표시 가격. 국가·세금·결제 경로에 따른 최종 금액 확인.'}
  return None
 
+def benefit_diagnostics(source,page):
+ """Small public-page parse hints; never publish an unconfirmed promotion as an offer."""
+ text=page.text;kind=source['parser']
+ if kind=='adobe':
+  marker=re.search(r'첫\s*(?:1\s*년|해)',text)
+  return {'parser':kind,'textLength':len(text),'firstYear':bool(marker),'koreanMarket':'한국' in text,'newSubscriber':'처음 구독' in text,'commitment':bool(re.search(r'12\s*개월\s*(?:구독\s*)?약정',text)),'vatIncluded':'부가세 포함' in text,'ends':ending(text),'priceTokens':re.findall(r'[₩￦$][\d,. ]{1,20}',text)[:12],'firstYearContext':text[marker.start():marker.start()+180] if marker else ''}
+ if kind=='proton-black-friday':
+  return {'parser':kind,'textLength':len(text),'blackFriday':bool(re.search(r'Black Friday',text,re.I)),'newUsers':bool(re.search(r'all new users are eligible',text,re.I)),'planHeadings':[s['title'].strip() for s in page.sections if re.search('Plus|Unlimited',s['title'],re.I)][:8],'billingContext':re.findall(r'Billed at.{0,170}',text,re.I)[:2]}
+ return None
+
 def investigate(source):
  observations=[];offers=[]
  try:
@@ -196,7 +206,7 @@ def investigate(source):
      detail=fetch(url);found=extract_all(source,detail,url);offers.extend(found)
      observations.append({'url':url,'status':'verified' if found else 'no_verified_offer'})
     except Exception:observations.append({'url':url,'status':'unavailable'})
-  return {'id':source['id'],'name':source['name'],'status':'ok','offers':offers,'observations':observations,'price':observed_price(source,page.text),'plans':normal_plan(source,page,observed_price(source,page.text),stamp())}
+  return {'id':source['id'],'name':source['name'],'status':'ok','offers':offers,'observations':observations,'parseDiagnostics':benefit_diagnostics(source,page) if not offers else None,'price':observed_price(source,page.text),'plans':normal_plan(source,page,observed_price(source,page.text),stamp())}
  except Exception as exc:return {'id':source['id'],'name':source['name'],'status':'unavailable','errorCode':retrieval.error_code(exc),'offers':[],'observations':[{'url':source['url'],'status':'unavailable'}]}
 
 def init_db(path):
@@ -244,7 +254,7 @@ def store_and_export(db,results,now,out,profiles):
   offer.update(checked=last[:10],verifiedAt=last,firstSeen=first);offer.pop('evidence',None);offer['factCheck']={'status':'official_verified','checkedAt':last,'officialSource':offer['source']};offers.append(offer)
  offers.sort(key=lambda o:(o['verifiedAt'],bool(o.get('ends')),o.get('offerType')=='limited',o.get('firstSeen','')),reverse=True)
  latest_success=db.execute('SELECT MAX(finished_at) FROM runs WHERE successful_sources>0').fetchone()[0]
- feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'errorCode':r.get('errorCode'),'verifiedOffers':len(r['offers'])} for r in results]}
+ feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'errorCode':r.get('errorCode'),'verifiedOffers':len(r['offers']),'parseDiagnostics':r.get('parseDiagnostics')} for r in results]}
  catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
  published_catalog=publish_catalog(db,catalog,timestamp)
  feed['catalogUpdate']=published_catalog
