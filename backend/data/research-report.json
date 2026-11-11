@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-10T23:29:32Z",
+  "generatedAt": "2026-11-11T06:38:53Z",
   "pipelineVersion": 4,
   "publishedOffers": 7,
   "catalogueServices": 70,
   "newServicesCumulative": 17,
   "newServicesThisRun": 0,
-  "candidatesRetained": 3591,
-  "candidatesIncludingRejected": 3751,
+  "candidatesRetained": 3594,
+  "candidatesIncludingRejected": 3754,
   "factCheckOutcomes": {
-    "needs_verification": 1418,
+    "needs_verification": 1421,
     "official_verified": 7,
     "partial_match": 29
   },
   "latestRun": {
-    "startedAt": "2026-11-10T23:28:18Z",
+    "startedAt": "2026-11-11T06:37:01Z",
     "searchAttempts": 34,
     "newServices": 0,
     "factChecks": {
       "checked": 12,
       "confirmed": 0,
       "pending": 12,
-      "unmatched": 15,
+      "unmatched": 12,
       "rejected": 0
     },
     "taste": {
@@ -29,10 +29,51 @@
       "waitingOfficial": 0
     },
     "icons": {
-      "attempted": 0,
+      "attempted": 10,
       "updated": 0,
       "available": 60,
-      "failures": []
+      "failures": [
+        {
+          "service": "canva",
+          "reason": "cross_site_redirect,http_404"
+        },
+        {
+          "service": "coupang-play",
+          "reason": "network_error"
+        },
+        {
+          "service": "duolingo",
+          "reason": "network_error,http_404"
+        },
+        {
+          "service": "expressvpn",
+          "reason": "http_404"
+        },
+        {
+          "service": "kakao",
+          "reason": "http_404"
+        },
+        {
+          "service": "kakao-drawer",
+          "reason": "cross_site_redirect"
+        },
+        {
+          "service": "kakao-webtoon",
+          "reason": "network_error"
+        },
+        {
+          "service": "midjourney",
+          "reason": "http_403"
+        },
+        {
+          "service": "nordvpn",
+          "reason": "http_403"
+        },
+        {
+          "service": "notion",
+          "reason": "http_404"
+        }
+      ]
     }
   },
   "offers": [
@@ -52,15 +93,14 @@
       "offerType": "trial",
       "endsKnown": false,
       "audience": {
-        "student": true,
-        "newCustomer": true
+        "student": true
       },
-      "checked": "2026-11-10",
-      "verifiedAt": "2026-11-10T23:29:32Z",
+      "checked": "2026-11-11",
+      "verifiedAt": "2026-11-11T06:38:53Z",
       "firstSeen": "2026-10-27T15:02:51Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-10T23:29:32Z",
+        "checkedAt": "2026-11-11T06:38:53Z",
         "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
@@ -82,12 +122,12 @@
       "audience": {
         "newCustomer": true
       },
-      "checked": "2026-11-10",
-      "verifiedAt": "2026-11-10T23:29:32Z",
+      "checked": "2026-11-11",
+      "verifiedAt": "2026-11-11T06:38:53Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-10T23:29:32Z",
+        "checkedAt": "2026-11-11T06:38:53Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -106,12 +146,12 @@
       "audience": {
         "newCustomer": true
       },
-      "checked": "2026-11-10",
-      "verifiedAt": "2026-11-10T23:29:32Z",
+      "checked": "2026-11-11",
+      "verifiedAt": "2026-11-11T06:38:53Z",
       "firstSeen": "2026-10-25T09:41:23Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-10T23:29:32Z",
+        "checkedAt": "2026-11-11T06:38:53Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
       }
     },
@@ -134,13 +174,62 @@
         "device": true,
         "newCustomer": true
       },
-      "checked": "2026-11-10",
-      "verifiedAt": "2026-11-10T23:29:32Z",
+      "checked": "2026-11-11",
+      "verifiedAt": "2026-11-11T06:38:53Z",
       "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
-        "checkedAt": "2026-11-10T23:29:32Z",
+        "checkedAt": "2026-11-11T06:38:53Z",
         "officialSource": "https://www.apple.com/kr/apple-music/"
+      }
+    },
+    {
+      "id": "9b015f671c3754d75a01d6b4",
+      "service": "surfshark",
+      "title": "Surfshark One 첫 이용 기간 선결제",
+      "benefit": "첫 27개월 $67.23",
+      "detail": "Surfshark One 첫 이용 기간 선결제",
+      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
+      "source": "https://surfshark.com/pricing",
+      "publisher": "Surfshark 공식",
+      "ends": null,
+      "offerType": "introductory",
+      "endsKnown": false,
+      "audience": {},
+      "checked": "2026-11-11",
+      "verifiedAt": "2026-11-11T06:38:53Z",
+      "firstSeen": "2026-10-25T09:41:23Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-11-11T06:38:53Z",
+        "officialSource": "https://surfshark.com/pricing"
+      }
+    },
+    {
+      "id": "af1051d7b5d0715c5d75af8a",
+      "campaignId": "spotify-wallet-trial",
+      "service": "spotify",
+      "title": "Spotify 전자지갑 결제 체험",
+      "benefit": "전자지갑 결제 첫 1개월 ₩100",
+      "detail": "Spotify 전자지갑 결제 체험",
+      "conditions": "개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.",
+      "source": "https://www.spotify.com/kr/premium/",
+      "publisher": "Spotify 한국 공식",
+      "ends": null,
+      "planId": "individual",
+      "eligibility": "eligible_wallet",
+      "offerType": "trial",
+      "endsKnown": false,
+      "audience": {
+        "payment": "wallet"
+      },
+      "checked": "2026-11-11",
+      "verifiedAt": "2026-11-11T06:38:53Z",
+      "firstSeen": "2026-10-27T14:55:54Z",
+      "factCheck": {
+        "status": "official_verified",
+        "checkedAt": "2026-11-11T06:38:53Z",
+        "officialSource": "https://www.spotify.com/kr/premium/"
       }
     },
     {
@@ -161,56 +250,6 @@
       "checked": "2026-11-10",
       "verifiedAt": "2026-11-10T23:29:32Z",
       "firstSeen": "2026-10-25T09:41:23Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-11-10T23:29:32Z",
-        "officialSource": "https://www.spotify.com/kr/premium/"
-      }
-    },
-    {
-      "id": "9b015f671c3754d75a01d6b4",
-      "service": "surfshark",
-      "title": "Surfshark One 첫 이용 기간 선결제",
-      "benefit": "첫 27개월 $67.23",
-      "detail": "Surfshark One 첫 이용 기간 선결제",
-      "conditions": "세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.",
-      "source": "https://surfshark.com/pricing",
-      "publisher": "Surfshark 공식",
-      "ends": null,
-      "offerType": "introductory",
-      "endsKnown": false,
-      "audience": {},
-      "checked": "2026-11-10",
-      "verifiedAt": "2026-11-10T23:29:32Z",
-      "firstSeen": "2026-10-25T09:41:23Z",
-      "factCheck": {
-        "status": "official_verified",
-        "checkedAt": "2026-11-10T23:29:32Z",
-        "officialSource": "https://surfshark.com/pricing"
-      }
-    },
-    {
-      "id": "af1051d7b5d0715c5d75af8a",
-      "campaignId": "spotify-wallet-trial",
-      "service": "spotify",
-      "title": "Spotify 전자지갑 결제 체험",
-      "benefit": "전자지갑 결제 첫 1개월 ₩100",
-      "detail": "Spotify 전자지갑 결제 체험",
-      "conditions": "개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신.",
-      "source": "https://www.spotify.com/kr/premium/",
-      "publisher": "Spotify 한국 공식",
-      "ends": null,
-      "planId": "individual",
-      "eligibility": "eligible_wallet",
-      "offerType": "trial",
-      "endsKnown": false,
-      "audience": {
-        "payment": "wallet",
-        "newCustomer": true
-      },
-      "checked": "2026-11-10",
-      "verifiedAt": "2026-11-10T23:29:32Z",
-      "firstSeen": "2026-10-27T14:55:54Z",
       "factCheck": {
         "status": "official_verified",
         "checkedAt": "2026-11-10T23:29:32Z",
@@ -1002,36 +1041,6 @@
   "tasteSuggestions": [],
   "providerHealth": [
     {
-      "name": "Sitemap: adobe",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-07T21:56:07Z"
-    },
-    {
-      "name": "Official links: google-workspace",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: google-workspace",
-      "status": "no_relevant_results",
-      "nextCheckAt": "2026-11-07T22:25:28Z"
-    },
-    {
-      "name": "Official links: dropbox",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Sitemap: dropbox",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-08T16:25:28Z"
-    },
-    {
-      "name": "Official links: adobe",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: canva",
       "status": "unavailable",
       "nextCheckAt": "2026-11-08T16:55:35Z"
@@ -1317,11 +1326,6 @@
       "nextCheckAt": "2026-11-10T00:52:55Z"
     },
     {
-      "name": "Naver",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-10T23:54:11Z"
-    },
-    {
       "name": "Official links: tving",
       "status": "ok",
       "nextCheckAt": null
@@ -1377,11 +1381,6 @@
       "nextCheckAt": "2026-11-11T02:14:25Z"
     },
     {
-      "name": "뽐뿌 해외뽐뿌",
-      "status": "unavailable",
-      "nextCheckAt": "2026-11-11T02:14:25Z"
-    },
-    {
       "name": "퀘이사존 핫딜",
       "status": "unavailable",
       "nextCheckAt": "2026-11-11T02:14:25Z"
@@ -1412,11 +1411,6 @@
       "nextCheckAt": "2026-11-11T09:58:22Z"
     },
     {
-      "name": "Google",
-      "status": "no_relevant_results",
-      "nextCheckAt": "2026-11-10T23:55:28Z"
-    },
-    {
       "name": "Official links: yodok",
       "status": "unavailable",
       "nextCheckAt": "2026-11-11T17:55:28Z"
@@ -1435,11 +1429,6 @@
       "name": "Official links: nordvpn",
       "status": "unavailable",
       "nextCheckAt": "2026-11-11T17:55:28Z"
-    },
-    {
-      "name": "DealMirror",
-      "status": "ok",
-      "nextCheckAt": null
     },
     {
       "name": "Official links: expressvpn",
@@ -1472,26 +1461,6 @@
       "nextCheckAt": "2026-11-11T21:32:36Z"
     },
     {
-      "name": "Dealify",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Bing RSS",
-      "status": "no_relevant_results",
-      "nextCheckAt": null
-    },
-    {
-      "name": "Public tool directory",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "Official links: notion",
       "status": "ok",
       "nextCheckAt": null
@@ -1522,11 +1491,6 @@
       "nextCheckAt": "2026-11-11T23:28:18Z"
     },
     {
-      "name": "Google News",
-      "status": "ok",
-      "nextCheckAt": null
-    },
-    {
       "name": "AppSumo",
       "status": "ok",
       "nextCheckAt": null
@@ -1542,186 +1506,261 @@
       "nextCheckAt": null
     },
     {
+      "name": "Google",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-11T12:37:01Z"
+    },
+    {
+      "name": "Naver",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-12T06:37:01Z"
+    },
+    {
+      "name": "Bing",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Bing RSS",
+      "status": "no_relevant_results",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Public tool directory",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Official links: google-workspace",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: google-workspace",
+      "status": "no_relevant_results",
+      "nextCheckAt": "2026-11-11T12:37:01Z"
+    },
+    {
+      "name": "Official links: dropbox",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: dropbox",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-12T06:37:01Z"
+    },
+    {
+      "name": "Official links: adobe",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Sitemap: adobe",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-12T06:37:01Z"
+    },
+    {
+      "name": "Google News",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
       "name": "Slickdeals",
       "status": "ok",
       "nextCheckAt": null
+    },
+    {
+      "name": "DealMirror",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "Dealify",
+      "status": "ok",
+      "nextCheckAt": null
+    },
+    {
+      "name": "뽐뿌 해외뽐뿌",
+      "status": "unavailable",
+      "nextCheckAt": "2026-11-12T06:37:01Z"
     }
   ],
   "retrieval": {
     "outcomes": {
-      "captcha": 2,
-      "cross_site_redirect": 83,
-      "deferred_captcha": 3,
-      "deferred_cross_site_redirect": 9,
-      "deferred_http_403": 26,
-      "deferred_http_404": 4,
-      "deferred_render_budget_exhausted": 2,
-      "deferred_render_http_403": 2,
-      "http_403": 86,
-      "http_404": 46,
+      "captcha": 3,
+      "cross_site_redirect": 61,
+      "deferred_captcha": 2,
+      "deferred_cross_site_redirect": 8,
+      "deferred_http_403": 21,
+      "deferred_http_404": 3,
+      "deferred_render_budget_exhausted": 1,
+      "deferred_render_http_403": 1,
+      "http_403": 84,
+      "http_404": 43,
       "http_429": 4,
       "http_500": 2,
       "network_error": 2,
-      "non_public_url": 4,
-      "ok": 530,
-      "render_budget_exhausted": 28,
-      "render_http_403": 2,
+      "non_public_url": 3,
+      "ok": 432,
+      "render_budget_exhausted": 33,
+      "render_http_403": 4,
       "response_too_large": 1,
       "timeout": 7,
-      "unexpected_content_type": 1
+      "unexpected_content_type": 2
     },
-    "cacheHitsThisRun": 3,
-    "renderAttemptsThisRun": 9,
+    "cacheHitsThisRun": 15,
+    "renderAttemptsThisRun": 10,
     "recentFailures": [
       {
-        "url": "https://www.tving.com/live/C00593",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T11:29:32Z"
-      },
-      {
-        "url": "https://www.tving.com/live/C52348",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T11:29:32Z"
-      },
-      {
-        "url": "https://es.gizmodo.com/descargar/nordvpn",
+        "url": "https://search.naver.com/search.naver?where=web&query=Google%20Workspace%20%EA%B5%AC%EB%8F%85%20%ED%95%A0%EC%9D%B8%20%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%20%EA%B0%80%EA%B2%A9%202026%2011",
         "reason": "http_403",
-        "nextCheckAt": "2026-11-11T23:29:32Z"
+        "nextCheckAt": "2026-11-12T06:38:53Z"
       },
       {
-        "url": "https://ai.facebook.com/blog/large-language-model-llama-meta-ai/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T07:29:32Z"
+        "url": "https://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu4",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
       },
       {
-        "url": "https://ai.meta.com/llama/",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T07:29:32Z"
+        "url": "https://nordvpn.com/pricing/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
       },
       {
-        "url": "https://altern.ai/ai/gpt-4o-mini",
+        "url": "https://www.spotify.com/signup",
+        "reason": "captcha",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://www.lguplus.com/pogg/evet",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://www.tving.com/event",
         "reason": "http_404",
-        "nextCheckAt": "2026-11-11T07:29:32Z"
+        "nextCheckAt": "2026-11-11T18:38:53Z"
       },
       {
-        "url": "https://opt.alpa.ai/",
-        "reason": "non_public_url",
-        "nextCheckAt": "2026-11-11T07:29:32Z"
-      },
-      {
-        "url": "https://en.m.wikipedia.org/wiki/Cloud_computing",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T07:29:32Z"
-      },
-      {
-        "url": "https://en.m.wikipedia.org/wiki/Cloud",
-        "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T07:29:32Z"
-      },
-      {
-        "url": "https://www.cloudflare.com/learning/cloud/what-is-the-cloud/",
+        "url": "https://www.canva.com/pricing/",
         "reason": "http_403",
-        "nextCheckAt": "2026-11-11T23:29:32Z"
+        "nextCheckAt": "2026-11-12T06:38:53Z"
       },
       {
-        "url": "https://www.canva.com/?msockid=27f0260f7b4769bf2e063e027ae66842",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-11T23:29:32Z"
-      },
-      {
-        "url": "https://www.notion.com/login?from=marketing&pathname=%2Fpricing&tid=f4e8398baca14dd3adcc851fb0458444",
+        "url": "https://www.tving.com/live/C05441",
         "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T00:29:32Z"
+        "nextCheckAt": "2026-11-11T18:38:53Z"
       },
       {
-        "url": "https://www.notion.com/signup?from=marketing&pathname=%2Fpricing&tid=f4e8398baca14dd3adcc851fb0458444",
+        "url": "https://www.backblaze.com/cloud-storage/pricing",
+        "reason": "captcha",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://runwayml.com/pricing",
         "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T00:29:32Z"
+        "nextCheckAt": "2026-11-11T18:38:53Z"
       },
       {
-        "url": "https://www.suno.edu/page/online-programs",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-11T23:29:32Z"
-      },
-      {
-        "url": "https://www.tving.com/live/C01723",
+        "url": "https://rewards.microsoft.com/",
         "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T09:34:09Z"
+        "nextCheckAt": "2026-11-11T10:38:53Z"
       },
       {
-        "url": "https://www.forbes.com/advisor/business/software/best-free-ecommerce-website-builder/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-11T21:34:09Z"
-      },
-      {
-        "url": "https://event.sessions.us/kwhero/mastering-keyword-research-&-content-creation-with-kwhero-ai",
-        "reason": "non_public_url",
-        "nextCheckAt": "2026-11-11T09:34:09Z"
-      },
-      {
-        "url": "https://workflow.by/",
-        "reason": "network_error",
-        "nextCheckAt": "2026-11-10T22:34:09Z"
-      },
-      {
-        "url": "https://www.ott.edu.ar/",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-11T21:34:09Z"
-      },
-      {
-        "url": "https://my.surfshark.com/home/dashboard",
-        "reason": "http_403",
-        "nextCheckAt": "2026-11-11T21:34:09Z"
-      },
-      {
-        "url": "https://www.zoom.com/en/products/virtual-meetings/",
+        "url": "https://copilot.microsoft.com/?msockid=0ac15127534269ea180a492052e86839",
         "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T09:34:09Z"
+        "nextCheckAt": "2026-11-11T08:38:53Z"
       },
       {
-        "url": "https://emoticon.kakao.com/",
+        "url": "https://copilot.microsoft.com/?msockid=211f9e506f0b67da2cf886576ecd661e",
         "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T09:34:09Z"
+        "nextCheckAt": "2026-11-11T08:38:53Z"
       },
       {
-        "url": "https://webtoon.kakao.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-10T22:34:09Z"
+        "url": "https://psprices.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://psprices.com/region-ae/game/10290190/drop-four-connect?date=2026-10-05",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://www.midjourney.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://www.canva.com/",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://www.coupangplay.com/",
+        "reason": "render_http_403",
+        "nextCheckAt": "2026-11-11T18:38:53Z"
       },
       {
         "url": "https://www.kakaocorp.com/",
         "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-10T22:34:09Z"
+        "nextCheckAt": "2026-11-11T08:38:53Z"
       },
       {
-        "url": "https://music.youtube.com/music_premium",
+        "url": "https://www.duolingo.com/",
         "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-10T23:34:09Z"
+        "nextCheckAt": "2026-11-11T07:38:53Z"
       },
       {
-        "url": "https://www.duolingo.com/super",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-10T22:34:09Z"
-      },
-      {
-        "url": "https://suno.com/",
-        "reason": "render_budget_exhausted",
-        "nextCheckAt": "2026-11-10T22:34:09Z"
-      },
-      {
-        "url": "https://www.suno.edu/",
+        "url": "https://nordvpn.com/",
         "reason": "http_403",
-        "nextCheckAt": "2026-11-11T21:34:09Z"
+        "nextCheckAt": "2026-11-12T06:38:53Z"
       },
       {
-        "url": "https://en.m.wikipedia.org/wiki/OneDrive",
+        "url": "https://webtoon.kakao.com/",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-11T08:38:53Z"
+      },
+      {
+        "url": "https://www.notion.com/",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-11T18:38:53Z"
+      },
+      {
+        "url": "https://drive.kakao.com/",
         "reason": "cross_site_redirect",
-        "nextCheckAt": "2026-11-11T01:34:09Z"
+        "nextCheckAt": "2026-11-11T18:38:53Z"
       },
       {
-        "url": "https://www.lguplus.com/pogg/",
+        "url": "https://www.disneyplus.com/ko-kr/browse/page-bceb41c9-cfa9-41e3-b6d7-d547362ea1cd?msockid=0f78d96afce765f8240bc16bfd8164d1",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-11T08:38:53Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/ko-kr/identity/login?pinned=true&msockid=0f78d96afce765f8240bc16bfd8164d1",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-11T08:38:53Z"
+      },
+      {
+        "url": "https://www.disneyplus.com/commerce/plans?default=bundle",
+        "reason": "render_budget_exhausted",
+        "nextCheckAt": "2026-11-11T18:38:53Z"
+      },
+      {
+        "url": "https://www.canva.com/?msockid=31aef7c0b80c62da395cefc5b9fe637b",
         "reason": "http_403",
-        "nextCheckAt": "2026-11-11T17:56:49Z"
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://www.canva.com/create/?msockid=31aef7c0b80c62da395cefc5b9fe637b",
+        "reason": "http_403",
+        "nextCheckAt": "2026-11-12T06:38:53Z"
+      },
+      {
+        "url": "https://familyhub.wavve.com/",
+        "reason": "non_public_url",
+        "nextCheckAt": "2026-11-11T07:38:53Z"
       }
     ]
   },
