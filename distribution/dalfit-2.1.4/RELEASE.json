@@ -1,0 +1,35 @@
+{
+  "version": "2.1.4",
+  "build": 53,
+  "tag": "dalfit-v2.1.4-build53",
+  "baseTag": "dalfit-v2.1.3-build52",
+  "assets": [
+    {
+      "name": "dalfit-2.1.4-build53-release.apk",
+      "bytes": 48335009,
+      "sha256": "0663f277b619c01758d6c835ceaf47407e20ccc7ddeefe4a09d102218601440e",
+      "baseName": "dalfit-2.1.3-build52-release.apk",
+      "baseSha256": "44bc4604fb7fabb7dfd7568ef1433b1a695330d66189355d89d604b03c64c7f4",
+      "parts": [
+        "build53.bsdiff.part001",
+        "build53.bsdiff.part002",
+        "build53.bsdiff.part003",
+        "build53.bsdiff.part004"
+      ],
+      "patchBytes": 1977933,
+      "patchSha256": "acac945a7e52cc2b912913bde443c8858be04b407728fc1e210a3fda78a8c701"
+    },
+    {
+      "name": "dalfit-android-source-2.1.4-build53.zip",
+      "bytes": 2486093,
+      "sha256": "cb40e44edf4bff4f86b883d9e766b78bb0f0cb60d4ed91b0c6c6f3f9b0711968",
+      "baseName": "dalfit-android-source-2.1.3-build52.zip",
+      "baseSha256": "b2740e179615554212ff8ecc9acc566fa24b5cfcc415204d94761d463601bdfc",
+      "parts": [
+        "source53.bsdiff.part001"
+      ],
+      "patchBytes": 68861,
+      "patchSha256": "2554f3480872cf22e108c7683d29254fb90c26dbd10ff967bb32acb05163167b"
+    }
+  ]
+}

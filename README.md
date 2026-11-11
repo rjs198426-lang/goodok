@@ -1,8 +1,8 @@
 # 달핏 · Android 다운로드
 
-**[2.1.3 · 빌드 52 APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.3-build52/dalfit-2.1.3-build52-release.apk)**
+**[2.1.4 · 빌드 53 APK 다운로드](https://github.com/rjs198426-lang/goodok/releases/download/dalfit-v2.1.4-build53/dalfit-2.1.4-build53-release.apk)**
 
-알림 본문·결제 확인을 누르면 해당 알림만 닫고, 다음 예정 알림은 유지합니다. 기존 앱을 삭제하지 않고 업데이트하세요. [변경 내역과 검증](distribution/dalfit-2.1.3/NOTIFICATION_NOTES.md)
+월간 비용은 선택한 달에 결제되는 항목만 기본 표시합니다. 연간 항목은 결제월에만 나오고 ‘전체 항목 관리’에서 모두 수정할 수 있습니다. 기존 앱을 삭제하지 않고 업데이트하세요. [변경 내역과 검증](distribution/dalfit-2.1.4/MONTH_SCOPE_NOTES.md)
 
 ## 구독노트 할인 데이터
 
