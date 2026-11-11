@@ -1,5 +1,5 @@
 """Bounded, auditable retrieval. No login, CAPTCHA solving or proxy rotation."""
-import concurrent.futures,datetime as dt,os,re,socket,ssl,threading,time,urllib.error,urllib.parse,urllib.request
+import concurrent.futures,datetime as dt,os,re,socket,ssl,threading,time,urllib.error,urllib.parse,urllib.request,zlib
 from discovery import safe_url,public_host
 from research_common import host,time_after
 
@@ -33,6 +33,20 @@ def configure(db,urls=(),locales=None,render_targets=()):
 def note(url,route,result,status=None):
  with LOCK:
   if len(AUDIT)<1000:AUDIT.append({'url':url,'route':route,'result':result,'httpStatus':status})
+
+def decode_content(data,encoding,limit):
+ """Respect HTTP compression, bounding decoded bytes as well as downloaded bytes."""
+ encoding=(encoding or '').strip().lower()
+ if not encoding and data.startswith(b'\x1f\x8b'):encoding='gzip'
+ if encoding in ('','identity'):return data
+ if encoding not in ('gzip','x-gzip','deflate'):raise FetchFailure('unsupported_content_encoding')
+ try:
+  decoder=zlib.decompressobj(16+zlib.MAX_WBITS if encoding in ('gzip','x-gzip') else zlib.MAX_WBITS)
+  result=decoder.decompress(data,limit+1)
+  if len(result)>limit or decoder.unconsumed_tail:raise FetchFailure('response_too_large')
+  if not decoder.eof or decoder.unused_data:raise FetchFailure('invalid_content_encoding')
+  return result
+ except zlib.error:raise FetchFailure('invalid_content_encoding')
 def download(url,accept='text/html',limit=8*1024*1024,timeout=15):
  if not safe_url(url) or not public_host(urllib.parse.urlsplit(url).hostname):raise FetchFailure('non_public_url')
  for attempt in range(2):
@@ -41,6 +55,9 @@ def download(url,accept='text/html',limit=8*1024*1024,timeout=15):
    with urllib.request.build_opener(PublicRedirect()).open(req,timeout=timeout) as r:
     data=r.read(limit+1)
     if len(data)>limit:raise FetchFailure('response_too_large')
+    encoding=r.headers.get('Content-Encoding','')
+    if encoding:note(url,'encoding',encoding.lower())
+    data=decode_content(data,encoding,limit)
     return data,r.headers.get('Content-Type',''),r.headers.get_content_charset() or 'utf-8'
   except Exception as e:
    code=error_code(e);note(url,'http',code,getattr(e,'code',None) if isinstance(e,urllib.error.HTTPError) else None)
@@ -98,7 +115,11 @@ def fetch_html(url,parse):
  try:
   now=dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds').replace('+00:00','Z')
   if HEALTH.get(url,{}).get('next') and HEALTH[url]['next']>now:raise FetchFailure('deferred_'+HEALTH[url]['error'])
-  raw,mime,charset=download(url)
+  try:raw,mime,charset=download(url)
+  except FetchFailure as e:
+   if e.code!='unsupported_content_encoding' or host(url) not in HOSTS:raise
+   # The browser can decode its supported public HTTP encodings within the same limits.
+   page=parse(render(url));note(url,'browser','ok');note(url,'page','ok');future.set_result(page);return page
   if 'html' not in mime:raise FetchFailure('unexpected_content_type')
   html=raw.decode(charset,errors='replace');page=parse(html)
   if re.search(r'captcha|verify you are human|unusual traffic|자동입력 방지|로봇이 아닙니다',page.text,re.I):raise FetchFailure('captcha')

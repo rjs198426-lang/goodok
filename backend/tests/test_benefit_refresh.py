@@ -1,5 +1,5 @@
 """Regression cases for stalled benefit discovery; fixtures are abbreviated official facts."""
-import datetime as dt,json,sys,tempfile,unittest
+import datetime as dt,json,sys,tempfile,unittest,gzip,zlib
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).parents[1]))
 import collector as c
@@ -57,12 +57,18 @@ class BenefitRefreshTests(unittest.TestCase):
   db.close()
  def test_english_source_locale_is_used_without_changing_other_sources(self):
   db=c.init_db(':memory:');url='https://vendor.example/black-friday';r.configure(db,[url],locales={url:'en-US'})
-  response=MagicMock();response.read.return_value=b'<p>public</p>';response.headers.get.return_value='text/html';response.headers.get_content_charset.return_value='utf-8';response.__enter__.return_value=response
+  response=MagicMock();response.read.return_value=b'<p>public</p>';response.headers.get.side_effect=lambda key,default=None:'text/html' if key=='Content-Type' else default;response.headers.get_content_charset.return_value='utf-8';response.__enter__.return_value=response
   opener=MagicMock();opener.open.return_value=response
   with patch.object(r,'public_host',return_value=True),patch.object(r.urllib.request,'build_opener',return_value=opener):
    r.download(url);self.assertEqual(opener.open.call_args.args[0].get_header('Accept-language'),'en-US')
    r.download('https://vendor.example/other');self.assertEqual(opener.open.call_args.args[0].get_header('Accept-language'),'ko-KR,ko;q=0.9,en;q=0.8')
   db.close()
+ def test_http_compression_decodes_before_parsing_and_bounds_expansion(self):
+  body='<title>Official offer</title><p>첫해 ₩34,800/월</p>'.encode()
+  for encoding,data in [('gzip',gzip.compress(body)),('deflate',zlib.compress(body)),('',gzip.compress(body))]:
+   self.assertEqual(r.decode_content(data,encoding,1000),body)
+  with self.assertRaisesRegex(r.FetchFailure,'response_too_large'):r.decode_content(gzip.compress(b'x'*100000),'gzip',1000)
+  with self.assertRaisesRegex(r.FetchFailure,'invalid_content_encoding'):r.decode_content(b'not compressed','gzip',1000)
  def test_promo_queue_precedes_noise_and_shares_budget_across_services(self):
   db=c.init_db(':memory:');seeds=[{'key':s,'name':s,'officialUrl':f'https://{s}.example/'} for s in ('tool','other')]
   for n in range(20):self.add_candidate(db,f'https://tool.example/dictionary/{n}','SaaS definition')
