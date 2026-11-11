@@ -3,14 +3,14 @@ on:
   push:
     branches: [main]
     paths:
-      - 'distribution/dalfit-2.1.6/**'
+      - 'distribution/dalfit-2.2.0/**'
       - 'distribution/publish_dalfit.py'
       - '.github/workflows/publish-dalfit.yml'
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: dalfit-release-2.1.6-build55
+  group: dalfit-release-2.2.0-build56
   cancel-in-progress: false
 jobs:
   release:
