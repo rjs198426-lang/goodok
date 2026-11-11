@@ -12,12 +12,15 @@ def canonical_candidate(url):
  from discovery import safe_url
  if not safe_url(url):return None
  p=urllib.parse.urlsplit(url)
- pairs=[(k,v) for k,v in urllib.parse.parse_qsl(p.query,keep_blank_values=True) if not k.lower().startswith('utm_') and k.lower() not in {'gclid','fbclid','msclkid','_ga'}]
+ pairs=[(k,v) for k,v in urllib.parse.parse_qsl(p.query,keep_blank_values=True) if not k.lower().startswith('utm_') and k.lower() not in {'gclid','fbclid','msclkid','msockid','_ga'}]
  return urllib.parse.urlunsplit(('https',p.netloc.lower(),p.path or '/',urllib.parse.urlencode(pairs),''))
 
 def rejection_reason(url,title='',seeds=()):
  if not canonical_candidate(url):return 'invalid_url'
  h=host(url);p=urllib.parse.urlsplit(url);path=p.path.lower()
+ # An official host does not make account/navigation pages promotion evidence.
+ if h.split('.')[0] in {'account','accounts','login'}:return 'navigation_or_legal'
+ if re.search(r'/(?:login|signin|signup|membersignup|privacy|terms|contact|about-us|cart|checkout|payment)(?:[./_-]|$)',path):return 'navigation_or_legal'
  if any(same_site(url,s.get('officialUrl','')) for s in seeds):return None
  if h=='news.google.com' and re.match(r'^/(rss/)?articles/',path):return None
  if h in {'google.com','bing.com','search.naver.com','map.naver.com','dict.naver.com','ader.naver.com','search.shopping.naver.com','translate.google.com','accounts.google.com','policies.google.com','support.google.com'}:return 'search_navigation'

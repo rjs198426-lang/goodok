@@ -6,9 +6,17 @@ from research_common import same_site,match_service,rejection_reason,time_after,
 def money_tokens(text):return set(re.sub(r'\s+','',v) for v in re.findall(r'(?:₩|\$|€|£)\s*[\d,]+(?:\.\d+)?',text))
 def same_host(a,b):return same_site(a,b)
 
+def claim_priority(row,seeds):
+ url,title,_,_=row;path=urllib.parse.urlsplit(url).path
+ promotion=bool(re.search(r'offer|event|promo|coupon|discount|black[-_]?friday|할인|혜택|무료',path+' '+title,re.I))
+ official=any(same_site(url,s.get('officialUrl','')) for s in seeds)
+ return (0 if official and promotion else 1 if promotion else 2)
+
 def verify_candidates(db,seeds,offers,fetch,timestamp,budget=12,extract_offer=None):
- rows=list(db.execute("SELECT url,title,service_key,check_attempts FROM candidates WHERE scope='subscription' AND status NOT IN ('rejected','catalog_verified') AND (next_check_at IS NULL OR next_check_at<=?) ORDER BY fact_checked_at NULLS FIRST,first_seen,url LIMIT ?",(timestamp,max(200,budget*40))))
+ rows=list(db.execute("SELECT url,title,service_key,check_attempts FROM candidates WHERE scope='subscription' AND status NOT IN ('rejected','catalog_verified') AND (next_check_at IS NULL OR next_check_at<=?) ORDER BY fact_checked_at NULLS FIRST,first_seen,url",(timestamp,)))
+ rows.sort(key=lambda row:claim_priority(row,seeds))
  stats={'checked':0,'confirmed':0,'pending':0,'unmatched':0,'rejected':0,'verifiedOffers':[]}
+ per_service={}
  for url,title,service_key,attempts in rows:
   reason=rejection_reason(url,title,seeds)
   if reason:
@@ -18,13 +26,15 @@ def verify_candidates(db,seeds,offers,fetch,timestamp,budget=12,extract_offer=No
   if not seed:
    db.execute("UPDATE candidates SET status='needs_service',reason='공식 서비스 연결 대기',fact_checked_at=?,next_check_at=? WHERE url=?",(timestamp,time_after(timestamp,24),url));stats['unmatched']+=1;continue
   if stats['checked']>=budget:break
+  if per_service.get(service_key,0)>=max(1,(budget+3)//4):continue
+  per_service[service_key]=per_service.get(service_key,0)+1
   stats['checked']+=1;status='needs_verification';reason='공식 페이지에서 동일 혜택을 확인하지 못했어요.';evidence='';official_url=seed['officialUrl'];observed=[];unavailable=False
   try:
    page=fetch(url)
    pages=[(url,page)] if same_site(url,seed['officialUrl']) else []
    for href,label in page.links:
     candidate=safe_url(urllib.parse.urljoin(url,href))
-    if candidate and same_site(candidate,seed['officialUrl']) and re.search(r'offer|event|promo|coupon|pricing|할인|이벤트|혜택',candidate+' '+label,re.I):
+    if candidate and not rejection_reason(candidate,label,seeds) and same_site(candidate,seed['officialUrl']) and re.search(r'offer|event|promo|coupon|pricing|할인|이벤트|혜택',candidate+' '+label,re.I):
      try:pages.append((candidate,fetch(candidate)))
      except Exception:pass
      if len(pages)>=3:break

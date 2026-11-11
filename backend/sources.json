@@ -24,8 +24,9 @@
     "id": "protonvpn",
     "service": "protonvpn",
     "name": "Proton VPN",
-    "url": "https://protonvpn.com/vpn-deals",
-    "parser": "event"
+    "url": "https://protonvpn.com/black-friday",
+    "parser": "proton-black-friday",
+    "discover": false
   },
   {
     "id": "spotify",
@@ -99,5 +100,13 @@
     "name": "Claude",
     "url": "https://claude.com/pricing",
     "parser": "event"
+  },
+  {
+    "id": "lovable-students",
+    "service": "lovable",
+    "name": "Lovable",
+    "url": "https://lovable.dev/students",
+    "parser": "lovable-student",
+    "discover": false
   }
 ]

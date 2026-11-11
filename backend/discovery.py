@@ -57,6 +57,14 @@ def rotating(items,cursor,budget):return [items[(cursor+i)%len(items)] for i in 
 def clean_legacy_candidates(db,seeds):
  """Quarantine old junk; preserve original URLs, timestamps and audit history."""
  removed=0
+ columns=[row[1] for row in db.execute('PRAGMA table_info(candidates)')]
+ for row in db.execute("SELECT * FROM candidates WHERE status!='rejected' AND url LIKE '%msockid=%'").fetchall():
+  record=dict(zip(columns,row));url=record['url'];canonical=canonical_candidate(url)
+  if canonical and canonical!=url:
+   if not rejection_reason(canonical,record['title'],seeds):
+    record['url']=canonical
+    db.execute('INSERT OR IGNORE INTO candidates ('+','.join(columns)+') VALUES ('+','.join('?' for _ in columns)+')',[record[key] for key in columns])
+   db.execute("UPDATE candidates SET status='rejected',catalog_status='rejected',reason='tracking_alias' WHERE url=?",(url,));removed+=1
  for url,title in db.execute("SELECT url,title FROM candidates WHERE status!='rejected'").fetchall():
   reason=rejection_reason(url,title,seeds)
   if reason:

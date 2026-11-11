@@ -67,7 +67,7 @@ def fetch_text(url):
  return data.decode(charset,errors='replace')
 
 def ending(text):
- m=re.search(r'(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})\s*일?\s*(?:까지|종료)',text)
+ m=re.search(r'(20\d{2})[.\-/년]\s*(\d{1,2})[.\-/월]\s*(\d{1,2})\s*일?\s*(?:까지|(?:에\s*)?종료)',text)
  if m:
   try:return dt.date(*map(int,m.groups())).isoformat()
   except ValueError:return None
@@ -82,8 +82,8 @@ def extract(source,page,url=None):
    if p:
     benefit=f'첫 {p[3]}개월 {p[1]}{p[2]}';detail='Surfshark One 첫 이용 기간 선결제';conditions='세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인.';evidence=m[0][:300];ends=ending(m[1])
  elif kind=='adobe':
-  p=re.search(r'첫\s*1\s*년[^₩]{0,180}₩\s*([\d,]+)\s*/\s*월',text)
-  if p and all(re.search(x,text) for x in ['한국','처음 구독',r'12\s*개월\s*약정','부가세 포함']):
+  p=re.search(r'첫\s*(?:1\s*년|해)[^₩]{0,180}₩\s*([\d,]+)\s*/\s*월',text)
+  if p and all(re.search(x,text) for x in ['한국','처음 구독',r'12\s*개월\s*(?:구독\s*)?약정','부가세 포함']):
    benefit=f'첫해 월 ₩{p[1]}';detail='Creative Cloud 모든 앱 · 한국 신규 개인 구독';conditions='부가세 포함, 12개월 약정·월별 청구. 이후 당시 요금으로 자동 갱신. 해지 조건 확인.';evidence=text[max(0,p.start()-40):p.end()+80];ends=ending(text)
  elif kind=='spotify':
   trial=re.search(r'₩0에\s*(\d{1,2})개월',text);renewal=re.search(r'이후에는\s*₩([\d,]+)',text)
@@ -110,8 +110,21 @@ def extract_all(source,page,url=None):
  """Separate eligibility/payment campaigns on a single first-party page."""
  from types import SimpleNamespace
  text=page.text;url=url or source['url'];kind=source['parser'];base=extract(source,page,url);offers=as_offers(base)
- def add(campaign,title,benefit,conditions,evidence,plan,eligibility):
-  offers.append({'id':campaign,'campaignId':campaign,'service':source['service'],'title':title,'benefit':benefit,'detail':title,'conditions':conditions,'source':url,'publisher':source['name']+' 공식','ends':None,'evidence':evidence[:350],'planId':plan,'eligibility':eligibility,'offerType':'trial'})
+ def add(campaign,title,benefit,conditions,evidence,plan,eligibility,offer_type='trial'):
+  offers.append({'id':campaign,'campaignId':campaign,'service':source['service'],'title':title,'benefit':benefit,'detail':title,'conditions':conditions,'source':url,'publisher':source['name']+' 공식','ends':None,'evidence':evidence[:350],'planId':plan,'eligibility':eligibility,'offerType':offer_type})
+ if kind=='proton-black-friday' and re.search(r'Black Friday',text,re.I) and re.search(r'all new users are eligible',text,re.I):
+  for section in page.sections:
+   title=section['title'].strip();body=section['text']
+   if title=='VPN Plus':
+    price=re.search(r'Billed at\s*\$([\d,.]+)\s*for the first\s*(\d+)\s*months,?\s*then renews at\s*\$([\d,.]+)\s*every\s*(\d+)\s*months',body,re.I)
+    if price:add('proton-bf-plus','Proton VPN Plus 기간 할인',f'첫 {price[2]}개월 ${price[1]}',f'신규 고객 대상, 첫 기간 선결제. 이후 {price[4]}개월마다 ${price[3]} 자동 갱신. 공식 달러 표시 기준, 국가·세금·최종 결제 조건 확인.',price[0],'vpn-plus','new_customer','limited')
+   if title=='Proton Unlimited':
+    price=re.search(r'Billed at\s*\$([\d,.]+)\s*for the first month,?\s*then renews at\s*\$([\d,.]+)\s*every month',body,re.I)
+    if price:add('proton-bf-unlimited','Proton Unlimited 첫 달 할인',f'첫 1개월 ${price[1]}',f'신규 고객 대상. 이후 월 ${price[2]} 자동 갱신. 공식 달러 표시 기준, 국가·세금·최종 결제 조건 확인.',price[0],'unlimited','new_customer','limited')
+ if kind=='lovable-student':
+  discount=re.search(r'(\d{1,2})%\s*off\s*Lovable Pro\s*for\s*up to\s*(\d{1,2})\s*months',text,re.I)
+  if discount and re.search(r'school email',text,re.I) and re.search(r'confirm.{0,30}enrolled',text,re.I) and re.search(r'only valid for users on the free plan',text,re.I):
+   add('lovable-student-pro','Lovable Pro 학생 할인',f'학생 인증 시 최대 {discount[2]}개월 {discount[1]}% 할인','학교 이메일·재학 인증 및 무료 플랜 이용자 대상. Pro 100크레딧 월간 플랜 할인, 취소하면 할인 재활성화 불가. 기간 후 정상 요금 적용.',discount[0],'pro-100','eligible_student','eligibility')
  if kind=='apple-music':
   device=re.search(r'신규\s*기기\s*(\d{1,2})개월\s*무료(.{0,160})',text)
   if device and re.search(r'대상\s*기기|기기를\s*구입',device[2]):
@@ -137,6 +150,11 @@ def extract_all(source,page,url=None):
  for offer in offers:
   offer.setdefault('offerType','trial' if re.search(r'체험|무료',offer['title']+' '+offer['benefit']) else 'introductory' if kind in ('surfshark','adobe','nordvpn') else 'limited')
   if offer['offerType']=='trial' and kind in ('apple-music','spotify'):offer['ends']=None
+  if kind=='adobe':
+   start=re.search(r'(20\d{2})년\s*(\d{1,2})월\s*(\d{1,2})일에\s*시작',text)
+   if start:
+    try:offer['starts']=dt.date(*map(int,start.groups())).isoformat()
+    except ValueError:pass
   offer['endsKnown']=bool(offer.get('ends'))
   audience={}
   if offer.get('eligibility')=='eligible_student':audience['student']=True
@@ -172,7 +190,7 @@ def investigate(source):
    urls=[]
    for href,label in page.links:
     url=urllib.parse.urljoin(source['url'],href);parsed=urllib.parse.urlparse(url)
-    if parsed.scheme=='https' and parsed.hostname==urllib.parse.urlparse(source['url']).hostname and url!=source['url'] and re.search(r'할인|혜택|프로모션|무료|%|이벤트',label) and url not in urls:urls.append(url)
+    if parsed.scheme=='https' and parsed.hostname==urllib.parse.urlparse(source['url']).hostname and url!=source['url'] and re.search(r'할인|혜택|프로모션|무료|%|이벤트|offer|sale|discount|black friday',label,re.I) and url not in urls:urls.append(url)
    for url in urls[:3]:
     try:
      detail=fetch(url);found=extract_all(source,detail,url);offers.extend(found)
@@ -194,6 +212,8 @@ def store_and_export(db,results,now,out,profiles):
  profiles=json.loads(json.dumps(profiles));timestamp=stamp(now);day=now.astimezone(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
  with db:
   compact_offers(db)
+  previous={identity:json.loads(payload) for identity,payload in db.execute('SELECT id,payload FROM offers')}
+  incoming={}
   run=db.execute('INSERT INTO runs(started_at,finished_at,successful_sources,total_sources) VALUES(?,?,?,?)',(timestamp,timestamp,sum(r['status']=='ok' for r in results),len(results))).lastrowid
   for result in results:
    if result.get('price') and result['id'] in profiles:profiles[result['id']]['price']=result['price']
@@ -202,6 +222,7 @@ def store_and_export(db,results,now,out,profiles):
    for observation in result['observations']:db.execute('INSERT INTO observations VALUES(?,?,?,?,?)',(run,result['id'],observation['url'],observation['status'],timestamp))
    for raw_offer in result['offers']:
     offer={**raw_offer,'id':campaign_id(raw_offer)}
+    incoming[offer['id']]=offer
     db.execute('INSERT INTO offers VALUES(?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,last_verified=excluded.last_verified WHERE excluded.last_verified>=offers.last_verified',(offer['id'],result['id'],json.dumps(offer,ensure_ascii=False),timestamp,timestamp))
   for service,profile in profiles.items():
    previous=db.execute('SELECT payload FROM comparison_profiles WHERE service=?',(service,)).fetchone()
@@ -210,11 +231,18 @@ def store_and_export(db,results,now,out,profiles):
     if old_price and (not new_price or old_price.get('checked','')>new_price.get('checked','')):profile['price']=old_price
    db.execute('INSERT OR REPLACE INTO comparison_profiles VALUES(?,?,?)',(service,json.dumps(profile,ensure_ascii=False),profile.get('checked',day)))
   db.execute('DELETE FROM observations WHERE checked_at < ?', (stamp(now-dt.timedelta(days=30)),))
+ changes={'new':0,'changed':0,'reconfirmed':0}
+ fields=('title','benefit','detail','conditions','starts','ends','planId','eligibility','offerType','audience')
+ for identity,offer in incoming.items():
+  old=previous.get(identity)
+  key='new' if old is None else 'changed' if any(old.get(f)!=offer.get(f) for f in fields) else 'reconfirmed'
+  changes[key]+=1
  offers=[]
  for payload,first,last in db.execute('SELECT payload,first_seen,last_verified FROM offers ORDER BY last_verified DESC'):
   offer=json.loads(payload)
-  if last<stamp(now-dt.timedelta(hours=72)) or (offer['ends'] and offer['ends']<day):continue
+  if last<stamp(now-dt.timedelta(hours=72)) or (offer['ends'] and offer['ends']<day) or (offer.get('starts') and offer['starts']>day):continue
   offer.update(checked=last[:10],verifiedAt=last,firstSeen=first);offer.pop('evidence',None);offer['factCheck']={'status':'official_verified','checkedAt':last,'officialSource':offer['source']};offers.append(offer)
+ offers.sort(key=lambda o:(o['verifiedAt'],bool(o.get('ends')),o.get('offerType')=='limited',o.get('firstSeen','')),reverse=True)
  latest_success=db.execute('SELECT MAX(finished_at) FROM runs WHERE successful_sources>0').fetchone()[0]
  feed={'schemaVersion':1,'generatedAt':timestamp,'lastSuccessAt':latest_success,'offers':offers,'comparisons':profiles,'sources':[{'id':r['id'],'name':r['name'],'status':r['status'],'errorCode':r.get('errorCode'),'verifiedOffers':len(r['offers'])} for r in results]}
  catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]
@@ -235,7 +263,7 @@ def store_and_export(db,results,now,out,profiles):
  metrics['comparableByCurrency']={currency:sum(p.get('status')=='verified' and p.get('currency')==currency and p.get('commitmentMonths') in (1,12) for p in plans) for currency in sorted({p.get('currency','unknown') for p in plans})}
  retrieval_status=retrieval.persist(db,timestamp)
  latest=db.execute("SELECT value FROM research_state WHERE key='latest_run'").fetchone()
- feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':4,'retrieval':retrieval_status,'searchApiConnections':{name:name in configured_providers() for name in ('Google','Naver')},'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
+ feed.update(catalog=catalog,plans=plans,tasteSuggestions=export_taste(db,timestamp),research={'pipelineVersion':5,'benefitChanges':changes,'retrieval':retrieval_status,'searchApiConnections':{name:name in configured_providers() for name in ('Google','Naver')},'providers':[{'name':p,'status':s,'attempts':n} for p,s,n in query_rows],'providerHealth':[{'name':p,'status':s,'nextCheckAt':due} for p,s,due in db.execute('SELECT provider,last_status,next_check_at FROM provider_health')],'candidateCount':db.execute("SELECT COUNT(*) FROM candidates WHERE status!='rejected'").fetchone()[0],'rawCandidateCount':db.execute('SELECT COUNT(*) FROM candidates').fetchone()[0],'factChecks':db.execute('SELECT COUNT(*) FROM fact_checks').fetchone()[0],'verifiedCatalogCount':sum(item.get('status')=='verified' for item in catalog),'catalogCount':len(catalog),'metrics':metrics,'latestRun':json.loads(latest[0]) if latest else {}})
  out.parent.mkdir(parents=True,exist_ok=True);temp=out.with_suffix('.tmp');temp.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+'\n');temp.replace(out);return feed
 
 def main():
@@ -243,10 +271,11 @@ def main():
  sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
  for source in sources:source['purpose']=next((seed.get('purpose') for seed in seeds if seed['key']==source['id']),None)
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
- retrieval.configure(db,[s['officialUrl'] for s in seeds]+[t['url'] for t in research_targets()])
+ retrieval.configure(db,[s['officialUrl'] for s in seeds]+[t['url'] for t in research_targets()]+[s['url'] for s in sources])
  enqueue_targets(db,timestamp)
- attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml,api_search=search_api,api_providers=configured_providers(),fetch_text=fetch_text)
+ # Reserve the bounded browser budget for known benefits before broad catalogue discovery.
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))
+ attempts,candidates=run_discovery(db,seeds,fetch,timestamp,fetch_xml=fetch_xml,api_search=search_api,api_providers=configured_providers(),fetch_text=fetch_text)
  catalogue=expand_catalog(db,seeds,candidates,fetch,observed_price,timestamp,extract_offer=extract_all)
  discovered_offers=catalogue.pop('verifiedOffers',[])
  all_catalog=[json.loads(row[0]) for row in db.execute('SELECT payload FROM service_catalog')]

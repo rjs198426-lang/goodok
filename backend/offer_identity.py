@@ -6,7 +6,7 @@ def canonical_url(value):
  parsed=urllib.parse.urlsplit(value);host=(parsed.hostname or '').lower().removeprefix('www.')
  if parsed.port and parsed.port!=443:host+=':'+str(parsed.port)
  path=re.sub(r'^/(?:ko-kr|kr-ko|kr)(?=/|$)','/kr',parsed.path,flags=re.I).rstrip('/') or '/'
- pairs=sorted((k,v) for k,v in urllib.parse.parse_qsl(parsed.query,keep_blank_values=True) if not k.lower().startswith('utm_') and k.lower() not in {'gclid','fbclid','msclkid','_ga'})
+ pairs=sorted((k,v) for k,v in urllib.parse.parse_qsl(parsed.query,keep_blank_values=True) if not k.lower().startswith('utm_') and k.lower() not in {'gclid','fbclid','msclkid','msockid','_ga'})
  return host+path+('?'+urllib.parse.urlencode(pairs) if pairs else '')
 def campaign_key(offer):
  service=normalized(offer.get('service'));title=normalized(offer.get('title') or offer.get('detail') or offer.get('benefit'));benefit=normalized(offer.get('benefit'));slot=title
