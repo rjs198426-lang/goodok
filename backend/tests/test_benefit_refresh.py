@@ -54,10 +54,13 @@ class BenefitRefreshTests(unittest.TestCase):
   db=c.init_db(':memory:');now=dt.datetime(2026,11,11,tzinfo=dt.timezone.utc)
   offer={'service':'tool','title':'Campaign','benefit':'30% 할인','detail':'Campaign','conditions':'new','source':'https://vendor.example/offer','publisher':'Official','ends':'2026-11-13','evidence':'30%'}
   def results(o):return [{'id':'tool','name':'Tool','status':'ok','offers':[o,o],'observations':[]}]
+  # Production already has comparison profiles. Their old DB rows must not shadow the offer snapshot.
+  db.execute('INSERT INTO comparison_profiles VALUES(?,?,?)',('tool',json.dumps({'checked':'2026-11-10'}),'2026-11-10'));db.commit()
+  profiles={'tool':{'checked':'2026-11-11'}}
   with tempfile.TemporaryDirectory() as tmp:
    out=Path(tmp)/'feed.json'
-   first=c.store_and_export(db,results(offer),now,out,{});self.assertEqual(first['research']['benefitChanges'],{'new':1,'changed':0,'reconfirmed':0})
-   second=c.store_and_export(db,results(offer),now+dt.timedelta(hours=1),out,{})
+   first=c.store_and_export(db,results(offer),now,out,profiles);self.assertEqual(first['research']['benefitChanges'],{'new':1,'changed':0,'reconfirmed':0})
+   second=c.store_and_export(db,results(offer),now+dt.timedelta(hours=1),out,profiles)
    self.assertEqual(second['research']['benefitChanges'],{'new':0,'changed':0,'reconfirmed':1});self.assertEqual(first['offers'][0]['firstSeen'],second['offers'][0]['firstSeen'])
    changed=c.store_and_export(db,results(dict(offer,benefit='40% 할인')),now+dt.timedelta(hours=2),out,{})
    self.assertEqual(changed['research']['benefitChanges']['changed'],1)

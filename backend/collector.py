@@ -212,7 +212,7 @@ def store_and_export(db,results,now,out,profiles):
  profiles=json.loads(json.dumps(profiles));timestamp=stamp(now);day=now.astimezone(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
  with db:
   compact_offers(db)
-  previous={identity:json.loads(payload) for identity,payload in db.execute('SELECT id,payload FROM offers')}
+  previous_offers={identity:json.loads(payload) for identity,payload in db.execute('SELECT id,payload FROM offers')}
   incoming={}
   run=db.execute('INSERT INTO runs(started_at,finished_at,successful_sources,total_sources) VALUES(?,?,?,?)',(timestamp,timestamp,sum(r['status']=='ok' for r in results),len(results))).lastrowid
   for result in results:
@@ -234,7 +234,7 @@ def store_and_export(db,results,now,out,profiles):
  changes={'new':0,'changed':0,'reconfirmed':0}
  fields=('title','benefit','detail','conditions','starts','ends','planId','eligibility','offerType','audience')
  for identity,offer in incoming.items():
-  old=previous.get(identity)
+  old=previous_offers.get(identity)
   key='new' if old is None else 'changed' if any(old.get(f)!=offer.get(f) for f in fields) else 'reconfirmed'
   changes[key]+=1
  offers=[]
