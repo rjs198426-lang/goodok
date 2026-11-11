@@ -11,7 +11,8 @@
     "service": "adobe",
     "name": "Adobe 한국",
     "url": "https://www.adobe.com/kr/offer-terms/cc-full-special-offer-intro.html",
-    "parser": "adobe"
+    "parser": "adobe",
+    "renderShortPage": true
   },
   {
     "id": "nordvpn",
@@ -26,7 +27,8 @@
     "name": "Proton VPN",
     "url": "https://protonvpn.com/black-friday",
     "parser": "proton-black-friday",
-    "discover": false
+    "discover": false,
+    "locale": "en-US"
   },
   {
     "id": "spotify",

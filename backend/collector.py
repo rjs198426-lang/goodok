@@ -180,9 +180,9 @@ def benefit_diagnostics(source,page):
  text=page.text;kind=source['parser']
  if kind=='adobe':
   marker=re.search(r'첫\s*(?:1\s*년|해)',text)
-  return {'parser':kind,'textLength':len(text),'firstYear':bool(marker),'koreanMarket':'한국' in text,'newSubscriber':'처음 구독' in text,'commitment':bool(re.search(r'12\s*개월\s*(?:구독\s*)?약정',text)),'vatIncluded':'부가세 포함' in text,'ends':ending(text),'priceTokens':re.findall(r'[₩￦$][\d,. ]{1,20}',text)[:12],'firstYearContext':text[marker.start():marker.start()+180] if marker else ''}
+  return {'parser':kind,'pageTitle':''.join(page.title)[:150],'textLength':len(text),'firstYear':bool(marker),'koreanMarket':'한국' in text,'newSubscriber':'처음 구독' in text,'commitment':bool(re.search(r'12\s*개월\s*(?:구독\s*)?약정',text)),'vatIncluded':'부가세 포함' in text,'ends':ending(text),'priceTokens':re.findall(r'[₩￦$][\d,. ]{1,20}',text)[:12],'firstYearContext':text[marker.start():marker.start()+180] if marker else ''}
  if kind=='proton-black-friday':
-  return {'parser':kind,'textLength':len(text),'blackFriday':bool(re.search(r'Black Friday',text,re.I)),'newUsers':bool(re.search(r'all new users are eligible',text,re.I)),'planHeadings':[s['title'].strip() for s in page.sections if re.search('Plus|Unlimited',s['title'],re.I)][:8],'billingContext':re.findall(r'Billed at.{0,170}',text,re.I)[:2]}
+  return {'parser':kind,'pageTitle':''.join(page.title)[:150],'textLength':len(text),'blackFriday':bool(re.search(r'Black Friday',text,re.I)),'newUsers':bool(re.search(r'all new users are eligible',text,re.I)),'planHeadings':[s['title'].strip() for s in page.sections if re.search('Plus|Unlimited',s['title'],re.I)][:8],'billingContext':re.findall(r'Billed at.{0,170}',text,re.I)[:2]}
  return None
 
 def investigate(source):
@@ -281,7 +281,7 @@ def main():
  sources=json.loads((ROOT/'sources.json').read_text());profiles=json.loads((ROOT/'comparisons.json').read_text());seeds=json.loads((ROOT/'catalog-seeds.json').read_text());Path(args.database).parent.mkdir(parents=True,exist_ok=True)
  for source in sources:source['purpose']=next((seed.get('purpose') for seed in seeds if seed['key']==source['id']),None)
  db=init_db(args.database);now=dt.datetime.now(UTC);timestamp=stamp(now)
- retrieval.configure(db,[s['officialUrl'] for s in seeds]+[t['url'] for t in research_targets()]+[s['url'] for s in sources])
+ retrieval.configure(db,[s['officialUrl'] for s in seeds]+[t['url'] for t in research_targets()]+[s['url'] for s in sources],locales={s['url']:s['locale'] for s in sources if s.get('locale')},render_targets=[s['url'] for s in sources if s.get('renderShortPage')])
  enqueue_targets(db,timestamp)
  # Reserve the bounded browser budget for known benefits before broad catalogue discovery.
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(investigate,sources))

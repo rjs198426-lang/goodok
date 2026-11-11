@@ -18,16 +18,17 @@ class PublicRedirect(urllib.request.HTTPRedirectHandler):
   if not safe_url(newurl) or host(newurl)!=host(req.full_url) or not public_host(urllib.parse.urlsplit(newurl).hostname):raise FetchFailure('cross_site_redirect')
   return super().redirect_request(req,fp,code,msg,headers,newurl)
 
-LOCK=threading.RLock();CACHE={};AUDIT=[];HEALTH={};HOSTS=set();RENDERED=0;CACHE_HITS=0
+LOCK=threading.RLock();CACHE={};AUDIT=[];HEALTH={};HOSTS=set();LOCALES={};RENDER_TARGETS=set();RENDERED=0;CACHE_HITS=0
 def init_tables(db):
  db.executescript('''CREATE TABLE IF NOT EXISTS retrieval_attempts(id INTEGER PRIMARY KEY,url TEXT,route TEXT,result TEXT,http_status INTEGER,checked_at TEXT);
  CREATE TABLE IF NOT EXISTS retrieval_health(url TEXT PRIMARY KEY,failures INTEGER,next_check_at TEXT,last_error TEXT,last_checked TEXT);''')
-def configure(db,urls=()):
+def configure(db,urls=(),locales=None,render_targets=()):
  global RENDERED,CACHE_HITS
  init_tables(db)
  with LOCK:
-  CACHE.clear();AUDIT.clear();HEALTH.clear();HOSTS.clear();RENDERED=0;CACHE_HITS=0
+  CACHE.clear();AUDIT.clear();HEALTH.clear();HOSTS.clear();LOCALES.clear();RENDER_TARGETS.clear();RENDERED=0;CACHE_HITS=0
   HOSTS.update(host(u) for u in urls)
+  LOCALES.update(locales or {});RENDER_TARGETS.update(render_targets)
   HEALTH.update({u:{'failures':f,'next':n,'error':e} for u,f,n,e in db.execute('SELECT url,failures,next_check_at,last_error FROM retrieval_health')})
 def note(url,route,result,status=None):
  with LOCK:
@@ -36,7 +37,7 @@ def download(url,accept='text/html',limit=8*1024*1024,timeout=15):
  if not safe_url(url) or not public_host(urllib.parse.urlsplit(url).hostname):raise FetchFailure('non_public_url')
  for attempt in range(2):
   try:
-   req=urllib.request.Request(url,headers={'User-Agent':'DalfitResearch/4.0 (+public subscription research)','Accept':accept,'Accept-Language':'ko-KR,ko;q=0.9,en;q=0.8'})
+   req=urllib.request.Request(url,headers={'User-Agent':'DalfitResearch/5.0 (+public subscription research)','Accept':accept,'Accept-Language':LOCALES.get(url,'ko-KR,ko;q=0.9,en;q=0.8')})
    with urllib.request.build_opener(PublicRedirect()).open(req,timeout=timeout) as r:
     data=r.read(limit+1)
     if len(data)>limit:raise FetchFailure('response_too_large')
@@ -61,7 +62,7 @@ def render(url):
  with sync_playwright() as p:
   browser=p.chromium.launch(headless=True,args=['--disable-dev-shm-usage'])
   try:
-   context=browser.new_context(service_workers='block',accept_downloads=False,locale='ko-KR')
+   context=browser.new_context(service_workers='block',accept_downloads=False,locale=LOCALES.get(url,'ko-KR').split(',')[0])
    dns={}
    def route(r):
     u=r.request.url;h=urllib.parse.urlsplit(u).hostname
@@ -101,8 +102,9 @@ def fetch_html(url,parse):
   if 'html' not in mime:raise FetchFailure('unexpected_content_type')
   html=raw.decode(charset,errors='replace');page=parse(html)
   if re.search(r'captcha|verify you are human|unusual traffic|자동입력 방지|로봇이 아닙니다',page.text,re.I):raise FetchFailure('captcha')
+  if len(page.text)<1000 and re.search(r'access denied|request rejected|you don.t have permission|temporarily blocked|automated requests',page.text,re.I):raise FetchFailure('http_block_page')
   shell=bool(re.search(r'id=["\'](?:app|root|__next)["\']|enable javascript|자바스크립트',html,re.I))
-  required=len(page.text)<100 or shell and not re.search(r'[$₩€£]\s*[1-9]\d*',page.text)
+  required=len(page.text)<100 or shell and not re.search(r'[$₩€£]\s*[1-9]\d*',page.text) or url in RENDER_TARGETS and len(page.text)<600
   ambiguous=shell and any(re.search(r'annual|yearly|연간',s['text'],re.I) and re.search(r'monthly|월간',s['text'],re.I) and len(set(re.findall(r'[$₩€£]\s*([\d,.]+)',s['text'])))>1 for s in page.sections)
   if host(url) in HOSTS and (required or ambiguous):
    try:page=parse(render(url));note(url,'browser','ok')
@@ -120,7 +122,7 @@ def persist(db,stamp):
   if r['route']!='page' or r['result'].startswith('deferred_'):continue
   if r['result']=='ok':db.execute('DELETE FROM retrieval_health WHERE url=?',(r['url'],));continue
   old=db.execute('SELECT failures FROM retrieval_health WHERE url=?',(r['url'],)).fetchone();count=(old[0] if old else 0)+1
-  hours=24 if r['result'] in ('captcha','http_403') else min(12,2**min(count-1,4))
+  hours=24 if r['result'] in ('captcha','http_403','http_block_page') else min(12,2**min(count-1,4))
   db.execute('INSERT OR REPLACE INTO retrieval_health VALUES(?,?,?,?,?)',(r['url'],count,time_after(stamp,hours),r['result'],stamp))
  db.execute('DELETE FROM retrieval_attempts WHERE checked_at<?',(time_after(stamp,-24*30),));db.commit()
  return {'outcomes':dict(db.execute('SELECT result,COUNT(*) FROM retrieval_attempts WHERE checked_at>=? GROUP BY result',(time_after(stamp,-24),))),'cacheHitsThisRun':CACHE_HITS,'renderAttemptsThisRun':RENDERED,'recentFailures':[{'url':u,'reason':e,'nextCheckAt':n} for u,e,n in db.execute('SELECT url,last_error,next_check_at FROM retrieval_health ORDER BY last_checked DESC LIMIT 30')]}

@@ -3,12 +3,16 @@ import datetime as dt,json,sys,tempfile,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).parents[1]))
 import collector as c
+import retrieval as r
+from unittest.mock import patch,MagicMock
 from discovery import clean_legacy_candidates
 from factcheck import verify_candidates
 from research_common import canonical_candidate,rejection_reason
 from offer_identity import campaign_id
 
 class BenefitRefreshTests(unittest.TestCase):
+ def tearDown(self):
+  db=c.init_db(':memory:');r.configure(db,[]);db.close()
  def source(self,kind):
   return {'id':kind,'service':kind,'name':kind,'url':'https://vendor.example/offer','parser':kind,'discover':False}
  def test_adobe_current_wording_and_full_end_date(self):
@@ -42,6 +46,23 @@ class BenefitRefreshTests(unittest.TestCase):
   for url in ('https://vendor.example/identity/login','https://vendor.example/Login.aspx','https://account.adobe.com/plans'):
    self.assertEqual(rejection_reason(url,'',seeds),'navigation_or_legal')
   self.assertIsNone(rejection_reason('https://vendor.example/offer-terms/discount.html','',seeds))
+ def test_known_short_terms_page_loads_body_but_block_page_never_renders(self):
+  db=c.init_db(':memory:');url='https://vendor.example/offer-terms/discount.html';r.configure(db,[url],render_targets=[url])
+  with patch.object(r,'download',return_value=(('<title>Terms</title>'+('Terms navigation '*17)).encode(),'text/html','utf-8')),patch.object(r,'render',return_value='<p>12개월 구독 약정, 첫해 ₩34,800/월</p>') as browser:
+   self.assertIn('34,800',c.fetch(url).text);browser.assert_called_once_with(url)
+  r.configure(db,[url],render_targets=[url])
+  with patch.object(r,'download',return_value=(b'<title>Access Denied</title>You do not have permission','text/html','utf-8')),patch.object(r,'render') as browser:
+   with self.assertRaisesRegex(r.FetchFailure,'http_block_page'):c.fetch(url)
+   browser.assert_not_called()
+  db.close()
+ def test_english_source_locale_is_used_without_changing_other_sources(self):
+  db=c.init_db(':memory:');url='https://vendor.example/black-friday';r.configure(db,[url],locales={url:'en-US'})
+  response=MagicMock();response.read.return_value=b'<p>public</p>';response.headers.get.return_value='text/html';response.headers.get_content_charset.return_value='utf-8';response.__enter__.return_value=response
+  opener=MagicMock();opener.open.return_value=response
+  with patch.object(r,'public_host',return_value=True),patch.object(r.urllib.request,'build_opener',return_value=opener):
+   r.download(url);self.assertEqual(opener.open.call_args.args[0].get_header('Accept-language'),'en-US')
+   r.download('https://vendor.example/other');self.assertEqual(opener.open.call_args.args[0].get_header('Accept-language'),'ko-KR,ko;q=0.9,en;q=0.8')
+  db.close()
  def test_promo_queue_precedes_noise_and_shares_budget_across_services(self):
   db=c.init_db(':memory:');seeds=[{'key':s,'name':s,'officialUrl':f'https://{s}.example/'} for s in ('tool','other')]
   for n in range(20):self.add_candidate(db,f'https://tool.example/dictionary/{n}','SaaS definition')
