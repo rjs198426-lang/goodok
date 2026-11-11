@@ -2,7 +2,7 @@
 from pathlib import Path
 import hashlib,json,os,subprocess,tempfile,re,zipfile
 import bsdiff4
-BASE=Path('distribution/dalfit-2.1.4');CONFIG=json.loads((BASE/'RELEASE.json').read_text());TAG=CONFIG['tag']
+BASE=Path('distribution/dalfit-2.1.5');CONFIG=json.loads((BASE/'RELEASE.json').read_text());TAG=CONFIG['tag']
 def digest(data):return hashlib.sha256(data).hexdigest()
 def gh(*args,check=True):return subprocess.run(['gh',*args],check=check,text=True,capture_output=True)
 def verify_assets(apk,source):
@@ -32,10 +32,10 @@ with tempfile.TemporaryDirectory() as temp:
   data=bsdiff4.patch(old,patch);assert len(data)==item['bytes'] and digest(data)==item['sha256'],'Release checksum mismatch'
   target=work/item['name'];target.write_bytes(data);assets.append(target)
  verify_assets(assets[0],assets[1])
- checksums=work/'SHA256SUMS.txt';checksums.write_text(''.join(item['sha256']+'  '+item['name']+'\n' for item in CONFIG['assets']));assets.extend((checksums,BASE/'MONTH_SCOPE_NOTES.md',BASE/'VALIDATION.json',BASE/'STARTUP_VALIDATION.json'))
+ checksums=work/'SHA256SUMS.txt';checksums.write_text(''.join(item['sha256']+'  '+item['name']+'\n' for item in CONFIG['assets']));assets.extend((checksums,BASE/'DATE_LIST_NOTES.md',BASE/'VALIDATION.json',BASE/'STARTUP_VALIDATION.json'))
  view=gh('release','view',TAG,'--json','assets',check=False)
  if view.returncode:
-  gh('release','create',TAG,'--target',os.environ['RELEASE_COMMIT'],'--title','달핏 2.1.4 · 빌드 53','--notes-file',str(BASE/'RELEASE_NOTES.md'),'--latest');view=gh('release','view',TAG,'--json','assets')
+  gh('release','create',TAG,'--target',os.environ['RELEASE_COMMIT'],'--title','달핏 2.1.5 · 빌드 54','--notes-file',str(BASE/'RELEASE_NOTES.md'),'--latest');view=gh('release','view',TAG,'--json','assets')
  existing={a['name'] for a in json.loads(view.stdout)['assets']}
  for p in assets:
   if p.name in existing:
