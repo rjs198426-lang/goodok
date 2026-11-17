@@ -1,3 +1,15 @@
 __pycache__/
 *.pyc
 backend/data/*.tmp
+
+# Complete app downloads belong in GitHub Releases.
+*.apk
+*.zip
+
+# Generated local build files and logs.
+node_modules/
+.gradle/
+build/
+.pytest_cache/
+*.log
+.DS_Store
