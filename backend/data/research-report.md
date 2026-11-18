@@ -1,16 +1,16 @@
 # 달핏 백그라운드 조사 결과
-기준 UTC: 2026-11-18T22:04:24Z · 파이프라인 5
+기준 UTC: 2026-11-18T22:47:00Z · 파이프라인 5
 
 - 이번 실행 혜택: 신규 0개 · 내용 변경 0개 · 재확인 8개
 - 공개 중인 혜택: 10개 (기존 혜택 재확인은 신규 발굴과 별도)
-- 외부 후보 대조 확정 기록: 7개 / 대조 기록 1480개
+- 외부 후보 대조 확정 기록: 7개 / 대조 기록 1482개
 - 서비스 목록: 73개 · 신규 편입 누적 20개 · 이번 실행 신규 0개
-- 유효 후보 URL: 3664개 · 제외 이력 포함 4521개
+- 유효 후보 URL: 3712개 · 제외 이력 포함 4569개
 - 요금제: 검증 40개 / 미확정 51개
 - 공식 기간 확인 취향 정보: 0개
 
 ## 조회 진단
-{"outcomes": {"captcha": 3, "cross_site_redirect": 53, "deferred_captcha": 4, "deferred_cross_site_redirect": 3, "deferred_http_403": 24, "deferred_http_404": 3, "deferred_render_budget_exhausted": 13, "deferred_render_http_403": 3, "gzip": 9, "http_403": 54, "http_404": 40, "http_429": 4, "http_503": 3, "non_public_url": 2, "ok": 473, "render_budget_exhausted": 60, "render_http_403": 4, "response_too_large": 5, "timeout": 3, "unexpected_content_type": 7}, "cacheHitsThisRun": 15, "renderAttemptsThisRun": 10, "recentFailures": [{"url": "https://www.adobe.com/kr/offer-terms/cc-full-special-offer-intro.html", "reason": "render_http_403", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.tving.com/event", "reason": "http_404", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.disneyplus.com/commerce/student?pref=duo_basic ", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://www.tving.com/live/C00593", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.tving.com/live/C52348", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.zoom.com/en/products/virtual-meetings/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.forbes.com/advisor/business/software/best-free-ecommerce-website-builder/", "reason": "http_403", "nextCheckAt": "2026-11-19T22:04:24Z"}, {"url": "https://event.sessions.us/kwhero/mastering-keyword-research-&-content-creation-with-kwhero-ai", "reason": "non_public_url", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://kr.promocodie.com/store/zoom.us", "reason": "http_403", "nextCheckAt": "2026-11-19T22:04:24Z"}, {"url": "https://it.linkedin.com/in/peterlombardo", "reason": "http_429", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://www.amazon.com/amazonprime", "reason": "http_429", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://www.lguplus.com/pogg/", "reason": "http_403", "nextCheckAt": "2026-11-19T22:04:24Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=4842551a5c465a468fd16d91d2c30f7c", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=503969434c88db4a576fb829f873455a", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=68fa9e900737f17b32ce1c610a0c224f", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.deezer.com/offers_sitemap/premium.xml", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.deezer.com/offers_sitemap/student.xml", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.figma.com/events/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://webtoon.kakao.com/event?event_id=423953221", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://webtoon.kakao.com/event?event_id=7537196590", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://webtoon.kakao.com/event?event_id=9737495731", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T00:04:24Z"}, {"url": "https://assets.adobe.com/?%C2%A0=", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-18T15:11:15Z"}, {"url": "https://assets.adobe.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-18T15:11:15Z"}, {"url": "https://www.zhihu.com/question/1513187640", "reason": "http_403", "nextCheckAt": "2026-11-19T14:11:15Z"}, {"url": "https://claude.ai/", "reason": "http_403", "nextCheckAt": "2026-11-19T14:11:15Z"}, {"url": "https://www.midjourney.com/", "reason": "http_403", "nextCheckAt": "2026-11-19T14:11:15Z"}, {"url": "https://www.wavve.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-18T15:11:15Z"}, {"url": "https://www.coupangplay.com/", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T02:11:15Z"}, {"url": "https://www.primevideo.com/", "reason": "http_503", "nextCheckAt": "2026-11-18T15:11:15Z"}, {"url": "https://www.coupang.com/", "reason": "http_403", "nextCheckAt": "2026-11-19T14:11:15Z"}]}
+{"outcomes": {"captcha": 3, "cross_site_redirect": 61, "deferred_captcha": 5, "deferred_cross_site_redirect": 5, "deferred_http_403": 28, "deferred_http_404": 4, "deferred_render_budget_exhausted": 17, "deferred_render_http_403": 4, "gzip": 10, "http_403": 60, "http_404": 40, "http_429": 4, "http_503": 3, "non_public_url": 2, "ok": 569, "render_budget_exhausted": 70, "render_http_403": 4, "response_too_large": 5, "timeout": 3, "unexpected_content_type": 12}, "cacheHitsThisRun": 10, "renderAttemptsThisRun": 10, "recentFailures": [{"url": "https://www.tving.com/live/C01723", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://emoticon.kakao.com/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://kr.hotdeals.com/stores/evernote.com", "reason": "http_403", "nextCheckAt": "2026-11-19T22:47:00Z"}, {"url": "https://www.hancinema.net/deals/ko/evernote", "reason": "http_403", "nextCheckAt": "2026-11-19T22:47:00Z"}, {"url": "https://krevo.kr/p/%ED%86%A1%EC%84%9C%EB%9E%8D%ED%94%8C%EB%9F%AC%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EC%9D%B8%EC%83%81-%EC%A0%84%ED%9B%84-%EB%B9%84%EA%B5%90%EC%99%80-10-%ED%95%A0%EC%9D%B8-%EA%B0%80%EC%9E%85-%ED%8C%81", "reason": "http_403", "nextCheckAt": "2026-11-19T22:47:00Z"}, {"url": "https://music.youtube.com/music_premium", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-18T23:47:00Z"}, {"url": "https://www.evernote.com/billy/subscriptions?onboarding=true&promoCode=starter_LATEST_7_day_ft&offer=ft_perm_generic_button_mktgweb_cp-starter-top&hash=starter-1year", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.evernote.com/billy/subscriptions?onboarding=true&promoCode=advanced_LATEST_7_day_ft&offer=ft_perm_generic_button_mktgweb_cp-advanced-top&hash=advanced-1year", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=82599e2cd9c02f7a236f748a1aee0ed6", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.apple.com/kr/promo/pdf/KO_KR_ATV_Promo_TandCs.pdf", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.apple.com/kr/promo/pdf/KO_KR_Arcade_Promo_TandCs.pdf", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.apple.com/kr/promo/pdf/KO_KR_T_Apple_Music_Promo_Terms_3_month.pdf", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.apple.com/kr/promo/pdf/KO_KR_Apple_Creator_Studio_Promo_TandCs.pdf", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.apple.com/kr/promo/pdf/KO_KR_Apple_One_Bundle_Offer_TCs.pdf", "reason": "unexpected_content_type", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://webtoon.kakao.com/event?event_id=3921408393", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=9064cb2023c1b8c26376771f75866719", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=9fa99026cd73b8b38737d5587482be4f", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:47:00Z"}, {"url": "https://www.adobe.com/kr/offer-terms/cc-full-special-offer-intro.html", "reason": "render_http_403", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.tving.com/event", "reason": "http_404", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.disneyplus.com/commerce/student?pref=duo_basic ", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://www.tving.com/live/C00593", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.tving.com/live/C52348", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.zoom.com/en/products/virtual-meetings/", "reason": "cross_site_redirect", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://www.forbes.com/advisor/business/software/best-free-ecommerce-website-builder/", "reason": "http_403", "nextCheckAt": "2026-11-19T22:04:24Z"}, {"url": "https://event.sessions.us/kwhero/mastering-keyword-research-&-content-creation-with-kwhero-ai", "reason": "non_public_url", "nextCheckAt": "2026-11-19T10:04:24Z"}, {"url": "https://kr.promocodie.com/store/zoom.us", "reason": "http_403", "nextCheckAt": "2026-11-19T22:04:24Z"}, {"url": "https://it.linkedin.com/in/peterlombardo", "reason": "http_429", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://www.amazon.com/amazonprime", "reason": "http_429", "nextCheckAt": "2026-11-18T23:04:24Z"}, {"url": "https://www.lguplus.com/pogg/", "reason": "http_403", "nextCheckAt": "2026-11-19T22:04:24Z"}, {"url": "https://page.kakao.com/open/webview/event/?hash_uid=4842551a5c465a468fd16d91d2c30f7c", "reason": "render_budget_exhausted", "nextCheckAt": "2026-11-19T10:04:24Z"}]}
 
 ## 통화별 비교 요금
 {"KRW": 9, "USD": 31}
@@ -18,14 +18,14 @@
 ## 현재 혜택
 | 서비스 | 혜택 | 조건 | 최초 발견 | 마지막 확인 | 출처 |
 | --- | --- | --- | --- | --- | --- |
-| protonvpn | 첫 12개월 $35.88 | 신규 고객 대상, 첫 기간 선결제. 이후 12개월마다 $83.88 자동 갱신. 공식 달러 표시 기준, 국가·세금·최종 결제 조건 확인. | 2026-11-11T08:53:05Z | 2026-11-18T22:04:24Z | https://protonvpn.com/black-friday |
-| protonvpn | 첫 1개월 $1.00 | 신규 고객 대상. 이후 월 $12.99 자동 갱신. 공식 달러 표시 기준, 국가·세금·최종 결제 조건 확인. | 2026-11-11T08:53:05Z | 2026-11-18T22:04:24Z | https://protonvpn.com/black-friday |
-| lovable | 학생 인증 시 최대 12개월 50% 할인 | 학교 이메일·재학 인증 및 무료 플랜 이용자 대상. Pro 100크레딧 월간 플랜 할인, 취소하면 할인 재활성화 불가. 기간 후 정상 요금 적용. | 2026-11-11T08:37:25Z | 2026-11-18T22:04:24Z | https://lovable.dev/students |
-| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-18T22:04:24Z | https://www.spotify.com/kr/premium/ |
-| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-18T22:04:24Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-18T22:04:24Z | https://www.apple.com/kr/apple-music/ |
-| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-18T22:04:24Z | https://www.apple.com/kr/apple-music/ |
-| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-18T22:04:24Z | https://surfshark.com/pricing |
+| protonvpn | 첫 12개월 $35.88 | 신규 고객 대상, 첫 기간 선결제. 이후 12개월마다 $83.88 자동 갱신. 공식 달러 표시 기준, 국가·세금·최종 결제 조건 확인. | 2026-11-11T08:53:05Z | 2026-11-18T22:47:00Z | https://protonvpn.com/black-friday |
+| protonvpn | 첫 1개월 $1.00 | 신규 고객 대상. 이후 월 $12.99 자동 갱신. 공식 달러 표시 기준, 국가·세금·최종 결제 조건 확인. | 2026-11-11T08:53:05Z | 2026-11-18T22:47:00Z | https://protonvpn.com/black-friday |
+| lovable | 학생 인증 시 최대 12개월 50% 할인 | 학교 이메일·재학 인증 및 무료 플랜 이용자 대상. Pro 100크레딧 월간 플랜 할인, 취소하면 할인 재활성화 불가. 기간 후 정상 요금 적용. | 2026-11-11T08:37:25Z | 2026-11-18T22:47:00Z | https://lovable.dev/students |
+| spotify | 학생 요금제 첫 1개월 ₩0 | 승인된 대학 교육 기관 재학생 등 이용 자격 제한. 이후 월 ₩6,600(부가세 포함). 이전 체험 이력 확인. | 2026-10-27T15:02:51Z | 2026-11-18T22:47:00Z | https://www.spotify.com/kr/premium/ |
+| apple-music | 가족 요금제 1개월 무료 | 신규 가족 구독 자격 확인. 체험 이후 월 ₩13,500. 가족 공유·자동 갱신 조건 확인. | 2026-10-27T14:55:54Z | 2026-11-18T22:47:00Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | 대상 기기 구매 시 3개월 무료 | 적용 대상 기기 구매 및 체험 자격 확인. 일반 신규 체험과 중복 여부·이후 자동 갱신 요금 확인. | 2026-10-27T14:55:54Z | 2026-11-18T22:47:00Z | https://www.apple.com/kr/apple-music/ |
+| apple-music | Apple Music 신규 1개월 무료 | 신규 가입 자격 확인. 체험 이후 개인 월 ₩8,900. 자동 갱신과 기기별 혜택 중복 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-18T22:47:00Z | https://www.apple.com/kr/apple-music/ |
+| surfshark | 첫 27개월 $67.23 | 세금·갱신 가격 별도. 표시 통화와 지역별 적용 조건 확인. | 2026-10-25T09:41:23Z | 2026-11-18T22:47:00Z | https://surfshark.com/pricing |
 | spotify | 전자지갑 결제 첫 1개월 ₩100 | 개인 요금제 대상자·전자지갑 결제 조건 확인. 체험 이후 정상 월 요금으로 자동 갱신. | 2026-10-27T14:55:54Z | 2026-11-18T04:31:10Z | https://www.spotify.com/kr/premium/ |
 | spotify | Premium 개인 1개월 ₩0 | 이용 자격 제한. 체험 이후 월 ₩11,990(부가세 포함) 자동 결제. 결제 수단별 체험 금액 확인. | 2026-10-25T09:41:23Z | 2026-11-16T23:56:18Z | https://www.spotify.com/kr/premium/ |
 
@@ -67,10 +67,6 @@
 | Sitemap: kakao | unavailable | 2026-11-09T01:29:06Z |
 | Sitemap: youtube-music | unavailable | 2026-11-09T09:05:56Z |
 | Sitemap: duolingo | unavailable | 2026-11-09T16:02:15Z |
-| Official links: evernote | ok | 제한 없음 |
-| Sitemap: evernote | no_relevant_results | 2026-11-15T02:13:38Z |
-| Official links: kakao-emoticon | unavailable | 2026-11-15T20:13:38Z |
-| Official links: kakao-drawer | unavailable | 2026-11-15T23:04:40Z |
 | Official links: kakao-page | no_relevant_results | 제한 없음 |
 | Sitemap: kakao-page | unavailable | 2026-11-15T23:04:40Z |
 | Official links: kakao-webtoon | unavailable | 2026-11-15T03:04:40Z |
@@ -155,22 +151,26 @@
 | Official links: canva | unavailable | 2026-11-19T14:09:40Z |
 | Official links: figma | ok | 제한 없음 |
 | Sitemap: figma | no_relevant_results | 2026-11-18T20:09:40Z |
-| AppSumo | ok | 제한 없음 |
 | Sumo 구독 할인 | ok | 제한 없음 |
 | Google | no_relevant_results | 2026-11-19T04:02:40Z |
-| Naver | ok | 제한 없음 |
-| Bing | no_relevant_results | 제한 없음 |
-| Bing RSS | no_relevant_results | 제한 없음 |
-| Public tool directory | ok | 제한 없음 |
 | Official links: zoom | unavailable | 2026-11-19T22:02:40Z |
 | Official links: slack | ok | 제한 없음 |
 | Sitemap: slack | no_relevant_results | 2026-11-19T04:02:40Z |
 | Official links: onedrive | ok | 제한 없음 |
 | Sitemap: onedrive | unavailable | 2026-11-19T22:02:40Z |
-| Google News | ok | 제한 없음 |
 | StackSocial | unavailable | 2026-11-19T06:02:40Z |
 | Slickdeals | ok | 제한 없음 |
 | DealMirror | ok | 제한 없음 |
+| Naver | ok | 제한 없음 |
+| Bing | no_relevant_results | 제한 없음 |
+| Bing RSS | no_relevant_results | 제한 없음 |
+| Public tool directory | ok | 제한 없음 |
+| Official links: evernote | ok | 제한 없음 |
+| Sitemap: evernote | no_relevant_results | 2026-11-19T04:45:21Z |
+| Official links: kakao-emoticon | unavailable | 2026-11-19T22:45:21Z |
+| Official links: kakao-drawer | unavailable | 2026-11-19T22:45:21Z |
+| Google News | ok | 제한 없음 |
 | Dealify | ok | 제한 없음 |
+| AppSumo | ok | 제한 없음 |
 
 작업 성공은 모든 사이트의 조회 성공을 의미하지 않습니다. 검색 결과와 할인 주장은 공식 정보로 대조하기 전까지 확정하지 않습니다. 차단된 사이트의 제한을 우회하지 않습니다. 취향 정보의 표시 가격은 실제 지출로 자동 등록하지 않습니다.
